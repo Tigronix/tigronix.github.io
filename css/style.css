@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+* {font-family: 'PT Sans', sans-serif;  margin: 0px; padding: 0px; box-sizing:border-box; outline: none;}
+.global-wrapper {overflow: hidden;}
+p, span {font-size: 14px; line-height: 22px;}
+
+/*global*/
+.wrapper {width: 1000px; margin: 0 auto; padding: 0 10px; position: relative;}
+
+/*header*/
+header {background: #dcdcdc; height: 230px;}
+header .logo {position: absolute; left: 10px; top: 0; width: 100px; height: 100px; overflow: hidden; top: 65px;}
+header .logo img {width: 100%; height: auto;}
+header .company-name {position: absolute; left: 122px; top: 71px; color: #777777; width: 164px;}
+header .company-name .h1 {font-size: 33px; font-weight: bold; line-height: 25px;}
+header .company-name .text {font-size: 15.5px; margin: 13px 0 0 0;}
+header .contact-block {position: absolute; right: 9px; top: 35px; text-align: right;}
+header .contact-block .phone {font-family: 'Open Sans Condensed', sans-serif; font-size: 40px; line-height: 46px; color: #767676; letter-spacing: 1px;}
+header .contact-block .feedback {padding: 0 0 0 3px; transition: .3s; cursor: pointer; font-size: 24px; font-weight: bold; color: #767676; letter-spacing: 0.5px; border-bottom: 2px dashed #767676; display: inline-block;}
+header .contact-block .feedback:hover {color: #fff; border-color: #fff;}
+
+/*popup*/
+.popup-wrap {display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.5); z-index: 999; min-height: 1146px;}
+.popup--content {display: none; width: 466px; background: #fff; position: absolute; left: 50%; top: 284px; margin-left: -219px; padding: 33px 63px 63px 26px;}
+.popup--content .title {font-size: 24px; color: #535353; font-weight: bold; text-transform: uppercase; text-align: center; margin: 0 0 0 26px;}
+.popup--content .form-box {margin: 27px 0 0 37px;}
+.popup--content .form-box .inpbox {padding: 0 0 15px 0; position: relative;}
+.popup--content .form-box label {font-size: 14px; color: #535353; display: block; text-align: center;}
+.popup--content .form-box input {display: inline-block; width: 100%; height: 42px; line-height: 40px; border: 1px solid #c3c3c3; padding-left: 20px; margin: 4px 0 0 0;}
+.popup--content .form-box .textarea-box {margin: 3px 0 0 0;}
+.popup--content .form-box textarea {width: 100%; min-height: 142px; resize: vertical; padding: 10px 20px; font-size: 14px; color: #535353; margin: 3px 0 0 0;}
+.popup--content button[type="submit"] {font-size: 17.77px; color: #fff; font-weight: bold; text-transform: uppercase; padding: 0 13px; display: block; margin: 21px auto 0 auto; background: #777777; border: 1px solid #858585; cursor: pointer; height: 42px; line-height: 40px; transition: .3s;}
+.popup--content button[type="submit"]:hover {background: #fff; color: #777777;}
+.popup--content .close {cursor: pointer; position: absolute; right: -27px; top: -27px; width: 27px; height: 27px; background: #777777; text-align: center; line-height: 27px;}
+.popup--content .close i {font-size: 15px; color: #fff;}
+
+/*validation*/
+.parsley-required, .parsley-type {font-style: italic; list-style: none; font-size: 14px; color: #e30909; position: absolute; top: 23px; left: 0; right: 0; height: 42px; border: 1px solid #ff8383; line-height: 42px; padding: 0 0 0 13px; box-shadow: inset 0 0 10px 1px #ff8383;}
+.parsley-required + .popup--content .form-box input {font-style: italic; list-style: none; font-size: 14px; color: #e30909; position: absolute; top: 23px; left: 0; right: 0; height: 42px; border: 1px solid transparent; line-height: 42px; padding: 0 0 0 13px; box-shadow: inset 0 0 10px 1px #ff8383;}
+.inpbox input::-webkit-input-placeholder {color:#dc7f7f; font-size: 14px; font-style: italic;}
+.inpbox input::-moz-placeholder          {color:#dc7f7f; font-size: 14px; font-style: italic;}/* Firefox 19+ */
+.inpbox input:-moz-placeholder           {color:#dc7f7f; font-size: 14px; font-style: italic;}/* Firefox 18- */
+.inpbox input:-ms-input-placeholder      {color:#dc7f7f; font-size: 14px; font-style: italic;}
+.inpbox input:focus::-webkit-input-placeholder {color: transparent;}
+.inpbox input:focus::-moz-placeholder          {color: transparent;}
+.inpbox input:focus:-moz-placeholder           {color: transparent;}
+.inpbox input:focus:-ms-input-placeholder      {color: transparent;}
+.popup--content .has-error input {box-shadow: inset 0 0 10px 1px #ff8383; border: 1px solid #ff8383;}
+
+/*menu*/
+.menu {font-size: 0; height: 80px; line-height: 77px; background: #767676;}
+.menu .link-wrap {text-align: center;}
+.menu li {list-style: none; display: inline-block; position: relative;}
+.menu li:after {content: ''; display: inline-block; width: 2px; height: 25px; background: #fff; margin: 0 24px; vertical-align: middle;}
+.menu li:last-child:after {display: none;}
+.menu .link {display: inline-block; height: 100%; line-height: 72px!important; font-size: 30px; color: #fff; text-decoration: none; vertical-align: top;}
+.menu .link:hover {text-decoration: underline;}
+
+/*slider*/
+.slider-wrap {background: #f9f9f9;}
+.slider {height: 400px; cursor: grab;}
+.slick-slide {background-size: cover; height: 400px!important;}
+.slick-slide .wrapper {cursor: auto;}
+.slick-slide .text {font-size: 20px; color: #212121; font-weight: bold; text-align: center; margin: 70px 0 0 0;}
+.slider-wrap .slider .slick-arrow {width: 18px; height: 35px; z-index: 1; cursor: pointer; margin-top: -15px;}
+.slider-wrap .slider .slick-arrow:before {display: none;}
+.slider-wrap .slider .slick-prev {left: 15.5%; background: url(../img/sprite.png) no-repeat 0 0;}
+.slider-wrap .slider .slick-next {right: 15.5%; background: url(../img/sprite.png) no-repeat -18px 0;}
+
+/*breadcrumps*/
+.breadcrumps {font-size: 0; margin: 5px 0 0 0;}
+.breadcrumps a {font-size: 14px; display: inline-block; color: #767676;}
+.breadcrumps a:after {content: '/'; font-size: 14px; display: inline-block; color: #767676; margin: 0 8px;}
+.breadcrumps a:last-child {text-decoration: none;}
+.breadcrumps a:last-child:after {display: none;}
+.breadcrumps a:hover {text-decoration: underline;}
+
+
+/*catalog*/
+.catalog:after {display: block; content: ''; clear: both;}
+
+/*left-block*/
+.left-block {float: left; width: 18.1632%; margin-right: 2.2448%;}
+.left-block:after {content: ''; display: block; clear: both;}
+.left-block .main-accordion {list-style: none; font-size: 0; margin: 20px 0 0 0;}
+.left-block .main-accordion > li:first-child {margin: 0;}
+.left-block .main-accordion > li {margin: 6px 0 0 0;}
+.left-block .main-accordion div {display: block; cursor: pointer; font-size: 18px; color: #767676;}
+.left-block .main-accordion div:hover {text-decoration: underline;}
+.left-block .main-accordion ul {list-style: none; padding: 0 0 0 0;}
+.left-block .main-accordion ul{display: none;}
+.left-block .main-accordion ul li {font-weight: normal; list-style: none; cursor: auto; background-color: #fff; margin: 0px 0 0 9px; line-height: 22px;}
+.left-block .main-accordion ul li:first-child {margin-top: 0;}
+.left-block .main-accordion ul li:before {width: 5px; height: 5px; display: inline-block; vertical-align: middle; content: ''; background: #767676; margin-right: 5px; border-radius: 50%;}
+.left-block .main-accordion a {text-decoration: none; font-size: 14px; color: #767676; transition: .3s; vertical-align: middle;}
+.left-block .main-accordion a:hover {text-decoration: underline; color: #010101;}
+.left-block .price-list {text-decoration: none; margin: 107px 0 0 0; text-align: center; display: block;}
+.left-block .price-list .img {width: 97px; height: 105px; display: inline-block; background: url(../img/sprite.png) -64px 0px;}
+.left-block .price-list .text {font-size: 30px; color: #444444; font-weight: bold; margin: 6px 0 0 0; text-decoration: none; display: inline-block; transition: .3s;}
+
+/*center-block*/
+.center-block {float: left; width: 79.5918%; padding: 0 0 199px 0;}
+.center-block:after {content: ''; display: block; clear: both;}
+
+/*product-wrap*/
+.product-wrap {margin: 16px -0.9615% -10px -0.9615%;}
+.product-wrap:after {content: ''; display: block; clear: both;}
+.product-wrap .product {width: 31.4000%; margin: 10px 0.9615%; float: left; padding: 20px 20px 15px 20px; background: #dcdcdc;}
+.product-wrap .product .img {overflow: hidden; text-align: center; text-decoration: none; display: block;}
+.product-wrap .product .img img {width: 100%; height: auto;}
+.product-wrap .product .name {font-size: 18px; line-height: 19px; color: #767676; margin: 12px 0 0 0;}
+.product-wrap .product .price-box {margin: 55px 0 0 0;}
+.product-wrap .product .price-box:after {display: block; clear: both; content: '';}
+.product-wrap .product .price-box .price {font-size: 28px; color: #444444; font-weight: bold; float: left;}
+.product-wrap .product .price-box .basket {cursor: pointer; width: 28px; height: 22px; background: url(../img/sprite.png) no-repeat -36px 0; display: inline-block; float: right; margin: 4px 16px 0 15px;}
+
+/*pagination*/
+.pagination {margin: 23px 0 0 0; text-align: center;}
+.pagination .number-wrap {margin: 0 -10.1px; font-size: 0; display: inline-block;}
+.pagination .number {font-size: 14px; color: #767676; display: inline-block; vertical-align: middle; margin: 0 10.1px; transition: .3s; cursor: pointer; text-decoration: none;}
+.pagination .number:hover {color: #444444;}
+.pagination .active {font-size: 18px; color: #444444;}
+
+/*about*/
+.about {margin: 61px 0 0 0; padding: 23px 0 0 0; border-top: 1px solid #777777;}
+.about p {font-size: 14px; color: #767676;}
+.about:after {display: block; content: ''; clear: both;}
+.about .left-box {float: left; width: 47.4358%; margin-right: 5.1282%;}
+.about .right-box {float: left; width: 47.4358%;}
+
+/*footer*/
+footer {background: #777777; font-size: 0; height: 220px; padding: 43px 0 0 0;}
+footer .box-wrap:after {content: ''; clear: both; display: block;}
+footer .left-block {float: left; width: 200px;}
+footer .left-block p {font-size: 14px; color: #fff;}
+footer .footer-menu {float: left; margin: 2px 0 0 128px;}
+footer .footer-menu li {margin: 7px 0 0 0;}
+footer .footer-menu li:first-child {margin: 0px 0 0 0;}
+footer .footer-menu a {font-size: 14px; color: #fff; display: block;}
+
+
+
