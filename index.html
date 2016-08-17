@@ -37,19 +37,14 @@
         </nav><!--menu-->
         <div class="slider-wrap">
             <div id="slider" class="slider">
-                <div style="background-image: url('img/index-bg1.jpg');">
+                <div style="background-image: url('img/slide1.jpg');">
                     <div class="wrapper">
                         <p class="text">1</p>
                     </div>
                 </div>
-                <div style="background-image: url('img/index-bg1.jpg');">
+                <div style="background-image: url('img/slide2.jpg');">
                     <div class="wrapper">
                         <p class="text">2</p>
-                    </div>
-                </div>
-                <div style="background-image: url('img/index-bg1.jpg');">
-                    <div class="wrapper">
-                        <p class="text">3</p>
                     </div>
                 </div>
             </div><!--slider-->     
@@ -185,7 +180,21 @@
                 </div><!--catalog-->
             </div><!--wrapper-->
         </div><!--content-->
-        <footer>
+        <div id="feed-popup" class="popup-wrap">
+            <div class="popup--content">
+                <p class="title">Обратная связь</p>
+                <form class="form-box">
+                    <div class="inpbox required"><label for="feed1">Ваше имя *</label><input name="name" id="feed1" type="text"></div>
+                    <div class="inpbox required"><label for="feed2">Телефон *</label><input name="phone" id="feed2" type="text"></div>
+                    <div class="inpbox required"><label for="feed3">Email *</label><input name="email" id="feed3" type="email"></div>
+                    <div class="inpbox textarea-box"><label for="feed4">Сообщение</label><textarea name="msg" id="feed4"></textarea></div>
+                    <button type="submit">отправить</button>
+                </form>
+                <div id="popup-close" class="close"><i class="icon-close"></i></div>
+            </div><!--feedback-popup-->
+        </div><!--popup-wrap-->
+    </div><!--global-wrapper-->
+    <footer>
             <div class="wrapper">
                <div class="box-wrap">
                     <div class="left-block">
@@ -202,20 +211,6 @@
                 </div>
             </div>
         </footer><!--footer-->
-        <div id="feed-popup" class="popup-wrap">
-            <div class="popup--content">
-                <p class="title">Обратная связь</p>
-                <form class="form-box">
-                    <div class="inpbox required"><label for="feed1">Ваше имя *</label><input name="name" id="feed1" type="text"></div>
-                    <div class="inpbox required"><label for="feed2">Телефон *</label><input name="phone" id="feed2" type="text"></div>
-                    <div class="inpbox required"><label for="feed3">Email *</label><input name="email" id="feed3" type="email"></div>
-                    <div class="inpbox textarea-box"><label for="feed4">Сообщение</label><textarea name="msg" id="feed4"></textarea></div>
-                    <button type="submit">отправить</button>
-                </form>
-                <div id="popup-close" class="close"><i class="icon-close"></i></div>
-            </div><!--feedback-popup-->
-        </div><!--popup-wrap-->
-    </div><!--global-wrapper-->
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/parsley.js"></script>
     <script src="js/i18n/ru.js"></script>
