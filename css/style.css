@@ -4,8 +4,6 @@
 /*global*/
 html, body {height: 100%; line-height: 1.1875;}
 .wrapper {width: 1250px; margin: 0 auto; position: relative;}
-.content .wrapper {width: 100%;}
-.menu .wrapper {width: 1250px;}
 .clear:after {clear: both; display: block; content: '';}
 
 /*input/textarea*/
@@ -14,7 +12,7 @@ input:focus, textarea:focus {border-color: #66afe9; box-shadow: 0 1px 1px rgba(0
 textarea {display: inline-block; width: 100%; border: 1px solid #a9a9a9; border-radius: 3px; font-size: 19px; font-weight: 300; background: #fff; height: 66px; padding: 4px; resize: vertical;}
 
 /*header*/
-header {background: #fff; height: 100px; line-height: 100px; text-align: center; box-shadow: 0 0 5px #2f4f4f; position: relative; z-index: 2; overflow: hidden;}
+header {background: #fff; height: 100px; line-height: 100px; text-align: center; box-shadow: 0 0 5px #2f4f4f; position: relative; z-index: 2;}
 header .wrapper {padding: 0 20px; display: inline-block; vertical-align: middle;}
 header .wrapper * {line-height: 1.1875;}
 header .logo {width: 229px; height: 63px; display: block; float: left; width: 22.8925%; background: url(../img/logo.png) no-repeat;}
