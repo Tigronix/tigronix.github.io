@@ -55,7 +55,7 @@ header .contact-info .text {font-size: 16px; font-weight: 300; color: #000; marg
 
 /*side-menu*/
 .side-menu {background: #fff;}
-.side-menu .main-link {display: inline-block; width: 100%; text-decoration: none; height: 59px; line-height: 59px; border: 1px solid #DADADA; border-width: 1px 1px 0 1px; padding: 0 0 0 16px; font-size: 16px; text-transform: uppercase; font-weight: 300; transition: .3s; letter-spacing: .7px;}
+.side-menu .main-link {display: inline-block; width: 100%; text-decoration: none; height: 59px; line-height: 59px; border: 1px solid #DADADA; border-width: 1px 1px 0 1px; padding: 0 0 0 16px; font-size: 16px; text-transform: uppercase; font-weight: 300; transition: .3s; letter-spacing: .7px; color: #9006A8;}
 .side-menu .main-link:hover {background: #f5f5f5;}
 .side-menu li {list-style: none;}
 .side-menu li:first-child .main-link {border-top: 0;}
@@ -79,7 +79,8 @@ background: -webkit-linear-gradient(top,  rgba(167,140,202,1) 0%,rgba(119,76,176
 background: linear-gradient(to bottom,  rgba(167,140,202,1) 0%,rgba(119,76,176,1) 51%,rgba(166,138,201,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a78cca', endColorstr='#a68ac9',GradientType=0 ); /* IE6-9 */
 }
-.online-req .icon-paper-plane-empty {margin: 0 0 0 7px;}
+.online-req .icon-paper-plane-empty {margin: 0 0 0 7px; color: #a98de1; transition: .3s;}
+.online-req .icon-paper-plane-empty:hover {color: #337AB7;}
 .online-req input, .online-req textarea  {margin: 0 0 15px 0; position: relative;}
 .online-req .inp1 {position: relative;}
 .online-req .inp1:after {content: ''; display: block; position: absolute; left: 12px; top: 14px; width: 20px; height: 25px; background: url(../img/street.svg) no-repeat;}
