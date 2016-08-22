@@ -147,7 +147,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a78cca', end
 
 
 /*footer*/
-footer {background: #57067F; height: 204px; box-shadow: 0 0 5px #2f4f4f; padding: 12px 0 0 0;}
+footer {background: #57067F; height: 204px; box-shadow: 0 0 5px #2f4f4f; padding: 12px 0 0 0; position: relative; z-index: 3;}
 footer .column {float: left;}
 footer .left {width: 26.96%; margin-right: 9.4%; padding: 0 0 0 1.5%;}
 footer .left .t1 {font-size: 32px; font-weight: 300; color: #fff; margin-bottom: 14px;}
