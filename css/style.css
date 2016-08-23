@@ -27,7 +27,7 @@ header nav a:hover {color: #7649af; text-decoration: underline;}
 header .contact-info {float: left; width: 26.5206%; height: 65px;}
 header .contact-info .phone {font-size: 37px; font-weight: 300; color: #000; margin: -8px -34px 0 0;}
 header .contact-info .text {font-size: 16px; font-weight: 300; color: #000; margin: 15px -14px 0 0;}
-header .mob-menu {position: absolute; left: 20px; top: 20px;}
+header .mob-menu {position: absolute; left: 20px; top: 50%; margin: -15.5px 0 0 0;}
 header .mob-menu i {font-size: 26px; color: #774aaf; cursor: pointer;}
 header .mob-switch .mob-close {position: absolute; right: -10px; top: -28px;}
 header .mob-switch .mob-close i {font-size: 26px; color: #774aaf; cursor: pointer;}t
