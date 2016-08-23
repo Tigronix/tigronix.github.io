@@ -3,8 +3,12 @@
 
 /*global*/
 html, body {height: 100%; line-height: 1.1875;}
+.global-wrapper {overflow: hidden;}
 .wrapper {width: 1250px; margin: 0 auto; position: relative;}
 .clear:after {clear: both; display: block; content: '';}
+@media (max-width: 1281px) {/*1024*/
+    .wrapper {width: 100%;}
+}
 
 /*input/textarea*/
 input {display: inline-block; width: 100%; height: 50px; line-height: 48px; border: 1px solid #a9a9a9; border-radius: 3px; font-size: 19px; font-weight: 300; background: #fff; padding: 0 0 0 50px;}
@@ -12,7 +16,7 @@ input:focus, textarea:focus {border-color: #66afe9; box-shadow: 0 1px 1px rgba(0
 textarea {display: inline-block; width: 100%; border: 1px solid #a9a9a9; border-radius: 3px; font-size: 19px; font-weight: 300; background: #fff; height: 66px; min-height: 66px; padding: 4px; resize: vertical;}
 
 /*header*/
-header {background: #fff; height: 100px; line-height: 100px; text-align: center; box-shadow: 0 0 5px #2f4f4f; position: relative; z-index: 2;}
+header {background: #fff; height: 100px; line-height: 100px; text-align: center; box-shadow: 0 0 5px #2f4f4f; position: relative; z-index: 3;}
 header .wrapper {padding: 0 20px; display: inline-block; vertical-align: middle;}
 header .wrapper * {line-height: 1.1875;}
 header .logo {width: 229px; height: 63px; display: block; float: left; width: 22.8925%; background: url(../img/logo.png) no-repeat;}
@@ -23,6 +27,10 @@ header nav a:hover {color: #7649af; text-decoration: underline;}
 header .contact-info {float: left; width: 26.5206%; height: 65px;}
 header .contact-info .phone {font-size: 37px; font-weight: 300; color: #000; margin: -8px -34px 0 0;}
 header .contact-info .text {font-size: 16px; font-weight: 300; color: #000; margin: 15px -14px 0 0;}
+header .mob-menu {position: absolute; left: 20px; top: 20px;}
+header .mob-menu i {font-size: 26px; color: #774aaf; cursor: pointer;}
+header .mob-switch .mob-close {position: absolute; right: -10px; top: -28px;}
+header .mob-switch .mob-close i {font-size: 26px; color: #774aaf; cursor: pointer;}t
 .fixed {background: rgba(0, 0, 0, 0) -moz-linear-gradient(right center , #f5f5f5 0%, #7649af 100%) repeat scroll 0 0; box-shadow: 0 0 5px #2f4f4f; opacity: 0.95; height: 57px; line-height: 57px; position: fixed; top: 0; left: 0; right: 0; z-index: 999;}
 .fixed nav a {color: #000; text-decoration: none;}
 .fixed .contact-info .text {display: none;}
@@ -30,7 +38,33 @@ header .contact-info .text {font-size: 16px; font-weight: 300; color: #000; marg
 .fixed nav {height: 57px; margin: -5px 0 0 0;}
 .fixed .contact-info {height: 57px;}
 .fixed .contact-info .phone {margin: 2px -25px 0 0;}
-
+.mobile-toggle {display: none;}
+@media (max-width: 1281px) {/*1024*/
+    header .wrapper {display: flex; align-items: center; height: 100%; justify-content: flex-end; position: relative; padding: 0;}
+    header nav {order: -1; display: none; height: auto; left: 0; top: 100px; position: absolute; width: 22.6%; text-align: left;}
+    header nav a {background: #774aaf; color: #fff!important; display: block; padding: 5px 0 5px 10px; width: 100%;}
+    header nav a:hover {background: #fff; color: #774aaf!important; text-decoration: none;}
+    header .logo {float: none; margin: 0 30px 0 0;}
+    header .contact-info {float: none; height: auto; width: 30%; margin: 0 30px 0 0;}
+    .mobile-toggle {display: block;}
+}
+@media (max-width:1025px) {/*740*/
+    header .contact-info {width: 28%; text-align: center;}
+    header .contact-info .phone {display: inline-block; font-size: 22px; margin: 0; text-align: center;}
+    header .contact-info .text {font-size: 16px; margin: 7px 0 0 0; text-align: center;}
+    header .logo {background-size: 100% auto; background-position: center center;}
+}
+@media (max-width:741px) {/*320*/
+    header .mob-menu {top: 50%; margin-top: -15.5px;}
+    header .contact-info .text {display: none;}
+    header .contact-info .phone {font-size: 16px;}
+    header nav {width: 100%;}
+    header .mob-switch .mob-close {left: 0;}
+}
+@media (max-width: 480px) {
+    header .logo {margin: 0;}
+    header .contact-info .phone {display: none;}
+}
 /*menu*/
 .menu {position: relative; z-index: 1; height: 50px; line-height: 50px;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7649af+0,f5f5f5+100 */
@@ -45,6 +79,17 @@ header .contact-info .text {font-size: 16px; font-weight: 300; color: #000; marg
 .menu .services .icon-menu {color: #fff; font-size: 29px; line-height: 30px; vertical-align: middle; transition: .3s; display: inline-block; margin: -4px 0 0 0px;}
 .menu .services .text {font-size: 21px; text-transform: uppercase; font-weight: 300; color: #fff; vertical-align: middle; transition: .3s; display: inline-block; margin: -4px 0 0 6px;}
 .menu h1 {display: inline-block; font-size: 24px; color: #fff; font-weight: 500; vertical-align: middle; margin: -3px 0 0 83px;}
+@media (max-width: 1280px) {/*1024*/
+    .menu .services .icon-menu {font-size: 19px;}
+    .menu .services .text {font-size: 16px;}
+    .menu h1 {font-size: 20px; margin: 0 0 0 8%;}
+}
+@media (max-width:740px) {/*320*/
+    .menu {height: auto; line-height: normal; padding: 10px 0;}
+    .menu .wrapper {display: flex; align-items: stretch; flex-direction: column-reverse;}
+    .menu .services {margin: 0; text-align: center; align-self: flex-start;}
+    .menu h1 {text-align: center; font-size: 20px; margin: 0 0 10px 0;}
+}
 
 /*content*/
 .content {background: #f5f5f5;}
@@ -145,9 +190,56 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a78cca', end
 .social .btn-cont .vib {background-position: -85px 0;}
 .social .btn-cont .call {background-position: -113px 0;}
 
+@media (max-width:1280px) {/*1024*/
+    .info-cont h2 span {margin: 0;}
+    .online-req .icon-paper-plane-empty {display: none;}
+    .side-menu .main-link {font-size: 14px; padding: 10px 0 10px 12px; height: auto; line-height: normal;}
+    .online-req {padding: 15px 5px 20px 5px;}
+    .online-req h3 {font-size: 17px;}
+    .online-req .inp1::after, .online-req .inp2::after {display: none;}
+    .online-req input {font-size: 14px; padding: 0 0 0 10px;}
+    .online-req textarea {font-size: 14px;}
+    .online-req .button {font-size: 14px;}
+    .advantages .box {padding: 0 2%;}
+    .help {justify-content: space-around; display: flex;}
+    .help .left {align-items: center; display: flex; margin-right: 0; width: auto;}
+    .help .left .text .t1 {font-size: 18px;}
+    .help .left .text .t2 {font-size: 16px;}
+    .help .right {align-items: center; display: flex; width: auto;}
+    .help .right .text {width: auto;}
+    .help .right .text .t {font-size: 16px; padding-left: 16px;}
+}
+@media (max-width:1023px) {/*740*/
+    .left-column {display: none;}
+    .right-column {width: 100%;}
+    .index-slider .text {margin: 14px 0 0 15%; width: 200px; font-size: 14px;}
+    .index-slider .slick-arrow {width: 30px;}
+    .index-slider .slick-prev:before, .index-slider .slick-next:before {width: 16px; margin-left: -8px;}
+    .advantages {display: flex; flex-wrap: wrap; padding: 0;}
+    .advantages .box {width: 50%; overflow: hidden;}
+    .advantages .box .title {font-size: 16px; margin: -9px 0 5px 0;}
+    .advantages .box .text {font-size: 14px;}
+    .advantages .box:nth-child(1) .img {margin: 0;}
+    .advantages .box:nth-child(2) {margin: 0;}
+    .advantages .box:nth-child(4) {margin: 0;}
+    .help {margin: 41px 0 0 0;}
+    .help .left .text {margin: -4px 0 0 3%;}
+    .help .left .text .t1 {font-size: 16px;}
+    .help .left .text .t2 {font-size: 14px;}
+    .social {margin: 32px 0 0 0; text-align: center;}
+    .social .btn-cont {margin: 0;}
+    
+}
+@media (max-width:740px) {/*320*/
+    .help {flex-direction: column; align-items: stretch;}
+    .help .left {justify-content: center;}
+    .help .right {align-items: flex-start; justify-content: center;}
+    .help .right .button {font-size: 16px;}
+    .help .right .img img {margin: 0;}
+}
 
 /*footer*/
-footer {background: #57067F; height: 204px; box-shadow: 0 0 5px #2f4f4f; padding: 12px 0 0 0; position: relative; z-index: 3;}
+footer {background: #57067F; height: 204px; box-shadow: 0 0 5px #2f4f4f; padding: 12px 0; position: relative; z-index: 3;}
 footer .column {float: left;}
 footer .left {width: 26.96%; margin-right: 9.4%; padding: 0 0 0 1.5%;}
 footer .left .t1 {font-size: 32px; font-weight: 300; color: #fff; margin-bottom: 14px;}
@@ -162,8 +254,25 @@ footer .list li {margin-bottom: 15px;}
 footer .list a {font-size: 16px; color: #fff; text-decoration: none; font-weight: 300; display: block;}
 footer .list a:hover {text-decoration: underline;}
 footer .right .list {font-size: 0;}
-footer .right .list li {display: inline-block; width: 50%;}
+footer .right .list li {display: inline-block; width: 50%; vertical-align: top;}
 footer .right .list li:nth-child(2n+2) {padding-left: 47px;}
 footer .copy {font-size: 13px; font-weight: 300; color: #fff; margin: 14px 0 0 20px;}
-
+@media (max-width:1281px) {/*1024*/
+    footer {height: auto;}
+    footer .left {margin-right: 6.4%; width: 29.96%;}
+    footer .left .t1 {font-size: 25px;}
+    footer .left .t2, footer .left .t3 {font-size: 14px;}
+    footer .center {width: 20.48%;}
+    footer .right {width: 37.92%; padding-right: 1.5%;}
+}
+@media (max-width:741px) {/*320*/
+    footer .list a {font-size: 14px;}
+    footer .left {margin: 0 0 20px 0; width: 100%; text-align: center; padding-left: 0;}
+    footer .left .t1 {font-size: 25px;}
+    footer .center {margin-right: 5%; width: 36%; padding-left: 1.5%;}
+    footer .right {padding-right: 1.5%; width: 59%;}
+    footer .right .list li:nth-child(2n+2) {padding-left: 10px;}
+    footer h4 {font-size: 16px;}
+    footer .copy {text-align: center;}
+}
 

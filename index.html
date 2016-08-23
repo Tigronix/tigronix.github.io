@@ -9,150 +9,153 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper clear">
-            <a href="#" alt="logo" class="logo"></a>
-            <nav>
-                <a href="#">О компании</a>
-                <a href="#">Портфолио</a>
-                <a href="#">Услуги</a>
-                <a href="#">Контакты</a>
-            </nav>
-            <div class="contact-info">
-                <div class="phone"> +7(495) 506-08-31</div>
-                <p class="text"> Москва, Большой Каретный переулок, д. 2</p>
+    <div class="global-wrapper">
+        <header class="header">
+            <div class="wrapper clear">
+                <a href="#" alt="logo" class="logo"></a>
+                <nav class="mob-switch">
+                    <a href="#">О компании</a>
+                    <a href="#">Портфолио</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Контакты</a>
+                    <div id="mob-close" class="mob-close mobile-toggle"><i class="icon-cancel-circled"></i></div>
+                </nav>
+                <div class="contact-info">
+                    <div class="phone"> +7(495) 506-08-31</div>
+                    <p class="text"> Москва, Большой Каретный переулок, д. 2</p>
+                </div>
+                <div class="mob-menu mobile-toggle" id="mob-menu"><i class="icon-menu"></i></div>
             </div>
-        </div>
-    </header><!--header-->
-    <div class="content">
-        <div class="menu">
-            <div class="wrapper">
-                <a class="services" href="#">
-                    <i class="icon-menu"></i>
-                    <span class="text">наши услуги</span>
-                </a>
-                <h1>«ES-Studio» - Комплексный интернет-маркетинг</h1>
+        </header><!--header-->
+        <div class="content">
+            <div class="menu">
+                <div class="wrapper">
+                    <a class="services" href="#">
+                        <i class="icon-menu"></i>
+                        <span class="text">наши услуги</span>
+                    </a>
+                    <h1>«ES-Studio» - Комплексный интернет-маркетинг</h1>
+                </div>
+            </div><!--menu-->
+            <div class="wrapper clear">
+                <div class="left-column column">
+                    <ul class="side-menu">
+                        <li><a class="main-link" href="#">создание сайтов</a></li>
+                        <li><a class="main-link" href="#">продвижение сайтов</a></li>
+                        <li><a class="main-link" href="#">контекстная реклама</a></li>
+                        <li><a class="main-link" href="#">поддержка сайтов</a></li>
+                        <li><a class="main-link" href="#">веб - дизайн</a></li>
+                        <li><a class="main-link" href="#">копирайтинг</a></li>
+                    </ul>
+                    <form action="" class="online-req">
+                        <h3><i class="icon-paper-plane-empty"></i>Онлайн заявка</h3>
+                        <div class="inp1"><input placeholder="Укажите имя" type="text"></div>
+                        <div class="inp2"><input placeholder="Номер телефона" type="text"></div>
+                        <textarea placeholder="Опишите ваши вопросы"></textarea>
+                        <button class="button" type="submit">Отправить заявку</button>
+                    </form>
+                </div><!--left-column-->
+                <div class="right-column column">
+                    <div id="index-slider" class="index-slider">
+                        <div style="background-image: url(img/seo.jpg);">
+                            <div class="text">
+                                <p>От простого сайта к успешному!</p>
+                                <p>Мы поможем Вам разобраться в мире SEO </p>
+                            </div>
+                        </div>
+                        <div style="background-image: url(img/seo.jpg);">
+                            <div class="text">
+                                <p>От простого сайта к успешному!</p>
+                                <p>Мы поможем Вам разобраться в мире SEO </p>
+                            </div>
+                        </div>
+                    </div><!--index-slider-->
+                    <div class="info-cont">
+                        <div class="about">
+                            <p class="text">
+                                 Компания ES-Studio предлагает свои услуги и партнерство.<br>
+                                 Но, прежде, позвольте отрекомендоваться. Почему, кстати, партнеры, а не, скажем, клиенты,<br>
+                                 спросите вы?
+                            </p>
+                            <p class="text">
+                                Здесь все просто. Во-первых, мы работаем с вами в едином интернет-пространстве.<br>
+                                Во-вторых, мы такие же потребители ваших товаров и услуг. Ну, а, в-третьих, если вы на нашем ресурсе, значит поисковая оптимизация и продвижение сайта стали для вас актуальной задачей.<br>
+                                Круг замкнулся. Дает ли это нам право обращаться к нашей аудитории, как к партнерам?
+                            </p>
+                            <p class="text">На наш взгляд - да! </p>
+                        </div><!--about-->
+                        <h2><span>Почему стоит обратиться именно к нам</span></h2>
+                        <div class="advantages clear">
+                            <div class="box">
+                                <div class="img"><img src="img/k_1.jpg" alt=""></div>
+                                <p class="title">Индивидуальный<br>подход</p>
+                                <p class="text">
+                                     Компания ES-Studio<br>
+                                      предлагает свои услуги и<br>
+                                      партнерство. 
+                                </p>
+                            </div>
+                            <div class="box">
+                                <div class="img"><img src="img/k_2.jpg" alt=""></div>
+                                <p class="title">Комплексные<br>решения</p>
+                                <p class="text">
+                                     Компания ES-Studio<br>
+                                      предлагает свои услуги и<br>
+                                      партнерство. 
+                                </p>
+                            </div>
+                            <div class="box">
+                                <div class="img"><img src="img/k_3.jpg" alt=""></div>
+                                <p class="title">Гибкие цены</p>
+                                <p class="text">
+                                     Компания ES-Studio<br>
+                                      предлагает свои услуги и<br>
+                                      партнерство. 
+                                </p>
+                            </div>
+                            <div class="box">
+                                <div class="img"><img src="img/k_4.jpg" alt=""></div>
+                                <p class="title">Надежность</p>
+                                <p class="text">
+                                     Компания ES-Studio<br>
+                                      предлагает свои услуги и<br>
+                                      партнерство. 
+                                </p>
+                            </div>
+                        </div><!--advantages-->
+                        <div class="help clear">
+                            <div class="column left">
+                                <div class="img">
+                                    <img src="img/si_2.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <p class="t1">У вас появились вопросы?</p>
+                                    <p class="t2">Задайте их нашим специалистам </p>
+                                </div>
+                            </div>
+                            <div class="column right">
+                                <div class="img"><img src="img/si_1.png" alt=""></div>
+                                <div class="text">
+                                    <p class="t">Получите бесплатную консультацию!</p>
+                                    <a href="#" class="button">Получить консультацию</a>
+                                </div>
+                            </div>
+                        </div><!--help-->
+                        <div class="social">
+                            <div class="t">Поделиться:</div>
+                            <div class="btn-cont">
+                                <a class="vk" href="#"></a>
+                                <a class="fb" href="#"></a>
+                                <a class="od" href="#"></a>
+                                <a class="vib" href="#"></a>
+                                <a class="call" href="#"></a>
+                            </div>
+                        </div><!--social-->
+                    </div><!--info-cont-->
+                </div><!--right-column-->
             </div>
-        </div><!--menu-->
-        <div class="wrapper clear">
-            <div class="left-column column">
-                <ul class="side-menu">
-                    <li><a class="main-link" href="#">создание сайтов</a></li>
-                    <li><a class="main-link" href="#">продвижение сайтов</a></li>
-                    <li><a class="main-link" href="#">контекстная реклама</a></li>
-                    <li><a class="main-link" href="#">поддержка сайтов</a></li>
-                    <li><a class="main-link" href="#">веб - дизайн</a></li>
-                    <li><a class="main-link" href="#">копирайтинг</a></li>
-                </ul>
-                <form action="" class="online-req">
-                    <h3><i class="icon-paper-plane-empty"></i>Онлайн заявка</h3>
-                    <div class="inp1"><input placeholder="Укажите имя" type="text"></div>
-                    <div class="inp2"><input placeholder="Номер телефона" type="text"></div>
-                    <textarea placeholder="Опишите ваши вопросы"></textarea>
-                    <button class="button" type="submit">Отправить заявку</button>
-                </form>
-            </div><!--left-column-->
-            <div class="right-column column">
-                <div id="index-slider" class="index-slider">
-                    <div style="background-image: url(img/seo.jpg);">
-                        <div class="text">
-                            <p>От простого сайта к успешному!</p>
-                            <p>Мы поможем Вам разобраться в мире SEO </p>
-                        </div>
-                    </div>
-                    <div style="background-image: url(img/seo.jpg);">
-                        <div class="text">
-                            <p>От простого сайта к успешному!</p>
-                            <p>Мы поможем Вам разобраться в мире SEO </p>
-                        </div>
-                    </div>
-                </div><!--index-slider-->
-                <div class="info-cont">
-                    <div class="about">
-                        <p class="text">
-                             Компания ES-Studio предлагает свои услуги и партнерство.<br>
-                             Но, прежде, позвольте отрекомендоваться. Почему, кстати, партнеры, а не, скажем, клиенты,<br>
-                             спросите вы?
-                        </p>
-                        <p class="text">
-                            Здесь все просто. Во-первых, мы работаем с вами в едином интернет-пространстве.<br>
-                            Во-вторых, мы такие же потребители ваших товаров и услуг. Ну, а, в-третьих, если вы на нашем ресурсе, значит поисковая оптимизация и продвижение сайта стали для вас актуальной задачей.<br>
-                            Круг замкнулся. Дает ли это нам право обращаться к нашей аудитории, как к партнерам?
-                        </p>
-                        <p class="text">На наш взгляд - да! </p>
-                    </div><!--about-->
-                    <h2><span>Почему стоит обратиться именно к нам</span></h2>
-                    <div class="advantages clear">
-                        <div class="box">
-                            <div class="img"><img src="img/k_1.jpg" alt=""></div>
-                            <p class="title">Индивидуальный<br>подход</p>
-                            <p class="text">
-                                 Компания ES-Studio<br>
-                                  предлагает свои услуги и<br>
-                                  партнерство. 
-                            </p>
-                        </div>
-                        <div class="box">
-                            <div class="img"><img src="img/k_2.jpg" alt=""></div>
-                            <p class="title">Комплексные<br>решения</p>
-                            <p class="text">
-                                 Компания ES-Studio<br>
-                                  предлагает свои услуги и<br>
-                                  партнерство. 
-                            </p>
-                        </div>
-                        <div class="box">
-                            <div class="img"><img src="img/k_3.jpg" alt=""></div>
-                            <p class="title">Гибкие цены</p>
-                            <p class="text">
-                                 Компания ES-Studio<br>
-                                  предлагает свои услуги и<br>
-                                  партнерство. 
-                            </p>
-                        </div>
-                        <div class="box">
-                            <div class="img"><img src="img/k_4.jpg" alt=""></div>
-                            <p class="title">Надежность</p>
-                            <p class="text">
-                                 Компания ES-Studio<br>
-                                  предлагает свои услуги и<br>
-                                  партнерство. 
-                            </p>
-                        </div>
-                    </div><!--advantages-->
-                    <div class="help clear">
-                        <div class="column left">
-                            <div class="img">
-                                <img src="img/si_2.png" alt="">
-                            </div>
-                            <div class="text">
-                                <p class="t1">У вас появились вопросы?</p>
-                                <p class="t2">Задайте их нашим специалистам </p>
-                            </div>
-                        </div>
-                        <div class="column right">
-                            <div class="img"><img src="img/si_1.png" alt=""></div>
-                            <div class="text">
-                                <p class="t">Получите бесплатную консультацию!</p>
-                                <a href="#" class="button">Получить консультацию</a>
-                            </div>
-                        </div>
-                    </div><!--help-->
-                    <div class="social">
-                        <div class="t">Поделиться:</div>
-                        <div class="btn-cont">
-                            <a class="vk" href="#"></a>
-                            <a class="fb" href="#"></a>
-                            <a class="od" href="#"></a>
-                            <a class="vib" href="#"></a>
-                            <a class="call" href="#"></a>
-                        </div>
-                    </div><!--social-->
-                </div><!--info-cont-->
-            </div><!--right-column-->
-        </div>
-    </div><!--content-->
-    <footer>
+        </div><!--content-->
+        <footer>
         <div class="wrapper">
            <div class="clear">
                 <div class="column left">
@@ -183,6 +186,7 @@
             <div class="copy">2010 - 2016 © Es-Studio</div>
         </div>
     </footer><!--footer-->
+    </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/slick/slick.js"></script>
     <script src="js/script.js"></script>

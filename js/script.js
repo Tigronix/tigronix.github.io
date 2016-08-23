@@ -14,5 +14,17 @@ $(document).ready(function(){
             header.removeClass('fixed');
         }
     });
+    
+    //mob-menu
+    $('#mob-menu').click(function(){
+       $(this).hide()
+       $('#mob-close').show()
+       $('.mob-switch').show()
+    });
+    $('#mob-close').click(function(){
+       $(this).hide()
+       $('.mob-switch').hide()
+       $('#mob-menu').show()
+    });
 
 });
