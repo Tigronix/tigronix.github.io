@@ -48,7 +48,7 @@ header .mob-switch .mob-close i {font-size: 26px; color: #774aaf; cursor: pointe
     header .contact-info {float: none; height: auto; width: 30%; margin: 0 30px 0 0;}
     .mobile-toggle {display: block;}
 }
-@media (max-width:740px) {/*740*/
+@media (max-width:1024px) {/*740*/
     header .contact-info {width: 28%; text-align: center;}
     header .contact-info .phone {display: inline-block; font-size: 22px; margin: 0; text-align: center;}
     header .contact-info .text {font-size: 16px; margin: 7px 0 0 0; text-align: center;}
@@ -209,7 +209,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a78cca', end
     .help .right .text {width: auto;}
     .help .right .text .t {font-size: 16px; padding-left: 16px;}
 }
-@media (max-width:740px) {/*740*/
+@media (max-width:1024px) {/*740*/
     .left-column {display: none;}
     .right-column {width: 100%;}
     .index-slider .text {margin: 14px 0 0 15%; width: 200px; font-size: 14px;}
