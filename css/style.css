@@ -87,8 +87,8 @@ header .mob-switch .mob-close i {font-size: 26px; color: #774aaf; cursor: pointe
 @media (max-width:740px) {/*320*/
     .menu {height: auto; line-height: normal; padding: 10px 0;}
     .menu .wrapper {display: flex; align-items: stretch; flex-direction: column-reverse;}
-    .menu .services {margin: 0; text-align: center; align-self: flex-start;}
-    .menu h1 {text-align: center; font-size: 20px; margin: 0 0 10px 0;}
+    .menu .services {margin: 0; text-align: center;}
+    .menu h1 {text-align: center; font-size: 20px; margin: 0 0 10px 0; padding: 0 2%;}
 }
 
 /*content*/
