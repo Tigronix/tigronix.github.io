@@ -133,7 +133,7 @@ body .product-slider .slick-dots li button:before {width: 11px; height: 11px; bo
 .pricelist .table .cell:nth-child(5) {width: 23.7569%;}
 
 /*fixed-menu*/
-.fixed-menu {position: fixed; bottom: 0; left: 0; right: 0; display: flex; background: #E4F1F9; height: 68px; align-items: center;}
+.fixed-menu {position: fixed; z-index: 999; bottom: 0; left: 0; right: 0; display: flex; background: #E4F1F9; height: 68px; align-items: center;}
 .fixed-menu .logo {background: url(../img/logo.png) no-repeat; width: 81px; height: 40px; position: absolute; left: 64px; top: 16px;}
 .fixed-menu .menu {margin: 0 0 0 22.8%; display: flex;}
 .fixed-menu .menu .link {display: flex; align-items: center; text-align: center; text-decoration: none; margin-left: 49px;}
@@ -144,7 +144,7 @@ body .product-slider .slick-dots li button:before {width: 11px; height: 11px; bo
 .unfixed {position: relative;}
 
 /*footer*/
-.footer {padding: 17px 2.2% 20px; height: 245px; background: #21787C; margin: 93px 0 300px 0; position: relative;}
+.footer {padding: 17px 2.2% 20px; height: 245px; background: #21787C; margin: 93px 0 0px 0; position: relative;}
 .footer .wrap {display: flex}
 .footer .contacts .link {font-size: 16px; color: #fff; font-weight: 300; margin-bottom: 4px; display: inline-block;}
 .footer .contacts .link i {font-size: 30px; color: #fff; line-height: 30px; vertical-align: middle; width: 25px; margin-right: 12px;}
