@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('#product-name').val(title + pathname);
     
     //Для прилипания над футером
-    var fixed = $('.fixed-menu').scroll.offset().top;
+    var fixed = $('.fixed-menu').scroll;
     var Elem = $('.footer').offset().top;
     var footer = $('.footer').innerHeight();
     console.log(fixed);
