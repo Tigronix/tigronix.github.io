@@ -102,8 +102,8 @@ nav .komp .text {margin-left: 10px;}
 .column-wrap .subright .line__select {justify-content: flex-start; align-items: center; padding: 0 9px 0 0;}
 .column-wrap .subright .line__select .type {width: 42.4686%; padding-right: 0;}
 .column-wrap .subright .line__select .jq-selectbox {width: 57.5313%; margin: 1px 0 0 2%;}
-.column-wrap .subright .warning {border: 1px solid #DC143C; display: flex; align-items: center; font-size: 16px; color: #dc143c; font-weight: 300; padding: 7.5px 8px; margin: 15px 0 11px 0;}
-.column-wrap .subright .warning i {color: #dc143c; margin-top: -9px;}
+.column-wrap .warning {border: 1px solid #DC143C; display: flex; width: 100%; align-items: center; font-size: 16px; color: #dc143c; font-weight: 300; padding: 7.5px 8px; margin: 15px 0 11px 0;}
+.column-wrap .warning i {color: #dc143c; margin-top: -9px;}
 .column-wrap .subright .price .value {font-size: 29px; font-weight: 500; color: #00b300; margin: -7px -5px 0 0; vertical-align: middle;}
 .column-wrap .subright .price .value .number {font-size: 29px; font-weight: 500;}
 .column-wrap .subright .value .help {text-align: center; background: #ffdd55; border-radius: 50%; cursor: pointer; display: inline-block; height: 20px; width: 20px; position: relative; line-height: 20px; color: #282828; font-size: 16px;}
@@ -238,7 +238,7 @@ body .product-slider .slick-dots li button:before {width: 11px; height: 11px; bo
     .info .social {margin: 0; width: 100%;}
 }
 /*fixed-menu*/
-.fixed-menu {position: fixed; z-index: 999; bottom: 0; left: 0; right: 0; display: flex; background: #E4F1F9; height: 68px; align-items: center; display: none;}
+.fixed-menu {position: fixed; z-index: 999; bottom: 0; left: 0; right: 0; display: flex; background: #E4F1F9; height: 68px; align-items: center;}
 .fixed-menu .logo {background: url(../img/logo.png) no-repeat; width: 81px; height: 40px; position: absolute; left: 64px; top: 16px;}
 .fixed-menu .menu {margin: 0 0 0 22.8%; display: flex;}
 .fixed-menu .menu .link {display: flex; align-items: center; text-align: center; text-decoration: none; margin-left: 49px;}

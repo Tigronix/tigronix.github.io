@@ -58,6 +58,9 @@ $(document).ready(function(){
 	}
     window.onscroll = function() {
 		goTop();
+        if ($('.fixed-menu').hasClass('.go-top--show')){
+            $(this).addClass('.go-top--show');
+        }
 	}
     
     //Мобильное меню
