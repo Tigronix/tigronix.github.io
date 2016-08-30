@@ -87,18 +87,18 @@ nav .komp .text {margin-left: 10px;}
 .column-wrap .subleft .img img {width: 100%; height: auto; vertical-align: bottom;}
 .column-wrap .subleft .text {padding: 0 0 0 12px; margin: 9px 0 0 0;}
 .column-wrap .subleft .fa-phone {margin: 0 15px 0 1px;}
-.column-wrap .subleft p {font-size: 16px; color: #000; font-weight: 300;}
+.column-wrap .subleft p {font-size: 18px; color: #000; font-weight: 300;}
 .column-wrap .subleft .p2 {font-size: 29px; color: #000; font-weight: 500; margin: 9px 0 21px 0;}
 .column-wrap .subleft .p4 {margin: 12px 0 0 0;}
 .column-wrap .subright {width: 58.8693%;}
 .column-wrap .line {display: flex; justify-content: space-between; position: relative; margin: 8px 0 0 0; align-items: center;}
-.column-wrap .line span, .column-wrap .line label {font-size: 16px; font-weight: 300;}
+.column-wrap .line span, .column-wrap .line label {font-size: 18px; font-weight: 300;}
 .column-wrap .line:nth-child(1), .column-wrap .line:nth-child(2), .column-wrap .line:nth-child(3) {margin: 4px 0 0 0;}
 .column-wrap .line:nth-child(6) {margin: 19px 0 0 0;}
 .column-wrap .line:nth-child(6) i {padding-left: 2px;}
 .column-wrap .line:first-child {margin: 0;}
 .column-wrap .line .dots {border-bottom: 1px dotted #000; height: 1px; position: absolute; left: 0; right: 0; bottom: 11px; z-index: 1;}
-.column-wrap .line .type {position: relative; z-index: 2; background: #fff; padding: 0 4px 0 1.8%; display: flex; align-items: center; vertical-align: middle;}
+.column-wrap .line .type {position: relative; z-index: 2; background: #fff; padding: 0 4px 0 1.8%; display: flex; align-items: center; vertical-align: middle; cursor: auto;}
 .column-wrap .line .value {padding: 0px 12px 0 4px; position: relative; z-index: 2; background: #fff;}
 .column-wrap .line__select {justify-content: flex-start; align-items: center; padding: 0 9px 0 0;}
 .column-wrap .line__select .type {width: 42.4686%; padding-right: 0;}
@@ -149,10 +149,10 @@ body .product-slider .slick-dots li button:before {width: 11px; height: 11px; bo
 @media (max-width: 1920px) {/*1600*/
     .column-wrap .subleft {margin-right: 3.5%; width: 36.7%;}
     .column-wrap .subleft .p2 {font-size: 25px;}
-    .column-wrap .subleft p {font-size: 16px;}
+    .column-wrap .subleft p {font-size: 18px;}
     .column-wrap .line {flex-wrap: flex; margin: 16px 0 0 0; flex-wrap: wrap;}
     .column-wrap .line:nth-child(1), .column-wrap .line:nth-child(2), .column-wrap .line:nth-child(3) {margin: 16px 0 0 0;}
-    .column-wrap .line span, .column-wrap .line label {font-size: 16px;}
+    .column-wrap .line span, .column-wrap .line label {font-size: 18px;}
     .column-wrap .subleft .p2 {font-size: 22px;}
     .column-wrap .line__select .type {padding-right: 0; width: 100%;}
     .column-wrap .line__select .jq-selectbox {width: 100%; margin: 0;}
