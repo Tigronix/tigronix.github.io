@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    //калькулятор
+    var initialPrice = 5500;
+    $('#matrix').on('change', function () {
+        $('#number').text(initialPrice + parseInt($(this).val()));
+    });
+    
     //Слайдер на странице товара
     $('#product-slider').slick({
         dots:true,
@@ -20,49 +26,33 @@ $(document).ready(function(){
     var pathname = window.location.pathname;
     var title = $('title').text();
     $('#product-name').val(title + pathname);
-    
-    //Для прилипания над футером
-    /*var fixed = $('.fixed-menu').offset().top;
-    var Elem = $('.footer').offset().top;
-    var footer = $('.footer').innerHeight();
-    console.log(fixed);
-    console.log(footer);
-    console.log(Elem);
-    $(window).scroll(function(){
-        if (fixed >= Elem + footer) {
-            $('.fixed-menu').addClass('unfixed');
+    //прилипание над футером    
+    $(document).ready(function() {
+            goTop();
+            $(document).on('click', '.go-top', function(){
+                $('body,html').animate({scrollTop: 0}, 500);
+            });
+        });
+        function goTop(){
+            var scroll = $(document).scrollTop();
+
+            if (scroll >= $(window).height()){
+                $('.go-top').addClass('go-top--show');
+            }else{
+                $('.go-top').removeClass('go-top--show');
+            }
+
+            if (scroll >= $(document).height() - $(window).height() - 0){
+                $('.go-top').addClass('go-top--bottom');
+            }else{
+                $('.go-top').removeClass('go-top--bottom');
+            }
         }
-        else {
-            $('.fixed-menu').removeClass('unfixed');
+
+        window.onscroll = function() {
+            goTop();
         }
-    });*/
-    	$(document).ready(function() {
-		goTop();
-		$(document).on('click', '.go-top', function(){
-			$('body,html').animate({scrollTop: 0}, 500);
-		});
-	});
-	function goTop(){
-		var scroll = $('.fixed-menu').offset().top;
-        var footer = $('.footer').offset().top;
-        var footer_size = $('.footer').innerHeight();
-        var true_class = $('.go-top').hasClass('go-top--show');
-        console.log(true_class);
-		
-		if (scroll >= footer){
-			$('.go-top').addClass('go-top--show');
-			
-		}else{
-			$('.go-top').removeClass('go-top--show');
-		}
-	}
-    window.onscroll = function() {
-		goTop();
-        if ($('.fixed-menu').hasClass('.go-top--show')){
-            $(this).addClass('.go-top--show');
-        }
-	}
-    
+
     //Мобильное меню
     $('#mob-menu').click(function(){
        $(this).hide()
@@ -76,13 +66,11 @@ $(document).ready(function(){
     });
     
     //Стилизованные селекты и т.п.
-    (function($) {
+   (function($) {
         $(function() {
 
           $('input, select').styler();
 
         });
-    })(jQuery);    
-    
-
+    })(jQuery); 
 });

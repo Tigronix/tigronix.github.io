@@ -64,15 +64,15 @@
                                <span class="value">15,6"</span>
                            </div>
                            <div class="line line__select">
-                               <label for="matrix" class="type"><i class="fa fa-eye"></i>Покрытие матрицы:</label id="matrix">
-                               <select name="" id="matrix" class="styler">
-                                   <option value="">Не знаю какое</option>
-                                   <option value="">Матовое (+300 руб.)</option>
-                                   <option value="">Глянцевое</option>
+                               <label class="type"><i class="fa fa-eye"></i>Покрытие матрицы:</label>
+                               <select name="" id="matrix" class="">
+                                   <option value="0">Не знаю какое</option>
+                                   <option id="mat" value="500">Матовое (+500 руб.)</option>
+                                   <option value="0">Глянцевое</option>
                                </select>
                            </div>
                            <div class="line line__select">
-                               <label for="resolution" class="type"><i class="fa fa-arrows-alt"></i>Разрешение экрана:</label id="matrix">
+                               <label for="resolution" class="type"><i class="fa fa-arrows-alt"></i>Разрешение экрана:</label>
                                <select name="" id="resolution" class="styler">
                                    <option value="">1366 x 768 px, HD</option>
                                    <option value="">1920 x 1080 px, Full HD</option>
@@ -85,8 +85,8 @@
                                <span class="value">Светодиодная (LED)</span>
                            </div>
                            <div class="line line__select">
-                               <label for="matrix" class="type"><i class="fa fa fa-thumb-tack"></i>Крепление матрицы:</label id="matrix">
-                               <select name="" id="matrix" class="styler">
+                               <label for="direction" class="type"><i class="fa fa fa-thumb-tack"></i>Крепление матрицы:</label>
+                               <select name="" id="direction" class="styler">
                                    <option value="">По бокам</option>
                                    <option value="">Сверху / снизу</option>
                                    <option value="">Не знаю какое</option>
@@ -97,23 +97,23 @@
                                <div class="dots"></div>
                                <span class="value">40 pin, разъем справа</span>
                            </div>
-                           <div class="line price">
-                               <span class="type"><i class="fa fa-rouble"></i> Стоимость замены матрицы:</span>
-                               <div class="dots"></div>
-                               <span class="value">
-                                   <span class="number">от 5 500 руб.</span>
-                                   <span class="help">
-                                       <span>?</span>
-                                       <span class="title">Гарантия производителя</span>
-                                   </span>
-                               </span>
-                           </div>
                            <div class="existence">
                                <span class="circle"></span>
                                <span class="text exist">В наличии на складе:</span>
                                <span class="text not-exist">Нет в наличии</span>
                                <span class="value">1 шт.</span>
                            </div>
+                       </div>
+                       <div class="line price">
+                           <span class="type"><i class="fa fa-rouble"></i> Стоимость замены матрицы:</span>
+                           <div class="dots"></div>
+                           <span class="value">
+                               <span class="number">от <span id="number">5500</span> руб.</span>
+                               <span class="help">
+                                   <span>?</span>
+                                   <span class="title">Гарантия производителя</span>
+                               </span>
+                           </span>
                        </div>
                        <div class="warning">
                            <i class="fa fa-check"></i>
