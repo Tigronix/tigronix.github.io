@@ -208,7 +208,7 @@ body .product-slider .slick-dots li button:before {width: 11px; height: 11px; bo
 /*price-list*/
 .pricelist {width: 50.7%; padding-right: 1%;}
 .pricelist h3 {color: #b30505; font-size: 29px; font-weight: 500; margin-bottom: 21px;}
-.pricelist .table .head .cell {border: 1px solid transparent; font-size: #000; font-size: 16px; font-weight: 500; line-height: 21px; background: #ECF6F8;}
+.pricelist .table .head .cell {border: 1px solid transparent; font-size: #000; font-size: 17px; font-weight: 500; line-height: 21px; background: #ECF6F8;}
 .pricelist .table .head .cell:nth-child(2) {color: #000; line-height: 21px;}
 .pricelist .table .head .cell:nth-child(5) {background: #ECF6F8;}
 .pricelist .table .head .cell:nth-child(5):hover {background: #ECF6F8;}
@@ -221,7 +221,7 @@ body .product-slider .slick-dots li button:before {width: 11px; height: 11px; bo
 .pricelist .table .cell:nth-child(5):hover, .pricelist .table .cell:nth-child(5):hover .button__serv {background: #21787C;}
 .pricelist .social {margin: 30px 0 0 0;}
 @media (max-width:1600px) {/*1280px*/
-    .pricelist .table .cell {font-size: 15px;}
+    .pricelist .table .cell {font-size: 17px;}
     
 }
 @media (max-width:1024px) {/*740*/
