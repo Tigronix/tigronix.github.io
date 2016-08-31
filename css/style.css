@@ -27,6 +27,23 @@ textarea {display: inline-block; width: 100%; min-height: 86px; resize: vertical
 .header .fa {font-size: 43px; width: 40px; color: #fff; margin-left: 4px;}
 .header h1 {font-size: 37px; font-weight: 300; color: #fff; margin: -10px 0 0 1.5%;}
 .header .phone {font-size: 43px; color: #fff; margin-top: -25.5px; position: absolute; right: -6px; top: 50%; width: 343px;}
+@media (max-width:1240px) {/*1024*/
+    .header .wrapper {width: 100%; padding: 0 2%;}
+    .header h1 {margin-top: 0; font-size: 31px;}
+    .header .phone {font-size: 32px; margin-top: -19px; right: 2%; width: auto;}
+}
+@media (max-width:1024px) {/*740*/
+    .header .fa {font-size: 30px; width: auto; margin-left: 0;}
+    .header h1{font-size: 21px;}
+    .header .phone {font-size: 26px; margin-top: -15.5px;}
+}
+@media (max-width:740px) {/*320*/
+    .header {height: auto; text-align: center; padding: 10px 0;}
+    .header .wrapper {justify-content: center;}
+    .header .fa {display: none;}
+    .header .phone {font-size: 26px; margin-top: 10px; position: relative; width: 100%; right: auto; top: auto;}
+}
+
 
 /*menu*/
 .menu {box-shadow: 0 0 3px #2f4f4f; background: #f5f5f5; position: relative; z-index: 2;}
@@ -36,6 +53,13 @@ nav {height: 45px; display: flex; flex-wrap: wrap; align-items: center; padding:
 nav a {transition: .3s; font-size: 21px; font-weight: 500; color: #000; margin: -8px 0 0 8.7%;}
 nav a:first-child {margin-left: 0;}
 nav a:hover {color: #2E8B57;}
+@media (max-width:1240px) {/*1024*/
+    .menu .wrapper {width: 100%; padding: 0 2%;}
+}
+@media (max-width:740px) {/*320*/
+    nav {justify-content: space-between; padding: 0;}
+    nav a {margin: 0;}
+}
 
 /*send*/
 .send {width: 1250px; height: 756px; background: url(../img/index-man.jpg) no-repeat; background-size: cover; margin: 0 auto; position: relative;}
@@ -52,6 +76,21 @@ nav a:hover {color: #2E8B57;}
 .send .work-location p {font-size: 24px; color: #fff; font-weight: 300;}
 .send .work-location .title {font-weight: 500; margin-bottom: 20px;}
 .send .request {background: rgba(161,42,34, .6); height: 70px; display: flex; align-items: center; position: absolute; bottom: 0; left: 0; right: 0; color: #fff; font-size: 29px; padding: 0 0 0 1.5%;}
+@media (max-width:1250px) {/*1024*/
+    .send {width: 100%;}
+    .send .request {font-size: 24px;}
+}
+@media (max-width:1024px) {/*740*/
+    .send .request {text-align: center;}
+}
+@media (max-width:740px) {/*320*/
+    .send {height: 560px;}
+    .send .form {top: 5%; width: auto; right: 2%; left: 2%;}
+    .send .request {font-size: 19px;}
+    .send .work-location {display: none;}
+    .send .text-green {display: none;}
+}
+
 
 /*title-line*/
 .title-line {background: rgba(60,163,27,.95); height: 69px; line-height: 69px; text-align: center; box-shadow: 0 0 2px #2f4f4f; font-size: 37px; color: #fff; font-weight: 300; text-transform: uppercase;}
@@ -69,14 +108,38 @@ nav a:hover {color: #2E8B57;}
 .kinds .item-wrap .item .fa-road {font-size: 85px; line-height: 87px; width: 90px;}
 .kinds .more-info {width: 1156px; margin: 33px auto 0 auto; color: #000; font-size: 29px; font-weight: 300; height: 51px; line-height: 51px;}
 .kinds .more-info span {vertical-align: middle;}
-.kinds .more-info .phone {font-size: 43px; color: #000; margin:  0 0 0 33px;}
+.kinds .more-info .phone {font-size: 42px; color: #000; margin:  0 0 0 33px;}
+@media (max-width:1156px) {/*1024*/
+    .kinds .more-info {width: 100%; padding: 0 2%; display: flex; align-items: center; justify-content: space-between; line-height: normal; font-size: 22px; flex-wrap: wrap;}
+    .kinds .more-info .phone {margin: 0px; font-size: 40px;}
+}
+@media (max-width:1146px) {/*1024*/
+    .kinds .item-wrap {width: 100%;}
+}
+@media (max-width:1146px) {/*1024*/
+    .kinds .more-info {font-size: 19px;}
+    .kinds .more-info .phone {font-size: 24px;}
+}
+@media (max-width:900px) {/*740*/
+    .kinds .item-wrap  {padding: 0 2%;}
+    .kinds .item-wrap .item {width: 32.6666%;}
+}
+@media (max-width:740px) {/*430*/
+    .kinds .item-wrap .item {width: 48%;}
+    .kinds .more-info {height: auto; justify-content: center; text-align: center;}
+}
+@media (max-width:430px) {/*320*/
+    .kinds .item-wrap {padding: 0 1%;}
+    .kinds .item-wrap .item {width: 100%;}
+}
+
 
 /*advantages*/
 .advantages {margin: 30px 0 0 0;}
 .advantages .title-line {margin-bottom: 42px;}
 .advantages .item-wrap {width: 1207px; margin: -27.5px auto; display: flex; flex-wrap: wrap; justify-content: space-between;}
 .advantages .item-wrap .item {width: 50%; margin: 27.5px 0; display: flex; align-items: center;}
-.advantages .item-wrap .item .img {width: 130px; height: 130px; line-height: 130px; text-align: center; background: #F3FEE5 url(../img/border-green.jpg) no-repeat center center;}
+.advantages .item-wrap .item .img {width: 130px; height: 130px; line-height: 130px; text-align: center; background: url(../img/border-green.jpg) no-repeat center center;}
 .advantages .item-wrap .item .img .fa {vertical-align: middle; transition: .4s;}
 .advantages .item-wrap .item:hover .img .fa {color: #000;}
 .advantages .item-wrap .item .img .fa {cursor: default;}
@@ -92,6 +155,41 @@ nav a:hover {color: #2E8B57;}
 .advantages .in-time .text .phone span {font-size: 43px; font-weight: normal; color: #000; margin: 0 0 0 44px;}
 .advantages .in-time .send-it {width: 47.0686%; display: flex; background: url(../img/in-time.jpg) no-repeat center top;}
 .advantages .in-time .send-it button {width: 100%; margin: 0; align-self: flex-end;}
+@media (max-width:1250px) {/*1024*/
+    .advantages .in-time {width: 100%;}
+    .advantages .in-time .send-it {background-size: 100% auto;}
+    .advantages .in-time .text .phone {margin-top: 50px; padding-left: 0;}
+    .advantages .in-time .text .phone span {font-size: 36px; margin: 0 0 0 20px;}
+}
+@media (max-width:1207px) {/*1024*/
+    .advantages .item-wrap {width: 100%; padding: 0 2%;}
+    .advantages .item-wrap .item {width: 48%;}
+    .advantages .item-wrap .item .text {width: 67%; font-size: 18px;}
+}
+@media (max-width:1024px) {/*740*/
+    .title-line {font-size: 30px;}
+    .advantages .item-wrap {margin: -13px 0;}
+    .advantages .item-wrap .item {flex-wrap: wrap; justify-content: center; margin: 13px 0;}
+    .advantages .item-wrap .item .img {width: 100%;}
+    .advantages .item-wrap .item .text {width: 100%; text-align: center; margin: 20px 0 0 0; font-size: 18px;}
+    .advantages .in-time {height: auto;}
+    .advantages .in-time .text {width: 100%;}
+    .advantages .in-time .text .phone {margin-top: 20px;}
+    .advantages .in-time .send-it {width: 100%; height: 230px; background-size: auto auto; margin-top: 30px;}
+}
+@media (max-width:740px) {/*320*/
+    .title-line {font-size: 21px; height: auto; line-height: normal; display: flex; justify-content: center; align-items: center; padding: 10px 0;}
+    .advantages .item-wrap .item {width: 100%;}
+    .advantages .in-time .text p {font-size: 20px;}
+    .advantages .in-time .text .phone span {font-size: 22px; margin: 0;}
+}
+@media (max-width:590px) {
+    .advantages .in-time .send-it {background-size: 100% auto;}
+}
+@media (max-width:400px) {
+    .advantages .in-time .send-it {height: 120px;}
+    .advantages .in-time .send-it button {height: 42px; line-height: 42px; font-size: 20px;}
+}
 
 /*contact*/
 .contact {margin: 21px 0 0 0; height: 100%;}
@@ -100,8 +198,28 @@ nav a:hover {color: #2E8B57;}
 .contact .text span:nth-child(2) {font-weight: 300; margin-left: 21px;}
 .contact .text:nth-child(2) {margin-bottom: 21px;}
 .contact .text:nth-child(2) span:nth-child(2) {font-size: 24px; margin-left: 20px;}
+@media (max-width:1230px) {/*1024*/
+    .contact .wrapper {width: 100%}
+    .contact .wrapper p {padding: 0 2%;}
+}
+@media (max-width:1024px) {/*740*/
+    .contact .text {font-size: 19px;}
+    .contact .text span:nth-child(2) {margin-left: 10px;}
+}
 
 /*map*/
 .map {height: 350px;}
 
-
+/*footer*/
+.footer {background: #3da31b; height: 68px; font-size: 16px; color: #fff; font-weight: 300; margin: 58px 0 0 0;}
+.footer .wrapper {width: 1212px; height: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;}
+.footer a {transition: .3s; color: #fff;}
+.footer a:hover {color: #ECC519;}
+@media (max-width:1230px) {/*1024*/
+    .footer .wrapper {width: 100%; padding: 0 2%;}
+}
+@media (max-width:740px) {/*320*/
+    .footer {height: auto; line-height: normal;}
+    .footer .wrapper {padding: 5% 2%;}
+    .footer .copy {margin-bottom: 20px;}
+}
