@@ -31,18 +31,18 @@
                     <div class="text-green">
                         ПРЕДОСТАВИМ<br>РАЗНОРАБОЧИХ,<br>ЗЕМЛЕКОПОВ, ГРУЗЧИКОВ... 
                     </div>
-                    <form action="POST" id="feedback-form" class="form">
+                    <form method="post" action="mail.php" id="feedback-form" class="form">
                         <div class="title"><i class="fa fa-paper-plane-o"></i>Онлайн заявка</div>
                         <div class="inpbox">
-                            <input value="name" placeholder="Укажите имя" type="text" required name="nameFF">
+                            <input name="name" placeholder="Укажите имя" type="text" required>
                             <i class="fa fa-user"></i>
                         </div>
                         <div class="inpbox">
-                            <input value="phone" type="tel" class="name" placeholder="Номер телефона" required="" title="Номер должен содержать 11 цифр и начинаться с 7" pattern="[7][0-9]{10}" name="contactFF">
+                            <input type="tel" name="tel" placeholder="Номер телефона" required="" title="Номер должен содержать 11 цифр и начинаться с 7" pattern="[7][0-9]{10}">
                             <i class="fa fa-phone"></i>
                         </div>
                         
-                        <textarea value="msg" name="messageFF" placeholder="Опишите ваши задачи..."></textarea>
+                        <textarea name="message" placeholder="Опишите ваши задачи..."></textarea>
                         <button>отправить заявку</button>
                     </form>
                     <div class="work-location">
