@@ -27,6 +27,26 @@ textarea {display: inline-block; width: 100%; min-height: 86px; resize: vertical
 .header .fa {font-size: 43px; width: 40px; color: #fff; margin-left: 4px;}
 .header h1 {font-size: 37px; font-weight: 300; color: #fff; margin: -10px 0 0 1.5%;}
 .header .phone {font-size: 43px; color: #fff; margin-top: -25.5px; position: absolute; right: -6px; top: 50%; width: 343px;}
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: red;
+}
+
+header.clone {
+    position: fixed;
+    top: -60px;
+    transition: 0.2s top ease-in;
+    z-index: 999;
+}
+
+body.down header.clone {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
 @media (max-width:1240px) {/*1024*/
     .header .wrapper {width: 100%; padding: 0 2%;}
     .header h1 {margin-top: 0; font-size: 31px;}
@@ -46,13 +66,22 @@ textarea {display: inline-block; width: 100%; min-height: 86px; resize: vertical
 
 
 /*menu*/
-.menu {box-shadow: 0 0 3px #2f4f4f; background: #f5f5f5; position: relative; z-index: 2;}
+.menu {box-shadow: 0 0 3px #2f4f4f; background: #f5f5f5; position: relative; z-index: 2; height: 45px; display: flex; align-items: center;}
 .menu .fa, .menu .phone {display: none;}
-.menu .wrapper {width: 1200px; margin: 0 auto;}
-nav {height: 45px; display: flex; flex-wrap: wrap; align-items: center; padding: 0 0 0 5%;}
-nav a {transition: .3s; font-size: 21px; font-weight: 500; color: #000; margin: -8px 0 0 8.7%;}
+.menu .wrapper {width: 1200px; margin: 0 auto; height: 100%; display: flex; align-items: center;}
+nav {display: flex; flex-wrap: wrap; align-items: center; padding: 0 0 0 5%;}
+nav a {transition: .3s; font-size: 21px; font-weight: 500; color: #000; margin: 0px 0 0 99px;}
 nav a:first-child {margin-left: 0;}
 nav a:hover {color: #2E8B57;}
+.fixed {position: fixed; top: 0; left: 0; right: 0; height: 60px; background: #329E0F; z-index: 4; display: none;}
+.fixed .wrapper {display: flex; align-items: center; height: 100%;}
+.fixed .fa {font-size: 43px; width: 40px; color: #fff;}
+.fixed .fa:hover {color: #337AB7;}
+.fixed nav {height: auto;}
+.fixed nav a:first-child {margin: 0;}
+.fixed nav a {color: #fff; margin: 0 0 0 40px;}
+.fixed nav a:hover {color: #FCCF0A; }
+.fixed .phone {position: absolute; right: 20px; top: 50%; margin-top: -22px; font-size: 37px; color: #fff;}
 @media (max-width:1240px) {/*1024*/
     .menu .wrapper {width: 100%; padding: 0 2%;}
 }
