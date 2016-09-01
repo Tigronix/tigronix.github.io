@@ -90,6 +90,9 @@ nav a:hover {color: #2E8B57;}
     nav a {margin: 0;}
 }
 
+/*content*/
+.content {min-height: 620px;}
+
 /*send*/
 .send {width: 1250px; height: 756px; background: url(../img/index-man.jpg) no-repeat; background-size: cover; margin: 0 auto; position: relative;}
 .send .text-green {letter-spacing: 1px; font-family: 'PF DinDisplay Pro'; position: absolute; left: 0; top: 1%; padding: 15px 50px 7px 22px; font-size: 53px; font-weight: 300; color: #fff; text-transform: uppercase; background: rgba(50,158,15,.7);}
