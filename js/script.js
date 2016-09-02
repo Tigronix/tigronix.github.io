@@ -40,12 +40,52 @@ $(document).ready(function(){
       asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
-      slidesToShow: 10,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      focusOnSelect: true
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        focusOnSelect: true,
+        arrows: false,
+      responsive: [
+        {
+          breakpoint: 1601,
+          settings: {
+            slidesToShow: 8,
+          }
+        },
+        {
+          breakpoint: 1281,
+          settings: {
+            slidesToShow: 6,
+          }
+        },
+        {
+          breakpoint: 741,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+          
+      ]
     });    
-
     //hover в слайдере
     $('.slick-prev').hover(function(){
        if ($(this).hover) {
