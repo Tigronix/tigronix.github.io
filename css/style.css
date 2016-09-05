@@ -272,7 +272,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
 
 /*map*/
 .map {height: 712px; margin: 60px 0 92px;}
-.map .wrapper {height: 100%; background: url(../img/map.jpg) no-repeat center; background-size: 100% 100%; padding: 0;}
+.map .wrapper {height: 100%; background: url(../img/map.jpg) no-repeat center;}
 /*social*/
 .social .wrapper {display: flex; justify-content: space-between;}
 .social .up {font-size: 17px; font-weight: 300; color: #2b6227; display: flex; align-items: center; text-decoration: none; margin: -56px 12px 0 0;}
@@ -330,7 +330,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
 .mt-40 {margin-top: 40px;}
 .mt-79 {margin-top: 79px;}
 
+/*static*/
+.static {margin: 128px 0 0 0;}
+.static h1 {color: #2d6328; font-size: 27px; font-weight: 500; text-transform: uppercase; display: flex; align-items: center;}
+.static h1 .fa {color: #62b30f; font-size: 40px; width: 43px; transition: .3s;}
+.static h1:hover .fa {color: #FFD700;}
 
-
-
-
+/*bread*/
+.bread a {font-size: 16px; color: #000000; transition: .3s; text-decoration: none; font-weight: 300;}
+.bread a:after {display: inline-block; content: '/'; margin: 0 5px; color: #000!important;}
+.bread a:last-child:after {display: none;}
+.bread a:hover {color: #BCB86A; text-decoration: underline; transition: .3s;}
