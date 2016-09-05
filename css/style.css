@@ -14,6 +14,10 @@ html, body {height: 100%; line-height: 1.1875; color: #235c1e;}
     .wrapper {padding: 0 1%;}
 }
 
+/*unput/textarea*/
+input {font-size: 21px; display: inline-block; width: 100%; height: 46px; line-height: 46px; border: 1px solid #d8d1d9; border-radius: 3px; color: #000; padding: 0 0 0 60px; font-weight: 300;}
+textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 21px; font-weight: 300; resize: vertical; padding: 4px 4px 4px 15px; min-height: 98px;}
+
 /*header*/
 .header {background: rgba(255,255,255,.95); height: 100px; box-shadow: 0 0 10px rgba(0,0,0, .95); position: fixed; top: 0; left: 0; right: 0; z-index: 999;}
 .header .wrapper {display: flex; flex-wrap: wrap; align-items: center;}
@@ -210,13 +214,116 @@ html, body {height: 100%; line-height: 1.1875; color: #235c1e;}
 .info .left .hot {color: #dc143c;}
 .info .left .hot__title {font-size: 29px; margin-bottom: 7px;}
 .info .left .hot__text {font-size: 21px;}
-.info .left #timeref4cbbefacc942ce59210735748f1023 {text-align: left!important;}
+.info .left #timeref4cbbefacc942ce59210735748f1023 {text-align: left!important; margin: 23px 0 0 16px;}
 .info .left #timer-text-ef4cbbefacc942ce59210735748f1023-days {text-align: center!important;}
 .info .left #timer-text-ef4cbbefacc942ce59210735748f1023-hours {text-align: center!important;}
 .info .left #timer-text-ef4cbbefacc942ce59210735748f1023-minutes {text-align: center!important;}
 .info .left #timer-text-ef4cbbefacc942ce59210735748f1023-secundes {text-align: center!important;}
+.info .right {width: 49.9444%;}
+.info .right h4 {font-size: 29px; font-weight: 500; margin: 5px 0 22px 2px; text-transform: uppercase;}
+.info .right .video {border: 8px solid #FFD700;}
+.info .right .video img {width: 100%; height: auto; vertical-align: bottom;}
+.info .form {border: 6px solid #FFD700; background: #FFF0C0; width: 73%; min-height: 517px; margin: 54px 0 0 14.7%; padding: 20px 64px 30px 64px; position: relative;}
+.info .form:before {background: url(../img/arrow.png) no-repeat; width: 206px; height: 198px; display: block; position: absolute; left: -37.3%; top: 61%; content: '';}
+.info .form .title {font-size: 29px; text-align: center; font-weight: 500; text-transform: uppercase;margin: 0 0 29px 0;}
+.info .form .inpbox {position: relative; margin: 0 0 37px;}
+.info .form .inpbox input:focus + .fa {color: #235c1e; font-size: 25px;}
+.info .form .inpbox .fa {font-size: 22px; width: 22px; height: 22px; transition: .3s; cursor: default; position: absolute; left: 20px; top: 50%; margin-top: -11px; color: #dadada;}
+.info .form textarea {margin: 0 0 31px;}
+.info .form button {transition: .3s; height: 92px; line-height: 92px; width: 100%; text-align: center; border: none; font-size: 29px; cursor: pointer;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd800+0,ffff00+100 */
+    background: #ffd800; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffd800 0%, #ffff00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffd800 0%,#ffff00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffd800 0%,#ffff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd800', endColorstr='#ffff00',GradientType=0 ); /* IE6-9 */
+}
+.info .form button:hover {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffff00+0,ffd800+100 */
+background: #ffff00; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffff00 0%, #ffd800 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffff00 0%,#ffd800 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffff00 0%,#ffd800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#ffd800',GradientType=0 ); /* IE6-9 */
+}
+@media (max-width:1800px) {/*1600*/
+    .info .wrapper {padding: 0 2%;}
+}
+@media (max-width:1600px) {/*1280*/
+    .info .form {margin-left: 0; width: 100%;}
+    .info .form:before {display: none;}
+}
+@media (max-width:1280px) {/*1024*/
+    .info .wrapper {flex-wrap: wrap;}
+    .info .left {width: 100%;}
+    .info .right {width: 100%;}
+}
+@media (max-width:740px) {/*320*/
+    .info .left h1 {font-size: 33px; text-align: center;}
+    .info .left h2 {text-align: center; font-size: 23px;}
+    .info .left .mt-79 {margin-top: 40px;}
+    .info .left .mt-40 {margin-top: 20px;}
+    .info .left .accept li {font-size: 17px;}
+    #timeref4cbbefacc942ce59210735748f1023 {min-width: auto!important; height: auto!important; width: auto!important;}
+    .info .right {margin: 30px 0 0 0;}
+    .info .form {margin: 20px 0 0 0; padding: 20px;}
+    .info .form button {font-size: 20px;}
+}
 
-.info .right {width: 49.9444%; height: 500px; background: orange;}
+/*map*/
+.map {height: 712px; margin: 60px 0 92px;}
+.map .wrapper {height: 100%; background: url(../img/map.jpg) no-repeat center; background-size: 100% 100%; padding: 0;}
+/*social*/
+.social .wrapper {display: flex; justify-content: space-between;}
+.social .up {font-size: 17px; font-weight: 300; color: #2b6227; display: flex; align-items: center; text-decoration: none; margin: -56px 12px 0 0;}
+.social .up .fa {font-size: 60px; width: 51px; color: #aae52d; transition: .3s; margin: 0 0 0 12px;}
+.social .up:hover .fa {color: #FFD700;}
+@media (max-width:1024px) {/*740*/
+    .map {height: 356px;}
+}
+@media (max-width:740px) {/*320*/
+    .social .wrapper {flex-wrap: wrap; justify-content: flex-end;}
+    .social .pluso {width: 100%;}
+    .social .pluso .pluso-counter {display: none;}
+    .social .up {margin: 20px 0 0 0;}
+}
+
+/*footer*/
+.footer {height: 188px; box-shadow: 0 0 10px #000000; background: rgba(43,98,39,.95); margin: 10px 0 0 0; position: relative;}
+.footer .wrapper {display: flex; flex-wrap: wrap; height: 100%; align-items: center;}
+.footer .contact  {align-self: flex-start; margin: 17px 0 0 0;}
+.footer .contact .text {font-size: 21px; font-weight: 300; color: #fff; margin: 0 0 17px 0px; padding: 0 0 0 5px;}
+.footer .contact .text .fa {font-size: 25px; width: 14px; color: #aae52d; cursor: default; margin: 0 16px 0 6px;}
+.footer .contact .text:first-child:hover .fa {color: #FFD90D;}
+.footer .contact .text:first-child span {margin: 0;}
+.footer .contact span {font-size: 19px; font-weight: 500; color: #fff; margin: 0 14px 0 0;}
+.footer .sub-menu {border-left: 1px solid #9AE635; height: 90%; padding: 9px 0 0 19px; margin: 0 0 0% 9%;}
+.footer .sub-menu:nth-child(3) {margin: 0 0 0 7.1%;}
+.footer .sub-menu li {list-style-type: none; margin: 0 0 11px;}
+.footer .sub-menu a {color: #fff; font-size: 19px; transition: .3s; text-decoration: none; position: relative; font-weight: 300;}
+.footer .sub-menu a:hover {color: #9AE635;}
+.footer .sub-menu a:after {background: transparent; content: ''; display: block; height: 2px; position: absolute; left: 0; right: 0; margin-top: 2px; top: 100%; transform: translateY(10px); transition: .3s;}
+.footer .sub-menu a:hover:after {opacity: 1; transform: translateY(0px); background: #9AE635;}
+.footer .copy {font-size: 16px; color: #fff; font-weight: 300; margin: 22px 0 0 7px;}
+.footer .sign {position: absolute; right: 2.7%; top: 101px;}
+.footer .sign p:first-child {margin-bottom: 13px;}
+.footer .sign p {text-align: right;}
+.footer .sign span {font-size: 16px; color: #fff; font-weight: 300;}
+.footer .sign a {font-size: 16px; color: #fff; font-weight: 300; transition: .3s; position: relative; text-decoration: none;}
+.footer .sign a:hover {color: #9AE635;}
+.footer .sign a:after {background: transparent; content: ''; display: block; height: 2px; position: absolute; left: 0; right: 0; margin-top: 2px; top: 100%; transform: translateY(10px); transition: .3s;}
+.footer .sign a:hover:after {opacity: 1; transform: translateY(0px); background: #9AE635;}
+@media (max-width:1400px) {/*1280*/
+    .footer .sign {width: 200px;}
+}
+@media (max-width:1280px) {/*1024*/
+    .footer {height: auto;}
+    .footer .sign {position: relative; right: auto; top: auto; width: auto; margin: 20px 0 0 55%;}
+}
+@media (max-width:1024px) {/*740*/
+    .footer .contact {margin: 20px 0; width: 100%;}
+    .footer .sub-menu {width: 46%; margin: 0;}
+}
 
 /*margin*/
 .mt-21 {margin-top: 21px;}
