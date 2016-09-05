@@ -389,6 +389,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
     .plan .accept li {width: 100%;}
     .plan .accept li:nth-child(2n) {width: auto; padding: 0;}
     .plan h2 {text-align: center;}
+    .lol {}
 }
 
 
