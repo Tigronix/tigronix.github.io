@@ -380,7 +380,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
 .plan .accept {display: flex; flex-wrap: wrap;}
 .plan .accept li {width: 40%;}
 .plan .accept li:nth-child(even) {width: 60%;}
-.plan .accept span span {color: #2e8b57; font-size: 20px; font-weight: 500;}
+.plan .accept li:hover span span {color: #FFD700;}
+.plan .accept span span {color: #2e8b57; font-size: 20px; font-weight: 500; transition: .3s;}
 @media (max-width:1024px) {/*740*/
     .plan .accept li, .plan .accept span span {font-size: 16px;}
     .plan .accept li:nth-child(2n) {padding: 0 0 0 2%;}
