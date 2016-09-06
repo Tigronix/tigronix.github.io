@@ -108,4 +108,7 @@ $(document).ready(function(){
         var h=d[g]('body')[0];
         h.appendChild(s);
       }})();
+    
+    //fancybox
+    $(".fancybox").fancybox();
 });

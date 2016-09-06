@@ -14,7 +14,7 @@ html, body {height: 100%; line-height: 1.1875; color: #235c1e;}
     .wrapper {padding: 0 1%;}
 }
 
-/*unput/textarea*/
+/*input/textarea*/
 input {font-size: 21px; display: inline-block; width: 100%; height: 46px; line-height: 46px; border: 1px solid #d8d1d9; border-radius: 3px; color: #000; padding: 0 0 0 60px; font-weight: 300;}
 textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 21px; font-weight: 300; resize: vertical; padding: 4px 4px 4px 15px; min-height: 98px;}
 
@@ -43,12 +43,7 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 21px; font-weight: 
     .header .contacts .phone {font-size: 30px;}
     .header .contacts .address {font-size: 19px;}
 }
-@media (max-width:1600px) {/*1200*/
-    .header nav a {font-size: 16px;}
-    .header .contacts {margin-top: -26.5px; right: 1%;}
-    .header .contacts .phone {font-size: 22px; text-align: right;}
-    .header .contacts .address {font-size: 16px;}
-}
+
 @media (max-width:1280px) {/*1024*/
     .header .logo {min-width: auto;}
     .header nav {width: 65.596%;}
@@ -223,14 +218,14 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 21px; font-weight: 
 .info .right h4 {font-size: 29px; font-weight: 500; margin: 5px 0 22px 2px; text-transform: uppercase;}
 .info .right .video {border: 8px solid #FFD700;}
 .info .right .video img {width: 100%; height: auto; vertical-align: bottom;}
-.info .form {border: 6px solid #FFD700; background: #FFF0C0; width: 73%; min-height: 517px; margin: 54px 0 0 14.7%; padding: 20px 64px 30px 64px; position: relative;}
-.info .form:before {background: url(../img/arrow.png) no-repeat; width: 206px; height: 198px; display: block; position: absolute; left: -37.3%; top: 61%; content: '';}
-.info .form .title {font-size: 29px; text-align: center; font-weight: 500; text-transform: uppercase;margin: 0 0 29px 0;}
-.info .form .inpbox {position: relative; margin: 0 0 37px;}
-.info .form .inpbox input:focus + .fa {color: #235c1e; font-size: 25px;}
-.info .form .inpbox .fa {font-size: 22px; width: 22px; height: 22px; transition: .3s; cursor: default; position: absolute; left: 20px; top: 50%; margin-top: -11px; color: #dadada;}
-.info .form textarea {margin: 0 0 31px;}
-.info .form button {transition: .3s; height: 92px; line-height: 92px; width: 100%; text-align: center; border: none; font-size: 29px; cursor: pointer;
+.form {border: 6px solid #FFD700; background: #FFF0C0; width: 73%; min-height: 517px; margin: 54px 0 0 14.7%; padding: 20px 64px 30px 64px; position: relative;}
+.form:before {background: url(../img/arrow.png) no-repeat; width: 206px; height: 198px; display: block; position: absolute; left: -37.3%; top: 61%; content: '';}
+.form .title {font-size: 29px; text-align: center; font-weight: 500; text-transform: uppercase;margin: 0 0 29px 0;}
+.form .inpbox {position: relative; margin: 0 0 37px;}
+.form .inpbox input:focus + .fa {color: #235c1e; font-size: 25px;}
+.form .inpbox .fa {font-size: 22px; width: 22px; height: 22px; transition: .3s; cursor: default; position: absolute; left: 20px; top: 50%; margin-top: -11px; color: #dadada;}
+.form textarea {margin: 0 0 31px;}
+.form button {transition: .3s; height: 92px; line-height: 92px; width: 100%; text-align: center; border: none; font-size: 29px; cursor: pointer;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd800+0,ffff00+100 */
     background: #ffd800; /* Old browsers */
     background: -moz-linear-gradient(top,  #ffd800 0%, #ffff00 100%); /* FF3.6-15 */
@@ -238,7 +233,7 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 21px; font-weight: 
     background: linear-gradient(to bottom,  #ffd800 0%,#ffff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd800', endColorstr='#ffff00',GradientType=0 ); /* IE6-9 */
 }
-.info .form button:hover {
+.form button:hover {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffff00+0,ffd800+100 */
 background: #ffff00; /* Old browsers */
 background: -moz-linear-gradient(top,  #ffff00 0%, #ffd800 100%); /* FF3.6-15 */
@@ -250,8 +245,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
     .info .wrapper {padding: 0 2%;}
 }
 @media (max-width:1600px) {/*1280*/
-    .info .form {margin-left: 0; width: 100%;}
-    .info .form:before {display: none;}
+    .form {margin-left: 0; width: 100%;}
+    .form:before {display: none;}
 }
 @media (max-width:1280px) {/*1024*/
     .info .wrapper {flex-wrap: wrap;}
@@ -266,8 +261,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
     .info .left .accept li {font-size: 17px;}
     #timeref4cbbefacc942ce59210735748f1023 {min-width: auto!important; height: auto!important; width: auto!important;}
     .info .right {margin: 30px 0 0 0;}
-    .info .form {margin: 20px 0 0 0; padding: 20px;}
-    .info .form button {font-size: 20px;}
+    .form {margin: 20px 0 0 0; padding: 20px;}
+    .form button {font-size: 20px;}
 }
 
 /*map*/
@@ -337,6 +332,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
 .static h1 {color: #2d6328; font-size: 27px; font-weight: 500; text-transform: uppercase; display: flex; align-items: center; margin: 29px 0 38px 0;}
 .static h1 .fa {color: #62b30f; font-size: 40px; width: 43px; transition: .3s; margin:  0 19px 0 0px;}
 .static h1:hover .fa {color: #FFD700;}
+.static-desc {font-size: 19px; color: #000; font-weight: 300; margin: -11px 0 0 0;}
 @media (max-width:1800px) {/*1600*/
     .static .wrapper {padding: 0 2%;}
 }
@@ -390,9 +386,74 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
     .plan .accept li {width: 100%;}
     .plan .accept li:nth-child(2n) {width: auto; padding: 0;}
     .plan h2 {text-align: center;}
-    .lol {}
 }
 
+/*price*/
+.price .box-wrap {margin: 36px 0 0 0; display: flex; flex-wrap: wrap;}
+.price .t1 {font-size: 19px; color: #000; font-weight: 300; margin: -11px 0 0 0;}
+.price .right-box {width: 36.3%;}
+.price .form {margin: 0; width: 100%;}
+.price .form:before {display: none;}
+@media (max-width:1600px) {/*1280*/
+    .price .form button {font-size: 23px;}
+}
+@media (max-width:1280px) {/*1024*/
+    .price .right-box {width: 100%; margin-top: 30px;}
+}
+@media (max-width:740px) {/*320*/
+    .price .form button {font-size: 20px;}
+}
+
+/*price-table*/
+.price-table {display: table; width: 60.1111%; margin-right: 3.5%;}
+.price-table .row {display: table-row;}
+.price-table .cell {display: table-cell; text-align: center; height: 60px; vertical-align: middle; border: 1px solid #fff; color: #fff; font-size: 21px; font-weight: 300; letter-spacing: 1.07px;}
+.price-table .head .cell {background: #F5F5F5; font-size: 17px; font-weight: 500; color: #000;}
+.price-table .red {background: #FF6347;}
+.price-table .yellow {background: #FFA500;}
+.price-table .green {background: #68A54E;}
+@media (max-width:1280px) {/*1024*/
+    .price-table {width: 100%;}
+}
+@media (max-width:740px) {/*320*/
+    .price-table .cell:nth-child(2) {display: none;}
+    .price-table .cell {font-size: 15px;}
+    .price-table .head .cell {font-size: 15px;}
+}
+
+
+/*galery*/
+.galery {display: flex; flex-wrap: wrap; width: 65.3333%; margin: 0px 0 -50px;}
+.galery a {width: 20%; padding: 0 2%; text-align: center; display: block; margin: 50px 0;}
+@media (max-width:18000px) {/*1024*/
+    .galery {width: 100%; margin: 38px 0 -12px 0;}
+    .galery a {margin: 12px 0;}
+}
+@media (max-width:1280px) {/*1024*/
+    .galery a {width: 25%;}
+}
+@media (max-width:1024px) {/*740*/
+    .galery a {width: 33%;}
+}
+@media (max-width:740px) {/*320*/
+    .galery a {width: 100%;}
+}
+
+/*contact*/
+.contact h1 {margin-bottom: 22px;}
+
+/*contact-wrap*/
+.contact-wrap {display: flex; flex-wrap: wrap;}
+.contact-wrap .info {width: 16.6666%; margin-right: 0.7777%;}
+.contact-wrap .info .title {font-size: 19px; font-weight: 500; margin: 43px 0 14px 0;}
+.contact-wrap .info .title:first-child {margin-top: 0;}
+.contact-wrap .info .text {font-size: 19px; font-weight: 300; color: #000;}
+.contact-wrap .map {width: 82.5555%; margin: 0;}
+@media (max-width:1280px) {/*1024*/
+    .contact-wrap .info {width: 100%;}
+    .contact-wrap .info .title {margin: 20px 0 7px 0;}
+    .contact-wrap .map {width: 100%; margin-top: 30px;}
+}
 
 
 
