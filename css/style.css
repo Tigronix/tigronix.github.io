@@ -448,11 +448,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', end
 .contact-wrap .info .title {font-size: 19px; font-weight: 500; margin: 43px 0 14px 0;}
 .contact-wrap .info .title:first-child {margin-top: 0;}
 .contact-wrap .info .text {font-size: 19px; font-weight: 300; color: #000;}
-.contact-wrap .map {width: 82.5555%; margin: 0;}
+.contact-wrap .map {width: 82.5555%; margin: 22px 0 0 0; position: relative;}
+.contact-wrap .map .circle {display: block; text-decoration: none; width: 210px; height: 210px; background: #3fc8ff; border-radius: 50%; text-align: center; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; transition: .3s; position: absolute; left: 3.2%; top: 64.7%;}
+.contact-wrap .map .circle:hover {box-shadow: inset 0 0 0 3px #337AB7;}
+.contact-wrap .map .circle:hover .fa {color: #337AB7; transform: rotatey(180deg);}
+.contact-wrap .map .circle .fa {font-size: 40px; width: 40px; color: #265a88; transition: .3s;}
+.contact-wrap .map .circle p {font-size: 29px; font-weight: 500; color: #265a88;}
 @media (max-width:1280px) {/*1024*/
     .contact-wrap .info {width: 100%;}
     .contact-wrap .info .title {margin: 20px 0 7px 0;}
     .contact-wrap .map {width: 100%; margin-top: 30px;}
+    .contact-wrap .map .circle {width: 120px; height: 120px; left: 1%; top: 55%;}
+    .contact-wrap .map .circle .fa-eye {display: none;}
+    .contact-wrap .map .circle p {font-size: 16px;}
 }
 
 
