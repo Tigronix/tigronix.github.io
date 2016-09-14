@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="windows-1251">
+        <title>Парковые аллеи</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="js/slick/slick-theme.css">
+        <link rel="stylesheet" href="js/slick/slick.css">
+    </head>   
+    <body>
+        <div class="global-wrapper">
+            <header class="header">
+                <div class="wrapper">
+                    <i class="fa fa-bars" id="mob-menu"></i>
+                    <a href="#" class="logo"></a>
+                    <nav class="mob-switch">
+                        <i class="fa fa-close" id="mob-close"></i>
+                        <a href="#">О компании</a>
+                        <a href="#">О проекте</a>
+                        <a href="#">Квартиры</a>
+                        <a href="#">Условия покупки</a>
+                        <a href="#">Документы</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                    <div class="phone">
+                        <p class="t1">+7 (495) 463-08-67</p>
+                        <p class="t2">г. Красногорск, ул. Парковая, д. 12</p>
+                    </div>  
+                </div>
+            </header><!--header-->
+            <div class="content">
+               <div class="slider-wrap">
+                    <div class="slider-main">
+                        <div style="background-image: url(img/slide1.jpg);" class="slide">
+                            <div class="wrapper">
+                                <div class="menu">
+                                    <a href="#" class="link"><span class="big">1</span> <span class="name">Однокомнатные квартиры</span></a>
+                                    <a href="#" class="link"><span class="big">2</span> <span class="name">Двухкомнатные квартиры</span></a>
+                                    <a href="#" class="link"><span class="big">3</span> <span class="name">Трехкомнатные квартиры</span></a>
+                                </div>
+                                <div class="t1">
+                                    <p class="p1">Квартиры бизнес-класса в Красногорске от застройщика от 3,3 млн. руб.</p>
+                                    <p class="p2">Акция до 15.09.2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background-image: url(img/slide1.jpg);" class="slide">
+                            <div class="wrapper">
+                                <div class="menu">
+                                    <a href="#" class="link"><span class="big">1</span> <span class="name">Однокомнатные квартиры</span></a>
+                                    <a href="#" class="link"><span class="big">2</span> <span class="name">Двухкомнатные квартиры</span></a>
+                                    <a href="#" class="link"><span class="big">3</span> <span class="name">Трехкомнатные квартиры</span></a>
+                                </div>
+                                <div class="t1">
+                                    <p class="p1">Квартиры бизнес-класса в Мончегорске от застройщика от 3,3 млн. руб.</p>
+                                    <p class="p2">Акция до 15.09.2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--slider-main-->
+                    <a href="#" class="widjet phone">
+                       <i class="fa fa-phone"></i>
+                       <div class="t">Заказать<br>звонок</div>
+                    </a>
+                    <a href="#" class="widjet ask">
+                       <i class="fa fa-commenting"></i>
+                       <div class="t">Задать<br>вопрос</div>
+                    </a>
+                    <a href="#" class="widjet sale">
+                       <i class="fa fa-gift"></i>
+                       <div class="t">Акции</div>
+                    </a>
+                    <a href="#" class="widjet panorama">
+                       <i class="fa fa-plane"></i>
+                       <div class="t">Панорама</div>
+                    </a>
+                    <a href="#" class="widjet news">
+                       <i class="fa fa-bullhorn"></i>
+                       <div class="t">Новости</div>
+                    </a>
+                    <!--widjets-->
+                    <div class="flex-sale">
+                        <p class="t">ГИБКАЯ<br>СИСТЕМА<br>СКИДОК</p>
+                        <i class="fa fa-hand-pointer-o"></i>
+                    </div>
+                    <div class="mortgage">
+                        <p class="t1">ИПОТЕКА</p>
+                        <p class="t2">10%</p>
+                        <p class="t3">Первоначальный взнос</p>
+                    </div>
+                    <!--square's-->
+                   <i class="fa arrows fa-angle-left"></i>
+                   <i class="fa arrows fa-angle-right"></i>
+                    <!--arrows-->
+                </div><!--slider-wrap-->
+                <div class="block-wrap">
+                    <div class="left">
+                        <div class="news">
+                            <div class="title">Новости</div>
+                            <div class="item">
+                                <div class="date">07.09.2016</div>
+                                <div class="sale">Внимание акция!</div>
+                                <a href="#" class="link">Скидки на квартиры до 15%</a>
+                            </div>
+                            <div class="item">
+                                <div class="date">02.09.2016</div>
+                                <a href="#" class="link"> Лови момент! Сдача дома уже<br>через месяц!</a>
+                            </div>
+                            <div class="item">
+                                <div class="date">07.09.2016</div>
+                                <a href="#" class="link">Скидки на квартиры до 15%</a>
+                            </div>
+                        </div>
+                    </div><!--left-->
+                    <div class="center">
+                        <h2>Квартиры в Красногорске ЖК «Парковые аллеи»</h2>
+                        <div class="flat-desc">
+                            <p>Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                            <p>Охраняемая территория, подземный паркинг. Монолитно-кирпичные дома, квартиры бизнес-класса, индивидуальная планировка.</p>
+                            <p>Жилой комплекс вплотную примыкает к Губайловскому лесопарку.</p>
+                            <p>Митино, минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                            <p>Митино, минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                        </div><!--flat-desc-->
+                        <div class="video"></div><!--video-->
+                        <div class="more-info">
+                            <h3><i class="fa fa-building-o"></i>Подробная информация</h3>
+                            <p>Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                            <p>Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                            <p>Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, минут до ж/д станции «Павшино» cвоя школа, детские площадки и</p>
+                        </div><!--more-info-->
+                        <div class="plans">
+                            <h3><i class="fa fa-codepen"></i>Планировки</h3>
+                            <p>Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                        </div><!--plans-->
+                        <div class="infra">
+                            <h3><i class="fa fa-star-o"></i>Инфраструктура</h3>
+                            <p>Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                        </div><!--infra-->
+                        <div class="buy-way">
+                            <h3><i class="fa fa-key"></i>Способы покупки</h3>
+                            <p>Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                        </div><!--buy-way-->
+                        <div class="mortgage-desc">
+                            <h3><i class="fa fa-rouble"></i>Ипотека</h3>
+                            <ul class="tire-ul">
+                                <li>Сбербанк;</li>
+                                <li>Дельта-кредит;</li>
+                                <li>Банк Возрождение;</li>
+                                <li>Связь-банк.</li>
+                            </ul>
+                        </div><!--mortgage-desc-->
+                        <div class="contract">
+                            <h3><i class="fa fa-book"></i>Тип договора</h3>
+                            <ul class="tire-ul">
+                                <li>ДДУ (договор долевого участия); </li>
+                            </ul>
+                        </div><!--contract-->
+                        <div class="how-buy">
+                            <h3><i class="fa fa-comments-o"></i>Как купить квартиру</h3>
+                            <p>Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.Центр г. Красногорск, 6 км. от Москвы, 20 мин. до м. Митино, 15 минут до ж/д станции «Павшино» cвоя школа, детские площадки и физкультурно-оздоровительный комплекс с бассейном. В шаговой доступности располагаются больницы, поликлиники, детские сады.</p>
+                        </div><!--how-buy-->
+                    </div><!--center-->
+                </div><!--block-wrap-->
+            </div>
+            <footer class="footer"></footer>
+        </div>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script src="https://use.fontawesome.com/36d3e48178.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
