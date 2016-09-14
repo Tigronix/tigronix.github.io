@@ -89,7 +89,7 @@
 .slider-wrap .sale {top: 332px; background: #FF0000;}
 .slider-wrap .sale:hover {width: 100px;}
 .slider-wrap .panorama {background: #20B5FE; top: 550px;}
-.slider-wrap .news {background: #32CD32; top: 678px;}
+.slider-wrap .new {background: #32CD32; top: 678px;}
 .slider-wrap .flex-sale {background: url(../img/blue-sq.png) no-repeat; width: 223px; height: 228px; position: absolute; left: 5.6%; bottom: 75px; font-size: 24px; color: #fff; font-weight: 500; padding-top: 38px; text-align: center;}
 .slider-wrap .flex-sale .t {text-align: center; line-height: 29px;}
 .slider-wrap .flex-sale i {font-size: 53px; width: 52px; color: #fff; margin: 20px 0 0 0; cursor: default;}
