@@ -30,4 +30,15 @@ $(document).ready(function(){
            $('.fa-angle-right').toggleClass('hover');
        }
     });
+    //header-scroll
+    var header = $('.header');
+    $(window).scroll(function(){
+        var top = $(this).scrollTop();
+        if (top > 125) {
+            header.addClass('small');
+        }
+        else {
+            header.removeClass('small');
+        }
+    });
 });
