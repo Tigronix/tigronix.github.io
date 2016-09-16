@@ -300,4 +300,9 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 16px; font-weight: 
     .footer .center {width: 100%; border: none; padding: 0;}
 }
 
+/*static*/
+.static {padding: 169px 0 0;}
+.static .widjet.sale:hover {width: 200px;}
 
+/*sale*/
+.sale .center h1 {font-size: #ff0000; font-size: 37px; font-weight: 500;}
