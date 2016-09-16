@@ -72,34 +72,36 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 16px; font-weight: 
 }
 
 /*content*/
-.content {margin: 100px 0 0 0;}
+.content {margin: 100px 0 0 0; position: relative;}
 /*slider-main*/
 .slider-wrap {position: relative;}
 .slider-main .slide {height: 866px; background-size: cover;}
-.slider-main .menu {width: 47%; height: 84px; background: #fff; display: flex; align-items: center; position: absolute; left: 36.4%; top: 1.5%; padding: 0 17px; border-radius: 10px; justify-content: space-between; box-shadow: 1px 1px 3px 1px rgba(0,0,0,.3);}
-.slider-main .menu .link {display: flex; align-items: center; color: #000; font-size: 17px; text-decoration: none;}
-.slider-main .menu .link .name {text-decoration: underline; transition: .5s; font-weight: 300;}
-.slider-main .menu .link:hover .name {color: #28903F;}
-.slider-main .menu .link .big {font-size: 53px; color: #7cb449; font-weight: 500; margin-right: 17px;}
 .slider-main .t1 {font-size: 43px; line-height: 61px; font-weight: 300; color: #fff; position: absolute; left: 2.4%; top: 12.6%; width: 82.9%;}
 .slider-main .t1 p {display: inline-block; background: #88a752; padding: 5px 14px;}
 .slider-main .slick-prev, .slider-wrap .fa-angle-left {left: 2.5%;}
 .slider-main .slick-next, .slider-wrap .fa-angle-right {right: 7%;}
 .slider-main .slick-prev, .slider-main .slick-next {width: 36px; height: 65px; z-index: 3;}
 .slider-main .slick-prev:before, .slider-main .slick-next:before {display: none;}
+/*arrows*/
 .slider-wrap .arrows {color: #e3a63e; font-size: 103px; width: 37px; position: absolute; z-index: 2; top: 50%; margin-top: -51.5px;}
 .slider-wrap .hover {color: #FFFF00;}
-/*arrows*/
-.slider-wrap .widjet {width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column; position: absolute; right: 0%; text-decoration: none; transition: .5s;}
-.slider-wrap .widjet:hover {width: 200px;}
-.slider-wrap .widjet .t {font-size: 17px; font-weight: 500; color: #fff; text-align: center; transition: .5s;}
-.slider-wrap .widjet .fa {margin-bottom: 5px; font-size: 30px; width: 23px; color: #fff; display: block;}
-.slider-wrap .phone {top: 13px; background: #EA7D67;}
-.slider-wrap .ask {top: 141px; background: #8C5DDE;}
-.slider-wrap .sale {top: 332px; background: #FF0000;}
-.slider-wrap .sale:hover {width: 100px;}
-.slider-wrap .panorama {background: #20B5FE; top: 550px;}
-.slider-wrap .new {background: #32CD32; top: 678px;}
+/*slider-menu*/
+.content .menu {z-index: 2; width: 47%; height: 84px; background: #fff; display: flex; align-items: center; position: absolute; left: 36.4%; top: 0.5%; padding: 0 17px; border-radius: 10px; justify-content: space-between; box-shadow: 1px 1px 3px 1px rgba(0,0,0,.3);}
+.content .menu .link {display: flex; align-items: center; color: #000; font-size: 17px; text-decoration: none;}
+.content .menu .link .name {text-decoration: underline; transition: .5s; font-weight: 300;}
+.content .menu .link:hover .name {color: #28903F;}
+.content .menu .link .big {font-size: 53px; color: #7cb449; font-weight: 500; margin-right: 17px;}
+/*widjet*/
+ .widjet {width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column; position: absolute; right: 0%; text-decoration: none; transition: .5s; z-index: 2;}
+ .widjet:hover {width: 200px;}
+ .widjet .t {font-size: 17px; font-weight: 500; color: #fff; text-align: center; transition: .5s;}
+ .widjet .fa {margin-bottom: 5px; font-size: 30px; width: 23px; color: #fff; display: block;}
+.widjet.phone {top: 13px; background: #EA7D67;}
+.widjet.ask {top: 141px; background: #8C5DDE;}
+.widjet.sale {top: 332px; background: #FF0000;}
+.widjet.sale:hover {width: 100px;}
+.widjet.panorama {background: #20B5FE; top: 550px;}
+.widjet.new {background: #32CD32; top: 678px;}
 .slider-wrap .sq-wrap {position: absolute; left: 5.6%; bottom: 75px; display: flex;}
 .slider-wrap .flex-sale {background: url(../img/blue-sq.png) no-repeat; width: 223px; height: 228px; font-size: 24px; color: #fff; font-weight: 500; padding-top: 38px; text-align: center;}
 .slider-wrap .flex-sale .t {text-align: center; line-height: 29px;}
@@ -109,26 +111,27 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 16px; font-weight: 
 .slider-wrap .mortgage .t2 {font-size: 53px; margin: -6px 0 1px;}
 .slider-wrap .mortgage .t3 {font-size: 20px;}
 @media (max-width:1280px) {/*1024*/
-    .slider-main .menu {left: 2.4%; width: 60%;}
+    .content .menu {left: 2.4%; width: 60%; top: .4%;}
     .slider-wrap .sale {top: 271px;}
     .slider-main .t1 {width: 80%; font-size: 24px; line-height: 28px;}
     .slider-main .t1 p {padding: 10px 7px;}
     .slider-main .t1 .p2 {padding-top: 0;}
-    .slider-wrap .widjet:hover, .slider-wrap .sale:hover {width: 150px;}
+     .widjet:hover, .slider-wrap .sale:hover {width: 150px;}
 }
 @media (max-width:1024px) {/*740*/
-    .slider-wrap .widjet:hover, .slider-wrap .sale:hover {width: 100px;}
-    .slider-main .menu {width: 80%;}
-    .slider-main .menu .link .big {margin: 0;}
-    .slider-main .menu .link .name {text-align: center;}
+     .widjet:hover, .slider-wrap .sale:hover {width: 100px;}
+    .content .menu {width: 80%; top: .2%;}
+    .content .menu .link .big {margin: 0 10px 0 0;}
+    .content .menu .link .name {text-align: center; margin-right: 10px;}
+    .content .menu .link:last-child .name {margin-right: 0;}
 }
 @media (max-width:740px) {/*320*/
-    .slider-wrap .widjet {display: none;}
+     .widjet {display: none;}
     .slider-main .t1 {top: 63%; width: 95%;}
     .slider-main .t1 p {display: block;}
-    .slider-main .menu {width: auto; display: inline-block;height: auto; flex-wrap: wrap;}
-    .slider-main .menu .link {display: flex; justify-content: space-between;}
-    .slider-main .menu .link {width: 100%;}
+    .content .menu {width: auto; display: inline-block;height: auto; flex-wrap: wrap;}
+    .content .menu .link {display: flex; justify-content: space-between;}
+    .content .menu .link {width: 100%;}
     .slider-wrap .sq-wrap {display: none;}
     .slider-wrap .arrows, .slick-prev, .slick-next {top: 50%!important;}
     .slider-main .slide {height: 500px;}
