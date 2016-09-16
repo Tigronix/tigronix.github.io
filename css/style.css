@@ -338,8 +338,9 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 16px; font-weight: 
 .sale-wrap .item .plus:after {display: block; content: '+'; color: #c82466; font-size: 203px; font-weight: 500; position: absolute; right: 5px; bottom: 5px; line-height: 0.4; height: 105px; cursor: default;}
 .sale-wrap .grow .plus:after {color: #019CBB;}
 @media (max-width:1800px) {/*1600*/
-    .sale-wrap .item {background-size: 40% auto;}
-    .sale-wrap .item .plus {left: 18.8%; top: 41%;}
+    .sale-wrap .item {background-size: 40% auto!important;}
+    .sale-wrap .item .plus {left: 18.8%; top: 41%; font-size: 90px!important;}
+    .sale-wrap .item .plus:after {font-size: 90px!important;}
     .sale-wrap .take {background: #f5f5f5 url("../img/take.jpg") no-repeat scroll 3.3% center;}
     .sale-wrap .item .sale-square {left: 35%; top: 14%;}
     .sale-wrap .grow {background-size: 37% auto;}
