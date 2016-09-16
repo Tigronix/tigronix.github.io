@@ -334,8 +334,8 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 16px; font-weight: 
 .sale-wrap .easy-buy {background: #F5F5F5 url(../img/easy-buy.jpg) 13px center no-repeat;}
 .sale-wrap .rep {background: #F5F5F5 url(../img/rem.png) 13px center no-repeat;}
 /*sale-item-plus*/
-.sale-wrap .item .plus {color: #696969; font-size: 203px; font-weight: 500; position: absolute; left: 21%; top: 28%; line-height: 0.4; height: 105px;}
-.sale-wrap .item .plus:after {display: block; content: '+'; color: #c82466; font-size: 203px; font-weight: 500; position: absolute; right: 5px; bottom: 5px; line-height: 0.4; height: 105px;}
+.sale-wrap .item .plus {color: #696969; font-size: 203px; font-weight: 500; position: absolute; left: 21%; top: 28%; line-height: 0.4; height: 105px; cursor: default;}
+.sale-wrap .item .plus:after {display: block; content: '+'; color: #c82466; font-size: 203px; font-weight: 500; position: absolute; right: 5px; bottom: 5px; line-height: 0.4; height: 105px; cursor: default;}
 .sale-wrap .grow .plus:after {color: #019CBB;}
 
 
