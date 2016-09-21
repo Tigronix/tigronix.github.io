@@ -133,7 +133,7 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 16px; font-weight: 
      .widjet {display: none;}
     .slider-main .t1 {top: 63%; width: 95%;}
     .slider-main .t1 p {display: block;}
-    .content .menu {width: auto; display: inline-block;height: auto; flex-wrap: wrap;}
+    .content .menu {width: auto; display: inline-block;height: auto; flex-wrap: wrap; background: rgba(255,255,255, .7);}
     .content .menu .link {display: flex; justify-content: space-between;}
     .content .menu .link {width: 100%;}
     .slider-wrap .sq-wrap {display: none;}
