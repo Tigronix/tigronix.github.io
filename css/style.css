@@ -219,11 +219,12 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 16px; font-weight: 
 }
 @media (max-width:1024px) {/*740*/
     .block-wrap {padding: 0 2%;}
-    .block-wrap .left {width: 100%; padding: 0;}
+    .block-wrap .left {width: 100%; padding: 0; order: 1; margin-top: 30px;}
     .social {text-align: center;}
     .social .users-block {display: inline-block;}
     .more-info {margin-top: 33px;}
-    .block-wrap .center {width: 100%; padding: 0; margin-top: 30px;}
+    .block-wrap .center {width: 92%; padding: 0; margin-top: 30px;}
+    .block-wrap .main-wrapper {width: 100%;}
     .center h2 {text-align: center; font-size: 25px; margin-bottom: 20px;}
     .block-wrap .center h3 {margin: 0 0 11px; font-size: 22px;}
     .block-wrap .center h3 .fa {font-size: 22px; margin: 0 10px 0 0; width: 18px;}
@@ -314,7 +315,7 @@ textarea {width: 100%; border: 1px solid #d3d3d3; font-size: 16px; font-weight: 
     .widjet .t {font-size: 14px;}
 }
 @media (max-width:1024px) {/*740*/
-    .static .center {width: 100%;}
+    .static .center {width: 92%;}
 }
 @media (max-width:740px) {/*320*/
     .static {padding: 260px 0 0 0;}
