@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
     if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
 
-    $to = "sitename@yandex.ru"; /*Укажите адрес, га который должно приходить письмо*/
+    $to = "vditold@yandex.ru"; /*Укажите адрес, га который должно приходить письмо*/
     $sendfrom   = "smart-landing@yandex.ru"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
