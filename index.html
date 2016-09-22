@@ -216,7 +216,7 @@
 						<div class="right">
 							<h4>Посмотрите видео</h4>
 							<div class="video"><iframe width="100%" height="360" src="https://www.youtube.com/embed/3vZ_zK_GwK8?rel=0&quot;" frameborder="0" allowfullscreen></iframe></div><!--video-->
-							<form method="POST" id="formx" class="form" action="javascript:void(null);" onsubmit="call()">
+							<form method="post" id="form_id" class="form" action="javascript:void(null);" onsubmit="call()">
 								<div class="title">ЗАПИШИТЕСЬ НА ПРОСМОТР </div>
 								<div class="inpbox">
 									<input id="name" name="name" placeholder="Ваше имя" type="text" required="required">
@@ -226,7 +226,8 @@
 									<input type="tel" id="phone" name="phone" placeholder="Номер телефона" required="required" pattern="[7-8][0-9]{10}" title="Номер должен содержать 11 цифр и начинаться с 7 или 8">
 									<i class="fa fa-phone"></i>
 								</div>
-								<button type="submit">Записаться на просмотр</button>
+								<input type="text" name="site" id="site">
+								<input type="button" value="Записаться на просмотр" onclick="AjaxFormRequest('result_div_id', 'form_id', 'form.php')">
 							</form>
 							<div id="results">вывод</div>
 						</div><!--right-->
@@ -282,22 +283,27 @@
 			</footer><!--footer-->
 		</div>
 		<script src="js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" language="javascript">
-			function call() {
-				var msg   = $('#formx').serialize();
-				$.ajax({
-					type: 'POST',
-					url: 'res.php',
-					data: msg,
-					success: function(data) {
-						$('#results').html(data);
+		<script type="text/javascript">
+
+			/**
+             * Функция для отправки формы средствами Ajax
+             * @author Дизайн студия ox2.ru
+             **/
+			function AjaxFormRequest(result_id,form_id,url) {
+				jQuery.ajax({
+					url:     url, //Адрес подгружаемой страницы
+					type:     "POST", //Тип запроса
+					dataType: "html", //Тип данных
+					data: jQuery("#"+form_id).serialize(), 
+					success: function(response) { //Если все нормально
+						document.getElementById(result_id).innerHTML = response;
 					},
-					error:  function(xhr, str){
-						alert('Возникла ошибка: ' + xhr.responseCode);
+					error: function(response) { //Если ошибка
+						document.getElementById(result_id).innerHTML = "Ошибка при отправке формы";
 					}
 				});
-
 			}
+
 		</script>
 		<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
 		<script src="js/fancybox/jquery.fancybox.pack.js"></script>
