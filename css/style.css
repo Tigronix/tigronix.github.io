@@ -64,9 +64,13 @@ body {line-height: 1.185; background: #F5F5F5;}
 
 /*slider-wrap*/
 .slider-wrap {position: relative; z-index: 2;}
-.slider-wrap .arrows {position: absolute; font-size: 30px; color: #fff; z-index: 2; top: 50%;}
-.slider-wrap .left {left: 2%;}
-.slider-wrap .right {right: 2%;}
+.slider-wrap .arrows {position: absolute; font-size: 70px; color: #fff; z-index: 2; top: 50%; margin-top: -35px; transition: .3s;}
+.slider-wrap .left, body .slick-prev {left: 2%;}
+.slider-wrap .right, body .slick-next {right: 2%;}
+body .slick-prev, body .slick-next {width: 25px; height: 70px; z-index: 3;}
+body .slick-prev:before, body .slick-next:before {display: none;}
+body .slider-wrap .hover {color: #E92530;}
+
 
 /*slider-main*/
 .slider-main .slick-slide {height: 1267px; background-size: cover; position: relative;}
