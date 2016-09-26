@@ -1,22 +1,46 @@
-$(document).ready(function () {
-    $("form").submit(function () {
-        // Получение ID формы
-        var formID = $(this).attr('id');
-        // Добавление решётки к имени ID
-        var formNm = $('#' + formID);
-        $.ajax({
-            type: "POST",
-            url: 'mail.php',
-            data: formNm.serialize(),
-            success: function (data) {
-                // Вывод текста результата отправки
-                $(formNm).html(data); 
-            },
-            error: function (jqXHR, text, error) {
-                // Вывод текста ошибки отправки
-                $(formNm).html(error);         
-            }
-        });
-        return false;
+$(document).ready(function(){
+    //mob-menu
+    $('#mob-menu').click(function(){
+        $(this).fadeOut(300);
+        $('#mob-close').fadeIn(300);
+        $('.mob-switch').addClass('on').fadeIn(300);
     });
+    $('#mob-close').click(function(){
+        $(this).fadeOut(300);
+        $('.mob-switch').removeClass('on').fadeOut(300);
+        $('#mob-menu').fadeIn(300);
+    });
+    //slider-main
+    $('.slider-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        /*autoplay: true,
+        autoplaySpeed: 5000,*/
+        pauseOnFocus: true
+    });
+    //hover в слайдере
+    $('.slick-prev').hover(function(){
+       if ($(this).hover) {
+           $('.fa-angle-left').toggleClass('hover');
+       }
+    });
+    $('.slick-next').hover(function(){
+       if ($(this).hover) {
+           $('.fa-angle-right').toggleClass('hover');
+       }
+    });
+    //header-scroll
+    var header = $('.header');
+    $(window).scroll(function(){
+        var top = $(this).scrollTop();
+        if (top > 100) {
+            header.addClass('small');
+        }
+        else {
+            header.removeClass('small');
+        }
+    });
+	//fancbyox
+	$(".fancybox").fancybox();
 });
