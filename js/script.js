@@ -15,9 +15,17 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        /*autoplay: true,
-        autoplaySpeed: 5000,*/
-        pauseOnFocus: true
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnFocus: true,
+		responsive: [
+			{
+				breakpoint: 740,
+				settings: {
+					dots: true
+				}
+			}
+		]
     });
     //hover в слайдере
     $('.slick-prev').hover(function(){

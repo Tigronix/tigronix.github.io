@@ -104,6 +104,10 @@ body {line-height: 1.185; background: #F5F5F5;}
 body .slick-prev, body .slick-next {width: 25px; height: 70px; z-index: 3;}
 body .slick-prev:before, body .slick-next:before {display: none;}
 body .slider-wrap .hover {color: #E92530;}
+body .slick-dots {bottom: -3px;}
+.slick-active button {background: #EA2630!important;}
+body .slick-dots li button {width: 15px; height: 15px; padding: 0; background: #fff; border-radius: 50%;}
+body .slick-dots li button:before {display: none;}
 
 /*slider-main*/
 .slider-main .slick-slide {height: 1267px; background-size: cover; position: relative;}
