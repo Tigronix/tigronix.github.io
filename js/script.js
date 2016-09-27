@@ -35,10 +35,10 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var top = $(this).scrollTop();
         if (top > 100) {
-            header.addClass('small');
+            header.addClass('header__small');
         }
         else {
-            header.removeClass('small');
+            header.removeClass('header__small');
         }
     });
 	//fancbyox
