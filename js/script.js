@@ -20,7 +20,7 @@ $(document).ready(function(){
         pauseOnFocus: true,
 		responsive: [
 			{
-				breakpoint: 740,
+				breakpoint: 741,
 				settings: {
 					dots: true
 				}
