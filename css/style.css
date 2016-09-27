@@ -173,7 +173,7 @@ body .slick-dots li button:before {display: none;}
 	.slider-main .slick-slide .sale:hover {width: 150px;}
 	.slider-main .slick-slide .sale i {display: none;}
 	.slider-main .slick-slide .sale .t {font-size: 16px; margin-top: 0; font-weight: 500;}
-	.slider__blocks {top: 105%; position: relative;}
+	.slider__blocks {top: 1%; position: relative;}
 	.slider__blocks .block {margin-top: 20px;}
 	.slider__blocks .block .info {padding: 0px 10px 10px;}
 	body .slick-prev, body .slick-next, .slider-wrap .left, body .slick-prev {display: none!important;}
