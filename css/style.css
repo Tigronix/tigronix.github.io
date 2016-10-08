@@ -197,8 +197,8 @@ textarea {display: inline-block; width: 100%; border: 1px solid #c0c0c0; border-
 /*form*/
 .form {width: 19.2865%; height: 423px; background: #FFEDCC; padding: 22px 17px; border-radius: 6px;}
 .form .success, .form .fail {font-size: 16px; text-transform: uppercase; transition: .3s;}
-.form .success:after {text-align:center; content: 'Ваша заявка успешно отправлена!'; display: block;}
-.form .false:after {text-align:center; content: 'Ошибка. Ваша заявка не отправлена!'; display: block;}
+.form .success:after {text-align:center; content: 'Р’Р°С€Р° Р·Р°СЏРІРєР° СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅР°!'; display: block;}
+.form .false:after {text-align:center; content: 'РћС€РёР±РєР°. Р’Р°С€Р° Р·Р°СЏРІРєР° РЅРµ РѕС‚РїСЂР°РІР»РµРЅР°!'; display: block;}
 .form .title {color: #800000; font-size: 21px; font-weight: 500; margin-bottom: 27px;}
 .form .inpbox .fa {font-size: 22px; width: 22px; height: 22px; position: absolute; left: 9px; top: 50%; margin-top: -11px; color: #c0c0c0; transition: .3s;}
 .form .inpbox input:focus + .fa {color: #800000; font-size: 24px;}
@@ -310,7 +310,7 @@ textarea {display: inline-block; width: 100%; border: 1px solid #c0c0c0; border-
 
 /*social*/
 .social {font-size: 21px; font-weight: 500; letter-spacing: 1.07px; color:
-#808080;}
+	#808080;}
 @media (max-width:740px) {/*320*/
 	.social {margin-top: 20px;}
 }
