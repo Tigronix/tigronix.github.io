@@ -28,8 +28,8 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
-		/*autoplay: true,
-		autoplaySpeed: 5000,*/
+		autoplay: true,
+		autoplaySpeed: 5000,
 		pauseOnFocus: true
 	});
 	
