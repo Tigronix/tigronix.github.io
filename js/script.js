@@ -1,14 +1,12 @@
 $(document).ready(function(){
     //mob-menu
     $('.header__open').click(function(){
-        $(this).fadeOut(300);
         $('.header__close').fadeIn(300);
         $('.header__nav').addClass('header__on').fadeIn(300);
     });
     $('.header__close').click(function(){
         $(this).fadeOut(300);
         $('.header__nav').removeClass('header__on').fadeOut(300);
-        $('.header__open').fadeIn(300);
     });
 	
 	//header-scroll
@@ -31,7 +29,7 @@ $(document).ready(function(){
 		arrows: true,
 		autoplay: true,
 		autoplaySpeed: 5000,
-		pauseOnFocus: true,
+		pauseOnFocus: true
 	});
 	
 	//hover в слайдере
@@ -48,38 +46,4 @@ $(document).ready(function(){
 	
 	//fancbyox
 	$(".fancybox").fancybox();
-	
-	//vertical-slider
-	var slider = $.fn.fsvs({
-		speed : 1000,
-		bodyID : 'fsvs-body',
-		selector : '> .slide',
-		mouseSwipeDisance : 40,
-		afterSlide : function(){},
-		beforeSlide : function(){},
-		endSlide : function(){},
-		mouseWheelEvents : true,
-		mouseWheelDelay : false,
-		scrollableArea : 'scrollable',
-		mouseDragEvents : false,
-		touchEvents : true,
-		arrowKeyEvents : true,
-		pagination : true,
-		nthClasses : false,
-		detectHash : true
-	});
-	
-	//Universal Tabs
-	$(document).ready(function(){
-		$(document).on('click', '[data-id]', function(){
-			var id = $(this).attr('data-id');
-			var taba = $(this).attr('data-taba');
-			$('[data-id="'+id+'"]').each(function () {
-				if ($(this).attr('data-taba') == taba){
-					$(this).addClass('act').siblings().removeClass('act');
-				}
-			});
-			$('#'+id+' div[data-taba="'+taba+'"]').show().addClass('table').siblings().hide().removeClass('table_off');
-		});
-	});
 });
