@@ -214,7 +214,7 @@ h2:after {display: block; content: ''; position: absolute; top: 56%; height: 1px
 .product__triangle p .fa {font-size: 47px; color: #fff; margin-top: 10px; transform: rotate(45deg);}
 .product__price {width: 100%; height: 94px; background: rgba(235,235,234,.9); display: flex; align-items: center; justify-content: center; position: relative; z-index: 2;}
 .product__price .t1 {font-size: 43px; color: #808080; text-decoration: line-through; margin-right: 24px;}
-.product__price .t2 {font-size: 64px; color: #ff0000;}
+.product__price .t2 {font-size: 55px; color: #ff0000;}
 .product__services {}
 .product__services .item {height: 90px; background: #D8F0E3; border-radius: 8px; display: flex; align-items: center; flex-wrap: wrap; padding: 0 10%; margin-top: 19px;}
 .product__services .item i {font-size: 43px; color: #25a53b; transition: .3s; margin-right: 4%; width: 30px;}
