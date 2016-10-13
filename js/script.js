@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var header = $('.header');
 	$(window).scroll(function(){
 		var top = $(this).scrollTop();
-		if (top > 120) {
+		if (top > 110) {
 			header.addClass('header__small');
 		}
 		else {
@@ -35,12 +35,12 @@ $(document).ready(function(){
 	//hover в слайдере
 	$('.slick-prev').hover(function(){
 		if ($(this).hover) {
-			$('.fa-angle-left').toggleClass('angle_hover');
+			$('.circle_angle__left').toggleClass('angle_hover');
 		}
 	});
 	$('.slick-next').hover(function(){
 		if ($(this).hover) {
-			$('.fa-angle-right').toggleClass('angle_hover');
+			$('.circle_angle__right').toggleClass('angle_hover');
 		}
 	});
 	
