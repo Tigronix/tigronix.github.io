@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var header = $('.header');
 	$(window).scroll(function(){
 		var top = $(this).scrollTop();
-		if (top > 110) {
+		if (top > 125) {
 			header.addClass('header__small');
 		}
 		else {
@@ -27,20 +27,20 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		/*autoplay: true,
+		autoplaySpeed: 5000,*/
 		pauseOnFocus: true
 	});
 	
 	//hover в слайдере
 	$('.slick-prev').hover(function(){
 		if ($(this).hover) {
-			$('.circle_angle__left').toggleClass('angle_hover');
+			$('.fa-angle-left').toggleClass('angle_hover');
 		}
 	});
 	$('.slick-next').hover(function(){
 		if ($(this).hover) {
-			$('.circle_angle__right').toggleClass('angle_hover');
+			$('.fa-angle-right').toggleClass('angle_hover');
 		}
 	});
 	
