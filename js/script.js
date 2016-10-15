@@ -15,9 +15,11 @@ $(document).ready(function(){
 		var top = $(this).scrollTop();
 		if (top > 125) {
 			header.addClass('header__small');
+			$('.header__nav').addClass('nav__small');
 		}
 		else {
 			header.removeClass('header__small');
+			$('.header__nav').removeClass('nav__small');
 		}
 	});
   	
@@ -27,8 +29,8 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		/*autoplay: true,
+		autoplaySpeed: 5000,*/
 		pauseOnFocus: true
 	});
 	
