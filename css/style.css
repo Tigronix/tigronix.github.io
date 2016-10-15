@@ -304,7 +304,7 @@ body {font-family: 'arial', sans-serif;}
 .header__small .header__contact {top: 24px;}
 .header__small .header__contact .text1 {font-size: 19px; color: #fff; font-weight: 300; font-family: 'roboto'; margin-right: 22px;}
 .header__small .header__contact .call, .header__small .header__contact .address {display: none;}
-.header__nav.nav__small {top: 136px;}
+.header__nav.nav__small {top: 100px;}
 .header__contact .text1 {display: none;}
 .header__small .text1 {display: block;}
 @media (max-width:1600px) {/*1280*/
@@ -354,6 +354,7 @@ body {font-family: 'arial', sans-serif;}
 	.header__small .header__contact {right: -1%; left: auto;}
 	.header__small .header__contact .text1 {font-size: 12px; margin-right: 10px;}
 	.header__small .header__contact .phone .text {font-size: 14px!important; font-weight: normal;}
+	.header__nav.nav__small {top: 136px}
 }
 @media (max-width:400px) {
 	.header__small .header__contact {position: absolute; left: 19.6%; margin-top: 0!important; bottom: 10px; top: auto!important; right: auto;}
