@@ -281,6 +281,7 @@ body {font-family: 'arial', sans-serif;}
 .header__name .btn {width: 215px; height: 30px; background: #FFD700; font-size: 20px; color: #000; font-family: 'Roboto', sans-serif; margin-top: 16px; text-align: center;}
 .header__contact {position: absolute; right: 20px; top: 7px;}
 .header__contact .phone {display: flex; flex-wrap: wrap; align-items: center;}
+.header__contact .phone .text {color: #fff!important; text-decoration: none!important;}
 .header__contact .phone .circle {width: 40px; height: 40px; border-radius: 50%; border: 2px solid #fcab1c; display: flex; justify-content: center; align-items: center; margin-right: 15px; margin-top: 7px}
 .header__contact .phone .fa {color: #fcab1c; font-size: 20px; width: 16px;}
 .header__contact .phone span {font-size: 35px; color: #fff; font-family: 'Roboto', sans-serif; font-weight: 500;}
@@ -384,10 +385,11 @@ body {font-family: 'arial', sans-serif;}
 	.header__logo {margin-left: 15%;}
 	.header__nav {top: 140px; width: 300px; display: none; height: auto;} 
 	.header__nav .wrapper {top: 100px; height: auto; flex-wrap: wrap; flex-direction: column; padding: 0;} 
-	.header__nav__link {width: 100%; font-size: 18px; border: 1px solid #4E3B54; border-width: 0 0 2px; padding: 5px 0 5px 15px;}
+	.header__nav__link {width: 100%; font-size: 18px; border: 1px solid #8a3e94; border-width: 0 0 2px; padding: 5px 0 5px 15px; color: #8a3e94;
+	}
 	.header__nav__link:hover {border-color: #ffa500;}
 	.header__nav__link:hover:after {display: none;}
-	.header__close {display: block!important; position: absolute; right: 0; top: -12%; color: #000; font-size: 30px!important; transition: .3s; cursor: pointer;}
+	.header__close {display: block!important; position: absolute; right: 0; top: -12%; color: #8a3e94; font-size: 30px!important; transition: .3s; cursor: pointer;}
 	.header__close:hover {color: #ffa500;}
 	.header__open {display: block!important; font-size: 30px!important; color: #fff; position: absolute; left: 2%; top: 50%; margin-top: -15px; transition: .3s; cursor: pointer;}
 	.header__open:hover {color: #ffa500;}
@@ -686,7 +688,7 @@ h2 {font-size: 1.9vw; color: #5f2476; font-family: 'roboto', sans-serif; font-we
 	.schedule .head .left .fa {display: none;}
 	.schedule .line {height: auto; padding: 10px 0;}
 	.schedule .cell {padding: 0!important;}
-	.schedule .cell .day {padding: 0; font-size: 14px; width: 100%;}
+	.schedule .cell .day {padding: 0; font-size: 14px; width: 100%; text-align: center;}
 	.schedule .cell .day:after {display: none;}
 	.schedule .cell .time {font-size: 14px; width: 100%; margin: 5px 0 0 0; text-align: center;}
 	.sche_alert {left: 0; right: 0; width: auto; height: 100px;}
