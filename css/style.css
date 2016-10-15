@@ -546,11 +546,13 @@ body .slider_main__slide {height: 700px; background-size: cover; margin-top: 230
 	.left__docs {display: flex; flex-wrap: wrap; justify-content: space-between;}
 	.left__docs .title {font-size: 4vw; width: 100%;}
 	.left__docs .item {width: 30%;}
+	.left__vk {position: absolute; left: 0; bottom: 0;}
 }
 @media (max-width:1024px) {/*320*/
 	.left_column__menu  .title, .left__docs .title {font-size: 18px; text-align: center;}
 	.left_column .link {margin: 5px 0; font-size: 15px; width: 48%; text-align: center;}
 	.left_column .link:nth-child(odd) {}
+	.column_wrap {padding-bottom: 530px!important; position: relative;}
 }
 
 /*center_column*/
