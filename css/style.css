@@ -281,7 +281,7 @@ body {font-family: 'arial', sans-serif;}
 .header__name .btn {width: 215px; height: 30px; background: #FFD700; font-size: 20px; color: #000; font-family: 'Roboto', sans-serif; margin-top: 16px; text-align: center;}
 .header__contact {position: absolute; right: 20px; top: 7px;}
 .header__contact .phone {display: flex; flex-wrap: wrap; align-items: center;}
-.header__contact .phone .text {color: #fff!important; text-decoration: none!important;}
+.header__contact .phone .text {color: #fff; text-decoration: none; font-size: 1.5vw;}
 .header__contact .phone .circle {width: 40px; height: 40px; border-radius: 50%; border: 2px solid #fcab1c; display: flex; justify-content: center; align-items: center; margin-right: 15px; margin-top: 7px}
 .header__contact .phone .fa {color: #fcab1c; font-size: 20px; width: 16px;}
 .header__contact .phone span {font-size: 35px; color: #fff; font-family: 'Roboto', sans-serif; font-weight: 500;}
@@ -301,7 +301,7 @@ body {font-family: 'arial', sans-serif;}
 .header__small .header__model .phone {display: flex; flex-wrap: wrap; align-items: center; margin-left: 22px;}
 .header__small .header__model .circle {width: 40px; height: 40px; border-radius: 50%; border: 2px solid #FBA922; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-right: 18px;}
 .header__small .header__model .circle i {font-size: 20px; color: #fcab1c;}
-.header__small .header__model .text {font-size: 29px; color: #fff; font-weight: 500;}
+.header__small .header__model .text {font-size: 1.5vw; color: #fff; font-weight: 500; text-decoration: none;}
 .header__small .header__contact {top: 24px;}
 .header__small .header__contact .text1 {font-size: 19px; color: #fff; font-weight: 300; font-family: 'roboto'; margin-right: 22px;}
 .header__small .header__contact .call, .header__small .header__contact .address {display: none;}
