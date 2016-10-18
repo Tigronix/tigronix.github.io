@@ -445,7 +445,7 @@ body .slider_main__slide {height: 700px; background-size: cover; margin-top: 230
 }
 @media (max-width:740px) {/*320*/
 	body .slider_main__slide {margin-top: 100px; height: 500px;}
-	.slider_main__text1 {left: 2%; right: 2%; width: auto;}
+	.slider_main__text1 {left: 2%; right: 2%; width: auto; top: 26%;}
 	.slider_main__text1 .t1 {padding: 10px; font-size: 18px; text-align: center}
 	.slider_main__text1 .t2 {padding: 10px; font-size: 16px; width: 100%; text-align: center;}
 	.slider_main__btn {font-size: 21px; left: 3%;}
