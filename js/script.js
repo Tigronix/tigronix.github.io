@@ -31,7 +31,16 @@ $(document).ready(function(){
 		arrows: true,
 		autoplay: true,
 		autoplaySpeed: 5000,
-		pauseOnFocus: true
+		pauseOnFocus: true,
+		responsive: [
+			{
+				breakpoint: 740,
+				settings: {
+					dots: true,
+					arrows: false
+				}
+			}
+		]
 	});
 	
 	//hover в слайдере
