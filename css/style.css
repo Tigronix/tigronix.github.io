@@ -357,7 +357,6 @@ body {font-family: 'arial', sans-serif;}
 	.header__small .header__contact .phone .text, .header__small .header__model .phone .text {font-size: 14px;}
 }
 @media (max-width:400px) {
-	.lol {font-size: 1px;}
 }
 
 /*header__nav*/
