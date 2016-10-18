@@ -280,7 +280,7 @@ body {font-family: 'arial', sans-serif;}
 .header__name .t2 {font-size: 24px; line-height: 29px; font-weight: 300; color: #fff; font-family: 'Roboto', sans-serif;}
 .header__name .btn {width: 215px; height: 30px; background: #FFD700; font-size: 20px; color: #000; font-family: 'Roboto', sans-serif; margin-top: 16px; text-align: center;}
 .header__contact {position: absolute; right: 20px; top: 7px;}
-.header__contact .phone {display: flex; flex-wrap: wrap; align-items: center;}
+.header__contact .phone {display: flex; flex-wrap: wrap; align-items: center; text-align: right;}
 .header__contact .phone .text {color: #fff; text-decoration: none; font-size: 1.5vw;}
 .header__contact .phone .circle {width: 40px; height: 40px; border-radius: 50%; border: 2px solid #fcab1c; display: flex; justify-content: center; align-items: center; margin-right: 15px; margin-top: 7px}
 .header__contact .phone .fa {color: #fcab1c; font-size: 20px; width: 16px;}
