@@ -450,12 +450,11 @@ body .slider_main__slide {height: 700px; background-size: cover; margin-top: 230
 	.slider_main__text1 .t2 {padding: 10px; font-size: 16px; width: 100%; text-align: center;}
 	.slider_main__btn {font-size: 21px; left: 3%; bottom: auto; top: 82%;}
 	.slider_main__btn .fa {font-size: 24px; margin-right: 5px;}
-	body .slider_arrow {font-size: 80px;}
-	body .slick-prev, body .slick-next {top: 27%; height: 60px;}
+	body .slider_arrow {font-size: 80px; top: 26%;}
+	body .slick-prev, body .slick-next {top: 35%; height: 60px;}
 	body .slick-prev  {left: 2%;}
 	body .slick-next {right: 2%;}
-	body .slider_main__slide {background-size: cover; background-position: center;}
-	body .slider_arrow {top: 19%;}
+	body .slider_main__slide {background-size: 100% auto; background-position: center top;}
 }
 
 .footer {height: 212px; background: #9767A0;}
