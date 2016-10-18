@@ -314,11 +314,11 @@ body {font-family: 'arial', sans-serif;}
 	.header__small .header__model {position: absolute; height: 24px; margin-top: -12px; top: 50%; left: 36%;}
 	.header__small .header__model .t1 {font-size: 1.2vw;}
 	.header__small .header__model .phone .circle {display: none;}
-	.header__small .header__model .phone .text {font-size: 1.4vw;}
-	.header__small .header__contact {height: 24px!important; margin-top: -12px!important; top: 50%!important;}
+	.header__small .header__model .phone .text {font-size: 1.2vw;}
+	.header__small .header__contact {height: 24px; margin-top: -12px; top: 50%;}
 	.header__small .header__contact .text1 {font-size: 1.2vw;}
 	.header__small .header__contact .circle {display: none!important;}
-	.header__small .header__contact .text {font-size: 18px!important;}
+	.header__small .header__contact .text {font-size: 1.1vw;}
 }
 @media (max-width:1024px) {/*740*/
 	.header {height: 140px; padding: 10px 0 20px;}
@@ -331,36 +331,32 @@ body {font-family: 'arial', sans-serif;}
 	.header__contact .phone {justify-content: flex-end;}
 	.header__contact .phone .circle {width: 30px; height: 30px; margin-top: 0; display: flex; justify-content: center; align-items: center; text-align: center;}
 	.header__contact .phone .fa {font-size: 15px; }
-	.header__contact .phone .text {font-size: 2.8vw;}
 	.header__contact .call {font-size: 1.7vw; margin-top: 5px;}
 	.header__contact .address {margin-top: 5px; font-size: 1.6vw}
 	.header__small .header__name .t1 {font-size: 16px; text-align: center;}
 	.header__small .header__name .t2 {font-size: 14px; text-align: center; line-height: 16px;}
+	.header__small .header__model {right: 2%; bottom: 10%; margin-top: 0; left: auto; top: auto;}
+	.header__small .header__model .t1 {font-size: 13px;}
+	.header__small .header__model .phone {margin-left: 10px;}
+	.header__small .header__model .phone .text {font-size: 1.2vw;}
+	.header__small .header__contact {right: 2%; margin-top: 0; top: 10%; left: auto;}
+	.header__small .header__contact .text1 {font-size: 12px; margin-right: 10px;}
+	.header__small .header__contact .phone .text {font-size: 1.2vw; font-weight: normal;}
 }
 @media (max-width:740px) {/*320*/
 	.header {padding: 10px 0; height: 100px}
 	.header .wrapper {padding: 0 2%; justify-content: space-between; align-items: center;}
 	.header__logo {background-size: 80px 62px; width: 80px; height: 62px; background-position: left top;}
 	.header__name {display: none;}
-	.header__contact {position: relative; right: auto; top: auto;}
+	.header__contact {right: auto; top: auto;}
 	.header__contact .phone .circle {display: none;}
 	.header__contact .phone .text {font-size: 21px;}
 	.header__contact .call {font-size: 13px;}
 	.header__contact .address {font-size: 12px;}
 	.header__small .header__logo {margin-left: 8%;}
-	.header__small .header__model {right: 2%; left: auto;}
-	.header__small .header__model .t1 {font-size: 13px;}
-	.header__small .header__model .phone {margin-left: 10px;}
-	.header__small .header__model .phone .text {font-size: 14px;}
-	.header__small .header__contact {right: -1%; left: auto;}
-	.header__small .header__contact .text1 {font-size: 12px; margin-right: 10px;}
-	.header__small .header__contact .phone .text {font-size: 14px!important; font-weight: normal;}
-	.header__nav.nav__small {top: 136px}
+	.header__small .header__contact .phone .text, .header__small .header__model .phone .text {font-size: 14px;}
 }
 @media (max-width:400px) {
-	.header__small .header__contact {position: absolute; left: 19.6%; margin-top: 0!important; bottom: 10px; top: auto!important; right: auto;}
-	.header__small .header__contact {position: absolute; left: 19.6%; margin-top: 0!important; bottom: 10px; top: auto!important; right: auto;}
-	.header__small .header__model {margin-top: 0; top: 10px; left: 16%;}
 }
 
 /*header__nav*/
