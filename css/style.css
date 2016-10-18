@@ -455,6 +455,7 @@ body .slider_main__slide {height: 700px; background-size: cover; margin-top: 230
 	body .slick-prev  {left: 2%;}
 	body .slick-next {right: 2%;}
 	body .slider_main__slide {background-size: 100% auto;}
+	body .slider_arrow {color: #F84D56;}
 }
 
 .footer {height: 212px; background: #9767A0;}
