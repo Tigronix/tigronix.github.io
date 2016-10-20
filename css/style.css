@@ -428,7 +428,8 @@ body .slider_main__slide {height: 700px; background-size: cover; margin-top: 230
 	.slider_main__btn {font-size: 2vw;}
 	.slider_main__btn .fa {font-size: 2.3vw;}
 }
-@media (max-width:1600px) {/*1280*/
+@media (max-width:1440px) {/*1280*/
+	body .slider_main__slide {height: 600px;}
 }
 @media (max-width:1280px) {/*1024*/
 	.slider_main__btn {font-size: 2.4vw; width: 30%;}
