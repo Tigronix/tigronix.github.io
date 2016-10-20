@@ -348,7 +348,7 @@ body {font-family: 'arial', sans-serif;}
 	.header .wrapper {padding: 0 2%; justify-content: space-between; align-items: center;}
 	.header__logo {background-size: 80px 62px; width: 80px; height: 62px; background-position: left top;}
 	.header__name {display: none;}
-	.header__contact {right: auto; top: auto;}
+	.header__contact {right: 0; top: 9px;}
 	.header__contact .phone .circle {display: none;}
 	.header__contact .phone .text {font-size: 21px;}
 	.header__contact .call {font-size: 13px;}
