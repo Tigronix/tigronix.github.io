@@ -413,7 +413,7 @@ body .slick-next {right: 2.7%;}
 /*slider_main*/
 body .slider_main__slide {height: 700px; background-size: cover; margin-top: 230px; background-repeat: no-repeat;}
 .slider_main__text1 {font-size: 75px; color: #fff; font-family: 'HelveticaBold'; position: absolute; left: 35px; top: 52px; width: 81%;}
-.slider_main__text1 p {background: rgba(248,77,86,.7); padding: 10px 0 0 40px;}
+.slider_main__text1 p {background: rgba(248,77,86,.7); padding: 10px 0 10px 40px;}
 .slider_main__text1 .t1 {letter-spacing: 1.4px;}
 .slider_main__text1 .t2 {font-size: 48px; padding: 15px 0 10px 28px; letter-spacing: .7px; width: 53%}
 .slider_main__btn {background: #DD2648; width: 24.5%; height: 99px; position: absolute; left: 38px; bottom: 35px; display: flex; align-items: center; color: #fff; font-size: 36px; transition: .3s; display: flex; border-radius: 4px; text-decoration: none; letter-spacing: .3px; justify-content: center;}
