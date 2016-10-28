@@ -1,60 +1,85 @@
-$(document).ready(function(){
-    //mob-menu
-    $('.header__open').click(function(){
-        $('.header__close').fadeIn(300);
-        $('.header__nav').addClass('header__on').fadeIn(300);
-    });
-    $('.header__close').click(function(){
-        $(this).fadeOut(300);
-        $('.header__nav').removeClass('header__on').fadeOut(300);
-    });
-	
-	//header-scroll
-	var header = $('.header');
-	$(window).scroll(function(){
-		var top = $(this).scrollTop();
-		if (top > 125) {
-			header.addClass('header__small');
-			$('.header__nav').addClass('nav__small');
-		}
-		else {
-			header.removeClass('header__small');
-			$('.header__nav').removeClass('nav__small');
-		}
-	});
-  	
-	//slider-main
-	$('.slider_main').slick({
-		fade: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		pauseOnFocus: true,
-		responsive: [
-			{
-				breakpoint: 740,
-				settings: {
-					dots: true,
-					arrows: false
-				}
-			}
-		]
-	});
-	
-	//hover в слайдере
-	$('.slick-prev').hover(function(){
+$(document).ready(function () {
+	//slider_hover
+	$('.owl-prev').hover(function(){
 		if ($(this).hover) {
 			$('.fa-angle-left').toggleClass('angle_hover');
 		}
 	});
-	$('.slick-next').hover(function(){
+	$('.owl-next').hover(function(){
 		if ($(this).hover) {
 			$('.fa-angle-right').toggleClass('angle_hover');
 		}
 	});
-	
+
+	//mob-menu
+	$('.header__open').click(function () {
+		$(this).fadeOut(300);
+		$('.header__close').fadeIn(300);
+		$('.header__nav').addClass('header__on').fadeIn(300);
+		$('.header__phone').addClass('header__on').fadeIn(300);
+	});
+	$('.header__close').click(function () {
+		$(this).fadeOut(300);
+		$('.header__nav').removeClass('header__on').fadeOut(300);
+		$('.header__open').fadeIn(300);
+		$('.header__phone').removeClass('header__on').fadeOut(300);
+	});
+
 	//fancbyox
 	$(".fancybox").fancybox();
+	
+	
+	//rooms_slider
+	$(".rooms_slider").owlCarousel({
+		autoPlay: 5000,
+		stopOnHover: true,
+		navigation: true,
+		paginationSpeed: 1000,
+		goToFirstSpeed: 2000,
+		singleItem: true,
+		transitionStyle: "fade",
+		responsive: true,
+	});
+	
+	//rooms_slider
+	$(".pres__slider").owlCarousel({
+		autoPlay: 5000,
+		stopOnHover: true,
+		navigation: true,
+		paginationSpeed: 1000,
+		goToFirstSpeed: 2000,
+		singleItem: true,
+		transitionStyle: "fade",
+		responsive: true
+	});
+	
+	
+	
+	//main_slider
+	$(".main_slider").owlCarousel({
+		//autoPlay: 5000,
+		stopOnHover: true,
+		navigation: true,
+		paginationSpeed: 1000,
+		goToFirstSpeed: 2000,
+		singleItem: true,
+		transitionStyle: "fade",
+		responsive: true,
+	});
+
+});
+$(document).ready(function () {
+	//Universal Tabs
+	$(document).on('click', '[data-id]', function () {
+		var id = $(this).attr('data-id');
+		var taba = $(this).attr('data-taba');
+
+		$('[data-id="' + id + '"]').each(function () {
+			if ($(this).attr('data-taba') == taba) {
+				$(this).addClass('act').siblings().removeClass('act');
+			}
+		});
+
+		$('#' + id + ' > [data-taba="' + taba + '"]').show().addClass('flex').siblings().hide().removeClass('flex');
+	});
 });
