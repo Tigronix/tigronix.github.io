@@ -309,7 +309,7 @@
 					<div id="tabs2" class="pres">
 						<div data-taba="1" class=" tab_block pres__photo">
 							<form action="post" class="pres__photo_form">
-								<div class="title">Заявка на просмотр</div>
+								<div class="title"> ЗАПИСАТЬСЯ НА ПРОСМОТР </div>
 								<div class="inpbox">
 									<img class="icon name" src="img/ik1.png" alt="">
 									<input placeholder="Укажите имя" name="name" required="required" type="text">
@@ -333,21 +333,22 @@
 						</div>
 						<!--pres__photo-->
 						<div class="tab_wrap2 tab_block" data-taba="2">
-							<div class="pres__photo_form plans_tabs">
-								<div class="title">Выберите категорию<img src="img/magic_click.png" width="60" height="60" alt=""></div>
-								<div data-id="rooms" data-taba="1" class="plan_tab act">
-									<span>1</span>
-									<span>- комнатные квартиры</span>
+							<form action="post" class="pres__photo_form">
+								<div class="title"> ЗАПИСАТЬСЯ НА ПРОСМОТР </div>
+								<div class="inpbox">
+									<img class="icon name" src="img/ik1.png" alt="">
+									<input placeholder="Укажите имя" name="name" required="required" type="text">
 								</div>
-								<div data-id="rooms" data-taba="2" class="plan_tab">
-									<span>2</span>
-									<span>- х комнатные квартиры</span>
+								<div class="inpbox">
+									<img class="icon phone" src="img/ik2.png" alt="">
+									<input placeholder="Номер телефона" name="phone" required="required" type="tel" pattern="[7-8][0-9]{10}" title="Номер должен содержать 11 цифр и начинаться с 7 или 8">
 								</div>
-								<div data-id="rooms" data-taba="3" class="plan_tab">
-									<span>3</span>
-									<span>- х комнатные квартиры</span>
+								<div class="inpbox">
+									<img class="icon msg" src="img/ik3.png" alt="">
+									<textarea required="required" placeholder="Напишите Ваши вопросы"></textarea>
 								</div>
-							</div>
+								<button>Отправить заявку</button>
+							</form>
 							<div class="pres_slider_wrap">
 								<div id="rooms">
 									<div class="rooms__tab_box" data-taba="1">
@@ -442,8 +443,31 @@
 					<!--tabs2-->
 				</div>
 				<!--wrapper-->
+				<div class="room_types">
+					<div class="partners__wrapper">
+						<div class="partners__who room__who">
+							<span>Выберите квартиру:</span>
+							<i class="fa fa-hand-o-right"></i>
+						</div>
+						<div class="partners__logo">
+							<a href="#" class="room__btn">
+								<span class="number">1 -</span>
+								<span class='text'>КОМНАТНЫЕ КВАРТИРЫ</span>
+							</a>
+							<a href="#" class="room__btn">
+								<span class="number">2 - х</span>
+								<span class='text'>КОМНАТНЫЕ КВАРТИРЫ</span>
+							</a>
+							<a href="#" class="room__btn">
+								<span class="number">3 - х</span>
+								<span class='text'>КОМНАТНЫЕ КВАРТИРЫ</span>
+							</a>
+							
+						</div>
+					</div>
+				</div><!--room_types-->
 				<div class="partners">
-					<div class="wrapper">
+					<div class="partners__wrapper">
 						<div class="partners__who">
 							<span>Банки партнеры:</span>
 							<i class="img"></i>
