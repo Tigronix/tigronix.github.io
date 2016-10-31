@@ -62,7 +62,7 @@ p {
 	height: 933px;
 }
 
-.main_slider .owl-buttons div {position: absolute; top: 48%; font-size: 0; width: 70px; height: 84px; margin-top: -42px; z-index: 100; background: rgba(255,250,205,.5) center center no-repeat; border: 3px solid #B22222; border-radius: 8px;}
+.main_slider .owl-buttons div {position: absolute; top: 48%; font-size: 0; width: 70px; height: 84px; margin-top: -42px; z-index: 100; background: rgba(255,250,205,.5) center center no-repeat; border: 2px solid rgba(178,34,34,.5); border-radius: 10px;}
 .main_slider .owl-buttons .owl-prev {left: 0; background-image: url(../img/arr_left.png);}
 .main_slider .owl-buttons .owl-next {right: 16px; background-image: url(../img/arr_right.png);}
 .main_slider .arrow {font-size: 68px; color: #FCAB1C; transition: .3s; position: absolute; top: 50%; margin-top: -32px; display: block; z-index: 1;}
@@ -273,6 +273,13 @@ p {
 	}
 	.slider__options {width: auto; left: 2%; right: 2%; top: 60%;}
 	.slider__options .item {width: 20%; margin-bottom: 0;}
+}
+
+@media (max-width:1440px) {/*1280*/
+	.slider_wrap {height: 856px;}
+	.main_slider .owl-buttons div {top: 36%;}
+	.slider__options {top: 50%;}
+	.slider__advantages {bottom: 10%;}
 }
 
 @media (max-width:1280px) {
