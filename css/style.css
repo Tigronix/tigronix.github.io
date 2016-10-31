@@ -311,6 +311,7 @@ p {
 	.main_slider .slick-next {
 		top: 46%;
 	}
+	.slider_wrap {height: 600px;}
 	.slider_wrap .fa-angle-left,
 	.slider_wrap .fa-angle-right {
 		top: 40%;
@@ -326,6 +327,7 @@ p {
 
 @media (max-width:740px) {
 	/*320*/
+	.slider__options {left: 2%; right: 2%;}
 	.header {justify-content: flex-start; flex-wrap: wrap;}
 	.header__info {width: 300px; margin: 16px 0 0 0; justify-content: flex-start;}
 	.header__logo {width: 60px; height: 51px; background-size: 100% auto; border-radius: 0;}
@@ -339,7 +341,7 @@ p {
 	.main_slider .text .t1 {font-size: 18px;}
 	.main_slider .text .t2 {font-size: 18px;}
 	.main_slider .text .t2 span {font-size: 18px; padding: 0 3px;}
-	.main_slider .owl-buttons div {width: 40px; height: 40px; background-size: 16px auto;}
+	.main_slider .owl-buttons div {width: 40px; height: 40px; background-size: 16px auto; top: 44%;}
 	.main_slider .owl-buttons .owl-next {right: 0;}
 	.slider__options {flex-wrap: wrap;}
 	.slider__options .item {width: 48%; transform: skewX(0); font-size: 18px; margin-left: 0!important; text-align: center; margin-bottom: 12px;}
@@ -349,9 +351,8 @@ p {
 		height: 600px;
 	}
 	.main_slider .text {
-		top: 11%;
-		width: 100%;
-		left: 0;
+		top: 6%; left: 2%; right: 2%;
+		width: auto;
 	}
 	.main_slider .text div {
 		padding: 0 2%;
