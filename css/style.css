@@ -329,13 +329,13 @@ p {
 	.header {justify-content: flex-start; flex-wrap: wrap;}
 	.header__info {width: 300px; margin: 16px 0 0 0; justify-content: flex-start;}
 	.header__logo {width: 60px; height: 51px; background-size: 100% auto; border-radius: 0;}
-	.header__nav {display: none; height: auto; width: 300px; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0;}
+	.header__nav {display: none; height: auto; width: 300px; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0; position: absolute; left: 0; top: 103px;}
 	.header__nav .link {font-size: 18px; width: 100%; padding: 10px 0 10px 2%; transform: none;}
-	.header__phone {margin-top: 0px; transform: none; height: auto; padding: 10px;  width: 100%; display: none;}
+	.header__phone {margin-top: 0px; transform: none; height: auto; padding: 10px;  width: 100%; display: none; position: absolute; left: 0; top: 51px; width: 300px;}
 	.header__phone a {transform: none; font-size: 24px;}
 	.header__on {display: flex;}
-	body .header__open {font-size: 24px; color: #fff; height: 23px; position: absolute; right: 10px; top: 10px; cursor: pointer;}
-	body .header__close {font-size: 24px; color: #fff; height: 23px; position: absolute; right: 10px; top: 10px; cursor: pointer; display: none;}
+	body .header .header__open {display: block; font-size: 24px; color: #fff; height: 23px; position: absolute; right: 10px; top: 10px; cursor: pointer;}
+	body .header .header__close {display: block; font-size: 24px; color: #fff; height: 23px; position: absolute; right: 10px; top: 10px; cursor: pointer; display: none;}
 	.main_slider .text .t1 {font-size: 18px;}
 	.main_slider .text .t2 {font-size: 18px;}
 	.main_slider .text .t2 span {font-size: 18px; padding: 0 3px;}
