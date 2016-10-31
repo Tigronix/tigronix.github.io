@@ -1501,6 +1501,7 @@ html.fsvs #fsvs-pagination li > span {
 	.partners__logo {width: 78%;}
 	.room__btn .number {font-size: 14px;}
 	.room__btn .text {font-size: 12px; margin-left: 2px; padding-top: 2px; letter-spacing: 0;}
+	.lol	 {}
 }
 @media (max-width:740px) {/*320*/
 	.room_types {height: auto; padding: 10px 0;}
