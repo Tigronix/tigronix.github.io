@@ -311,6 +311,9 @@ p {
 	}
 	.header__info {width: 70%;}
 	.header__phone {width: auto; padding: 0 15% 0 10%;}
+	.slider__callback {right: 2%; left: 2%; height: auto;}
+	.slider__callback .item {width: 48%; transform: none;}
+	.slider__callback .item span {transform: none; text-align: center;}
 }
 
 @media (max-width:740px) {
