@@ -1092,16 +1092,18 @@ html.fsvs #fsvs-pagination li > span {
 	.partners__who {
 		width: 100%;
 		font-size: 24px;
+		margin-bottom: 10px;
 	}
 	.partners__logo {
 		width: 100%;
 		flex-wrap: wrap;
+		margin: -10px 0;
 	}
 	.partners__logo .item {
-		width: 48%;
-	}
-	.partners__logo .item:nth-child(1) {
-		max-width: 196px;
+		width: 48%!important;
+		text-align: center;
+		max-width: none!important;
+		margin: 10px 0;
 	}
 	.partners__logo .item:nth-child(1) img {
 		max-width: 196px;
@@ -1501,7 +1503,6 @@ html.fsvs #fsvs-pagination li > span {
 	.partners__logo {width: 78%;}
 	.room__btn .number {font-size: 14px;}
 	.room__btn .text {font-size: 12px; margin-left: 2px; padding-top: 2px; letter-spacing: 0;}
-	.lol	 {}
 }
 @media (max-width:740px) {/*320*/
 	.room_types {height: auto; padding: 10px 0;}
