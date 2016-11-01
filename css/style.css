@@ -462,7 +462,7 @@ html.fsvs #fsvs-pagination li > span {
 .table_nav__tab .text {
 	font-size: 21px;
 	color: #000;
-	font-weight: 500;
+	font-weight: 300;
 	margin-left: 10px;
 }
 
@@ -484,8 +484,11 @@ html.fsvs #fsvs-pagination li > span {
 
 .table_nav__pres .table_nav__tab .fa {
 	color: #01dd61;
-	font-size: 30px;
+	font-size: 24px;
 	margin-right: 10px;
+}
+.table_nav__pres .table_nav__tab .fa-youtube-play {
+	font-size: 30px;
 }
 
 .table_nav__pres .text {
@@ -803,8 +806,7 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .pres__slider img {width: 100%; height: auto; max-height: 582px; vertical-align: bottom;}
-.pres__slider .owl-controls {position: absolute; left: 0; width: 100%; top: 0; height: 100%;}
-.pres__slider .owl-buttons div {width: 80px; font-size: 0; height: 100%; position: absolute; top: 0; background: rgba(0,0,0,.6); display: flex; justify-content: center; align-items: center; z-index: 2; transition: .3s;}
+.pres__slider .owl-buttons div {width: 88px; font-size: 0; height: 99px; position: absolute; top: 50%; margin-top: -45.5px; background: rgba(0,0,0,.6); display: flex; justify-content: center; align-items: center; z-index: 2; transition: .3s;}
 .pres__slider .owl-prev {left: 0;}
 .pres__slider .owl-prev:hover:before {opacity: 1;}
 .pres__slider .owl-prev:before {display: block; content: ''; background: url(../img/arr_left.png) no-repeat; width: 38px; height: 65px; opacity: .75;}
@@ -1494,10 +1496,10 @@ html.fsvs #fsvs-pagination li > span {
 .room_types .wrapper {padding: 0 2% 0 120px;}
 .room_types .fa-hand-o-right {column-rule-color: #696969; font-size: 1.8vw;}
 .room__who span {color: #e7015e;}
-.room__btn {height: 55px; background: #1F6AF4; width: 32%; text-decoration: none; display: flex; align-items: center; justify-content: center; transition: .3s;}
+.room__btn {height: 55px; background: #1F6AF4; width: 32%; text-decoration: none; display: flex; align-items: center; justify-content: center; transition: .3s; box-shadow: 5px 5px 5px 0 rgba(0,0,0,.4);}
 .room__btn:hover {background: #25A53B;}
 .room__btn .number {font-size: 1.4vw; color: #fff; font-weight: 500;}
-.room__btn .text {font-size: 1.1vw; color: #fff; font-weight: 500; letter-spacing: 1.07px; display: block; margin-left: 5px; padding-top: 4px;}
+.room__btn .text {font-size: 1.1vw; color: #fff; font-weight: 500; letter-spacing: 1.07px; display: block; margin-left: 5px; padding-top: 4px; }
 @media (max-width:1024px) {
 	.room_types .fa-hand-o-right {display: none;}
 	.partners__logo {width: 78%;}
