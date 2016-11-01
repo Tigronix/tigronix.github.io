@@ -276,7 +276,7 @@ p {
 }
 
 @media (max-width:1440px) {/*1280*/
-	.slider_wrap {height: 856px;}
+	.slider_wrap {height: 825px;}
 	.main_slider .owl-buttons div {top: 36%;}
 	.slider__advantages {bottom: 10%;}
 }
