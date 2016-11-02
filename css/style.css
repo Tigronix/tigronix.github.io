@@ -1755,11 +1755,11 @@ html.fsvs #fsvs-pagination li > span {
 	.room__menu {height: auto; display: flex; flex-wrap: wrap; padding: 10px 2%; align-items: flex-start; justify-content: space-between;}
 	.sub_mg {margin-top: 0; text-align: left;}
 	.mgt {margin-top: 0;}
-	.main_link {padding-right: 0; width: 20%; text-align: center;}
+	.main_link {padding-right: 0; width: 20%; text-align: center; display: none;}
 	.main_link .name {font-size: 16px;}
 	.main_link .name .fa {font-size: 18px;}
 	.sub_menu_wrap {width: 22%; margin-top: 20px;}
-	.sub_menu_wrap .main_link {width: 100%; text-align: left;}
+	.sub_menu_wrap .main_link {width: 100%; text-align: left; display: block;}
 	.sub__menu .link {font-size: 16px;}
 	.room__content {width: 100%;}
 	.room__about {width: 100%;}
