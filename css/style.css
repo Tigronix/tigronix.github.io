@@ -1681,7 +1681,7 @@ html.fsvs #fsvs-pagination li > span {
 
 /*room*/
 .room {background: url(../img/room_bg.jpg) center top no-repeat; display: flex; justify-content: flex-end; height: 1080px; align-items: flex-start;}
-.room__wrapper {display: flex; padding-top: 113px; width: 98.9583%;}
+.room__wrapper {display: flex; padding-top: 123px; width: 98.9583%;}
 .room__nav {width: 10.2105%;}
 .room__logo {background: #fff url(../img/logo_room.png) center center no-repeat; height: 129px; display: block;}
 .room__menu {background: #258585; padding: 14% 0 33% 0;}
@@ -1705,7 +1705,7 @@ html.fsvs #fsvs-pagination li > span {
 .room__house {height: 130px; background: #BC2328; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
 .room__house:nth-child(even) {background: #CB292F;}
 .room__house .number {font-size: 2.7vw; color: #fff; font-family: 'HelveticaBold'; text-align: center;}
-.room__house .text {font-size: 16px; color: #fff; letter-spacing: 1.07px; font-weight: 500; text-transform: uppercase; text-align: center;}
+.room__house .text {font-size: 0.85vw; color: #fff; letter-spacing: 1.07px; font-weight: 500; text-transform: uppercase; text-align: center;}
 
 .room__img {width: 33.7282%; overflow: hidden; margin-left: 3.3965%; padding-top: 31px;}
 .room__img img {width: 100%; height: auto;}
@@ -1730,8 +1730,8 @@ html.fsvs #fsvs-pagination li > span {
 .room__form form button {margin-top: 29px; text-transform: uppercase; font-size: 1.26vw;}
 .room__info {width: 100%; height: 130px; display: flex; align-items: stretch;}
 .room__print {width: 7.5615%; text-align: center; padding-top: 30px; background: rgba(138,43,226,.8);}
-.room__print .fa {color: #fff; font-size: 37px; margin-bottom: 10px;}
-.room__print .text {color: #fff; font-size: 16px; font-weight: 500; letter-spacing: 1.07px; text-transform: uppercase;}
+.room__print .fa {color: #fff; font-size: 2.1vw; margin-bottom: 10px;}
+.room__print .text {color: #fff; font-size: .85vw; font-weight: 500; letter-spacing: 1.07px; text-transform: uppercase;}
 .room__percent {width: 9.3200%; text-align: center; padding-top: 24px; background: rgba(56,163,69,.8);}
 .room__percent .numbers {color: #fff; font-size: 3.9vw; line-height: 3vw; font-family: 'helveticabold';}
 .room__percent .numbers span {font-size: 53px;}
