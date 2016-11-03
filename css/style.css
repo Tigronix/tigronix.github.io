@@ -1802,7 +1802,7 @@ html.fsvs #fsvs-pagination li > span {
 	.main_link {text-align: left;}
 	.room__about {flex-wrap: wrap;}
 	.room__house_wrap {height: auto; width: 100%; display: flex;}
-	.room__house {width: 25%; height: auto;}
+	.room__house {width: 25vw; height: 25vw;}
 	.room__house .number {font-size: 32px;}
 	.room__house .text {font-size: 14px;}
 	.room__img {width: 100%; margin-left: 0;}
