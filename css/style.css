@@ -1694,6 +1694,7 @@ html.fsvs #fsvs-pagination li > span {
 	.header__static .mob_square {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 16vw; height: 16vw; position: absolute; left: 0; top: 0; font-size: 16px; color: #fff;}
 	.header__static .mob_square span {position: absolute; bottom: 10%; left: 0; right: 0; text-align: center; text-transform: uppercase;}
 	.header__static .mob_phone {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 16vw; height: 16vw; position: absolute; right: 0; top: 0; text-decoration: none; color: #fff; text-transform: uppercase; font-size: 16px; transition: .3s;}
+	.header__static .mob_phone span {display: inline-block; margin-top: 10px;}
 	body .header .header__open, body .header .header__close  {width: auto; color: #fff; font-size: 33px; transition: 0; position: absolute; font-size: 7vw; left: 50%; top: 50%; margin: -3.5vw 0 0 -3.5vw;}
 	.header__static .mob_phone:hover {background: #16BD2D; color: #fff;}
 	.header__static .mob_phone .fa {font-size: 40px;}
