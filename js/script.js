@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	$('.room__about').addClass('slide_top');
+	$('.room__info').addClass('slide_bot');
 	//slider_hover
 	$('.owl-prev').hover(function(){
 		if ($(this).hover) {
@@ -14,15 +16,11 @@ $(document).ready(function () {
 	//mob-menu
 	$('.header__open').click(function () {
 		$(this).fadeOut(300);
-		$('.header__close').fadeIn(300);
-		$('.header__nav').addClass('header__on').fadeIn(300);
-		$('.header__phone').addClass('header__on').fadeIn(300);
+		$('.header__close').fadeIn(300);	$('.header__nav').addClass('header__on').removeClass('move_away').addClass('move_left').fadeIn(1200);
 	});
 	$('.header__close').click(function () {
-		$(this).fadeOut(300);
-		$('.header__nav').removeClass('header__on').fadeOut(300);
+		$(this).fadeOut(300);	$('.header__nav').removeClass('move_left').addClass('move_away').fadeOut(1200);
 		$('.header__open').fadeIn(300);
-		$('.header__phone').removeClass('header__on').fadeOut(300);
 	});
 
 	//fancbyox

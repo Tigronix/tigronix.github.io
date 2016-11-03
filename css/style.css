@@ -213,8 +213,10 @@ p {
 .header__info {display: flex; flex-wrap: wrap; width: 830px; justify-content: flex-end; align-items: flex-start;}
 .header__nav {background: rgba(231,1,94,.8); height: 50px; width: 880px; display: flex; justify-content: space-between; align-items: center; transform: skewx(-40deg); margin-right: -50px; padding: 0 8% 0 6%;}
 .header__nav .link {color: #fff; font-size: .9vw; font-weight: 500; letter-spacing: 1.07px; text-decoration: none; text-transform: uppercase; transform: skewx(40deg);}
+.mob_link {display: none;}
 .header__phone {margin-top: 0px; background: rgba(40,162,59,.8); height: 67px; display: flex; align-items: center; transform: skewx(-33deg); width: 524px; margin-right: -6%; padding-left: 5.5%;}
 .header__phone a {text-decoration: none; font-size: 2.4vw; color: #fff; font-weight: 500; transform: skewx(33deg);}
+.header__phone .fa-phone-square {display: none;}
 .header .header__close, .header .header__open {display: none;}
 
 /*main_slider*/
@@ -491,10 +493,11 @@ p {
 	.header {justify-content: flex-start; flex-wrap: wrap;}
 	.header__info {width: 300px; margin: 16px 0 0 0; justify-content: flex-start;}
 	.header__logo {width: 60px; height: 51px; background-size: 100% auto; border-radius: 0;}
-	.header__nav {display: none; height: auto; width: 300px; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0; position: absolute; left: 0; top: 103px;}
+	.header__nav {display: none; height: auto; width: 300px; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0; position: absolute; left: 0; top: 51px;}
 	.header__nav .link {font-size: 18px; width: 100%; padding: 10px 0 10px 2%; transform: none;}
-	.header__phone {margin-top: 0px; transform: none; height: auto; padding: 10px;  width: 100%; display: none; position: absolute; left: 0; top: 51px; width: 300px;}
-	.header__phone a {transform: none; font-size: 24px;}
+	.header__phone {margin-top: 0px; transform: none; height: auto; width: 100%;  position: absolute; right: 8%; top: 10px; width: auto; background: none; padding: 0;}
+	.header__phone a {transform: none; font-size: 14px;}
+	.header__phone .fa-phone-square {display: block;}
 	.header__on {display: flex;}
 	body .header .header__open {display: block; font-size: 24px; color: #fff; height: 23px; position: absolute; right: 10px; top: 10px; cursor: pointer;}
 	body .header .header__close {display: block; font-size: 24px; color: #fff; height: 23px; position: absolute; right: 10px; top: 10px; cursor: pointer; display: none;}
@@ -1678,10 +1681,16 @@ html.fsvs #fsvs-pagination li > span {
 
 /*static*/
 .header__static {justify-content: flex-end;}
-
+.header__static .header__logo {display: none;}
+@media (max-width:740px) {
+	.header__static {justify-content: center;}
+	.header__static .header__logo {display: block; margin-left: -10%; background-image: url(../img/logo_room.png);}
+	.header__static .header__phone {display: flex; flex-wrap: wrap; flex-direction: column; top: 0; bottom: 0; justify-content: center;}
+	.header__static .header__phone .fa {font-size: 24px; color: #fff;}
+}
 /*room*/
 .room {background: url(../img/room_bg.jpg) center top no-repeat; display: flex; justify-content: flex-end; height: 1080px; align-items: flex-start;}
-.room__wrapper {display: flex; padding-top: 123px; width: 98.9583%; align-items: stretch;}
+.room__wrapper {display: flex; padding-top: 123px; width: 98.9583%; align-items: stretch; position: relative;}
 .room__nav {width: 10.2105%;}
 .room__logo {background: #fff url(../img/logo_room.png) center center no-repeat; height: 129px; display: block; background-size: 53% auto;}
 .room__menu {padding: 14% 0 30% 0; background: #258585; height: 391px;}
@@ -1783,9 +1792,12 @@ html.fsvs #fsvs-pagination li > span {
 }
 @media (max-width:740px) {/*320*/
 	body .header .header__open, body .header .header__close  {right: auto; left: 10px;}
+	.mob_link {display: block;}
+	.room__logo {display: none;}
+	.room__nav {display: none;}
 	.room__menu {flex-direction: column;}
 	.sub_menu_wrap {width: 170px;}
-	.sub__menu {padding: 5px; width: auto;}
+	.sub__menu {padding: 5px; width: auto; display: none!important;}
 	.sub__menu .link {font-size: 12px;}
 	.main_link {text-align: left;}
 	.room__about {flex-wrap: wrap;}
@@ -1825,3 +1837,78 @@ html.fsvs #fsvs-pagination li > span {
 		max-width: 210px;
 	}
 }
+.room__about {
+	animation-timing-function: linear;
+	-webkit-animation: move_top  1.2s ease-in-out;
+	animation: move_top  1.2s ease-in-out;
+}
+.room__form {
+	animation-timing-function: linear;
+	-webkit-animation: move_right  1.2s ease-in-out;
+	animation: move_right  1.2s ease-in-out;
+}
+.room__info {
+	animation-timing-function: linear;
+	-webkit-animation: move_bot  1.2s ease-in-out;
+	animation: move_bot  1.2s ease-in-out;
+}
+.room__nav {
+	animation-timing-function: linear;
+	-webkit-animation: move_left  1.2s ease-in-out;
+	animation: move_left  1.2s ease-in-out;
+}
+/*animation*/
+@keyframes move_top {
+	from {
+		transform: translateY(-200px);
+	}
+	to { 
+		transform: translateY(0px);
+	}  
+}
+.move_left {
+	animation-timing-function: linear;
+	-webkit-animation: move_left  1.2s ease-in-out;
+	animation: move_left  1.2s ease-in-out;
+}
+@keyframes move_left {
+	from {
+		transform: translatex(-200px);
+	}
+	to { 
+		transform: translatex(0px);
+	}  
+}
+@keyframes move_right {
+	from {
+		transform: translatex(200px);
+	}
+	to { 
+		transform: translatex(0px);
+	}  
+}
+@keyframes move_bot {
+	from {
+		transform: translateY(200px);
+	}
+	to { 
+		transform: translateY(0px);
+	}  
+}
+.move_away {
+	animation-timing-function: linear;
+	-webkit-animation: move_away  1.2s ease-in-out;
+	animation: move_away  1.2s ease-in-out;
+}
+@keyframes move_away {
+	from {
+		transform: translateX(0px);
+	}
+	to { 
+		transform: translateX(-300px);
+	}  
+}
+
+
+
+
