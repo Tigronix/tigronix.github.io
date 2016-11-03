@@ -209,7 +209,7 @@ p {
 
 /*header*/
 .header {height: 0; position: fixed; left: 0; top: 0; right: 0; display: flex; justify-content: space-between; z-index: 999;}
-.header__logo {background: #fff url(../img/logo.png) 7px 7px no-repeat; width: 146px; height: 124px; border-bottom-right-radius: 100%;}
+.header__logo {background: #fff url(../img/logo.png) center no-repeat; width: 150px; height: 147px;}
 .header__info {display: flex; flex-wrap: wrap; width: 830px; justify-content: flex-end; align-items: flex-start;}
 .header__nav {background: rgba(231,1,94,.8); height: 50px; width: 880px; display: flex; justify-content: space-between; align-items: center; transform: skewx(-40deg); margin-right: -50px; padding: 0 8% 0 6%;}
 .header__nav .link {color: #fff; font-size: .9vw; font-weight: 500; letter-spacing: 1.07px; text-decoration: none; text-transform: uppercase; transform: skewx(40deg);}
@@ -495,7 +495,7 @@ p {
 	.header__logo {width: 60px; height: 51px; background-size: 100% auto; border-radius: 0;}
 	.header__nav {display: none; height: auto; width: 300px; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0; position: absolute; left: 0; top: 16vw;}
 	.header__nav .link {font-size: 18px; width: 100%; padding: 10px 0 10px 2%; transform: none;}
-	.header__phone {margin-top: 0px; transform: none; height: auto; width: 100%;  position: absolute; right: 8%; top: 10px; width: auto; background: none; padding: 0;}
+	.header__phone {margin-top: -10px; transform: none; height: auto; width: 100%;  position: absolute; right: 8%; top: 50%; width: auto; background: none; padding: 0;}
 	.header__phone a {transform: none; font-size: 14px;}
 	.header__phone .fa-phone-square {display: block;}
 	.header__on {display: flex;}
@@ -1680,9 +1680,9 @@ html.fsvs #fsvs-pagination li > span {
 
 
 /*static*/
+.mob_square, .mob_phone {display: none;}
 .header__static {justify-content: flex-end;}
 .header__static .header__logo {display: none;}
-.mob_square, .mob_phone {display: none;}
 @media (max-width:740px) {
 	.header {height: 16vw;}
 	.header__static {justify-content: center;}
@@ -1918,6 +1918,14 @@ html.fsvs #fsvs-pagination li > span {
 	}  
 }
 
-
+.header__small {justify-content: flex-end;}
+.header__small .header__logo {display: none;}
+body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top: -11.5px; width: auto!important; right: auto;}
+@media (max-width:740px) {
+	body .main__header {height: 51px;}
+	body .main__nav {top: 51px;}
+	body .header__small .main__btn {left: 17px;}
+	.ib {display: inline-block;}
+}
 
 
