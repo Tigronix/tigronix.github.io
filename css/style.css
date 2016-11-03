@@ -493,7 +493,7 @@ p {
 	.header {justify-content: flex-start; flex-wrap: wrap;}
 	.header__info {width: 0px; margin: 16px 0 0 0; justify-content: flex-start;}
 	.header__logo {width: 60px; height: 51px; background-size: 100% auto; border-radius: 0;}
-	.header__nav {display: none; height: auto; width: 300px; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0; position: absolute; left: 0; top: 16vw;}
+	.header__nav {display: none; height: auto; width: 100%; height: 100vh; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0; position: absolute; left: 0; top: 16vw; background: #258585; align-items: flex-start; justify-content: flex-start; flex-direction: column;}
 	.header__nav .link {font-size: 18px; width: 100%; padding: 10px 0 10px 2%; transform: none;}
 	.header__phone {margin-top: -10px; transform: none; height: auto; width: 100%;  position: absolute; right: 8%; top: 50%; width: auto; background: none; padding: 0;}
 	.header__phone a {transform: none; font-size: 14px;}
@@ -706,8 +706,14 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .tabs__table .head .cell {
+	background: #16BD2D;
+}
+
+
+
+.tabs__table .head .cell {
 	font-size: 21px;
-	color: #000;
+	color: #fff;
 	font-weight: 500;
 }
 
@@ -719,10 +725,6 @@ html.fsvs #fsvs-pagination li > span {
 	font-size: 21px;
 	color: #000;
 	font-weight: 500;
-}
-
-.tabs__table .row:hover {
-	background: #68CB89;
 }
 
 .tabs__table .cell {
@@ -1822,7 +1824,7 @@ html.fsvs #fsvs-pagination li > span {
 	.room__text .number {font-size: 32px; margin-left: 0;}
 	.room__text .number span {font-size: 48px;}
 	.room__text .number:after {left: 21%;}
-	.room__price {text-align: center;}
+	.room__price {text-align: center; margin-top: -20px;}
 	.room__price .numbers {font-size: 46px;}
 	.room__price .valute {font-size: 32px;}
 	.room__form form {margin-top: 20px;}
@@ -1924,7 +1926,7 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 @media (max-width:740px) {
 	body .main__header {height: 51px;}
 	body .main__nav {top: 51px;}
-	body .header__small .main__btn {left: 17px;}
+	body .header__small .main__btn {left: 31px;}
 	.ib {display: inline-block;}
 }
 
