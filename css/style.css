@@ -179,9 +179,13 @@ body {
 
 h1 {
 	font-size: 29px;
-	font-weight: 500;
+	font-weight: 300;
 	color: #000;
+	margin-bottom: 15px;
+	padding: 0 2%;
 }
+
+.padding {padding: 0 2%;}
 
 p {
 	color: #000;
@@ -579,7 +583,6 @@ html.fsvs #fsvs-pagination li > span {
 
 .main_info {
 	margin: 20px 0 0 0;
-	padding: 0 2%;
 }
 
 .main_info .wrapper {
@@ -605,40 +608,39 @@ html.fsvs #fsvs-pagination li > span {
 	background: #F5F5F5;
 	cursor: pointer;
 	transition: .3s;
+	border-radius: 5px 5px 0 0;
 }
-
+.table_nav__tab:nth-child(3) {margin-left: 5px;}
 .table_nav__tab .number {
 	font-size: 35px;
-	color: #fff;
+	color: #3FB653;
 	font-weight: 500;
-	width: 50px;
-	height: 50px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	border-radius: 50%;
-	background: #25A53B;
-	opacity: .5;
 }
 
 .table_nav__tab .text {
 	font-size: 21px;
-	color: #000;
-	font-weight: 300;
+	color: #3FB653;
+	font-weight: 500;
 	margin-left: 10px;
+	letter-spacing: 1.07px;
 }
 
 .table_nav .act {
-	background: #FEEED2;
-	box-shadow: 0px -5px 6px 0 rgba(0, 0, 0, .3);
+	background: #16BD2D;
+	box-shadow: 0px -5px 6px 0 rgba(0, 0, 0, .2);
 	position: relative;
 	z-index: 2;
 }
 
 .table_nav .act .number {
-	opacity: 1;
+	color: #fff;
 }
+
+.table_nav .act .text {
+	color: #fff;
+}
+
+
 
 .table_nav__pres .table_nav__tab {
 	align-items: center;
@@ -656,10 +658,14 @@ html.fsvs #fsvs-pagination li > span {
 
 .table_nav__pres .text {
 	height: auto;
+	font-size: 18px;
 }
 
 .table_nav__pres .act {
-	background: #fff;
+	background: #16BD2D;
+}
+.table_nav__pres .act .fa {
+	color: #fff;
 }
 
 
@@ -712,9 +718,10 @@ html.fsvs #fsvs-pagination li > span {
 
 
 .tabs__table .head .cell {
-	font-size: 21px;
+	font-size: 16px;
 	color: #fff;
 	font-weight: 500;
+	letter-spacing: 1.07px;
 }
 
 .tabs__table .row:nth-child(even) {
@@ -729,8 +736,8 @@ html.fsvs #fsvs-pagination li > span {
 
 .tabs__table .cell {
 	display: table-cell;
-	padding: 30px;
-	font-size: 21px;
+	height: 68px;
+	font-size: 20px;
 	color: #000;
 	font-weight: 300;
 	text-align: center;
@@ -741,6 +748,11 @@ html.fsvs #fsvs-pagination li > span {
 	font-weight: 500;
 }
 
+.tabs__table .fa-object-group {color: #808080; font-size: 1.4vw;}
+.tabs__table .red {color: #FF0000;}
+.tabs__table .reserve {text-decoration: none; display: table-cell;}
+.tabs__table .reserve i {color: #808080; font-size: 20px; margin-right: 10px;}
+.tabs__table .cell__link {text-decoration: none;}
 @media (max-width:1800px) {
 	/*1600*/
 	.tabs__table .head .cell {
@@ -748,54 +760,21 @@ html.fsvs #fsvs-pagination li > span {
 	}
 	.tabs__table .cell {
 		font-size: 1vw;
-	}
-}
-
-@media (max-width:1600px) {
-	/*1280*/
-	.tabs__table .head .cell {
-		font-size: 1.2vw;
-	}
-	.tabs__table .cell {
-		padding: 10px 5px;
-		font-size: 1.4vw;
-	}
-	.table_nav__tab .number {
-		font-size: 2vw;
-		width: 36px;
-		height: 36px;
-	}
-	.table_nav__tab .text {
-		font-size: 1.3vw;
-	}
-}
-
-@media (max-width: 1280px) {
-	/*1024*/
-	.table_nav__tab {
-		height: 40px;
-	}
-	.table_nav__tab .text {
-		font-size: 1.6vw;
+		padding: 0 5px;
 	}
 }
 
 @media (max-width:1024px) {
 	/*740*/
 	.tabs__table .head .cell {
-		font-size: 1.4vw;
-	}
-	.tabs__table .cell:first-child {
-		width: 13%;
+		font-size: 1.3vw;
 	}
 	.tabs__table .cell {
-		padding: 10px 0px;
-		font-size: 1.7vw;
+		padding: 10px 5px;
+		font-size: 1.6vw;
 	}
-	.table_nav__pres .table_nav__tab {
-		width: 100%;
-		justify-content: center;
-	}
+	.tabs__table .reserve i {display: none;}
+	.tabs__table .fa-object-group {font-size: 3vw;}
 }
 
 @media (max-width:740px) {
@@ -806,19 +785,7 @@ html.fsvs #fsvs-pagination li > span {
 	.table_nav .act {
 		box-shadow: none;
 	}
-	.tabs__table .cell:first-child {}
-	.tabs__table .cell:nth-child(2) {
-		display: none;
-	}
-	.tabs__table .cell:nth-child(3) {
-		display: none;
-	}
-	.tabs__table .cell:nth-child(4) {
-		display: none;
-	}
-	.tabs__table .cell:nth-child(5) {
-		display: none;
-	}
+	.tabs__table .cell:first-child, .tabs__table .cell:nth-child(3), .tabs__table .cell:nth-child(6), .tabs__table .cell:nth-child(7), .tabs__table .cell:nth-child(8), .tabs__table .cell:nth-child(10) {display: none;}
 	.tabs__table .cell {
 		font-size: 11px;
 		text-align: center;
@@ -1805,6 +1772,7 @@ html.fsvs #fsvs-pagination li > span {
 	.room__partners img {width: 80%; height: auto;}
 }
 @media (max-width:740px) {/*320*/
+	.pres__photo_form input, .pres__photo_form textarea {font-size: 16px;}
 	.room__print {display: none;}
 	.mob_link {display: block;}
 	.room__logo {display: none;}
