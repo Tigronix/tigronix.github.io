@@ -56,7 +56,7 @@ $(document).ready(function () {
 	
 	//main_slider
 	$(".main_slider").owlCarousel({
-		//autoPlay: 5000,
+		autoPlay: 5000,
 		stopOnHover: true,
 		navigation: true,
 		paginationSpeed: 1000,
