@@ -500,8 +500,8 @@ p {
 	.header {justify-content: flex-start; flex-wrap: wrap;}
 	.header__info {width: 0px; margin: 16px 0 0 0; justify-content: flex-start;}
 	.header__logo {width: 60px; height: 51px; background-size: 100% auto; border-radius: 0;}
-	.header__nav {display: none; height: auto; width: 80%; height: 100vh; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0; position: absolute; left: 0; top: 16vw; background: #258585; align-items: flex-start; justify-content: flex-start; flex-direction: column;}
-	.header__nav .link {font-size: 16px; width: 100%; padding: 10px 0 10px 2%; transform: none; font-weight: 300; border-top: 1px solid rgba(255,255,255,.6) ;}
+	.header__nav {display: none; height: auto; width: 84%; height: 100vh; padding: 0; flex-wrap: wrap; transform: none; margin-right: 0; position: absolute; left: 0; top: 16vw; background: #258585; align-items: flex-start; justify-content: flex-start; flex-direction: column;}
+	.header__nav .link {font-size: 11px; text-align: right; width: 100%; padding: 10px 10% 10px 2%; transform: none; font-weight: 300; border-top: 1px solid rgba(255,255,255,.6);}
 	.header__phone {margin-top: -10px; transform: none; height: auto; width: 100%;  position: absolute; right: 8%; top: 50%; width: auto; background: none; padding: 0;}
 	.header__phone a {transform: none; font-size: 14px;}
 	.header__phone .fa-phone-square {display: block;}
@@ -1869,6 +1869,12 @@ html.fsvs #fsvs-pagination li > span {
 	-webkit-animation: move_left  1.2s ease-in-out;
 	animation: move_left  1.2s ease-in-out;
 }
+.move_left_header {
+	animation-timing-function: linear;
+	-webkit-animation: move_left  .4s ease-in-out;
+	animation: move_left  .4s ease-in-out;
+}
+
 @keyframes move_left {
 	from {
 		transform: translatex(-200px);
@@ -1916,5 +1922,5 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 	body .header__small .main__btn {left: 31px;}
 	.ib {display: inline-block;}
 }
-
+.blackout {display: none; position: fixed; left: 0; top: 0; bottom: 0; right: 0; background: rgba(0,0,0,.6); z-index: 100;}
 
