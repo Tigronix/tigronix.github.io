@@ -23,19 +23,6 @@ $(document).ready(function () {
 		$('.header__open').fadeIn(300).addClass('ib');
 	});
 	
-	//header-scroll
-	var header = $('.header');
-	$(window).scroll(function(){
-		var top = $(this).scrollTop();
-		if (top > 100) {
-			header.addClass('header__small');
-			$('.header__nav').addClass('nav__small');
-		}
-		else {
-			header.removeClass('header__small');
-			$('.header__nav').removeClass('nav__small');
-		}
-	});
 
 	//fancbyox
 	$(".fancybox").fancybox();
@@ -77,6 +64,7 @@ $(document).ready(function () {
 		singleItem: true,
 		transitionStyle: "fade",
 		responsive: true,
+		pagination: false
 	});
 
 });
