@@ -229,7 +229,7 @@ p {
 	height: 933px;
 }
 
-.main_slider .owl-buttons div {position: absolute; top: 48%; font-size: 0; width: 70px; height: 84px; margin-top: -42px; z-index: 100; background: rgba(255,250,205,.5) center center no-repeat; border: 2px solid rgba(178,34,34,.5); border-radius: 10px;}
+.main_slider .owl-buttons div {position: absolute; top: 48%; font-size: 0; width: 70px; height: 84px; margin-top: -42px; z-index: 100; background: center center no-repeat; border-radius: 10px;}
 .main_slider .owl-buttons .owl-prev {left: 0; background-image: url(../img/arr_left.png);}
 .main_slider .owl-buttons .owl-next {right: 16px; background-image: url(../img/arr_right.png);}
 .main_slider .arrow {font-size: 68px; color: #FCAB1C; transition: .3s; position: absolute; top: 50%; margin-top: -32px; display: block; z-index: 1;}
@@ -627,7 +627,6 @@ html.fsvs #fsvs-pagination li > span {
 	transition: .3s;
 	border-radius: 5px 5px 0 0;
 }
-.table_nav__tab:nth-child(3) {margin-left: 5px;}
 .table_nav__tab .number {
 	font-size: 35px;
 	color: #3FB653;
@@ -783,6 +782,8 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:1024px) {
 	/*740*/
+	.table_nav__tab .number {font-size: 3vw;}
+	.table_nav__tab .text {font-size: 2vw;}
 	.tabs__table .head .cell {
 		font-size: 1.3vw;
 	}
@@ -816,10 +817,10 @@ html.fsvs #fsvs-pagination li > span {
 		margin: 5px 0;
 	}
 	.table_nav .number {
-		font-size: 14px;
+		font-size: 22px;
 	}
 	.table_nav .text {
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.tab__all {
 		font-size: 16px;
