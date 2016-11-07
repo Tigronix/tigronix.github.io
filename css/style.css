@@ -782,6 +782,10 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:1024px) {
 	/*740*/
+	.table_nav__tab {width: 33%;}
+	.table_nav__pres .table_nav__tab {width: 33%;}
+	.table_nav__pres .table_nav__tab .fa {font-size: 3vw; margin-right: 10px;}
+	.table_nav__tab .text {font-size: 2vw; margin-left: 0;}
 	.table_nav__tab .number {font-size: 3vw;}
 	.table_nav__tab .text {font-size: 2vw;}
 	.tabs__table .head .cell {
