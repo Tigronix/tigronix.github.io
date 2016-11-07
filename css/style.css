@@ -558,6 +558,10 @@ p {
 	.slider_wrap {margin-top: 197px;}
 	.main_slider .text {top: -103px;}
 }
+@media (max-width:400px) {
+	.slider_wrap {margin-top: 167px;}
+	.main_slider .text {top: -91px;}
+}
 
 /*vertical-slider*/
 
@@ -1675,6 +1679,8 @@ html.fsvs #fsvs-pagination li > span {
 .mob_square, .mob_phone {display: none;}
 .header__static {justify-content: flex-end;}
 .header__static .header__logo {display: none;}
+.header__main {justify-content: space-between;}
+.header__main .header__logo {display: block;}
 @media (max-width:740px) {
 	.header {height: 16vw;}
 	.header__static {justify-content: center;}
@@ -1795,6 +1801,7 @@ html.fsvs #fsvs-pagination li > span {
 	.room__partners img {width: 80%; height: auto;}
 }
 @media (max-width:740px) {/*320*/
+	body .header .header__open, body .header .header__close {position: relative; left: auto; top: auto; right: auto; margin: 0; height: auto;}
 	.pres__photo_form input, .pres__photo_form textarea {font-size: 16px;}
 	.room__print {display: none;}
 	.mob_link {display: block;}
