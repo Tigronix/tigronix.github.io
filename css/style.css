@@ -754,13 +754,14 @@ html.fsvs #fsvs-pagination li > span {
 .tab_block {display: none;}
 
 .tabs__table .head .cell {
-	font-size: 19px!important;
+	font-size: 19px;
 	color: #fff;
 	font-family: 'roboto', sans-serif;
 	text-transform: uppercase;
 	border: none;
 	background: #129A24;
 	height: 86px;
+	padding: 0 5px;
 }
 
 .tabs__table .row:nth-child(even) {
@@ -785,6 +786,7 @@ html.fsvs #fsvs-pagination li > span {
 	font-family: 'IKEA Sans';
 	transition: .6s;
 	font-size: 27px;
+	font-weight: 400;
 }
 .tabs__table .row:hover .cell {background: #DD2570;}
 .tabs__table .cell:first-child {border-left: 0; font-family: 'roboto', sans-serif; font-size: 21px;}
@@ -800,6 +802,10 @@ html.fsvs #fsvs-pagination li > span {
 .tabs__table .cell__link {text-decoration: none;}
 @media (max-width:1800px) {
 	/*1600*/
+	.tabs__table .head .cell {font-size: 1.2vw;}
+	.tabs__table .cell:first-child {font-size: 1.4vw;}
+	.tabs__table .cell:first-child span {font-size: 1.1vw;}
+	.tabs__table .cell {font-size: 1.2vw;}
 }
 @media (max-width:1024px) {
 	/*740*/
@@ -830,7 +836,6 @@ html.fsvs #fsvs-pagination li > span {
 	.table_nav .act {
 		box-shadow: none;
 	}
-	.tabs__table .cell:first-child, .tabs__table .cell:nth-child(3), .tabs__table .cell:nth-child(6), .tabs__table .cell:nth-child(7), .tabs__table .cell:nth-child(8), .tabs__table .cell:nth-child(10) {display: none;}
 	.tabs__table .cell {
 		font-size: 18px;
 		text-align: center;
