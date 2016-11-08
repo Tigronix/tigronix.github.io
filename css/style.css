@@ -187,13 +187,22 @@ body {
 }
 
 h1 {
-	font-size: 29px;
-	font-weight: 300;
-	color: #000;
-	margin-bottom: 15px;
+	font-size: 1.52vw;
+	font-weight: 600;
+	color: #118E21;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 24px;
 	padding: 0 2%;
+	font-family: 'open sans', sans-serif;
 }
 
+.h1_desc {display: flex; padding: 0 2%; justify-content: space-between; margin-bottom: 40px;}
+.h1_desc .text {text-align: left;}
+.h1_desc .text:nth-child(1) {width: 50%;}
+.h1_desc .text:nth-child(2) {width: 44%;}
+.h1_desc .text p {font-size: 20px; line-height: 23px; color: #000; font-weight: 300;}
 .padding {padding: 0 2%;}
 
 p {
@@ -735,14 +744,17 @@ html.fsvs #fsvs-pagination li > span {
 .tabs__table {
 	width: 100%;
 	display: table;
+	padding: 0 20px;
 }
 
 .tabs__table .row {
 	display: table-row;
 }
 
+.tab_block {display: none;}
+
 .tabs__table .head .cell {
-	font-size: 1vw;
+	font-size: 19px!important;
 	color: #fff;
 	font-family: 'roboto', sans-serif;
 	letter-spacing: 1.07px;
@@ -1952,3 +1964,13 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 .rooms__about {width: 90.7172%; align-items: flex-start; flex-wrap: wrap;}
 .rooms__about .title {width: 100%; text-align: center; font-size: 29px; color: #000; font-weight: 300;}
 .section_wrap {padding: 0 2.4478% 0 1.5412%; width: 100%;}
+
+.nav__tab {padding: 0 20px; display: flex;}
+.nav__tab .button {height: 50px; display: flex; align-items: center; transition: .3s; cursor: pointer; font-size: 16px; color: #DF2B4F; letter-spacing: 1.07px; font-weight: 500; width: 280px; justify-content: center; text-transform: uppercase; border: 1px solid #DF2B4F;}
+.nav__tab .button:hover {color: #fff; background: #DF2B4F; border: none;}
+.nav__tab .act {color: #fff; background: #DF2B4F; border: none;}
+
+
+
+
+
