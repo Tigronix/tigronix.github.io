@@ -10,7 +10,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 /*ikea sans*/
-@font-face {font-family: 'IKEA Sans';
+@font-face {font-family: 'ikea';
 	src: url("IKEA Sans Regular.eot"); /* IE9*/
 	src: url("IKEA Sans Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 		url("IKEA Sans Regular.woff2") format("woff2"), /* chrome、firefox */
@@ -783,7 +783,7 @@ html.fsvs #fsvs-pagination li > span {
 	border-bottom: 1px solid #BABABA;
 	padding: 0 5px;
 	background: #36BC49;
-	font-family: 'IKEA Sans';
+	font-family: 'ikea';
 	transition: .6s;
 	font-size: 27px;
 	font-weight: 400;
@@ -793,7 +793,7 @@ html.fsvs #fsvs-pagination li > span {
 .tabs__table .cell:first-child span {font-size: 17px;}
 .tabs__table .cell:nth-child(9) {font-family: 'roboto', sans-serif; font-size: 1.1vw; font-weight: 300;}
 .tabs__table .cell:last-child {font-weight: 500; border-right: 0; font-family: 'roboto', sans-serif; font-size: 1.1vw; font-weight: 300;}
-.tabs__table .cell:nth-child(9) span, .tabs__table .cell:last-child span {font-family: 'IKEA Sans'; font-size: 1.4vw;}
+.tabs__table .cell:nth-child(9) span, .tabs__table .cell:last-child span {font-family: 'ikea'; font-size: 1.4vw;}
 
 .tabs__table .fa-object-group {color: #808080; font-size: 1.4vw;}
 .tabs__table .red {color: #FF0000;}
