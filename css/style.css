@@ -566,7 +566,8 @@ p {
 }
 
 @media (max-width:600px) {
-	.slider_wrap {margin-top: 134px;}
+	.slider_wrap {margin-top: 136px;}
+	.main_slider .text {top: -86px;}
 }
 
 /*vertical-slider*/
