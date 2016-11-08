@@ -9,6 +9,15 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+/*ikea sans*/
+@font-face {font-family: 'IKEA Sans';
+	src: url("IKEA Sans Regular.eot"); /* IE9*/
+	src: url("IKEA Sans Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("IKEA Sans Regular.woff2") format("woff2"), /* chrome、firefox */
+		url("IKEA Sans Regular.woff") format("woff"), /* chrome、firefox */
+		url("IKEA Sans Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		url("IKEA Sans Regular.svg#IKEA Sans Regular") format("svg"); /* iOS 4.1- */
+}
 
 /* font-family: "HelveticaRegular"; */
 @font-face {
@@ -737,17 +746,13 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .tabs__table .head .cell {
-	background: #16BD2D;
-}
-
-
-
-.tabs__table .head .cell {
-	font-size: 16px;
+	font-size: 1vw;
 	color: #fff;
-	font-weight: 500;
+	font-family: 'roboto', sans-serif;
 	letter-spacing: 1.07px;
+	text-transform: uppercase;
 	border: none;
+	background: #129A24;
 }
 
 .tabs__table .row:nth-child(even) {
@@ -758,35 +763,27 @@ html.fsvs #fsvs-pagination li > span {
 	font-size: 21px;
 	color: #000;
 	font-weight: 500;
+	text-decoration: none;
 }
-
 .tabs__table .cell {
 	display: table-cell;
 	height: 68px;
-	font-size: 20px;
-	color: #000;
-	font-weight: 300;
+	color: #fff;
 	text-align: center;
 	vertical-align: middle;
-	border: 2px solid #fff;
-	border-width: 0 2px 0 2px;
+	border-bottom: 1px solid #BABABA;
 	padding: 0 5px;
+	background: #36BC49;
+	font-family: 'IKEA Sans';
+	transition: .6s;
+	font-size: 1.3vw;
 }
-
-.tabs__table .cell:first-child {border-left: 0; width: 16.9384%;}
-.tabs__table .cell:nth-child(2) {width: 8.0483%;}
-.tabs__table .cell:nth-child(3) {width: 7.2067%;}
-.tabs__table .cell:nth-child(4) {width: 9.1004%;}
-.tabs__table .cell:nth-child(5) {width: 9.2056%;}
-.tabs__table .cell:nth-child(6) {width: 9.1530%;}
-.tabs__table .cell:nth-child(7) {width: 7.2593%;}
-.tabs__table .cell:nth-child(8) {width: 12.8353%;}
-.tabs__table .cell:nth-child(9) {width: 12.8879%;}
-.tabs__table .cell:last-child {
-	width: 7.2067%;
-	font-weight: 500;
-	border-right: 0;
-}
+.tabs__table .row:hover .cell {background: #DD2570;}
+.tabs__table .cell:first-child {border-left: 0; font-family: 'roboto', sans-serif; font-size: 1.1vw;}
+.tabs__table .cell:first-child span {font-size: .9vw;}
+.tabs__table .cell:nth-child(9) {font-family: 'roboto', sans-serif; font-size: 1.1vw; font-weight: 300;}
+.tabs__table .cell:last-child {font-weight: 500; border-right: 0; font-family: 'roboto', sans-serif; font-size: 1.1vw; font-weight: 300;}
+.tabs__table .cell:nth-child(9) span, .tabs__table .cell:last-child span {font-family: 'IKEA Sans'; font-size: 1.4vw;}
 
 .tabs__table .fa-object-group {color: #808080; font-size: 1.4vw;}
 .tabs__table .red {color: #FF0000;}
@@ -795,15 +792,7 @@ html.fsvs #fsvs-pagination li > span {
 .tabs__table .cell__link {text-decoration: none;}
 @media (max-width:1800px) {
 	/*1600*/
-	.tabs__table .head .cell {
-		font-size: 1vw;
-	}
-	.tabs__table .cell {
-		font-size: 1vw;
-		padding: 0 5px;
-	}
 }
-
 @media (max-width:1024px) {
 	/*740*/
 	.table_nav__tab {width: 33%;}
@@ -825,15 +814,17 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:740px) {
 	/*320*/
+	.table_nav__pres .table_nav__tab {width: 100%;}
+	.table_nav__pres .table_nav__tab .fa {font-size: 24px;}
 	.tabs__table .head .cell {
-		font-size: 11px;
+		font-size: 13px!important;
 	}
 	.table_nav .act {
 		box-shadow: none;
 	}
 	.tabs__table .cell:first-child, .tabs__table .cell:nth-child(3), .tabs__table .cell:nth-child(6), .tabs__table .cell:nth-child(7), .tabs__table .cell:nth-child(8), .tabs__table .cell:nth-child(10) {display: none;}
 	.tabs__table .cell {
-		font-size: 11px;
+		font-size: 18px;
 		text-align: center;
 	}
 	.table_nav {
@@ -1070,6 +1061,8 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:740px) {
 	/*320*/
+	.tabs__table .cell:nth-child(9) {font-size: 16px;}
+	.tabs__table .cell:nth-child(9) span {display: block; font-size: 16px;}
 	.pres__photo_form {
 		width: 100%;
 		margin-bottom: 30px;
@@ -1957,3 +1950,7 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 }
 .blackout {display: none; position: fixed; left: 0; top: 0; bottom: 0; right: 0; background: rgba(0,0,0,.6); z-index: 100;}
 
+.rooms .room__percent {width: 7.5615%;}
+.rooms__about {width: 90.7172%; align-items: flex-start; flex-wrap: wrap;}
+.rooms__about .title {width: 100%; text-align: center; font-size: 29px; color: #000; font-weight: 300;}
+.section_wrap {padding: 0 2.4478% 0 1.5412%; width: 100%;}
