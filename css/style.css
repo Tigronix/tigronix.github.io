@@ -757,10 +757,10 @@ html.fsvs #fsvs-pagination li > span {
 	font-size: 19px!important;
 	color: #fff;
 	font-family: 'roboto', sans-serif;
-	letter-spacing: 1.07px;
 	text-transform: uppercase;
 	border: none;
 	background: #129A24;
+	height: 86px;
 }
 
 .tabs__table .row:nth-child(even) {
@@ -775,7 +775,7 @@ html.fsvs #fsvs-pagination li > span {
 }
 .tabs__table .cell {
 	display: table-cell;
-	height: 68px;
+	height: 71px;
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
@@ -784,11 +784,11 @@ html.fsvs #fsvs-pagination li > span {
 	background: #36BC49;
 	font-family: 'IKEA Sans';
 	transition: .6s;
-	font-size: 1.3vw;
+	font-size: 27px;
 }
 .tabs__table .row:hover .cell {background: #DD2570;}
-.tabs__table .cell:first-child {border-left: 0; font-family: 'roboto', sans-serif; font-size: 1.1vw;}
-.tabs__table .cell:first-child span {font-size: .9vw;}
+.tabs__table .cell:first-child {border-left: 0; font-family: 'roboto', sans-serif; font-size: 21px;}
+.tabs__table .cell:first-child span {font-size: 17px;}
 .tabs__table .cell:nth-child(9) {font-family: 'roboto', sans-serif; font-size: 1.1vw; font-weight: 300;}
 .tabs__table .cell:last-child {font-weight: 500; border-right: 0; font-family: 'roboto', sans-serif; font-size: 1.1vw; font-weight: 300;}
 .tabs__table .cell:nth-child(9) span, .tabs__table .cell:last-child span {font-family: 'IKEA Sans'; font-size: 1.4vw;}
