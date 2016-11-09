@@ -216,22 +216,6 @@ p {
 @media (max-width:740px) {
 	h1 {font-size: 24px; text-align: center;}
 }
-/*wrapper*/
-
-.wrapper {
-	width: 1800px;
-	margin: 0 auto;
-	position: relative;
-}
-
-@media (max-width:1800px) {
-	/*1600*/
-	.wrapper {
-		width: 100%;
-		padding: 0 2%;
-	}
-}
-
 
 /*header*/
 .header {height: 0; position: fixed; left: 0; top: 0; right: 0; display: flex; justify-content: space-between; z-index: 999;}
@@ -616,7 +600,6 @@ html.fsvs #fsvs-pagination li > span {
 .main_info {
 	margin: 20px 0 0 0;
 	position: relative; z-index: 1;
-	padding: 0 20px;
 }
 
 .main_info .wrapper {
@@ -862,7 +845,6 @@ html.fsvs #fsvs-pagination li > span {
 
 .presentation {
 	margin: 30px 0 0 0;
-	padding: 0 20px;
 }
 
 .presentation .wrapper {
@@ -2018,8 +2000,9 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 
 
 /*global_padding*/
+.content .wrapper {padding: 0 20px;}
 @media (max-width:1280px) {
-	.main_info, .presentation {padding: 0 2%;}
+	.content .wrapper {padding: 0 2%;}
 }
 
 .owl_obj {width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
@@ -2045,3 +2028,5 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 	.rooms_slider .owl-item {padding: 0;}
 }
 
+.about {margin-top: 50px;}
+.about__img {height: 842px; background: url(../img/about.jpg); width: 100%;}
