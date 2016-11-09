@@ -234,14 +234,18 @@ p {
 /*header*/
 .header {height: 0; position: fixed; left: 0; top: 0; right: 0; display: flex; justify-content: space-between; z-index: 999;}
 .header__logo {background: #fff url(../img/logo.png) center no-repeat; width: 150px; height: 116px;}
-.header__info {display: flex; flex-wrap: wrap; width: 830px; justify-content: flex-end; align-items: flex-start;}
-.header__nav {background: rgba(231,1,94,.8); height: 50px; width: 880px; display: flex; justify-content: space-between; align-items: center; transform: skewx(-40deg); margin-right: -50px; padding: 0 8% 0 6%;}
+.header__info {display: flex; flex-wrap: wrap; width: 58%; justify-content: flex-end; align-items: flex-start;}
+.header__nav {background: rgba(231,1,94,.8); height: 50px; width: 100%; display: flex; justify-content: space-between; align-items: center; transform: skewx(-40deg); margin-right: -50px; padding: 0 8% 0 6%;}
 .header__nav .link {color: #fff; font-size: .9vw; font-weight: 500; letter-spacing: 1.07px; text-decoration: none; text-transform: uppercase; transform: skewx(40deg);}
 .mob_link {display: none;}
-.header__phone {margin-top: 0px; background: rgba(40,162,59,.8); height: 67px; display: flex; align-items: center; transform: skewx(-33deg); width: 524px; margin-right: -6%; padding-left: 5.5%;}
+.header__phone {margin-top: 0px; background: rgba(40,162,59,.8); height: 67px; display: flex; align-items: center; transform: skewx(-33deg); width: 63%; margin-right: -6%; padding-left: 5.5%;}
 .header__phone a {text-decoration: none; font-size: 2.4vw; color: #fff; font-weight: 500; transform: skewx(33deg);}
 .header__phone .fa-phone-square {display: none;}
 .header .header__close, .header .header__open {display: none;}
+
+@media (max-width:1440px) {
+	.header__phone {height: auto; padding: 10px 0 10px 5.5%;}
+}
 
 /*main_slider*/
 
@@ -456,9 +460,6 @@ p {
 	.main_slider .text .t2 {
 		margin-right: 42px;
 	}
-	.slider__advantages {
-		width: 51%;
-	}
 	.slider__options {left: 8.3%;}
 }
 
@@ -466,6 +467,7 @@ p {
 	.slider_wrap {height: 825px;}
 	.main_slider .owl-buttons div {top: 36%;}
 	.slider__advantages {bottom: 10%;}
+	header__phone {}
 }
 
 @media (max-width:1280px) {
@@ -475,9 +477,6 @@ p {
 	}
 	.main_slider .text .t2 {
 		margin-right: 40px;
-	}
-	.slider__advantages {
-		width: 66%;
 	}
 }
 
