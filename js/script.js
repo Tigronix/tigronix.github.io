@@ -52,7 +52,6 @@ $(document).ready(function () {
 		singleItem: true,
 		transitionStyle: "fade",
 		responsive: true,
-		pagination: false
 	});
 	
 	//rooms_slider
