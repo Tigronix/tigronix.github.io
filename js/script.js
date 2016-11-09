@@ -44,7 +44,7 @@ $(document).ready(function () {
 	
 	//rooms_slider
 	$(".rooms_slider").owlCarousel({
-		autoPlay: 5000,
+		//autoPlay: 5000,
 		stopOnHover: true,
 		navigation: true,
 		paginationSpeed: 1000,
@@ -52,6 +52,7 @@ $(document).ready(function () {
 		singleItem: true,
 		transitionStyle: "fade",
 		responsive: true,
+		pagination: false
 	});
 	
 	//rooms_slider

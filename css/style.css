@@ -186,7 +186,7 @@ body {
 	overflow: hidden;
 }
 
-h1 {
+.h1 {
 	font-size: 1.52vw;
 	font-weight: 600;
 	color: #118E21;
@@ -750,8 +750,6 @@ html.fsvs #fsvs-pagination li > span {
 	display: table-row;
 }
 
-.tab_block {display: none;}
-
 .tabs__table .head .cell {
 	font-size: 19px;
 	color: #fff;
@@ -864,6 +862,7 @@ html.fsvs #fsvs-pagination li > span {
 
 .presentation {
 	margin: 30px 0 0 0;
+	padding: 0 20px;
 }
 
 .presentation .wrapper {
@@ -878,18 +877,24 @@ html.fsvs #fsvs-pagination li > span {
 
 .pres__photo_form {
 	width: 27.6%;
-	background: #FAE8D0;
 	text-align: center;
-	padding: 27px 60px 55px 57px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: flex-start;
 }
 
+.form__wrap {padding: 27px 60px 55px 57px; background: #FAE8D0; height: 573px;}
+
+.pres__photo_form * {width: 100%;}
+
 .pres__photo_form .title {
-	font-size: 1.1vw;
-	color: #006533;
-	font-weight: 500;
-	letter-spacing: 1.07px;
+	font-size: 24px;
+	color: #dc143c;
+	font-weight: 600;
 	margin-bottom: 26px;
 	text-transform: uppercase;
+	font-family: 'open sans', sans-serif;
 }
 
 .pres__photo_form .inpbox {
@@ -915,7 +920,7 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .pres__photo_form button {
-	height: 66px;
+	height: 84px;
 	border: none;
 	width: 100%;
 	text-decoration: none;
@@ -974,8 +979,10 @@ html.fsvs #fsvs-pagination li > span {
 	height: 31px;
 }
 
-.tab_block:first-child {
+.tab_block {
 	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 .tab_block {
@@ -984,6 +991,7 @@ html.fsvs #fsvs-pagination li > span {
 
 .pres_slider_wrap {
 	width: 72.4%;
+	background: #F7F3EB;
 }
 
 .pres__slider img {width: 100%; height: auto; max-height: 582px; vertical-align: bottom;}
@@ -998,7 +1006,8 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:1440px) {
 	/*1280*/
-	.pres__photo_form {
+	.tab_block {align-items: flex-start;}
+	.form__wrap {
 		padding: 20px 30px;
 	}
 	.pres__photo_form button {
@@ -1010,7 +1019,7 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:1280px) {
 	/*1024*/
-	.pres__photo_form {
+	.form__wrap {
 		padding: 16px 20px;
 	}
 	.pres__photo_form button {
@@ -1127,9 +1136,6 @@ html.fsvs #fsvs-pagination li > span {
 	background: #FFA500;
 }
 
-.tab_block {
-	display: none;
-}
 
 .flex {
 	display: flex!important;
@@ -1213,6 +1219,7 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:1800px) {
 	/*1600*/
+	.pres__photo_form button {height: 60px;}
 	.partners {
 		padding: 0;
 	}
@@ -1386,15 +1393,16 @@ html.fsvs #fsvs-pagination li > span {
 	justify-content: center;
 	align-items: center;
 	background: #f7f3eb;
-	height: 528px;
 }
 
 .rooms_slider .owl_wrap {
 	width: 87%;
 	display: flex;
 	justify-content: space-between;
-	padding-right: 12%;
 	align-items: center;
+	flex-wrap: wrap;
+	padding: 50px 0;
+	height: 573px;
 }
 
 .rooms_slider .owl_wrap .img {
@@ -1404,6 +1412,7 @@ html.fsvs #fsvs-pagination li > span {
 .rooms_slider .owl_wrap .img img {
 	width: 100%;
 	height: auto;
+	max-width: 426px;
 	max-height: 455px;
 }
 
@@ -1412,16 +1421,16 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .rooms_slider .owl_wrap .text .t1 {
-	font-size: 1.3vw;
+	font-size: 1.4vw;
 	font-weight: 300;
-	color: #000;
+	color: #258585;
 	font-family: 'roboto', sans-serif;
 	text-align: center;
 }
 
 .rooms_slider .owl_wrap .text .t2 {
 	font-size: 48px;
-	color: #000;
+	color: #258585;
 	font-family: 'roboto', sans-serif;
 	font-weight: bold;
 	text-align: center;
@@ -1430,13 +1439,13 @@ html.fsvs #fsvs-pagination li > span {
 
 .rooms_slider .owl_wrap .text .t2 span {
 	font-size: 4vw;
-	border-bottom: 4px solid #000;
+	border-bottom: 4px solid #258585;
 	padding-bottom: 10px;
 	display: inline-block;
 }
 
 .rooms_slider .owl_wrap .text .t6 {
-	font-size: 3.6vw;
+	font-size: 4vw;
 	font-weight: bold;
 	color: #16BD2D;
 }
@@ -1997,6 +2006,7 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 	.all__table .text {font-size: 1.5vw;}
 }
 @media (max-width:740px) {/*320*/
+	.tab_block {flex-wrap: wrap;}
 	.all__table .title {font-size: 21px;}
 	.all__table .items_wrap {flex-wrap: wrap;}
 	.all__table .item {width: 100%; margin-top: 10px;}
@@ -2006,3 +2016,11 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 }
 
 
+/*global_padding*/
+@media (max-width:1280px) {
+	.main_info, .presentation {padding: 0 2%;}
+}
+
+.owl_obj {width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
+.slider__info, .slider__info .room__partners {width: 100%; background: #E7E7E7;}
+.index__percent {width: 33.2635%; height: 130px;}
