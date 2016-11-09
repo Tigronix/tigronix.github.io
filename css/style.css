@@ -10,7 +10,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 /*ikea sans*/
-@font-face {font-family: 'ikea';
+@font-face {font-family: 'ikea', 'roboto';
 	src: url("IKEA Sans Regular.eot"); /* IE9*/
 	src: url("IKEA Sans Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 		url("IKEA Sans Regular.woff2") format("woff2"), /* chrome、firefox */
@@ -198,13 +198,12 @@ h1 {
 	font-family: 'open sans', sans-serif;
 }
 
-.h1_desc {display: flex; padding: 0 2%; justify-content: space-between; margin-bottom: 40px;}
+.h1_desc {display: flex; justify-content: space-between; margin-bottom: 40px;}
 .h1_desc .text {text-align: left;}
 .h1_desc .text:nth-child(1) {width: 50%;}
 .h1_desc .text:nth-child(2) {width: 44%;}
 .h1_desc .text p {font-size: 20px; line-height: 23px; color: #000; font-weight: 300;}
 .padding {padding: 0 2%;}
-
 p {
 	color: #000;
 	font-size: 21px;
@@ -212,8 +211,11 @@ p {
 }
 @media (max-width: 1440px) {
 	p {font-size: 15px;}
+	h1 {font-size: 2.3vw;}
 }
-
+@media (max-width:740px) {
+	h1 {font-size: 24px; text-align: center;}
+}
 /*wrapper*/
 
 .wrapper {
@@ -478,20 +480,18 @@ p {
 	.main_slider .text .t2 {
 		margin-right: 40px;
 	}
+	.slider__advantages {width: 52%;}
 }
 
 @media (max-width:1024px) {
 	/*740*/
+	.slider__advantages {width: auto; margin: 0 -10px;}
+	.slider__advantages .item {margin: 0 10px;}
 	.main_slider .text {
 		font-size: 23px;
 	}
 	.main_slider .text .t2 {
 		margin-right: 33px;
-	}
-	.slider__advantages {
-		width: auto;
-		left: 2%;
-		right: 2%;
 	}
 	.main_slider .slick-prev,
 	.main_slider .slick-next {
@@ -616,6 +616,7 @@ html.fsvs #fsvs-pagination li > span {
 .main_info {
 	margin: 20px 0 0 0;
 	position: relative; z-index: 1;
+	padding: 0 20px;
 }
 
 .main_info .wrapper {
@@ -743,7 +744,6 @@ html.fsvs #fsvs-pagination li > span {
 .tabs__table {
 	width: 100%;
 	display: table;
-	padding: 0 20px;
 }
 
 .tabs__table .row {
@@ -782,17 +782,17 @@ html.fsvs #fsvs-pagination li > span {
 	border-bottom: 1px solid #BABABA;
 	padding: 0 5px;
 	background: #36BC49;
-	font-family: 'ikea';
+	font-family: 'ikea', 'roboto';
 	transition: .6s;
 	font-size: 27px;
 	font-weight: 400;
 }
-.tabs__table .row:hover .cell {background: #DD2570;}
+.tabs__table .row:hover .cell {background: #F1A925;}
 .tabs__table .cell:first-child {border-left: 0; font-family: 'roboto', sans-serif; font-size: 21px;}
 .tabs__table .cell:first-child span {font-size: 17px;}
 .tabs__table .cell:nth-child(9) {font-family: 'roboto', sans-serif; font-size: 1.1vw; font-weight: 300;}
 .tabs__table .cell:last-child {font-weight: 500; border-right: 0; font-family: 'roboto', sans-serif; font-size: 1.1vw; font-weight: 300;}
-.tabs__table .cell:nth-child(9) span, .tabs__table .cell:last-child span {font-family: 'ikea'; font-size: 1.4vw;}
+.tabs__table .cell:nth-child(9) span, .tabs__table .cell:last-child span {font-family: 'ikea', 'roboto'; font-size: 1.4vw;}
 
 .tabs__table .fa-object-group {color: #808080; font-size: 1.4vw;}
 .tabs__table .red {color: #FF0000;}
@@ -1969,12 +1969,40 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 .rooms__about .title {width: 100%; text-align: center; font-size: 29px; color: #000; font-weight: 300;}
 .section_wrap {padding: 0 2.4478% 0 1.5412%; width: 100%;}
 
-.nav__tab {padding: 0 20px; display: flex;}
+.nav__tab {display: flex;}
 .nav__tab .button {height: 50px; display: flex; align-items: center; transition: .3s; cursor: pointer; font-size: 16px; color: #DF2B4F; letter-spacing: 1.07px; font-weight: 500; width: 280px; justify-content: center; text-transform: uppercase; border: 1px solid #DF2B4F;}
 .nav__tab .button:hover {color: #fff; background: #DF2B4F; border: none;}
 .nav__tab .act {color: #fff; background: #DF2B4F; border: none;}
 
-
-
+/*all__table*/
+.all__table {display: flex; align-items: center; margin-top: 22px;}
+.all__table .title {font-size: 21px; color: #000;}
+.all__table .items_wrap {display: flex; flex-wrap: nowrap; margin-left: 50px;}
+.all__table .item {font-size: 16px; font-weight: 500; letter-spacing: 1.07px; color: #dc143c; text-decoration: none; text-transform: uppercase; display: flex; align-items: center; height: 50px; border: 1px solid #E02C50; transition: .3s; padding: 0 20px;}
+.all__table .item:hover {background: #E02C50; color: #fff;}
+.all__table .number {font-size: 32px;font-family: 'ikea', 'roboto';}
+.all__table .text {margin-left: 10px;}
+@media (max-width:1440px) {/*1280*/
+	.all__table .title {font-size: 1.5vw;}
+	.all__table .items_wrap {width: 65%; flex-wrap: wrap; margin-left: 10px;}
+	.all__table .item {width: 33%; padding: 0 2%; justify-content: center;}
+	.all__table .number {font-size: 1.3vw;}
+	.all__table .text {font-size: 1vw;}
+}
+@media (max-width:1024px) {/*740*/
+	.all__table {flex-wrap: wrap;}
+	.all__table .title {font-size: 24px;}
+	.all__table .items_wrap {width: 100%; margin-top: 15px;}
+	.all__table .number {font-size: 2vw;}
+	.all__table .text {font-size: 1.5vw;}
+}
+@media (max-width:740px) {/*320*/
+	.all__table .title {font-size: 21px;}
+	.all__table .items_wrap {flex-wrap: wrap;}
+	.all__table .item {width: 100%; margin-top: 10px;}
+	.all__table .item:first-child {margin-top: 0;}
+	.all__table .number {font-size: 20px;}
+	.all__table .text {font-size: 14px;}
+}
 
 
