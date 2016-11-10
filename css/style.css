@@ -885,7 +885,7 @@ html.fsvs #fsvs-pagination li > span {
 	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: flex-start;
 }
 
@@ -1738,13 +1738,13 @@ html.fsvs #fsvs-pagination li > span {
 .main_link .name:hover:after {opacity: 1; bottom: -3px;}
 .main_link .name .fa-angle-right {position: absolute; right: -13%; top: 0; font-size: 1vw; color: #fff;}
 .main_link:hover .sub__menu {display: flex; opacity: 1; transition: .3s;}
-.sub__menu {display: none; flex-direction: column; opacity: 0; position: absolute; left: 100%; top: -20px; background: #5F9EA0; width: 194px; padding: 18px 0 64px; text-align: center; transition: .3s; z-index: 2;}
+.sub__menu {display: none; flex-direction: column; opacity: 0; position: absolute; left: 100%; top: -20px; background: #5F9EA0; width: 194px; padding: 18px 0 64px; text-align: center; transition: .3s; z-index: 10;}
 .sub__menu .link {transition: .3s; text-decoration: none; font-size: 0.85vw; color: #fff; font-weight: 500; letter-spacing: 1.07px; text-transform: uppercase; display: inline-block; margin-bottom: 20px; position: relative;}
 .sub__menu .link span {display: inline-block; position: relative;}
 .sub__menu .link span:after {opacity: 0; display: block; content: ''; height: 2px; background: #fff; position: absolute; bottom: 0; left: 0; right: 0; transition: .4s;}
 .sub__menu .link:hover span:after {opacity: 1; bottom: -3px;}
 
-.room__content {width: 89.7894%; display: flex; flex-wrap: wrap; align-items: stretch;}
+.room__content {width: 82%; display: flex; flex-wrap: wrap; align-items: stretch;}
 
 .room__about {width: 74.2086%; display: flex; background: #fff;}
 .room__house_wrap {width: 10.2685%; height: 100%;}
@@ -1782,7 +1782,7 @@ html.fsvs #fsvs-pagination li > span {
 .room__percent .numbers {color: #fff; font-size: 3.9vw; line-height: 3vw; font-family: 'helveticabold';}
 .room__percent .numbers span {font-size: 2.7vw;}
 .room__percent .text {color: #fff; font-size: 0.85vw; letter-spacing: 1.07px; font-weight: 500; text-transform: uppercase;}
-.room__partners {width: 83.1184%; background: rgba(255,255,255,.8); display: flex; align-items: center; justify-content: space-around; padding: 0 2.8% 0 2.4%;}
+.room__partners {width: 91.9%; background: rgba(255,255,255,.8); display: flex; align-items: center; justify-content: space-around; padding: 0 2.8% 0 2.4%;}
 @media (max-width:1800px) {/*1600*/
 	.room__print {padding-top: 0; display: flex; align-items: center; flex-wrap: wrap; justify-content: center;}
 	.room__percent {padding-top: 0; display: flex; align-items: center; flex-wrap: wrap; justify-content: center;}
@@ -1965,8 +1965,8 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 }
 .blackout {display: none; position: fixed; left: 0; top: 0; bottom: 0; right: 0; background: rgba(0,0,0,.6); z-index: 100;}
 
-.rooms .room__percent {width: 7.5615%;}
-.rooms__about {width: 90.7172%; height: 519px; padding: 10px 0 0 0; display: block;}
+.rooms .room__percent {width: 130px;}
+.rooms__about {width: 100%; height: 519px; padding: 10px 0 0 0; display: block;}
 .rooms__about .title {width: 100%; text-align: center; font-size: 29px; color: #000; font-weight: 300;}
 .section_wrap {padding: 0 2.4478% 0 35px; width: 100%; margin-top: 15px; display: flex; align-items: flex-start; flex-wrap: wrap; position: relative;}
 .float_hover {display: none; height: 38px; position: absolute; border: 1px solid #16bd2d; left: 14px; top: 47px; width: 1090px; border-radius: 5px;}
@@ -2009,11 +2009,10 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 }
 @media (max-width:1024px) {/*1280*/
 	.rooms__about {width: 100%;}
-	.room__percent.rooms_percent {width: 12%;}
+	.room__percent.rooms_percent {height: 130px;}
 }
 @media (max-width:740px) {/*320*/
 	.rooms__about {width: 100%;}
-	.room__percent.rooms_percent {width: 12%;}
 	.rooms__section {width: 100%;}
 	.rooms__map {flex-wrap: wrap;}
 	.rooms__map_item { margin-bottom: 16px;}
@@ -2074,7 +2073,7 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 /*room_-slider*/
 .owl_obj {width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
 .slider__info, .slider__info .room__partners {width: 100%; background: #E7E7E7;}
-.index__percent {width: 33.2635%; height: 130px; background: #3EAB4F;}
+.index__percent {width: 130px; height: 130px; background: #3EAB4F;}
 .slide {width: 100%;}
 @media (max-width:1280px) {
 	.room__partners {padding: 0;}
@@ -2175,4 +2174,5 @@ body .form__fix .title {margin-bottom: 26px; font-size: 1.2vw;}
 @media (max-width:740px) {
 	body .form__fix {padding: 10px;}
 	body .form__fix .title {font-size: 19px;}
+	.rooms .room__percent {padding: 0; width: 130px; height: 130px;}
 }
