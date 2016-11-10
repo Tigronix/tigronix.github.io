@@ -1706,7 +1706,7 @@ html.fsvs #fsvs-pagination li > span {
 	.header__static .mob_phone, .header__static .mob_square {width: 50px;}
 }
 /*room*/
-.room {background: url(../img/room_bg.jpg) center top no-repeat; display: flex; justify-content: flex-end; height: 1080px; align-items: flex-start;}
+.room {background: url(../img/room_bg.jpg) center top no-repeat; display: flex; justify-content: flex-end; min-height: 1080px; align-items: flex-start;}
 .room__wrapper {display: flex; padding-top: 123px; width: 98.9583%; align-items: stretch; position: relative;}
 .room__nav {width: 10.2105%;}
 .room__logo {background: #fff url(../img/logo_room.png) center center no-repeat; height: 129px; display: block; background-size: 53% auto;}
@@ -1944,9 +1944,47 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 .blackout {display: none; position: fixed; left: 0; top: 0; bottom: 0; right: 0; background: rgba(0,0,0,.6); z-index: 100;}
 
 .rooms .room__percent {width: 7.5615%;}
-.rooms__about {width: 90.7172%; align-items: flex-start; flex-wrap: wrap;}
+.rooms__about {width: 90.7172%; height: 519px; padding: 10px 0 0 0; display: block;}
 .rooms__about .title {width: 100%; text-align: center; font-size: 29px; color: #000; font-weight: 300;}
-.section_wrap {padding: 0 2.4478% 0 1.5412%; width: 100%;}
+.section_wrap {padding: 0 2.4478% 0 35px; width: 100%; margin-top: 15px; display: flex; align-items: flex-start; flex-wrap: wrap;}
+.rooms__floor {padding-top: 51px;}
+.rooms__item {color: #696969; font-size: 20px; font-weight: 500; letter-spacing: 1.07px; margin-bottom: 9px; }
+.rooms__section {margin-left: 16px; width: 236px;}
+.rooms__section .title {font-size: 16px; font-weight: 500; color: #000; letter-spacing: 1.07px; text-transform: uppercase;}
+.rooms__section_table {display: table; width: 100%; background: #f5f5f5; margin-top: 11px; padding: 15px 9px 27px 11px; position: relative; border: 1px solid #dcdcdc; border-width: 0 1px;}
+.rooms__section_table:before {display: block; content: ''; background: #dcdcdc; position: absolute; left: 0; right: 0; top: 0; height: 8px;}
+.rooms__section_table:after {display: block; content: ''; background: #dcdcdc; position: absolute; left: 0; right: 0; bottom: 0; height: 8px;}
+.rooms__section_table .row {display: table-row;}
+.rooms__section_table .cell {display: table-cell; text-align: center; vertical-align: middle; border: 3px solid #f5f5f5; width: 36px; height: 36px; background: #16bd2d; font-size: 17px; color: #fff; letter-spacing: 1.07px; text-transform: uppercase;}
+.rooms__section_table .red {background: #e7015e;}
+.rooms__section_table .yellow {background: #d9d507;}
+.rooms__floor_ml {margin-left: 16px;}
+.rooms__map {width: 100%; display: flex; margin: 13px 0 0 0px; padding-left: 42px;}
+.rooms__map_item {display: flex; align-items: center; margin-right: 49px;}
+.rooms__map_item .square {width: 30px; height: 30px; margin-right: 10px;}
+.rooms__map_item .green {background: #16bd2d;}
+.rooms__map_item .yellow {background: #D9D507;}
+.rooms__map_item .red {background: #E7015E;}
+.rooms__map_item .text {font-size: 16px; color: #696969; font-weight: 500; letter-spacing: 1.07px;}
+@media (max-width:1430px) {/*1280*/
+	.rooms__floor {display: none;}
+	.section_wrap {margin-top: 0; justify-content: space-between; padding: 0 2%;}
+	.rooms__section {margin-top: 20px; width: 48%; margin-left: 0;}
+	.rooms__about {padding: 10px 0 20px; height: auto;}
+}
+@media (max-width:1024px) {/*1280*/
+	.rooms__about {width: 100%;}
+	.room__percent.rooms_percent {width: 12%;}
+}
+@media (max-width:740px) {/*320*/
+	.rooms__about {width: 100%;}
+	.room__percent.rooms_percent {width: 12%;}
+	.rooms__section {width: 100%;}
+	.rooms__map {flex-wrap: wrap;}
+	.rooms__map_item { margin-bottom: 16px;}
+	.rooms__map_item:last-child { margin-bottom: 0;}
+}
+
 
 .nav__tab {display: flex;}
 .nav__tab .button {height: 50px; display: flex; align-items: center; transition: .3s; cursor: pointer; font-size: 16px; color: #DF2B4F; letter-spacing: 1.07px; font-weight: 500; width: 280px; justify-content: center; text-transform: uppercase; border: 1px solid #DF2B4F;}
