@@ -1315,7 +1315,7 @@ html.fsvs #fsvs-pagination li > span {
 	top: 0;
 }
 
-.rooms_slider .owl-pagination {
+ .owl-pagination {
 	height: 40px;
 	display: flex;
 	align-items: center;
@@ -1324,7 +1324,7 @@ html.fsvs #fsvs-pagination li > span {
 	margin: 30px 0;
 }
 
-.rooms_slider .owl-pagination .active {
+.owl-pagination .active {
 	background: #ffa500;
 }
 
@@ -2052,3 +2052,34 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 	.about__btn {width: 100%;}
 }
 
+/*gallery*/
+.gal__cont {height: 690px; display: flex; flex-wrap: wrap; margin-top: 15px; overflow: hidden;}
+.gal__slide {height: 690px; background-size: cover;}
+.owl-carousel.gal__slider {width: 66.5765%;}
+.gal__slider .owl-buttons div {position: absolute; top: 48%; font-size: 0; width: 70px; height: 84px; margin-top: -42px; z-index: 100; background: center center no-repeat; border-radius: 10px;}
+.gal__slider .owl-buttons .owl-prev {left: 0; background-image: url(../img/arr_left.png);}
+.gal__slider .owl-buttons .owl-next {right: 16px; background-image: url(../img/arr_right.png);}
+.gal__slider .owl-pagination {background: none; position: absolute; left: 0; right: 0; bottom: -14px;}
+.gal__slider .owl-page {border-color: #fff; width: 24px; height: 24px; z-index: 100;}
+.gal__slider .active {background: #fff;}
+.gal__slider .fancybox {display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
+.gal__slider .lupa {position: absolute; bottom: 59px; right: 65px; opacity: .6;}
+.gal__side {width: 33.4235%; height: 690px;}
+.gal__photo {height: 345px; position: relative;}
+.gal__photo .lupa {display: block; position: absolute; right: 35px; bottom: 35px; opacity: .6; z-index: 1;}
+@media (max-width:1280px) {/*1024*/
+	.gal__cont, .gal__slide, .gal__side {height: 400px;}
+	.gal__photo, .gal__video {height: 200px;}
+	.gal__photo .lupa, .gal__slider .lupa {width: 50px; height: 50px;}
+	.gal__photo .lupa, .gal__slider .lupa  {right: 15px; bottom: 15px;}
+}
+@media (max-width:740px) {/*320*/
+	.gal__cont, .gal__slide, .gal__side {height: auto;}
+	.gal__slide {height: 400px;}
+	.owl-carousel.gal__slider {width: 100%;}
+	.gal__side {width: 100%;}
+	.gal__photo {height: auto;}
+	.gal__photo img {width: 100%; height: auto; vertical-align: bottom;}
+	.gal__video {height: 300px;}
+	.owl-controls .owl-buttons div {display: none;}
+}

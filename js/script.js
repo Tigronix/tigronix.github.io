@@ -44,7 +44,7 @@ $(document).ready(function () {
 	
 	//rooms_slider
 	$(".rooms_slider").owlCarousel({
-		//autoPlay: 5000,
+		autoPlay: 5000,
 		stopOnHover: true,
 		navigation: true,
 		paginationSpeed: 1000,
@@ -53,6 +53,20 @@ $(document).ready(function () {
 		transitionStyle: "fade",
 		responsive: true,
 	});
+	
+	//gal__slider
+	$(".gal__slider").owlCarousel({
+		autoPlay: 5000,
+		stopOnHover: true,
+		navigation: true,
+		paginationSpeed: 1000,
+		goToFirstSpeed: 2000,
+		singleItem: true,
+		transitionStyle: "fade",
+		responsive: true,
+	});
+	
+	
 	
 	//rooms_slider
 	$(".pres__slider").owlCarousel({
