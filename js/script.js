@@ -1,4 +1,55 @@
 $(document).ready(function () {
+	
+	//row_hover
+	$('.row_9').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__9').toggleClass('show');
+		}
+	});
+	$('.row_8').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__8').toggleClass('show');
+		}
+	});
+	$('.row_7').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__7').toggleClass('show');
+		}
+	});
+	$('.row_6').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__6').toggleClass('show');
+		}
+	});
+	$('.row_5').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__5').toggleClass('show');
+		}
+	});
+	$('.row_4').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__4').toggleClass('show');
+		}
+	});
+	$('.row_3').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__3').toggleClass('show');
+		}
+	});
+	$('.row_2').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__2').toggleClass('show');
+		}
+	});
+	$('.row_1').hover(function(){
+		if ($(this).hover) {
+			$('.float_hover__1').toggleClass('show');
+		}
+	});
+	
+	
+	
+	//animation
 	$('.room__about').addClass('slide_top');
 	$('.room__info').addClass('slide_bot');
 	//slider_hover
