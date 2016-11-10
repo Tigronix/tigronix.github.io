@@ -1955,7 +1955,7 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 .rooms__section_table:before {display: block; content: ''; background: #dcdcdc; position: absolute; left: 0; right: 0; top: 0; height: 8px;}
 .rooms__section_table:after {display: block; content: ''; background: #dcdcdc; position: absolute; left: 0; right: 0; bottom: 0; height: 8px;}
 .rooms__section_table .row {display: table-row;}
-.rooms__section_table .cell {display: table-cell; text-align: center; vertical-align: middle; border: 3px solid #f5f5f5; width: 36px; height: 36px; background: #16bd2d; font-size: 17px; color: #fff; letter-spacing: 1.07px; text-transform: uppercase;}
+.rooms__section_table .cell {text-decoration: none; display: table-cell; text-align: center; vertical-align: middle; border: 3px solid #f5f5f5; width: 36px; height: 36px; background: #16bd2d; font-size: 17px; color: #fff; letter-spacing: 1.07px; text-transform: uppercase;}
 .rooms__section_table .red {background: #e7015e;}
 .rooms__section_table .yellow {background: #d9d507;}
 .rooms__floor_ml {margin-left: 16px;}
@@ -1983,6 +1983,7 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 	.rooms__map {flex-wrap: wrap;}
 	.rooms__map_item { margin-bottom: 16px;}
 	.rooms__map_item:last-child { margin-bottom: 0;}
+	.room__percent.rooms_percent {width: auto; height: auto; padding: 20px 0 10px;}
 }
 
 
