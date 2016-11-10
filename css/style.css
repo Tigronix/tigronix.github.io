@@ -851,7 +851,7 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .presentation {
-	margin: 30px 0 0 0;
+	margin: 40px 0 0 0;
 }
 
 .presentation .wrapper {
@@ -2053,6 +2053,7 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 }
 
 /*gallery*/
+.gallery {margin-top: 30px;}
 .gal__cont {height: 690px; display: flex; flex-wrap: wrap; margin-top: 15px; overflow: hidden;}
 .gal__slide {height: 690px; background-size: cover;}
 .owl-carousel.gal__slider {width: 66.5765%;}
@@ -2067,11 +2068,11 @@ body .header .main__btn {font-size: 17px; top: 50%; font-size: 24px; margin-top:
 .gal__side {width: 33.4235%; height: 690px;}
 .gal__photo {height: 345px; position: relative;}
 .gal__photo .lupa {display: block; position: absolute; right: 35px; bottom: 35px; opacity: .6; z-index: 1;}
+.gal__video {height: 345px;}
 @media (max-width:1280px) {/*1024*/
 	.gal__cont, .gal__slide, .gal__side {height: 400px;}
 	.gal__photo, .gal__video {height: 200px;}
-	.gal__photo .lupa, .gal__slider .lupa {width: 50px; height: 50px;}
-	.gal__photo .lupa, .gal__slider .lupa  {right: 15px; bottom: 15px;}
+	.gal__photo .lupa, .gal__slider .lupa {width: 50px; height: 50px; right: 15px; bottom: 15px;}
 }
 @media (max-width:740px) {/*320*/
 	.gal__cont, .gal__slide, .gal__side {height: auto;}
