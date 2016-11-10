@@ -1083,13 +1083,15 @@ html.fsvs #fsvs-pagination li > span {
 		height: 34px;
 		background-size: 20px 34px;
 	}
+
+	.tabs__table .cell {display: none;}
+	.tabs__table .cell:nth-child(3), .tabs__table .cell:nth-child(5), .tabs__table .cell:nth-child(2),  .tabs__table .cell:nth-child(10) {display: table-cell;}
 }
 
 @media (max-width:740px) {
 	/*320*/
-	.tabs__table .cell:nth-child(9) {font-size: 16px;}
-	.tabs__table .cell:nth-child(9) span {display: block; font-size: 16px;}
-	.pres__photo_form {
+	.tabs__table .cell:nth-child(10) {font-size: 16px;}
+	.tabs__table .cell:nth-child(10) span {display: block; font-size: 16px;}
 		width: 100%;
 		margin-bottom: 30px;
 	}
