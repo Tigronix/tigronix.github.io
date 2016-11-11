@@ -118,7 +118,9 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
-
+	$('.float_hover').hover(function() {
+		$(this).show();
+	});
 	//row_hover
 	$('.row_9').hover(function () {
 		if ($(this).hover) {
