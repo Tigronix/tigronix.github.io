@@ -1249,6 +1249,7 @@ html.fsvs #fsvs-pagination li > span {
 	background: #0C6818!important;
 	height: 86px;
 	padding: 0 5px;
+	font-weight: 500;
 }
 
 .tabs__table .head:hover .cell {
