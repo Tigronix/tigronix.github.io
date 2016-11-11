@@ -4298,7 +4298,7 @@ body .header .main__btn {
 	background-size: cover;
 }
 .owl-carousel.gal__slider {
-	width: 65%;
+	width: 66%;
 }
 .gal__slider .owl-buttons div {
 	position: absolute;
@@ -4363,8 +4363,10 @@ body .header .main__btn {
 }
 
 .gal__side {
-	width: 33.4235%;
+	width: 34%;
 	height: 690px;
+	background: #fff;
+	padding-left: 2px;
 }
 .gal__photo {
 	height: 345px;
@@ -4380,7 +4382,7 @@ body .header .main__btn {
 }
 .gal__video {
 	height: 345px;
-	margin-top: 20px;
+	margin-top: 2px;
 }
 @media (max-width:1280px) {
 	/*1024*/
