@@ -215,7 +215,7 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	margin-top: 10px;
-	margin-bottom: 24px;
+	margin-bottom: 26px;
 	padding: 0 2%;
 	font-family: 'arial', sans-serif;
 	font-weight: normal;
@@ -279,6 +279,7 @@ p {
 	.h1_desc .text {
 		width: 100%!important;
 		margin-top: 10px;
+		padding: 0 2%;
 	}
 }
 
@@ -1298,7 +1299,6 @@ html.fsvs #fsvs-pagination li > span {
 .tabs__table .cell:nth-child(9) {
 	font-family: 'roboto', sans-serif;
 	font-size: 1.1vw;
-	font-weight: 300;
 }
 
 .tabs__table .cell:last-child {
@@ -1306,13 +1306,13 @@ html.fsvs #fsvs-pagination li > span {
 	border-right: 0;
 	font-family: 'roboto', sans-serif;
 	font-size: 1.1vw;
-	font-weight: 300;
 }
 
 .tabs__table .cell:nth-child(9) span,
 .tabs__table .cell:last-child span {
 	font-family: 'ikea', 'roboto';
 	font-size: 1.4vw;
+	font-weight: 500;
 }
 
 .tabs__table .fa-object-group {
@@ -1731,11 +1731,12 @@ html.fsvs #fsvs-pagination li > span {
 @media (max-width:740px) {
 	/*320*/
 	.tabs__table .cell:nth-child(10) {
-		font-size: 16px;
+		font-size: 18px;
+		font-weight: 500;
 	}
 	.tabs__table .cell:nth-child(10) span {
-		display: block;
-		font-size: 16px;
+		font-size: 18px;
+		font-weight: 500;
 	}
 	width: 100%;
 	margin-bottom: 30px;
@@ -2640,7 +2641,7 @@ html.fsvs #fsvs-pagination li > span {
 	
 	.header__static .mob_phone,
 	.header__static .mob_square {
-		width: 50px;
+		width: 16vw;
 	}
 }
 
@@ -3665,8 +3666,16 @@ body .header .main__btn {
 	/*1280*/
 	
 	.rooms__floor {
-		display: none;
+		width: 5%; margin-left: 0; padding-top: 71px;
 	}
+	.rooms__item {font-size: 17px;}
+	.rooms__floor:nth-child(1) {order: 0;}
+	.rooms__section:nth-child(2) {order: 1;}
+	.rooms__section:nth-child(3) {order: 2;}
+	.rooms__section:nth-child(4) {order: 4;}
+	.rooms__section:nth-child(5) {order: 5;}
+	.rooms__floor:nth-child(6) {order: 3;}
+	.rooms__map {order: 6;}
 	
 	.section_wrap {
 		margin-top: 0;
@@ -3676,7 +3685,7 @@ body .header .main__btn {
 	
 	.rooms__section {
 		margin-top: 20px;
-		width: 48%;
+		width: 46%;
 		margin-left: 0;
 	}
 	
@@ -3690,13 +3699,12 @@ body .header .main__btn {
 	}
 	
 	.rooms__section_table .row {
-		display: table;
 		width: 100%;
+		justify-content: space-between;
 	}
 	
 	.rooms__section_table .cell {
 		margin: 0;
-		display: table-cell;
 		width: 36px;
 		height: 36px;
 		border: 3px solid #f5f5f5;
@@ -3705,19 +3713,20 @@ body .header .main__btn {
 	}
 }
 @media (max-width:1024px) {
-	/*1280*/
+	/*740*/
 	
 	.rooms__about {
 		width: 100%;
 	}
 	
-	.room__percent.rooms_percent {
+	.room__percent {
 		height: 130px;
+		width: 130px;
 	}
 }
 @media (max-width:740px) {
 	/*320*/
-	
+	.rooms__floor {display: none;}
 	.rooms__about {
 		width: 100%;
 	}
@@ -3735,7 +3744,7 @@ body .header .main__btn {
 	}
 	
 	.rooms__map_item:last-child {
-		margin-bottom: 0;
+		margin-right: 0;
 	}
 	
 	.room__percent.rooms_percent {
@@ -3771,7 +3780,7 @@ body .header .main__btn {
 	align-items: center;
 	transition: .3s;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 1.1vw;
 	color: #DF2B4F;
 	letter-spacing: 1.07px;
 	font-weight: 500;
@@ -3796,7 +3805,10 @@ body .header .main__btn {
 	}
 	
 	.nav__tab .button {
-		width: 100%;
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 18px;
 	}
 }
 
@@ -3898,12 +3910,15 @@ body .header .main__btn {
 		flex-wrap: wrap;
 	}
 	
+	.all__table {padding: 0 2%;}
+	
 	.all__table .title {
 		font-size: 21px;
 	}
 	
 	.all__table .items_wrap {
 		flex-wrap: wrap;
+		margin-left: 0;
 	}
 	
 	.all__table .item {
@@ -3916,11 +3931,11 @@ body .header .main__btn {
 	}
 	
 	.all__table .number {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	
 	.all__table .text {
-		font-size: 14px;
+		font-size: 18px;
 	}
 }
 
@@ -4023,10 +4038,14 @@ body .header .main__btn {
 	.room__partners {
 		height: auto;
 		padding: 10px 0;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	
 	.room__partners .item {
-		width: 48%;
+		width: 100%;
+		text-align: center!important;
+		margin-top: 10px;
 	}
 	
 	.rooms_slider .owl_wrap,
@@ -4109,6 +4128,7 @@ body .header .main__btn {
 	text-align: center;
 	text-transform: uppercase;
 	margin-top: 7px;
+	padding: 0 10px;
 }
 .about__btn {
 	margin: 45px auto 0 auto;
@@ -4179,11 +4199,12 @@ body .header .main__btn {
 	/*320*/
 	
 	.about__item {
-		width: 100%;
-		margin-left: 0!important;
+		width: 320px;
+		height: 320px;
 		padding-top: 0;
-		height: auto;
 		padding: 10px 0;
+		align-items: center;
+		margin: 10px auto 0 auto!important;
 	}
 	
 	.about__img .title {
@@ -4339,6 +4360,7 @@ body .header .main__btn {
 	
 	.gal__photo {
 		height: auto;
+		margin-bottom: 20px;
 	}
 	
 	.gal__photo img {
@@ -4355,6 +4377,7 @@ body .header .main__btn {
 		display: none;
 	}
 }
+.pres__photo_form {order: 1;}
 .pres__photo_form button.button__fix {
 	height: 70px;
 }
