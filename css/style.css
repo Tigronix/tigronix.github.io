@@ -3356,6 +3356,27 @@ html.fsvs #fsvs-pagination li > span {
 	animation: move_left 1.2s ease-in-out;
 }
 
+.slide_top {
+	animation-timing-function: linear;
+	-webkit-animation: move_top 1.2s ease-in-out;
+	animation: move_top 1.2s ease-in-out;
+}
+.slide_right {
+	animation-timing-function: linear;
+	-webkit-animation: move_right 1.2s ease-in-out;
+	animation: move_right 1.2s ease-in-out;
+}
+.slide_bot {
+	animation-timing-function: linear;
+	-webkit-animation: move_bot 1.2s ease-in-out;
+	animation: move_bot 1.2s ease-in-out;
+}
+.slide_left {
+	animation-timing-function: linear;
+	-webkit-animation: move_left 1.2s ease-in-out;
+	animation: move_left 1.2s ease-in-out;
+}
+
 /*animation*/
 @keyframes move_top {
 	from {
@@ -4376,8 +4397,9 @@ body .header .main__btn {
 	.owl-controls .owl-buttons div {
 		display: none;
 	}
+
+	.pres__photo_form {order: 1;}
 }
-.pres__photo_form {order: 1;}
 .pres__photo_form button.button__fix {
 	height: 70px;
 }
@@ -4417,3 +4439,5 @@ body .form__fix .title {
 		height: 130px;
 	}
 }
+
+.hideme {opacity: 0;}
