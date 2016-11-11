@@ -1281,7 +1281,6 @@ html.fsvs #fsvs-pagination li > span {
 	font-family: 'ikea', 'roboto';
 	transition: .6s;
 	font-size: 27px;
-	transform: translateZ(0);
 	font-weight: 400;
 }
 
