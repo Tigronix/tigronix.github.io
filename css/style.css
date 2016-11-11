@@ -3337,44 +3337,44 @@ html.fsvs #fsvs-pagination li > span {
 }
 .room__about {
 	animation-timing-function: linear;
-	-webkit-animation: move_top 1.2s ease-in-out;
-	animation: move_top 1.2s ease-in-out;
+	-webkit-animation: move_top 1.2s linear;
+	animation: move_top 1.2s linear;
 }
 .room__form {
 	animation-timing-function: linear;
-	-webkit-animation: move_right 1.2s ease-in-out;
-	animation: move_right 1.2s ease-in-out;
+	-webkit-animation: move_right 1.2s linear;
+	animation: move_right 1.2s linear;
 }
 .room__info {
 	animation-timing-function: linear;
-	-webkit-animation: move_bot 1.2s ease-in-out;
-	animation: move_bot 1.2s ease-in-out;
+	-webkit-animation: move_bot 1.2s linear;
+	animation: move_bot 1.2s linear;
 }
 .room__nav {
 	animation-timing-function: linear;
-	-webkit-animation: move_left 1.2s ease-in-out;
-	animation: move_left 1.2s ease-in-out;
+	-webkit-animation: move_left 1.2s linear;
+	animation: move_left 1.2s linear;
 }
 
 .slide_top {
 	animation-timing-function: linear;
-	-webkit-animation: move_top 1.2s ease-in-out;
-	animation: move_top 1.2s ease-in-out;
+	-webkit-animation: move_top 1.2s linear;
+	animation: move_top 1.2s linear;
 }
 .slide_right {
 	animation-timing-function: linear;
-	-webkit-animation: move_right 1.2s ease-in-out;
-	animation: move_right 1.2s ease-in-out;
+	-webkit-animation: move_right 1.2s linear;
+	animation: move_right 1.2s linear;
 }
 .slide_bot {
 	animation-timing-function: linear;
-	-webkit-animation: move_bot 1.2s ease-in-out;
-	animation: move_bot 1.2s ease-in-out;
+	-webkit-animation: move_bot 1.2s linear;
+	animation: move_bot 1.2s linear;
 }
 .slide_left {
 	animation-timing-function: linear;
-	-webkit-animation: move_left 1.2s ease-in-out;
-	animation: move_left 1.2s ease-in-out;
+	-webkit-animation: move_left 1.2s linear;
+	animation: move_left 1.2s linear;
 }
 
 /*animation*/
@@ -3390,13 +3390,13 @@ html.fsvs #fsvs-pagination li > span {
 }
 .move_left {
 	animation-timing-function: linear;
-	-webkit-animation: move_left 1.2s ease-in-out;
-	animation: move_left 1.2s ease-in-out;
+	-webkit-animation: move_left 1.2s linear;
+	animation: move_left 1.2s linear;
 }
 .move_left_header {
 	animation-timing-function: linear;
-	-webkit-animation: move_left .4s ease-in-out;
-	animation: move_left .4s ease-in-out;
+	-webkit-animation: move_left .4s linear;
+	animation: move_left .4s linear;
 }
 @keyframes move_left {
 	from {
@@ -3427,8 +3427,8 @@ html.fsvs #fsvs-pagination li > span {
 }
 .move_away {
 	animation-timing-function: linear;
-	-webkit-animation: move_away 1.2s ease-in-out;
-	animation: move_away 1.2s ease-in-out;
+	-webkit-animation: move_away 1.2s linear;
+	animation: move_away 1.2s linear;
 }
 @keyframes move_away {
 	from {
