@@ -118,9 +118,13 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
-	$('.float_hover').hover(function() {
-		$(this).show();
+	//slide_slider
+	$('.slide_from').click(function(){
+		$('.slide_that').show().addClass('slide_left');
 	});
+	
+	
+	
 
 
 

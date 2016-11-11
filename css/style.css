@@ -1232,6 +1232,8 @@ html.fsvs #fsvs-pagination li > span {
 .tabs__table {
 	width: 100%;
 	display: table;
+	border-spacing: 0;
+	border-collapse: collapse;
 }
 
 .tabs__table .row {
@@ -1279,6 +1281,7 @@ html.fsvs #fsvs-pagination li > span {
 	font-family: 'ikea', 'roboto';
 	transition: .6s;
 	font-size: 27px;
+	transform: translateZ(0);
 	font-weight: 400;
 }
 
@@ -1406,7 +1409,7 @@ html.fsvs #fsvs-pagination li > span {
 		font-size: 24px;
 	}
 	.tabs__table .head .cell {
-		font-size: 13px!important;
+		font-size: 10px!important;
 	}
 	.table_nav .act {
 		box-shadow: none;
@@ -1728,21 +1731,20 @@ html.fsvs #fsvs-pagination li > span {
 	.tabs__table .cell:nth-child(3),
 	.tabs__table .cell:nth-child(5),
 	.tabs__table .cell:nth-child(2),
-	.tabs__table .cell:nth-child(10) {
+	.tabs__table .cell:nth-child(10), 
+	.tabs__table .cell:nth-child(11) {
 		display: table-cell;
 	}
 }
 
 @media (max-width:740px) {
 	/*320*/
+	.tabs__table .cell {font-size: 17px;}
 	.tabs__table .cell:nth-child(10) {
-		font-size: 18px;
+		font-size: 17px;
 		font-weight: 500;
 	}
-	.tabs__table .cell:nth-child(10) span {
-		font-size: 18px;
-		font-weight: 500;
-	}
+	.tabs__table .cell:nth-child(11) i {font-size: 24px;}
 	width: 100%;
 	margin-bottom: 30px;
 	.pres_slider_wrap {
@@ -2062,6 +2064,7 @@ html.fsvs #fsvs-pagination li > span {
 .rooms_slider .owl_wrap .img {
 	width: 46.6666%;
 	padding-top: 30px;
+	text-align: center;
 }
 .rooms_slider .owl_wrap .img img {
 	width: 100%;
@@ -2560,7 +2563,7 @@ html.fsvs #fsvs-pagination li > span {
 		background-image: url(../img/logo_room.png);
 		width: 68vw!important;
 		height: 115px!important;
-		background-size: auto 100%;
+		background-size: auto 100%!important;
 		background-position: center center;
 	}
 	@media (max-width:600px) {
@@ -2994,8 +2997,9 @@ html.fsvs #fsvs-pagination li > span {
 }
 @media (max-width:1440px) {
 	.header__main .header__logo {
-		width: 120px;
-		height: 110px;
+		width: 100px;
+		height: 100px;
+		background-size: 80% auto;
 	}
 }
 @media (max-width:1400px) {
@@ -4287,13 +4291,14 @@ body .header .main__btn {
 	flex-wrap: wrap;
 	margin-top: 15px;
 	overflow: hidden;
+	justify-content: space-between;
 }
 .gal__slide {
 	height: 690px;
 	background-size: cover;
 }
 .owl-carousel.gal__slider {
-	width: 66.5765%;
+	width: 65%;
 }
 .gal__slider .owl-buttons div {
 	position: absolute;
@@ -4375,6 +4380,7 @@ body .header .main__btn {
 }
 .gal__video {
 	height: 345px;
+	margin-top: 20px;
 }
 @media (max-width:1280px) {
 	/*1024*/
