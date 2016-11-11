@@ -1319,8 +1319,8 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .tabs__table .fa-object-group {
-	color: #808080;
-	font-size: 1.4vw;
+	color: #fff;
+	font-size: 30px;
 }
 
 .tabs__table .red {
@@ -1347,6 +1347,7 @@ html.fsvs #fsvs-pagination li > span {
 	.tabs__table .head .cell {
 		font-size: 1.2vw;
 	}
+	.tabs__table .fa-object-group {font-size: 1.8vw;}
 	.tabs__table .cell:first-child {
 		font-size: 1.4vw;
 	}
@@ -4313,7 +4314,7 @@ body .header .main__btn {
 	right: 65px;
 	opacity: .6;
 }
-.gal__photo .text {position: absolute; left: 0; bottom: 0; right: 0; height: 88px; background: rgba(18,154,36,.8); display: flex; justify-content: space-between; padding: 0 28px; align-items: center;}
+.gal__photo .text {position: absolute; left: 0; bottom: 0; right: 0; height: 60px; background: rgba(18,154,36,.8); display: flex; justify-content: space-between; padding: 0 28px; align-items: center;}
 .gal__photo .text .title {font-size: 24px; color: #fff; font-weight: 500; letter-spacing: 1.07px; text-transform: uppercase;}
 .gal__photo .text .btn {color: #fff; text-decoration: none; display: flex; justify-content: center; align-items: center; font-size: 19px; font-weight: 500; letter-spacing: 1.07px; text-transform: uppercase; height: 50px; width: 49.414%; border: 1px solid #fff;}
 @media (max-width:1600px) {
