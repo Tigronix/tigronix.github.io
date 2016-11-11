@@ -1269,8 +1269,10 @@ html.fsvs #fsvs-pagination li > span {
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
-	border: none;
 	border-bottom: 1px solid #BABABA;
+	border-left: none!important;
+	border-top: none!important;
+	border-right: none!important;
 	padding: 0 5px;
 	background: #469131;
 	font-family: 'ikea', 'roboto';
