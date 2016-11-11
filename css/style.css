@@ -2553,11 +2553,13 @@ html.fsvs #fsvs-pagination li > span {
 		display: block;
 		background-image: url(../img/logo_room.png);
 		width: 68vw!important;
-		height: 100%!important;
+		height: 115px!important;
 		background-size: auto 100%;
 		background-position: center center;
 	}
-	
+	@media (max-width:600px) {
+		.header__static .header__logo {height: 50px!important;}
+	}
 	.header__static .header__phone {
 		display: none;
 	}
@@ -2642,6 +2644,7 @@ html.fsvs #fsvs-pagination li > span {
 	.header__static .mob_phone,
 	.header__static .mob_square {
 		width: 50px;
+		height: 50px;
 	}
 }
 
