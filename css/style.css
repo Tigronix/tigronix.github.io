@@ -2175,6 +2175,7 @@ html.fsvs #fsvs-pagination li > span {
 	
 	.rooms_slider .owl_wrap .text {
 		width: 100%;
+		padding-top: 30px;
 	}
 	
 	.rooms_slider .owl_wrap .img {
