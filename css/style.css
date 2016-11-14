@@ -346,8 +346,9 @@ p {
 	transform: skewx(-33deg);
 	width: 63%;
 	margin-right: -6%;
-	padding-left: 5.5%;
-	text-align: right;
+	padding-left: 5%;
+	padding-right: 9%;
+	justify-content: flex-end;
 }
 
 .header__phone a {
@@ -448,6 +449,7 @@ p {
 	transform: skewX(-32deg);
 	margin-bottom: 24px;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .slider__options .item:nth-child(2),
