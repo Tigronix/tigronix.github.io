@@ -1235,11 +1235,8 @@ html.fsvs #fsvs-pagination li > span {
 	display: table;
 	border-spacing: 0;
 	border-collapse: collapse;
-	display: none;
 }
-.tabs__table:first-child {
-	display: table;
-}
+
 
 .tabs__table .row {
 	display: table-row;
@@ -1580,10 +1577,12 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .tab_block {
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
+
+.tab_block:first-child {display: flex;}
 
 .pres_slider_wrap {
 	width: 72.4%;
