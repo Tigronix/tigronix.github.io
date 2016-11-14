@@ -734,7 +734,6 @@ p {
 	}
 	.slider__options {
 		justify-content: flex-start;
-		flex-direction: column;
 		width: auto;
 	}
 	.slider__options .item {
