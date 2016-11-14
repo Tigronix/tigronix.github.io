@@ -368,7 +368,7 @@ p {
 @media (max-width:1440px) {
 	.header__phone {
 		height: auto;
-		padding: 10px 12% 10px 5.5%;
+		padding: 10px 8% 10px 5.5%;
 		width: 54%;
 	}
 }
