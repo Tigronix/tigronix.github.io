@@ -861,6 +861,7 @@ p {
 	.slider__options .item {
 		width: 20%;
 	}
+	.slider__options {flex-direction: row; justify-content: space-between; align-items: center;}
 }
 
 @media (max-width:740px) {
@@ -1108,7 +1109,7 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:740px) {
 	.main_info {
-		margin-top: 220px;
+		margin-top: 350px;
 	}
 }
 
@@ -3376,6 +3377,12 @@ html.fsvs #fsvs-pagination li > span {
 	-webkit-animation: move_top 1.2s linear;
 	animation: move_top 1.2s linear;
 }
+.slide_lefts {
+	animation-timing-function: linear;
+	-webkit-animation: slide_lefts .4s linear;
+	animation: slide_lefts .4s linear;
+}
+
 .slide_right {
 	animation-timing-function: linear;
 	-webkit-animation: move_right 1.2s linear;
@@ -3403,6 +3410,17 @@ html.fsvs #fsvs-pagination li > span {
 		transform: translateY(0px);
 	}
 }
+@keyframes slide_lefts {
+	from {
+		transform: translatex(-100px);
+
+	}
+
+	to {
+		transform: translatex(0px);
+	}
+}
+
 .move_left {
 	animation-timing-function: linear;
 	-webkit-animation: move_left 1.2s linear;
@@ -3526,10 +3544,11 @@ body .header .main__btn {
 	height: 38px;
 	position: absolute;
 	border: 1px solid #16bd2d;
-	left: 14px;
+	left: -48px;
 	top: 47px;
 	width: 1090px;
 	border-radius: 5px;
+	z-index: 1;
 }
 .float_hover__8 {
 	top: 83px;
@@ -3628,6 +3647,7 @@ body .header .main__btn {
 	letter-spacing: 1.07px;
 	text-transform: uppercase;
 	position: relative;
+	z-index: 2;
 }
 .rooms__section_table .cell:hover .title {
 	display: flex;
@@ -4490,3 +4510,4 @@ body .form__fix .title {
 }
 
 .hideme {opacity: 0;}
+.flex_show {display: flex!important;}

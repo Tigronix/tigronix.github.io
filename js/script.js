@@ -1,6 +1,14 @@
 
 $(document).ready(function() {
 
+
+	//row_hover
+	$('.rooms__section_table > .row').hover(function () {
+		var pTop = $(this).position().top -3;
+		$('#float_hover').css('top', pTop).show();
+	});
+	
+	
 	/* Every time the window is scrolled ... */
 	$(window).scroll( function(){
 
@@ -120,7 +128,8 @@ $(document).ready(function() {
 $(document).ready(function () {
 	//slide_slider
 	$('.slide_from').click(function(){
-		$('.slide_that').show().addClass('slide_left');
+			$('.slide_that').toggleClass('slide_lefts').toggleClass('flex_show');
+		
 	});
 	
 	
