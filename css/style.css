@@ -4244,6 +4244,7 @@ body .header .main__btn {
 	transition: .3s;
 	justify-content: center;
 	border: 1px solid #fff;
+	font-size: 19px;
 }
 .about__btn:hover {
 	background: #C81638;
