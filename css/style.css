@@ -257,7 +257,7 @@ p {
 }
 
 @media (max-width: 1440px) {
-	p, .h1_desc .text p {
+	p {
 		font-size: 15px;
 	}
 }
@@ -3918,6 +3918,7 @@ body .header .main__btn {
 	display: flex;
 	align-items: center;
 	margin-top: 22px;
+	width: 100%;
 }
 .all__table .title {
 	font-size: 21px;
