@@ -6,7 +6,7 @@
 	outline: none;
 }
 
-body {
+body, input, textarea, keygen, select, button {
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -1242,7 +1242,7 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .tabs__table .head .cell {
-	font-size: 19px;
+	font-size: 16px!important;
 	color: #fff;
 	font-family: 'roboto', sans-serif;
 	text-transform: uppercase;
@@ -1350,7 +1350,7 @@ html.fsvs #fsvs-pagination li > span {
 @media (max-width:1800px) {
 	/*1600*/
 	.tabs__table .head .cell {
-		font-size: 1.2vw;
+		font-size: 1vw!important;
 	}
 	.tabs__table .fa-object-group {font-size: 1.8vw;}
 	.tabs__table .cell:first-child {
@@ -1387,7 +1387,7 @@ html.fsvs #fsvs-pagination li > span {
 		font-size: 2vw;
 	}
 	.tabs__table .head .cell {
-		font-size: 1.3vw;
+		font-size: 1.3vw!important;
 	}
 	.tabs__table .cell {
 		padding: 10px 5px;
@@ -1753,12 +1753,13 @@ html.fsvs #fsvs-pagination li > span {
 	.pres_slider_wrap {
 		width: 100%;
 	}
+
+	.pres__photo_form .title {
+		font-size: 21px;
+		margin-bottom: 10px;
+	}
 }
 
-.pres__photo_form .title {
-	font-size: 21px;
-	margin-bottom: 10px;
-}
 
 .pres__photo_form input {
 	font-size: 19px;
@@ -2289,7 +2290,6 @@ html.fsvs #fsvs-pagination li > span {
 }
 .footer__copy_wrap {
 	width: 100%;
-	border-top: 1px solid #51cf6c;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 12px;
