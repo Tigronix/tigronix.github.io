@@ -257,11 +257,8 @@ p {
 }
 
 @media (max-width: 1440px) {
-	p {
+	p, .h1_desc .text p {
 		font-size: 15px;
-	}
-	.h1 {
-		font-size: 2.3vw;
 	}
 }
 
@@ -1524,6 +1521,8 @@ html.fsvs #fsvs-pagination li > span {
 	cursor: pointer;
 	margin-top: 43px;
 	display: block;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 
 .pres__photo_form textarea {
@@ -2071,11 +2070,12 @@ html.fsvs #fsvs-pagination li > span {
 	text-align: center;
 }
 .rooms_slider .owl_wrap .img img {
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 409px;
 	max-width: 426px;
 	max-height: 455px;
 }
+
 .rooms_slider .owl_wrap .text {
 	width: 44%;
 }
@@ -2146,14 +2146,15 @@ html.fsvs #fsvs-pagination li > span {
 		font-size: 1.7vw;
 		margin-bottom: 20px;
 	}
+	.rooms_slider .owl_wrap .img img {height: 340px;}
+	.rooms_slider, .form__wrap {height: 455px;}
 }
 @media (max-width:1024px) {
 	/*740*/
 
-	.rooms_slider,
-	.form__wrap {
-		height: auto;
-	}
+
+	.rooms_slider .owl_wrap .img img {height: 239px;}
+	.rooms_slider, .form__wrap {height: 387px;}
 
 	.tab_wrap2 .title {
 		font-size: 21px;
@@ -2834,6 +2835,7 @@ html.fsvs #fsvs-pagination li > span {
 	overflow: hidden;
 	margin-left: 3.3965%;
 	padding-top: 31px;
+	position: relative;
 }
 .room__img img {
 	width: 100%;
@@ -3561,7 +3563,7 @@ body .header .main__btn {
 	top: 47px;
 	width: 1090px;
 	border-radius: 5px;
-	z-index: 1;
+	z-index: 2;
 }
 .float_hover__8 {
 	top: 83px;
@@ -3660,7 +3662,7 @@ body .header .main__btn {
 	letter-spacing: 1.07px;
 	text-transform: uppercase;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 }
 .rooms__section_table .cell:hover .title {
 	display: flex;
@@ -4526,3 +4528,5 @@ body .form__fix .title {
 .flex_show {display: flex!important;}
 .full_width {width: 100%;}
 .full_width .item {background: rgba(236, 38, 24, .8);}
+.room__img .fancybox {position: relative;}
+.room__img .lupas {width: 50px; position: absolute; right: 0; bottom: 0; opacity: .8;}
