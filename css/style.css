@@ -1523,6 +1523,13 @@ html.fsvs #fsvs-pagination li > span {
 	display: block;
 	text-transform: uppercase;
 	font-weight: 500;
+	border: 1px solid #fff;
+	transition: .4s;
+}
+
+.pres__photo_form button {
+	background: #C81638;
+	border: none;
 }
 
 .pres__photo_form textarea {
