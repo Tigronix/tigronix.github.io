@@ -372,6 +372,7 @@ p {
 	.header__phone {
 		height: auto;
 		padding: 10px 12% 10px 5.5%;
+		width: 54%;
 	}
 }
 
