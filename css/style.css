@@ -3418,7 +3418,18 @@ html.fsvs #fsvs-pagination li > span {
 		transform: translatex(0px) skewX(-32deg);
 	}
 }
+@media (max-width:740px) {
+	@keyframes slide_lefts {
+		from {
+			transform: translatex(-100px) skewX(0deg);
 
+		}
+
+		to {
+			transform: translatex(0px) skewX(0deg);
+		}
+	}
+}
 .move_left {
 	animation-timing-function: linear;
 	-webkit-animation: move_left 1.2s linear;
