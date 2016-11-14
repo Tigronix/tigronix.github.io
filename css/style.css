@@ -1517,7 +1517,7 @@ html.fsvs #fsvs-pagination li > span {
 	justify-content: center;
 	font-size: 1.4vw;
 	color: #fff;
-	background: #E81969;
+	background: #d40656;
 	cursor: pointer;
 	margin-top: 43px;
 	display: block;
@@ -1527,7 +1527,7 @@ html.fsvs #fsvs-pagination li > span {
 	transition: .4s;
 }
 
-.pres__photo_form button {
+.pres__photo_form button:hover {
 	background: #C81638;
 	border: none;
 }
