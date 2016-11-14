@@ -1304,7 +1304,7 @@ html.fsvs #fsvs-pagination li > span {
 	font-size: 17px;
 }
 
-.tabs__table .cell:nth-child(9) {
+.tabs__table .cell:nth-child(9), .tabs__table .cell:nth-child(10) {
 	font-family: 'roboto', sans-serif;
 	font-size: 1.1vw;
 }
