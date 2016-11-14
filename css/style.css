@@ -733,11 +733,10 @@ p {
 		bottom: 10%;
 	}
 	.slider__options {
-		justify-content: flex-start;
-		width: auto;
+		width: 84%;
 	}
 	.slider__options .item {
-		width: 293px;
+		width: 20%;
 		height: 50px;
 	}
 	.slider__options .item img {
