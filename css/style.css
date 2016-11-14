@@ -735,10 +735,10 @@ p {
 		bottom: 10%;
 	}
 	.slider__options {
-		width: 84%;
+		width: 50%;
 	}
 	.slider__options .item {
-		width: 20%;
+		width: 32%;
 		height: 50px;
 	}
 	.slider__options .item img {
@@ -860,7 +860,7 @@ p {
 		width: auto;
 	}
 	.slider__options .item {
-		width: 20%;
+		width: 32%;
 	}
 	.slider__options {flex-direction: row; justify-content: space-between; align-items: center;}
 }
@@ -4523,3 +4523,5 @@ body .form__fix .title {
 
 .hideme {opacity: 0;}
 .flex_show {display: flex!important;}
+.full_width {width: 100%;}
+.full_width .item {background: rgba(236, 38, 24, .8);}
