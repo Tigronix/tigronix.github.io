@@ -3412,12 +3412,12 @@ html.fsvs #fsvs-pagination li > span {
 }
 @keyframes slide_lefts {
 	from {
-		transform: translatex(-100px);
+		transform: translatex(-100px) skewX(-32deg);
 
 	}
 
 	to {
-		transform: translatex(0px);
+		transform: translatex(0px) skewX(-32deg);
 	}
 }
 
