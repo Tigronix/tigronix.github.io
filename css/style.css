@@ -450,6 +450,10 @@ p {
 	text-decoration: none;
 }
 
+.slider__options .item:nth-child(2),
+.slider__options .item:nth-child(3) {
+	display: none;
+}
 .slider__options .item img {
 	width: 25px;
 	height: 26px;
@@ -743,10 +747,6 @@ p {
 	}
 	.slider__options .item .fa {
 		font-size: 18px;
-	}
-	.slider__options .item:nth-child(2),
-	.slider__options .item:nth-child(3) {
-		display: none;
 	}
 	.header__phone {
 		height: 50px;
