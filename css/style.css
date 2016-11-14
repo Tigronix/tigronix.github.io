@@ -1317,9 +1317,9 @@ html.fsvs #fsvs-pagination li > span {
 }
 
 .tabs__table .cell:nth-child(9) span,
-.tabs__table .cell:last-child span {
+.tabs__table .cell:nth-child(10) span {
 	font-family: 'ikea', 'roboto';
-	font-size: 1.4vw;
+	font-size: 1.4vw;`z
 	font-weight: 500;
 }
 
@@ -1572,10 +1572,6 @@ html.fsvs #fsvs-pagination li > span {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
-}
-
-.tab_block {
-	margin-top: 28px;
 }
 
 .pres_slider_wrap {
@@ -2976,7 +2972,7 @@ html.fsvs #fsvs-pagination li > span {
 }
 .room__partners {
 	width: 91.9%;
-	background: rgba(255, 255, 255, .8);
+	background: rgba(231, 231, 231, .8);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -4533,3 +4529,4 @@ body .form__fix .title {
 .full_width .item {background: rgba(236, 38, 24, .8);}
 .room__img .fancybox {position: relative;}
 .room__img .lupas {width: 50px; position: absolute; right: 0; bottom: 0; opacity: .8;}
+.fadeIn {opacity: 1; transition: 1.5s;}
