@@ -257,8 +257,8 @@ p {
 }
 
 @media (max-width: 1440px) {
-	p {
-		font-size: 15px;
+	p, .h1_desc .text p {
+		font-size: 18px;
 	}
 }
 
