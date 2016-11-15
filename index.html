@@ -8,15 +8,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animation.css">
 	<link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="js/owl-carousel/owl.transitions.css">
 	<link rel="stylesheet" href="js/lightcase/css/lightcase.css">
+	<link rel="stylesheet" href="font_awesome/css/font-awesome.min.css">
 
 </head>
 
 <body>
 	<div class="global_wrapper">
-		<header>
+		<header class="header">
+			<i class="header__open fa fa-bars header__icon"></i>
+			<i class="header__close fa fa-close header__icon"></i>
 			<a href="#" class="header__logo"></a>
 			<div class="header__center">
 				<div class="header__menu">
@@ -29,7 +33,7 @@
 						<a href="#" class="item">Чеховская</a>
 					</div>	
 				</div><!--header__menu-->
-				<nav>
+				<nav class="header__nav">
 					<a href="#" class="link">Фотографии</a>
 					<a href="#" class="link">Гарантия</a>
 					<a href="#" class="link">Оплата</a>
@@ -46,6 +50,7 @@
 				<div class="phone">+7(495) 135-23-45</div>
 				<div class="address">Москва, Большой Каретный переулок, д. 2
 				</div>
+				<a href="#" class="metro">Цветной бульвар</a>
 				<div class="time">
 					<div class="text">
 						<i class="fa fa-clock-o"></i>
@@ -55,11 +60,11 @@
 				</div>
 			</div><!--header__phone-->
 		</header><!--header-->
+		<div class="blackout"></div>
 	</div><!--global-wrapper-->
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
-	<script src="https://use.fontawesome.com/36d3e48178.js"></script>
 	<script src="js/lightcase/js/lightcase.js"></script>
 	<script src="js/jquery.events.touch.js"></script>
 	<script src="js/script.js"></script>
