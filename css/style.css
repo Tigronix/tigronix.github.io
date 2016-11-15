@@ -9,7 +9,7 @@ body {font-family: 'Roboto', sans-serif;}
 .header__logo {background: url(../img/logo.png) center center no-repeat; width: 14.9920%; background-size: 100% auto;;}
 .header__center {width: 56.300%; padding-top: 38px; margin-left: 6%; display: flex;  flex-wrap: wrap; flex-direction: column; justify-content: space-between;}
 .header__menu {width: 100%; display: flex; align-items: center;}
-.header__menu .title {font-size: 1.1vw; font-weight: 500; color: #ff6600; width: 10.7000%;}
+.header__menu .title {font-size: 1.1vw; font-weight: 500; color: #ff6600; width: 13%;}
 .header__menu .item_wrap {margin-left: 4.8000%; display: flex; justify-content: space-between; width: 82.9%;}
 .header__menu .item {background: url(../img/m_1.png) no-repeat left center; color: #fff; font-size: .84vw; font-weight: 300; color: #000; height: 32px; display: flex; align-items: center; padding-left: 50px; transition: .3s;}
 .header__menu .item:hover {color: #FF6600;}
@@ -42,12 +42,12 @@ body .header .header__on {display: flex;}
 	.header {justify-content: space-between;}
 	.header__logo {position: absolute; left: 10%; top: 50%; width: 277px; height: 79px; margin-top: -39.5px; background-size: 100% auto;}
 	.header__menu {display: none;}
-	.header__nav {display: none; padding: 0; position: absolute; left: 0; top: 100%; margin: 0; width: 300px; flex-wrap: wrap; flex-direction: column; background: #2AA94F;}
+	.header__nav {display: none; padding: 0; position: absolute; left: 0; top: 100%; margin: 0; width: 90%; flex-wrap: wrap; flex-direction: column; background: #2AA94F;}
 	.header__nav .link {font-size: 18px; text-align: center; text-decoration: none; border-bottom: 1px solid #fff; color: #fff; padding: 5px 0;}
 	.header__nav .link:hover {background: #F5F5F5; border-color: #ff6600;}
 	.header .header__open {display: block;}
 	.header__phone {width: 220px; margin-left: 0;}
-	.header__phone .phone {font-size: 19px;}
+	.header__phone .phone {font-size: 18px;}
 	.header__phone .address {font-size: 12px; padding: 0;}
 	.header__phone .metro {display: block; margin-top: 5px;}
 	.header__phone .time {flex-wrap: wrap; padding: 0;margin-top: 5px;}
@@ -55,6 +55,6 @@ body .header .header__on {display: flex;}
 	.header__phone .time .text .fa {display: none;}
 }
 @media (max-width:580px) {/*320*/
-	.header__logo {width: 100px; height: 29px; margin-top: -14.5px; left: 15%;}
-	.header__phone .metro {background-position: left center;}
+	.header__logo {width: 100px; height: 29px; margin-top: 0; left: 10px; top: 10px;}
+	.header__phone .metro {background-position: left center; font-size: 15px;}
 }
