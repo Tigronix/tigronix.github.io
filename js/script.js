@@ -1,5 +1,31 @@
 
 $(document).ready(function() {
+	//header-scroll
+	var header = $('.header');
+	$(window).scroll(function () {
+		var top = $(this).scrollTop();
+		if (top > 10) {
+			header.addClass('header__small');
+		} else {
+			header.removeClass('header__small');
+		}
+	});
+	
+	//accordeon
+	(function($) {
+
+		var allPanels = $('.accordion > dd').hide();
+		$('.first').addClass('active');
+		$('.accordion > dt > div').click(function() {
+			$('.first').removeClass('active');
+			allPanels.slideUp(600);
+			$(this).parent().next().slideDown(600);
+			return false;
+		});
+
+	})(jQuery);
+	
+	//lightcase
 	$('a[data-rel^=lightcase]').lightcase({
 		swipe: true
 	});
