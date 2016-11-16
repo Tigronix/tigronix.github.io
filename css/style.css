@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
 * {margin: 0px; padding: 0px; box-sizing: border-box; outline: none;}
 
-body {font-family: 'Roboto', sans-serif;}
+body {font-family: 'Roboto', sans-serif; height: 2000px;}
 
 
 /*header*/
