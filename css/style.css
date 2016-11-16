@@ -80,7 +80,7 @@ body .header .header__on {display: flex;}
 .left_block {width: 18.0319%;}
 .side_menu {}
 .side_menu dt {height: 46px; cursor: pointer; transition: .3s; background: #00985F; font-size: 1vw; color: #fff;  position: relative;}
-.side_menu dt .img_wrap {width: 30px; margin: 0 18px; text-align: center;}
+.side_menu dt .img_wrap {width: 30px; margin: 0 18px; display: flex; justify-content: center; align-items: center;}
 .side_menu dt .img_wrap img {vertical-align: bottom;}
 .side_menu dt .wrap {width: 100%; height: 100%; display: flex; align-items: center;}
 .side_menu dt .fa {font-size: 30px; color: #fff; position: absolute; right: 23px; top: 50%; margin-top: -15px;}
