@@ -44,11 +44,9 @@
 					<a href="#" class="link">Фотографии</a>
 					<a href="#" class="link">Гарантия</a>
 					<a href="#" class="link">Оплата</a>
-					<a href="#" class="link hide">Доставка</a>
 					<a href="#" class="link">Цены</a>
 					<a href="#" class="link">Акции</a>
 					<a href="#" class="link">Отзывы</a>
-					<a href="#" class="link hide">Вакансии</a>
 					<a href="#" class="link">О компании</a>
 					<a href="#" class="link">Контакты</a>
 				</nav><!--nav-->
@@ -134,8 +132,20 @@
 						<a href="#" class="link"><span>Замена система охлаждения</span></a>
 						<a href="#" class="link"><span>Чистка ноутбука от пыли</span></a>
 					</dd>
-					
-				</dl>
+				</dl><!--side_menu-->
+				<form action="post" class="form">
+					<div class="title">Заявка на ремонт ноутбука</div>
+					<div class="inpbox">
+						<div class="img"><img src="img/form_name.png" alt=""></div>
+						<input placeholder="Укажите имя" name="name" required type="text">
+					</div>
+					<div class="inpbox">
+						<div class="img"><img src="img/form_phone.png" alt=""></div>
+						<input placeholder="Номер телефона" name="phone" required pattern="[7-8][0-9]{10}" title="Номер должен содержать 11 цифр и начинаться с 7 или 8" type="tel">
+					</div>
+					<textarea name="message" placeholder="Напишите Ваши вопросы..."></textarea>
+					<button class="btn">Отправить заявку</button>
+				</form><!--form-->
 			</div><!--left_block-->
 			<div class="center_block">
 				<div class="center__title">Срочный ремонт ноутбуков в Москве - сервисный центр на «на Цветном»</div>
@@ -329,8 +339,107 @@
 							<span>Заказать услугу</span>
 						</a>
 					</div><!--product__item-->
-					
 				</div><!--products-->
+				<div class="center__title h_center mt_price">Стоимость ремонта</div>
+				<div class="price_list">
+					<div class="row head">
+						<div class="cell">Наименование услуги</div>
+						<div class="cell">Диагностика</div>
+						<div class="cell">Время ремонта</div>
+						<div class="cell">Гарантия, мес</div>
+						<div class="cell">Стоимость деталей</div>
+						<div class="cell">Стоимость ремонта</div>
+					</div>
+					<div class="row">
+						<div class="cell"><a href="#" class="link">Замена матрицы на ноутбуке</a></div>
+						<div class="cell">Бесплатно</div>
+						<div class="cell">30-60 мин.</div>
+						<div class="cell">3</div>
+						<div class="cell price">от 2800 руб.</div>
+						<div class="cell price">от 2800 руб.</div>
+					</div>
+					<div class="row">
+						<div class="cell"><a href="#" class="link">Замена клавиатуры на ноутбуке</a></div>
+						<div class="cell">Бесплатно</div>
+						<div class="cell">30 - 60 мин.</div>
+						<div class="cell">6</div>
+						<div class="cell price">от 1500 руб.</div>
+						<div class="cell price">от 1500 руб.</div>
+					</div>
+					<div class="row">
+						<div class="cell"><a href="#" class="link">Перепайка разъема питания</a></div>
+						<div class="cell">Бесплатно</div>
+						<div class="cell">30 - 60 мин.</div>
+						<div class="cell">6</div>
+						<div class="cell price">от 1500 руб.</div>
+						<div class="cell price">от 1500 руб.</div>
+					</div>
+					<div class="row">
+						<div class="cell"><a href="#" class="link">Замена видеокарты на ноутбуке</a></div>
+						<div class="cell">Бесплатно</div>
+						<div class="cell">1 - 3 дня</div>
+						<div class="cell">3</div>
+						<div class="cell price">от 4500 руб.</div>
+						<div class="cell price">от 4500 руб.</div>
+					</div>
+					<div class="row">
+						<div class="cell"><a href="#" class="link">Замена матрицы на ноутбуке</a></div>
+						<div class="cell">Бесплатно</div>
+						<div class="cell">30 - 60 мин.</div>
+						<div class="cell">6</div>
+						<div class="cell price">от 2800 руб.</div>
+						<div class="cell price">от 2800 руб.</div>
+					</div>
+					<div class="row">
+						<div class="cell"><a href="#" class="link">Замена клавиатуры на ноутбуке</a></div>
+						<div class="cell">Бесплатно</div>
+						<div class="cell">30 - 60 мин.</div>
+						<div class="cell">3</div>
+						<div class="cell price">от 1500 руб.</div>
+						<div class="cell price">от 1500 руб.</div>
+					</div>
+					<div class="row">
+						<div class="cell"><a href="#" class="link">Замена матрицы на ноутбуке</a></div>
+						<div class="cell">Бесплатно</div>
+						<div class="cell">30 - 60 мин.</div>
+						<div class="cell">3</div>
+						<div class="cell price">от 2800 руб.</div>
+						<div class="cell price">от 2800 руб.</div>
+					</div>
+				</div><!--price_list-->
+				<div class="advantages">
+					<div class="item">
+						<div class="wrap">
+							<div class="img">
+								<img src="img/i_1.png" alt="">
+							</div>
+							<div class="text">
+								<b>Бесплатная диагностика</b><br>
+								в сервисе даже в случае отказа от ремонта
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="wrap">
+							<div class="img">
+								<img src="img/i_2.png" alt="">
+							</div>
+							<div class="text">
+								Стоимость услуг оговаривается <b>до начала выполнения работ</b>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="wrap">
+							<div class="img">
+								<img src="img/i_3.png" alt="">
+							</div>
+							<div class="text">
+								<b>Скидочная карта в подарок</b>
+							</div>
+						</div>
+					</div>
+				</div><!--advantages-->
 			</div><!--center_block-->
 		</div>
 		<div class="blackout"></div>
