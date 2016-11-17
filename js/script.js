@@ -1,5 +1,24 @@
 
 $(document).ready(function() {
+	//photogallery
+	$('.slider-for--gallery').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav--gallery',
+		speed: 1000,
+		autoplay: true,
+		pauseOnHover: true
+	});
+	$('.slider-nav--gallery').slick({
+		slidesToShow: 13,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for--gallery',
+		dots: true,
+		focusOnSelect: true
+	});
+	
 	//header-scroll
 	var header = $('.header');
 	$(window).scroll(function () {

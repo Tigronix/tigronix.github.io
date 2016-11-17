@@ -277,3 +277,8 @@ body .header .header__on {display: flex;}
 	.advantages .item {width: 100%;}
 	.advantages .item .text {font-size: 16px;}
 }
+
+.slider-nav--gallery, .slider-for--gallery {width: 100%;}
+.slider-nav--gallery {height: 40px;}
+.slider-for--gallery {height: 580px;}
+.slider-for--gallery img {width: 100%; height: auto;}
