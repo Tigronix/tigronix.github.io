@@ -36,7 +36,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 .header__nav .link {color: #0054B9; font-size: .84vw; font-weight: 500; transition: .3s; text-decoration: none; border-bottom: 1px dashed #0054b9;}
 .header__nav .link:hover {color: #FF6600;}
 .header__phone {margin-left: 4.0600%; width: 18.6071%; padding: 5px 0 9px 0; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between;}
-.header__phone .phone {width:100%; font-size: 1.68vw; color: #000; font-weight: 500; text-align: right;}
+.header__phone .phone {width:100%; font-size: 1.68vw; color: #000; font-weight: 500; text-align: right; text-decoration: none;}
 .header__phone .address {width:100%; font-size: .84vw; color: #000; font-weight: 300; text-align: right; margin-top: 0px;}
 .header__phone .time {width:100%; display: flex; align-items: center; margin-top: 0px; justify-content: space-between;}
 .header__phone .time .fa {color: #007bb7; font-size: 1.4vw; margin-right: 6px;}
@@ -127,29 +127,29 @@ body .header .header__on {display: flex;}
 .form .inpbox .img {position: absolute; left: 0; top: 50%; margin-top: -11px; left: 9px;}
 .form input {width: 100%; height: 50px; border: 1px solid #c0c0c0; border-radius: 4px; padding-left: 40px; font-size: 1vw; color: #000;}
 .form textarea {width: 100%; border-radius: 4px; font-size: .87vw; color: #000; resize: vertical; min-height: 100px; font-family: 'roboto', sans-serif; padding: 11px;}
-.form .btn {width: 100%; height: 55px; background: #ffdb4d; font-weight: 500; border: none; margin-top: 19px; font-size: 1.1vw; letter-spacing: 1.07px; transition: .3s; cursor: pointer;}
-.form .btn:hover {background: #FFFF00;}
+ .btn {width: 100%; height: 55px; background: #ffdb4d; font-weight: 500; border: none; margin-top: 19px; font-size: 1.1vw; letter-spacing: 1.07px; transition: .3s; cursor: pointer;}
+ .btn:hover {background: #FFFF00;}
 @media (max-width:1600px) {/*1440*/
 	.form {padding: 5% 4%;}
 	.form .title {font-size: 1.2vw;}
 	.form input {font-size: 1.2vw;}
 	.form textarea {font-size: 1vw;}
-	.form .btn {font-size: 1.4vw;}
+	 .btn {font-size: 1.4vw;}
 }
 @media (max-width:1280px) {/*1024*/
 	.form textarea {min-height: 60px;}
-	.form .btn {height: auto; padding: 10px 0;}
+	 .btn {height: auto; padding: 10px 0;}
 }
 @media (max-width:1024px) {/*740*/
 	.form .title {font-size: 3vw;}
 	.form input, .form textarea {font-size: 2vw;}
-	.form .btn {font-size: 4vw;}
+	 .btn {font-size: 4vw;}
 }
 @media (max-width:740px) {/*320*/
 	.form .title {font-size: 21px;}
 	.form input, .form textarea {font-size: 16px;}
-	.form .btn {font-size: 4vw;}
-	.form .btn {font-size: 21px;}
+	 .btn {font-size: 4vw;}
+	 .btn {font-size: 21px;}
 }
 
 /*center_block*/
@@ -277,7 +277,7 @@ body .header .header__on {display: flex;}
 	.advantages .item {width: 100%;}
 	.advantages .item .text {font-size: 16px;}
 }
-
+.slick-slide {cursor: pointer;}
 .slider_mg {margin: 56px 0 14px;}
 .slider-nav--gallery, .slider-for--gallery {width: 100%;}
 .slider-nav--gallery {height: 40px; margin-bottom: 14px;}
@@ -343,7 +343,6 @@ body .header .header__on {display: flex;}
 @media (max-width:1280px) {/*1024*/
 	.nout_form {background: #f9fffb;}
 }
-.header {display: none;}
 @media (max-width:1024px) {/*768*/
 	.nout_form__title {font-size: 2vw;}
 	.nout_form .t1, .nout_form .t2, .nout_form__right {font-size: 1.3vw;}
@@ -366,16 +365,50 @@ body .header .header__on {display: flex;}
 }
 
 .our_address {border: 1px solid #00bfff; border-width: 1px 1px 1px 5px; display: flex; margin-top: 60px;}
-.our_address__info {width: 26.4100%; background: #ECF1F5; padding: 20px 2.9197% 20px 1.3271%;}
-.our_address .title {font-size: 21px; color: #000; font-weight: 500;}
-.our_address .t1 {font-size: 16px; font-weight: 300; color: #000;}
-.schedule {display: flex; justify-content: space-between; align-items: center;}
+.our_address__info {width: 26.4100%; background: #ECF1F5; padding: 8px 2.9197% 10px 1.3271%;}
+.our_address .title {font-size: 1.1vw; color: #000; font-weight: 500; margin-bottom: 10px;}
+.our_address .t1 {font-size: .84vw; font-weight: 300; color: #000; margin-bottom: 3px;}
+.schedule {display: flex; justify-content: space-between; align-items: center; margin-bottom: 21px;}
 .schedule__left {display: flex; align-items: center;}
-.schedule__left .fa {font-size: 30px; color: #0176b3; margin-right: 5px;}
-.schedule__left .t {font-size: 16px; color: #000; font-weight: 300;}
-.schedule__right .sche {font-size: 16px; font-weight: 500; color: #000;}
+.schedule__left .fa {font-size: 1.5vw; color: #0176b3; margin-right: 5px;}
+.schedule__left .t {font-size: .83vw; color: #000; font-weight: 300;}
+.schedule__right .sche {font-size: .83vw; font-weight: 500; color: #000;}
+.our_phone {display: flex; justify-content: space-between; align-items: center;}
+.our_phone__text {font-size: .83vw; color: #000; font-weight: 300;}
+.our_phone__number {font-size: 1.5vw; color: #000; font-weight: 500; text-decoration: none;}
+.our_address .btn {height: 40px; margin-bottom: 0;}
+.our_address__map {width: 73.5899%; max-height: 250px;}
+@media (max-width:1440px) {/*1280*/
+	.our_address .title {font-size: 1.7vw;}
+	.our_address .t1 {font-size: 1.4vw;}
+	.schedule__left .t {font-size: 1.4vw;}
+	.schedule__right .sche {font-size: 1.1vw;}
+	.our_phone__text {font-size: 1.4vw;}
+	.our_phone__number {font-size: 1.7vw;}
+	.our_address .btn{font-size: 2vw;}
+}
+@media (max-width:740px) {/*320*/
+	.our_address {flex-wrap: wrap;}
+	.our_address__info, .our_address__map {width: 100%;}
+	.our_address__map {margin-top: 20px;}
+	.our_address .title {font-size: 18px;}
+	.our_address .t1 {font-size: 14px;}
+	.schedule__left .t {font-size: 15px;}
+	.schedule__left .fa {font-size: 20px;}
+	.schedule__right .sche {font-size: 16px;}
+	.our_phone__text {font-size: 16px;}
+	.our_phone__number {font-size: 20px;}
+	.our_address .btn{font-size: 21px;}
+}
 
-
-.our_address__map {width: 73.5899%;}
-
-
+/*footer*/
+.footer {padding: 20px 30px 20px 22px; display: flex; height: 260px; background: #f3f0e6; margin-top: 70px; flex-wrap: wrap; align-items: flex-start;}
+.footer__info {width: 17.0235%;}
+.footer__info .title {margin-bottom: 10px; font-size: 17px; font-weight: 500; color: #000;}
+.footer__our {width: 100%; background: none; padding: 0;}
+.our_phone__number {font-size: 1.4vw; color: #0058BA;}
+.footer_sign {padding-left: 34px; background: url(../img/footer-sign.png) left center no-repeat;}
+.footer_sign p {font-size: 15px; font-weight: 300; color: #000;}
+.footer_bot {width: 100%; display: flex; justify-content: space-between; margin-top: 34px;}
+.copy {font-size: 15px; font-weight: 300; color: #000;}
+.by {color: #000; font-size: 15px; font-weight: 300;}
