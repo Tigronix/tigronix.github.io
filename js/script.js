@@ -17,8 +17,53 @@ $(document).ready(function() {
 		slidesToShow: 13,
 		slidesToScroll: 1,
 		asNavFor: '.slider-for--gallery',
-		dots: true,
-		focusOnSelect: true
+		dots: false,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1401,
+				settings: {
+					slidesToShow: 10
+				}
+			},
+			{
+				breakpoint: 1281,
+				settings: {
+					slidesToShow: 8
+				}
+			},
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 10
+				}
+			},
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 6
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			
+		]
 	});
 	
 	//header-scroll

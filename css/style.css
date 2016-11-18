@@ -328,7 +328,7 @@ body .header .header__on {display: flex;}
 	.nout__cont .item .text {font-size: 12px; text-align: center;}
 }
 
-.nout_form {border: 1px solid #00c94c; border-width: 1px 1px 1px 3px; padding: 8px 36px 16px 28px; display: flex; margin: 19px 0 0 0; background: #f9fffb url(../img/arr.png) 98% 37% no-repeat; flex-wrap: wrap;}
+.nout_form {border: 1px solid #00c94c; border-width: 1px 1px 1px 5px; padding: 8px 20px 16px 20px; display: flex; margin: 19px 0 0 0; background: #f9fffb url(../img/arr.png) 98% 37% no-repeat; flex-wrap: wrap;}
 .nout_form__title {font-size: 1.1vw; width: 100%; font-weight: 500; color: #00985f; margin-bottom: 10px;}
 .nout_form__left {width: 74.8335%;}
 .nout_form .t1 {font-size: .83vw; font-weight: 300; color: #000;}
@@ -340,3 +340,42 @@ body .header .header__on {display: flex;}
 .nout_form__form .inpbox:nth-child(3) {width: 28.5518%;}
 .nout_form__form textarea {min-height: 50px; padding: 5px;}
 .nout_form__form .btn {margin-top: 0; height: 50px;}
+@media (max-width:1280px) {/*1024*/
+	.nout_form {background: #f9fffb;}
+}
+.header {display: none;}
+@media (max-width:1024px) {/*768*/
+	.nout_form__title {font-size: 2vw;}
+	.nout_form .t1, .nout_form .t2, .nout_form__right {font-size: 1.3vw;}
+	.nout_form__form input, .nout_form__form textarea {font-size: 1.2vw;}
+	.nout_form__form .btn {font-size: 1.5vw;}
+}
+@media (max-width:768px) {/*320*/
+	.nout_form {padding: 10px 2%;}
+	.nout_form__left {width: 100%;}
+	.nout_form__left .nout_form__title {font-size: 16px;}
+	.nout_form__left .t1 {margin-bottom: 5px;}
+	.nout_form__left .t1, .nout_form__left .t2 {font-size: 13px;}
+	.nout_form__right {display: none;}
+	.nout_form__form {flex-wrap: wrap;}
+	.nout_form__form {padding: 0; margin-top: 15px;}
+	.nout_form__form .inpbox {width: 100%!important; margin-bottom: 15px;}
+	.nout_form__form input, .nout_form__form textarea {font-size: 16px;}
+	.nout_form__form textarea {min-height: 80px;}
+	.nout_form__form .btn {font-size: 21px;}
+}
+
+.our_address {border: 1px solid #00bfff; border-width: 1px 1px 1px 5px; display: flex; margin-top: 60px;}
+.our_address__info {width: 26.4100%; background: #ECF1F5; padding: 20px 2.9197% 20px 1.3271%;}
+.our_address .title {font-size: 21px; color: #000; font-weight: 500;}
+.our_address .t1 {font-size: 16px; font-weight: 300; color: #000;}
+.schedule {display: flex; justify-content: space-between; align-items: center;}
+.schedule__left {display: flex; align-items: center;}
+.schedule__left .fa {font-size: 30px; color: #0176b3; margin-right: 5px;}
+.schedule__left .t {font-size: 16px; color: #000; font-weight: 300;}
+.schedule__right .sche {font-size: 16px; font-weight: 500; color: #000;}
+
+
+.our_address__map {width: 73.5899%;}
+
+
