@@ -9,7 +9,9 @@ $(document).ready(function() {
 		asNavFor: '.slider-nav--gallery',
 		speed: 1000,
 		autoplay: true,
-		pauseOnHover: true
+		pauseOnHover: true,
+		arrows: true,
+		dots: true
 	});
 	$('.slider-nav--gallery').slick({
 		slidesToShow: 13,
