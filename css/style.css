@@ -52,7 +52,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 body .header .header__on {display: flex;}
 @media (max-width: 1440px) {/*1280*/
 	.header__center {margin-left: 2%; width: 63%;}
-	.header__phone {margin-left: 2%; width: 25%; padding-left: 4%; padding-bottom: 15%; padding-top: 15px;}
+	.header__phone {margin-left: 2%; width: 25%; padding-left: 4%; padding-bottom: 1%; padding-top: 15px;}
 	.header__menu .item {font-size: 1vw;}
 	.header__nav {width: 100%;}
 	.header__nav .link {font-size: 1.2vw;}
