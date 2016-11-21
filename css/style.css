@@ -381,11 +381,12 @@ body .header .header__on {display: flex;}
 @media (max-width:1440px) {/*1280*/
 	.our_address .title {font-size: 1.7vw;}
 	.our_address .t1 {font-size: 1.4vw;}
-	.schedule__left .t {font-size: 1.4vw;}
-	.schedule__right .sche {font-size: 1.1vw;}
-	.our_phone__text {font-size: 1.4vw;}
+	.schedule__left .t {font-size: .83vw;}
+	.schedule__right .sche {font-size: .83vw;}
+	.our_phone__text {font-size: .83vw;}
 	.our_phone__number {font-size: 1.7vw;}
-	.our_address .btn{font-size: 2vw;}
+	.our_address .btn{font-size: 1.8vw;}
+	.our_address .our_phone__number {font-size: 1.2vw;}
 }
 @media (max-width:740px) {/*320*/
 	.our_address {flex-wrap: wrap;}
@@ -402,13 +403,28 @@ body .header .header__on {display: flex;}
 }
 
 /*footer*/
-.footer {padding: 20px 30px 20px 22px; display: flex; height: 260px; background: #f3f0e6; margin-top: 70px; flex-wrap: wrap; align-items: flex-start;}
+.footer {padding: 20px 30px 20px 22px; display: flex; height: 260px; background: #f3f0e6; margin-top: 70px; flex-wrap: wrap; align-items: flex-start; position: relative;}
 .footer__info {width: 17.0235%;}
-.footer__info .title {margin-bottom: 10px; font-size: 17px; font-weight: 500; color: #000;}
+.footer__info .title {margin-bottom: 10px; font-size: .8vw; font-weight: 500; color: #000;}
 .footer__our {width: 100%; background: none; padding: 0;}
 .our_phone__number {font-size: 1.4vw; color: #0058BA;}
 .footer_sign {padding-left: 34px; background: url(../img/footer-sign.png) left center no-repeat;}
-.footer_sign p {font-size: 15px; font-weight: 300; color: #000;}
+.footer_sign p {font-size: .7vw; font-weight: 300; color: #000;}
 .footer_bot {width: 100%; display: flex; justify-content: space-between; margin-top: 34px;}
 .copy {font-size: 15px; font-weight: 300; color: #000;}
 .by {color: #000; font-size: 15px; font-weight: 300;}
+.by a {transition: .3s; color: #FF6600; text-decoration: none;}
+.by a:hover {color: #DC143C;}
+.footer_menu {width: 37.8074%; margin-left: 9.6067%; display: flex; justify-content: space-between;}
+.footer_menu .item {display: flex; flex-direction: column;}
+.footer_menu .title {font-size: .9vw; color: #000; font-weight: 500; margin-bottom: 10px;}
+.footer_menu .link {font-size: .8vw; color: #0054B9; font-weight: 500; transition: .3s; margin-bottom: 10px;}
+.footer_menu .link:hover {color: #FF6600;}
+.footer__others {position: absolute; right: 30px; bottom: 15%; text-align: right;}
+@media (max-width:1440px) {
+	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: .83vw;}
+	.footer__others {bottom: 25%;}
+}
+@media (max-width:1280px) {
+	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: .83vw;}
+}
