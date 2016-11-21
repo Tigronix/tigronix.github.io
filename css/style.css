@@ -62,6 +62,7 @@ body .header .header__on {display: flex;}
 	.header {height: auto;}	
 	.header__menu .title {width: 12%; font-size: 1.2vw;}
 	.header__menu .item {background-image: none!important; padding: 0; font-size: 1.2vw;}	
+	.header__phone .phone img {display: none;}
 }
 @media (max-width:1024px) {/*740*/
 	.header {justify-content: space-between;}
