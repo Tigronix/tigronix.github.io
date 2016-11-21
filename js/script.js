@@ -82,7 +82,7 @@ $(document).ready(function() {
 
 		var allPanels = $('.accordion > dd').hide();
 		$('.first').addClass('active');
-		$('.accordion > dt > div').click(function() {
+		$('.accordion > dt > a').click(function() {
 			$('.first').removeClass('active');
 			allPanels.slideUp(600);
 			$(this).parent().next().slideDown(600);
@@ -90,6 +90,16 @@ $(document).ready(function() {
 		});
 
 	})(jQuery);
+
+	//плавные якоря
+	$(".accordion > dt > a").bind("click", function(e){
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top -100
+		}, 2500);
+		e.preventDefault();
+		return false;
+	});
 	
 	//lightcase
 	$('a[data-rel^=lightcase]').lightcase({

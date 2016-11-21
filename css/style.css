@@ -35,12 +35,13 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 .header__nav {width: 84%; display: flex; justify-content: space-between; margin-top: 25px; padding-bottom: 14px;}
 .header__nav .link {color: #0054B9; font-size: .84vw; font-weight: 500; transition: .3s; text-decoration: none; border-bottom: 1px dashed #0054b9;}
 .header__nav .link:hover {color: #FF6600;}
-.header__phone {margin-left: 4.0600%; width: 18.6071%; padding: 5px 0 9px 0; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between;}
-.header__phone .phone {width:100%; font-size: 1.68vw; color: #000; font-weight: 500; text-align: right; text-decoration: none;}
+.header__phone {margin-left: 4.0600%; width: 18%; padding: 5px 0 9px 0; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between;}
+.header__phone .phone {width:100%; font-size: 1.68vw; color: #00985F; font-weight: 500; text-align: right; text-decoration: none; display: flex; align-items: center; justify-content: flex-end;}
+.header__phone .phone span {margin-left: 5px;}
 .header__phone .address {width:100%; font-size: .84vw; color: #000; font-weight: 300; text-align: right; margin-top: 0px;}
 .header__phone .time {width:100%; display: flex; align-items: center; margin-top: 0px; justify-content: space-between;}
 .header__phone .time .fa {color: #007bb7; font-size: 1.4vw; margin-right: 6px;}
-.header__phone .time .text {font-size: .84vw; color: #000; font-weight: 500; display: flex; align-items: center;}
+.header__phone .time .text {font-size: .84vw; color: #029A55; font-weight: 500; display: flex; align-items: center;}
 .header__phone .metro {text-align: right; font-size: 16px; font-weight: 500; text-decoration: none; background: url(../img/m_1.png) 50px center no-repeat; background-size: auto 100%; display: none; color: #000; transition: .3s;}
 .header__phone .metro:hover {color: #FF6600;}
 .header .header__icon {display: none; font-size: 24px; color: #ff6600; position: absolute; left: 10px; top: 50%; margin-top: -12px; cursor: pointer;}
@@ -49,7 +50,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 body .header .header__on {display: flex;}
 @media (max-width: 1440px) {/*1280*/
 	.header__center {margin-left: 2%; width: 63%;}
-	.header__phone {margin-left: 2%;}
+	.header__phone {margin-left: 2%; width: 25%; padding-left: 4%;}
 	.header__menu .item {font-size: 1vw;}
 	.header__nav {width: 100%;}
 	.header__nav .link {font-size: 1.2vw;}
@@ -70,7 +71,7 @@ body .header .header__on {display: flex;}
 	.header__nav .link {font-size: 18px; text-align: center; text-decoration: none; border-bottom: 1px solid #fff; color: #fff; padding: 5px 0;}
 	.header__nav .link:hover {background: #F5F5F5; border-color: #ff6600;}
 	.header .header__open {display: block;}
-	.header__phone {width: 220px; margin-left: 0;}
+	.header__phone {width: 260px; margin-left: 0;}
 	.header__phone .phone {font-size: 18px;}
 	.header__phone .address {font-size: 12px; padding: 0;}
 	.header__phone .metro {display: block; margin-top: 5px;}
@@ -81,6 +82,7 @@ body .header .header__on {display: flex;}
 @media (max-width:580px) {/*320*/
 	.header__logo {width: 100px; height: 29px; margin-top: 0; left: 10px; top: 10px;}
 	.header__phone .metro {background-position: left center; font-size: 15px;}
+	.header__phone .phone img {display: none;}
 }
 
 
@@ -92,7 +94,8 @@ body .header .header__on {display: flex;}
 .side_menu dt {height: 46px; cursor: pointer; transition: .3s; background: #00985F; font-size: 1vw; color: #fff;  position: relative; box-shadow: 0px 4px 2px -1px rgba(0,0,0, .2); margin-bottom: 3px;}
 .side_menu dt .img_wrap {width: 30px; margin: 0 18px; display: flex; justify-content: center; align-items: center;}
 .side_menu dt .img_wrap img {vertical-align: bottom;}
-.side_menu dt .wrap {width: 100%; height: 100%; display: flex; align-items: center;}
+.side_menu dt .wrap {width: 100%; height: 100%; display: flex; align-items: center; position: relative; color: #fff; text-decoration: none;}
+.side_menu dt .wrap .angle {position: absolute; top: -200px; display: block; width: 1px; height: 1px;}
 .side_menu dt .fa {font-size: 30px; color: #fff; position: absolute; right: 23px; top: 50%; margin-top: -15px;}
 .side_menu dt .img_1 img {width: 30px; height: 16px;}
 .side_menu dt .img_2 img {width: 25px; height: 21px;}
@@ -101,7 +104,7 @@ body .header .header__on {display: flex;}
 .side_menu dt:hover {background: #00BFFF;}
 .side_menu dd {display: none;}
 .side_menu dd .link {width: 100%; font-family: tahoma; height: 47px; display: flex; align-items: center; font-size: 16px; color: #256AA3; transition: .3s; font-weight: 300; padding-left: 12px; text-decoration: none; border-bottom: 2px solid #eeeeee;}
-.side_menu dd .link img {width: 30px; height: auto; margin-right: 10px;}
+.side_menu dd .link img { margin-right: 10px;}
 .active {display: block!important;}
 @media (max-width:1440px) {/*1280*/
 	.side_menu dt .fa {font-size: 20px; margin-top: -10px;}
@@ -407,7 +410,10 @@ body .header .header__on {display: flex;}
 .footer__info .title {margin-bottom: 10px; font-size: .8vw; font-weight: 500; color: #000;}
 .footer__our {width: 100%; background: none; padding: 0;}
 .our_phone__number {font-size: 1.4vw; color: #0058BA;}
+.footer_right { position: absolute; top: 25px; right: 30px; width: 19%;}
 .footer_sign {padding-left: 34px; background: url(../img/footer-sign.png) left center no-repeat; background-size: auto 100%;}
+.footer_right .btn {width: 265px; height: 40px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.1vw; border: 1px solid #00985f; background: #2bc845; transition: .3s; text-decoration: none; border-radius: 4px;}
+.footer_right .btn:hover {background: #00985F;}
 .footer_sign p {font-size: .7vw; font-weight: 300; color: #000;}
 .footer_bot {width: 100%; display: flex; justify-content: space-between; margin-top: 34px;}
 .copy {font-size: 15px; font-weight: 300; color: #000;}
@@ -423,6 +429,8 @@ body .header .header__on {display: flex;}
 @media (max-width:1440px) {
 	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: .83vw;}
 	.footer__others {bottom: 25%;}
+	.footer_right {width: 25%;}
+	.footer__others {width: 25%; overflow: hidden;}
 }
 @media (max-width:1280px) {
 	.footer__info {width: 22%;}
@@ -432,6 +440,7 @@ body .header .header__on {display: flex;}
 	.footer__info .title {font-size: 1.2vw;}
 	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche {font-size: 1.1vw;}
 	.footer_sign p {font-size: 1vw;}
+	.footer_right .btn {width: auto; height: auto; padding: 10px 20px; font-size: 2vw;}
 }
 @media (max-width:740px) {
 	.footer {justify-content: space-between; height: auto; padding: 10px 2%;}
@@ -447,4 +456,5 @@ body .header .header__on {display: flex;}
 	.footer__others {left: 2%; right: 2%; bottom: 10%; overflow: hidden;}
 	.copy {margin-bottom: 5px; margin-top: 30px;}
 	.copy, .by {font-size: 14px;}
+	.footer_right {display: none;}
 }
