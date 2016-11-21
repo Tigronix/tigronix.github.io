@@ -100,9 +100,8 @@ body .header .header__on {display: flex;}
 .side_menu dt .img_4 img {width: 16px; height: 25px;}
 .side_menu dt:hover {background: #00BFFF;}
 .side_menu dd {display: none;}
-.side_menu dd .link {width: 100%;  height: 47px; display: flex; align-items: center; border-bottom: 1px solid #dcdcdc; font-size: 16px; color: #014EA4; transition: .3s; font-weight: 300; padding-left: 18px; text-decoration: none;}
-.side_menu dd .link span {border-bottom: 1px dashed #014ea4;}
-.side_menu dd .link:hover {color: #FF6600;}
+.side_menu dd .link {width: 100%; font-family: tahoma; height: 47px; display: flex; align-items: center; font-size: 16px; color: #256AA3; transition: .3s; font-weight: 300; padding-left: 12px; text-decoration: none; border-bottom: 2px solid #eeeeee;}
+.side_menu dd .link img {width: 30px; height: auto; margin-right: 10px;}
 .active {display: block!important;}
 @media (max-width:1440px) {/*1280*/
 	.side_menu dt .fa {font-size: 20px; margin-top: -10px;}
@@ -190,9 +189,9 @@ body .header .header__on {display: flex;}
 .product__item .desc {font-size: .78vw; color: #000; font-weight: 300; margin-top: 6px;}
 .product__item .price {display: flex; justify-content: space-between; align-items: center; margin-top: 15px;}
 .product__item .price .text {font-size: .78vw; font-weight: 500; color: #000;}
-.product__item .price .number {font-size: .8vw; color: #000; background: #ffd700; padding: 0 2%;}
-.product__item .buy {font-size: 1.1vw; color: #fff; height: 46px; display: flex; padding-left: 16px; align-items: center; background: #00985f; text-decoration: none; transition: .3s; margin-top: 24px;}
-.product__item .buy:hover {background: #00BFFF;}
+.product__item .price .number {font-size: .8vw; color: #fff; background: #2BC845; padding: 0 2%;}
+.product__item .buy {font-size: 1.1vw; color: #000; height: 46px; display: flex; padding-left: 16px; justify-content: center; align-items: center; background: #FFDB4C; text-decoration: none; transition: .3s; margin-top: 24px; border: 1px solid #8F8F9F; border-radius: 4px;}
+.product__item .buy:hover {background: #2BC845;}
 .product__item .buy .fa {font-size: 1.02vw; color: #fff; margin-right: 16px; transition: .3s; position: relative;}
 @media (max-width:1440px) {/*1280*/
 	.product__item {width: calc(25% - 15px);}
@@ -408,7 +407,7 @@ body .header .header__on {display: flex;}
 .footer__info .title {margin-bottom: 10px; font-size: .8vw; font-weight: 500; color: #000;}
 .footer__our {width: 100%; background: none; padding: 0;}
 .our_phone__number {font-size: 1.4vw; color: #0058BA;}
-.footer_sign {padding-left: 34px; background: url(../img/footer-sign.png) left center no-repeat;}
+.footer_sign {padding-left: 34px; background: url(../img/footer-sign.png) left center no-repeat; background-size: auto 100%;}
 .footer_sign p {font-size: .7vw; font-weight: 300; color: #000;}
 .footer_bot {width: 100%; display: flex; justify-content: space-between; margin-top: 34px;}
 .copy {font-size: 15px; font-weight: 300; color: #000;}
@@ -426,5 +425,26 @@ body .header .header__on {display: flex;}
 	.footer__others {bottom: 25%;}
 }
 @media (max-width:1280px) {
+	.footer__info {width: 22%;}
 	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: .83vw;}
+	.footer_menu .title {font-size: 1.2vw;}
+	.footer_menu .link {font-size: 1.1vw;}
+	.footer__info .title {font-size: 1.2vw;}
+	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche {font-size: 1.1vw;}
+	.footer_sign p {font-size: 1vw;}
+}
+@media (max-width:740px) {
+	.footer {justify-content: space-between; height: auto; padding: 10px 2%;}
+	.footer__info {width: 100%;}
+	.footer_menu {width: 100%; margin-left: 0; margin-top: 20px; flex-wrap: wrap;}
+	.footer_menu .item {width: 48%;}
+	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: 14px;}
+	.footer_menu .link, .schedule__right .sche {font-size: 15px;}
+	.footer__info .title, .footer_menu .title, .our_phone__number {font-size: 16px;}
+	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our 
+	.footer_sign p {font-size: 14px;}
+	.footer_bot {flex-direction: column;}
+	.footer__others {left: 2%; right: 2%; bottom: 10%; overflow: hidden;}
+	.copy {margin-bottom: 5px; margin-top: 30px;}
+	.copy, .by {font-size: 14px;}
 }
