@@ -55,7 +55,7 @@ body .header .header__on {display: flex;}
 	.header__nav {width: 100%;}
 	.header__nav .link {font-size: 1.2vw;}
 	.header__phone {font-size: 2vw;}
-	.header__phone .phone {font-size: 2vw;}
+	.header__phone .phone {font-size: 1.8vw;}
 	.header__phone .address {font-size: .87vw;}
 }
 @media (max-width:1280px) {/*1024*/
