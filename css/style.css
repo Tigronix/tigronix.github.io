@@ -198,7 +198,7 @@ body .header .header__on {display: flex;}
 .product__item .price {display: flex; justify-content: space-between; align-items: center; margin-top: 15px;}
 .product__item .price .text {font-size: .78vw; font-weight: 500; color: #000;}
 .product__item .price .number {font-size: .8vw; color: #fff; background: #2BC845; padding: 0 2%;}
-.product__item .buy {font-size: 1.1vw; color: #000; height: 46px; display: flex; padding-left: 16px; justify-content: center; align-items: center; background: #FFDB4C; text-decoration: none; transition: .3s; margin-top: 24px; border: 1px solid #8F8F9F; border-radius: 4px;}
+.product__item .buy {font-size: 1.1vw; color: #000; height: 46px; display: flex;justify-content: center; align-items: center; background: #FFDB4C; text-decoration: none; transition: .3s; margin-top: 24px; border: 1px solid #8F8F9F; border-radius: 4px;}
 .product__item .buy:hover {background: #2BC845;}
 .product__item .buy .fa {font-size: 1.02vw; color: #fff; margin-right: 16px; transition: .3s; position: relative;}
 @media (max-width:1440px) {/*1280*/
