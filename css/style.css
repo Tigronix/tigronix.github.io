@@ -35,7 +35,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 .header__nav {width: 84%; display: flex; justify-content: space-between; margin-top: 25px; padding-bottom: 14px;}
 .header__nav .link {color: #0054B9; font-size: .84vw; font-weight: 500; transition: .3s; text-decoration: none; border-bottom: 1px dashed #0054b9;}
 .header__nav .link:hover {color: #FF6600;}
-.header__phone {margin-left: 4.0600%; width: 18%; padding: 5px 0 9px 0; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between;}
+.header__phone {margin-left: 4.0600%; width: 18%; padding: 5px 0 9px 0; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between; flex-wrap: wrap;}
 .header__phone .phone {width:100%; font-size: 1.68vw; color: #00985F; font-weight: 500; text-align: right; text-decoration: none; display: flex; align-items: center; justify-content: flex-end;}
 .header__phone .phone span {margin-left: 5px;}
 .header__phone .address {width:100%; font-size: .84vw; color: #000; font-weight: 300; text-align: right; margin-top: 0px;}
@@ -426,7 +426,7 @@ body .header .header__on {display: flex;}
 .footer_menu .title {font-size: .9vw; color: #000; font-weight: 500; margin-bottom: 10px;}
 .footer_menu .link {font-size: .8vw; color: #0054B9; font-weight: 500; transition: .3s; margin-bottom: 10px;}
 .footer_menu .link:hover {color: #FF6600;}
-.footer__others {position: absolute; right: 30px; bottom: 3%; text-align: right;}
+.footer__others {position: absolute; right: 30px; bottom: 21px; text-align: right;}
 @media (max-width:1440px) {
 	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: .83vw;}
 	.footer_right {width: 25%;}
