@@ -425,12 +425,12 @@ body .header .header__on {display: flex;}
 .footer_menu .title {font-size: .9vw; color: #000; font-weight: 500; margin-bottom: 10px;}
 .footer_menu .link {font-size: .8vw; color: #0054B9; font-weight: 500; transition: .3s; margin-bottom: 10px;}
 .footer_menu .link:hover {color: #FF6600;}
-.footer__others {position: absolute; right: 30px; bottom: 15%; text-align: right;}
+.footer__others {position: absolute; right: 30px; bottom: 3%; text-align: right;}
 @media (max-width:1440px) {
 	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: .83vw;}
-	.footer__others {bottom: 25%;}
 	.footer_right {width: 25%;}
 	.footer__others {width: 25%; overflow: hidden;}
+	.footer_sign p {font-size: 1vw}
 }
 @media (max-width:1280px) {
 	.footer__info {width: 22%;}
