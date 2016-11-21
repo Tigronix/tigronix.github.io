@@ -67,7 +67,7 @@ $(document).ready(function() {
 	});
 	
 	//header-scroll
-	var header = $('.header');
+	//var header = $('.header');
 	$(window).scroll(function () {
 		var top = $(this).scrollTop();
 		if (top > 10) {

@@ -40,9 +40,10 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 .header__phone .phone {width:100%; font-size: 1.68vw; color: #00985F; font-weight: 500; text-align: right; text-decoration: none; display: flex; align-items: center; justify-content: flex-end;}
 .header__phone .phone span {margin-left: 5px;}
 .header__phone .address {width:100%; font-size: .84vw; color: #000; font-weight: 300; text-align: right; margin-top: 0px;}
-.header__phone .time {width:100%; display: flex; align-items: center; margin-top: 0px; justify-content: space-between;}
+.header__phone .time {width:100%; display: flex; align-items: center; margin-top: 0px; justify-content: flex-end;}
 .header__phone .time .fa {color: #007bb7; font-size: 1.4vw; margin-right: 6px;}
 .header__phone .time .text {font-size: .84vw; color: #029A55; font-weight: 500; display: flex; align-items: center;}
+.header__phone .time .text:last-child {margin-left: 5px;}
 .header__phone .metro {text-align: right; font-size: 16px; font-weight: 500; text-decoration: none; background: url(../img/m_1.png) 50px center no-repeat; background-size: auto 100%; display: none; color: #000; transition: .3s;}
 .header__phone .metro:hover {color: #FF6600;}
 .header .header__icon {display: none; font-size: 24px; color: #ff6600; position: absolute; left: 10px; top: 50%; margin-top: -12px; cursor: pointer;}
@@ -51,7 +52,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 body .header .header__on {display: flex;}
 @media (max-width: 1440px) {/*1280*/
 	.header__center {margin-left: 2%; width: 63%;}
-	.header__phone {margin-left: 2%; width: 25%; padding-left: 4%;}
+	.header__phone {margin-left: 2%; width: 25%; padding-left: 4%; padding-bottom: 15%; padding-top: 15px;}
 	.header__menu .item {font-size: 1vw;}
 	.header__nav {width: 100%;}
 	.header__nav .link {font-size: 1.2vw;}
