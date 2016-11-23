@@ -122,7 +122,8 @@
 	-o-transition: border .2s linear;
 	-moz-transition: border .2s linear;
 	-webkit-transition: border .2s linear;
-	transition: border .2s linear
+	transition: border .2s linear;
+	color: #383838;
 }
 
 .jquery-accordion-menu ul ul.submenu li:hover>a {
