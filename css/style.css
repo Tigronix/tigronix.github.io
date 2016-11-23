@@ -100,7 +100,7 @@ body .header .header__on {display: flex;}
 
 .content {padding: 0 28px 0 12px; margin-top: 133px; width: 100%;}
 @media (max-width:1024px) {
-	.content {padding: 0 2%; margin-top: 170px;}
+	.content {padding: 0 2%;}
 }
 .content__wrap {display: flex;}
 @media (max-width:1024px) {
