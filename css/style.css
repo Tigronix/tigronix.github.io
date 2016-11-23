@@ -26,6 +26,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 .header__title {color: #00a200; font-family: 'arial'; font-size: .9vw; font-weight: bold; margin-bottom: 14px;}
 @media (max-width:1024px) {
 	.header .small__links {display: none;}
+	.header__title {display: none;}
 }
 .header__logo {background: url(../img/logo.png) center center no-repeat; width: 14.9920%; background-size: 100% auto; max-width: 277px;}
 .header__center {width: 44.300%; margin-left: 10%; display: flex;  flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: flex-end;}
@@ -105,7 +106,7 @@ body .header .header__on {display: flex;}
 
 .content {padding: 0 28px 0 12px; margin-top: 100px; width: 100%;}
 @media (max-width:1024px) {
-	.content {padding: 0 2%;}
+	.content {padding: 0 2%; margin-top: 120px;}
 }
 .content__wrap {display: flex;}
 @media (max-width:1024px) {
