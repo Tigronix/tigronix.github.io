@@ -50,7 +50,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 .header__phone .time .text:last-child {margin-left: 5px;}
 .header__phone .metro {text-align: right; font-size: 16px; font-weight: 500; text-decoration: none; background: url(../img/m_1.png) 50px center no-repeat; background-size: auto 100%; display: none; color: #000; transition: .3s;}
 .header__phone .metro:hover {color: #FF6600;}
-.header .header__icon {display: none; font-size: 24px; color: #ff6600; position: absolute; left: 10px; top: 50%; margin-top: -12px; cursor: pointer;}
+.header .header__icon {display: none; font-size: 24px; color: #03A678; position: absolute; left: 10px; top: 50%; margin-top: -12px; cursor: pointer;}
 .move_away {animation-timing-function: linear; -webkit-animation: move_away 1.2s linear; animation: move_away 1.2s linear;}
 .blackout {display: none; position: fixed; left: 0; top: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, .6); z-index: 100;}
 body .header .header__on {display: flex;}
@@ -75,8 +75,8 @@ body .header .header__on {display: flex;}
 	.header {justify-content: space-between;}
 	.header__logo {position: absolute; left: 10%; top: 50%; width: 277px; height: 79px; margin-top: -39.5px; background-size: 100% auto;}
 	.header__menu {display: none;}
-	.header__nav {display: none; padding: 0; position: absolute; left: 0; top: 100%; margin: 0; width: 90%; flex-wrap: wrap; flex-direction: column; background: #2AA94F;}
-	.header__nav .link {font-size: 18px; text-align: center; text-decoration: none; border-bottom: 1px solid #fff; color: #fff; padding: 5px 0;}
+	.header__nav {display: none; padding: 0; position: absolute; left: 0; top: 100%; margin: 0; width: 90%; flex-wrap: wrap; flex-direction: column; background: #03A678;}
+	.header__nav .link {font-size: 18px; text-align: center; text-decoration: none; border-bottom: 1px solid #049372; color: #fff; padding: 5px 0;}
 	.header__nav .link:hover {background: #F5F5F5; border-color: #ff6600;}
 	.header .header__open {display: block;}
 	.header__phone {width: 260px; margin-left: 0;}
