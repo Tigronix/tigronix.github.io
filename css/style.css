@@ -23,7 +23,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 
 .header__small .small__links {display: flex; width: 100%;}
 .header__small .header__menu {display: none;}
-.header__title {color: #00a200; font-family: 'arial'; font-size: 16px; font-weight: bold; margin-bottom: 14px;}
+.header__title {color: #00a200; font-family: 'arial'; font-size: .9vw; font-weight: bold; margin-bottom: 14px;}
 @media (max-width:1024px) {
 	.header .small__links {display: none;}
 }
@@ -99,8 +99,8 @@ body .header .header__on {display: flex;}
 }
 
 .main_menu {display: flex; justify-content: space-between; width: 62%; margin-bottom: 15px;}
-.main_menu .title {font-size: 22px; color: #f60;}
-.main_menu .link {font-size: 21px; color: #069; font-size: 21px; text-decoration: none; border-bottom: 1px solid #069; transition: .3s;}
+.main_menu .title {font-size: 1.2vw; color: #f60;}
+.main_menu .link {font-size: 1.2vw; color: #069; font-size: 21px; text-decoration: none; border-bottom: 1px solid #069; transition: .3s;}
 .main_menu .link:hover {color: #FF6600;}
 
 .content {padding: 0 28px 0 12px; margin-top: 100px; width: 100%;}
