@@ -118,7 +118,7 @@ body .header .header__on {display: flex;}
 .side_menu dd {display: none;}
 .side_menu dd .link {width: 100%; font-family: tahoma; height: 47px; display: flex; align-items: center; font-size: 16px; color: #256AA3; transition: .3s; font-weight: 300; padding-left: 12px; text-decoration: none; border-bottom: 2px solid #eeeeee;}
 .side_menu dd .link img { margin-right: 10px;}
-.active {display: block!important;}
+.act {display: block!important;}
 @media (max-width:1440px) {/*1280*/
 	.side_menu dt .fa {font-size: 20px; margin-top: -10px;}
 	.side_menu dt .img_wrap {margin: 0 5px 0 12px;}

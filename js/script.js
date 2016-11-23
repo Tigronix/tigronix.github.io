@@ -81,9 +81,9 @@ $(document).ready(function() {
 	(function($) {
 
 		var allPanels = $('.accordion > dd').hide();
-		$('.first').addClass('active');
+		$('.first').addClass('act');
 		$('.accordion > dt > a').click(function() {
-			$('.first').removeClass('active');
+			$('.first').removeClass('act');
 			allPanels.slideUp(600);
 			$(this).parent().next().slideDown(600);
 			return false;
