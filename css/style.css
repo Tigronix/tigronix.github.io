@@ -102,7 +102,7 @@ body .header .header__on {display: flex;}
 .main_menu {display: flex; justify-content: space-between; width: 62%; margin-bottom: 15px;}
 .main_menu .title {font-size: 1.2vw; color: #f60;}
 .main_menu .link {font-size: 1.2vw; color: #069; text-decoration: none; border-bottom: 1px solid #069; transition: .3s;}
-.main_menu .link:hover {color: #FF6600;}
+.main_menu .link:hover {color: #FF6600; border-color: #FF6600;}
 @media (max-width:1440px) {
 	.main_menu {width: 70%;}
 }
