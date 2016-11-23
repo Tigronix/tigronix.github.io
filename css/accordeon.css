@@ -39,11 +39,15 @@
 
 .jquery-accordion-menu ul li a {
 	width: 100%;
-	padding: 14px 22px;
+	padding: 0px 22px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 	float: left;
 	text-decoration: none;
 	color: #fff;
-	font-size: 13px;
+	font-size: 1vw;
 	background: #414956;
 	white-space: nowrap;
 	position: relative;
@@ -51,7 +55,7 @@
 	-o-transition: color .2s linear,background .2s linear;
 	-moz-transition: color .2s linear,background .2s linear;
 	-webkit-transition: color .2s linear,background .2s linear;
-	transition: color .2s linear,background .2s linear
+	transition: color .2s linear,background .2s linear;
 }
 
 .jquery-accordion-menu>ul>li.active>a,.jquery-accordion-menu>ul>li:hover>a {
@@ -64,16 +68,18 @@
 }
 
 .jquery-accordion-menu ul li a i {
-	width: 34px;
+	margin-right: 10px;
 	float: left;
 	line-height: 18px;
-	font-size: 16px;
+	font-size: 1.1vw;
 	text-align: left
 }
 
 .jquery-accordion-menu .submenu-indicator {
 	float: right;
 	right: 22px;
+	top: 50%;
+	margin-top: -9.5px;
 	position: absolute;
 	line-height: 19px;
 	font-size: 20px;
@@ -108,7 +114,7 @@
 .jquery-accordion-menu ul ul.submenu li a {
 	width: 100%;
 	float: left;
-	font-size: 11px;
+	font-size: 1vw;
 	background: #383838;
 	border-top: none;
 	position: relative;
@@ -331,4 +337,18 @@
 }
 
 
+@media (max-width:1280px) {
+	.jquery-accordion-menu ul li a {padding: 0 10px;}
+	.jquery-accordion-menu .submenu-indicator {right: 10px;}
+}
+@media (max-width:1024px) {
+	.jquery-accordion-menu ul li a {font-size: 2vw;}
+	.jquery-accordion-menu ul li a i {font-size: 2.3vw; margin-right: 20px;}
+	.jquery-accordion-menu ul ul.submenu li a {font-size: 1.7vw;}
+}
+@media (max-width:768px) {
+	.jquery-accordion-menu ul li a {font-size: 17px;}
+	.jquery-accordion-menu ul li a i {font-size: 18px; margin-right: 10px;}
+	.jquery-accordion-menu ul ul.submenu li a {font-size: 16px; padding-left: 10px;}
+}
 
