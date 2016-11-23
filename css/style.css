@@ -255,7 +255,8 @@ body .header .header__on {display: flex;}
 .price_list .cell:first-child {text-align: left; padding-left: 26px;}
 .price_list .head {background: #00985F!important;}
 .price_list .head .cell {font-size: .99vw; color: #fff; font-weight: 500;}
-.price_list .link {font-size: .99vw; font-weight: 500; color: #0054B9;}
+.price_list .link {font-size: .99vw; transition: .3s; font-weight: 500; color: #0054B9;}
+.price_list .link:hover {color: #ff761c;}
 .price_list .price {font-size: 1.27vw; color: #014ea4; font-weight: 300;}
 @media (max-width:1280px) {/*1024*/
 	.price_list .head .cell {font-size: 1.2vw;}
