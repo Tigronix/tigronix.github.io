@@ -93,8 +93,8 @@ $(document).ready(function() {
 
 	//активный класс
 	$(function(){	
-		$(".demo-list li").click(function(){
-			$(".demo-list li.active").removeClass("active")
+		$(".demo-list > li").click(function(){
+			$(".demo-list > li.active").removeClass("active")
 			$(this).addClass("active");
 		})	
 	});	
