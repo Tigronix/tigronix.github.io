@@ -225,7 +225,7 @@
 
 .blue.jquery-accordion-menu ul ul.submenu li:hover>a {
 	border-left-color: #3e82da;
-	background: #3b3b3b;
+	background: #049372;
 }
 /*конец*/
 
@@ -243,8 +243,8 @@
 }
 
 .green.jquery-accordion-menu ul ul.submenu li:hover>a  {
-	border-left-color: #049372;
-	background: #3b3b3b;
+	border-left-color: #3b3b3b;
+	background: #049372;
 	color: #fff;
 }
 
@@ -265,7 +265,7 @@
 
 .red.jquery-accordion-menu ul ul.submenu li:hover>a {
 	border-left-color: #DA4453;
-	background: #3b3b3b;
+	background: #049372;
 }
 /*конец*/
 
@@ -285,7 +285,7 @@
 
 .white.jquery-accordion-menu ul ul.submenu li:hover>a {
 	border-left-color: #fff;
-	background: #3b3b3b;
+	background: #049372;
 }
 
 .white.jquery-accordion-menu ul ul.submenu li a {
@@ -312,7 +312,7 @@
 
 .black.jquery-accordion-menu ul ul.submenu li:hover>a {
 	border-left-color: #222;
-	background: #3b3b3b;
+	background: #049372;
 }
 /*конец*/
 
