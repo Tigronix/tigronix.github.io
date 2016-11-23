@@ -123,7 +123,8 @@
 	-moz-transition: border .2s linear;
 	-webkit-transition: border .2s linear;
 	transition: border .2s linear;
-	color: #2bc845;
+	color: #383838;
+	transition: .3s;
 }
 
 .jquery-accordion-menu ul ul.submenu li:hover>a {
@@ -244,6 +245,7 @@
 .green.jquery-accordion-menu ul ul.submenu li:hover>a  {
 	border-left-color: #049372;
 	background: #3b3b3b;
+	color: #fff;
 }
 
 /*конец*/
