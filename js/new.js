@@ -90,12 +90,7 @@ $(document).ready(function() {
         });
         return this
     }
-})(jQuery, window, document);
-	//обработчик
-	jQuery(document).ready(function () {
-		jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
 
-	});
 	//активный класс
 	$(function(){	
 		$(".demo-list li").click(function(){
@@ -103,4 +98,10 @@ $(document).ready(function() {
 			$(this).addClass("active");
 		})	
 	});	
+})(jQuery, window, document);
+	//обработчик
+	jQuery(document).ready(function () {
+		jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+
+	});
 });
