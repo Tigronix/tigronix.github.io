@@ -5,6 +5,10 @@ body {font-family: 'Roboto', sans-serif;}
 p {font-size: 16px; font-weight: 300; color: #000;}
 .global_wrapper {overflow: hidden;}
 .h_center {text-align: center; justify-content: center;}
+
+/*margin*/
+.mt25 {margin-top: 25px;}
+
 /*header*/
 .header {height: 121px; background: #fff; box-shadow: 0px 3px 10px #A9A9A9; display: flex; align-items: stretch; padding: 0 2%; position: fixed; z-index: 999; width: 100%; left: 0; top: 0; right: 0;}
 
@@ -90,11 +94,15 @@ body .header .header__on {display: flex;}
 }
 
 
-.content {display: flex; padding: 0 28px 0 12px; margin-top: 133px; width: 100%;}
+.content {padding: 0 28px 0 12px; margin-top: 164px; width: 100%;}
 @media (max-width:1024px) {
-	.content {flex-wrap: wrap; padding: 0 2%;}
+	.content {padding: 0 2%;}
 }
-.left_block {width: 18.0319%;}
+.content__wrap {display: flex;}
+@media (max-width:1024px) {
+	.content__wrap {flex-wrap: wrap;}
+}
+.left_block {width: 18.0319%; order: 0;}
 .side_menu {margin-bottom: 20px;}
 .side_menu dt {height: 46px; cursor: pointer; transition: .3s; background: #00985F; font-size: 1vw; color: #fff;  position: relative; box-shadow: 0px 4px 2px -1px rgba(0,0,0, .2); margin-bottom: 3px;}
 .side_menu dt .img_wrap {width: 30px; margin: 0 18px; display: flex; justify-content: center; align-items: center;}
@@ -160,7 +168,7 @@ body .header .header__on {display: flex;}
 }
 
 /*center_block*/
-.center_block {margin-left: 1.5368%; width: 80.3409%;}
+.center_block {margin-left: 1.5368%; width: 80.3409%; order: 1;}
 .center__title {font-size: 27px; color: #2e8b57; font-weight: 500; margin-bottom: 11px;}
 .mb1 {margin-bottom: 27px;}
 @media (max-width:1024px) {/*740*/
@@ -463,3 +471,14 @@ body .header .header__on {display: flex;}
 	.copy, .by {font-size: 14px;}
 	.footer_right {display: none;}
 }
+
+
+/*static*/
+.bread {padding: 10px; background: #f5f5f5; border-radius: 4px;}
+.bread a {color: #256aa8; font-size: 17px;}
+.bread a:hover {color: #2E8B57;}
+.bread a:after {content: '/'; display: inline-block; color: #256aa8!important; padding:  0 4px 0 8px; font-size: 18px;}
+.bread a:last-child:after {display: none;}
+
+
+
