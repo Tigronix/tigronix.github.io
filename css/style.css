@@ -88,6 +88,9 @@ body .header .header__on {display: flex;}
 	.header__phone .time .text {font-size: 16px; width: 100%; justify-content: flex-end;}
 	.header__phone .time .text .fa {display: none;}
 }
+@media (max-width: 768px) {
+	.header__phone .time {display: none;}
+}
 @media (max-width:580px) {/*320*/
 	.header__logo {width: 100px; height: 29px; margin-top: 0; left: 10px; top: 10px;}
 	.header__phone .metro {background-position: left center; font-size: 15px;}
@@ -443,17 +446,17 @@ body .header .header__on {display: flex;}
 .footer_menu .link:hover {color: #FF6600;}
 .footer__others {position: absolute; right: 30px; bottom: 21px; text-align: right;}
 @media (max-width:1440px) {
-	.footer__info {width: 18%;}
+	.footer__info {width: 21%;}
 	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: 1vw;}
 	.footer_right {width: 25%;}
 	.footer__others {width: 27%; overflow: hidden;}
 	.footer_sign p {font-size: 1vw;}
 	.footer__info .title {font-size: 1.2vw;}
-	.footer__info .our_phone__text {font-size: 1vw;}
+	.footer__info .our_phone__text {font-size: 1.2vw;}
 	.schedule {margin-top: 10px;}
 	.footer_menu .title {font-size: 1.1vw;}
 	.footer_menu .link {font-size: 1.1vw;}
-	.our_phone__number {font-size: 1.5vw;}
+	.our_phone__number {font-size: 1.7vw;}
 }
 @media (max-width:1280px) {
 	.footer__info {width: 22%;}
@@ -466,7 +469,8 @@ body .header .header__on {display: flex;}
 	.footer_right .btn {width: auto; height: auto; padding: 10px 20px; font-size: 2vw;}
 }
 @media (max-width:1024px) {
-	.footer__info {width: 20%;}
+	.footer__info {width: 22%;}
+	.footer__others {width: 36%;}
 }
 @media (max-width:740px) {
 	.footer {justify-content: space-between; height: auto; padding: 10px 2%;}
@@ -484,6 +488,7 @@ body .header .header__on {display: flex;}
 	.copy {margin-bottom: 5px; margin-top: 30px;}
 	.copy, .by {font-size: 14px;}
 	.footer_right {display: none;}
+	.footer__others {margin-top: 15px;}
 }
 
 .icon {margin-left: -4px;}
