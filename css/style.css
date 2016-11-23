@@ -428,7 +428,7 @@ body .header .header__on {display: flex;}
 .footer_right { position: absolute; top: 25px; right: 30px; width: 19%;}
 .footer_sign {padding-left: 34px; background: url(../img/footer-sign.png) left center no-repeat; background-size: auto 100%;}
 .footer_right .btn {width: 265px; height: 40px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.1vw; border: 1px solid #00985f; background: #2bc845; transition: .3s; text-decoration: none; border-radius: 4px;}
-.footer_right .btn:hover {background: #00985F;}
+.footer_right .btn:hover {background: #2BC845; color: #fff;}
 .footer_sign p {font-size: .7vw; font-weight: 300; color: #000;}
 .footer_bot {width: 100%; display: flex; justify-content: space-between; margin-top: 34px;}
 .copy {font-size: 15px; font-weight: 300; color: #000;}
