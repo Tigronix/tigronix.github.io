@@ -2,7 +2,7 @@
 * {margin: 0px; padding: 0px; box-sizing: border-box; outline: none;}
 
 body {font-family: 'Roboto', sans-serif;}
-p {font-size: 16px; font-weight: 300; color: #000;}
+p {font-size: 16px; font-weight: 300; color: #000; text-align: justify;}
 .global_wrapper {overflow: hidden;}
 .h_center {text-align: center; justify-content: center;}
 
@@ -106,7 +106,9 @@ body .header .header__on {display: flex;}
 @media (max-width:1440px) {
 	.main_menu {width: 70%;}
 }
-
+@media (max-width:1024px) {
+	.main_menu {display: none;}
+}
 .content {padding: 0 28px 0 12px; margin-top: 100px; width: 100%;}
 @media (max-width:1024px) {
 	.content {padding: 0 2%; margin-top: 120px;}
@@ -114,7 +116,7 @@ body .header .header__on {display: flex;}
 .content__wrap {display: flex;}
 @media (max-width:1024px) {
 	.content__wrap {flex-wrap: wrap;}
-	.side__menu {width: 80%;}
+	.side__menu {width: 80%; display: none; position: absolute; left: 1%; top: 120px;  z-index: 101;}
 }
 .left_block {width: 18.0319%; order: 0;}
 .side_menu {margin-bottom: 20px;}
@@ -215,7 +217,8 @@ body .header .header__on {display: flex;}
 .product__item {border: 1px solid #e6e6e6; width: calc(20% - 15px); padding: 8px 10px; margin: 22px 7.5px;}
 .product__item .img {}
 .product__item .img img {width: 100%; height: auto;}
-.product__item .title {font-size: 1.25vw; font-weight: 500; color: #2e8b57;}
+.product__item .title {font-size: 1.25vw; font-weight: 500; color: #2e8b57; text-decoration: none; transition: .3s;}
+.product__item .title:hover {color: #ff6600; border-color: #ff6600;}
 .product__item .title span {border-bottom: 1px dashed #2e8b57;}
 .product__item .desc {font-size: .78vw; color: #000; font-weight: 300; margin-top: 6px;}
 .product__item .price {display: flex; justify-content: space-between; align-items: center; margin-top: 15px;}
@@ -284,6 +287,8 @@ body .header .header__on {display: flex;}
 	.price_list .cell {font-size: 11px; padding-left: 0!important;}
 	.price_list .link {font-size: 11px;}
 	.price_list .price {font-size: 11px;}
+	.price_list  .cell:first-child {text-align: center;}
+	.price_list  .cell:nth-child(2), .price_list  .cell:nth-child(3), .price_list  .cell:nth-child(4) {display: none;}
 }
 
 /*advantages*/
@@ -486,8 +491,9 @@ body .header .header__on {display: flex;}
 @media (max-width:740px) {
 	.footer {justify-content: space-between; height: auto; padding: 10px 2%;}
 	.footer__info {width: 100%;}
-	.footer_menu {width: 100%; margin-left: 0; margin-top: 20px; flex-wrap: wrap;}
+	.footer_menu {width: 100%; margin-left: 0; margin-top: 20px;margin-bottom: 25px; flex-wrap: wrap;}
 	.footer_menu .item {width: 48%;}
+	.footer_menu .item:nth-child(3) {display: none;}
 	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: 14px;}
 	.footer_menu .link, .schedule__right .sche {font-size: 15px;}
 	.footer__info .title, .footer_menu .title, .our_phone__number {font-size: 16px;}

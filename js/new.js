@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
 
-
 	
  (function($, window, document, undefined) {
     var pluginName = "jqueryAccordionMenu";
@@ -98,11 +97,4 @@ $(document).ready(function() {
 
 	});
 
-	//активный класс
-	$(function(){	
-		$(".demo-list > li").click(function(){
-			$(".demo-list > li.active").removeClass("active")
-			$(this).addClass("active");
-		})	
-	});	
 });
