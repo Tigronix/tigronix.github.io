@@ -67,13 +67,13 @@ $(document).ready(function() {
 	});
 	
 	//header-scroll
-	//var header = $('.header');
+	var header = $('.header');
 	$(window).scroll(function () {
 		var top = $(this).scrollTop();
 		if (top > 10) {
-			header.addClass('header__small');
+			header.addClass('header__smally');
 		} else {
-			header.removeClass('header__small');
+			header.removeClass('header__smally');
 		}
 	});
 	

@@ -11,6 +11,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 
 /*header*/
 .header {height: 121px; background: #fff; box-shadow: 0px 3px 10px #A9A9A9; display: flex; align-items: stretch; padding: 0 2%; position: fixed; z-index: 999; width: 100%; left: 0; top: 0; right: 0;}
+.header__smally .header__nav {display: none;}
 
 .header__small {height: 112px;}
 .header .small__links {display: none;}
@@ -441,10 +442,16 @@ body .header .header__on {display: flex;}
 .footer_menu .link:hover {color: #FF6600;}
 .footer__others {position: absolute; right: 30px; bottom: 21px; text-align: right;}
 @media (max-width:1440px) {
-	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: .83vw;}
+	.footer__info {width: 18%;}
+	.footer__our .our_phone__text, .footer__our .schedule__left .t, .footer__our .schedule__right .sche  {font-size: 1vw;}
 	.footer_right {width: 25%;}
 	.footer__others {width: 25%; overflow: hidden;}
-	.footer_sign p {font-size: 1vw}
+	.footer_sign p {font-size: 1vw;}
+	.footer__info .title {font-size: 1.2vw;}
+	.footer__info .our_phone__text {font-size: 1vw;}
+	.schedule {margin-top: 10px;}
+	.footer_menu .title {font-size: 1.1vw;}
+	.footer_menu .link {font-size: 1.1vw;}
 }
 @media (max-width:1280px) {
 	.footer__info {width: 22%;}
