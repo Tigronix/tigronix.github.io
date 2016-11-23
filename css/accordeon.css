@@ -115,7 +115,7 @@
 	width: 100%;
 	float: left;
 	font-size: 1vw;
-	background: #2bc845;
+	background: #f3f0f6;
 	border-top: none;
 	position: relative;
 	border-left: solid 6px transparent;
@@ -123,6 +123,7 @@
 	-moz-transition: border .2s linear;
 	-webkit-transition: border .2s linear;
 	transition: border .2s linear;
+	color: #2bc845;
 }
 
 .jquery-accordion-menu ul ul.submenu li:hover>a {

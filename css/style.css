@@ -178,7 +178,7 @@ body .header .header__on {display: flex;}
 	.center__title {text-align: center; font-size: 19px;}
 }
 .partners {height: 100px; background: #ffdd55; display: flex; align-items: center; padding: 0 1.5251%; justify-content: space-between; margin-bottom: 15px;}
-.partners .item {justify-content: center; width: 7.6923%;}
+.partners .item {justify-content: center; width: 7.6923%; text-decoration: none;}
 .partners .title {width: 100%; color: #000; font-size: 16px; font-weight: 300; text-align: center;}
 .partners .title span {border-bottom: 1px dashed #000; padding: 0 2px;}
 .partners .img {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 8px;}
