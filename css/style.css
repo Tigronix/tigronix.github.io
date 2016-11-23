@@ -33,7 +33,7 @@ p {font-size: 16px; font-weight: 300; color: #000;}
 .header__menu {width: 100%; display: flex; align-items: center; justify-content: flex-end;}
 .header__menu .title {font-size: 1.1vw; font-weight: 500; color: #ff6600; width: 13%;}
 .header__menu .item_wrap {margin-left: 2.8000%; display: flex; justify-content: space-between; width: 82.9%;}
-.header__menu .item  {color: #fff; font-size: .84vw; font-weight: 300; color: #000; height: 32px; display: flex; align-items: center; transition: .3s;}
+.header__menu .item  {color: #fff; font-size: .84vw; color: #000; height: 32px; display: flex; align-items: center; transition: .3s;}
 .header__menu .item:before {display: block; width: 16px; height: 16px; background: url(../img/metro_gray.gif); border-radius: 50%; content: ''; margin-right: 10px;}
 .header__menu .item:hover {color: #FF6600;}
 .header__menu .item:nth-child(2):before {background: url(../img/metro_yellow.gif);}
