@@ -173,6 +173,7 @@ $(document).ready(function() {
 		$('.header__close').fadeOut(300);
 		$('.header__open').fadeIn(300);
 		$('.side__menu').fadeOut(300);
+		$('.mob_phone').fadeOut(300);
 		$('.header').removeClass('z_index');
 	});
 	
