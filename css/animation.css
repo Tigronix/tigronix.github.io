@@ -37,9 +37,9 @@
 	animation: move_left 1.2s linear;
 }
 .move_left_header {
-	animation-timing-function: linear;
-	-webkit-animation: move_left .4s linear;
-	animation: move_left .4s linear;
+	animation-timing-function: ease-out;
+	-webkit-animation: move_left .5s ease-out;
+	animation: move_left .5s ease-out;
 }
 @keyframes move_left {
 	from {
@@ -69,9 +69,9 @@
 	}
 }
 .move_away {
-	animation-timing-function: linear;
-	-webkit-animation: move_away 1.2s linear;
-	animation: move_away 1.2s linear;
+	animation-timing-function: ease-out;
+	-webkit-animation: move_away .5s ease-out;
+	animation: move_away .5s ease-out;
 }
 @keyframes move_away {
 	from {

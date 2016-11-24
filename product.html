@@ -8,22 +8,20 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="js/slick/slick-theme.css">
+		<link rel="stylesheet" href="js/slick/slick.css">
 		<link rel="stylesheet" href="css/animation.css">
 		<link rel="stylesheet" href="css/accordeon.css">
 		<link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
 		<link rel="stylesheet" href="js/owl-carousel/owl.transitions.css">
 		<link rel="stylesheet" href="js/lightcase/css/lightcase.css">
 		<link rel="stylesheet" href="font_awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="js/slick/slick.css">
-		<link rel="stylesheet" href="js/slick/slick-theme.css">
 		<link rel="stylesheet" href="js/styler/jquery.formstyler.css">
 	</head>
 
 	<body>
 		<div class="global_wrapper">
 			<header class="header">
-				<i class="header__open fa fa-bars header__icon"></i>
-				<i class="header__close fa fa-close header__icon"></i>
 				<a href="#" class="header__logo"></a>
 				<div class="header__center">
 					<div class="header__title">Прием заказов на ремонт: ежедневно с 09:00 до 21:00. Наличный, безналичный расчет.</div>
@@ -288,7 +286,73 @@
 									<span>Заказать услугу</span>
 								</a>
 							</div><!--product__item-->
-						</div><!--products-->
+						</div><!--products--><div class="center__title h_center mt_price">Стоимость ремонта</div>
+						<div class="price_list">
+							<div class="row head">
+								<div class="cell">Наименование услуги</div>
+								<div class="cell">Диагностика</div>
+								<div class="cell">Время ремонта</div>
+								<div class="cell">Гарантия, мес</div>
+								<div class="cell">Стоимость деталей</div>
+								<div class="cell">Стоимость ремонта</div>
+							</div>
+							<div class="row">
+								<div class="cell"><a href="#" class="link">Замена матрицы на ноутбуке</a></div>
+								<div class="cell">Бесплатно</div>
+								<div class="cell">30-60 мин.</div>
+								<div class="cell">3</div>
+								<div class="cell price">от 2800 руб.</div>
+								<div class="cell price">от 2800 руб.</div>
+							</div>
+							<div class="row">
+								<div class="cell"><a href="#" class="link">Замена клавиатуры на ноутбуке</a></div>
+								<div class="cell">Бесплатно</div>
+								<div class="cell">30 - 60 мин.</div>
+								<div class="cell">6</div>
+								<div class="cell price">от 1500 руб.</div>
+								<div class="cell price">от 1500 руб.</div>
+							</div>
+							<div class="row">
+								<div class="cell"><a href="#" class="link">Перепайка разъема питания</a></div>
+								<div class="cell">Бесплатно</div>
+								<div class="cell">30 - 60 мин.</div>
+								<div class="cell">6</div>
+								<div class="cell price">от 1500 руб.</div>
+								<div class="cell price">от 1500 руб.</div>
+							</div>
+							<div class="row">
+								<div class="cell"><a href="#" class="link">Замена видеокарты на ноутбуке</a></div>
+								<div class="cell">Бесплатно</div>
+								<div class="cell">1 - 3 дня</div>
+								<div class="cell">3</div>
+								<div class="cell price">от 4500 руб.</div>
+								<div class="cell price">от 4500 руб.</div>
+							</div>
+							<div class="row">
+								<div class="cell"><a href="#" class="link">Замена матрицы на ноутбуке</a></div>
+								<div class="cell">Бесплатно</div>
+								<div class="cell">30 - 60 мин.</div>
+								<div class="cell">6</div>
+								<div class="cell price">от 2800 руб.</div>
+								<div class="cell price">от 2800 руб.</div>
+							</div>
+							<div class="row">
+								<div class="cell"><a href="#" class="link">Замена клавиатуры на ноутбуке</a></div>
+								<div class="cell">Бесплатно</div>
+								<div class="cell">30 - 60 мин.</div>
+								<div class="cell">3</div>
+								<div class="cell price">от 1500 руб.</div>
+								<div class="cell price">от 1500 руб.</div>
+							</div>
+							<div class="row">
+								<div class="cell"><a href="#" class="link">Замена матрицы на ноутбуке</a></div>
+								<div class="cell">Бесплатно</div>
+								<div class="cell">30 - 60 мин.</div>
+								<div class="cell">3</div>
+								<div class="cell price">от 2800 руб.</div>
+								<div class="cell price">от 2800 руб.</div>
+							</div>
+						</div><!--price_list-->
 						<div class="matrix">
 							<div class="center__title">Матрицы в наличии:</div>
 							<div class="matrix__table">
@@ -411,10 +475,10 @@
 											<div class="desc"><span>Замена блока питания</span></div>
 										</div>	
 									</div>
-									
 								</div>
-								<div class="slick_next">topkek</div>
-							</div>
+								<i class="fa fa-angle-left slider__nav slider__prev"></i>
+								<i class="fa fa-angle-right slider__nav slider__next"></i>
+							</div><!--works__cont-->
 						</div><!--our_works-->
 						<div class="advantages">
 							<div class="item">
@@ -671,13 +735,19 @@
 					<div class="copy">© 2009-2016 Сервисный центр  «на Цветном»</div>
 				</div><!--footer_bot-->
 			</footer><!--footer-->
+			<div class="mob_switcher">
+				<i class="header__open fa fa-bars header__icon"></i>
+				<i class="header__close fa fa-close header__icon"></i>
+			</div>
+
+				<div class="mob_phone">+7(495) 135-23-45</div>
 			<div class="blackout"></div>
 		</div><!--global-wrapper-->
 		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/slick/slick.min.js"></script>
 		<script src="js/owl-carousel/owl.carousel.min.js"></script>
 		<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
 		<script src="js/lightcase/js/lightcase.js"></script>
-		<script src="js/slick/slick.min.js"></script>
 		<script src="js/styler/jquery.formstyler.min.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/new.js"></script>

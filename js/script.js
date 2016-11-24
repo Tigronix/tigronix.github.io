@@ -1,11 +1,52 @@
 
 $(document).ready(function() {
+	
 	//works__slider
 	$('.works__slider').slick({
 		infinite: true,
 		slidesToShow: 5,
 		slidesToScroll: 3,
-		variableWidth: true
+		responsive: [
+			{
+				breakpoint: 1600,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 3
+				}
+			},
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	
+
+	//hover в слайдере
+	$('.slick-prev').hover(function(){
+		if ($(this).hover) {
+			$('.fa-angle-left').toggleClass('angle_hover');
+		}
+	});
+	$('.slick-next').hover(function(){
+		if ($(this).hover) {
+			$('.fa-angle-right').toggleClass('angle_hover');
+		}
 	});
 	
 	//photogallery
@@ -116,22 +157,23 @@ $(document).ready(function() {
 	
 	//mob-menu
 	$('.header__open').click(function () {
-		$(this).fadeOut(300);
-		$('.header__close').fadeIn(300).addClass('ib');
-		$('.side__menu').addClass('header__on').removeClass('move_away').addClass('move_left_header').fadeIn(400);
+		$(this).hide();
+		$('.header__close').show();	$('.side__menu').addClass('header__on').removeClass('move_away').addClass('move_left_header').fadeIn(400);	$('.mob_phone').addClass('header__on').removeClass('move_away').addClass('move_left_header').fadeIn(400);
+		$('.header').addClass('z_index');
 		$('.blackout').fadeIn(400);
 	});
 	$('.header__close').click(function () {
-		$(this).fadeOut(300);
-		$('.side__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);
-		$('.header__open').fadeIn(300).addClass('ib');
+		$(this).hide();	$('.side__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);	$('.mob_phone').removeClass('move_left_header').addClass('move_away').fadeOut(400);	
+		$('.header__open').show();
 		$('.blackout').fadeOut(400);
+		$('.header').removeClass('z_index');
 	});
 	$('.blackout').click(function(){
 		$(this).fadeOut(400);
 		$('.header__close').fadeOut(300);
 		$('.header__open').fadeIn(300);
 		$('.side__menu').fadeOut(300);
+		$('.header').removeClass('z_index');
 	});
 	
 	//стили для инпутов/селектов
