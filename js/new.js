@@ -31,7 +31,7 @@ $(document).ready(function() {
             $(this.element).children("ul").find("li").bind("click touchstart",
             function(e) {
                 e.stopPropagation();
-                e.preventDefault();
+                //e.preventDefault();
                 if ($(this).children(".submenu").length > 0) {
                     if ($(this).children(".submenu").css("display") == "none") {
                         $(this).children(".submenu").delay(defaults.showDelay).slideDown(defaults.speed);

@@ -352,6 +352,6 @@
 @media (max-width:768px) {
 	.jquery-accordion-menu ul li a {font-size: 17px;}
 	.jquery-accordion-menu ul li a i {font-size: 18px; margin-right: 10px;}
-	.jquery-accordion-menu ul ul.submenu li a {font-size: 16px; padding-left: 10px;}
+	.jquery-accordion-menu ul ul.submenu li a {font-size: 12px; padding-left: 10px;}
 }
 

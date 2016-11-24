@@ -54,7 +54,7 @@ p {font-size: 16px; font-weight: 300; color: #000; text-align: justify;}
 .header__phone .metro {text-align: right; font-size: 16px; font-weight: 500; text-decoration: none; background: url(../img/m_1.png) 50px center no-repeat; background-size: auto 100%; display: none; color: #000; transition: .3s;}
 .header__phone .metro:hover {color: #FF6600;}
 body .header__icon {display: none; font-size: 24px; color: #fff;  cursor: pointer; position: absolute; left: 50%; top: 50%; margin: -12px 0 0 -12px; width: 24px; height: 24px;}
-.mob_switcher {display: none; position: fixed; left: 1%; top: 43px; z-index: 1001; width: 40px; height: 40px; background: #03A678;}
+.mob_switcher {display: none; position: fixed; left: 1%; top: 43px; z-index: 1001; width: 40px; height: 40px; background: #049372;}
 .move_away {animation-timing-function: linear; -webkit-animation: move_away 1.2s linear; animation: move_away 1.2s linear;}
 .blackout {display: none; position: fixed; left: 0; top: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, .6); z-index: 100;}
 @media (max-width: 1440px) {/*1280*/
@@ -620,7 +620,8 @@ body .jq-selectbox__select-text {text-overflow: clip;}
 
 .mob_phone {display: none;}
 @media (max-width:1024px) {
-	.mob_phone {align-items: center; padding-left: 40px; font-size: 18px; color: #fff; font-weight: 500; position: fixed; left: 1%; top: 43px; z-index: 1000; height: 40px; background: #03a678; width: 80vw;}
+	.mob_phone {align-items: center; padding-left: 95px; font-size: 18px; color: #fff; font-weight: 500; position: fixed; left: 1%; top: 43px; z-index: 1000; height: 40px; background: #03a678; width: 80vw;}
+	body .submenu {height: 300px; overflow-y: auto;}
 }
 .header__close {z-index: 1001;}
 .header.z_index {z-index: 2;}
