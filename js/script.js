@@ -1,5 +1,13 @@
 
 $(document).ready(function() {
+	//works__slider
+	$('.works__slider').slick({
+		infinite: true,
+		slidesToShow: 5,
+		slidesToScroll: 3,
+		variableWidth: true
+	});
+	
 	//photogallery
 	$('.slider-for--gallery').slick({
 		slidesToShow: 1,
@@ -125,4 +133,13 @@ $(document).ready(function() {
 		$('.header__open').fadeIn(300);
 		$('.side__menu').fadeOut(300);
 	});
+	
+	//стили для инпутов/селектов
+	(function($) {
+		$(function() {
+
+			$('input, select').styler();
+
+		});
+	})(jQuery);
 });
