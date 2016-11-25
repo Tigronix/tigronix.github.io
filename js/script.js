@@ -1,5 +1,21 @@
 
 $(document).ready(function() {
+
+	//accordion
+	$('.side_submenu').hide().prev().click(function(){
+		$('.side_submenu').not(this).slideUp(400).prev().removeClass('side__active');
+		$(this).next().not(':visible').slideDown(400).prev().addClass('side__active');
+	});
+	
+	//плавные якоря
+	$("a[href*=#]").bind("click", function(e){
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top -1400
+		}, 0);
+		e.preventDefault();
+		return false;
+	});
 	
 	//works__slider
 	$('.works__slider').slick({
@@ -126,30 +142,6 @@ $(document).ready(function() {
 		}
 	});
 	
-	//accordeon
-	(function($) {
-
-		var allPanels = $('.accordion > dd').hide();
-		$('.first').addClass('act');
-		$('.accordion > dt > a').click(function() {
-			$('.first').removeClass('act');
-			allPanels.slideUp(600);
-			$(this).parent().next().slideDown(600);
-			return false;
-		});
-
-	})(jQuery);
-
-	//плавные якоря
-	$(".accordion > dt > a").bind("click", function(e){
-		var anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top -100
-		}, 2500);
-		e.preventDefault();
-		return false;
-	});
-	
 	//lightcase
 	$('a[data-rel^=lightcase]').lightcase({
 		swipe: true
@@ -183,10 +175,4 @@ $(document).ready(function() {
 
 		});
 	})(jQuery);
-	
-	//accordion
-	$('.side_submenu').hide().prev().click(function(){
-		$('.side_submenu').not(this).slideUp(400).prev().removeClass('side__active');
-		$(this).next().not(':visible').slideDown(400).prev().addClass('side__active');
-	});
 });
