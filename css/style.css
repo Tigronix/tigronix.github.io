@@ -691,6 +691,7 @@ body .header__on {display: flex;}
 .side__link:before {position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: #f3f0e6; transition: .3s; content: '';}
 .side__link:hover:before, .side__link:focus:before {background: #049372;}
 .side__link:hover {background: #f7f4eb;}
+.side_submenu {display: none;}
 @media (max-width:1440px) {
 	.side__title {font-size: 1vw;}
 	.side__title i {margin-right: 2.5%; font-size: 1.5vw;}
