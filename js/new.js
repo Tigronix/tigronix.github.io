@@ -30,7 +30,7 @@ $(document).ready(function() {
         openSubmenu: function() {
             $(this.element).children("ul").find("li").bind("click touchstart",
             function(e) {
-                //e.stopPropagation();
+                e.stopPropagation();
                 //e.preventDefault();
                 if ($(this).children(".submenu").length > 0) {
                     if ($(this).children(".submenu").css("display") == "none") {
