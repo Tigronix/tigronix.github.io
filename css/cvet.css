@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'cvet';
-  src: url('../font/cvet.eot?62799469');
-  src: url('../font/cvet.eot?62799469#iefix') format('embedded-opentype'),
-       url('../font/cvet.woff2?62799469') format('woff2'),
-       url('../font/cvet.woff?62799469') format('woff'),
-       url('../font/cvet.ttf?62799469') format('truetype'),
-       url('../font/cvet.svg?62799469#cvet') format('svg');
+  src: url('../font/cvet.eot?94363351');
+  src: url('../font/cvet.eot?94363351#iefix') format('embedded-opentype'),
+       url('../font/cvet.woff2?94363351') format('woff2'),
+       url('../font/cvet.woff?94363351') format('woff'),
+       url('../font/cvet.ttf?94363351') format('truetype'),
+       url('../font/cvet.svg?94363351#cvet') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'cvet';
-    src: url('../font/cvet.svg?62799469#cvet') format('svg');
+    src: url('../font/cvet.svg?94363351#cvet') format('svg');
   }
 }
 */
@@ -56,5 +56,7 @@
 }
  
 .icon-desktop:before { content: '\e800'; } /* '' */
-.icon-photo:before { content: '\e801'; } /* '' */
 .icon-mobile:before { content: '\e802'; } /* '' */
+.icon-laptop:before { content: '\e804'; } /* '' */
+.icon-tablet:before { content: '\e805'; } /* '' */
+.icon-ok:before { content: '\e849'; } /* '' */

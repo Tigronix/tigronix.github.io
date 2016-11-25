@@ -184,5 +184,9 @@ $(document).ready(function() {
 		});
 	})(jQuery);
 	
-	
+	//accordion
+	$('.side_submenu').hide().prev().click(function(){
+		$('.side_submenu').not(this).slideUp(400).prev().removeClass('side__active');
+		$(this).next().not(':visible').slideDown(400).prev().addClass('side__active');
+	});
 });
