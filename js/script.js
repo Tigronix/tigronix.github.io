@@ -171,9 +171,7 @@ $(document).ready(function() {
 	$('.blackout').click(function(){
 		$(this).fadeOut(400);
 		$('.header__close').fadeOut(300);
-		$('.header__open').fadeIn(300);
-		$('.side__menu').fadeOut(300);
-		$('.mob_phone').fadeOut(300);
+		$('.header__open').fadeIn(300);	$('.side__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);		$('.mob_phone').removeClass('move_left_header').addClass('move_away').fadeOut(400);	
 		$('.header').removeClass('z_index');
 	});
 	
