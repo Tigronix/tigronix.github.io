@@ -1,41 +1,5 @@
 /*animation*/
-@keyframes move_top {
-	from {
-		transform: translateY(-200px);
 
-	}
-
-	to {
-		transform: translateY(0px);
-	}
-}
-@keyframes slide_lefts {
-	from {
-		transform: translatex(-100px) skewX(-32deg);
-
-	}
-
-	to {
-		transform: translatex(0px) skewX(-32deg);
-	}
-}
-@media (max-width:740px) {
-	@keyframes slide_lefts {
-		from {
-			transform: translatex(-100px) skewX(0deg);
-
-		}
-
-		to {
-			transform: translatex(0px) skewX(0deg);
-		}
-	}
-}
-.move_left {
-	animation-timing-function: linear;
-	-webkit-animation: move_left 1.2s linear;
-	animation: move_left 1.2s linear;
-}
 .move_left_header {
 	animation-timing-function: ease-out;
 	-webkit-animation: move_left .5s ease-out;
@@ -48,24 +12,6 @@
 
 	to {
 		transform: translatex(0px);
-	}
-}
-@keyframes move_right {
-	from {
-		transform: translatex(200px);
-	}
-
-	to {
-		transform: translatex(0px);
-	}
-}
-@keyframes move_bot {
-	from {
-		transform: translateY(200px);
-	}
-
-	to {
-		transform: translateY(0px);
 	}
 }
 .move_away {
