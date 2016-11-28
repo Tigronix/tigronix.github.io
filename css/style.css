@@ -626,7 +626,7 @@ body .jq-selectbox__select-text {text-overflow: clip;}
 
 .mob_phone {display: none;}
 @media (max-width:1024px) {
-	.mob_phone {align-items: center; padding-left: 52px; font-size: 1.8vw; color: #fff; font-weight: 500; position: absolute; left: 1%; top: 43px; z-index: 1000; height: 40px; background: #03a678; width: 80vw;}
+	.mob_phone {align-items: center; padding-left: 52px; font-size: 1.8vw; color: #fff; font-weight: 500; position: absolute; left: 1%; top: 43px; z-index: 1000; height: 40px; background: #03a678; width: 80vw; border-bottom: 1px solid #049372;}
 	body .submenu {max-height: 300px; overflow-y: auto;}
 }
 @media (max-width:768px) {
@@ -698,6 +698,7 @@ body .header__on {display: flex;}
 	
 }
 @media (max-width:1024px) {
+	.side__link {font-size: 1.5vw;}
 	.side__menu {width: 80%; display: none; position: absolute; left: 1%; top: 83px;  z-index: 1000; flex-direction: column;}
 	.side__title {font-size: 2vw; padding-left: 0%;}
 	.side__title i {font-size: 3vw; margin-right: 5vw;}
@@ -760,3 +761,106 @@ body .header__on {display: flex;}
 	.contact__map {width: 100%; height: 200px;}
 	.map__text {display: none;}
 }
+
+/*about*/
+.about {display: flex;}
+.about__img {width: 160px; height: 225px; overflow: hidden;}
+.about__img img {vertical-align: bottom;}
+.about__text {margin-left: 25px;}
+.about__text .t {font-size: 17px; line-height: 20px; color: #000; font-weight: 300;}
+.about__text .name {font-weight: bold; margin-bottom: 10px;}
+.about__text .number {margin-bottom: 8px;}
+.about__text .date {margin-bottom: 10px;}
+.about__text .cods {margin-bottom: 14px;}
+@media (max-width:1400px) {
+	.about {align-items: flex-start;}
+	.about__img {width: calc(20% - 30px); height: auto; max-width: 160px;}
+	.about__img img {width: 100%; height: auto;}
+	.about__text {width: 80%;}
+}
+@media (max-width:768px) {
+	.about {flex-wrap: wrap; flex-direction: column;}
+	.about__img {width: 100%; margin: 0 auto;}
+	.about__text {width: 100%; margin: 20px 0 0 0; margin-left: 0;}
+}
+
+/*action*/
+.action {display: flex; padding-left: 16px; align-items: flex-start; margin-top: 25px;}
+.action .img {width: 4.2%;margin-top: 10px;}
+.action .img img {width: 100%; height: auto; vertical-align: bottom;}
+.action .text {margin-left:  20px; font-size: 1vw; line-height: 1.1vw; font-weight: 300; color: #000;}
+.action_list {margin-top: 26px;}
+.action_list li {padding-left: 10px; font-size: .99vw; color: #000; font-weight: 300; list-style-type: none; margin-bottom: 10px;}
+.action_list li:before {display: inline-block; content: ''; background: url(../img/check_green.svg) no-repeat; height: 10px; width: 11px; margin-right: 8px;}
+.action_list li span {color: #FF4500; font-weight: 500;}
+.action__send {background: #ffdd55; height: 100px; display: flex; align-items: center; justify-content: space-between; padding: 0 4.9636% 0 6.3534%; margin-top: 27px; margin-bottom: 20px;}
+.action__send .text {width: 62.3130%;}
+.action__send .t1, .action__send .t3 {font-size: 1.4vw; font-weight: 500; color: #000;}
+.action__send .t2 {margin: 0 3.3090%; font-size: 1.1vw; font-weight: 300; color: #000;}
+.action__send .btn {width: 22.4573%; height: 46px; display: flex; align-items: center; justify-content: center; background: #2bc845; border: 1px solid #00985f; font-size: 1.1vw; color: #fff; transition: .3s; text-decoration: none; margin: 0; position: relative;}
+.action__send .btn:before {background: url(../img/arr_right.png) no-repeat; width: 126px; height: 122px; position: absolute; left: -45%; top: 70%; margin-top: -61px; display: block; content: '';}
+.action__send .btn:hover {background: #00985f;}
+.action_text {font-size: .9vw; color: #000; font-weight: 300;}
+.action_mg {margin-bottom: 15px;}
+@media (max-width:1800px) {
+	.action__send .btn:before {left: -60%;}
+}
+@media (max-width:1280px) {
+	.action__send {padding: 0 2%;}
+	.action__send .t1, .action__send .t3 {font-size: 1.5vw;}
+	.action__send .t2 {margin: 0 10px; font-size: 1.5vw}
+	.action__send .btn {font-size: 2vw;}
+	.action__send .btn:before {display: none;}
+	.action .text {font-size: 16px; line-height: 19px;}
+	.action_list li {font-size: 16px; line-height: 19px;}
+	.action_text {font-size: 16px; line-height: 19px;}
+	.action .img {width: 70px;}
+}
+@media (max-width:768px) {
+	.action__send {flex-direction: column; justify-content: center;}
+	.action__send .text {width: 100%; text-align: center;}
+	.action__send .text .t1 {font-size: 18px;}
+	.action__send .text .t2, .action__send .text .t3  {display: none;}
+	.action__send .btn {width: 100%; height: auto; padding: 6px 0; font-size: 16px; margin-top: 20px;}
+	.action .img {display: none;}
+	.action .text {margin-left: 0;}
+}
+
+.pay {padding: 0 6.6753% 0 2.1596%; margin-top: 30px;}
+.pay .line {display: flex; align-items: center; margin-bottom: 43px;}
+.pay .link {display: flex; width: 25.1308%; text-decoration: none; align-items: center;}
+.pay .link .img {width: 60px; height: 60px; margin-right: 13.4517%;}
+.pay .link .img img {width: 100%; height: auto;}
+.pay .link span {width: 73.9583%; font-size: .94vw; color: #256AA3; font-weight: 500; text-transform: uppercase;}
+.pay .text {font-size: .9vw; line-height: 1.1vw; color: #000; font-weight: 300; width: 70.8070%;}
+.pay .text span {color: #256AA3; font-weight: 500;}
+.pay__text i {font-size: 19px; color: #265A88; line-height: 19px; margin-right: 10px;}
+.pay__text {font-size: 17px; font-weight: 300; color: #000;}
+@media (max-width:1440px) {
+	.pay .link .img {width: 40px; height: auto; margin-right: 2%;}
+	.pay .link span {font-size: 1.1vw;}
+	.pay .text {font-size: 1vw; line-height: 1.2vw;}
+}
+@media (max-width:1280px) {
+	.pay .link span {font-size: 1.4vw;}
+	.pay .text {font-size: 1.3vw; line-height: 1.5vw;}
+}
+@media (max-width:1024px) {
+	.pay {padding: 0 2%; flex-wrap: wrap;}
+	.pay .link .img {width: 40px; height: auto; margin-right: 2%;}
+	.pay .link span {font-size: 1.4vw;}
+	.pay .text {font-size: 1.7vw; line-height: 1.9vw;}
+}
+@media (max-width:768px) {
+	.pay .line {flex-direction: column; align-items: flex-start;}
+	.pay .link  {width: 100%;}
+	.pay .link .img {width: 40px; height: auto; margin-right: 2%;}
+	.pay .link span {font-size: 18px;}
+	.pay .text {width: 100%; font-size: 16px; line-height: 19px;}
+}
+
+.vacancy_wrap .center__title {margin-top: 20px;}
+.vacancy_wrap a {font-size: 17px; font-weight: 300; color: #0054B9; transition: .3s;}
+.vacancy_wrap a:hover {color: #ff6600;}
+.vacancy {margin-bottom: 30px;}
+.vacancy .img {width: 77px; height: 80px;}
