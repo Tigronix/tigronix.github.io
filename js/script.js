@@ -171,7 +171,7 @@ $(document).ready(function() {
 	(function($) {
 		$(function() {
 
-			$('input, select').styler();
+			$('.styler').styler();
 
 		});
 	})(jQuery);
