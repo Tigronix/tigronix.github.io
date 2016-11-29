@@ -231,8 +231,8 @@ body .header__close {margin: -13.5px 0 0 -9.5px;}
 .products__pocket .product__item img {max-width: 140px;}
 .products__pocket .title {text-align: center;}
 .products__pocket .sale {position: absolute; top: 10px; right: 10px; text-decoration: none; text-align: center;}
-.products__pocket .text {text-align: center; font-family: 'arial', sans-serif; color: #FF0000; font-size: 16px;}
-.products__pocket .number {margin-top: 4px; text-align: center; font-family: 'arial', sans-serif; color: #fff; font-size: 27px; font-weight: 500; background: #FF0000; padding: 2px 5px; border-radius: 14px;}
+.products__pocket .sale .text {text-align: center; font-family: 'arial', sans-serif; color: #FF0000; font-size: 16px;}
+.products__pocket .sale .number {margin-top: 4px; text-align: center; font-family: 'arial', sans-serif; color: #fff; font-size: 27px; font-weight: 500; background: #FF0000; padding: 2px 5px; border-radius: 14px;}
 .partners .img img {width: 85px; height: 40px; vertical-align: bottom; border: 1px solid #d3d3d3;}
 .products__tablet .img {position: relative;}
 .products__tablet .img img {max-width: 99px;}
