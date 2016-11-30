@@ -237,6 +237,8 @@ body .header__close {margin: -13.5px 0 0 -9.5px;}
 .products__tablet .img {position: relative;}
 .products__tablet .img img {max-width: 99px;}
 .products__tablet .img .fa {color: #ff0000; font-size: 30px; width: 30px; height: 30px; position: absolute; left: 50%; top: 41%; margin: -15px 0 0 -15px;}
+
+
 @media (max-width:1440px) {/*1280*/
 	.product__item {width: calc(25% - 15px);}
 	.product__item .title {font-size: 1.8vw;}
@@ -526,6 +528,35 @@ body .header__close {margin: -13.5px 0 0 -9.5px;}
 
 .icon {margin-left: -4px;}
 
+.static_slider {height: 600px; overflow: hidden; position: relative; margin-top: 30px;}
+.static_slider .img {position: absolute; left: 100%; top: 0; bottom: 0; width: 150px; background: #fff; overflow: hidden; display: flex; justify-content: center; align-items: center;}
+.static_slider img {vertical-align: bottom; display: block; margin: 0 auto; width: 100%; height: auto;}
+.static_slider .item {position: relative;}
+.static_slider .text {position: absolute; left: 10%; top: 40px; padding: 5px 20px; background: rgba(0,0,0,.6); color: #fff; z-index: 2; min-height: 140px;}
+.static_slider .text .title {font-size: 1.5vw; margin-bottom: 20px;}
+.static_slider .text p {font-size: 1vw; color: #fff; margin-bottom: 5px;}
+body .static_slider .slick-dots {bottom: 15px;}
+body .static_slider .slick-dots li {width: auto; height: auto;}
+body .static_slider .slick-dots li button {border: 1px solid #fff; border-radius: 50%; transition: .3s; font-size: 13px;}
+body .static_slider .slick-dots .slick-active button {background: #fff;}
+body .static_slider .slick-dots li button:before {font-size: 0px; color: transparent;}
+@media (max-width:1440px) {
+	.static_slider .text .title {font-size: 1.8vw;}
+	.static_slider .text p {font-size: 1.3vw;}
+}
+@media (max-width:1024px) {
+	.static_slider .text {left: 10px; width: auto;}
+	.static_slider .text .title {font-size: 20px;}
+	.static_slider .text p {font-size: 16px;}
+}
+@media (max-width:768px) {
+	.static_slider .text {min-height: auto;}
+	.static_slider .text .img {display: none;}
+	.static_slider .text p {display: none;}
+}
+@media (max-width:400px) {
+	.static_slider .text {display: none;}
+}
 /*static*/
 .bread {padding: 10px; background: #f5f5f5; border-radius: 4px; margin-bottom: 15px;}
 .bread a {color: #256aa8; font-size: 17px;}
