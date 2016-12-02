@@ -44,6 +44,9 @@ sup {width: auto!important;}
     .nav .main_link {font-size: 1.1vw; margin-left: 1vw;}
     .header__phone .t2 {font-size: 1.1vw;}
 }
+@media (max-width:1440px) {
+	.sub_menu {width: 54vw;}
+}
 @media (max-width:1280px) {/*1024*/
     .header__logo {font-size: 1.5vw; background-size: 60px 60px; padding-left: 7%;}
     
