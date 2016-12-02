@@ -160,6 +160,9 @@ body .slick-dots li button:before {display: none;}
 	.slider-main .slick-slide .t1 {right: 5.5%;}
 	.slider-main .slick-slide .sale {right: 5.5%; top: 25%;}
 }
+@media (max-width:1440px) {
+	.slider-wrap .arrows, .slick-prev, .slick-next {top: 45%;}
+}
 @media (max-width:1280px) {/*1024*/
 	.slider__blocks .block .info {padding: 23p 10px;}
 	.slider__blocks .block .info .more {font-size: 1.6vw; margin-bottom: 10px;}
