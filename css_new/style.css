@@ -22,6 +22,7 @@ sup {width: auto!important;}
 .header__phone {color: #fff;}
 .header__phone .phone {font-size: 1.7vw; color: #fff; text-decoration: none; font-weight: normal; margin-left: 5px; letter-spacing: .1vw;}
 .header__phone .t1 {justify-content: flex-end; font-size: 35px; text-align: right; display: flex; align-items: center;}
+.header__phone .t1 {margin-bottom: 5px;}
 .header__phone .t1 img {width: 35px; height: 28px;}
 .header__phone .t2 {justify-content: flex-end; font-size: 16px; font-weight: 300; text-align: right; display: flex; align-items: center;}
 .header__phone .t2 .phone {}
@@ -47,6 +48,7 @@ sup {width: auto!important;}
 }
 @media (max-width:1440px) {
 	.sub_menu {width: 54vw;}
+	.header__phone .t1 {margin-bottom: 10px;}
 }
 @media (max-width:1280px) {/*1024*/
     .header__logo {font-size: 1.5vw; background-size: 60px 60px; padding-left: 7%;}
