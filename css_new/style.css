@@ -38,6 +38,7 @@ sup {width: auto!important;}
 .sub_link {position: relative; color: #fff; text-transform: uppercase; text-decoration: none; font-size: 1.1vw;}
 .sub_link:hover:after {width: 100%; background: #fff;}
 .sub_link:after {width: 0; margin: auto; height: 2px; transition: .4s; background: transparent; content: ''; display: block; margin-top: 2px;}
+.header .fa-bars {display: none;}
 @media (max-width:1800px) {/*1600*/
 }
 @media (max-width:1600px) {/*1280*/
