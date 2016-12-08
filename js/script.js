@@ -1,14 +1,5 @@
 
 $(document).ready(function() {
-	//плавные якоря
-	$("a[href*=#]").bind("click", function(e){
-		var anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top
-		}, 0);
-		e.preventDefault();
-		return false;
-	});
 
 	//row_hover
 	$('.rooms__section_table > .row').hover(function () {
@@ -209,6 +200,17 @@ $(document).ready(function () {
 		$('.header__close').fadeOut(300);
 		$('.header__open').fadeIn(300);	$('.side__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);		$('.mob_phone2').removeClass('move_left_header').addClass('move_away').fadeOut(400);	
 		$('.header').removeClass('z_index');
+	});
+	
+
+	//плавные якоря
+	$("a[href*=#]").bind("click", function(e){
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top -100
+		}, 0);
+		e.preventDefault();
+		return false;
 	});
 	//fancbyox
 	$(".fancybox").fancybox();
