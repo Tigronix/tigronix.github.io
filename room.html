@@ -18,28 +18,18 @@
 
 	<body>
 		<div class="global_wrapper">
-			<header class="header header__static">
-				<a href="#" class="header__logo"></a>
-				<div class="header__info">
-					<nav class="header__nav">
-						<a class="link" href="#">Жк афродита</a>
-						<a class="link" href="#">Жк афродита-2</a>
-						<a class="link" href="#">Документы</a>
-						<a class="link" href="#">О компании</a>
-						<a class="link" href="#">Контакты</a>
-						<a class="link mob_link" href="#">Готовое жилье</a>
-						<a class="link mob_link" href="#">Строящееся</a>
-						<a class="link mob_link" href="#">С отделкой</a>
+			<header class="header">
+				<div class="wrapper">
+					<nav class="nav">
+						<a href="#" class="link">о компании</a>
+						<a href="#" class="link">жк афродита</a>
+						<a href="#" class="link">жк афродита-2</a>
+						<a href="#" class="link">документы</a>
+						<a href="#" class="link">фотографии</a>
+						<a href="#" class="link">ход строительства</a>
+						<a href="#" class="link">контакты</a>
 					</nav>
-					<!--nav-->
-					<div class="header__phone">
-						<a href="tel:+74950051234">+7 (495) 005-12-34</a>
-					</div>
-					<!--phone-->
-					<a title="Позвонить" href="tel:+74950051234" class="mob_phone">
-						<i class="fa fa-phone"></i>
-						<span>позвонить</span>
-					</a>
+					<a href="tel:+74950051234" class="header__phone">+7 (495) 005-12-34</a>
 				</div>
 			</header>
 			<!--header-->
@@ -48,9 +38,14 @@
 					<div class="room__wrapper">
 						<div class="room__nav">
 							<a href="/" class="room__logo"></a>
-							<div class="room__menu">
+							<!--<div class="room__menu">
 								<div href="#" class="main_link red">
 									<a href="#" class="name"><i class="fa fa-flag-o"></i>Акции</a>
+								</div>
+								<div class="side_submenu">
+									<a href="#" class="main_link">1</a>
+									<a href="#" class="main_link">2</a>
+									<a href="#" class="main_link">3</a>
 								</div>
 								<div href="#" class="main_link">
 									<a href="#" class="name"><i class="fa fa-percent"></i>Рассрочка</a>
@@ -67,43 +62,85 @@
 								<div href="#" class="main_link red">
 									<a href="#" class="name"><i class="fa fa-building-o"></i>Квартиры:</a>
 								</div>
-								<div class="sub_menu_wrap">
-									<div href="#" class="mgt sub_mg main_link">
-										<a href="#" class="name"><i class="fa fa-key"></i>Готовое жилье</a>
-										<div class="sub__menu">
-											<a href="#" class="link"> <span>однокомнатные</span>
-											</a>
-											<a href="#" class="link"> <span>двухкомнатные</span>
-											</a>
-											<a href="#" class="link"> <span>трехкомнатные</span>
-											</a>
-										</div>
+								<div href="#" class="main_link">
+									<a href="#" class="name"><i class="fa fa-key"></i>Готовое жилье</a>
+									<div class="sub__menu">
+										<a href="#" class="link"> <span>однокомнатные</span>
+										</a>
+										<a href="#" class="link"> <span>двухкомнатные</span>
+										</a>
+										<a href="#" class="link"> <span>трехкомнатные</span>
+										</a>
 									</div>
-									<div href="#" class="sub_mg main_link">
-										<a href="#" class="name"><i class="fa fa-key"></i>Строящееся</a>
-										<div class="sub__menu">
-											<a href="#" class="link"> <span>однокомнатные</span>
-											</a>
-											<a href="#" class="link"> <span>двухкомнатные</span>
-											</a>
-											<a href="#" class="link"> <span>трехкомнатные</span>
-											</a>
-										</div>
-									</div>
-									<div href="#" class="sub_mg main_link">
-										<a href="#" class="name"><i class="fa fa-paint-brush"></i>С отделкой</a>
-										<div class="sub__menu">
-											<a href="#" class="link"> <span>однокомнатные</span>
-											</a>
-											<a href="#" class="link"> <span>двухкомнатные</span>
-											</a>
-											<a href="#" class="link"> <span>трехкомнатные</span>
-											</a>
-										</div>
-									</div>
+								</div>
+								<div href="#" class="main_link">
+									<a href="#" class="name"><i class="fa fa-key">
+								</div>
+								<div href="#" class="main_link">
+									<a href="#" class="name"><i class="fa fa-paint-brush"></i>С отделкой</a>
 								</div>
 							</div>
 							<!--menu-->
+							<div class="side__menu">
+								<a href="#side_menu1" id="side_menu1" class="side__title red">
+									<i class="fa fa-flag-o"></i>Акции
+								</a>
+								<a href="#side_menu2" id="side_menu2" class="side__title">
+									<i class="fa fa-percent"></i>Рассрочка
+								</a>
+								<a href="/remont-telefonov.php" id="side_menu3" class="side__title">
+									<i class="fa fa-rouble"></i>Ипотека
+								</a>
+								<a href="/remont-planshetov.php" id="side_menu4" class="side__title">
+									<i class="fa fa-credit-card"></i>Субсидии
+								</a>
+								<a href="#side_menu5" id="side_menu5" class="side__title">
+									<i class="fa fa-street-view"></i>Материнский капитал
+								</a>
+								<a href="/remont-elektronnyh-knig.php" id="side_menu6" class="side__title red">
+									<i class="fa fa-building-o"></i>Квартиры:
+								</a>
+								<a href="#side_menu7" id="side_menu7" class="side__title">
+									<i class="fa fa-key"></i>Готовое жилье
+								</a>
+								<div class="side_submenu">
+									<a class="side__link" href="/modernizacija-kompjutera.php">Модернизация</a>
+									<a class="side__link" href="/sborka-kompjutera.php">Сборка компьютера</a>
+									<a class="side__link" href="/virus.php">Удаление вирусов</a>
+									<a class="side__link" href="/udalenie_sms_virusov.php">Удаление смс баннеров</a>
+									<a class="side__link" href="/nastrojka-routera.php">Настройка роутера</a>
+									<a class="side__link" href="/ustanovka_windows.php">Установка Windows</a>
+								</div>
+								<a href="#side_menu8" id="side_menu8" class="side__title">
+									<i class="fa fa-key"></i>Строящееся
+								</a>
+								<div class="side_submenu" >
+									<a class="side__link" href="/modernizacija-kompjutera.php">Модернизация</a>
+									<a class="side__link" href="/sborka-kompjutera.php">Сборка компьютера</a>
+									<a class="side__link" href="/virus.php">Удаление вирусов</a>
+									<a class="side__link" href="/udalenie_sms_virusov.php">Удаление смс баннеров</a>
+									<a class="side__link" href="/nastrojka-routera.php">Настройка роутера</a>
+									<a class="side__link" href="/ustanovka_windows.php">Установка Windows</a>
+								</div>
+								<a href="#side_menu9" id="side_menu9" class="side__title">
+									<i class="fa fa-paint-brush"></i>С отделкой
+								</a>
+								<div class="side_submenu" >
+									<a class="side__link" href="/modernizacija-kompjutera.php">Модернизация</a>
+									<a class="side__link" href="/sborka-kompjutera.php">Сборка компьютера</a>
+									<a class="side__link" href="/virus.php">Удаление вирусов</a>
+									<a class="side__link" href="/udalenie_sms_virusov.php">Удаление смс баннеров</a>
+									<a class="side__link" href="/nastrojka-routera.php">Настройка роутера</a>
+									<a class="side__link" href="/ustanovka_windows.php">Установка Windows</a>
+								</div>
+								<a href="#" class="side__title side_header">о компании</a>
+								<a href="#" class="side__title side_header">жк афродита</a>
+								<a href="#" class="side__title side_header">жк афродита-2</a>
+								<a href="#" class="side__title side_header">документы</a>
+								<a href="#" class="side__title side_header">фотографии</a>
+								<a href="#" class="side__title side_header">ход строительства</a>
+								<a href="#" class="side__title side_header">контакты</a>
+							</div>							
 						</div>
 						<!--room__nav-->
 						<section class="room__content">

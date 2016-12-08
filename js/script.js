@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var anchor = $(this);
 		$('html, body').stop().animate({
 			scrollTop: $(anchor.attr('href')).offset().top
-		}, 2500);
+		}, 0);
 		e.preventDefault();
 		return false;
 	});
@@ -184,15 +184,22 @@ $(document).ready(function () {
 		$('.header__open').fadeIn(300).addClass('ib');
 		$('.blackout').fadeOut(400);
 	});*/
+	
+	//accordion
+	$('.side_submenu').hide().prev().click(function(){
+		$('.side_submenu').not(this).slideUp(400).prev().removeClass('side__active');
+		$(this).next().not(':visible').slideDown(400).prev().addClass('side__active');
+	});
+	
 	//mob-menu
 	$('.header__open').click(function () {
 		$(this).hide();
-		$('.header__close').show();	$('.room__menu').addClass('header__on').removeClass('move_away').addClass('move_left_header').fadeIn(400);	$('.mob_phone2').addClass('header__on').removeClass('move_away').addClass('move_left_header').fadeIn(400);
+		$('.header__close').show();	$('.side__menu').addClass('header__on').removeClass('move_away').addClass('move_left_header').fadeIn(400);	$('.mob_phone2').addClass('header__on').removeClass('move_away').addClass('move_left_header').fadeIn(400);
 		$('.header').addClass('z_index');
 		$('.blackout').fadeIn(400);
 	});
 	$('.header__close').click(function () {
-		$(this).hide();	$('.room__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);	$('.mob_phone2').removeClass('move_left_header').addClass('move_away').fadeOut(400);	
+		$(this).hide();	$('.side__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);	$('.mob_phone2').removeClass('move_left_header').addClass('move_away').fadeOut(400);	
 		$('.header__open').show();
 		$('.blackout').fadeOut(400);
 		$('.header').removeClass('z_index');
@@ -200,7 +207,7 @@ $(document).ready(function () {
 	$('.blackout').click(function(){
 		$(this).fadeOut(400);
 		$('.header__close').fadeOut(300);
-		$('.header__open').fadeIn(300);	$('.room__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);		$('.mob_phone2').removeClass('move_left_header').addClass('move_away').fadeOut(400);	
+		$('.header__open').fadeIn(300);	$('.side__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);		$('.mob_phone2').removeClass('move_left_header').addClass('move_away').fadeOut(400);	
 		$('.header').removeClass('z_index');
 	});
 	//fancbyox
