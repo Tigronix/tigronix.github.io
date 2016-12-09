@@ -1,6 +1,13 @@
 
 $(document).ready(function() {
-
+	//slide_slider
+	$('.choice__room').click(function(){						$('.slide_that').toggleClass('slide_lefts').toggleClass('flex_show').addClass('slide_act');
+									   });
+	$(document).click(function(){
+		$('.slide_that').addClass('move_away');
+	});
+	
+	
 	//row_hover
 	$('.rooms__section_table > .row').hover(function () {
 		var pTop = $(this).position().top -1;
@@ -125,10 +132,8 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
-	//slide_slider
-	$('.choice__room').click(function(){						$('.slide_that').toggleClass('slide_lefts').toggleClass('flex_show').addClass('slide_act');
-	});
-
+	
+	
 	//animation
 	$('.room__about').addClass('slide_top');
 	$('.room__info').addClass('slide_bot');
