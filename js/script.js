@@ -145,7 +145,7 @@ $(document).ready(function () {
 	});
 
 	//header-scroll
-	var header = $('.header__main');
+	var header = $('header');
 	$(window).scroll(function () {
 		var top = $(this).scrollTop();
 		if (top > 10) {
@@ -250,8 +250,8 @@ $(document).ready(function () {
 
 
 
-	//main_slider
-	$(".main_slider").owlCarousel({
+	//slider_main
+	$(".slider_main").owlCarousel({
 		autoPlay: 5000,
 		stopOnHover: true,
 		navigation: true,
@@ -260,7 +260,8 @@ $(document).ready(function () {
 		singleItem: true,
 		transitionStyle: "fade",
 		responsive: true,
-		pagination: false
+		pagination: true,
+		infinite: true
 	});
 
 });
