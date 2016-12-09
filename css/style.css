@@ -394,7 +394,7 @@ p {
 /*main_slider*/
 
 .slider_main {
-	height: 933px;
+	height: 960px;
 }
 
 .slider_main img {width: 100%!important; height: auto;}
@@ -546,7 +546,7 @@ p {
 .main_slider {}
 
 .main_slider .slide {
-	height: 933px;
+	height: 960px;
 }
 
 .main_slider .text {
@@ -4511,7 +4511,7 @@ body .form__fix .inpbox {margin-bottom: 21px;}
 .choice__room img {width: 30px; margin-bottom: 27px;}
 .slide_that {height: 40px; display: none; justify-content: center; align-items: center; font-size: 16px; color: #fff; position: absolute; left: 100%; top: 0; bottom: 0; height: auto; width: 230px; background: #16bd2d; flex-direction: column; font-size: 1.3vw; font-family: 'arial'; letter-spacing: 1.07px; color: #fff; text-decoration: none; transition: .4s;}
 .slide_that_2 {left: 200%; background: #8a2be2;}
-.slide_main {height: 100%; background-size: cover; height: 933px;}
+.slide_main {height: 100%; background-size: cover; height: 960px;}
 .slide_main img {display: none;}
 .room__nav_index .side__title {padding-left: 13px; font-size: 16px;}
 .room__nav_index .side__title i {margin-right: 10px;}
