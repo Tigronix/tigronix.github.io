@@ -4594,7 +4594,7 @@ body .form__fix .inpbox {margin-bottom: 21px;}
 @media (max-width:1024px) {
 	.nav {display: none;}
 	.header .wrapper {padding-left: 0; justify-content: flex-end;}
-	.header__phone {font-size: 24px;}
+	.header__phone {font-size: 24px; white-space: nowrap;}
 }
 
 .room__nav_index {position: absolute; left: 0; top: 0; width: 230px;}
