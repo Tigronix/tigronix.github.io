@@ -4487,7 +4487,7 @@ body .form__fix .inpbox {margin-bottom: 21px;}
 .nav .link {text-decoration: none; transition: .4s; font-size: .9vw; font-weight: 500; letter-spacing: 1.07px; color: #fff; text-transform: uppercase; position: relative; height: 100%; display: flex; align-items: center;}
 .nav .link:hover:after {width: 100%; background: #fff;}
 .nav .link:after {width: 0; margin: auto; height: 1px; transition: .6s; background: transparent; content: ''; display: block; margin-top: 2px; position: absolute; bottom: 14px; left: 0; right: 0;}
-.header__phone {color: #fff; font-size: 1.9vw; font-weight: 700; font-family: 'intro'; text-decoration: none;}
+.header__phone {color: #fff; font-size: 1.7vw; font-weight: 700; font-family: 'intro'; text-decoration: none;}
 .sub_menu {position: absolute; left: 0; top: 100%; height: 60px; background: #16bd2d; display: none; align-items: center; justify-content: space-between; padding:  0 17px;}
 .sub_link {text-decoration: none; text-transform: uppercase; font-size: .9vw; color: #fff; font-weight: 500; letter-spacing: 1.07px; margin-left: 60px; position: relative;}
 .sub_link:hover:after {width: 100%; background: #fff;}
