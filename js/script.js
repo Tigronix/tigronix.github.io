@@ -126,15 +126,8 @@ $(document).ready(function() {
 
 $(document).ready(function () {
 	//slide_slider
-	$('.slide_from').click(function(){
-		$('.slide_that').toggleClass('slide_lefts').toggleClass('flex_show');
-
+	$('.choice__room').click(function(){						$('.slide_that').toggleClass('slide_lefts').toggleClass('flex_show').addClass('slide_act');
 	});
-
-
-
-
-
 
 	//animation
 	$('.room__about').addClass('slide_top');
