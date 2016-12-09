@@ -252,7 +252,7 @@ $(document).ready(function () {
 
 	//slider_main
 	$(".slider_main").owlCarousel({
-		autoPlay: 5000,
+		//autoPlay: 5000,
 		stopOnHover: true,
 		navigation: true,
 		paginationSpeed: 1000,
@@ -261,7 +261,7 @@ $(document).ready(function () {
 		transitionStyle: "fade",
 		responsive: true,
 		pagination: true,
-		infinite: true
+		
 	});
 
 });
