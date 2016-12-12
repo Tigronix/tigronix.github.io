@@ -2,7 +2,7 @@ $(document).ready(function () {
     //slider_main
     $('.slider_main').owlCarousel({
         animateOut: 'fadeOut', 
-         animateIn: 'zoomIn', 
+         animateIn: 'fadeIn', 
          items: 1, 
          dots: true,
          loop: true,
