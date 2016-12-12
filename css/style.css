@@ -1651,7 +1651,7 @@ html.fsvs #fsvs-pagination li > span {
 
 @media (max-width:740px) {
 	/*320*/
-	.tabs__table .cell {font-size: 17px;}
+	.tabs__table .cell, .tabs__table .cell span {font-size: 17px!important;}
 	.tabs__table .cell:nth-child(10) {
 		font-size: 17px;
 		font-weight: 500;
@@ -4153,7 +4153,7 @@ body .header .main__btn {
 .owl-carousel.gal__slider {
 	width: 66%;
 }
-.gal__slider .owl-buttons div {
+.gal__slider .owl-nav div {
 	position: absolute;
 	top: 48%;
 	font-size: 0;
@@ -4179,7 +4179,7 @@ body .header .main__btn {
 	right: 0;
 	bottom: -14px;
 }
-.gal__slider .owl-page {
+.gal__slider .owl-dot {
 	border-color: #fff;
 	width: 24px;
 	height: 24px;
@@ -4201,6 +4201,7 @@ body .header .main__btn {
 	bottom: 59px;
 	right: 65px;
 	opacity: .6;
+    width: 100px!important; height: 100px!important; transform: none!Important;
 }
 .gal__photo .text {position: absolute; left: 0; bottom: 0; right: 0; height: 60px; background: rgba(18,154,36,.8); display: flex; justify-content: space-between; padding: 0 28px; align-items: center;}
 .gal__photo .text .title {font-size: 24px; color: #fff; font-weight: 500; letter-spacing: 1.07px; text-transform: uppercase;}
@@ -4451,7 +4452,8 @@ body .form__fix .inpbox {margin-bottom: 21px;}
 
 /*side__menu*/
 .side__menu {}
-.side__title {position: relative; padding: 9.6px 0; display: flex; align-items: center; border-bottom: 1px solid #d3d3d3; background: #16bd2d; transition: .3s; cursor: pointer; font-size: 16px; color: #fff; letter-spacing: 1.07px; text-decoration: none; padding-left: 13px; text-transform: uppercase; font-weight: 500;}
+.side__title {position: relative; padding: 9.6px 0; display: flex; align-items: center; border-bottom: 1px solid #d3d3d3; background: #16bd2d; transition: .3s; cursor: pointer; font-size: 16px; color: #fff; letter-spacing: 1.07px; text-decoration: none; padding-left: 13px; text-transform: uppercase; font-weight: 500; transition: .4s;}
+.side__title:hover {background: #28A23B;}
 .side__title.red {background: #ff0000;}
 .side_header {display: none;}
 .side__title i {transition: .4s; font-size: 18px; margin-right: 10px; height: 100%; display: flex; align-items: center;}
@@ -4516,7 +4518,8 @@ body .form__fix .inpbox {margin-bottom: 21px;}
 .room__nav_index {position: absolute; left: 0; top: 0; width: 230px;}
 .header__small .room__nav_index {display: none;}
 .choice__room { display: flex; flex-direction: column; align-items: center; width: 100%; height: 192px; font-size: 1.3vw; font-family: 'arial'; letter-spacing: 1.07px; color: #fff; text-transform: uppercase; text-align: center; cursor: pointer; position: relative; transition: .4s;}
-.choice__box {background: #ec2618; padding: 40px 0 0 0;  display: flex; align-items: center; flex-direction: column; position: relative; z-index: 10; height: 100%;}
+.choice__box {background: #ec2618; padding: 40px 0 0 0;  display: flex; align-items: center; flex-direction: column; position: relative; transition: .4s; z-index: 10; height: 100%;}
+.choice__box:hover {background: #E7015E;}
 .slide_that:hover {background: #df4a18;}
 .choice__room img {width: 30px; margin-bottom: 20px;}
 .choice__room > span {line-height: 27px;}

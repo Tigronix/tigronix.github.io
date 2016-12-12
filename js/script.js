@@ -7,13 +7,16 @@ $(document).ready(function () {
          dots: true,
          loop: true,
         autoplay: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true, 
+        autoplayTimeout: 3000
      });
     
     //rooms_slider
     $(".rooms_slider").owlCarousel({
+       smartSpeed: 1000,
         autoplay: true,
-        
+        autoplayHoverPause: true, 
+        autoplayTimeout: 3000,
         items: 1,
         dots: true,
         nav: true,
@@ -189,15 +192,11 @@ $(document).ready(function () {
     $(".fancybox").fancybox();
     //gal__slider
     $(".gal__slider").owlCarousel({
-        autoPlay: 5000
-        , stopOnHover: true
-        , navigation: true
-        , paginationSpeed: 1000
-        , goToFirstSpeed: 2000
-        , singleItem: true
-        , transitionStyle: "fade"
-        , responsive: true
-    , });
+        items: 1,
+        nav: true,
+        dots: true,
+        smartSpeed: 1500
+    });
     //rooms_slider
     $(".pres__slider").owlCarousel({
         autoPlay: 5000
