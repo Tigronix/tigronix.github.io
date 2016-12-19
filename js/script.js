@@ -14,7 +14,7 @@ $(document).ready(function () {
     //rooms_slider
     $(".rooms_slider").owlCarousel({
        smartSpeed: 1000,
-        autoplay: true,
+        //autoplay: true,
         autoplayHoverPause: true, 
         autoplayTimeout: 3000,
         items: 1,
@@ -154,8 +154,34 @@ $(document).ready(function () {
         $('.side_submenu').not(this).slideUp(400).prev().removeClass('side__active');
         $(this).next().not(':visible').slideDown(400).prev().addClass('side__active');
     });
-    //mob-menu
+    //mob-menu-плавное появление
     $('.header__open').click(function () {
+        $(this).hide();
+        $('.header__close').show();
+        $('.side__menu').addClass('bounceInDownn').addClass('header__on').fadeIn();
+        $('.mob_phone2').addClass('bounceInDownn').addClass('header__on').fadeIn();
+        $('.header').addClass('z_index');
+        $('.blackout').fadeIn(400);
+    });
+    $('.header__close').click(function () {
+        $(this).hide();
+        $('.side__menu').removeClass('bounceInDownn').fadeOut();
+        $('.mob_phone2').removeClass('bounceInDownn').fadeOut();
+        $('.header__open').show();
+        $('.blackout').fadeOut(400);
+        $('.header').removeClass('z_index');
+    });
+    $('.blackout').click(function () {
+        $(this).fadeOut(400);
+        $('.header__close').removeClass('bounceInDownn').fadeOut();
+        $('.header__open').removeClass('bounceInDownn').fadeIn();
+        $('.side__menu').fadeOut(400);
+        $('.mob_phone2').fadeOut(400);
+        $('.header').removeClass('z_index');
+    });
+    
+    //mob-menu-выезжание
+    /*$('.header__open').click(function () {
         $(this).hide();
         $('.header__close').show();
         $('.side__menu').addClass('header__on').removeClass('move_away').addClass('move_left_header').fadeIn(400);
@@ -178,7 +204,8 @@ $(document).ready(function () {
         $('.side__menu').removeClass('move_left_header').addClass('move_away').fadeOut(400);
         $('.mob_phone2').removeClass('move_left_header').addClass('move_away').fadeOut(400);
         $('.header').removeClass('z_index');
-    });
+    });*/
+    
     //плавные якоря
     $(".scroll").bind("click", function (e) {
         var anchor = $(this);
@@ -199,7 +226,7 @@ $(document).ready(function () {
     });
     //rooms_slider
     $(".pres__slider").owlCarousel({
-        autoPlay: 5000
+         autoPlay: 5000
         , stopOnHover: true
         , navigation: true
         , paginationSpeed: 1000
