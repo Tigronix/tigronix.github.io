@@ -16,8 +16,8 @@
 }
 
 .animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: linear;
+  animation-iteration-count: linear;
 }
 
 .animated.hinge {
@@ -2858,14 +2858,9 @@
 @keyframes zoomOut {
   from {
     opacity: 0;
-      -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-    50% {
-         -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
         transform: scale3d(1.1, 1.1, 1.1);
-    }
+  }
     
   to {
      opacity: 1;
