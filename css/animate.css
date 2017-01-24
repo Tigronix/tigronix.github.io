@@ -3328,3 +3328,45 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+
+@-webkit-keyframes bounceInDownn {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-2000px);
+            }
+            60% {
+               opacity: 1;
+               -webkit-transform: translateY(30px);
+            }
+            80% {
+               -webkit-transform: translateY(-10px);
+            }
+            100% { 
+               -webkit-transform: translateY(0);
+            }
+         }         
+@keyframes bounceInDownn {
+    0% {
+       opacity: 0;
+       transform: translateY(-2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateY(30px);
+    }
+    80% {
+       transform: translateY(-10px);
+    }
+    100% {
+       transform: translateY(0);
+    }
+}
+.bounceInDownn {
+ -webkit-animation-name: bounceInDownn;
+animation-name: bounceInDownn;
+ -webkit-animation-duration: 1.5s;
+animation-duration: 1.5s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
