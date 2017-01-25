@@ -74,4 +74,16 @@ $(document).ready(function(){
     
     //fancybox
     $(".fancybox").fancybox();     
+    
+    //header-scroll
+    var header = $('.header');
+    $(window).scroll(function(){
+        var top = $(this).scrollTop();
+        if (top > 100) {
+            header.addClass('header_opacity');
+        }
+        else {
+            header.removeClass('header_opacity');
+        }
+    });
 });
