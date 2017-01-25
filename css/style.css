@@ -214,6 +214,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
     .about_desc_mob-mg {margin-top: 10px; text-align: justify;}
 }
 
+.angle-bot {background: url(../img/scrolldown1.png) no-repeat; width: 26px; height: 77px; bottom: 26px; left: 50%; margin-left: -13px; z-index: 10; position: absolute;}
+
 /*products*/
 .products {padding: 40px 21px 46px 21px; background: url(../img/fresh_bg.jpg) no-repeat; background-size: cover; display: flex; flex-wrap: wrap; margin: 0 -.8%;}
 .products__article {padding: 11px 21px 30px 21px; border: 1px solid #e6e4e4; background: #fff; border-radius: 7px; width: 18.2062298603652%; text-align: center; margin: 0 .8%;}
