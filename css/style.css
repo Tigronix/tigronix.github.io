@@ -58,6 +58,9 @@ p.text:after {display: block; content: ''; clear: both;}
 p.text span {display: block;}
 .float_left {float: left; margin-right: 20px; margin-bottom: 20px; display: block;}
 .float_right {float: right; margin-left: 20px; margin-bottom: 20px; display: block;}
+.fancybox_zoom {position: relative;}
+.fancybox_zoom:after {width: 70px; height: 70px; position: absolute; left: 50%; top:
+    40%; margin: -35px 0 0 -35px; display: block; content: ''; background: url(../img/zoom.png) center center; opacity: .7;}
 @media (max-width:1440px) {
     p.text {font-size: 16px; line-height: 19px;}
 }
@@ -99,7 +102,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .button-buy:hover {background: #FF0000;}
 .button-buy_width240 {width: 240px;}
 .button-buy_width {width: 83%; margin: 31px auto 0;}
-.header__phone {font-size: 1.8vw; font-family: 'lato'; color: #dc143c; text-decoration: none;}
+.header__phone {font-size: 1.8vw; font-family: 'lato'; color: #dc143c; text-decoration: none; font-weight: 900;}
 @media (max-width:1600px) {
     .nav_link {margin-left: 25px;}
 }
