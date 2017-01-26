@@ -221,11 +221,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 
 /*products*/
 .products {padding: 40px 21px 46px 21px; background: url(../img/fresh_bg.jpg) no-repeat; background-size: cover; display: flex; flex-wrap: wrap; margin: 0 -.8%;}
+.products__picture {display: block; height: 234px; overflow: hidden;}
+.products__picture img {}
 .products__article {padding: 11px 21px 30px 21px; border: 1px solid #e6e4e4; background: #fff; border-radius: 7px; width: 18.2062298603652%; text-align: center; margin: 0 .8%;}
 .products_mgt {margin-top: 70px;}
 .products__article_mgt {margin-top: 70px;}
 .products__name {font-size: 1.3vw; font-family: 'lato'; font-weight: 500; color: #000; margin-bottom: 15px;}
-.products__color {font-size: 1.3vw; color: #000; font-family: 'lato'; font-weight: 500; display: flex; align-items: center; text-transform: uppercase; justify-content: center; margin-top: 16px;}
+.products__color {font-size: 1.2vw; color: #000; font-family: 'lato'; font-weight: 500; display: flex; align-items: center; text-transform: uppercase; justify-content: center; margin-top: 16px;}
 .products__color picture {display: flex; align-items: center;}
 .products__color span {margin-left: 20px;}
 .products__price-old {font-size: 1.7vw; color: #a9a9a9; font-family: 'lato'; font-weight: 900; text-decoration: line-through; margin-top: 19px;}
@@ -243,7 +245,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
     .products__button-buy {font-size: 2vw;}
 }
 @media (max-width:768px) {/*320*/
-    .products {padding: 0 2%;}
+    .products {padding: 40px 2%;}
     .products__article {width: 48.4%;}
     .products__name {font-size: 16px;}
     .products__color {font-size: 14px;}
