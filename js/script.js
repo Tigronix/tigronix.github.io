@@ -70,7 +70,23 @@ $(document).ready(function(){
         //$('.global_wrapper').removeClass('body_overflow');
         $('.header_phone').fadeIn(400);
     });
-    $('.angle').click(function () {
+	
+    
+    
+	// media query event handler
+if (matchMedia) {
+  var mq = window.matchMedia("(min-width: 1024px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+  if (mq.matches) {
+    // window width is at least 500px
+  } else {
+    // window width is less than 500px
+	  $('.angle').click(function () {
         $('.blackout').fadeOut(400);
         $('.header__close').removeClass('bounceInDownn').fadeOut(400);
         $('.header__open').removeClass('bounceInDownn').fadeIn(400);
@@ -78,7 +94,10 @@ $(document).ready(function(){
         $('.mob_phone2').fadeOut(400);
         $('.header_phone').fadeIn(400);
     });
-    
+  }
+
+}
+	
     //fancybox
     $(".fancybox").fancybox();     
     
