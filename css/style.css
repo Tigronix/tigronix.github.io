@@ -308,8 +308,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 
 /*popup*/
 .popup_wrap {position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0,0,0,.6); display: none; z-index: 1023;}
-.popup_content {width: 450px; height: 510px; border: 1px solid #dcdcdc; padding: 37px 48px; font-size: 24px; background: #ffffff; position: absolute; left: 50%; top: 50%; margin-left: -225px; margin-top: -255px;}
-.popup_content .title {font-family: 'open sans', sans-serif; font-size: 24px; color: #118E21; font-weight: 600; margin-bottom: 33px;}
+.popup_content {width: 450px; height: auto; border: 1px solid #dcdcdc; padding: 37px 48px; font-size: 24px; background: #ffffff; position: absolute; left: 50%; top: 50%; margin-left: -225px; margin-top: -255px;}
+.popup_content .title {font-family: 'open sans', sans-serif; font-size: 21px; color: #df2a4d; font-weight: 500; margin-bottom: 33px;}
 .popup_content input, .popup_content textarea {height: 50px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; padding-left: 12px; border: 1px solid #c0c0c0; border-radius: 3px; background: #f9f9f9; font-size: 19px; font-weight: 300; width: 100%; margin-bottom: 24px; transition: border .4s;}
 .popup_content input:focus, .popup_content textarea:focus {border: 1px solid #fecc36;}
 .popup_content input::-webkit-input-placeholder, .popup_content textarea::-webkit-input-placeholder {transition: color 0.8;}

@@ -103,4 +103,14 @@ $(document).ready(function(){
 		});
 
 		$(".popup__phone").mask("+7(999)999-99-99",{placeholder:"+7(___)___-__-__"});
+	
+	//Плавный скролл для ссылок
+	$("a.angle").click(function() {
+		var elementClick = $(this).attr("href")
+		var destination = $(elementClick).offset().top - 120;
+		jQuery("html:not(:animated),body:not(:animated)").animate({
+		  scrollTop: destination
+		}, 800);
+		return false;
+	});
 });
