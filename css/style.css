@@ -308,7 +308,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 
 /*popup*/
 .popup_wrap {position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0,0,0,.6); display: none; z-index: 1023;}
-.popup_content {width: 450px; height: auto; border: 1px solid #dcdcdc; padding: 37px 48px; font-size: 24px; background: #ffffff; position: absolute; left: 50%; top: 50%; margin-left: -225px; margin-top: -255px;}
+.popup_content {width: 450px; height: auto; border: 1px solid #dcdcdc; padding: 37px 40px; font-size: 24px; background: #ffffff; position: absolute; left: 50%; top: 50%; margin-left: -225px; margin-top: -255px;}
 .popup_content .title {font-family: 'open sans', sans-serif; font-size: 21px; color: #df2a4d; font-weight: 500; margin-bottom: 33px;}
 .popup_content input, .popup_content textarea {height: 50px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; padding-left: 12px; border: 1px solid #c0c0c0; border-radius: 3px; background: #f9f9f9; font-size: 19px; font-weight: 300; width: 100%; margin-bottom: 24px; transition: border .4s;}
 .popup_content input:focus, .popup_content textarea:focus {border: 1px solid #fecc36;}
@@ -321,7 +321,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .popup_content input:focus:-moz-placeholder, .popup_content textarea:focus:-moz-placeholder {color: transparent}
 .popup_content input:focus:-ms-input-placeholder, .popup_content textarea:focus:-ms-input-placeholder {color: transparent}
 .popup_content textarea {height: 128px; resize: none; -webkit-align-items: flex-start; align-items: flex-start;; padding-top: 14px;}
-.popup_content button {display: block; height: 66px; line-height: 66px; text-align: center; background: #df2b4f; padding: 0 10px; font-size: 21px; font-weight: 500; letter-spacing: 1.07px; color: #fff; transition: background .4s; box-shadow: 0px 3px 3px 1px rgba(0,0,0,.3); border: none; width: 100%; text-transform: uppercase; margin-top: 34px; cursor: pointer;}
+.popup_content button {display: block; height: 66px; line-height: 66px; border-radius: 10px; text-align: center; background: #df2b4f; padding: 0 10px; font-size: 21px; font-weight: 500; letter-spacing: 1.07px; color: #fff; transition: background .4s; box-shadow: 0px 3px 3px 1px rgba(0,0,0,.3); border: none; width: 100%; text-transform: uppercase; margin-top: 34px; cursor: pointer;}
 .popup_content button:hover {background: #CD2D4C;}
 .popup_close {background: url(../img/popup_close.png) no-repeat; width: 13px; height: 13px; position: absolute; right: 20px; top: 20px; cursor: pointer;}
 .popup_close:hover {background-image: url(../img/popup_close__hover.png);}
