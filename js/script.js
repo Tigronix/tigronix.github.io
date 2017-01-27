@@ -48,7 +48,7 @@ $(document).ready(function(){
         $('.header__nav').addClass('bounceInDownn').fadeIn(400);
         $('.mob_phone2').addClass('bounceInDownn').addClass('header__on').fadeIn();
         $('.blackout').fadeIn(400);
-        $('.global_wrapper').addClass('body_overflow');
+        //$('.global_wrapper').addClass('body_overflow');
         $('.header_phone').fadeOut(400);
     });
     $('.header__close').click(function () {
@@ -58,7 +58,7 @@ $(document).ready(function(){
         $('.header__open').fadeIn(400);
         $('.header__close').fadeOut(400);
         $('.blackout').fadeOut(400);
-        $('.global_wrapper').removeClass('body_overflow');
+        //$('.global_wrapper').removeClass('body_overflow');
         $('.header_phone').fadeIn(400);
     });
     $('.blackout').click(function () {
@@ -67,7 +67,15 @@ $(document).ready(function(){
         $('.header__open').removeClass('bounceInDownn').fadeIn(400);
         $('.header__nav').fadeOut(400);
         $('.mob_phone2').fadeOut(400);
-        $('.global_wrapper').removeClass('body_overflow');
+        //$('.global_wrapper').removeClass('body_overflow');
+        $('.header_phone').fadeIn(400);
+    });
+    $('.angle').click(function () {
+        $('.blackout').fadeOut(400);
+        $('.header__close').removeClass('bounceInDownn').fadeOut(400);
+        $('.header__open').removeClass('bounceInDownn').fadeIn(400);
+        $('.header__nav').fadeOut(400);
+        $('.mob_phone2').fadeOut(400);
         $('.header_phone').fadeIn(400);
     });
     
