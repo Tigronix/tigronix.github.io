@@ -86,4 +86,21 @@ $(document).ready(function(){
             header.removeClass('header_opacity');
         }
     });
+	
+	//popup
+		$('.popup__open').click(function(){
+			$('.popup_wrap').fadeIn(400);
+		});
+	
+		$(document).mouseup(function (e) {
+			var container = $(".popup_wrap");
+			if (container.has(e.target).length === 0){
+				container.fadeOut(400);
+			}
+		});
+		$('.popup_close').click(function(){
+			$('.popup_wrap').fadeOut(400);
+		});
+
+		$(".popup__phone").mask("+7(999)999-99-99",{placeholder:"+7(___)___-__-__"});
 });
