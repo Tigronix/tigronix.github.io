@@ -143,7 +143,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .owl-item img {width: 100%; height: auto;}
 
 /*slider-main__wrap*/
-.slider-main-wrap {position: relative;}
+.slider-main-wrap {position: relative;  display: -webkit-box; display: -ms-flexbox; display: flex;}
 .slider-main-wrap:after {display: block; content: ''; clear: both;}
 .slider-main {width: 81.66666666666667%; float: right;}
 .slider-main .slide {height: 830px;}
@@ -186,6 +186,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
     .slider-main .owl-nav .owl-prev {left: 2%;}
     .slider-main .owl-nav .owl-next {right: 2%;}
 	.slider-nav_picture {height: 50px; line-height: 50px; width: 50px;}
+	.angle-bot {display: none;}
 }
 @media (max-width:768px) {
 	.slider-main .slide, .slider-main .owl-item {height: auto;}
@@ -260,11 +261,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
     .products__color {font-size: 1.7vw;}
     .products__price-old {font-size: 2.8vw;}
     .products__price {font-size: 3.6vw;}
-    .products__button-buy {font-size: 2vw;}
+    .products__button-buy {font-size: 1.6vw; padding: 0;}
 }
 @media (max-width:768px) {/*320*/
     .products {padding: 40px 2%; display: block;}
-    .products__article {width: 48.4%;}
+    .products__article {width: 48.4%; margin-left: auto; margin-right: auto;}
     .products__name {font-size: 16px;}
     .products__color {font-size: 14px;}
     .products__price-old {font-size: 24px;}
