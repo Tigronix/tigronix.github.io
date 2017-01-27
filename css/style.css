@@ -235,8 +235,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 
 /*products*/
 .products {padding: 40px 21px 46px 21px; background: url(../img/fresh_bg.jpg) no-repeat; background-size: cover; display: flex; flex-wrap: wrap; margin: 0 -.8%;}
-.products__picture {display: block; height: 234px; overflow: hidden;}
-.products__picture img {}
+.products__picture {display: block; height: 234px; overflow: hidden; text-decoration: none;}
+.products__picture img {width: 100%; height: auto;}
 .products__article {padding: 11px 21px 30px 21px; border: 1px solid #e6e4e4; background: #fff; border-radius: 7px; width: 18.2062298603652%; text-align: center; margin: 0 .8%;}
 .products_mgt {margin-top: 70px;}
 .products__article_mgt {margin-top: 70px;}
