@@ -199,7 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 
 /*photo*/
 .photo {margin-top: 47px;}
-.photo_slider {padding: 0 115px; margin-top: 30px;}
+.photo_slider {margin-top: 55px; padding: 0 115px;}
 .photo_slider.owl-carousel .owl-stage-outer {z-index: 100;}
 .photo_slider .owl-item {height: auto; position: relative; z-index: 10;}
 .photo_slider .owl-nav {height: 43px; margin-top: -21.5px; position: relative;}
@@ -209,7 +209,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .photo_slider .owl-nav .owl-next:hover {background-image: url(../img/angle_right__hover.svg);} 
 .photo_slider .owl-nav > div {z-index: 500;}
 @media (max-width:1024px) {
-    .photo_slider {padding: 0;}
     .photo_slider .owl-nav .owl-prev {left: 1%;}
     .photo_slider .owl-nav .owl-next {right: 1%;}
 }
@@ -220,7 +219,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 }
 
 /*about*/
-.about {margin-top: 45px;}
+.about {margin-top: 45px!important;}
 .about_desc {font-size: 1.4vw; line-height: 1.7vw; font-weight: 300; margin-bottom: 38px;}
 .about_desc .pinky {color: #fc0fc0; display: inline-block;}
 .about_desc_mob-mg {margin: 15px 0 0 0;}
