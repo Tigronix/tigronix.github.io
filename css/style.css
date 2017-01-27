@@ -67,6 +67,7 @@ p.text__mb {margin-bottom: 15px;}
     .title-page {font-size: 24px;}
 }
 @media (max-width:768px) {
+	p.text {text-align: justify;}
 	.products {margin: 0px;}
     .float_left, .float_right {text-align: center; width: 100%; margin: 10px 0;}   
     .float_left img, .float_right img {width: 100%; height: auto;}   
@@ -185,7 +186,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 }
 @media (max-width:768px) {
 	.slider-main .slide, .slider-main .owl-item {height: auto;}
-    .slider-main_text {font-size: 14px; left: 40px; right: 40px; top: 0}
+    .slider-main_text {font-size: 12px; text-transform: uppercase;line-height: 15px; text-align: center; left: 0px; right: 0px; top: 0; padding: 10px 5px}
 }
 /*social-buttons*/
 .social-buttons {width: 100%; background: #E0D8D3; display: flex; justify-content: center; align-items: center;}
@@ -201,14 +202,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .photo_slider .owl-nav > div {width: 26px; height: 43px; margin: 0; top: 0; background-image: url(../img/angle_left.svg); transition: color .4s;}
 .photo_slider .owl-nav .owl-next {background-image: url(../img/angle_right.svg);}
 .photo_slider .owl-nav .owl-prev:hover {background-image: url(../img/angle_left__hover.svg);}
-.photo_slider .owl-nav .owl-next:hover {background-image: url(../img/angle_right__hover.svg);}
+.photo_slider .owl-nav .owl-next:hover {background-image: url(../img/angle_right__hover.svg);} 
+.photo_slider .owl-nav > div {z-index: 500;}
 @media (max-width:1024px) {
-    .photo_slider {padding: 0 5%;}
+    .photo_slider {padding: 0;}
     .photo_slider .owl-nav .owl-prev {left: 1%;}
     .photo_slider .owl-nav .owl-next {right: 1%;}
 }
 @media (max-width:768px) {
-    .photo_slider {padding: 0 35px;}
+    .photo_slider {padding: 0;}
     .photo_slider .owl-nav > div {}
     .photo_slider .owl-nav > div:hover {opacity: 1;}
 }
@@ -219,7 +221,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .about_desc .pinky {color: #fc0fc0; display: inline-block;}
 .about_desc_mob-mg {margin: 15px 0 0 0;}
 @media (max-width:1024px) {
-    .photo_slider {padding: 0 5%;}
     .about {padding: 0 2%;}
     .about_desc {font-size: 18px; text-align: center;}
 }
