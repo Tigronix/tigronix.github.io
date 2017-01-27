@@ -262,7 +262,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
     .products__button-buy {font-size: 2vw;}
 }
 @media (max-width:768px) {/*320*/
-    .products {padding: 40px 2%;}
+    .products {padding: 40px 2%; display: block;}
     .products__article {width: 48.4%;}
     .products__name {font-size: 16px;}
     .products__color {font-size: 14px;}
