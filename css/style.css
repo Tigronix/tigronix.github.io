@@ -185,6 +185,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
     .slider-main .owl-controls {margin-top: -32.5px;}
     .slider-main .owl-nav .owl-prev {left: 2%;}
     .slider-main .owl-nav .owl-next {right: 2%;}
+	.slider-nav_picture {height: 50px; line-height: 50px;}
 }
 @media (max-width:768px) {
 	.slider-main .slide, .slider-main .owl-item {height: auto;}
