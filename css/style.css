@@ -199,7 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 
 /*photo*/
 .photo {margin-top: 47px;}
-.photo_slider {padding: 0 115px; margin-top: 55px;}
+.photo_slider {padding: 0 115px; margin-top: 30px;}
 .photo_slider.owl-carousel .owl-stage-outer {z-index: 100;}
 .photo_slider .owl-item {height: auto; position: relative; z-index: 10;}
 .photo_slider .owl-nav {height: 43px; margin-top: -21.5px; position: relative;}
@@ -246,7 +246,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .products_mgt {margin-top: 70px;}
 .products__article_mgt {margin-top: 70px;}
 .products__name {font-size: 1.3vw; font-family: 'lato'; font-weight: 500; color: #000; margin-bottom: 15px;}
-.products__color {font-size: 1.2vw; color: #000; font-family: 'lato'; font-weight: 500; display: -webkit-box; display: -ms-flexbox; display: flex;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center; text-transform: uppercase;  -webkit-box-pack: justify;  -ms-flex-pack: justify;  justify-content: space-between; margin-top: 16px;}
+.products__color {font-size: 1.2vw; color: #000; font-family: 'lato'; font-weight: 500; display: -webkit-box; display: -ms-flexbox; display: flex;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center; text-transform: uppercase;  -webkit-box-pack: justify;  -ms-flex-pack: justify;  justify-content: center; margin-top: 16px;}
 .products__color picture {display: -webkit-box;display: -ms-flexbox;display: flex;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center;}
 .products__color span {margin-left: 20px;}
 .products__price-old {font-size: 1.7vw; color: #a9a9a9; font-family: 'lato'; font-weight: 900; text-decoration: line-through; margin-top: 19px;}
