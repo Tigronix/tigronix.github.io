@@ -29,11 +29,13 @@ $(document).ready(function(){
         animateOut: 'fadeOut', 
         animateIn: 'zoomOut', 
         items: 1, 
-        autoplay: true,
+       // autoplay: true,
         autoplayHoverPause: true, 
         autoplayTimeout: 3000,
         nav: true,
-        loop: true,
+        loop: false,
+		URLhashListener:true,
+		startPosition: 'URLHash'	
         
      });
     // Listen to owl events:

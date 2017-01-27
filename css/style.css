@@ -148,7 +148,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .slider-main .slide {height: 830px;}
 .slider-main .slide img {width: 100%; height: 100%;}
 .slider-nav {position: absolute; left: 0; bottom: 0; top: 0; background: #f7f5f4; width: 18.33333333333333%; z-index: 2; display: flex; align-items: stretch; flex-wrap: wrap; min-width: 300px;}
-.slider-nav_item {width: 100%; display: flex; align-items: center; transition: background .8s; padding-left: 6.25%;}
+.slider-nav_item {width: 100%; display: flex; align-items: center; transition: background .8s; padding-left: 6.25%; text-decoration: none;}
 .slider-nav_picture {width: 3.6vw; height: 3.6vw; border: 5px solid #d3d3d3; border-radius: 50%; line-height: 3.6vw; text-align: center; max-width: 50px; max-height: 50px; min-width: 30px; min-height: 30px;}
 .slider-nav_picture img {width: 100%; height: 100%;}
 .slider-nav_text {font-size: 1.27vw; color: #000; font-family: 'lato'; margin-left: 4.6%; width: 78%;}
