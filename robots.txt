@@ -1,17 +1,2 @@
-User-agent: Yandex
-Disallow: /old/
-Disallow: /*?
-Disallow: /&
-Host: www.med-klinik.ru
-
-User-agent: Googlebot
-Disallow: /old/
-Disallow: /*?
-Disallow: /&
-
 User-agent: *
-Disallow: /old/
-Disallow: /*?
-Disallow: /&
-
-Sitemap: http://www.med-klinik.ru/sitemap.xml
+Disallow: /
