@@ -1,0 +1,58 @@
+Options -Indexes
+RewriteEngine On
+
+RewriteBase /                                  
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteCond %{REQUEST_URI} ^(\/)?(([^\/]+\/)*)([^\/]+)*(\/)?$
+RewriteRule .* http:\/\/www\.%{HTTP_HOST}%1%2%4%5 [R=301,L] 
+
+RewriteCond %{REQUEST_URI} robots.txt/$
+RewriteRule .* robots.txt [R=301,L]
+
+RewriteCond %{REQUEST_URI} favicon\.ico
+RewriteRule .* favicon.ico [L]
+
+RewriteCond %{REQUEST_URI} (^.*\/[^\/]+)$
+#RewriteCond %{REQUEST_URI} ^/(.*\/[^\/]+)$
+#RewriteCond %{REQUEST_URI} ([^/]+\/)*([^/]+)*(\/)?$
+RewriteCond %{REQUEST_URI} !(.*\.php)
+RewriteCond %{REQUEST_URI} !(.*\.jpg)
+RewriteCond %{REQUEST_URI} !(.*\.png)
+RewriteCond %{REQUEST_URI} !(.*\.gif)
+RewriteCond %{REQUEST_URI} !(.*\.css)
+RewriteCond %{REQUEST_URI} !(.*\.js)
+RewriteCond %{REQUEST_URI} !(.*\.eot)
+RewriteCond %{REQUEST_URI} !(.*\.woff)
+RewriteCond %{REQUEST_URI} !(.*\.ttf)
+RewriteCond %{REQUEST_URI} !(.*\.svg)
+RewriteCond %{REQUEST_URI} !(.*\.txt)
+RewriteCond %{REQUEST_URI} !(.*\.doc)
+RewriteCond %{REQUEST_URI} !(.*\.pdf)
+RewriteCond %{REQUEST_URI} !(.*\.xml)
+RewriteRule .* %1/? [R=301,L]
+
+#RewriteCond %{REQUEST_URI} (.*)+\/([a-zA-Z0-9_-]+)\.php\/?$
+RewriteCond %{REQUEST_URI} ^\/(.*)\.php\/?$
+RewriteCond %{REQUEST_URI} !index.php
+RewriteCond %{QUERY_STRING} !qstring=1
+#RewriteRule .* %1\/%2 [R=301,L]
+RewriteRule .* %1 [R=301,L]
+                 
+#RewriteCond %{REQUEST_URI} (.*)+\/([a-zA-Z0-9_-]+)\/$ 
+RewriteCond %{REQUEST_URI} ^\/(.*)\/$ 
+
+RewriteCond %{REQUEST_URI} !index
+RewriteCond %{REQUEST_URI} !^\/$
+#RewriteRule .* %1\/%2\.php?qstring=1 [L]
+RewriteRule .* %1\.php?qstring=1 [L]   
+
+RewriteCond %{REQUEST_URI} (.*)index\.php
+RewriteCond %{QUERY_STRING} !qstring=1
+RewriteRule ^(.*)$ http:\/\/%{HTTP_HOST}\/? [R=301,L]
+RewriteCond %{REQUEST_URI} index$
+RewriteRule ^(.*)$ http:\/\/%{HTTP_HOST}\/? [R=301,L] 
+#RewriteCond %{REQUEST_URI} index\/$ [NC,OR]
+RewriteCond %{REQUEST_URI} ^\/$
+RewriteRule .* index.php?qstring=1 [L]
+

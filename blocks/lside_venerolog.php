@@ -1,0 +1,13 @@
+			<div class="address_top_title">Основные направления</div>
+		
+			<ul class="nav_left">
+					<li><a href="/diagnostika-kandidoza/">Кандидоз</a></li>					<li><a href="/lechenie-mikoplazmoza/">Микоплазмос</a></li>					<li><a href="/diagnostika-khlamidioza/">Диагностика хламидиоза</a></li>						
+					<li><a href="/lecheniye-khlamidioza-u-zhenshchin/">Лечение хламидиоза у женщин</a></li>					<li><a href="/lecheniye-khlamidioza-u-muzhchin/">Лечение хламидиоза у мужчин</a></li>							
+					<li><a href="/diagnostika-gerpesa/">Генитальный герпес</a></li>					<li><a href="/lecheniye-genitalnogo-gerpesa/">Лечение генитального герпеса</a></li>							
+					<li><a href="/lecheniye-ureaplazmoza-u-zhenshchin/">Уреаплазмоз</a></li>					<li><a href="/lecheniye-papillomavirusa/">Папилломавирус</a></li>					<li><a href="/lechenie-trihomoniaza/">Трихомониаз</a></li>							
+					<li><a href="/diagnostika-trikhomoniaza/">Диагностика трихомониаза</a></li>							
+					<li><a href="/lecheniye-gonorei/">Гонорея</a></li>					<li><a href="/diagnostika-gonorei/">Диагностика гонореи</a></li>					<li><a href="/lecheniye-gonorei-u-muzhchin/">Ллечение гонореи у мужчин</a></li>							
+					<li><a href="/lecheniye-gonorei-u-zhenshchin/">Лечение гонореи у женщин</a></li>					<li><a href="/gonoreya-u-detei/">Гонорея у детей</a></li>							
+					<li><a href="/etiologiya-gonorei/">Этиология гонореи</a></li>							
+					<li><a href="/etiologiya-sifilisa/">Этиология сифилиса</a></li>					<li><a href="/puti-zarazheniya/">Пути заражения</a></li>					<li><a href="/pervichnyi-period-sifilisa/">Первичный период сифилиса</a></li>					<li><a href="/vtorichnyi-period-sifilisa/">Вторичный период сифилиса</a></li>					<li><a href="/tretichnyi-period-sifilisa/">Третичный период сифилиса</a></li>					<li><a href="/skrytyi-sifilis/">Скрытый сифилис</a></li>					<li><a href="/neirosifilis/">Нейросифилис</a></li>					<li><a href="/viscerosifilis/">Висцеросифилис</a></li>					<li><a href="/vrozhdennyi-sifilis/">Врожденный сифилис</a></li>					<li><a href="/diagnostika-sifilisa/">Диагностика сифилиса</a></li>
+			</ul><!--/nav_left-->

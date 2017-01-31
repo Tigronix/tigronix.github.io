@@ -1,0 +1,65 @@
+			<div class="address_top_title">Основные направления</div>
+		
+			<ul class="nav_left">
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/vedenie-beremennosti-ceny/">Беременность</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/diagnostika-bakterialnogo-vaginoza/">Диагностика вагиноза</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/bartolinit/">Бартолинит</a></li>
+				<li><a href="/salpingooforit-adneksit/">Аднексит</a></li>
+				<li><a href="/endometrit-metroendometrit/">Эндометрит</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/endocervicit/">Эндоцервицит</a></li>
+				<li><a href="/endometrioz/">Эндометриоз</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/diagnostika-besplodiya/">Бесплодие</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/eroziya-sheiki-matki/">Эрозия шейки матки</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/infekcii-zhenskoi-polovoi-sistemy/">Инфекции женской половой системы</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/proyavlenie-gormonalnyh-narushenii/">Гармональные нарушения</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/klimaks/">Климакс</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/narushenie-menstrualnogo-cikla/">Нарушение менструального цикла</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/kontracepciya/">Контрацепция</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/medikomentoznyi-abort/">Медикаментозный аборт</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/analizy-pri-kiste-yaichnika/">Анализы при кисте яичника</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/analizy-u-ginekologa/">Анализы у гинеколога </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-adneksita/">Лечение аднексита</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-displazii-shejki-matki/">Лечение дисплазии шейки матки </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-ectropiona-shejki-matki/">Лечение эктропиона шейки матки</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-endocervicita/">Лечение эндоцервицита </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-endotservikoza/">Лечение эндоцервикоза </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-erozii-shejki-matki/">Лечение эрозии шейки матки</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-gemorragicheskoi-kistyi-yaichnika/">Лечение геморрагической кисты яичника</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-genitalnogo-gerpesa/">Лечение генитального герпеса</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-kisty-shejki-matki/">Лечение кисты шейки матки </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-kisty-yaichnikov-u-zhenshhin/">Лечение кисты яичников у женщин </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-lejkoplakii-shejki-matki/">Лечение лейкоплакии шейки матки</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-polipov-shejki-matki/">Лечение полипов шейки матки </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-raka-shejki-matki/">Лечение рака шейки матки </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-trihomoniaza-u-zhenshhin/">Лечение трихомониаза у женщин</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-virusa-papillomy-cheloveka/">Лечение вируса папилломы человека</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-xlamidioza/">Лечение хламидиоза </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-zabolevanij-organov-malogo-taza/">Лечение заболеваний органов малого таза</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-zabolevanij-shejki-matki/">Лечение заболеваний шейки матки </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-zabolevaniy-peredayuschihsya-polovym-putem/">Лечение заболеваний передающихся половым путем</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-zabolevaniy-pridatkov-matki/">Лечение заболеваний придатков матки</a></li>
+			
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-adenomioza/">Лечение аденоминоза </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-decidualnogo-polipa/">Лечение децидуального полипа</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-endometrioza/">Лечение эндометриоза</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-endometrita/">Лечение эндометрита</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-ginekologicheskih-zabolevanij-apparatom-andro-gin/">Лечение гинекологических заболеваний аппаратом «Андро-Гин»</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-giperplazii-endometriya/">Лечение гиперплазии эндометрия</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-gormonalnykh-narushenijj-u-zhenshhin/">Лечение гормональных нарушений у женщин </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-khronicheskikh-tazovyh-bolej/">Лечение хронических тазовых болей </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-khronicheskoi-molochnitsy/">Лечение хронической молочницы</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-miomy-matki/">Лечение миомы матки </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-molochnicy-kandidoza/">Лечение молочницы (кандидоза)</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-molochnitsy-pri-beremennosti/">Лечение молочницы при беременности </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-narusheniy-menstrualnogo-cikla/">Лечение нарушений менструального цикла</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-placentarnogo-polipa/">Лечение плацентарного полипа </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-problem-klimaktericheskogo-vozrasta/">Лечение проблем климактерического возраста </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-subseroznoj-miomy-matki/">Лечение субсерозной миомы матки</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-uzlovoi-miomy-matki/">Лечение узловой миомы матки</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-vospalitelnyh-zabolevaniy-vlagalishha/">Лечение воспалительных заболеваний влагалища</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-zabolevaniy-matki/">Лечение заболеваний матки </a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/lechenie-zagiba-shejki-matki/">Лечение загиба шейки матки</a></li>
+				<li><a href="/konsultatsiya-ginekologa-v-moskve/zhelezisto-fibroznyy-polip-endometriya/">Железисто-фиброзный полип эндометрия </a></li>
+
+			
+			</ul><!--/nav_left-->
