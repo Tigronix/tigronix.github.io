@@ -139,4 +139,7 @@ function WidthChange(mq) {
 		}, 800);
 		return false;
 	});
+	
+	//text
+	$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
 });
