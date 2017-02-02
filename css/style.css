@@ -374,9 +374,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-	-webkit-animation: OpeningSequence 5.2s linear forwards;
-	-moz-animation: OpeningSequence 5.2s linear forwards;
-	animation: OpeningSequence 5.2s linear forwards;
+	-webkit-animation: OpeningSequence 3s linear forwards;
+	-moz-animation: OpeningSequence 3s linear forwards;
+	animation: OpeningSequence 3s linear forwards;
 }
 
 .os-phrases h2:nth-child(2) > span > span > span {
