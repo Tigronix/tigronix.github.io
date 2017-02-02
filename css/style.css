@@ -420,7 +420,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 	-moz-animation-delay: 18s;
 	animation-delay: 18s;
 }
-	
-	.os-phrases h2 {font-size: 22px!important;}
+	.os-phrases {padding-bottom: 30px;}
+	.os-phrases h2 {font-size: 26px!important; letter-spacing: 8px;}
 	.os-phrases h2 > span:nth-child(1), .os-phrases h2 > span:nth-child(5), .os-phrases h2 > span:nth-child(6) {display: none!Important;}
 }
