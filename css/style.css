@@ -360,3 +360,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 @media (max-width:768px) {
 	.os-phrases h2 {font-size: 26px!important;}
 }
+.os-phrases h2 > span {display: none!important;}
+.os-phrases h2 > span:nth-child(1), .os-phrases h2 > span:nth-child(2), .os-phrases h2 > span:nth-child(3), .os-phrases h2 > span:nth-child(4), .os-phrases h2 > span:nth-child(5), .os-phrases h2 > span:nth-child(6) {display: flex!important;} 
