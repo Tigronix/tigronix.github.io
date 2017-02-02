@@ -337,3 +337,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
     .popup_content .title {font-size: 18px; text-align: center;}
     .popup_close {right: 5px; top: 5px;}
 }
+
+/*text*/
+.last-word {background: #000;}

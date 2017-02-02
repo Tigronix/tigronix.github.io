@@ -30,15 +30,13 @@ $(document).ready(function(){
         animateIn: 'zoomOut', 
         items: 1, 
         nav: true,
-        loop: false,
-		URLhashListener:true,
-		startPosition: 'URLHash'	
+        loop: true	
         
      });
     // Listen to owl events:
     owl.on('changed.owl.carousel', function(event) {
-        console.log(event.page.index);
-        $('.slider-nav_item:eq('+event.page.index+')').addClass('active-slide').siblings().removeClass('active-slide');
+        //$('.slider-nav_item:eq('+event.page.index+')').addClass('active-slide').siblings().removeClass('active-slide');
+		$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
     })
     
     //Мобильное меню
@@ -141,5 +139,11 @@ function WidthChange(mq) {
 	});
 	
 	//text
+	$('.owl-carousel').owlCarousel({
+		onDragged: callback
+	});
+	function callback(event) {
+		
+	}
 	$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
 });
