@@ -30,7 +30,10 @@ $(document).ready(function(){
         animateIn: 'zoomOut', 
         items: 1, 
         nav: true,
-        loop: true	
+        loop: true,
+		autoplay: true,
+		smartSpeed: 3000,
+		autoplayTimeout: 4000
         
      });
     // Listen to owl events:
