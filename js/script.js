@@ -33,13 +33,16 @@ $(document).ready(function(){
         loop: true,
 		autoplay: true,
 		smartSpeed: .5,
-		autoplayTimeout: 4000
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true
         
      });
     // Listen to owl events:
     owl.on('changed.owl.carousel', function(event) {
         //$('.slider-nav_item:eq('+event.page.index+')').addClass('active-slide').siblings().removeClass('active-slide');
 		$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+		$('.slider-main__logo').removeClass('FadeInn');
+		$('.slider-main__logo').addClass('FadeInn');
     })
     
     //Мобильное меню

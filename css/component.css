@@ -39,7 +39,7 @@
 }
 
 .os-phrases h2 > span {
-	margin: 0 15px;
+	margin: 0 10px;
 }
 
 .os-phrases h2 > span > span {
@@ -125,8 +125,8 @@
 		-webkit-transform: rotateY(0deg) translateZ(100px);
 	}
 	100% {
-		text-shadow: 0 0 10px #fff;
-		opacity: 0;
+		text-shadow: 0 0 1px #fff;
+		opacity: 1;
 		-webkit-transform: translateZ(130px);
 		pointer-events: none;
 	}
@@ -151,8 +151,8 @@
 		-moz-transform: rotateY(0deg) translateZ(100px);
 	}
 	100% {
-		text-shadow: 0 0 10px #fff;
-		opacity: 0;
+		text-shadow: 0 0 1px #fff;
+		opacity: 1;
 		-moz-transform: translateZ(130px);
 		pointer-events: none;
 	}
@@ -177,8 +177,8 @@
 		transform: rotateY(0deg) translateZ(100px);
 	}
 	100% {
-		text-shadow: 0 0 10px #fff;
-		opacity: 0;
+		text-shadow: 0 0 1px #fff;
+		opacity: 1;
 		transform: translateZ(130px);
 		pointer-events: none;
 	}
