@@ -365,6 +365,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 	.os-phrases h2 {font-size: 26px!important;}
 }
 @media (max-width:480px) {
+	.slider-main__logo {width: 70px; height: 70px; margin-left: -35px;}
+	.slider-main .slide, .slider-main .owl-item {height: 213px;}
 	.os-phrases h2 > span > span > span {
 	display: inline-block;
 	color: hsla(0,0%,0%,0);
