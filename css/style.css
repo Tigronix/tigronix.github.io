@@ -339,3 +339,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 
 /*text*/
 .last-word {background: #000;}
+
+
+
+@media (max-width:768px) {
+	.os-phrases h2 {font-size: 26px!important;}
+}
