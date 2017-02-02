@@ -31,7 +31,7 @@ $(document).ready(function(){
         items: 1, 
         nav: true,
         loop: true,
-		autoplay: true,
+		//autoplay: true,
 		smartSpeed: .5,
 		autoplayTimeout: 4000
         
