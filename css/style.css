@@ -157,6 +157,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .active-slide {background: #f4c5e8;}
 .slider-main_text {font-size: 2.26vw; color: #000; font-family: 'lato'; font-weight: 900; position: absolute; left: 10%; top: 44px; color: #000; background: rgba(255,255,255,.8); padding: 20px 90px;}
 .slide-main_pink {color: #fc0fc0;}
+.slider-main__logo {position: absolute; left: 50%; margin-left: -85.5px; top: 30%; display: block; z-index: 10000; background-color: #fff;}
 @media (max-width:1700px) {
 }
 @media (max-width:1600px) {
@@ -166,6 +167,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 @media (max-width: 1440px) {
     .slider-main_text {right: 20px; padding: 22px 60px;}
 	.slider-main .slide {height: 600px;}
+	.slider-main__logo {top: 25%;}
 }
 @media (max-width:1280px) {
     .slider-main_text {left: 20px; padding: 22px 5%;}
