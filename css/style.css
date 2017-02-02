@@ -157,10 +157,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .active-slide {background: #f4c5e8;}
 .slider-main_text {font-size: 2.26vw; color: #000; font-family: 'lato'; font-weight: 900; position: absolute; left: 10%; top: 44px; color: #000; background: rgba(255,255,255,.8); padding: 20px 90px;}
 .slide-main_pink {color: #fc0fc0;}
-.slider-main__logo {position: absolute; left: 50%; margin-left: -100px; top: 10px; display: block; background-image: url(../img/slider-main_logo.png); background-size: 100% auto; width: 200px; height:  200px; z-index: 1000;}
+.slider-main__logo {position: absolute; left: 50%; margin-left: -100px; top: 20%; display: block; background-image: url(../img/slider-main_logo.png); background-size: 100% auto; width: 200px; height:  200px; z-index: 1000;}
 .FadeInn {
 	-webkit-animation: FadeInn 4s linear none;
-	-moz-animation: FadeInn 4s linear none;
 	animation: FadeInn 4s linear none;
 }
 @-webkit-keyframes FadeInn { 
@@ -204,9 +203,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 	.angle-bot {display: none;}
 }
 @media (max-width:768px) {
+	.slider-main__logo {top: 10px;}
 	.slider-main .slide, .slider-main .owl-item {height: 320px;}
     .slider-main_text {font-size: 12px; text-transform: uppercase;line-height: 15px; text-align: center; left: 0px; right: 0px; top: 0; padding: 10px 5px}
-	.os-phrases {align-items: flex-end; padding-bottom: 60px;}
+	.os-phrases {-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end; padding-bottom: 60px;}
 }
 /*social-buttons*/
 .social-buttons {width: 100%; background: #E0D8D3; display: -webkit-box; display: -ms-flexbox; display: flex;  -webkit-box-pack: justify;  -ms-flex-pack: justify;  justify-content: space-between;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center;}
@@ -358,9 +358,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .last-word {background: #000;}
 
 
+.os-phrases h2 > span {display: none!important;}
+.os-phrases h2 > span:nth-child(1), .os-phrases h2 > span:nth-child(2), .os-phrases h2 > span:nth-child(3), .os-phrases h2 > span:nth-child(4), .os-phrases h2 > span:nth-child(5), .os-phrases h2 > span:nth-child(6) {display: -webkit-box!important;display: -ms-flexbox!important;display: flex!important;} 
 
 @media (max-width:768px) {
 	.os-phrases h2 {font-size: 26px!important;}
 }
-.os-phrases h2 > span {display: none!important;}
-.os-phrases h2 > span:nth-child(1), .os-phrases h2 > span:nth-child(2), .os-phrases h2 > span:nth-child(3), .os-phrases h2 > span:nth-child(4), .os-phrases h2 > span:nth-child(5), .os-phrases h2 > span:nth-child(6) {display: flex!important;} 
+@media (max-width:480px) {
+	.os-phrases h2 > span > span > span {
+	display: inline-block;
+	color: hsla(0,0%,0%,0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-webkit-animation: OpeningSequence 5.2s linear forwards;
+	-moz-animation: OpeningSequence 5.2s linear forwards;
+	animation: OpeningSequence 5.2s linear forwards;
+}
+
+.os-phrases h2:nth-child(2) > span > span > span {
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+
+.os-phrases h2:nth-child(3) > span > span > span {
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+.os-phrases h2:nth-child(4) > span > span > span {
+	-webkit-animation-delay: 7.5s;
+	-moz-animation-delay: 7.5s;
+	animation-delay: 7.5s;
+}
+
+.os-phrases h2:nth-child(5) > span > span > span {
+	font-size: 75px;
+	-webkit-animation-delay: 10.5s;
+	-moz-animation-delay: 10.5s;
+	animation-delay: 10.5s;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	animation-duration: 4s;
+}
+
+.os-phrases h2:nth-child(6) > span > span > span {
+	-webkit-animation-delay: 15s;
+	-moz-animation-delay: 15s;
+	animation-delay: 15s;
+}
+
+.os-phrases h2:nth-child(7) > span > span > span {
+	-webkit-animation-delay: 18s;
+	-moz-animation-delay: 18s;
+	animation-delay: 18s;
+}
+	
+	.os-phrases h2 {font-size: 22px!important;}
+	.os-phrases h2 > span:nth-child(1), .os-phrases h2 > span:nth-child(5), .os-phrases h2 > span:nth-child(6) {display: none!Important;}
+}
