@@ -31,8 +31,8 @@ $(document).ready(function(){
         items: 1, 
         nav: true,
         loop: true,
-		autoplay: true,
-		smartSpeed: 3000,
+		//autoplay: true,
+		smartSpeed: .5,
 		autoplayTimeout: 4000
         
      });

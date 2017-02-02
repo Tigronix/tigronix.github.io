@@ -189,7 +189,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 	.angle-bot {display: none;}
 }
 @media (max-width:768px) {
-	.slider-main .slide, .slider-main .owl-item {height: auto;}
     .slider-main_text {font-size: 12px; text-transform: uppercase;line-height: 15px; text-align: center; left: 0px; right: 0px; top: 0; padding: 10px 5px}
 }
 /*social-buttons*/
