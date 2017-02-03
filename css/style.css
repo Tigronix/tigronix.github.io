@@ -155,7 +155,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a62a2a', end
 .slider-nav_text {font-size: 1.27vw; color: #000; font-family: 'lato'; margin-left: 4.6%; width: 78%;}
 .slider-nav_text span {font-size: 1.2vw; color: #000; font-family: 'lato'; font-weight: 900;}
 .active-slide {background: #f4c5e8;}
-.slider-main_text {font-size: 2.26vw; color: #000; font-family: 'lato'; font-weight: 900; position: absolute; left: 10%; top: 44px; color: #000; /*background: rgba(255,255,255,.8);*/ padding: 20px 90px;}
+.slider-main_text {font-size: 2.26vw; color: #000; font-family: 'lato'; font-weight: 900; position: absolute; left: 10%; top: 44px; color: #000!important; background: rgba(252,15,192, .8); padding: 20px 90px;}
 .slide-main_pink {color: #fc0fc0;}
 .slider-main__logo {position: absolute; left: 50%; margin-left: -120px; top: 20%; display: block; background-image: url(../img/slider-main_logo.png); background-size: 100% auto; width: 240px; height:  240px; z-index: 1000;}
 .FadeInn {
