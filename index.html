@@ -1,251 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents</title>
-    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/component.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/modernizr.custom.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="global_wrapper">
-        <header class="header">
-            <a href="#" class="header__logo"></a>
-            <div class="header__nav">
-                <a href="#products" class="angle nav_link">Выбрать сумку</a>
-                <a href="#payment" class="angle nav_link">Оплата</a>
-                <a href="#delivery" class="angle nav_link">Доставка</a>
-                <a href="#about" class="angle nav_link">О компании</a>
-                <a href="#contact" class="angle nav_link">Контакты</a>
-            </div><!--header_nav-->
-            <a href="#" class="button-buy button-buy_width240 header__button-buy popup__open">Купить сумку</a>
-            <a href="tel:+79037109596" class="header__phone">+7(903) 710-95-96</a>
-        </header><!--header-->
-        <main class="content">
-            <section class="slider-main-wrap">
-                <div class="slider-nav">
-                    <a class="slider-nav_item active-slide">
-                        <picture class="slider-nav_picture"><img src="img/ikon_1.png" alt=""></picture>
-                        <div class="slider-nav_text">
-                             Сохраняет холод<br> <span>не менее 8 часов.</span> 
-                        </div>
-                    </a>
-                    <a class="slider-nav_item">
-                        <picture class="slider-nav_picture"><img src="img/ikon_2.png" alt=""></picture>
-                        <div class="slider-nav_text">
-                             Все всегда с собой<br> <span>6 отделений</span> 
-                        </div>
-                    </a>
-                    <a class="slider-nav_item">
-                        <picture class="slider-nav_picture"><img src="img/ikon_4.png" alt=""></picture>
-                        <div class="slider-nav_text">
-                              <span>3 ланчбокса</span><br>(общий объем 2.7 л) 
-                        </div>
-                    </a>
-                    <a class="slider-nav_item">
-                        <picture class="slider-nav_picture"><img src="img/ikon_5.png" alt=""></picture>
-                        <div class="slider-nav_text">
-                               Отлично подходит<br> <span>для фитнеса</span> 
-                        </div>
-                    </a>
-                    <a class="slider-nav_item">
-                        <picture class="slider-nav_picture"><img src="img/ikon_6.png" alt=""></picture>
-                        <div class="slider-nav_text">
-                                Выбор тех, кто ведет <br><span>здоровый образ жизни</span>  
-                        </div>
-                    </a>
-                    <div class="social-buttons">
-                    <script>         (function() {
-                       if (window.pluso)if (typeof window.pluso.start == "function") return;
-                       if (window.ifpluso==undefined) { window.ifpluso = 1;
-                         var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                         s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-                         s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
-                         var h=d[g]('body')[0];
-                         h.appendChild(s);
-                       }})();
-                     </script>
-                     <div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,moimir"></div>                    
-                    </div>
-                </div>
-                <div class="slider-main">
-                    <div class="slide">
-						<a href="#" class="header__logo slider-main__logo FadeInn"></a>
-						<div class="os-phrases" id="os-phrases">
-							<h2 class="last-word">
-								<span class="word1">
-									<span class="char1">
-										<span class="char1">
-										  Fresh Fitness bag
-										</span>
-									</span>
-								</span>
-								 
-							</h2>
+		<section class="constructor">
+			<form class="constructor__top-nav">
+				<div class="blue-block">Тираж</div>
+				<div class="inpbox">
+					<input requred id="count" placeholder="1000" type="text">
+					<label for="count-label">шт</label>
+				</div>
+				<div class="blue-block">Срок изготовления</div>
+				<div class="text">Сентябрь 2017 г.</div>
+				<div class="blue-block">Стоимость</div>
+				<div class="text">
+					<span class="red">500 руб.</span> - 1 шт. <span class="red red_ml">500 000 руб.</span> - 1 000шт.
+				</div>
+				<button class="button">
+					<i class="fa fa-rouble"></i>
+					Рассчитать
+				</button>
+			</form><!--constructor-top-nav-->
+			<div class="constructor__content">
+				<div class="constructor__nav-left">
+					<div class="item">
+						<span>1</span>
+						<i class="fa fa-lock"></i>
+					</div>
+					<div class="item item_lock">
+						<span>1</span>
+						<i class="fa fa-lock"></i>
+					</div>
+					<div class="item item_lock">
+						<span>1</span>
+						<i class="fa fa-lock"></i>
+					</div>
+					<div class="item item_lock">
+						<span>1</span>
+						<i class="fa fa-lock"></i>
+					</div>
+					
+				</div><!--constructor__nav-left-->
+				<div class="constructor__center">
+					<h2>
+						Выберите модель и формат
+						<div class="button-nav">
+							<i class="fa fa-angle-left disactive"></i>
+							<i class="fa fa-angle-right active"></i>
 						</div>
-                    </div>
-                    <div class="slide">
-                        <img src="img/slide-main.JPG" alt="">
-                        <div class="slider-main_text">
-                        	Fresh Fitness Bag не просто сумка - <span class="slide-main_pink">это стиль жизни!</span>
-                        </div>
-                    </div>
-                </div>
-                <!--<a href="#" class="angle-bot"></a>-->
-            </section><!--slider-main-wrap-->
-            <section class="photo">
-                <h2 class="title-page"><span class="pinky">ПОСМОТРИТЕ</span> ФОТО НАШИХ СУМОК </h2>
-                <div class="photo_slider">
-					<div class="slide"><a href="img/product-1_big.jpg" rel="photo" class="fancybox"><img src="img/product_1.png" alt=""></a></div>
-					<div class="slide"><a href="img/product-2_big.jpg" rel="photo" class="fancybox"><img src="img/product_2.png" alt=""></a></div>
-					<div class="slide"><a href="img/product-3_big.jpg" rel="photo" class="fancybox"><img src="img/product_3.jpg" alt=""></a></div>
-					<div class="slide"><a href="img/product-4_big.jpeg" rel="photo" class="fancybox"><img src="img/product_4.png" alt=""></a></div>
-                </div>
-            </section><!--photo-->
-            <section id="products" class="products products_mgt">
-                <h2 class="title-page title-page_width">
-                    <div class="products__title_bg">
-                        <span class="pinky">ПОКУПАЙТЕ СУМКУ FRESH FITNESS BAG!</span> ЦВЕТА НА ЛЮБОЙ ВКУС!
-                    </div>
-                </h2>
-                <div class="products__article products__article_mgt">
-                    <div class="products__name">Сумка трансформер-холодильник</div>
-                    <a rel="bags" href="img/s_3.jpg" class="fancybox products__picture"><img src="img/s_3.jpg" alt=""></a>
-                    <div class="products__color">
-                        <picture class="icon__star">
-                            <img src="img/star__black.png" alt="">
-                        </picture>
-                        <span>Цвет черный</span>
-                    </div>
-                    <div class="products__price-old">8 500 руб.</div>
-                    <div class="products__price">6 500 руб.</div>
-                    <a href="#" class="button-buy button-buy_width products__button-buy popup__open">Купить сумку</a>
-                </div>
-                <div class="products__article products__article_mgt">
-                    <div class="products__name">Сумка трансформер-холодильник</div>
-                    <a rel="bags" href="img/s_5.jpg" class="fancybox products__picture"><img src="img/s_5.jpg" alt=""></a>
-                    <div class="products__color">
-                        <picture class="icon__star">
-                            <img src="img/star__grey.png" alt="">
-                        </picture>
-                        <span>Цвет серый</span>
-                    </div>
-                    <div class="products__price-old">8 500 руб.</div>
-                    <div class="products__price">6 500 руб.</div>
-                    <a href="#" class="button-buy button-buy_width products__button-buy popup__open">Купить сумку</a>
-                </div>
-                <div class="products__article products__article_mgt">
-                    <div class="products__name">Сумка трансформер-холодильник</div>
-                    <a rel="bags" href="img/s_2.jpg" class="fancybox products__picture"><img src="img/s_2.jpg" alt=""></a>
-                    <div class="products__color">
-                        <picture class="icon__star">
-                            <img src="img/star__blue.png" alt="">
-                        </picture>
-                        <span>Цвет синий</span>
-                    </div>
-                    <div class="products__price-old">8 500 руб.</div>
-                    <div class="products__price">6 500 руб.</div>
-                    <a href="#" class="button-buy button-buy_width products__button-buy popup__open">Купить сумку</a>
-                </div>
-                <div class="products__article products__article_mgt">
-                    <div class="products__name">Сумка трансформер-холодильник</div>
-                    <a rel="bags" href="img/s_1.jpg" class="fancybox products__picture"><img src="img/s_1.jpg" alt=""></a>
-                    <div class="products__color">
-                        <picture class="icon__star">
-                            <img src="img/star__purple.png" alt="">
-                        </picture>
-                        <span>Цвет фиолетовый</span>
-                    </div>
-                    <div class="products__price-old">8 500 руб.</div>
-                    <div class="products__price">6 500 руб.</div>
-                    <a href="#" class="button-buy button-buy_width products__button-buy popup__open">Купить сумку</a>
-                </div>
-                <div class="products__article products__article_mgt">
-                    <div class="products__name">Сумка трансформер-холодильник</div>
-                    <a rel="bags" href="img/s_4.jpg" class="fancybox products__picture"><img src="img/s_4.jpg" alt=""></a>
-                    <div class="products__color">
-                        <picture class="icon__star">
-                            <img src="img/star__pink.png" alt="">
-                        </picture>
-                        <span>Цвет розовый</span>
-                    </div>
-                    <div class="products__price-old">8 500 руб.</div>
-                    <div class="products__price">6 500 руб.</div>
-                    <a href="#" class="button-buy button-buy_width products__button-buy popup__open">Купить сумку</a>
-                </div>
-            </section><!--products-->
-            <section id="about" class="about wrapper">
-                <h2 class="title-page title-page_mb">О компании</h2>
-                <div class="about_desc">
-                    <span class="pinky"> Сумки FRESH FITNESS BAG созданы спортсменами и путешественниками,</span> людьми, которые точно знают насколько важно свежее, правильное и своевременное питание!
-                </div>
-                <p class="text">
-                     <a href="img/about.jpg" class="fancybox fancybox_zoom float_left"><img src="img/about.jpg" width="354" height="250" alt=""></a>
-                     <span>Наши termo-сумки разработаны специально для Вашего удобства. В современном мире любой успешный человек стремиться быть здоровым, подтянутым. И правильное, своевременное питание является неотъемлемой частью здорового образа жизни. Благодаря эргономичности termo-сумки FRESH FITNESS BAG вы с удобством и комфортом можете транспортировать полноценный рацион питания на целый день, не боясь за сохранность и качество продуктов. Специальные гелиевые элементы холода сохранят ваш рацион свежим и охлаждённым не менее 8 часов. Элементы холода более чем просты в использовании, активируются в морозильной камере 4-6 часов до полной заморозки и вставляются в специально отведенные кармашки в сумке.</span>
-                     <span>Не хотите жертвовать стилем? Дизайн и цвета на любой вкус не лишат вас эстетического удовольствия. А на ряду с компактностью можно отметить вместительность.
-                     Основное отделение оснащено съемными полками для контейнеров, благодаря чему ваша еда не "болтается" в сумке, а контейнеры плотно прилегают друг к другу.</span>
-                     <span>Основное отделение оснащено съемными полками для контейнеров, благодаря чему ваша еда не "болтается" в сумке, а контейнеры плотно прилегают друг к другу.</span>
-                </p>
-                <p class="text">
-                    <a href="img/about-2_big.jpeg" class="fancybox fancybox_zoom float_right"><img src="img/about_2.png" alt=""></a>
-                    <span>Так же имеется 2 боковых отделения на молнии, в которые легко поместится шейкер или бутылка с водой, соком и 2 сетчатых кармана. Верхний карман можно использовать для мелких личных вещей, таких как ключи, наушники, телефон, таблетница. Так же в кармане можно отстегнуть дно и в сумку станет возможным поместить еще 2 контейнера, при необходимости. Полки можно отстегнуть и поместить в сумку более объемные контейнеры, медикаменты, хранящиеся в прохладной среде и прочие вещи.</span>
-                    <span>В комплектацию сумки так же входит 3 пластиковых контейнера для еды.</span>
-                    <span>В производстве сумок использованы материалы высшего качества, благодаря чему сумки износостойкие и влагоустойчивые.</span>
-					<span class="about_desc about_desc_mob-mg">
-						 <span class="pinky">Сумка FRESH FITNESS BAG</span> станет незаменимым гаджетом в Вашей повседневной жизни, в путешествиях и спорте. 
-					</span>
-                </p>
-            </section><!--about-->
-            <section class="cooperation wrapper">
-                <h2 class="title-page title-page_mb">Сотрудничество</h2>
-            	<p class="text text__mb">FRESH FITNESS BAG разрабатывает и производит termо-сумки трансформеры в России. Индивидуальный подход к каждому покупателю позволяет нам находить максимально эффективные схемы сотрудничества. Мы не стремимся совершить одну - две выгодные для нас сделки, не учитывающие интересы наших партнеров.</p>
-            	<p class="text text__mb">Наша цель - взаимовыгодное и долгосрочное сотрудничество. </p>
-            	<p class="text text__mb">Одно из основных наших достоинств и методов работы - идти на встречу своим постоянным и потенциальным клиентам!</p>
-            	<p class="text text__mb">Главным приоритетами нашего предприятия является постоянное и целенаправленное совершенствование технологических процессов, эффективность поставки, оперативность и надежность. Именно это диктуется современными условиями рынка и конкуренции.</p>
-            	<p class="text text__mb">Не секрет, что сегодня многие предприятия стремятся завоевать рынок, выпуская дешевые товары низкого качества, но для FRESH FITNESS BAG качество выпускаемой продукции - главный приоритет. Мы сотрудничаем со всеми регионами страны. </p>
-            </section><!--cooperation-->
-            <div class="mob_switcher">
-                <i class="header__open fa fa-bars"></i>
-                <i class="header__close fa fa-close"></i>
-            </div>
-            <a href="tel:+74951512698" class="mob_phone2">+7(495)151-26-98</a>
-            <div class="blackout"></div>
-            <div id="#popup_wrap" class="popup_wrap">
-                <form class="popup_content">
-                    <div class="title">ПРИ ОНЛАЙН ЗАЯВКЕ СКИДКА 10%</div>
-                    <input required="" placeholder="Введите Ваше имя" type="text">
-                    <input required="" class="popup__phone" placeholder="Введите Ваш телефон" type="tel">
-                    <input required="" placeholder="Введите промокод (если есть)" type="text">
-                    <textarea placeholder="Напишите ваши вопросы..."></textarea>
-                    <button>Купить сумку</button>
-                    <div class="popup_close"></div>
-                </form><!--popup_content-->
-            </div>
-        </main><!--content-->
-        <footer class="footer">
-        	<a href="tel:+79037109596" class="footer__phone">+7(903) 710-95-96</a>
-        	<div class="footer__nav">
-        		<a href="#products" class="angle footer__nav-link">Выбрать сумку</a>
-        		<a href="#payment" class="angle footer__nav-link">Оплата</a>
-        		<a href="#delivery" class="angle footer__nav-link">Доставка</a>
-        		<a href="#about" class="angle footer__nav-link">О компании</a>
-        		<a href="#contact" class="angle footer__nav-link">Контакты</a>
-        	</div>
-        	<div class="footer__copyright">FRESH FITNESS BAG 2017 ©</div>
-        </footer><!--footer-->
-    </div><!--global_wrapper-->
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="js/fancybox/jquery.fancybox.js"></script>
-    <script src="js/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/jquery.lettering.js"></script>
-    <script src="js/script.js"></script>
+					</h2>
+					<form action="" class="constructor__main">
+						<div class="constructor__mod">
+							<figure class="item item1">
+								<picture></picture>
+								<figcaption>Ежедневник А4</figcaption>
+							</figure>
+							<figure class="item item2">
+								<picture></picture>
+								<figcaption>Ежедневник А5</figcaption>
+							</figure>
+							<figure class="item item3">
+								<picture></picture>
+								<figcaption>Ежедневник А6</figcaption>
+							</figure>
+							<figure class="item item4">
+								<picture></picture>
+								<figcaption>Планинг</figcaption>
+							</figure>
+						</div><!--constructor__mod-->
+						<div class="constructor__cover-type">
+							<h2>Выберите тип обложки</h2>
+							<div class="inpbox inpbox1">
+								<input type="checkbox" id="strict" name="cover-type">
+								<label for="strict">Жесткая</label>
+							</div>
+							<div class="inpbox">
+								<input type="checkbox" id="flex" name="cover-type">
+								<label for="flex">Гибкая</label>
+							</div>
+						</div><!--constructor__cover-type-->
+						<button class="button constructor__submit">
+							<span>Следующий шаг<i class="fa fa-angle-right"></i></span>
+						</button>
+					</form><!--constructor__main-->
+				</div><!--constructor__center-->
+				<div class="constructor__right">
+					<div class="book-model">
+						<div class="basis"><img src="http://placehold.it/354x471" alt=""></div>
+					</div>
+					<div class="book-model-name">
+						<span>
+							<b>Модель:</b> Ежедневник А4
+						</span>
+						<a href="#" class="button"><i class="fa fa-download"></i>Сохранить</a>
+					</div>
+					<div class="book-navigation">
+						<figure class="item">
+							<picture><img src="img/cover.png" alt=""></picture>
+							<figcaption>Обложка</figcaption>
+						</figure>
+						<figure class="item">
+							<picture><img src="img/spread.png" alt=""></picture>
+							<figcaption>Разворот</figcaption>
+						</figure>
+						<figure class="item">
+							<picture><img src="img/end-paper.png" alt=""></picture>
+							<figcaption>Форзац/нахзац</figcaption>
+						</figure>
+						<figure class="item shear">
+							<picture><img src="img/shear.png" alt=""></picture>
+							<figcaption>Срез</figcaption>
+						</figure>
+					</div>
+					<div class="warning">
+						<p class="p1"><i class="fa fa-exclamation-triangle"></i> Изображения не являются макетами.</p>
+						<p>Финальные макеты утверждаются только с менеджером.</p>
+					</div>
+				</div><!--constructor__right-->
+			</div><!--constructor__content-->
+		</section><!--constuctor-->
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>
