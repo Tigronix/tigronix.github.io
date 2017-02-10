@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+		<section class="constructor">
+			<form class="constructor__top-nav">
+				<div class="blue-block">Тираж</div>
+				<div class="inpbox">
+					<input requred id="count" placeholder="1000" type="text">
+					<label for="count-label">шт</label>
+				</div>
+				<div class="blue-block">Срок изготовления</div>
+				<div class="text">Сентябрь 2017 г.</div>
+				<div class="blue-block">Стоимость</div>
+				<div class="text">
+					<span class="red">500 руб.</span> - 1 шт. <span class="red red_ml">500 000 руб.</span> - 1 000шт.
+				</div>
+				<button type="button" class="button">
+					<i class="fa fa-rouble"></i>
+					Рассчитать
+				</button>
+			</form><!--constructor-top-nav-->
+			<div class="constructor__content">
+				<div class="constructor__nav-left">
+					<div data-id="constructor__center" data-taba="1" class="item">
+						<span>1</span>
+						<i class="fa fa-lock"></i>
+					</div>
+					<div data-id="constructor__center" data-taba="2" class="item">
+						<span>2</span>
+						<i class="fa fa-lock"></i>
+					</div>
+					<div data-id="constructor__center" data-taba="3" class="item">
+						<span>3</span>
+						<i class="fa fa-lock"></i>
+					</div>
+					<div data-id="constructor__center" data-taba="4" class="item">
+						<span>4</span>
+						<i class="fa fa-lock"></i>
+					</div>
+				</div><!--constructor__nav-left-->
+				<div id="constructor__center" class="constructor__center">
+					<div data-taba="1" class="constructor__tab constructor__tab1">
+						<h2>
+							Выберите модель и формат
+							<div class="button-nav">
+								<i class="fa fa-angle-left disactive"></i>
+								<i class="fa fa-angle-right active"></i>
+							</div>
+						</h2>
+						<form action="" class="constructor__main">
+							<div class="constructor__mod">
+								<figure class="item item1">
+									<picture></picture>
+									<figcaption>Ежедневник А4</figcaption>
+								</figure>
+								<figure class="item item2">
+									<picture></picture>
+									<figcaption>Ежедневник А5</figcaption>
+								</figure>
+								<figure class="item item3">
+									<picture></picture>
+									<figcaption>Ежедневник А6</figcaption>
+								</figure>
+								<figure class="item item4">
+									<picture></picture>
+									<figcaption>Планинг</figcaption>
+								</figure>
+							</div><!--constructor__mod-->
+							<div class="constructor__cover-type">
+								<h2>Выберите тип обложки</h2>
+								<div class="inpbox inpbox1">
+									<input type="checkbox" id="strict" name="cover-type">
+									<label for="strict">Жесткая</label>
+								</div>
+								<div class="inpbox">
+									<input type="checkbox" id="flex" name="cover-type">
+									<label for="flex">Гибкая</label>
+								</div>
+							</div><!--constructor__cover-type-->
+							<button type="button" class="button constructor__submit">
+								<span>Следующий шаг<i class="fa fa-angle-right"></i></span>
+							</button>
+						</form><!--constructor__main-->
+					</div><!--constructor__tab1-->
+					<div data-taba="2" class="constructor__tab constructor__tab2">
+						<h2 class="h2_flex">
+							 Обложка
+							<div class="button-nav button-nav_flex">
+								<a href="#" class="button button_buy"><i class="fa fa-cart-arrow-down"></i>Заказать</a>
+								<i class="fa fa-angle-left disactive"></i>
+								<i class="fa fa-angle-right active"></i>
+							</div>
+						</h2>
+						<form action="" class="constructor__main">
+							<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font">
+								<span class="inp-label">Варианты обложки</span>
+								<div class="inpbox inpbox1">
+									<input type="checkbox" id="simple" name="cover-type">
+									<label for="simple">Простая</label>
+								</div>
+								<div class="inpbox">
+									<input type="checkbox" id="combo" name="cover-type">
+									<label for="combo">Комбинированная</label>
+								</div>
+								<div class="inpbox">
+									<input type="checkbox" id="full-color" name="cover-type">
+									<label for="full-color">Полноцветная</label>
+								</div>
+							</div><!--constructor__cover-type-->
+							<div class="constructor__combo-type">
+								<div>Варианты комбинации</div>
+								<div class="constructor__combo-slider">
+									<div class="item">
+										<img class="img-default" src="img/k1.png" alt="">
+										<img class="img-hover" src="img/k1-hover.png" alt="">
+									</div>
+									<div class="item">
+										<img class="img-default" src="img/k2.png" alt="">
+										<img class="img-hover" src="img/k2-hover.png" alt="">
+									</div>
+									<div class="item">
+										<img class="img-default" src="img/k3.png" alt="">
+										<img class="img-hover" src="img/k3-hover.png" alt="">
+									</div>
+									<div class="item">
+										<img class="img-default" src="img/k4.png" alt="">
+										<img class="img-hover" src="img/k4.png" alt="">
+									</div>
+									<div class="item">
+										<img class="img-default" src="img/k5.png" alt="">
+										<img class="img-hover" src="img/k5-hover.png" alt="">
+									</div>
+									<div class="item">
+										<img class="img-default" src="img/k5.png" alt="">
+										<img class="img-hover" src="img/k5-hover.png" alt="">
+									</div>
+									<div class="item">
+										<img class="img-default" src="img/k5.png" alt="">
+										<img class="img-hover" src="img/k5-hover.png" alt="">
+									</div>
+								</div><!--constructor__combo-slider-->
+							</div><!--constructor__combo-type-->
+							<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font constructor__cover-type_nomgb">
+								<span class="inp-label">Дополнительные опции обложки</span>
+								<div class="inpbox inpbox1">
+									<input type="checkbox" id="firmware" name="cover-type">
+									<label for="firmware">Прошивка по периметру</label>
+								</div>
+							</div><!--constructor__cover-type-->
+							<div class="constructor__string">
+								<span>Цвет ниток</span>
+								<div class="color-box">
+									<a class="item brown1"></a>
+									<a class="item brown3"></a>
+									<a class="item orange1"></a>
+									<a class="item orange2"></a>
+									<a class="item red1"></a>
+									<a class="item pink1"></a>
+									<a class="item purple2"></a>
+									<a class="item green1"></a>
+									<a class="item green2"></a>
+									<a class="item purple1"></a>
+									<a class="item blue2"></a>
+									<a class="item grey2"></a>
+									<a class="item blue1"></a>
+									<a class="item brown2"></a>
+									<a class="item black"></a>
+									<a class="item grey1"></a>
+									<a class="item yellow"></a>
+								</div>
+							</div><!--constructor__string-->
+							<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font">
+								<span class="inp-label">Тиснение</span>
+								<div class="inpbox inpbox1">
+									<input type="checkbox" id="blint" name="cover-type">
+									<label for="blint">Блинтовое</label>
+								</div>
+								<div class="inpbox">
+									<input type="checkbox" id="folg" name="cover-type">
+									<label for="folg">С фольгой</label>
+								</div>
+							</div><!--constructor__cover-type-->
+							<div class="material">
+								<div class="material__tabs">
+									<div data-id="material__colors" data-taba="1" class="tab act">Материал 1</div>
+									<div data-id="material__colors" data-taba="2" class="tab">Материал 2</div>
+								</div>
+								<div class="material__cont-wrap">
+									<select class="styler material__select">
+										<option>Небраска</option>
+										<option>Каприс</option>
+									</select>
+									<div id="material__colors" class="material__colors">
+										<div data-taba="1" class="material__box"><img src="img/mat.png" alt=""></div>
+										<div data-taba="2" class="material__box"><img src="img/mat.png" alt=""></div>
+									</div>
+								</div><!--material__cont-wrap-->
+							</div><!--material-->
+							<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+								<div class="string-left">
+									<div class="string-name mr-20">Петелька</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+									<input id="petelka" name="cover-type" type="checkbox">
+									<label for="petelka">Да</label>
+								</div>
+								</div>
+								<div class="color-box__wrap">
+									<div class="title">Цвет петельки</div>
+									<div class="color-box">
+										<a class="item pink1"></a>
+										<a class="item purple2"></a>
+										<a class="item green1"></a>
+										<a class="item green2"></a>
+										<a class="item purple1"></a>
+										<a class="item blue2"></a>
+										<a class="item grey2"></a>
+										<a class="item blue1"></a>
+										<a class="item brown1"></a>
+										<a class="item black"></a>
+										<a class="item grey1"></a>
+										<a class="item yellow"></a>
+									</div>
+								</div>
+							</div><!--constructor__string-->
+							<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+								<div class="string-left">
+									<div class="string-name mr-20">Резинка</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="petelka" name="cover-type" type="checkbox">
+										<label for="petelka">Нет</label>
+									</div>
+								</div>
+								<div class="color-box__wrap">
+									<div class="title">Цвет петельки</div>
+									<div class="color-box">
+										<a class="item pink1"></a>
+										<a class="item purple2"></a>
+										<a class="item green1"></a>
+										<a class="item green2"></a>
+										<a class="item purple1"></a>
+										<a class="item blue2"></a>
+										<a class="item grey2"></a>
+										<a class="item blue1"></a>
+										<a class="item brown1"></a>
+										<a class="item black"></a>
+										<a class="item grey1"></a>
+										<a class="item yellow"></a>
+									</div>
+								</div>
+								<div class="box-wrap2">
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="plosk" name="cover-type" type="checkbox">
+										<label for="plosk">Плоская</label>
+									</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="6mm" name="cover-type" type="checkbox">
+										<label for="6mm">6 мм.</label>
+									</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="12mm" name="cover-type" type="checkbox">
+										<label for="12mm">12 мм.</label>
+									</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="krug" name="cover-type" type="checkbox">
+										<label for="krug">Круглая</label>
+									</div>
+								</div>
+							</div><!--constructor__string-->
+							<div class="constructor__cover-type constructor__cover-type_flex no-border constructor__cover-type_label-font">
+								<span class="inp-label">Металлические уголки</span>
+								<div class="inpbox inpbox1">
+									<input id="blint" name="cover-type" type="checkbox">
+									<label for="blint">2 шт.</label>
+								</div>
+								<div class="inpbox">
+									<input id="folg" name="cover-type" type="checkbox">
+									<label for="folg">4 шт.</label>
+								</div>
+							</div><!--constructor__cover-type-->
+						</form><!--constructor__main-->
+						<div class="nav-submit">
+							<button type="button" class="button constructor__submit constructor__submit_prev">
+								<span><i class="fa fa-angle-left"></i>Предыдущий шаг</span>
+							</button>
+							<button type="button" class="button constructor__submit">
+								<span>Следующий шаг<i class="fa fa-angle-right"></i></span>
+							</button>
+						</div>
+					</div><!--constructor__tab2-->
+					<div data-taba="3" class="constructor__tab constructor__tab3">
+						<h2 class="h2_flex">
+							 Обложка
+							<div class="button-nav button-nav_flex">
+								<a href="#" class="button button_buy"><i class="fa fa-cart-arrow-down"></i>Заказать</a>
+								<i class="fa fa-angle-left disactive"></i>
+								<i class="fa fa-angle-right active"></i>
+							</div>
+						</h2>
+						<div class="choice border-top">
+							<h2>Выберите блок</h2>
+							<div class="choice__line">
+								<div class="inpbox">
+									<input id="choice1" name="cover-type" type="checkbox">
+									<label for="choice1">Датированный А5 белый блок, 352 стр. (Артикул: 11.12)</label>
+								</div>
+							</div><!--choice__line-->
+							<div class="choice__line">
+								<div class="inpbox">
+									<input id="choice2" name="cover-type" type="checkbox">
+									<label for="choice2"> Недатированный А5 тонированный блок, 352 стр. (Артикул: 11.062) </label>
+								</div>
+							</div><!--choice__line-->
+							<div class="choice__line">
+								<div class="inpbox">
+									<input id="choice3" name="cover-type" type="checkbox">
+									<label for="choice3"> Недатированный А5 белый блок, 352 стр. (Артикул: 11.06) </label>
+								</div>
+							</div><!--choice__line-->
+						</div><!--choice-block-->
+						<div class="choice-color">
+							<h2>Выберите цвет блока</h2>
+							<div class="inpbox-wrap">
+								<div class="inpbox inpbox1">
+									<input id="choice-color1" name="cover-type" type="checkbox">
+									<label for="choice-color1">Белый</label>
+								</div>
+								<div class="inpbox">
+									<input id="choice-color2" name="cover-type" type="checkbox">
+									<label for="choice-color2">Кремовый</label>
+								</div>
+							</div><!--inpbox-wrap"-->
+						</div><!--choice-color-->
+							<div class="ad-block constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font">
+								<span class="inp-label inp-label_mrr">Рекламные вставки</span>
+								<div class="inpbox inpbox1">
+									<input id="ad1" name="cover-type" type="checkbox">
+									<label for="ad1">Да</label>
+								</div>
+								<span class="inp-label inp-label_mrl">Страницы</span>
+								<select class="styler material__select material__select_width1">
+									<option>2</option>
+									<option>4</option>
+									<option>8</option>
+									<option>12</option>
+								</select>
+								<span class="inp-label inp-label_mr2">Расположение</span>
+								<select class="styler material__select material__select_width2">
+									<option>Перед блоком</option>
+									<option>По центру блока</option>
+									<option>В конце блока</option>
+								</select>
+							</div><!--ad-block-->
+							<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+								<div class="string-left">
+									<div class="string-name mr-20">Форзац</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+									<input id="forzac" name="cover-type" type="checkbox">
+									<label for="forzac">Стандарт</label>
+								</div>
+								</div>
+								<div class="color-box__wrap">
+									<div class="title">Индивидуальный</div>
+									<div class="color-box">
+										<a class="item pink1"></a>
+										<a class="item purple2"></a>
+										<a class="item green1"></a>
+										<a class="item green2"></a>
+										<a class="item purple1"></a>
+										<a class="item blue2"></a>
+										<a class="item grey2"></a>
+										<a class="item blue1"></a>
+										<a class="item brown1"></a>
+										<a class="item black"></a>
+										<a class="item grey1"></a>
+										<a class="item yellow"></a>
+									</div>
+								</div>
+							</div><!--constructor__string-->
+							<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+								<div class="string-left">
+									<div class="string-name mr-20">Нахзац</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+									<input id="nahzac" name="cover-type" type="checkbox">
+									<label for="nahzac">Стандарт</label>
+								</div>
+								</div>
+								<div class="color-box__wrap">
+									<div class="title">Индивидуальный</div>
+									<div class="color-box">
+										<a class="item pink1"></a>
+										<a class="item purple2"></a>
+										<a class="item green1"></a>
+										<a class="item green2"></a>
+										<a class="item purple1"></a>
+										<a class="item blue2"></a>
+										<a class="item grey2"></a>
+										<a class="item blue1"></a>
+										<a class="item brown1"></a>
+										<a class="item black"></a>
+										<a class="item grey1"></a>
+										<a class="item yellow"></a>
+									</div>
+								</div>
+							</div><!--constructor__string-->
+							<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+								<div class="string-left">
+									<div class="string-name mr-20">Срез</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="srez" name="cover-type" type="checkbox">
+										<label for="srez">Стандарт</label>
+									</div>
+								</div>
+								<div class="color-box__wrap">
+									<div class="title">Цвет петельки</div>
+									<div class="color-box">
+										<a class="item pink1"></a>
+										<a class="item purple2"></a>
+										<a class="item green1"></a>
+										<a class="item green2"></a>
+										<a class="item purple1"></a>
+										<a class="item blue2"></a>
+										<a class="item grey2"></a>
+										<a class="item blue1"></a>
+										<a class="item brown1"></a>
+										<a class="item black"></a>
+										<a class="item grey1"></a>
+										<a class="item yellow"></a>
+									</div>
+								</div>
+								<div class="box-wrap2 box-wrap2_padl">
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="gold" name="cover-type" type="checkbox">
+										<label for="gold">Золочение</label>
+									</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="silver" name="cover-type" type="checkbox">
+										<label for="silver">Серебрение</label>
+									</div>
+									<div class="inpbox inpbox_mb inpbox_flex">
+										<input id="print" name="cover-type" type="checkbox">
+										<label for="print">Печать на срезе</label>
+									</div>
+								</div>
+							</div>
+							<div class="nav-submit">
+							<button type="button" class="button constructor__submit constructor__submit_prev">
+								<span><i class="fa fa-angle-left"></i>Предыдущий шаг</span>
+							</button>
+							<button type="button" class="button constructor__submit">
+								<span>Следующий шаг<i class="fa fa-angle-right"></i></span>
+							</button>
+						</div>
+					</div><!--constructor__tab-->
+					<div data-taba="4" class="constructor__tab constructor__tab4">
+						<h2 class="h2_flex">
+							 Расчет стоимости
+							<div class="button-nav button-nav_flex">
+								<a href="#" class="button button_buy"><i class="fa fa-cart-arrow-down"></i>Заказать</a>
+							</div>
+						</h2>
+						<div class="line-text">
+							<div class="line-text__line">
+								<span class="desc">Ежедневник А5, недатированный коричнево-черный, кремовый блок,<br> жёсткая обложка </span>
+								<span class="value">500 руб.</span>
+							</div>
+						</div><!--line-text-->
+						<div class="line-text">
+							<h3>Опции блока</h3>
+							<div class="line-text__line line-text__line_dots">
+								<span class="desc"> Форзац: в цвет блока </span>
+								<span class="value">0 руб.</span>
+							</div>
+							<div class="line-text__line line-text__line_dots">
+								<span class="desc"> Нахзац: в цвет блока </span>
+								<span class="value">0 руб.</span>
+							</div>
+							<div class="line-text__line line-text__line_dots">
+								<span class="desc"> Срез: в цвет блока </span>
+								<span class="value">0 руб.</span>
+							</div>
+						</div><!--line-text-->
+						<div class="line-text border-bottom">
+							<div class="line-text__line line-text__line_dots">
+								<span class="desc desc_bold">Итого за 1 шт.</span>
+								<span class="value">500 руб.</span>
+							</div>
+							<div class="line-text__line line-text__line_dots">
+								<span class="desc desc_bold">Стоимость за тираж 100 экземпляров</span>
+								<span class="value">5000 руб.</span>
+							</div>
+							<div class="line-text__line line-text__line_dots">
+								<span class="desc desc_bold">Срок изготовления</span>
+								<span class="value value_black">Март 2017 г.</span>
+							</div>
+						</div><!--line-text-->
+						<div class="download-maket">
+							<div class="t1"> Так же вы можете загрузить макеты для обложки, блока, рекламных вставок, форзаца, нахзаца и ляссе. Обратите внимание! Макеты должны соответствовать техническим требованиям!</div>
+							<a href="#" class="t2">
+								<i class="fa fa-upload"></i>
+								<span>Загрузить макет</span>
+							</a>
+						</div><!--download-maket-->
+						<div class="comment">
+							<div class="t1">Комментарий к макетам:</div>
+							<textarea class="textarea" placeholder="Опишите здесь свои пожелания к макету..."></textarea>
+						</div>
+						<div class="nav-submit">
+							<button type="button" class="button constructor__submit constructor__submit_prev">
+								<span><i class="fa fa-angle-left"></i>Предыдущий шаг</span>
+							</button>
+							<button type="submit" class="button constructor__submit">
+								<span>Оформить заказ</span>
+							</button>
+						</div>
+					</div><!--constructor__tab4-->
+				</div><!--constructor__center-->
+				<div class="constructor__right">
+					<div class="book-model">
+						<div class="basis"><img src="http://placehold.it/354x471" alt=""></div>
+					</div>
+					<div class="book-model-name">
+						<span>
+							<b>Модель:</b> Ежедневник А4
+						</span>
+						<a href="#" class="button"><i class="fa fa-download"></i>Сохранить</a>
+					</div>
+					<div class="book-navigation">
+						<figure class="item">
+							<picture><img src="img/cover.png" alt=""></picture>
+							<figcaption>Обложка</figcaption>
+						</figure>
+						<figure class="item">
+							<picture><img src="img/spread.png" alt=""></picture>
+							<figcaption>Разворот</figcaption>
+						</figure>
+						<figure class="item">
+							<picture><img src="img/end-paper.png" alt=""></picture>
+							<figcaption>Форзац/нахзац</figcaption>
+						</figure>
+						<figure class="item shear">
+							<picture><img src="img/shear.png" alt=""></picture>
+							<figcaption>Срез</figcaption>
+						</figure>
+					</div>
+					<div class="warning">
+						<p class="p1"><i class="fa fa-exclamation-triangle"></i> Изображения не являются макетами.</p>
+						<p>Финальные макеты утверждаются только с менеджером.</p>
+					</div>
+				</div><!--constructor__right-->
+			</div><!--constructor__content-->
+		</section><!--constuctor-->
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
