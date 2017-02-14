@@ -8,6 +8,92 @@
 .mr-20 {
   margin-right: 20px; }
 
+/****COLORS****/
+/***Vivella***/
+.viv1 {
+  background: #C89777; }
+
+.viv2 {
+  background: #90513F; }
+
+.viv3 {
+  background: #5C3135; }
+
+.viv4 {
+  background: #FFCE2F; }
+
+.viv5 {
+  background: #E35D3B; }
+
+.viv6 {
+  background: #A31120; }
+
+.viv7 {
+  background: #DD3259; }
+
+.viv8 {
+  background: #E44D8D; }
+
+.viv9 {
+  background: #70385F; }
+
+.viv10 {
+  background: #7679A3; }
+
+.viv11 {
+  background: #2D9AD5; }
+
+.viv12 {
+  background: #20367D; }
+
+.viv13 {
+  background: #2D376B; }
+
+.viv14 {
+  background: #1D5340; }
+
+.viv15 {
+  background: #1DD047; }
+
+.viv16 {
+  background: #B8E759; }
+
+.viv17 {
+  background: #B8E759; }
+
+.viv18 {
+  background: #F9F9F9; }
+
+.viv19 {
+  background: #ABABAC; }
+
+.viv20 {
+  background: #868789; }
+
+.viv21 {
+  background: #000000; }
+
+.a278 {
+  background: #265033; }
+
+.a322 {
+  background: #673a27; }
+
+.a324 {
+  background: #7a2638; }
+
+.a325 {
+  background: #2f3962; }
+
+.a330 {
+  background: #c1955f; }
+
+.a331 {
+  background: #89878c; }
+
+.nero {
+  background: #000000; }
+
 .border-bot {
   border-bottom: 1px solid #d8d8d8;
   padding-bottom: 13px; }
@@ -553,6 +639,22 @@ textarea:focus:-ms-input-placeholder {
         right: 0;
         z-index: 5;
         background: url(../img/); }
+    .constructor__right .basis-color {
+      position: relative;
+      display: none; }
+      .constructor__right .basis-color:first-child {
+        display: block; }
+    .constructor__right .basis-color__skin {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: block !important; }
+    .constructor__right .basis-color__item {
+      display: none; }
+      .constructor__right .basis-color__item:first-child {
+        display: block; }
     .constructor__right .book-model-name {
       display: -webkit-box;
       display: -webkit-flex;
@@ -877,9 +979,21 @@ textarea:focus:-ms-input-placeholder {
   width: 200px; }
 
 .material__box {
-  display: none; }
+  display: none;
+  margin: -7px;
+  position: relative; }
   .material__box:first-child {
     display: block; }
+  .material__box:after {
+    display: block;
+    content: '';
+    clear: both; }
+  .material__box .color-picker {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 7px;
+    cursor: pointer; }
 
 .constructor__string {
   -webkit-box-pack: justify;
@@ -920,7 +1034,18 @@ textarea:focus:-ms-input-placeholder {
   .constructor__string .color-box__wrap .color-box {
     padding: 16px 24px;
     border: 1px solid #d8d8d8;
-    margin-top: 5px; }
+    margin-top: 5px;
+    position: relative; }
+  .constructor__string .color-box__wrap .disable-block {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(204, 204, 204, 0.6); }
+  .constructor__string .color-box__wrap .disable .disable-block {
+    display: block; }
   .constructor__string .box-wrap2 {
     width: 100%;
     display: -webkit-box;

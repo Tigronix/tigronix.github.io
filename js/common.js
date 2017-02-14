@@ -19,13 +19,21 @@ $(function() {
 			arrows: true
 		});
 	
-		
-	
 	//styler
 	(function ($) {
 		$(function () {
 			$('.styler').styler();
 		});
 	})(jQuery);
+	
+	//color-box
+	$('.forzac-click').click(function(){
+		if ($('#forzac:checked')) {
+			$('.color-box_forzac').addClass('disable');
+		}
+		else {
+			$('.color-box_forzac').removeClass('disable');
+		}
+	});
 
 });

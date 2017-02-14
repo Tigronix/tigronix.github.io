@@ -83,7 +83,7 @@
 									<label for="flex">Гибкая</label>
 								</div>
 							</div><!--constructor__cover-type-->
-							<button type="button" class="button constructor__submit">
+							<button data-id="constructor__center" data-taba="2" type="button" class="button constructor__submit">
 								<span>Следующий шаг<i class="fa fa-angle-right"></i></span>
 							</button>
 						</div><!--constructor__main-->
@@ -98,20 +98,19 @@
 							</div>
 						</h2>
 						<div class="constructor__main">
-							<div class="combine-wrap">
-								<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font">
+							<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font">
 									<span class="inp-label">Варианты обложки</span>
 									<div class="inpbox inpbox1">
-										<input type="checkbox" id="simple" name="cover-type">
-										<label for="simple">Простая</label>
+										<input type="radio" id="simple" name="cover-type">
+										<label data-id="var-cover" data-taba="1" for="simple">Простая</label>
 									</div>
 									<div class="inpbox">
-										<input type="checkbox" id="combo" name="cover-type">
-										<label for="combo">Комбинированная</label>
+										<input type="radio" id="combo" name="cover-type">
+										<label data-id="var-cover" data-taba="2" for="combo">Комбинированная</label>
 									</div>
 									<div class="inpbox">
-										<input type="checkbox" id="full-color" name="cover-type">
-										<label for="full-color">Полноцветная</label>
+										<input type="radio" id="full-color" name="cover-type">
+										<label data-id="var-cover" data-taba="3" for="full-color">Полноцветная</label>
 									</div>
 								</div><!--constructor__cover-type-->
 								<div class="constructor__combo-type">
@@ -150,8 +149,8 @@
 								<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font constructor__cover-type_nomgb">
 									<span class="inp-label">Дополнительные опции обложки</span>
 									<div class="inpbox inpbox1">
-										<input type="checkbox" id="firmware" name="cover-type">
-										<label for="firmware">Прошивка по периметру</label>
+										<input type="checkbox" id="firmware2" name="cover-type">
+										<label for="firmware2">Прошивка по периметру</label>
 									</div>
 								</div><!--constructor__cover-type-->
 								<div class="constructor__string">
@@ -187,182 +186,160 @@
 										<label for="folg">С фольгой</label>
 									</div>
 								</div><!--constructor__cover-type-->
-								<div class="material">
-									<div class="material__tabs">
-										<div data-id="material__colors" data-taba="1" class="tab act">Материал 1</div>
-										<div data-id="material__colors" data-taba="2" class="tab">Материал 2</div>
-									</div>
-									<div class="material__cont-wrap">
-										<select class="styler material__select">
-											<option>Небраска</option>
-											<option>Каприс</option>
-										</select>
-										<div id="material__colors" class="material__colors">
-											<div data-taba="1" class="material__box"><img src="img/mat.png" alt=""></div>
-											<div data-taba="2" class="material__box"><img src="img/mat.png" alt=""></div>
+								<div id="var-cover" class="var-cover">
+									<div data-taba="1" class="simple-wrap">
+									<div class="material">
+										<div class="material__tabs">
+											<div data-id="material__colors_simple" data-taba="1" class="tab act">Материал 1</div>
 										</div>
-									</div><!--material__cont-wrap-->
-								</div><!--material-->
-								<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
-									<div class="string-left">
-										<div class="string-name mr-20">Петелька</div>
-										<div class="inpbox inpbox_mb inpbox_flex">
-										<input id="petelka" name="cover-type" type="checkbox">
-										<label for="petelka">Да</label>
-									</div>
-									</div>
-									<div class="color-box__wrap">
-										<div class="title">Цвет петельки</div>
-										<div class="color-box">
-											<a class="item pink1"></a>
-											<a class="item purple2"></a>
-											<a class="item green1"></a>
-											<a class="item green2"></a>
-											<a class="item purple1"></a>
-											<a class="item blue2"></a>
-											<a class="item grey2"></a>
-											<a class="item blue1"></a>
-											<a class="item brown1"></a>
-											<a class="item black"></a>
-											<a class="item grey1"></a>
-											<a class="item yellow"></a>
+										<div class="material__cont-wrap">
+											<select class="styler material__select">
+												<option data-id="material__colors_simple" data-taba="1">Вивелла</option>
+												<option data-id="material__colors_simple" data-taba="2">Каприс</option>
+											</select>
+											<div id="material__colors_simple" class="material__colors">
+												<div data-taba="1" class="material__box">
+													<div data-id="basis-color__vivella" data-taba="1" class="color-picker viv1"></div>
+													<div data-id="basis-color__vivella" data-taba="2" class="color-picker viv2"></div>
+													<div data-id="basis-color__vivella" data-taba="3" class="color-picker viv3"></div>
+													<div data-id="basis-color__vivella" data-taba="4" class="color-picker viv4"></div>
+													<div data-id="basis-color__vivella" data-taba="5" class="color-picker viv5"></div>
+													<div data-id="basis-color__vivella" data-taba="6" class="color-picker viv6"></div>
+													<div data-id="basis-color__vivella" data-taba="7" class="color-picker viv7"></div>
+													<div data-id="basis-color__vivella" data-taba="8" class="color-picker viv8"></div>
+													<div data-id="basis-color__vivella" data-taba="9" class="color-picker viv9"></div>
+													<div data-id="basis-color__vivella" data-taba="10" class="color-picker viv10"></div>
+													<div data-id="basis-color__vivella" data-taba="11" class="color-picker viv11"></div>
+													<div data-id="basis-color__vivella" data-taba="12" class="color-picker viv12"></div>
+													<div data-id="basis-color__vivella" data-taba="13" class="color-picker viv13"></div>
+													<div data-id="basis-color__vivella" data-taba="14" class="color-picker viv14"></div>
+													<div data-id="basis-color__vivella" data-taba="15" class="color-picker viv15"></div>
+													<div data-id="basis-color__vivella" data-taba="16" class="color-picker viv16"></div>
+													<div data-id="basis-color__vivella" data-taba="17" class="color-picker viv17"></div>
+													<div data-id="basis-color__vivella" data-taba="18" class="color-picker viv18"></div>
+													<div data-id="basis-color__vivella" data-taba="19" class="color-picker viv19"></div>
+													<div data-id="basis-color__vivella" data-taba="20" class="color-picker viv20"></div>
+													<div data-id="basis-color__vivella" data-taba="21" class="color-picker viv21"></div>
+												</div>
+												<div data-taba="2" class="material__box">
+													<div data-id="basis-color__kapris" data-taba="1" class="color-picker a278"></div>
+													<div data-id="basis-color__kapris" data-taba="2" class="color-picker a322"></div>
+													<div data-id="basis-color__kapris" data-taba="3" class="color-picker a324"></div>
+													<div data-id="basis-color__kapris" data-taba="4" class="color-picker a325"></div>
+													<div data-id="basis-color__kapris" data-taba="5" class="color-picker a330"></div>
+													<div data-id="basis-color__kapris" data-taba="6" class="color-picker a331"></div>
+													<div data-id="basis-color__kapris" data-taba="7" class="color-picker nero"></div>
+												</div>
+											</div>
+										</div><!--material__cont-wrap-->
+									</div><!--material-->
+								</div><!--simple-wrap-->
+									<div data-taba="2" class="combine-wrap">
+									<div class="material">
+										<div class="material__tabs">
+											<div data-id="material__colors" data-taba="1" class="tab act">Материал 1</div>
+											<div data-id="material__colors" data-taba="2" class="tab">Материал 2</div>
 										</div>
-									</div>
-								</div><!--constructor__string-->
-								<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
-									<div class="string-left">
-										<div class="string-name mr-20">Резинка</div>
-										<div class="inpbox inpbox_mb inpbox_flex">
+										<div class="material__cont-wrap">
+											<select class="styler material__select">
+												<option>Небраска</option>
+												<option>Каприс</option>
+											</select>
+											<div id="material__colors" class="material__colors">
+												<div data-taba="1" class="material__box"><img src="img/mat.png" alt=""></div>
+												<div data-taba="2" class="material__box">p<img src="img/mat.png" alt=""></div>
+											</div>
+										</div><!--material__cont-wrap-->
+									</div><!--material-->
+									<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+										<div class="string-left">
+											<div class="string-name mr-20">Петелька</div>
+											<div class="inpbox inpbox_mb inpbox_flex">
 											<input id="petelka" name="cover-type" type="checkbox">
-											<label for="petelka">Нет</label>
+											<label for="petelka">Да</label>
 										</div>
-									</div>
-									<div class="color-box__wrap">
-										<div class="title">Цвет петельки</div>
-										<div class="color-box">
-											<a class="item pink1"></a>
-											<a class="item purple2"></a>
-											<a class="item green1"></a>
-											<a class="item green2"></a>
-											<a class="item purple1"></a>
-											<a class="item blue2"></a>
-											<a class="item grey2"></a>
-											<a class="item blue1"></a>
-											<a class="item brown1"></a>
-											<a class="item black"></a>
-											<a class="item grey1"></a>
-											<a class="item yellow"></a>
 										</div>
-									</div>
-									<div class="box-wrap2">
-										<div class="inpbox inpbox_mb inpbox_flex">
-											<input id="plosk" name="cover-type" type="checkbox">
-											<label for="plosk">Плоская</label>
+										<div class="color-box__wrap">
+											<div class="title">Цвет петельки</div>
+											<div class="color-box">
+												<a class="item pink1"></a>
+												<a class="item purple2"></a>
+												<a class="item green1"></a>
+												<a class="item green2"></a>
+												<a class="item purple1"></a>
+												<a class="item blue2"></a>
+												<a class="item grey2"></a>
+												<a class="item blue1"></a>
+												<a class="item brown1"></a>
+												<a class="item black"></a>
+												<a class="item grey1"></a>
+												<a class="item yellow"></a>
+											</div>
 										</div>
-										<div class="inpbox inpbox_mb inpbox_flex">
-											<input id="6mm" name="cover-type" type="checkbox">
-											<label for="6mm">6 мм.</label>
+									</div><!--constructor__string-->
+									<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+										<div class="string-left">
+											<div class="string-name mr-20">Резинка</div>
+											<div class="inpbox inpbox_mb inpbox_flex">
+												<input id="petelka" name="cover-type" type="checkbox">
+												<label for="petelka">Нет</label>
+											</div>
 										</div>
-										<div class="inpbox inpbox_mb inpbox_flex">
-											<input id="12mm" name="cover-type" type="checkbox">
-											<label for="12mm">12 мм.</label>
+										<div class="color-box__wrap">
+											<div class="title">Цвет петельки</div>
+											<div class="color-box">
+												<a class="item pink1"></a>
+												<a class="item purple2"></a>
+												<a class="item green1"></a>
+												<a class="item green2"></a>
+												<a class="item purple1"></a>
+												<a class="item blue2"></a>
+												<a class="item grey2"></a>
+												<a class="item blue1"></a>
+												<a class="item brown1"></a>
+												<a class="item black"></a>
+												<a class="item grey1"></a>
+												<a class="item yellow"></a>
+											</div>
 										</div>
-										<div class="inpbox inpbox_mb inpbox_flex">
-											<input id="krug" name="cover-type" type="checkbox">
-											<label for="krug">Круглая</label>
+										<div class="box-wrap2">
+											<div class="inpbox inpbox_mb inpbox_flex">
+												<input id="plosk" name="cover-type" type="checkbox">
+												<label for="plosk">Плоская</label>
+											</div>
+											<div class="inpbox inpbox_mb inpbox_flex">
+												<input id="6mm" name="cover-type" type="checkbox">
+												<label for="6mm">6 мм.</label>
+											</div>
+											<div class="inpbox inpbox_mb inpbox_flex">
+												<input id="12mm" name="cover-type" type="checkbox">
+												<label for="12mm">12 мм.</label>
+											</div>
+											<div class="inpbox inpbox_mb inpbox_flex">
+												<input id="krug" name="cover-type" type="checkbox">
+												<label for="krug">Круглая</label>
+											</div>
 										</div>
-									</div>
-								</div><!--constructor__string-->
-								<div class="constructor__cover-type constructor__cover-type_flex no-border constructor__cover-type_label-font">
-									<span class="inp-label">Металлические уголки</span>
-									<div class="inpbox inpbox1">
-										<input id="blint" name="cover-type" type="checkbox">
-										<label for="blint">2 шт.</label>
-									</div>
-									<div class="inpbox">
-										<input id="folg" name="cover-type" type="checkbox">
-										<label for="folg">4 шт.</label>
-									</div>
-								</div><!--constructor__cover-type-->
-							</div><!--combine-wrap-->
-							<div class="simple-wrap">
-								<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font">
-									<span class="inp-label">Варианты обложки</span>
-									<div class="inpbox inpbox1">
-										<input type="checkbox" id="simple" name="cover-type">
-										<label for="simple">Простая</label>
-									</div>
-									<div class="inpbox">
-										<input type="checkbox" id="combo" name="cover-type">
-										<label for="combo">Комбинированная</label>
-									</div>
-									<div class="inpbox">
-										<input type="checkbox" id="full-color" name="cover-type">
-										<label for="full-color">Полноцветная</label>
-									</div>
-								</div><!--constructor__cover-type-->
-								<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font">
-									<span class="inp-label">Дополнительные опции обложки</span>
-									<div class="inpbox inpbox1">
-										<input type="checkbox" id="simple" name="cover-type">
-										<label for="simple">Прошивка по периметру</label>
-									</div>
-								</div><!--constructor__cover-type-->
-								<div class="constructor__string">
-									<span>Цвет ниток</span>
-									<div class="color-box">
-										<a class="item brown1"></a>
-										<a class="item brown3"></a>
-										<a class="item orange1"></a>
-										<a class="item orange2"></a>
-										<a class="item red1"></a>
-										<a class="item pink1"></a>
-										<a class="item purple2"></a>
-										<a class="item green1"></a>
-										<a class="item green2"></a>
-										<a class="item purple1"></a>
-										<a class="item blue2"></a>
-										<a class="item grey2"></a>
-										<a class="item blue1"></a>
-										<a class="item brown2"></a>
-										<a class="item black"></a>
-										<a class="item grey1"></a>
-										<a class="item yellow"></a>
-									</div>
-								</div>
-								<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font">
-									<span class="inp-label">Тиснение</span>
-									<div class="inpbox inpbox1">
-										<input type="checkbox" id="simple" name="cover-type">
-										<label for="simple">Блинтовое</label>
-									</div>
-									<div class="inpbox">
-										<input type="checkbox" id="simple" name="cover-type">
-										<label for="simple">С фольгой</label>
-									</div>
-									
-								</div><!--constructor__cover-type-->
-								<div class="material">
-									<div class="material__tabs">
-										<div data-id="material__colors_simple" data-taba="1" class="tab act">Материал 1</div>
-									</div>
-									<div class="material__cont-wrap">
-										<select class="styler material__select">
-											<option>Небраска</option>
-											<option>Каприс</option>
-										</select>
-										<div id="material__colors_simple" class="material__colors">
-											<div data-taba="1" class="material__box"><img src="img/mat.png" alt=""></div>
+									</div><!--constructor__string-->
+									<div class="constructor__cover-type constructor__cover-type_flex no-border constructor__cover-type_label-font">
+										<span class="inp-label">Металлические уголки</span>
+										<div class="inpbox inpbox1">
+											<input id="blint" name="cover-type" type="checkbox">
+											<label for="blint">2 шт.</label>
 										</div>
-									</div><!--material__cont-wrap-->
-								</div><!--material-->
-							</div>
+										<div class="inpbox">
+											<input id="folg" name="cover-type" type="checkbox">
+											<label for="folg">4 шт.</label>
+										</div>
+									</div><!--constructor__cover-type-->
+								</div><!--combine-wrap-->
+								</div><!--var-cover-->
 						</div><!--constructor__main-->
 						<div class="nav-submit">
-							<button type="button" class="button constructor__submit constructor__submit_prev">
+							<button data-id="constructor__center" data-taba="1" type="button" class="button constructor__submit constructor__submit_prev">
 								<span><i class="fa fa-angle-left"></i>Предыдущий шаг</span>
 							</button>
-							<button type="button" class="button constructor__submit">
+							<button data-id="constructor__center" data-taba="3" type="button" class="button constructor__submit">
 								<span>Следующий шаг<i class="fa fa-angle-right"></i></span>
 							</button>
 						</div>
@@ -435,12 +412,12 @@
 									<div class="string-name mr-20">Форзац</div>
 									<div class="inpbox inpbox_mb inpbox_flex">
 									<input id="forzac" name="cover-type" type="checkbox">
-									<label for="forzac">Стандарт</label>
+									<label class="forzac-click" for="forzac">Стандарт</label>
 								</div>
 								</div>
 								<div class="color-box__wrap">
 									<div class="title">Индивидуальный</div>
-									<div class="color-box">
+									<div class="color-box color-box_forzac">
 										<a class="item pink1"></a>
 										<a class="item purple2"></a>
 										<a class="item green1"></a>
@@ -453,6 +430,7 @@
 										<a class="item black"></a>
 										<a class="item grey1"></a>
 										<a class="item yellow"></a>
+										<div class="disable-block"></div>
 									</div>
 								</div>
 							</div><!--constructor__string-->
@@ -523,10 +501,10 @@
 								</div>
 							</div>
 							<div class="nav-submit">
-							<button type="button" class="button constructor__submit constructor__submit_prev">
+							<button data-id="constructor__center" data-taba="2" type="button" class="button constructor__submit constructor__submit_prev">
 								<span><i class="fa fa-angle-left"></i>Предыдущий шаг</span>
 							</button>
-							<button type="button" class="button constructor__submit">
+							<button data-id="constructor__center" data-taba="4" type="button" class="button constructor__submit">
 								<span>Следующий шаг<i class="fa fa-angle-right"></i></span>
 							</button>
 						</div>
@@ -585,7 +563,7 @@
 							<textarea class="textarea" placeholder="Опишите здесь свои пожелания к макету..."></textarea>
 						</div>
 						<div class="nav-submit">
-							<button type="button" class="button constructor__submit constructor__submit_prev">
+							<button data-id="constructor__center" data-taba="3" type="button" class="button constructor__submit constructor__submit_prev">
 								<span><i class="fa fa-angle-left"></i>Предыдущий шаг</span>
 							</button>
 							<button type="submit" class="button constructor__submit">
@@ -596,7 +574,42 @@
 				</form><!--constructor__center-->
 				<div class="constructor__right">
 					<div class="book-model">
-						<div class="basis"><img src="http://placehold.it/354x471" alt=""></div>
+						<div id="basis" class="basis">
+							<div id="basis-color__vivella" class="basis-color basis-color__vivella">
+								<div data-taba="1" class="basis-color__item basis-color__1"><img src="img/vivella/egednevnik_1.png" alt=""></div>
+								<div data-taba="2" class="basis-color__item basis-color__2"><img src="img/vivella/egednevnik_2.png" alt=""></div>
+								<div data-taba="3" class="basis-color__item basis-color__3"><img src="img/vivella/egednevnik_3.png" alt=""></div>
+								<div data-taba="4" class="basis-color__item basis-color__4"><img src="img/vivella/egednevnik_4.png" alt=""></div>
+								<div data-taba="5" class="basis-color__item basis-color__5"><img src="img/vivella/egednevnik_5.png" alt=""></div>
+								<div data-taba="6" class="basis-color__item basis-color__6"><img src="img/vivella/egednevnik_6.png" alt=""></div>
+								<div data-taba="7" class="basis-color__item basis-color__7"><img src="img/vivella/egednevnik_7.png" alt=""></div>
+								<div data-taba="8" class="basis-color__item basis-color__8"><img src="img/vivella/egednevnik_8.png" alt=""></div>
+								<div data-taba="9" class="basis-color__item basis-color__9"><img src="img/vivella/egednevnik_9.png" alt=""></div>
+								<div data-taba="10" class="basis-color__item basis-color__10"><img src="img/vivella/egednevnik_10.png" alt=""></div>
+								<div data-taba="11" class="basis-color__item basis-color__11"><img src="img/vivella/egednevnik_11.png" alt=""></div>
+								<div data-taba="12" class="basis-color__item basis-color__12"><img src="img/vivella/egednevnik_12.png" alt=""></div>
+								<div data-taba="13" class="basis-color__item basis-color__13"><img src="img/vivella/egednevnik_13.png" alt=""></div>
+								<div data-taba="14" class="basis-color__item basis-color__14"><img src="img/vivella/egednevnik_14.png" alt=""></div>
+								<div data-taba="15" class="basis-color__item basis-color__15"><img src="img/vivella/egednevnik_15.png" alt=""></div>
+								<div data-taba="16" class="basis-color__item basis-color__16"><img src="img/vivella/egednevnik_16.png" alt=""></div>
+								<div data-taba="17" class="basis-color__item basis-color__17"><img src="img/vivella/egednevnik_17.png" alt=""></div>
+								<div data-taba="18" class="basis-color__item basis-color__18"><img src="img/vivella/egednevnik_18.png" alt=""></div>
+								<div data-taba="19" class="basis-color__item basis-color__19"><img src="img/vivella/egednevnik_19.png" alt=""></div>
+								<div data-taba="20" class="basis-color__item basis-color__20"><img src="img/vivella/egednevnik_20.png" alt=""></div>
+								<div data-taba="21" class="basis-color__item basis-color__21"><img src="img/vivella/egednevnik_21.png" alt=""></div>
+								<div class="basis-color__skin basis-color__skin_vivella"><img src="img/vivella/vivella-skin.png" alt=""></div>
+							</div>
+							<div id="basis-color__kapris" class="basis-color basis-color__kapris">
+								<div data-taba="1" class="basis-color__item basis-color__1"><img src="img/kapris/A278.png" alt=""></div>
+								<div data-taba="2" class="basis-color__item basis-color__1"><img src="img/kapris/A322.png" alt=""></div>
+								<div data-taba="3" class="basis-color__item basis-color__1"><img src="img/kapris/A324.png" alt=""></div>
+								<div data-taba="4" class="basis-color__item basis-color__1"><img src="img/kapris/A325.png" alt=""></div>
+								<div data-taba="5" class="basis-color__item basis-color__1"><img src="img/kapris/A330.png" alt=""></div>
+								<div data-taba="6" class="basis-color__item basis-color__1"><img src="img/kapris/A331.png" alt=""></div>
+								<div data-taba="7" class="basis-color__item basis-color__1"><img src="img/kapris/nero.png" alt=""></div>
+								<div class="basis-color__skin basis-color__skin_vivella"><img src="img/kapris/kapris.png" alt=""></div>
+							</div>
+						</div>
 					</div>
 					<div class="book-model-name">
 						<span>
