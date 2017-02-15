@@ -526,8 +526,7 @@ textarea:focus:-ms-input-placeholder {
 
 .constructor {
   width: 1260px;
-  margin: 25px auto 0 auto;
-  overflow: hidden; }
+  margin: 25px auto 0 auto; }
   .constructor__top-nav {
     height: 61px;
     display: -webkit-box;
