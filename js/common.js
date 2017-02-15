@@ -10,7 +10,19 @@ $(function() {
         });
         $('#' + id + ' > [data-taba="' + taba + '"]').show().addClass('flex').siblings().hide().removeClass('flex');
     });
-	
+		
+		$(document).on('click', '[data-class]', function () {
+        var clas = $(this).attr('data-class');
+        var taba = $(this).attr('data-taba');
+        $('[data-id="' + clas + '"]').each(function () {
+            if ($(this).attr('data-taba') == taba) {
+                $(this).addClass('act').siblings().removeClass('act');
+            }
+        });
+        $('.' + clas + ' > [data-taba="' + taba + '"]').show().siblings().hide();
+    });
+		
+		
 		//slick
 		$('.constructor__combo-slider').slick({
 			infinite: true,

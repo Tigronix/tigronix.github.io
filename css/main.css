@@ -9,75 +9,74 @@
   margin-right: 20px; }
 
 /****COLORS****/
-/***Vivella***/
-.viv1 {
-  background: #C89777; }
+.c-4700 {
+  background: #5c3135; }
 
-.viv2 {
-  background: #90513F; }
+.c-4916 {
+  background: #c89777; }
 
-.viv3 {
-  background: #5C3135; }
+.c-4890 {
+  background: #20367d; }
 
-.viv4 {
-  background: #FFCE2F; }
+.c-4872 {
+  background: #a31120; }
 
-.viv5 {
-  background: #E35D3B; }
+.c-4741 {
+  background: #e35d3b; }
 
-.viv6 {
-  background: #A31120; }
+.c-4720 {
+  background: #1d5340; }
 
-.viv7 {
-  background: #DD3259; }
+.c-4716 {
+  background: #2d376b; }
 
-.viv8 {
-  background: #E44D8D; }
+.c-4714 {
+  background: #90513f; }
 
-.viv9 {
-  background: #70385F; }
+.a967 {
+  background: #b5bd87; }
 
-.viv10 {
-  background: #7679A3; }
+.b920 {
+  background: #dd3259; }
 
-.viv11 {
-  background: #2D9AD5; }
+.b923 {
+  background: #7679a3; }
 
-.viv12 {
-  background: #20367D; }
+.d162 {
+  background: #b8e759; }
 
-.viv13 {
-  background: #2D376B; }
+.d512 {
+  background: #ababac; }
 
-.viv14 {
-  background: #1D5340; }
-
-.viv15 {
-  background: #1DD047; }
-
-.viv16 {
-  background: #B8E759; }
-
-.viv17 {
-  background: #B8E759; }
-
-.viv18 {
-  background: #F9F9F9; }
-
-.viv19 {
-  background: #ABABAC; }
-
-.viv20 {
+.d519 {
   background: #868789; }
 
-.viv21 {
+.e280 {
+  background: #ffce2f; }
+
+.e478 {
+  background: #1dd047; }
+
+.e480 {
+  background: #70385f; }
+
+.f002 {
+  background: #e44d8d; }
+
+.f003 {
+  background: #2d9ad5; }
+
+.nero {
   background: #000000; }
 
+.white {
+  background: #f9f9f9; }
+
 .a278 {
-  background: #265033; }
+  background: #b0a285; }
 
 .a322 {
-  background: #673a27; }
+  background: #265033; }
 
 .a324 {
   background: #7a2638; }
@@ -91,8 +90,218 @@
 .a331 {
   background: #89878c; }
 
-.nero {
-  background: #000000; }
+.b561 {
+  background: #753b15; }
+
+.b562 {
+  background: #4c1e18; }
+
+.b564 {
+  background: #8b1818; }
+
+.b566 {
+  background: #2b472e; }
+
+.b568 {
+  background: #2f3c4c; }
+
+.a370 {
+  background: #5f3234; }
+
+.a279 {
+  background: #743e2a; }
+
+.c-4872 {
+  background: #cd2c29; }
+
+.c-4890 {
+  background: #324394; }
+
+.d613m {
+  background: #dcdcdc; }
+
+.f355 {
+  background: #435394; }
+
+.f358 {
+  background: #808074; }
+
+.f359 {
+  background: #595956; }
+
+.c-4401 {
+  background: #f9e99a; }
+
+.c-4407 {
+  background: #bebebe; }
+
+.a737 {
+  background: #457ee8; }
+
+.e324 {
+  background: #88724c; }
+
+.e328 {
+  background: #533329; }
+
+.e329 {
+  background: #5c1725; }
+
+.e331 {
+  background: #212d41; }
+
+.e332 {
+  background: #444444; }
+
+.e337 {
+  background: #156549; }
+
+.e044 {
+  background: #d0449f; }
+
+.f311 {
+  background: #ffce2f; }
+
+.f313 {
+  background: #1390e4; }
+
+.f319 {
+  background: #37ca32; }
+
+.b633m {
+  background: #00b271; }
+
+.b634m {
+  background: #63888b; }
+
+.b636m {
+  background: #695075; }
+
+.c-077 {
+  background: #f0f0f0; }
+
+.a220 {
+  background: #743e2a; }
+
+.a222 {
+  background: #9a2222; }
+
+.a223 {
+  background: #7a2833; }
+
+.a224 {
+  background: #226b4a; }
+
+.a226 {
+  background: #272f68; }
+
+.a227 {
+  background: #2a3244; }
+
+.a229 {
+  background: #2a4130; }
+
+.a837 {
+  background: #e0583c; }
+
+.d135m {
+  background: #596260; }
+
+.d140 {
+  background: #2b6daf; }
+
+.d148 {
+  background: #bb6a94; }
+
+.d155 {
+  background: #129fac; }
+
+.c-026 {
+  background: #d89ea6; }
+
+.c-049 {
+  background: #5174a9; }
+
+.c-083 {
+  background: #9a5388; }
+
+.b113m {
+  background: #6b323a; }
+
+.b116m {
+  background: #4a6085; }
+
+.b122m {
+  background: #4d4d4d; }
+
+.f125 {
+  background: #6e5f58; }
+
+.f126 {
+  background: #6a6f66; }
+
+.f176 {
+  background: #624235; }
+
+.d900 {
+  background: #50111d; }
+
+.d901 {
+  background: #53271f; }
+
+.d923 {
+  background: #1a2f22; }
+
+.d926 {
+  background: #94180f; }
+
+.d945m {
+  background: #e16d29; }
+
+.d947m {
+  background: #153b5c; }
+
+.a976 {
+  background: #e8b781; }
+
+.a977 {
+  background: #82552c; }
+
+.a978 {
+  background: #6b3e33; }
+
+.a979 {
+  background: #4e2623; }
+
+.f336 {
+  background: #b0a285; }
+
+.f340 {
+  background: #774545; }
+
+.f341 {
+  background: #65574d; }
+
+.f355 {
+  background: #334c8b; }
+
+.f356 {
+  background: #375057; }
+
+.f441 {
+  background: #582a31; }
+
+.f444 {
+  background: #153053; }
+
+.f155 {
+  background: #81887d; }
+
+.f156 {
+  background: #7d7170; }
+
+.f157 {
+  background: #884b41; }
 
 .border-bot {
   border-bottom: 1px solid #d8d8d8;
