@@ -1152,8 +1152,7 @@ textarea:focus:-ms-input-placeholder {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    padding-left: 9px;
-    border: none; }
+    padding-left: 9px; }
   .material__select .jq-selectbox__dropdown {
     position: absolute;
     left: -1px;
@@ -1170,7 +1169,7 @@ textarea:focus:-ms-input-placeholder {
       transition: background .4s; }
       .material__select .jq-selectbox__dropdown li:hover {
         background: #ccc; }
-  .material__select .jq-selectbox__trigger {
+  .material__select:after {
     width: 17px;
     display: block;
     content: '';
@@ -1180,9 +1179,7 @@ textarea:focus:-ms-input-placeholder {
     bottom: 0;
     background: #e1e1e1 url(../img/angle-down.svg) no-repeat center;
     background-size: 10px auto;
-    border-left: 1px solid #adadad; }
-    .material__select .jq-selectbox__trigger div {
-      display: none; }
+    border: 1px solid #adadad; }
 
 .material__select_width1 {
   width: 57px; }
