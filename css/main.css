@@ -846,10 +846,21 @@ textarea:focus:-ms-input-placeholder {
         bottom: 0;
         right: 0;
         z-index: 5;
-        background: url(../img/); }
+        display: none; }
+        .constructor__right .book-model .basis:first-child {
+          display: block; }
+        .constructor__right .book-model .basis_planing .basis-color img {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: -80.5px; }
+        .constructor__right .book-model .basis_planing .basis-color__skin img {
+          margin-top: -75px; }
     .constructor__right .basis-color {
       position: relative;
-      display: none; }
+      display: none;
+      height: 100%; }
       .constructor__right .basis-color:first-child {
         display: block; }
     .constructor__right .basis-color__skin {
@@ -860,7 +871,8 @@ textarea:focus:-ms-input-placeholder {
       bottom: 0;
       display: block !important; }
     .constructor__right .basis-color__item {
-      display: none; }
+      display: none;
+      height: 100%; }
       .constructor__right .basis-color__item:first-child {
         display: block; }
     .constructor__right .book-model-name {
