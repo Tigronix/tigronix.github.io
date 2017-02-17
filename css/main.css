@@ -1181,6 +1181,8 @@ textarea:focus:-ms-input-placeholder {
             border-radius: 0 0 3px 3px;
     z-index: 999;
     background: #fff; }
+    .material__select .jq-selectbox__dropdown ul {
+      height: 180px !important; }
     .material__select .jq-selectbox__dropdown li {
       padding: 5px 0 5px 9px;
       -webkit-transition: background .4s;

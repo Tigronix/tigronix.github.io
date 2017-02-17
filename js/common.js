@@ -24,7 +24,7 @@ $(function() {
     });
 		
 	//combo-main-tab
-	var tabCheck = $('.combo-main-tab').prop('checked');
+	/*var tabCheck = $('.combo-main-tab').prop('checked');
 	$('.combo-main-tab').click(function(){
 		console.log(tabCheck);
 		if (tabCheck = true) {
@@ -39,6 +39,19 @@ $(function() {
 	$('.combo-off').click(function(){
 		$('.basis-comb-wrap').hide();
 		$('.firmware').hide();
+	});
+	*/
+$(document).on('change', '[name="cover-types"]', function () {
+		var xz = $(this).val();
+	console.log(xz);
+		if(xz == 'combo') {
+			$('.basis-comb-wrap').show();
+			$('.firmware').show();
+		}
+		else {
+			$('.basis-comb-wrap').hide();
+			$('.firmware').hide();
+		}
 	});
 	
 	//slick
