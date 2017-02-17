@@ -29,13 +29,16 @@ $(function() {
 		console.log(tabCheck);
 		if (tabCheck = true) {
 		$('.basis-comb-wrap').show();
+		$('.firmware').show();
 		}
 		else {
 			$('.basis-comb-wrap').hide();
+			$('.firmware').hide();
 		}	
 	});
 	$('.combo-off').click(function(){
 		$('.basis-comb-wrap').hide();
+		$('.firmware').hide();
 	});
 	
 	//slick

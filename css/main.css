@@ -1458,6 +1458,7 @@ textarea:focus:-ms-input-placeholder {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 15; }
+  z-index: 15;
+  display: none; }
   .firmware-item {
     text-align: center; }
