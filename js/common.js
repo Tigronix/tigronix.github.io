@@ -23,6 +23,19 @@ $(function() {
         $('.' + clas + ' > [data-taba="' + taba + '"]').show().siblings().hide();
     });
 		
+		//class-tab
+		$(document).on('click', '[data-class_2]', function () {
+        var clas = $(this).attr('data-class_2');
+        var taba = $(this).attr('data-taba_2');
+        $('[data-id="' + clas + '"]').each(function () {
+            if ($(this).attr('data-taba_2') == taba) {
+                $(this).addClass('act').siblings().removeClass('act');
+            }
+        });
+        $('.' + clas + ' > [data-taba_2="' + taba + '"]').show().siblings().hide();
+    });
+		
+		
 	//combo-main-tab
 	/*var tabCheck = $('.combo-main-tab').prop('checked');
 	$('.combo-main-tab').click(function(){

@@ -1434,7 +1434,7 @@ textarea:focus:-ms-input-placeholder {
 
 .var-cover > div {
   display: none; }
-  .var-cover > div:nth-child(2) {
+  .var-cover > div:nth-child(1) {
     display: block; }
 
 /*material__comb-wrap_2*/
