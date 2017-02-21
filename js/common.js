@@ -1,63 +1,101 @@
 $(function() {
-		//Universal Tabs
-    $(document).on('click', '[data-id]', function () {
-        var id = $(this).attr('data-id');
-        var taba = $(this).attr('data-taba');
-        $('[data-id="' + id + '"]').each(function () {
-            if ($(this).attr('data-taba') == taba) {
-                $(this).addClass('act').siblings().removeClass('act');
-            }
-        });
-        $('#' + id + ' > [data-taba="' + taba + '"]').show().addClass('flex').siblings().hide().removeClass('flex');
-    });
-		
-		//class-tab
-		$(document).on('click', '[data-class]', function () {
-        var clas = $(this).attr('data-class');
-        var taba = $(this).attr('data-taba');
-        $('[data-id="' + clas + '"]').each(function () {
-            if ($(this).attr('data-taba') == taba) {
-                $(this).addClass('act').siblings().removeClass('act');
-            }
-        });
-        $('.' + clas + ' > [data-taba="' + taba + '"]').show().siblings().hide();
-    });
-		
-		//class-tab
-		$(document).on('click', '[data-class_2]', function () {
-        var clas = $(this).attr('data-class_2');
-        var taba = $(this).attr('data-taba_2');
-        $('[data-id="' + clas + '"]').each(function () {
-            if ($(this).attr('data-taba_2') == taba) {
-                $(this).addClass('act').siblings().removeClass('act');
-            }
-        });
-        $('.' + clas + ' > [data-taba_2="' + taba + '"]').show().siblings().hide();
-    });
-		
-		
-	//combo-main-tab
-	/*var tabCheck = $('.combo-main-tab').prop('checked');
-	$('.combo-main-tab').click(function(){
-		console.log(tabCheck);
-		if (tabCheck = true) {
-		$('.basis-comb-wrap').show();
-		$('.firmware').show();
-		}
-		else {
-			$('.basis-comb-wrap').hide();
-			$('.firmware').hide();
-		}	
+		var summBlock_1 = parseInt($('.block-types_1:checked').val());
+		var summBlock_2 = parseInt($('.block-types_2:checked').val());
+		var summBlock_3 = parseInt($('.block-types_3:checked').val());
+	//Universal Tabs
+	$(document).on('click', '[data-id]', function () {
+			var id = $(this).attr('data-id');
+			var taba = $(this).attr('data-taba');
+			$('[data-id="' + id + '"]').each(function () {
+					if ($(this).attr('data-taba') == taba) {
+							$(this).addClass('act').siblings().removeClass('act');
+					}
+			});
+			$('#' + id + ' > [data-taba="' + taba + '"]').show().addClass('flex').siblings().hide().removeClass('flex');
 	});
-	$('.combo-off').click(function(){
-		$('.basis-comb-wrap').hide();
-		$('.firmware').hide();
+
+	//class-tab
+	$(document).on('click', '[data-class]', function () {
+			var clas = $(this).attr('data-class');
+			var taba = $(this).attr('data-taba');
+			$('[data-id="' + clas + '"]').each(function () {
+					if ($(this).attr('data-taba') == taba) {
+							$(this).addClass('act').siblings().removeClass('act');
+					}
+			});
+			$('.' + clas + ' > [data-taba="' + taba + '"]').show().siblings().hide();
 	});
-	*/
-$(document).on('change', '[name="cover-types"]', function () {
-		var xz = $(this).val();
-	console.log(xz);
-		if(xz == 'combo') {
+
+	//class-tab
+	$(document).on('click', '[data-class_2]', function () {
+			var clas = $(this).attr('data-class_2');
+			var taba = $(this).attr('data-taba_2');
+			$('[data-id="' + clas + '"]').each(function () {
+					if ($(this).attr('data-taba_2') == taba) {
+							$(this).addClass('act').siblings().removeClass('act');
+					}
+			});
+			$('.' + clas + ' > [data-taba_2="' + taba + '"]').show().siblings().hide();
+	});
+	
+	//calc	
+	$(document).on('change', '.varRadio', function () {		
+		var score = 0;
+		$(".varRadio:checked").each(function(){
+		score += parseInt($(this).val());
+		var summ = score += parseInt($(this).val());
+		console.log(summ);
+		$(".summ").val(summ);	
+		});
+	});
+				
+	$(document).on('change', '.block-types_1', function () {
+		$(".block-types_1:checked").each(function(){
+			var score = 0;
+			score += parseInt($(this).val());
+			var summBlock_1 = parseInt($(this).val());
+			console.log(summBlock_1);
+			$(".summBlock_1").val(summBlock_1);	
+		});
+	});
+	
+	$(document).on('change', '.block-types_2', function () {
+		$(".block-types_2:checked").each(function(){
+			var score = 0;
+			score += parseInt($(this).val());
+			var summBlock_2 = parseInt($(this).val());
+			console.log(summBlock_2);
+			$(".summBlock_2").val(summBlock_2);	
+		});
+	});
+	
+	$(document).on('change', '.block-types_3', function () {
+		var score = 0;
+		$(".block-types_3:checked").each(function(){
+		score += parseInt($(this).val());
+		var summBlock_3 = parseInt($(this).val());
+		console.log(summBlock_3);
+		$(".summBlock_3").val(summBlock_3);	
+		});
+	});
+	
+	$(document).on('change', '.varBlocks',  function () {	
+		var score = 0;
+		$(".varBlocks:checked").each(function(){
+		score += summBlock_1 += summBlock_2 += summBlock_3;
+		var summBlocks = score += summBlock_1 += summBlock_2 += summBlock_3;
+		console.log(summBlocks);
+		$(".summBlocks").val(summBlocks);	
+		});
+	});
+	
+	
+	
+	//cover-types
+	$(document).on('change', '[name="cover-types"]', function () {
+		var coverChange = $(this).val();
+		console.log(coverChange);
+		if(coverChange == 'combo') {
 			$('.basis-comb-wrap').show();
 			$('.firmware').show();
 		}
@@ -83,13 +121,38 @@ $(document).on('change', '[name="cover-types"]', function () {
 	})(jQuery);
 	
 	//color-box
-	$('.forzac-click').click(function(){
-		if ($('#forzac:checked')) {
-			$('.color-box_forzac').addClass('disable');
-		}
-		else {
-			$('.color-box_forzac').removeClass('disable');
-		}
+	$('#forzac').click(function(){
+		$('.disable-block_forzac').show();
 	});
-
+	$('#indForzac').click(function(){
+		$('.disable-block_forzac').hide();
+	});
+	
+	$('#nahzac').click(function(){
+		$('.disable-block_nahzac').show();
+	});
+	$('#indNahzac').click(function(){
+		$('.disable-block_nahzac').hide();
+	});
+	
+	$('#srez').click(function(){
+		$('.disable-block_srez').show();
+	});
+	$('#indSrez').click(function(){
+		$('.disable-block_srez').hide();
+	});
+	
+	
 });
+
+
+
+
+
+
+
+
+
+
+
+

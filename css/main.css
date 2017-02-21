@@ -1105,6 +1105,11 @@ textarea:focus:-ms-input-placeholder {
           margin-left: 0px; }
         .constructor__string .color-box .item:hover, .constructor__string .color-box .item:active, .constructor__string .color-box .item:focus {
           border: 2px solid #ffa500; }
+      .constructor__string .color-box .inpbox {
+        position: relative;
+        z-index: 10;
+        margin-left: 0;
+        margin-top: 3px; }
 
 .material__tabs {
   display: -webkit-box;
@@ -1275,7 +1280,8 @@ textarea:focus:-ms-input-placeholder {
     top: 0;
     right: 0;
     bottom: 0;
-    background: rgba(204, 204, 204, 0.6); }
+    background: rgba(204, 204, 204, 0.6);
+    z-index: 5; }
   .constructor__string .color-box__wrap .disable .disable-block {
     display: block; }
   .constructor__string .box-wrap2 {
@@ -1390,11 +1396,24 @@ textarea:focus:-ms-input-placeholder {
       color: #dc143c;
       font-weight: 900;
       background: #fff;
-      padding-left: 5px; }
+      padding-left: 5px;
+      border: none;
+      height: auto;
+      line-height: normal;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .line-text__line .value_black {
         font-size: 16px;
         font-weight: 500;
         color: #000; }
+      .line-text__line .value input {
+        max-width: 60px; }
 
 .download-maket {
   padding: 10px 14px;
