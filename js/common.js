@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 		var summBlock_1 = parseInt($('.block-types_1:checked').val());
 		var summBlock_2 = parseInt($('.block-types_2:checked').val());
 		var summBlock_3 = parseInt($('.block-types_3:checked').val());
@@ -27,6 +27,9 @@ $(function() {
 	});
 
 	//class-tab
+	
+	var summBlock_1, summBlock_2, summBlock_3;
+	
 	$(document).on('click', '[data-class_2]', function () {
 			var clas = $(this).attr('data-class_2');
 			var taba = $(this).attr('data-taba_2');
@@ -53,7 +56,7 @@ $(function() {
 		$(".block-types_1:checked").each(function(){
 			var score = 0;
 			score += parseInt($(this).val());
-			var summBlock_1 = parseInt($(this).val());
+			summBlock_1 = parseInt($(this).val());
 			console.log(summBlock_1);
 			$(".summBlock_1").val(summBlock_1);	
 		});
@@ -63,7 +66,7 @@ $(function() {
 		$(".block-types_2:checked").each(function(){
 			var score = 0;
 			score += parseInt($(this).val());
-			var summBlock_2 = parseInt($(this).val());
+			summBlock_2 = parseInt($(this).val());
 			console.log(summBlock_2);
 			$(".summBlock_2").val(summBlock_2);	
 		});
@@ -73,7 +76,7 @@ $(function() {
 		var score = 0;
 		$(".block-types_3:checked").each(function(){
 		score += parseInt($(this).val());
-		var summBlock_3 = parseInt($(this).val());
+		summBlock_3 = parseInt($(this).val());
 		console.log(summBlock_3);
 		$(".summBlock_3").val(summBlock_3);	
 		});
@@ -81,12 +84,11 @@ $(function() {
 	
 	$(document).on('change', '.varBlocks',  function () {	
 		var score = 0;
-		$(".varBlocks:checked").each(function(){
-		score += summBlock_1 += summBlock_2 += summBlock_3;
-		var summBlocks = score += summBlock_1 += summBlock_2 += summBlock_3;
-		console.log(summBlocks);
-		$(".summBlocks").val(summBlocks);	
-		});
+		var summa = summBlock_1 + summBlock_2 + summBlock_3;
+		console.log('====='+summBlock_1);
+		console.log('====='+summBlock_2);
+		console.log('====='+summBlock_3);
+		console.log('summa====='+summa);
 	});
 	
 	
@@ -142,17 +144,28 @@ $(function() {
 		$('.disable-block_srez').hide();
 	});
 	
+	$('#eyelet-color').click(function(){
+		$('.disable-block_eyelet').toggleClass('active');
+		$('.eyelet').toggle();
+	});
+	
+	$('#rubber-color').click(function(){
+		$('.disable-block_rubber').removeClass('active');
+		$('.rubber').hide();
+	});
+	
+	
+	
+	//firm-around
+	$('.firm-around').click(function(){
+		$('.constructor__string_firmware').toggleClass('flex');
+		$('.thread').toggle();
+	});
+	
+	
+	//color-box > item:focus
+	$('.color-box > .item').click(function(){
+		$(this).addClass('act').siblings().removeClass('act');
+	});
 	
 });
-
-
-
-
-
-
-
-
-
-
-
-
