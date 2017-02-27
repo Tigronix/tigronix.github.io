@@ -32,7 +32,7 @@ $(document).ready(function() {
 			$('.' + clas + ' > [data-taba_2="' + taba + '"]').show().siblings().hide();
 	});
 	
-	//Universal Tabs
+	//Universal Tab
 	$(document).on('click', '[data-id]', function () {
 			var id = $(this).attr('data-id');
 			var taba = $(this).attr('data-taba');
