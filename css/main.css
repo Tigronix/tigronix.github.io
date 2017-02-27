@@ -1724,14 +1724,17 @@ textarea:focus:-ms-input-placeholder {
     display: none; }
     .basis-comb .basis-color img {
       height: 100%; }
-  .basis_planing .basis-color img {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -80.5px; }
-  .basis_planing .basis-color__skin img {
-    margin-top: -75px; }
+  .basis_planing {
+    z-index: 50;
+    background: #fff; }
+    .basis_planing .basis-color img {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -80.5px; }
+    .basis_planing .basis-color__skin img {
+      margin-top: -75px; }
   .basis_srez__item {
     display: none;
     height: 100%;
