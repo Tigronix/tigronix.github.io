@@ -10,11 +10,11 @@
 
 <body>
 	<section class="constructor">
-		<form class="constructor__top-nav">
+		<form class="top-nav">
 			<div class="blue-block">Тираж</div>
-			<div class="inpbox">
-				<input requred id="count" placeholder="1000" type="text">
-				<label for="count-label">шт</label>
+			<div class="top-nav__count">
+				<input requred id="count" value="1000" type="text">
+				<span>шт</span>
 			</div>
 			<div class="blue-block">Срок изготовления</div>
 			<div class="text">Сентябрь 2017 г.</div>
@@ -913,10 +913,10 @@
 					<!--constructor__string-->
 					<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
 						<div class="string-left">
-							<div class="string-name mr-20">Резинка</div>
+							<div class="string-name mr-20">Срез</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
 								<input id="rubber-color" class="varBlocks" value="1000" name="rubber-flat" type="radio">
-								<label for="rubber-color">Нет</label>
+								<label for="rubber-color">Стандарт</label>
 							</div>
 						</div>
 						<div class="color-box__wrap">
@@ -1620,19 +1620,31 @@
 						</span> <a href="#" class="button"><i class="fa fa-download"></i>Сохранить</a> </div>
 				<div class="book-navigation">
 					<figure data-class="book-model" data-taba="3" class="item">
-						<picture><img src="img/cover.png" alt=""></picture>
+						<picture>
+							<img src="img/cover.png" alt="">
+							<img class="hover" src="img/cover-hover.png" alt="">
+						</picture>
 						<figcaption>Обложка</figcaption>
 					</figure>
 					<figure data-class="book-model" data-taba="4" class="item">
-						<picture><img src="img/spread.png" alt=""></picture>
+						<picture>
+							<img src="img/spread.png" alt="">
+							<img class="hover" src="img/spread-hover.png" alt="">
+						</picture>
 						<figcaption>Разворот</figcaption>
 					</figure>
 					<figure data-class="book-model" data-taba="5" class="item">
-						<picture><img src="img/end-paper.png" alt=""></picture>
+						<picture>
+							<img src="img/end-paper.png" alt="">
+							<img class="hover" src="img/en-paper-hover.png" alt="">
+						</picture>
 						<figcaption>Форзац/нахзац</figcaption>
 					</figure>
 					<figure data-class="book-model" data-taba="6" class="item shear">
-						<picture><img src="img/shear.png" alt=""></picture>
+						<picture>
+							<img src="img/shear.png" alt="">
+							<img class="hover" src="img/shear-cover.png" alt="">
+						</picture>
 						<figcaption>Срез</figcaption>
 					</figure>
 				</div>
