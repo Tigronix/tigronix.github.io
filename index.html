@@ -41,21 +41,33 @@
 							</div>
 						</h2>
 					<div class="constructor__main">
-						<div class="constructor__mod">
-							<figure data-class="book-model" data-taba="1" class="item item1">
-								<picture></picture>
+						<div class="mod">
+							<figure data-class="book-model" data-taba="1" class="item act">
+								<picture>
+										<img src="img/A4.png" alt="">
+										<img class="hover" src="img/A4-hover.png" alt="">
+								</picture>
 								<figcaption>Ежедневник А4</figcaption>
 							</figure>
-							<figure class="item item2">
-								<picture></picture>
+							<figure class="item">
+								<picture>
+										<img src="img/A5.png" alt="">
+										<img class="hover" src="img/A5-hover.png" alt="">
+								</picture>
 								<figcaption>Ежедневник А5</figcaption>
 							</figure>
-							<figure class="item item3">
-								<picture></picture>
+							<figure class="item">
+								<picture>
+										<img src="img/A6.png" alt="">
+										<img class="hover" src="img/A6-hover.png" alt="">
+								</picture>
 								<figcaption>Ежедневник А6</figcaption>
 							</figure>
 							<figure data-class="book-model" data-taba="2" class="item item4">
-								<picture></picture>
+								<picture>
+										<img src="img/Planing.png" alt="">
+										<img class="hover" src="img/Planing-hover.png" alt="">
+								</picture>
 								<figcaption>Планинг</figcaption>
 							</figure>
 						</div>
@@ -72,7 +84,7 @@
 							</div>
 						</div>
 						<!--constructor__cover-type-->
-						<button data-id="constructor__center" data-taba="2" type="button" class="button constructor__submit"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
+						<button data-id="constructor__center" data-taba="0" type="button" class="button constructor__submit button__to2"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
 					</div>
 					<!--constructor__main-->
 				</div>
@@ -93,7 +105,7 @@
 								<label for="simple">Простая</label>
 							 </div>
 							<div data-id="var-cover" data-taba="2" data-class_2="basis-material" data-taba_2="1" class="inpbox">
-								<input class="combo-main-tab" type="radio" id="combo" name="cover-types" value="combo">
+								<input class="combo-main-tab flex-checked_disabled" type="radio" id="combo" name="cover-types" value="combo">
 								<label for="combo">Комбинированная</label>
 							</div>
 							<div data-id="var-cover" class="inpbox">
@@ -102,7 +114,7 @@
 							</div>
 						</div>
 						<!--constructor__cover-type-->
-						<div class="constructor__combo-type">
+						<div class="constructor__combo-type flex-checked">
 							<div>Варианты комбинации</div>
 							<div class="constructor__combo-slider">
 								<div class="item"> <img class="img-default" src="img/k1.png" alt=""> <img class="img-hover" src="img/k1-hover.png" alt=""> </div>
@@ -116,7 +128,7 @@
 							<!--constructor__combo-slider-->
 						</div>
 						<!--constructor__combo-type-->
-						<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font constructor__cover-type_nomgb"> <span class="inp-label">Дополнительные опции обложки</span>
+						<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font constructor__cover-type_nomgb flex-checked"> <span class="inp-label">Дополнительные опции обложки</span>
 							<div class="inpbox inpbox1">
 								<input class="varRadio firm-around" value="1000" type="checkbox" id="firmware2" name="firmware-around">
 								<label for="firmware2">Прошивка по периметру</label>
@@ -350,7 +362,7 @@
 								<div class="material">
 									<div class="material__tabs">
 										<div data-id="material__comb-wrap_2" data-taba="1" class="tab act">Материал 1</div>
-										<div data-id="material__comb-wrap_2" data-taba="2" class="tab">Материал 2</div>
+										<div data-id="material__comb-wrap_2" data-taba="2" class="tab tab_imba">Материал 2</div>
 									</div>
 									<div id="material__comb-wrap_2" class="material__comb-wrap_2">
 										<div data-taba="1" class="material__cont-wrap">
@@ -691,7 +703,7 @@
 								</div><!--material-->
 							</div><!--combine-wrap-->
 						</div><!--var-cover-->
-						<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+						<div class="constructor__string constructor__string_center constructor__cover-type_label-font flex-checked">
 							<div class="string-left">
 								<div class="string-name mr-20">Петелька</div>
 								<div class="inpbox inpbox_mb inpbox_flex">
@@ -717,7 +729,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+						<div class="constructor__string constructor__string_center constructor__cover-type_label-font flex-checked">
 							<div class="string-left">
 								<div class="string-name mr-20">Резинка</div>
 								<div class="inpbox inpbox_mb inpbox_flex">
@@ -775,7 +787,7 @@
 						</div>
 						<div class="nav-submit">
 							<button data-id="constructor__center" data-taba="1" type="button" class="button constructor__submit constructor__submit_prev"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
-							<button data-id="constructor__center" data-taba="3" type="button" class="button constructor__submit"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
+							<button disabled data-id="constructor__center" data-taba="3" type="button" class="button constructor__submit button__to3"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
 						</div>
 					</div><!--constructor__main-->
 				</div>
@@ -911,47 +923,35 @@
 						</div>
 					</div>
 					<!--constructor__string-->
-					<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+					<!--<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
 						<div class="string-left">
 							<div class="string-name mr-20">Срез</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input id="rubber-color" class="varBlocks" value="1000" name="rubber-flat" type="radio">
-								<label for="rubber-color">Стандарт</label>
+								<input id="block-srez" class="varBlocks" value="1000" name="srez-flat" type="radio">
+								<label for="block-srez">Стандарт</label>
 							</div>
 						</div>
 						<div class="color-box__wrap">
-							<div class="title">Цвет резинки</div>
+							<div class="title">Индивидуальный</div>
 							<div class="color-box">
-										<div class="color-box_rubber">
-											<div data-taba="1" class="color-box_rubber-item mm2-5">
-												<div data-class="rubber__2-5mm" data-taba="1" class="item c-rub1"></div>
-												<div data-class="rubber__2-5mm" data-taba="2" class="item c-rub2"></div>
-											</div>
-											<div data-taba="2" class="color-box_rubber-item mm7-9">
-												<div data-class="rubber__7-9mm" data-taba="1" class="item l1639"></div>
-												<div data-class="rubber__7-9mm" data-taba="2" class="item l1904"></div>
-												<div data-class="rubber__7-9mm" data-taba="3" class="item l4241"></div>
-												<div data-class="rubber__7-9mm" data-taba="4" class="item l4302"></div>
-												<div data-class="rubber__7-9mm" data-taba="5" class="item l4802"></div>
-												<div data-class="rubber__7-9mm" data-taba="6" class="item l4803"></div>
-												<div data-class="rubber__7-9mm" data-taba="7" class="item l7001"></div>
-												<div data-class="rubber__7-9mm" data-taba="8" class="item l7502"></div>
-												<div data-class="rubber__7-9mm" data-taba="9" class="item l4504"></div>
-												<div data-class="rubber__7-9mm" data-taba="10" class="item l7701"></div>
-												<div data-class="rubber__7-9mm" data-taba="11" class="item l7704"></div>
-											</div>
-											<div data-taba="3" class="color-box_rubber-item mm12">
-												<div data-class="rubber__12mm" data-taba="1" class="item c-rub12"></div>
-											</div>
-										</div>
+									<div data-class="basis_srez" data-taba="1" class="item srez-2"></div>
+									<div data-class="basis_srez" data-taba="2" class="item srez-3"></div>
+									<div data-class="basis_srez" data-taba="3" class="item srez-4"></div>
+									<div data-class="basis_srez" data-taba="4" class="item srez-5"></div>
+									<div data-class="basis_srez" data-taba="5" class="item srez-6"></div>
+									<div data-class="basis_srez" data-taba="6" class="item srez-7"></div>
+									<div data-class="basis_srez" data-taba="7" class="item srez-8"></div>
+									<div data-class="basis_srez" data-taba="8" class="item srez-9"></div>
+									<div data-class="basis_srez" data-taba="9" class="item srez-zoloto"></div>
+									<div data-class="basis_srez" data-taba="10" class="item srez-serebro"></div>
 									<div class="disable-block disable-block_rubber">
 								</div>
 							</div>
 						</div>
 						<div class="box-wrap2 box-wrap2_padl">
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input class="varRadio" value="1000" id="rub-flat" name="rubber-flat" type="radio">
-								<label for="rub-flat">Плоская</label>
+								<input class="varRadio" value="1000" id="srez-flat" name="srez-flat" type="radio">
+								<label for="srez-flat">Плоская</label>
 							</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
 								<input disabled="" data-class="color-box_rubber" data-id="rubber" data-taba="1" class="varRadio" value="1000" id="mm2-5" name="rubber" type="radio">
@@ -966,7 +966,7 @@
 								<label class="color-box__label-rub color-box_disabled" for="mm12">12 мм.</label>
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<div class="nav-submit">
 						<button data-id="constructor__center" data-taba="2" type="button" class="button constructor__submit constructor__submit_prev"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
 						<button data-id="constructor__center" data-taba="4" type="button" class="button constructor__submit"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
@@ -1353,17 +1353,24 @@
 							<div class="basis-color__skin"><img src="img/zebra/planing/mat/zebra.png" alt=""></div>
 						</div><!--zebra-->
 					</div><!--basis_planing-->
+					<div data-taba="4" class="basis basis-material basis_central">
+						<img src="img/spread-big.PNG" alt="">
+					</div><!--basis_spread-->
+					<div data-taba="5" class="basis basis-material basis_central">
+						<img src="img/forzac.PNG" alt="">
+					</div><!--basis_forzac-->
+					
 					<div data-taba="6" class="basis basis-material basis_srez">
-						<div data-taba="1" class="basis_srez__item"><img src="img/sections/colors/srez_2.png" alt=""></div>
-						<div data-taba="2" class="basis_srez__item"><img src="img/sections/colors/srez_3.png" alt=""></div>
-						<div data-taba="3" class="basis_srez__item"><img src="img/sections/colors/srez_4.png" alt=""></div>
-						<div data-taba="4" class="basis_srez__item"><img src="img/sections/colors/srez_5.png" alt=""></div>
-						<div data-taba="5" class="basis_srez__item"><img src="img/sections/colors/srez_6.png" alt=""></div>
-						<div data-taba="6" class="basis_srez__item"><img src="img/sections/colors/srez_7.png" alt=""></div>
-						<div data-taba="7" class="basis_srez__item"><img src="img/sections/colors/srez_8.png" alt=""></div>
-						<div data-taba="8" class="basis_srez__item"><img src="img/sections/colors/srez_9.png" alt=""></div>
-						<div data-taba="9" class="basis_srez__item"><img src="img/sections/colors/srez_serebro.png" alt=""></div>
-						<div data-taba="10" class="basis_srez__item"><img src="img/sections/colors/srez_standart.png" alt=""></div>
+						<div data-taba="2" class="basis_srez__item"><img src="img/sections/colors/srez_standart.png" alt=""></div>
+						<div data-taba="2" class="basis_srez__item"><img src="img/sections/colors/srez_2.png" alt=""></div>
+						<div data-taba="3" class="basis_srez__item"><img src="img/sections/colors/srez_3.png" alt=""></div>
+						<div data-taba="4" class="basis_srez__item"><img src="img/sections/colors/srez_4.png" alt=""></div>
+						<div data-taba="5" class="basis_srez__item"><img src="img/sections/colors/srez_5.png" alt=""></div>
+						<div data-taba="6" class="basis_srez__item"><img src="img/sections/colors/srez_6.png" alt=""></div>
+						<div data-taba="7" class="basis_srez__item"><img src="img/sections/colors/srez_7.png" alt=""></div>
+						<div data-taba="8" class="basis_srez__item"><img src="img/sections/colors/srez_8.png" alt=""></div>
+						<div data-taba="9" class="basis_srez__item"><img src="img/sections/colors/srez_9.png" alt=""></div>
+						<div data-taba="10" class="basis_srez__item"><img src="img/sections/colors/srez_serebro.png" alt=""></div>
 						<div data-taba="11" class="basis_srez__item"><img src="img/sections/colors/srez_zoloto.png" alt=""></div></div><!--basis_srez-->
 				</div>
 				<div class="basis-comb-wrap">
@@ -1619,7 +1626,7 @@
 							<b>Модель:</b> Ежедневник А4
 						</span> <a href="#" class="button"><i class="fa fa-download"></i>Сохранить</a> </div>
 				<div class="book-navigation">
-					<figure data-class="book-model" data-taba="3" class="item">
+					<figure data-class="book-model" data-taba="1" class="item">
 						<picture>
 							<img src="img/cover.png" alt="">
 							<img class="hover" src="img/cover-hover.png" alt="">
