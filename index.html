@@ -23,7 +23,7 @@
 			<button type="button" class="button"> <i class="fa fa-rouble"></i> Рассчитать </button>
 		</form>
 		<!--constructor-top-nav-->
-		<div class="constructor__content">
+		<form action="" id="constructor__content" class="constructor__content">
 			<div class="constructor__nav-left">
 				<div data-id="constructor__center" data-taba="1" class="item"> <span>1</span> <i class="fa fa-lock"></i> </div>
 				<div data-id="constructor__center" data-taba="2" class="item"> <span>2</span> <i class="fa fa-lock"></i> </div>
@@ -31,7 +31,7 @@
 				<div data-id="constructor__center" data-taba="4" class="item"> <span>4</span> <i class="fa fa-lock"></i> </div>
 			</div>
 			<!--constructor__nav-left-->
-			<form action="" id="constructor__center" class="constructor__center">
+			<div id="constructor__center" class="constructor__center">
 				<div data-taba="1" class="constructor__tab constructor__tab1">
 					<h2>
 							Выберите модель и формат
@@ -118,7 +118,7 @@
 						<!--constructor__combo-type-->
 						<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font constructor__cover-type_nomgb"> <span class="inp-label">Дополнительные опции обложки</span>
 							<div class="inpbox inpbox1">
-								<input class="varRadio firm-around" value="1000" type="radio" id="firmware2" name="firmware-around">
+								<input class="varRadio firm-around" value="1000" type="checkbox" id="firmware2" name="firmware-around">
 								<label for="firmware2">Прошивка по периметру</label>
 							</div>
 						</div>
@@ -687,11 +687,9 @@
 												</div><!--zebra-->
 											</div><!--material__colors-->
 										</div><!--material__cont-wrap-->
-										
 									</div>
 								</div><!--material-->
 							</div><!--combine-wrap-->
-							
 						</div><!--var-cover-->
 						<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
 							<div class="string-left">
@@ -723,56 +721,55 @@
 							<div class="string-left">
 								<div class="string-name mr-20">Резинка</div>
 								<div class="inpbox inpbox_mb inpbox_flex">
-									<input id="rubber-color" class="varBlocks" value="1000" type="checkbox">
-									<label for="rubber-color">Да</label>
+									<input id="rubber-color" class="varBlocks" value="1000" type="radio" name="rubber-flat">
+									<label for="rubber-color">Нет</label>
 								</div>
 							</div>
 							<div class="color-box__wrap">
 								<div class="title">Цвет резинки</div>
-								<div class="color-box color-box_rubber">
-										<div class="color-box_rubber-item mm2-5">
-											<div class="mm2-5">
-												<div data-class="rubber__2-5" data-taba="1" class="item c-rub1"></div>
-												<div data-class="rubber__2-5" data-taba="2" class="item c-rub2"></div>
+								<div class="color-box">
+											<div class="color-box_rubber">
+												<div data-taba="1" class="color-box_rubber-item mm2-5">
+													<div data-class="rubber__2-5mm" data-taba="1" class="item c-rub1"></div>
+													<div data-class="rubber__2-5mm" data-taba="2" class="item c-rub2"></div>
+												</div>
+												<div data-taba="2" class="color-box_rubber-item mm7-9">
+													<div data-class="rubber__7-9mm" data-taba="1" class="item l1639"></div>
+													<div data-class="rubber__7-9mm" data-taba="2" class="item l1904"></div>
+													<div data-class="rubber__7-9mm" data-taba="3" class="item l4241"></div>
+													<div data-class="rubber__7-9mm" data-taba="4" class="item l4302"></div>
+													<div data-class="rubber__7-9mm" data-taba="5" class="item l4802"></div>
+													<div data-class="rubber__7-9mm" data-taba="6" class="item l4803"></div>
+													<div data-class="rubber__7-9mm" data-taba="7" class="item l7001"></div>
+													<div data-class="rubber__7-9mm" data-taba="8" class="item l7502"></div>
+													<div data-class="rubber__7-9mm" data-taba="9" class="item l4504"></div>
+													<div data-class="rubber__7-9mm" data-taba="10" class="item l7701"></div>
+													<div data-class="rubber__7-9mm" data-taba="11" class="item l7704"></div>
+												</div>
+												<div data-taba="3" class="color-box_rubber-item mm12">
+													<div data-class="rubber__12mm" data-taba="1" class="item c-rub12"></div>
+												</div>
 											</div>
-										</div>
-										<div class="color-box_rubber-item mm7-9">
-											<div class="mm7-9">
-												<div data-class="rubber__7-9" data-taba="1" class="item l1639"><img src="img/rubber/7.9_flat/L1639.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="2" class="item l1904"><img src="img/rubber/7.9_flat/L1904.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="3" class="item l4241"><img src="img/rubber/7.9_flat/L4241.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="4" class="item l4302"><img src="img/rubber/7.9_flat/L4302.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="5" class="item l4802"><img src="img/rubber/7.9_flat/L4802.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="6" class="item l4803"><img src="img/rubber/7.9_flat/L4803.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="7" class="item l7001"><img src="img/rubber/7.9_flat/L7001.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="8" class="item l7502"><img src="img/rubber/7.9_flat/L7502.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="9" class="item l4504"><img src="img/rubber/7.9_flat/L7504.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="10" class="item l7701"><img src="img/rubber/7.9_flat/L7701.png" alt=""></div>
-												<div data-class="rubber__7-9" data-taba="11" class="item l7704"><img src="img/rubber/7.9_flat/L7704.png" alt=""></div>
-											</div>
-										</div>
-										<div class="color-box_rubber-item mm12">
-											<div class="mm12">
-												<div data-class="rubber__12" data-taba="1" class="item c-rub12"><img src="img/rubber/12_flat/12mm.png" alt=""></div>
-											</div>
-										</div>
-										
-									<div class="disable-block disable-block_rubber">
+										<div class="disable-block disable-block_rubber">
 									</div>
 								</div>
 							</div>
 							<div class="box-wrap2 box-wrap2_padl">
 								<div class="inpbox inpbox_mb inpbox_flex">
-									<input class="varRadio" value="1000" id="mm2-5" name="rubber" type="radio">
-									<label for="mm2-5">2.5 мм.</label>
+									<input class="varRadio" value="1000" id="rub-flat" name="rubber-flat" type="radio">
+									<label for="rub-flat">Плоская</label>
 								</div>
 								<div class="inpbox inpbox_mb inpbox_flex">
-									<input class="varRadio" value="1000" id="mm7-9" name="rubber" type="radio">
-									<label for="mm7-9">7.9 мм.</label>
+									<input disabled data-class="color-box_rubber" data-id="rubber" data-taba="1" class="varRadio" value="1000" id="mm2-5" name="rubber" type="radio">
+									<label class="color-box__label-rub color-box_disabled" for="mm2-5">2.5 мм.</label>
 								</div>
 								<div class="inpbox inpbox_mb inpbox_flex">
-									<input class="varRadio" value="1000" id="mm12" name="rubber" type="radio">
-									<label for="mm12">12 мм.</label>
+									<input disabled data-class="color-box_rubber" data-id="rubber" data-taba="2" class="varRadio" value="1000" id="mm7-9" name="rubber" type="radio">
+									<label class="color-box__label-rub color-box_disabled" for="mm7-9">7.9 мм.</label>
+								</div>
+								<div class="inpbox inpbox_mb inpbox_flex">
+									<input disabled data-class="color-box_rubber" data-id="rubber" data-taba="3" class="varRadio" value="1000" id="mm12" name="rubber" type="radio">
+									<label class="color-box__label-rub color-box_disabled" for="mm12">12 мм.</label>
 								</div>
 							</div>
 						</div>
@@ -916,46 +913,57 @@
 					<!--constructor__string-->
 					<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
 						<div class="string-left">
-							<div class="string-name mr-20">Срез</div>
+							<div class="string-name mr-20">Резинка</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input class="block-types_3 varBlocks" value="1000" id="srez" name="block-type3" type="radio">
-								<label for="srez">Стандарт</label>
+								<input id="rubber-color" class="varBlocks" value="1000" name="rubber-flat" type="radio">
+								<label for="rubber-color">Нет</label>
 							</div>
 						</div>
 						<div class="color-box__wrap">
-							<div class="title">Цвет петельки</div>
+							<div class="title">Цвет резинки</div>
 							<div class="color-box">
-								<div class="inpbox">
-									<input class="block-types_3 varBlocks" id="indSrez" value="2000" name="block-type3" type="radio">
-									<label for="indSrez"></label>
+										<div class="color-box_rubber">
+											<div data-taba="1" class="color-box_rubber-item mm2-5">
+												<div data-class="rubber__2-5mm" data-taba="1" class="item c-rub1"></div>
+												<div data-class="rubber__2-5mm" data-taba="2" class="item c-rub2"></div>
+											</div>
+											<div data-taba="2" class="color-box_rubber-item mm7-9">
+												<div data-class="rubber__7-9mm" data-taba="1" class="item l1639"></div>
+												<div data-class="rubber__7-9mm" data-taba="2" class="item l1904"></div>
+												<div data-class="rubber__7-9mm" data-taba="3" class="item l4241"></div>
+												<div data-class="rubber__7-9mm" data-taba="4" class="item l4302"></div>
+												<div data-class="rubber__7-9mm" data-taba="5" class="item l4802"></div>
+												<div data-class="rubber__7-9mm" data-taba="6" class="item l4803"></div>
+												<div data-class="rubber__7-9mm" data-taba="7" class="item l7001"></div>
+												<div data-class="rubber__7-9mm" data-taba="8" class="item l7502"></div>
+												<div data-class="rubber__7-9mm" data-taba="9" class="item l4504"></div>
+												<div data-class="rubber__7-9mm" data-taba="10" class="item l7701"></div>
+												<div data-class="rubber__7-9mm" data-taba="11" class="item l7704"></div>
+											</div>
+											<div data-taba="3" class="color-box_rubber-item mm12">
+												<div data-class="rubber__12mm" data-taba="1" class="item c-rub12"></div>
+											</div>
+										</div>
+									<div class="disable-block disable-block_rubber">
 								</div>
-								<a class="item pink1"></a>
-								<a class="item purple2"></a>
-								<a class="item green1"></a>
-								<a class="item green2"></a>
-								<a class="item purple1"></a>
-								<a class="item blue2"></a>
-								<a class="item grey2"></a>
-								<a class="item blue1"></a>
-								<a class="item brown1"></a>
-								<a class="item black"></a>
-								<a class="item grey1"></a>
-								<a class="item yellow"></a>
-								<div class="disable-block disable-block_srez"></div>
 							</div>
 						</div>
 						<div class="box-wrap2 box-wrap2_padl">
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input class="varRadio var18" value="1000" id="gold" name="block-elite" type="radio">
-								<label for="gold">Золочение</label>
+								<input class="varRadio" value="1000" id="rub-flat" name="rubber-flat" type="radio">
+								<label for="rub-flat">Плоская</label>
 							</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input class="varRadio var19" value="1000" id="silver" name="block-elite" type="radio">
-								<label for="silver">Серебрение</label>
+								<input disabled="" data-class="color-box_rubber" data-id="rubber" data-taba="1" class="varRadio" value="1000" id="mm2-5" name="rubber" type="radio">
+								<label class="color-box__label-rub color-box_disabled" for="mm2-5">2.5 мм.</label>
 							</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input class="varRadio var20" value="1000" id="print" name="block-elite" type="radio">
-								<label for="print">Печать на срезе</label>
+								<input disabled="" data-class="color-box_rubber" data-id="rubber" data-taba="2" class="varRadio" value="1000" id="mm7-9" name="rubber" type="radio">
+								<label class="color-box__label-rub color-box_disabled" for="mm7-9">7.9 мм.</label>
+							</div>
+							<div class="inpbox inpbox_mb inpbox_flex">
+								<input disabled="" data-class="color-box_rubber" data-id="rubber" data-taba="3" class="varRadio" value="1000" id="mm12" name="rubber" type="radio">
+								<label class="color-box__label-rub color-box_disabled" for="mm12">12 мм.</label>
 							</div>
 						</div>
 					</div>
@@ -1004,7 +1012,7 @@
 					</div>
 				</div>
 				<!--constructor__tab4-->
-			</form>
+			</div>
 			<!--constructor__center-->
 			<div class="constructor__right">
 				<!--***START***book-construct***START***-->
@@ -1345,6 +1353,18 @@
 							<div class="basis-color__skin"><img src="img/zebra/planing/mat/zebra.png" alt=""></div>
 						</div><!--zebra-->
 					</div><!--basis_planing-->
+					<div data-taba="6" class="basis basis-material basis_srez">
+						<div data-taba="1" class="basis_srez__item"><img src="img/sections/colors/srez_2.png" alt=""></div>
+						<div data-taba="2" class="basis_srez__item"><img src="img/sections/colors/srez_3.png" alt=""></div>
+						<div data-taba="3" class="basis_srez__item"><img src="img/sections/colors/srez_4.png" alt=""></div>
+						<div data-taba="4" class="basis_srez__item"><img src="img/sections/colors/srez_5.png" alt=""></div>
+						<div data-taba="5" class="basis_srez__item"><img src="img/sections/colors/srez_6.png" alt=""></div>
+						<div data-taba="6" class="basis_srez__item"><img src="img/sections/colors/srez_7.png" alt=""></div>
+						<div data-taba="7" class="basis_srez__item"><img src="img/sections/colors/srez_8.png" alt=""></div>
+						<div data-taba="8" class="basis_srez__item"><img src="img/sections/colors/srez_9.png" alt=""></div>
+						<div data-taba="9" class="basis_srez__item"><img src="img/sections/colors/srez_serebro.png" alt=""></div>
+						<div data-taba="10" class="basis_srez__item"><img src="img/sections/colors/srez_standart.png" alt=""></div>
+						<div data-taba="11" class="basis_srez__item"><img src="img/sections/colors/srez_zoloto.png" alt=""></div></div><!--basis_srez-->
 				</div>
 				<div class="basis-comb-wrap">
 					<div data-taba="4" class="basis basis-comb">
@@ -1571,29 +1591,47 @@
 					<div data-taba="10" class="eyelet__item"><img src="img/eyelet/pet_10.png" alt=""></div>
 					<div data-taba="11" class="eyelet__item"><img src="img/eyelet/pet_11.png" alt=""></div>
 				</div><!--eyelet-->
-				<div style="display: none;" class="rubber">
-					<div class="rubber__7mm">
+				<div id="rubber" class="rubber">
+					<div data-taba="1" class="rubber__gallery rubber__2-5mm">
+						<div data-taba="1" class="rubber__item"><img src="img/rubber/2.5_circle/rez_cern.png" alt=""></div>
+						<div data-taba="2" class="rubber__item"><img src="img/rubber/2.5_circle/rez_vas.png" alt=""></div>
+					</div>
+					<div data-taba="2" class="rubber__gallery rubber__7-9mm">
+						<div data-taba="1" class="rubber__item"><img src="img/rubber/7.9_flat/L1639.png" alt=""></div>
+						<div data-taba="2" class="rubber__item"><img src="img/rubber/7.9_flat/L1904.png" alt=""></div>
+						<div data-taba="3" class="rubber__item"><img src="img/rubber/7.9_flat/L4241.png" alt=""></div>
+						<div data-taba="4" class="rubber__item"><img src="img/rubber/7.9_flat/L4302.png" alt=""></div>
+						<div data-taba="5" class="rubber__item"><img src="img/rubber/7.9_flat/L4802.png" alt=""></div>
+						<div data-taba="6" class="rubber__item"><img src="img/rubber/7.9_flat/L4803.png" alt=""></div>
+						<div data-taba="7" class="rubber__item"><img src="img/rubber/7.9_flat/L7001.png" alt=""></div>
+						<div data-taba="8" class="rubber__item"><img src="img/rubber/7.9_flat/L7502.png" alt=""></div>
+						<div data-taba="9" class="rubber__item"><img src="img/rubber/7.9_flat/L7504.png" alt=""></div>
+						<div data-taba="10" class="rubber__item"><img src="img/rubber/7.9_flat/L7701.png" alt=""></div>
+						<div data-taba="11" class="rubber__item"><img src="img/rubber/7.9_flat/L7704.png" alt=""></div>
+					</div>
+					<div data-taba="3" class="rubber__gallery rubber__12mm">
 						<div data-taba="1" class="rubber__item"><img src="img/rubber/12_flat/12mm.png" alt=""></div>
 					</div>
+					
 				</div><!--rubber-->
 				<!--***END***book-construct***END***-->
 				<div class="book-model-name"> <span>
 							<b>Модель:</b> Ежедневник А4
 						</span> <a href="#" class="button"><i class="fa fa-download"></i>Сохранить</a> </div>
 				<div class="book-navigation">
-					<figure class="item">
+					<figure data-class="book-model" data-taba="3" class="item">
 						<picture><img src="img/cover.png" alt=""></picture>
 						<figcaption>Обложка</figcaption>
 					</figure>
-					<figure class="item">
+					<figure data-class="book-model" data-taba="4" class="item">
 						<picture><img src="img/spread.png" alt=""></picture>
 						<figcaption>Разворот</figcaption>
 					</figure>
-					<figure class="item">
+					<figure data-class="book-model" data-taba="5" class="item">
 						<picture><img src="img/end-paper.png" alt=""></picture>
 						<figcaption>Форзац/нахзац</figcaption>
 					</figure>
-					<figure class="item shear">
+					<figure data-class="book-model" data-taba="6" class="item shear">
 						<picture><img src="img/shear.png" alt=""></picture>
 						<figcaption>Срез</figcaption>
 					</figure>
@@ -1604,7 +1642,7 @@
 				</div>
 			</div>
 			<!--constructor__right-->
-		</div>
+		</form>
 		<!--constructor__content-->
 	</section>
 	<!--constuctor-->

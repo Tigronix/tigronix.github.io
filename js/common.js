@@ -1,4 +1,5 @@
 $(document).ready(function() {
+		$(".constructor__content")[0].reset();
 		var summBlock_1 = parseInt($('.block-types_1:checked').val());
 		var summBlock_2 = parseInt($('.block-types_2:checked').val());
 		var summBlock_3 = parseInt($('.block-types_3:checked').val());
@@ -152,8 +153,14 @@ $(document).ready(function() {
 	$('#rubber-color').click(function(){
 		$('.disable-block_rubber').removeClass('active');
 		$('.rubber').hide();
+		$('.color-box__label-rub').addClass('color-box_disabled');
+		$('.varRadio[name="rubber"]').prop('disabled', 'disabled');
 	});
 	
+	$('#rub-flat').click(function(){
+		$('.disable-block_rubber').addClass('active');
+		$('.rubber').show();
+	});
 	
 	
 	//firm-around
@@ -164,8 +171,15 @@ $(document).ready(function() {
 	
 	
 	//color-box > item:focus
-	$('.color-box > .item').click(function(){
+	$('.color-box .item').click(function(){
 		$(this).addClass('act').siblings().removeClass('act');
 	});
-	
+	$('#rub-flat').on('change', function(){
+		var checked = $('#rub-flat').prop('checked');
+		console.log(checked);
+		if ($(checked == 'true')) {
+			$('.varRadio[name="rubber"]').removeAttr('disabled');
+			$('.color-box_disabled').removeClass('color-box_disabled');
+		}
+	});
 });
