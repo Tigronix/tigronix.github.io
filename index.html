@@ -25,10 +25,10 @@
 		<!--constructor-top-nav-->
 		<form action="" id="constructor__content" class="constructor__content">
 			<div class="constructor__nav-left">
-				<div data-id="constructor__center" data-taba="1" class="item"> <span>1</span> <i class="fa fa-lock"></i> </div>
-				<div data-id="constructor__center" data-taba="2" class="item"> <span>2</span> <i class="fa fa-lock"></i> </div>
-				<div data-id="constructor__center" data-taba="3" class="item"> <span>3</span> <i class="fa fa-lock"></i> </div>
-				<div data-id="constructor__center" data-taba="4" class="item"> <span>4</span> <i class="fa fa-lock"></i> </div>
+				<div data-id="constructor__cente" data-taba="1" class="item"> <span>1</span> <i class="fa fa-lock"></i> </div>
+				<div data-id="constructor__cente" data-taba="2" class="item"> <span>2</span> <i class="fa fa-lock"></i> </div>
+				<div data-id="constructor__cente" data-taba="3" class="item"> <span>3</span> <i class="fa fa-lock"></i> </div>
+				<div data-id="constructor__cente" data-taba="4" class="item"> <span>4</span> <i class="fa fa-lock"></i> </div>
 			</div>
 			<!--constructor__nav-left-->
 			<div id="constructor__center" class="constructor__center">
@@ -863,7 +863,7 @@
 						<div class="string-left">
 							<div class="string-name mr-20">Форзац</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input class="block-types_1 varBlocks forzac" value="1000" id="forzac" name="block-type1" type="radio">
+								<input data-class="book-model" data-taba="1" class="block-types_1 varBlocks forzac" value="1000" id="forzac" name="block-type1" type="radio">
 								<label class="forzac-standart" for="forzac">Стандарт</label>
 							</div>
 						</div>
@@ -871,7 +871,7 @@
 							<div class="title">Индивидуальный</div>
 							<div class="color-box color-box_forzac">
 								<div class="inpbox">
-									<input class="block-types_1 varBlocks" id="indForzac" value="2000" name="block-type1" type="radio">
+									<input data-class="book-model" data-taba="4" class="block-types_1 varBlocks" id="indForzac" value="2000" name="block-type1" type="radio">
 									<label for="indForzac"></label>
 								</div>
 								<a class="item pink1"></a>
@@ -895,7 +895,7 @@
 						<div class="string-left">
 							<div class="string-name mr-20">Нахзац</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input class="block-types_2 varBlocks" value="1000" id="nahzac" name="block-type2" type="radio">
+								<input data-class="book-model" data-taba="1" class="block-types_2 varBlocks" value="1000" id="nahzac" name="block-type2" type="radio">
 								<label for="nahzac">Стандарт</label>
 							</div>
 						</div>
@@ -903,7 +903,7 @@
 							<div class="title">Индивидуальный</div>
 							<div class="color-box">
 								<div class="inpbox">
-									<input class="block-types_2 varBlocks" id="indNahzac" value="2000" name="block-type2" type="radio">
+									<input data-class="book-model" data-taba="5" class="block-types_2 varBlocks" id="indNahzac" value="2000" name="block-type2" type="radio">
 									<label for="indNahzac"></label>
 								</div>
 								<a class="item pink1"></a>
@@ -921,55 +921,41 @@
 								<div class="disable-block disable-block_nahzac"></div>
 							</div>
 						</div>
-					</div>
-					<!--constructor__string-->
-					<!--<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
+					</div><!--constructor__string-->
+					<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
 						<div class="string-left">
 							<div class="string-name mr-20">Срез</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input id="block-srez" class="varBlocks" value="1000" name="srez-flat" type="radio">
-								<label for="block-srez">Стандарт</label>
+								<input data-class="book-model" data-taba="1" class="block-types_3 varBlocks" value="1000" id="srez-standart" name="block-type3" type="radio">
+								<label for="srez-standart">Стандарт</label>
 							</div>
 						</div>
 						<div class="color-box__wrap">
 							<div class="title">Индивидуальный</div>
 							<div class="color-box">
-									<div data-class="basis_srez" data-taba="1" class="item srez-2"></div>
-									<div data-class="basis_srez" data-taba="2" class="item srez-3"></div>
-									<div data-class="basis_srez" data-taba="3" class="item srez-4"></div>
-									<div data-class="basis_srez" data-taba="4" class="item srez-5"></div>
-									<div data-class="basis_srez" data-taba="5" class="item srez-6"></div>
-									<div data-class="basis_srez" data-taba="6" class="item srez-7"></div>
-									<div data-class="basis_srez" data-taba="7" class="item srez-8"></div>
-									<div data-class="basis_srez" data-taba="8" class="item srez-9"></div>
-									<div data-class="basis_srez" data-taba="9" class="item srez-zoloto"></div>
-									<div data-class="basis_srez" data-taba="10" class="item srez-serebro"></div>
-									<div class="disable-block disable-block_rubber">
+								<div class="inpbox">
+									<input data-class="book-model" data-taba="6" class="block-types_3 varBlocks" id="indSrez" value="2000" name="block-type3" type="radio">
+									<label for="indSrez"></label>
 								</div>
+								<a data-class="basis_srez" data-taba="1" class="item srez-standart"></a>
+								<a data-class="basis_srez" data-taba="2" class="item srez-2"></a>
+								<a data-class="basis_srez" data-taba="3" class="item srez-3"></a>
+								<a data-class="basis_srez" data-taba="4" class="item srez-4"></a>
+								<a data-class="basis_srez" data-taba="5" class="item srez-5"></a>
+								<a data-class="basis_srez" data-taba="6" class="item srez-6"></a>
+								<a data-class="basis_srez" data-taba="7" class="item srez-7"></a>
+								<a data-class="basis_srez" data-taba="8" class="item srez-8"></a>
+								<a data-class="basis_srez" data-taba="9" class="item srez-9"></a>
+								<a data-class="basis_srez" data-taba="10" class="item srez-serebro"></a>
+								<a data-class="basis_srez" data-taba="11" class="item srez-zoloto"></a>
+								<div class="disable-block disable-block_srez"></div>
 							</div>
 						</div>
-						<div class="box-wrap2 box-wrap2_padl">
-							<div class="inpbox inpbox_mb inpbox_flex">
-								<input class="varRadio" value="1000" id="srez-flat" name="srez-flat" type="radio">
-								<label for="srez-flat">Плоская</label>
-							</div>
-							<div class="inpbox inpbox_mb inpbox_flex">
-								<input disabled="" data-class="color-box_rubber" data-id="rubber" data-taba="1" class="varRadio" value="1000" id="mm2-5" name="rubber" type="radio">
-								<label class="color-box__label-rub color-box_disabled" for="mm2-5">2.5 мм.</label>
-							</div>
-							<div class="inpbox inpbox_mb inpbox_flex">
-								<input disabled="" data-class="color-box_rubber" data-id="rubber" data-taba="2" class="varRadio" value="1000" id="mm7-9" name="rubber" type="radio">
-								<label class="color-box__label-rub color-box_disabled" for="mm7-9">7.9 мм.</label>
-							</div>
-							<div class="inpbox inpbox_mb inpbox_flex">
-								<input disabled="" data-class="color-box_rubber" data-id="rubber" data-taba="3" class="varRadio" value="1000" id="mm12" name="rubber" type="radio">
-								<label class="color-box__label-rub color-box_disabled" for="mm12">12 мм.</label>
-							</div>
-						</div>
-					</div>-->
+					</div><!--constructor__string-->
+					
 					<div class="nav-submit">
 						<button data-id="constructor__center" data-taba="2" type="button" class="button constructor__submit constructor__submit_prev"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
-						<button data-id="constructor__center" data-taba="4" type="button" class="button constructor__submit"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
+						<button disabled data-id="constructor__center" data-taba="4" type="button" class="button button_to4 constructor__submit"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
 					</div>
 				</div>
 				<!--constructor__tab-->
@@ -981,19 +967,19 @@
 							</div>
 						</h2>
 					<div class="line-text">
-						<div class="line-text__line"> <span class="desc">Ежедневник А5, недатированный коричнево-черный, кремовый блок,<br> жёсткая обложка </span> <span class="value"><input value="0" type="text" class="summ value"> руб.</span> </div>
+						<div class="line-text__line"> <span class="desc">Ежедневник А5, недатированный коричнево-черный, кремовый блок,<br> жёсткая обложка </span> <span class="value"><input disabled type="text" class="summ value"> руб.</span> </div>
 					</div>
 					<!--line-text-->
 					<div class="line-text">
 						<h3>Опции блока</h3>
-						<div class="line-text__line line-text__line_dots"> <span class="desc"> Форзац: в цвет блока </span> <span class="value"><input type="text" class="value summBlock_1" value="0"> руб.</span> </div>
-						<div class="line-text__line line-text__line_dots"> <span class="desc"> Нахзац: в цвет блока </span> <span class="value"><input type="text" class="value summBlock_2" value="0"> руб.</span></div>
-						<div class="line-text__line line-text__line_dots"> <span class="desc"> Срез: в цвет блока </span> <span class="value"><input type="text" class="value summBlock_3" value="0"> руб.</span></div>
+						<div class="line-text__line line-text__line_dots"> <span class="desc"> Форзац: в цвет блока </span> <span class="value"><input disabled type="text" class="value summBlock_1" value="0"> руб.</span> </div>
+						<div class="line-text__line line-text__line_dots"> <span class="desc"> Нахзац: в цвет блока </span> <span class="value"><input disabled type="text" class="value summBlock_2" value="0"> руб.</span></div>
+						<div class="line-text__line line-text__line_dots"> <span class="desc"> Срез: в цвет блока </span> <span class="value"><input disabled type="text" class="value summBlock_3" value="0"> руб.</span></div>
 					</div>
 					<!--line-text-->
 					<div class="line-text border-bottom">
-						<div class="line-text__line line-text__line_dots"> <span class="desc desc_bold">Итого за 1 шт.</span> <span class="value">500 руб.</span> </div>
-						<div class="line-text__line line-text__line_dots"> <span class="desc desc_bold">Стоимость за тираж 100 экземпляров</span> <span class="value"><input value="0" type="text" class="summBlocks"></span> </div>
+						<div class="line-text__line line-text__line_dots"> <span class="desc desc_bold">Итого за 1 шт.</span> <span class="value"><input disabled value="0" type="text" class="summBlocks"> руб.</span> </div>
+						<div class="line-text__line line-text__line_dots"> <span class="desc desc_bold">Стоимость за тираж 100 экземпляров</span> <span class="value"><input disabled value="0" type="text" class="summBlocks100"> руб.</span> </div>
 						<div class="line-text__line line-text__line_dots"> <span class="desc desc_bold">Срок изготовления</span> <span class="value value_black">Март 2017 г.</span> </div>
 					</div>
 					<!--line-text-->
@@ -1353,15 +1339,15 @@
 							<div class="basis-color__skin"><img src="img/zebra/planing/mat/zebra.png" alt=""></div>
 						</div><!--zebra-->
 					</div><!--basis_planing-->
-					<div data-taba="4" class="basis basis-material basis_central">
+					<div data-taba="4" class="basis basis-material basis_central basis_spread">
 						<img src="img/spread-big.PNG" alt="">
 					</div><!--basis_spread-->
-					<div data-taba="5" class="basis basis-material basis_central">
+					<div data-taba="5" class="basis basis-material basis_central basis_forzac">
 						<img src="img/forzac.PNG" alt="">
 					</div><!--basis_forzac-->
 					
 					<div data-taba="6" class="basis basis-material basis_srez">
-						<div data-taba="2" class="basis_srez__item"><img src="img/sections/colors/srez_standart.png" alt=""></div>
+						<div data-taba="1" class="basis_srez__item"><img src="img/sections/colors/srez_standart.png" alt=""></div>
 						<div data-taba="2" class="basis_srez__item"><img src="img/sections/colors/srez_2.png" alt=""></div>
 						<div data-taba="3" class="basis_srez__item"><img src="img/sections/colors/srez_3.png" alt=""></div>
 						<div data-taba="4" class="basis_srez__item"><img src="img/sections/colors/srez_4.png" alt=""></div>

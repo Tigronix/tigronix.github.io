@@ -1,8 +1,7 @@
 $(document).ready(function() {
-		$(".constructor__content")[0].reset();
-		var summBlock_1 = parseInt($('.block-types_1:checked').val());
-		var summBlock_2 = parseInt($('.block-types_2:checked').val());
-		var summBlock_3 = parseInt($('.block-types_3:checked').val());
+	var summBlock_1 = parseInt($('.block-types_1:checked').val());
+	var summBlock_2 = parseInt($('.block-types_2:checked').val());
+	var summBlock_3 = parseInt($('.block-types_3:checked').val());
 	
 
 	//class-tab
@@ -19,8 +18,6 @@ $(document).ready(function() {
 
 	//class-tab
 	
-	var summBlock_1, summBlock_2, summBlock_3;
-	
 	$(document).on('click', '[data-class_2]', function () {
 			var clas = $(this).attr('data-class_2');
 			var taba = $(this).attr('data-taba_2');
@@ -32,7 +29,7 @@ $(document).ready(function() {
 			$('.' + clas + ' > [data-taba_2="' + taba + '"]').show().siblings().hide();
 	});
 	
-	//Universal Tab
+	//Universal Tabs
 	$(document).on('click', '[data-id]', function () {
 			var id = $(this).attr('data-id');
 			var taba = $(this).attr('data-taba');
@@ -42,7 +39,14 @@ $(document).ready(function() {
 					}
 			});
 			$('#' + id + ' > [data-taba="' + taba + '"]').show().addClass('flex').siblings().hide().removeClass('flex');
-		
+			$('.constructor__combo-slider').on('init', function () {
+				$('.constructor__combo-slider').slick({
+					infinite: true,
+					slidesToShow: 5,
+					slidesToScroll: 1,
+					arrows: true
+				});
+			});
 	});
 	
 	//slick
@@ -53,6 +57,9 @@ $(document).ready(function() {
 		arrows: true
 	});
 	
+	$('.button__to2').click(function(){
+		$('.constructor__combo-slider').slick('slickNext');
+	});
 	//calc	
 	$(document).on('change', '.varRadio', function () {		
 		var score = 0;
@@ -90,13 +97,18 @@ $(document).ready(function() {
 		});
 	});
 	
-	$(document).on('change', '.varBlocks',  function () {	
-		var score = 0;
-		var summa = summBlock_1 + summBlock_2 + summBlock_3;
-		/*console.log('====='+summBlock_1);
+	$(document).on('change', function () {	
+		var summ = parseInt($('.summ').val());
+		var summa = summBlock_1 + summBlock_2 + summBlock_3 + summ;
+		var summa100 = summa * 100;
+		console.log('====='+summBlock_1);
 		console.log('====='+summBlock_2);
 		console.log('====='+summBlock_3);
-		console.log('summa====='+summa);*/
+		console.log('====='+summ);
+		console.log('summa====='+summa);
+		$(".summBlocks").val(summa);	
+		$(".summBlocks100").val(summa100);	
+		
 	});
 	
 	
@@ -136,7 +148,7 @@ $(document).ready(function() {
 		$('.disable-block_nahzac').hide();
 	});
 	
-	$('#srez').click(function(){
+	$('#srez-standart').click(function(){
 		$('.disable-block_srez').show();
 	});
 	$('#indSrez').click(function(){
@@ -226,4 +238,57 @@ $(document).ready(function() {
 		}
 	});
 	
+	$('.varRadio').on('change', function(){
+		var checked = $(this).prop('checked');
+		console.log(checked);
+		if ($(checked == 'true')) {
+			$('.button__to3').attr('data-taba', '3');
+		}
+	});
+	
+	//radiolist; Page to 3
+	
+	var firmware = document.querySelector('#firmware2');
+	var stamping = document.querySelectorAll('[name="stamping"]');
+	var eyelet = document.querySelector('#eyelet-color');
+	var rubber = document.querySelectorAll('[name="rubber-flat"]');
+	var button = document.querySelector('.button__to3');
+	function checkRadio(radioList) {
+		for (var i = 0; i < radioList.length; i++) {
+			if (radioList[i].checked) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	document.addEventListener('change', function() {
+		var isAtLeastOneThingChecked = firmware.checked || eyelet.checked || checkRadio(stamping) || checkRadio(rubber);
+		button.disabled = ! isAtLeastOneThingChecked;
+	});
+	
+	//radiolist; Page to 4
+	
+	var choiceBlock = document.querySelectorAll('[name="choice-block"]');
+	var blockColor = document.querySelectorAll('[name="block-color"]');
+	var blockType2 = document.querySelectorAll('[name="block-type2"]');
+	var blockType3 = document.querySelectorAll('[name="block-type3"]');
+	var buttonTo4 = document.querySelector('.button_to4');
+	function checkRadio_2(radioList_2) {
+		for (var i = 0; i < radioList_2.length; i++) {
+			if (radioList_2[i].checked) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	document.addEventListener('change', function() {
+		var isAtLeastOneThingChecked_2 = checkRadio_2(choiceBlock) || checkRadio_2(blockColor) || checkRadio_2(blockType2) || checkRadio_2(blockType3);
+		buttonTo4.disabled = ! isAtLeastOneThingChecked_2;
+	});
+	
+	$(".constructor__content")[0].reset();
 });
