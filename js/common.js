@@ -41,20 +41,22 @@ $(document).ready(function() {
 			$('#' + id + ' > [data-taba="' + taba + '"]').show().addClass('flex').siblings().hide().removeClass('flex');
 			$('.constructor__combo-slider').on('init', function () {
 				$('.constructor__combo-slider').slick({
-					infinite: true,
 					slidesToShow: 5,
 					slidesToScroll: 1,
-					arrows: true
+					arrows: true,
+					centerMode: true,
+					centerPadding: '0px'
 				});
 			});
 	});
 	
 	//slick
 	$('.constructor__combo-slider').slick({
-		infinite: true,
 		slidesToShow: 5,
 		slidesToScroll: 1,
-		arrows: true
+		arrows: true,
+		centerMode: true,
+		centerPadding: '0px'
 	});
 	
 	$('.button__to2').click(function(){
@@ -97,7 +99,17 @@ $(document).ready(function() {
 		});
 	});
 	
-	$(document).on('change', function () {	
+	$(document).on('change', function () {
+		if (!summBlock_1){
+			summBlock_1 = 0;
+		}
+		if (!summBlock_2){
+			summBlock_2 = 0;
+		}
+		if (!summBlock_3){
+			summBlock_3 = 0;
+		}
+		
 		var summ = parseInt($('.summ').val());
 		var summa = summBlock_1 + summBlock_2 + summBlock_3 + summ;
 		var summa100 = summa * 100;
@@ -106,9 +118,16 @@ $(document).ready(function() {
 		console.log('====='+summBlock_3);
 		console.log('====='+summ);
 		console.log('summa====='+summa);
+		$('.summTop').val(summ);
 		$(".summBlocks").val(summa);	
 		$(".summBlocks100").val(summa100);	
 		
+		var countTop = parseInt($('#count').val());
+		var editionCount = countTop * summ;
+		$('.summCount').val(countTop);
+		$('.edition').val(editionCount);
+		console.log(countTop);
+		console.log(editionCount);
 	});
 	
 	
@@ -134,6 +153,7 @@ $(document).ready(function() {
 	})(jQuery);
 	
 	//color-box
+	/*
 	$('#forzac').click(function(){
 		$('.disable-block_forzac').show();
 	});
@@ -146,7 +166,7 @@ $(document).ready(function() {
 	});
 	$('#indNahzac').click(function(){
 		$('.disable-block_nahzac').hide();
-	});
+	});*/
 	
 	$('#srez-standart').click(function(){
 		$('.disable-block_srez').show();
@@ -197,8 +217,7 @@ $(document).ready(function() {
 		var checked = $(this).prop('checked');
 		if ($(checked == 'true')) {
 			$('.flex-checked_disabled').prop('disabled', 'disabled');
-			$('.button__to2').attr('data-taba', '2');
-			var shit = $('.button__to2').attr('data-taba', '2');
+			$('.button__to2').attr('disabled', false);
 			$('.flex-checked').hide();
 			$('.tab_imba').addClass('hiderino');
 		}
@@ -208,7 +227,7 @@ $(document).ready(function() {
 		var checked = $(this).prop('checked');
 		if ($(checked == 'true')) {
 			$('.flex-checked_disabled').prop('disabled', false);
-			$('.button__to2').attr('data-taba', '2');
+			$('.button__to2').prop('disabled', false);
 			$('.flex-checked').show();
 			$('.tab_imba').removeClass('hiderino');
 		}
@@ -246,27 +265,28 @@ $(document).ready(function() {
 		}
 	});
 	
-	//radiolist; Page to 3
-	
-	var firmware = document.querySelector('#firmware2');
-	var stamping = document.querySelectorAll('[name="stamping"]');
-	var eyelet = document.querySelector('#eyelet-color');
-	var rubber = document.querySelectorAll('[name="rubber-flat"]');
-	var button = document.querySelector('.button__to3');
-	function checkRadio(radioList) {
-		for (var i = 0; i < radioList.length; i++) {
-			if (radioList[i].checked) {
-				return true;
-			}
-		}
-
-		return false;
-	}
-
-	document.addEventListener('change', function() {
-		var isAtLeastOneThingChecked = firmware.checked || eyelet.checked || checkRadio(stamping) || checkRadio(rubber);
-		button.disabled = ! isAtLeastOneThingChecked;
+	$('.button__to2').click(function(){
+		$('.item_lock2').removeClass('item_lock').prop('disabled', false);
 	});
+	$('.button_to1').click(function(){
+		$('.item_lock2').addClass('item_lock').prop('disabled', 'disabled');
+	});
+	
+	$('.button_for2').click(function(){
+		$('.item_lock3').addClass('item_lock').prop('disabled', 'disabled');
+	});
+	$('.button__to3').click(function(){
+		$('.item_lock3').removeClass('item_lock').prop('disabled', false);
+	});
+	
+	$('.button_for3').click(function(){
+		$('.item_lock4').addClass('item_lock').prop('disabled', 'disabled');
+	});
+	$('.button_to4').click(function(){
+		$('.item_lock4').removeClass('item_lock').prop('disabled', false);
+	});
+	
+	
 	
 	//radiolist; Page to 4
 	
@@ -288,6 +308,51 @@ $(document).ready(function() {
 	document.addEventListener('change', function() {
 		var isAtLeastOneThingChecked_2 = checkRadio_2(choiceBlock) || checkRadio_2(blockColor) || checkRadio_2(blockType2) || checkRadio_2(blockType3);
 		buttonTo4.disabled = ! isAtLeastOneThingChecked_2;
+	});
+	
+	
+	
+	$(document).on('change', function () {
+		$('.var7').click(function(){
+			$('.var8').prop('checked', false);
+		});
+		$('.var8').click(function(){
+			$('.var7').prop('checked', false);
+		});
+		$('.var12').click(function(){
+			$('.var13').prop('checked', false);
+		});
+		$('.var13').click(function(){
+			$('.var12').prop('checked', false);
+		});
+		/*
+		var checked = $('.var14').prop('checked');
+		console.log(checked);
+		if ($(checked == 'true')) {
+			$('.material__select_width1').removeClass('disabled');
+			$('.material__select_width2').removeClass('disabled');
+		}
+		else {
+			$('.material__select_width1').addClass('disabled');
+			$('.material__select_width2').addClass('disabled');
+		}*/
+		$('.var14').click(function(){
+			$('.material__select_width1').toggleClass('disabled');
+			$('.material__select_width2').toggleClass('disabled');
+		});
+		$('.nav-left__item1').click (function(){
+			$('.nav-left__item2').addClass('item_lock');
+			$('.nav-left__item3').addClass('item_lock');
+			$('.nav-left__item4').addClass('item_lock');
+		});
+		$('.nav-left__item2').click (function(){
+			$('.nav-left__item3').addClass('item_lock');
+			$('.nav-left__item4').addClass('item_lock');
+		});
+		$('.nav-left__item3').click (function(){
+			$('.nav-left__item4').addClass('item_lock');
+		});
+		
 	});
 	
 	$(".constructor__content")[0].reset();

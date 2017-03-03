@@ -19,16 +19,23 @@
 			<div class="blue-block">Срок изготовления</div>
 			<div class="text">Сентябрь 2017 г.</div>
 			<div class="blue-block">Стоимость</div>
-			<div class="text"> <span class="red">500 руб.</span> - 1 шт. <span class="red red_ml">500 000 руб.</span> - 1 000шт. </div>
-			<button type="button" class="button"> <i class="fa fa-rouble"></i> Рассчитать </button>
+			<div class="text">
+				<span>
+					<input disabled placeholder="500" value="500" type="text" class="red summTop"> руб. - 1 шт. 
+				</span>
+				<div>
+				<span class="red"><input disabled class="red edition" value="500000" type="text"></span> руб. - <input disabled class="summCount" value="1000" type="text"> шт. 
+				</div>
+			</div>
+			<!--<button type="button" class="button"> <i class="fa fa-rouble"></i> Рассчитать </button>-->
 		</form>
 		<!--constructor-top-nav-->
 		<form action="" id="constructor__content" class="constructor__content">
 			<div class="constructor__nav-left">
-				<div data-id="constructor__cente" data-taba="1" class="item"> <span>1</span> <i class="fa fa-lock"></i> </div>
-				<div data-id="constructor__cente" data-taba="2" class="item"> <span>2</span> <i class="fa fa-lock"></i> </div>
-				<div data-id="constructor__cente" data-taba="3" class="item"> <span>3</span> <i class="fa fa-lock"></i> </div>
-				<div data-id="constructor__cente" data-taba="4" class="item"> <span>4</span> <i class="fa fa-lock"></i> </div>
+				<button type="button" data-id="constructor__center" data-taba="1" class="item nav-left__item1"> <span>1</span> <i class="fa fa-lock"></i> </button>
+				<button disabled type="button" data-id="constructor__center" data-taba="2" class="item nav-left__item2 item_lock item_lock2"> <span>2</span> <i class="fa fa-lock"></i> </button>
+				<button disabled type="button" data-id="constructor__center" data-taba="3" class="item nav-left__item3 item_lock item_lock3"> <span>3</span> <i class="fa fa-lock"></i> </button>
+				<button disabled type="button" data-id="constructor__center" data-taba="4" class="item nav-left__item4 item_lock item_lock4"> <span>4</span> <i class="fa fa-lock"></i> </button>
 			</div>
 			<!--constructor__nav-left-->
 			<div id="constructor__center" class="constructor__center">
@@ -36,8 +43,8 @@
 					<h2>
 							Выберите модель и формат
 							<div class="button-nav">
-								<i class="fa fa-angle-left disactive"></i>
-								<i class="fa fa-angle-right active"></i>
+								<button type="button" disabled class="button_reset"><i class="fa fa-angle-left disactive"></i></button>
+								<button type="button" disabled class="button__to2 button_reset" data-id="constructor__center" data-taba="2"><i class="fa fa-angle-right active"></i></button>
 							</div>
 						</h2>
 					<div class="constructor__main">
@@ -84,7 +91,7 @@
 							</div>
 						</div>
 						<!--constructor__cover-type-->
-						<button data-id="constructor__center" data-taba="0" type="button" class="button constructor__submit button__to2"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
+						<button disabled data-id="constructor__center" data-taba="2" type="button" class="button constructor__submit button__to2"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
 					</div>
 					<!--constructor__main-->
 				</div>
@@ -94,8 +101,8 @@
 							 Обложка
 							<div class="button-nav button-nav_flex">
 								<a href="#" class="button button_buy"><i class="fa fa-cart-arrow-down"></i>Заказать</a>
-								<i class="fa fa-angle-left disactive"></i>
-								<i class="fa fa-angle-right active"></i>
+								<button type="button" class="button_reset button_to1" data-id="constructor__center" data-taba="1"><i class="fa fa-angle-left disactive"></i></button>
+								<button type="button" class="button__to3 button_reset" data-id="constructor__center" data-taba="3"><i class="fa fa-angle-right active"></i></button>
 							</div>
 						</h2>
 					<div class="constructor__main">
@@ -116,14 +123,104 @@
 						<!--constructor__cover-type-->
 						<div class="constructor__combo-type flex-checked">
 							<div>Варианты комбинации</div>
-							<div class="constructor__combo-slider">
-								<div class="item"> <img class="img-default" src="img/k1.png" alt=""> <img class="img-hover" src="img/k1-hover.png" alt=""> </div>
-								<div class="item"> <img class="img-default" src="img/k2.png" alt=""> <img class="img-hover" src="img/k2-hover.png" alt=""> </div>
-								<div class="item"> <img class="img-default" src="img/k3.png" alt=""> <img class="img-hover" src="img/k3-hover.png" alt=""> </div>
-								<div class="item"> <img class="img-default" src="img/k4.png" alt=""> <img class="img-hover" src="img/k4.png" alt=""> </div>
-								<div class="item"> <img class="img-default" src="img/k5.png" alt=""> <img class="img-hover" src="img/k5-hover.png" alt=""> </div>
-								<div class="item"> <img class="img-default" src="img/k5.png" alt=""> <img class="img-hover" src="img/k5-hover.png" alt=""> </div>
-								<div class="item"> <img class="img-default" src="img/k5.png" alt=""> <img class="img-hover" src="img/k5-hover.png" alt=""> </div>
+							<div class="constructor__combo-slider combo-slider">
+								<div class="item" data-class="basis-comb-wrap" data-taba="1"> 
+									<img class="img-default" src="img/combo-slider/k_1.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_1_1.png" alt=""> 
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="2"> 
+									<img class="img-default" src="img/combo-slider/k_2.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_2_1.png" alt=""> 
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="3"> 
+									<img class="img-default" src="img/combo-slider/k_3.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_3_1.png" alt=""> 
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="4"> 
+									<img class="img-default" src="img/combo-slider/k_4.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_4_1.png" alt=""> 
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="5"> 
+									<img class="img-default" src="img/combo-slider/k_5.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_5_1.png" alt="">
+									</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="6"> 
+									<img class="img-default" src="img/combo-slider/k_6.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_6_1.png" alt="">
+									</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="7"> 
+									<img class="img-default" src="img/combo-slider/k_7.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_7_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="8"> 
+									<img class="img-default" src="img/combo-slider/k_8.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_8_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="9"> 
+									<img class="img-default" src="img/combo-slider/k_9.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_9_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="10"> 
+									<img class="img-default" src="img/combo-slider/k_10.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_10_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="11"> 
+									<img class="img-default" src="img/combo-slider/k_11.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_11_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="12"> 
+									<img class="img-default" src="img/combo-slider/k_12.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_12_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="13"> 
+									<img class="img-default" src="img/combo-slider/k_13.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_13_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="14"> 
+									<img class="img-default" src="img/combo-slider/k_14.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_14_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="15"> 
+									<img class="img-default" src="img/combo-slider/k_15.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_15_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="16"> 
+									<img class="img-default" src="img/combo-slider/k_16.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_16_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="17"> 
+									<img class="img-default" src="img/combo-slider/k_17.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_17_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="18"> 
+									<img class="img-default" src="img/combo-slider/k_18.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_18_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="19"> 
+									<img class="img-default" src="img/combo-slider/k_19.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_19_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="20"> 
+									<img class="img-default" src="img/combo-slider/k_20.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_20_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="21"> 
+									<img class="img-default" src="img/combo-slider/k_21.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_21_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="22"> 
+									<img class="img-default" src="img/combo-slider/k_22.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_22_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="23"> 
+									<img class="img-default" src="img/combo-slider/k_23.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_23_1.png" alt="">
+								</div>
+								<div class="item" data-class="basis-comb-wrap" data-taba="24"> 
+									<img class="img-default" src="img/combo-slider/k_24.png" alt="">
+									<img class="img-hover" src="img/combo-slider/k_24_1.png" alt="">
+								</div>
+								
 							</div>
 							<!--constructor__combo-slider-->
 						</div>
@@ -175,11 +272,11 @@
 						</div><!--constructor__string-->
 						<div class="constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font constructor__cover-type_bord-top"> <span class="inp-label">Тиснение</span>
 							<div class="inpbox inpbox1">
-								<input class="varRadio var7" value="1000" type="radio" id="blint" name="stamping">
-								<label data-class="clishe" data-taba="1" for="blint">Блинтовое</label>
+								<input class="varRadio var7" value="1000" type="checkbox" id="blint" name="stamping">
+								<label class="var7_label" data-class="clishe" data-taba="1" for="blint">Блинтовое</label>
 							</div>
 							<div class="inpbox">
-								<input class="varRadio var8" value="1000" type="radio" id="folg" name="stamping">
+								<input class="varRadio var8" value="1000" type="checkbox" id="folg" name="stamping">
 								<label data-class="clishe" data-taba="2" for="folg">С фольгой</label>
 							</div>
 						</div><!--constructor__cover-type-->
@@ -557,145 +654,145 @@
 											</select>
 											<div id="material__colors_comb2" class="material__colors">
 												<div data-taba="1" class="material__box">
-													<div data-id="basis-color__vivella_comb" data-taba="1" class="color-picker c-4700"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="2" class="color-picker c-4916"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="3" class="color-picker c-4890"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="4" class="color-picker c-4872"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="5" class="color-picker c-4741"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="6" class="color-picker c-4720"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="7" class="color-picker c-4716"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="8" class="color-picker c-4714"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="9" class="color-picker a967"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="10" class="color-picker b920"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="11" class="color-picker b923"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="12" class="color-picker d162"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="13" class="color-picker d512"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="14" class="color-picker d519"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="15" class="color-picker e280"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="16" class="color-picker e478"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="17" class="color-picker e480"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="18" class="color-picker f002"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="19" class="color-picker f003"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="20" class="color-picker nero"></div>
-													<div data-id="basis-color__vivella_comb" data-taba="21" class="color-picker white"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="1" class="color-picker c-4700"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="2" class="color-picker c-4916"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="3" class="color-picker c-4890"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="4" class="color-picker c-4872"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="5" class="color-picker c-4741"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="6" class="color-picker c-4720"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="7" class="color-picker c-4716"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="8" class="color-picker c-4714"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="9" class="color-picker a967"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="10" class="color-picker b920"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="11" class="color-picker b923"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="12" class="color-picker d162"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="13" class="color-picker d512"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="14" class="color-picker d519"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="15" class="color-picker e280"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="16" class="color-picker e478"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="17" class="color-picker e480"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="18" class="color-picker f002"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="19" class="color-picker f003"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="20" class="color-picker nero"></div>
+													<div data-class="basis-color__vivella_comb" data-taba="21" class="color-picker white"></div>
 												</div><!--vivella-->
 												<div data-taba="2" class="material__box">
-													<div data-id="basis-color__kapris_comb" data-taba="1" class="color-picker a278"></div>
-													<div data-id="basis-color__kapris_comb" data-taba="2" class="color-picker a322"></div>
-													<div data-id="basis-color__kapris_comb" data-taba="3" class="color-picker a324"></div>
-													<div data-id="basis-color__kapris_comb" data-taba="4" class="color-picker a325"></div>
-													<div data-id="basis-color__kapris_comb" data-taba="5" class="color-picker a330"></div>
-													<div data-id="basis-color__kapris_comb" data-taba="6" class="color-picker a331"></div>
-													<div data-id="basis-color__kapris_comb" data-taba="7" class="color-picker nero"></div>
+													<div data-class="basis-color__kapris_comb" data-taba="1" class="color-picker a278"></div>
+													<div data-class="basis-color__kapris_comb" data-taba="2" class="color-picker a322"></div>
+													<div data-class="basis-color__kapris_comb" data-taba="3" class="color-picker a324"></div>
+													<div data-class="basis-color__kapris_comb" data-taba="4" class="color-picker a325"></div>
+													<div data-class="basis-color__kapris_comb" data-taba="5" class="color-picker a330"></div>
+													<div data-class="basis-color__kapris_comb" data-taba="6" class="color-picker a331"></div>
+													<div data-class="basis-color__kapris_comb" data-taba="7" class="color-picker nero"></div>
 												</div><!--kapris-->
 												<div data-taba="3" class="material__box">
-													<div data-id="basis-color__dedalo_comb" data-taba="1" class="color-picker b561"></div>
-													<div data-id="basis-color__dedalo_comb" data-taba="2" class="color-picker b562"></div>
-													<div data-id="basis-color__dedalo_comb" data-taba="3" class="color-picker b564"></div>
-													<div data-id="basis-color__dedalo_comb" data-taba="4" class="color-picker b566"></div>
-													<div data-id="basis-color__dedalo_comb" data-taba="5" class="color-picker b568"></div>
+													<div data-class="basis-color__dedalo_comb" data-taba="1" class="color-picker b561"></div>
+													<div data-class="basis-color__dedalo_comb" data-taba="2" class="color-picker b562"></div>
+													<div data-class="basis-color__dedalo_comb" data-taba="3" class="color-picker b564"></div>
+													<div data-class="basis-color__dedalo_comb" data-taba="4" class="color-picker b566"></div>
+													<div data-class="basis-color__dedalo_comb" data-taba="5" class="color-picker b568"></div>
 												</div><!--dedalo-->
 												<div data-taba="4" class="material__box">
-													<div data-id="basis-color__diario_comb" data-taba="1" class="color-picker a370"></div>
+													<div data-class="basis-color__diario_comb" data-taba="1" class="color-picker a370"></div>
 												</div><!--diario-->
 												<div data-taba="5" class="material__box">
-													<div data-id="basis-color__idea_comb" data-taba="1" class="color-picker a279"></div>
+													<div data-class="basis-color__idea_comb" data-taba="1" class="color-picker a279"></div>
 												</div><!--idea-->
 												<div data-taba="6" class="material__box">
-													<div data-id="basis-color__kantanella_comb" data-taba="1" class="color-picker c-4872"></div>
-													<div data-id="basis-color__kantanella_comb" data-taba="2" class="color-picker c-4890"></div>
-													<div data-id="basis-color__kantanella_comb" data-taba="3" class="color-picker d613m"></div>
+													<div data-class="basis-color__kantanella_comb" data-taba="1" class="color-picker c-4872"></div>
+													<div data-class="basis-color__kantanella_comb" data-taba="2" class="color-picker c-4890"></div>
+													<div data-class="basis-color__kantanella_comb" data-taba="3" class="color-picker d613m"></div>
 												</div><!--kantanella-->
 												<div data-taba="7" class="material__box">
-													<div data-id="basis-color__korduroi_comb" data-taba="1" class="color-picker f355"></div>
-													<div data-id="basis-color__korduroi_comb" data-taba="2" class="color-picker f358"></div>
-													<div data-id="basis-color__korduroi_comb" data-taba="3" class="color-picker f359"></div>
+													<div data-class="basis-color__korduroi_comb" data-taba="1" class="color-picker f355"></div>
+													<div data-class="basis-color__korduroi_comb" data-taba="2" class="color-picker f358"></div>
+													<div data-class="basis-color__korduroi_comb" data-taba="3" class="color-picker f359"></div>
 												</div><!--korduroi-->
 												<div data-taba="8" class="material__box">
-													<div data-id="basis-color__korolla_comb" data-taba="1" class="color-picker c-4401"></div>
-													<div data-id="basis-color__korolla_comb" data-taba="2" class="color-picker c-4407"></div>
-													<div data-id="basis-color__korolla_comb" data-taba="3" class="color-picker a737"></div>
+													<div data-class="basis-color__korolla_comb" data-taba="1" class="color-picker c-4401"></div>
+													<div data-class="basis-color__korolla_comb" data-taba="2" class="color-picker c-4407"></div>
+													<div data-class="basis-color__korolla_comb" data-taba="3" class="color-picker a737"></div>
 												</div><!--korolla-->
 												<div data-taba="9" class="material__box">
-													<div data-id="basis-color__madera_comb" data-taba="1" class="color-picker e324"></div>
-													<div data-id="basis-color__madera_comb" data-taba="2" class="color-picker e328"></div>
-													<div data-id="basis-color__madera_comb" data-taba="3" class="color-picker e329"></div>
-													<div data-id="basis-color__madera_comb" data-taba="4" class="color-picker e331"></div>
-													<div data-id="basis-color__madera" data-taba="5" class="color-picker e332"></div>
-													<div data-id="basis-color__madera" data-taba="6" class="color-picker e337"></div>
+													<div data-class="basis-color__madera_comb" data-taba="1" class="color-picker e324"></div>
+													<div data-class="basis-color__madera_comb" data-taba="2" class="color-picker e328"></div>
+													<div data-class="basis-color__madera_comb" data-taba="3" class="color-picker e329"></div>
+													<div data-class="basis-color__madera_comb" data-taba="4" class="color-picker e331"></div>
+													<div data-class="basis-color__madera" data-taba="5" class="color-picker e332"></div>
+													<div data-class="basis-color__madera" data-taba="6" class="color-picker e337"></div>
 												</div><!--madera-->
 												<div data-taba="10" class="material__box">
-													<div data-id="basis-color__memori_comb" data-taba="1" class="color-picker e044"></div>
-													<div data-id="basis-color__memori_comb" data-taba="2" class="color-picker f311"></div>
-													<div data-id="basis-color__memori_comb" data-taba="3" class="color-picker f313"></div>
-													<div data-id="basis-color__memori_comb" data-taba="4" class="color-picker f319"></div>
+													<div data-class="basis-color__memori_comb" data-taba="1" class="color-picker e044"></div>
+													<div data-class="basis-color__memori_comb" data-taba="2" class="color-picker f311"></div>
+													<div data-class="basis-color__memori_comb" data-taba="3" class="color-picker f313"></div>
+													<div data-class="basis-color__memori_comb" data-taba="4" class="color-picker f319"></div>
 												</div><!--memori-->
 												<div data-taba="11" class="material__box">
-													<div data-id="basis-color__moonlight_comb" data-taba="1" class="color-picker b633m"></div>
-													<div data-id="basis-color__moonlight_comb" data-taba="2" class="color-picker b634m"></div>
-													<div data-id="basis-color__moonlight_comb" data-taba="3" class="color-picker b636m"></div>
+													<div data-class="basis-color__moonlight_comb" data-taba="1" class="color-picker b633m"></div>
+													<div data-class="basis-color__moonlight_comb" data-taba="2" class="color-picker b634m"></div>
+													<div data-class="basis-color__moonlight_comb" data-taba="3" class="color-picker b636m"></div>
 												</div><!--moonlight-->
 												<div data-taba="12" class="material__box">
-													<div data-id="basis-color__nebraska_comb" data-taba="1" class="color-picker c-077"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="2" class="color-picker a220"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="3" class="color-picker a222"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="4" class="color-picker a223"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="5" class="color-picker a224"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="6" class="color-picker a226"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="7" class="color-picker a227"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="8" class="color-picker a229"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="9" class="color-picker a837"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="10" class="color-picker d135m"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="11" class="color-picker d140"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="12" class="color-picker d148"></div>
-													<div data-id="basis-color__nebraska_comb" data-taba="13" class="color-picker d155"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="1" class="color-picker c-077"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="2" class="color-picker a220"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="3" class="color-picker a222"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="4" class="color-picker a223"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="5" class="color-picker a224"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="6" class="color-picker a226"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="7" class="color-picker a227"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="8" class="color-picker a229"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="9" class="color-picker a837"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="10" class="color-picker d135m"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="11" class="color-picker d140"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="12" class="color-picker d148"></div>
+													<div data-class="basis-color__nebraska_comb" data-taba="13" class="color-picker d155"></div>
 												</div><!--nebraska-->
 												<div data-taba="13" class="material__box">
-													<div data-id="basis-color__pelush_comb" data-taba="1" class="color-picker c-026"></div>
-													<div data-id="basis-color__pelush_comb" data-taba="2" class="color-picker c-049"></div>
-													<div data-id="basis-color__pelush_comb" data-taba="3" class="color-picker c-083"></div>
+													<div data-class="basis-color__pelush_comb" data-taba="1" class="color-picker c-026"></div>
+													<div data-class="basis-color__pelush_comb" data-taba="2" class="color-picker c-049"></div>
+													<div data-class="basis-color__pelush_comb" data-taba="3" class="color-picker c-083"></div>
 												</div><!--pelush-->
 												<div data-taba="14" class="material__box">
-													<div data-id="basis-color__plise_comb" data-taba="1" class="color-picker b113m"></div>
-													<div data-id="basis-color__plise_comb" data-taba="2" class="color-picker b116m"></div>
-													<div data-id="basis-color__plise_comb" data-taba="3" class="color-picker b122m"></div>
+													<div data-class="basis-color__plise_comb" data-taba="1" class="color-picker b113m"></div>
+													<div data-class="basis-color__plise_comb" data-taba="2" class="color-picker b116m"></div>
+													<div data-class="basis-color__plise_comb" data-taba="3" class="color-picker b122m"></div>
 												</div><!--plise-->
 												<div data-taba="15" class="material__box">
-													<div data-id="basis-color__poni_comb" data-taba="1" class="color-picker f125"></div>
-													<div data-id="basis-color__poni_comb" data-taba="2" class="color-picker f126"></div>
-													<div data-id="basis-color__poni_comb" data-taba="3" class="color-picker f176"></div>
-													<div data-id="basis-color__poni_comb" data-taba="4" class="color-picker nero"></div>
+													<div data-class="basis-color__poni_comb" data-taba="1" class="color-picker f125"></div>
+													<div data-class="basis-color__poni_comb" data-taba="2" class="color-picker f126"></div>
+													<div data-class="basis-color__poni_comb" data-taba="3" class="color-picker f176"></div>
+													<div data-class="basis-color__poni_comb" data-taba="4" class="color-picker nero"></div>
 												</div><!--poni-->
 												<div data-taba="16" class="material__box">
-													<div data-id="basis-color__tortuga_comb" data-taba="1" class="color-picker d900"></div>
-													<div data-id="basis-color__tortuga_comb" data-taba="2" class="color-picker d901"></div>
-													<div data-id="basis-color__tortuga_comb" data-taba="3" class="color-picker d923"></div>
-													<div data-id="basis-color__tortuga_comb" data-taba="4" class="color-picker d926"></div>
-													<div data-id="basis-color__tortuga_comb" data-taba="5" class="color-picker d945m"></div>
-													<div data-id="basis-color__tortuga_comb" data-taba="6" class="color-picker d947m"></div>
+													<div data-class="basis-color__tortuga_comb" data-taba="1" class="color-picker d900"></div>
+													<div data-class="basis-color__tortuga_comb" data-taba="2" class="color-picker d901"></div>
+													<div data-class="basis-color__tortuga_comb" data-taba="3" class="color-picker d923"></div>
+													<div data-class="basis-color__tortuga_comb" data-taba="4" class="color-picker d926"></div>
+													<div data-class="basis-color__tortuga_comb" data-taba="5" class="color-picker d945m"></div>
+													<div data-class="basis-color__tortuga_comb" data-taba="6" class="color-picker d947m"></div>
 												</div><!--tortuga-->
 												<div data-taba="17" class="material__box">
-													<div data-id="basis-color__toskana_comb" data-taba="1" class="color-picker a976"></div>
-													<div data-id="basis-color__toskana_comb" data-taba="2" class="color-picker a977"></div>
-													<div data-id="basis-color__toskana_comb" data-taba="3" class="color-picker a978"></div>
-													<div data-id="basis-color__toskana_comb" data-taba="4" class="color-picker a979"></div>
+													<div data-class="basis-color__toskana_comb" data-taba="1" class="color-picker a976"></div>
+													<div data-class="basis-color__toskana_comb" data-taba="2" class="color-picker a977"></div>
+													<div data-class="basis-color__toskana_comb" data-taba="3" class="color-picker a978"></div>
+													<div data-class="basis-color__toskana_comb" data-taba="4" class="color-picker a979"></div>
 												</div><!--toskana-->
 												<div data-taba="18" class="material__box">
-													<div data-id="basis-color__uta_comb" data-taba="1" class="color-picker f336"></div>
-													<div data-id="basis-color__uta_comb" data-taba="2" class="color-picker f340"></div>
-													<div data-id="basis-color__uta_comb" data-taba="3" class="color-picker f341"></div>
-													<div data-id="basis-color__uta_comb" data-taba="4" class="color-picker f355"></div>
-													<div data-id="basis-color__uta_comb" data-taba="5" class="color-picker f356"></div>
+													<div data-class="basis-color__uta_comb" data-taba="1" class="color-picker f336"></div>
+													<div data-class="basis-color__uta_comb" data-taba="2" class="color-picker f340"></div>
+													<div data-class="basis-color__uta_comb" data-taba="3" class="color-picker f341"></div>
+													<div data-class="basis-color__uta_comb" data-taba="4" class="color-picker f355"></div>
+													<div data-class="basis-color__uta_comb" data-taba="5" class="color-picker f356"></div>
 												</div><!--uta-->
 												<div data-taba="19" class="material__box">
-													<div data-id="basis-color__vintage_comb" data-taba="1" class="color-picker f441"></div>
-													<div data-id="basis-color__vintage_comb" data-taba="2" class="color-picker f444"></div>
-													<div data-id="basis-color__vintage_comb" data-taba="3" class="color-picker nero"></div>
+													<div data-class="basis-color__vintage_comb" data-taba="1" class="color-picker f441"></div>
+													<div data-class="basis-color__vintage_comb" data-taba="2" class="color-picker f444"></div>
+													<div data-class="basis-color__vintage_comb" data-taba="3" class="color-picker nero"></div>
 												</div><!--vintage-->
 												<div data-taba="20" class="material__box">
-													<div data-id="basis-color__zebra_comb" data-taba="1" class="color-picker f155"></div>
-													<div data-id="basis-color__zebra_comb" data-taba="2" class="color-picker f156"></div>
-													<div data-id="basis-color__zebra_comb" data-taba="3" class="color-picker f157"></div>
+													<div data-class="basis-color__zebra_comb" data-taba="1" class="color-picker f155"></div>
+													<div data-class="basis-color__zebra_comb" data-taba="2" class="color-picker f156"></div>
+													<div data-class="basis-color__zebra_comb" data-taba="3" class="color-picker f157"></div>
 												</div><!--zebra-->
 											</div><!--material__colors-->
 										</div><!--material__cont-wrap-->
@@ -729,7 +826,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="constructor__string constructor__string_center constructor__cover-type_label-font flex-checked">
+						<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
 							<div class="string-left">
 								<div class="string-name mr-20">Резинка</div>
 								<div class="inpbox inpbox_mb inpbox_flex">
@@ -786,8 +883,8 @@
 							</div>
 						</div>
 						<div class="nav-submit">
-							<button data-id="constructor__center" data-taba="1" type="button" class="button constructor__submit constructor__submit_prev"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
-							<button disabled data-id="constructor__center" data-taba="3" type="button" class="button constructor__submit button__to3"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
+							<button data-id="constructor__center" data-taba="1" type="button" class="button button_to1 constructor__submit constructor__submit_prev"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
+							<button data-id="constructor__center" data-taba="3" type="button" class="button constructor__submit button__to3"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
 						</div>
 					</div><!--constructor__main-->
 				</div>
@@ -797,8 +894,9 @@
 							 Обложка
 							<div class="button-nav button-nav_flex">
 								<a href="#" class="button button_buy"><i class="fa fa-cart-arrow-down"></i>Заказать</a>
-								<i class="fa fa-angle-left disactive"></i>
-								<i class="fa fa-angle-right active"></i>
+								<button type="button" class="button_reset button_for2" data-id="constructor__center" data-taba="2"><i class="fa fa-angle-left disactive"></i></button>
+								<button type="button" class="button_reset button_to4" data-id="constructor__center" data-taba="4"><i class="fa fa-angle-right active"></i></button>
+								
 							</div>
 						</h2>
 					<div class="choice border-top">
@@ -830,11 +928,11 @@
 						<h2>Выберите цвет блока</h2>
 						<div class="inpbox-wrap">
 							<div class="inpbox inpbox1">
-								<input class="varRadio var12" value="1000" id="choice-color1" name="block-color" type="radio">
+								<input class="varRadio var12" value="1000" id="choice-color1" name="block-color" type="checkbox">
 								<label for="choice-color1">Белый</label>
 							</div>
 							<div class="inpbox">
-								<input class="varRadio var13" value="1000" id="choice-color2" name="block-color" type="radio">
+								<input class="varRadio var13" value="1000" id="choice-color2" name="block-color" type="checkbox">
 								<label for="choice-color2">Кремовый</label>
 							</div>
 						</div>
@@ -843,16 +941,16 @@
 					<!--choice-color-->
 					<div class="ad-block constructor__cover-type constructor__cover-type_flex constructor__cover-type_label-font"> <span class="inp-label inp-label_mrr">Рекламные вставки</span>
 						<div class="inpbox inpbox1">
-							<input class="varRadio var14" value="1000" id="ad1" name="ad" type="radio">
+							<input class="varRadio var14" value="1000" id="ad1" name="ad" type="checkbox">
 							<label for="ad1">Да</label>
 						</div> <span class="inp-label inp-label_mrl">Страницы</span>
-						<select class="styler material__select material__select_width1">
+						<select class="styler material__select material__select_width1 disabled">
 							<option>2</option>
 							<option>4</option>
 							<option>8</option>
 							<option>12</option>
 						</select> <span class="inp-label inp-label_mr2">Расположение</span>
-						<select class="styler material__select material__select_width2">
+						<select class="styler material__select material__select_width2 disabled">
 							<option>Перед блоком</option>
 							<option>По центру блока</option>
 							<option>В конце блока</option>
@@ -860,65 +958,21 @@
 					</div>
 					<!--ad-block-->
 					<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
-						<div class="string-left">
+						<div class="string-left nomg">
 							<div class="string-name mr-20">Форзац</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input data-class="book-model" data-taba="1" class="block-types_1 varBlocks forzac" value="1000" id="forzac" name="block-type1" type="radio">
-								<label class="forzac-standart" for="forzac">Стандарт</label>
-							</div>
-						</div>
-						<div class="color-box__wrap">
-							<div class="title">Индивидуальный</div>
-							<div class="color-box color-box_forzac">
-								<div class="inpbox">
-									<input data-class="book-model" data-taba="4" class="block-types_1 varBlocks" id="indForzac" value="2000" name="block-type1" type="radio">
-									<label for="indForzac"></label>
-								</div>
-								<a class="item pink1"></a>
-								<a class="item purple2"></a>
-								<a class="item green1"></a>
-								<a class="item green2"></a>
-								<a class="item purple1"></a>
-								<a class="item blue2"></a>
-								<a class="item grey2"></a>
-								<a class="item blue1"></a>
-								<a class="item brown1"></a>
-								<a class="item black"></a>
-								<a class="item grey1"></a>
-								<a class="item yellow"></a>
-								<div class="disable-block disable-block_forzac"></div>
+								<input class="block-types_1 varBlocks forzac" value="1000" id="forzac" name="block-type1" type="checkbox">
+								<label data-class="book-model" data-taba="4" class="forzac-standart" for="forzac">Стандарт</label>
 							</div>
 						</div>
 					</div>
 					<!--constructor__string-->
 					<div class="constructor__string constructor__string_center constructor__cover-type_label-font">
-						<div class="string-left">
+						<div class="string-left nomg">
 							<div class="string-name mr-20">Нахзац</div>
 							<div class="inpbox inpbox_mb inpbox_flex">
-								<input data-class="book-model" data-taba="1" class="block-types_2 varBlocks" value="1000" id="nahzac" name="block-type2" type="radio">
-								<label for="nahzac">Стандарт</label>
-							</div>
-						</div>
-						<div class="color-box__wrap">
-							<div class="title">Индивидуальный</div>
-							<div class="color-box">
-								<div class="inpbox">
-									<input data-class="book-model" data-taba="5" class="block-types_2 varBlocks" id="indNahzac" value="2000" name="block-type2" type="radio">
-									<label for="indNahzac"></label>
-								</div>
-								<a class="item pink1"></a>
-								<a class="item purple2"></a>
-								<a class="item green1"></a>
-								<a class="item green2"></a>
-								<a class="item purple1"></a>
-								<a class="item blue2"></a>
-								<a class="item grey2"></a>
-								<a class="item blue1"></a>
-								<a class="item brown1"></a>
-								<a class="item black"></a>
-								<a class="item grey1"></a>
-								<a class="item yellow"></a>
-								<div class="disable-block disable-block_nahzac"></div>
+								<input class="block-types_2 varBlocks" value="1000" id="nahzac" name="block-type2" type="checkbox">
+								<label data-class="book-model" data-taba="5" for="nahzac">Стандарт</label>
 							</div>
 						</div>
 					</div><!--constructor__string-->
@@ -954,11 +1008,10 @@
 					</div><!--constructor__string-->
 					
 					<div class="nav-submit">
-						<button data-id="constructor__center" data-taba="2" type="button" class="button constructor__submit constructor__submit_prev"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
-						<button disabled data-id="constructor__center" data-taba="4" type="button" class="button button_to4 constructor__submit"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
+						<button data-id="constructor__center" data-taba="2" type="button" class="button constructor__submit constructor__submit_prev button_for2"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
+						<button data-id="constructor__center" data-taba="4" type="button" class="button button_to4 constructor__submit"> <span>Следующий шаг<i class="fa fa-angle-right"></i></span> </button>
 					</div>
-				</div>
-				<!--constructor__tab-->
+				</div><!--constructor__tab-->
 				<div data-taba="4" class="constructor__tab constructor__tab4">
 					<h2 class="h2_flex">
 							 Расчет стоимости
@@ -993,13 +1046,11 @@
 						<textarea class="textarea" placeholder="Опишите здесь свои пожелания к макету..."></textarea>
 					</div>
 					<div class="nav-submit">
-						<button data-id="constructor__center" data-taba="3" type="button" class="button constructor__submit constructor__submit_prev"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
+						<button data-id="constructor__center" data-taba="3" type="button" class="button constructor__submit constructor__submit_prev button_for3"> <span><i class="fa fa-angle-left"></i>Предыдущий шаг</span> </button>
 						<button type="submit" class="button constructor__submit"> <span>Оформить заказ</span> </button>
 					</div>
-				</div>
-				<!--constructor__tab4-->
-			</div>
-			<!--constructor__center-->
+				</div><!--constructor__tab4-->
+			</div><!--constructor__center-->
 			<div class="constructor__right">
 				<!--***START***book-construct***START***-->
 				<div class="book-model">
@@ -1360,8 +1411,345 @@
 						<div data-taba="11" class="basis_srez__item"><img src="img/sections/colors/srez_zoloto.png" alt=""></div></div><!--basis_srez-->
 				</div>
 				<div class="basis-comb-wrap">
+					<div data-taba="1" class="basis basis-comb">
+						<div data-taba="1" class="basis-color basis-color__vivella_comb  basis-color__vivella">
+							<div data-taba="1" class="basis-color__item"><img src="img/vivella/comb/comb-1/4700.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/vivella/comb/comb-1/4714.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/vivella/comb/comb-1/4716.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/vivella/comb/comb-1/4720.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/vivella/comb/comb-1/4741.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/vivella/comb/comb-1/4872.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/vivella/comb/comb-1/4890.png" alt=""></div>
+							<div data-taba="8" class="basis-color__item"><img src="img/vivella/comb/comb-1/4916.png" alt=""></div>
+							<div data-taba="9" class="basis-color__item"><img src="img/vivella/comb/comb-1/A967.png" alt=""></div>
+							<div data-taba="10" class="basis-color__item"><img src="img/vivella/comb/comb-1/B920.png" alt=""></div>
+							<div data-taba="11" class="basis-color__item"><img src="img/vivella/comb/comb-1/B923.png" alt=""></div>
+							<div data-taba="12" class="basis-color__item"><img src="img/vivella/comb/comb-1/D162.png" alt=""></div>
+							<div data-taba="13" class="basis-color__item"><img src="img/vivella/comb/comb-1/D512.png" alt=""></div>
+							<div data-taba="14" class="basis-color__item"><img src="img/vivella/comb/comb-1/D519.png" alt=""></div>
+							<div data-taba="15" class="basis-color__item"><img src="img/vivella/comb/comb-1/E280.png" alt=""></div>
+							<div data-taba="16" class="basis-color__item"><img src="img/vivella/comb/comb-1/E478.png" alt=""></div>
+							<div data-taba="17" class="basis-color__item"><img src="img/vivella/comb/comb-1/E480.png" alt=""></div>
+							<div data-taba="18" class="basis-color__item"><img src="img/vivella/comb/comb-1/F002.png" alt=""></div>
+							<div data-taba="19" class="basis-color__item"><img src="img/vivella/comb/comb-1/F003.png" alt=""></div>
+							<div data-taba="20" class="basis-color__item"><img src="img/vivella/comb/comb-1/NERO.png" alt=""></div>
+							<div data-taba="21" class="basis-color__item"><img src="img/vivella/comb/comb-1/WHITE.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/vivella/comb/comb-1/mat/vivella.png" alt=""></div>
+						</div><!--vivella-->
+						<div data-taba="2" class="basis-color basis-color__kapris_comb  basis-color__kapris">
+							<div data-taba="1" class="basis-color__item"><img src="img/kapris/comb/comb-1/A278.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/kapris/comb/comb-1/A322.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/kapris/comb/comb-1/A324.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/kapris/comb/comb-1/A325.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/kapris/comb/comb-1/A330.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/kapris/comb/comb-1/A331.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/kapris/comb/comb-1/NERO.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_vivella"><img src="img/kapris/comb/comb-1/mat/kapris.png" alt=""></div>
+						</div><!--kapris-->
+						<div data-taba="3" class="basis-color basis-color basis-color__dedalo_comb  basis-color__dedalo">
+							<div data-taba="1" class="basis-color__item"><img src="img/dedalo/comb/comb-1/B561.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/dedalo/comb/comb-1/B562.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/dedalo/comb/comb-1/B564.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/dedalo/comb/comb-1/B566.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/dedalo/comb/comb-1/B568.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_dedalo"><img src="img/dedalo/comb/comb-1/mat/dedalo.png" alt=""></div>
+						</div><!--dedalo-->
+						<div data-taba="4" class="basis-color basis-color basis-color__diario_comb  basis-color__diario">
+							<div data-taba="1" class="basis-color__item"><img src="img/diario/comb/comb-1/A370.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_diario"><img src="img/diario/comb/comb-1/mat/diario.png" alt=""></div>
+						</div><!--diario-->
+						<div data-taba="5" class="basis-color basis-color basis-color__idea_comb  basis-color__idea">
+							<div data-taba="1" class="basis-color__item"><img src="img/idea/comb/comb-1/A279.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/idea/comb/comb-1//mat/idea.png" alt=""></div>
+						</div><!--idea-->
+						<div data-taba="6" class="basis-color basis-color basis-color__kantanella_comb  basis-color__kantanella">
+							<div data-taba="1" class="basis-color__item"><img src="img/kantanella/comb/comb-1/4872.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/kantanella/comb/comb-1/4890.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/kantanella/comb/comb-1/D613M.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/kantanella/comb/comb-1/mat/kantanella.png" alt=""></div>
+						</div><!--kantanella-->
+						<div data-taba="7" class="basis-color basis-color basis-color__korduroi_comb  basis-color__korduroi">
+							<div data-taba="1" class="basis-color__item"><img src="img/korduroi/comb/comb-1/F355.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/korduroi/comb/comb-1/F358.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/korduroi/comb/comb-1/F359.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/korduroi/comb/comb-1/mat/korduroy.png" alt=""></div>
+						</div><!--korduroi-->
+						<div data-taba="8" class="basis-color basis-color basis-color__korolla_comb  basis-color__korolla">
+							<div data-taba="1" class="basis-color__item"><img src="img/korolla/comb/comb-1/4401.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/korolla/comb/comb-1/4407.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/korolla/comb/comb-1/A737.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/korolla/comb/comb-1/mat/korolla.png" alt=""></div>
+						</div><!--korolla-->
+						<div data-taba="9" class="basis-color basis-color basis-color__madera_comb  basis-color__madera">
+							<div data-taba="1" class="basis-color__item"><img src="img/madera/comb/comb-1/E324.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/madera/comb/comb-1/E328.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/madera/comb/comb-1/E329.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/madera/comb/comb-1/E331.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/madera/comb/comb-1/E332.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/madera/comb/comb-1/E337.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/madera/comb/comb-1/NERO.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/madera/comb/comb-1/mat/madera.png" alt=""></div>
+						</div><!--madera-->
+						<div data-taba="10" class="basis-color basis-color basis-color__memori_comb basis-color__memori">
+							<div data-taba="1" class="basis-color__item"><img src="img/memori/comb/comb-1/E044.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/memori/comb/comb-1/F311.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/memori/comb/comb-1/F313.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/memori/comb/comb-1/F319.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/memori/comb/comb-1/mat/memory.png" alt=""></div>
+						</div><!--memori-->
+						<div data-taba="11" class="basis-color basis-color basis-color__moonlight_comb basis-color__moonlight">
+							<div data-taba="1" class="basis-color__item"><img src="img/moonlight/comb/comb-1/B633M.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/moonlight/comb/comb-1/B634M.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/moonlight/comb/comb-1/B636M.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/moonlight/comb/comb-1/mat/munlayt.png" alt=""></div>
+						</div><!--moonlight-->
+						<div data-taba="12" class="basis-color basis-color basis-color__nebraska_comb basis-color__nebraska">
+							<div data-taba="1" class="basis-color__item"><img src="img/nebraska/comb/comb-1/077.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/nebraska/comb/comb-1/A220.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/nebraska/comb/comb-1/A222.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/nebraska/comb/comb-1/A223.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/nebraska/comb/comb-1/A224.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/nebraska/comb/comb-1/A226.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/nebraska/comb/comb-1/A227.png" alt=""></div>
+							<div data-taba="8" class="basis-color__item"><img src="img/nebraska/comb/comb-1/A299.png" alt=""></div>
+							<div data-taba="9" class="basis-color__item"><img src="img/nebraska/comb/comb-1/A837.png" alt=""></div>
+							<div data-taba="10" class="basis-color__item"><img src="img/nebraska/comb/comb-1/D135M.png" alt=""></div>
+							<div data-taba="11" class="basis-color__item"><img src="img/nebraska/comb/comb-1/D140.png" alt=""></div>
+							<div data-taba="12" class="basis-color__item"><img src="img/nebraska/comb/comb-1/D148.png" alt=""></div>
+							<div data-taba="13" class="basis-color__item"><img src="img/nebraska/comb/comb-1/D155.png" alt=""></div>
+							<div data-taba="14" class="basis-color__item"><img src="img/nebraska/comb/comb-1/NERO.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/nebraska/comb/comb-1/mat/nebraska.png" alt=""></div>
+						</div><!--nebraska-->
+						<div data-taba="13" class="basis-color basis-color basis-color__pelush_comb basis-color__pelush">
+							<div data-taba="1" class="basis-color__item"><img src="img/pelush/comb/comb-1/026.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/pelush/comb/comb-1/049.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/pelush/comb/comb-1/083.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/pelush/comb/comb-1/mat/pelush.png" alt=""></div>
+						</div><!--pelush-->
+						<div data-taba="14" class="basis-color basis-color basis-color__plise_comb basis-color__plise">
+							<div data-taba="1" class="basis-color__item"><img src="img/plise/comb/comb-1/B113M.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/plise/comb/comb-1/B116M.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/plise/comb/comb-1/B122M.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/plise/comb/comb-1/mat/plise.png" alt=""></div>
+						</div><!--plise-->
+						<div data-taba="15" class="basis-color basis-color basis-color__poni_comb basis-color__poni">
+							<div data-taba="1" class="basis-color__item"><img src="img/poni/comb/comb-1/F125.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/poni/comb/comb-1/F126.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/poni/comb/comb-1/F176.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/poni/comb/comb-1/NERO.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/poni/comb/comb-1/mat/poni.png" alt=""></div>
+						</div><!--poni-->
+						<div data-taba="16" class="basis-color basis-color basis-color__tortuga_comb basis-color__tortuga">
+							<div data-taba="1" class="basis-color__item"><img src="img/tortuga/comb/comb-1/D900.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/tortuga/comb/comb-1/D901.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/tortuga/comb/comb-1/D923.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/tortuga/comb/comb-1/D926.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/tortuga/comb/comb-1/D945M.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/tortuga/comb/comb-1/D947M.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/tortuga/comb/comb-1/NERO.png" alt=""></div>
+							<div data-taba="8" class="basis-color__item"><img src="img/tortuga/comb/comb-1/D926.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/tortuga/comb/comb-1/mat/tortuga.png" alt=""></div>
+						</div><!--tortuga-->
+						<div data-taba="17" class="basis-color basis-color basis-color__toskana_comb basis-color__toskana">
+							<div data-taba="1" class="basis-color__item"><img src="img/toskana/comb/comb-1/A976.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/toskana/comb/comb-1/A977.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/toskana/comb/comb-1/A978.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/toskana/comb/comb-1/A979.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/toskana/comb/comb-1/NERO.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/toskana/comb/comb-1/mat/toskana.png" alt=""></div>
+						</div><!--toskana-->
+						<div data-taba="18" class="basis-color basis-color basis-color__uta_comb basis-color__uta">
+							<div data-taba="1" class="basis-color__item"><img src="img/uta/comb/comb-1/F336.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/uta/comb/comb-1/F340.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/uta/comb/comb-1/F341.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/uta/comb/comb-1/F355.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/uta/comb/comb-1/F356.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/uta/comb/comb-1/mat/uta.png" alt=""></div>
+						</div><!--uta-->
+						<div data-taba="19" class="basis-color basis-color basis-color__vintage_comb basis-color__vintage">
+							<div data-taba="1" class="basis-color__item"><img src="img/vintage/comb/comb-1/F441.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/vintage/comb/comb-1/F444.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/vintage/comb/comb-1/NERO.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/vintage/comb/comb-1/mat/vintag.png" alt=""></div>
+						</div><!--vintage-->
+						<div data-taba="20" class="basis-color basis-color basis-color__zebra_comb basis-color__zebra">
+							<div data-taba="1" class="basis-color__item"><img src="img/zebra/comb/comb-1/F155.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/zebra/comb/comb-1/F156.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/zebra/comb/comb-1/F157.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/zebra/comb/comb-1/mat/zebra.png" alt=""></div>
+						</div><!--zebra-->
+					</div><!--basis-comb-->
+					<div data-taba="2" class="basis basis-comb">
+						<div data-taba="1" class="basis-color basis-color__vivella_comb  basis-color__vivella">
+							<div data-taba="1" class="basis-color__item"><img src="img/vivella/comb/comb-2/4700.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/vivella/comb/comb-2/4714.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/vivella/comb/comb-2/4716.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/vivella/comb/comb-2/4720.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/vivella/comb/comb-2/4741.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/vivella/comb/comb-2/4872.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/vivella/comb/comb-2/4890.png" alt=""></div>
+							<div data-taba="8" class="basis-color__item"><img src="img/vivella/comb/comb-2/4916.png" alt=""></div>
+							<div data-taba="9" class="basis-color__item"><img src="img/vivella/comb/comb-2/A967.png" alt=""></div>
+							<div data-taba="10" class="basis-color__item"><img src="img/vivella/comb/comb-2/B920.png" alt=""></div>
+							<div data-taba="11" class="basis-color__item"><img src="img/vivella/comb/comb-2/B923.png" alt=""></div>
+							<div data-taba="12" class="basis-color__item"><img src="img/vivella/comb/comb-2/D162.png" alt=""></div>
+							<div data-taba="13" class="basis-color__item"><img src="img/vivella/comb/comb-2/D512.png" alt=""></div>
+							<div data-taba="14" class="basis-color__item"><img src="img/vivella/comb/comb-2/D519.png" alt=""></div>
+							<div data-taba="15" class="basis-color__item"><img src="img/vivella/comb/comb-2/E280.png" alt=""></div>
+							<div data-taba="16" class="basis-color__item"><img src="img/vivella/comb/comb-2/E478.png" alt=""></div>
+							<div data-taba="17" class="basis-color__item"><img src="img/vivella/comb/comb-2/E480.png" alt=""></div>
+							<div data-taba="18" class="basis-color__item"><img src="img/vivella/comb/comb-2/F002.png" alt=""></div>
+							<div data-taba="19" class="basis-color__item"><img src="img/vivella/comb/comb-2/F003.png" alt=""></div>
+							<div data-taba="20" class="basis-color__item"><img src="img/vivella/comb/comb-2/NERO.png" alt=""></div>
+							<div data-taba="21" class="basis-color__item"><img src="img/vivella/comb/comb-2/WHITE.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/vivella/comb/comb-2/mat/vivella.png" alt=""></div>
+						</div><!--vivella-->
+						<div data-taba="2" class="basis-color basis-color__kapris_comb  basis-color__kapris">
+							<div data-taba="1" class="basis-color__item"><img src="img/kapris/comb/comb-2/A278.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/kapris/comb/comb-2/A322.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/kapris/comb/comb-2/A324.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/kapris/comb/comb-2/A325.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/kapris/comb/comb-2/A330.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/kapris/comb/comb-2/A331.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/kapris/comb/comb-2/NERO.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_vivella"><img src="img/kapris/comb/comb-2/mat/kapris.png" alt=""></div>
+						</div><!--kapris-->
+						<div data-taba="3" class="basis-color basis-color basis-color__dedalo_comb  basis-color__dedalo">
+							<div data-taba="1" class="basis-color__item"><img src="img/dedalo/comb/comb-2/B561.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/dedalo/comb/comb-2/B562.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/dedalo/comb/comb-2/B564.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/dedalo/comb/comb-2/B566.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/dedalo/comb/comb-2/B568.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_dedalo"><img src="img/dedalo/comb/comb-2/mat/dedalo.png" alt=""></div>
+						</div><!--dedalo-->
+						<div data-taba="4" class="basis-color basis-color basis-color__diario_comb  basis-color__diario">
+							<div data-taba="1" class="basis-color__item"><img src="img/diario/comb/comb-2/A370.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_diario"><img src="img/diario/comb/comb-2/mat/diario.png" alt=""></div>
+						</div><!--diario-->
+						<div data-taba="5" class="basis-color basis-color basis-color__idea_comb  basis-color__idea">
+							<div data-taba="1" class="basis-color__item"><img src="img/idea/comb/comb-2/A279.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/idea/comb/comb-2//mat/idea.png" alt=""></div>
+						</div><!--idea-->
+						<div data-taba="6" class="basis-color basis-color basis-color__kantanella_comb  basis-color__kantanella">
+							<div data-taba="1" class="basis-color__item"><img src="img/kantanella/comb/comb-2/4872.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/kantanella/comb/comb-2/4890.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/kantanella/comb/comb-2/D613M.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/kantanella/comb/comb-2/mat/kantanella.png" alt=""></div>
+						</div><!--kantanella-->
+						<div data-taba="7" class="basis-color basis-color basis-color__korduroi_comb  basis-color__korduroi">
+							<div data-taba="1" class="basis-color__item"><img src="img/korduroi/comb/comb-2/F355.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/korduroi/comb/comb-2/F358.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/korduroi/comb/comb-2/F359.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/korduroi/comb/comb-2/mat/korduroy.png" alt=""></div>
+						</div><!--korduroi-->
+						<div data-taba="8" class="basis-color basis-color basis-color__korolla_comb  basis-color__korolla">
+							<div data-taba="1" class="basis-color__item"><img src="img/korolla/comb/comb-2/4401.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/korolla/comb/comb-2/4407.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/korolla/comb/comb-2/A737.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/korolla/comb/comb-2/mat/korolla.png" alt=""></div>
+						</div><!--korolla-->
+						<div data-taba="9" class="basis-color basis-color basis-color__madera_comb  basis-color__madera">
+							<div data-taba="1" class="basis-color__item"><img src="img/madera/comb/comb-2/E324.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/madera/comb/comb-2/E328.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/madera/comb/comb-2/E329.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/madera/comb/comb-2/E331.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/madera/comb/comb-2/E332.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/madera/comb/comb-2/E337.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/madera/comb/comb-2/NERO.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/madera/comb/comb-2/mat/madera.png" alt=""></div>
+						</div><!--madera-->
+						<div data-taba="10" class="basis-color basis-color basis-color__memori_comb basis-color__memori">
+							<div data-taba="1" class="basis-color__item"><img src="img/memori/comb/comb-2/E044.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/memori/comb/comb-2/F311.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/memori/comb/comb-2/F313.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/memori/comb/comb-2/F319.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/memori/comb/comb-2/mat/memory.png" alt=""></div>
+						</div><!--memori-->
+						<div data-taba="11" class="basis-color basis-color basis-color__moonlight_comb basis-color__moonlight">
+							<div data-taba="1" class="basis-color__item"><img src="img/moonlight/comb/comb-2/B633M.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/moonlight/comb/comb-2/B634M.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/moonlight/comb/comb-2/B636M.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/moonlight/comb/comb-2/mat/munlayt.png" alt=""></div>
+						</div><!--moonlight-->
+						<div data-taba="12" class="basis-color basis-color basis-color__nebraska_comb basis-color__nebraska">
+							<div data-taba="1" class="basis-color__item"><img src="img/nebraska/comb/comb-2/077.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/nebraska/comb/comb-2/A220.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/nebraska/comb/comb-2/A222.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/nebraska/comb/comb-2/A223.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/nebraska/comb/comb-2/A224.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/nebraska/comb/comb-2/A226.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/nebraska/comb/comb-2/A227.png" alt=""></div>
+							<div data-taba="8" class="basis-color__item"><img src="img/nebraska/comb/comb-2/A299.png" alt=""></div>
+							<div data-taba="9" class="basis-color__item"><img src="img/nebraska/comb/comb-2/A837.png" alt=""></div>
+							<div data-taba="10" class="basis-color__item"><img src="img/nebraska/comb/comb-2/D135M.png" alt=""></div>
+							<div data-taba="11" class="basis-color__item"><img src="img/nebraska/comb/comb-2/D140.png" alt=""></div>
+							<div data-taba="12" class="basis-color__item"><img src="img/nebraska/comb/comb-2/D148.png" alt=""></div>
+							<div data-taba="13" class="basis-color__item"><img src="img/nebraska/comb/comb-2/D155.png" alt=""></div>
+							<div data-taba="14" class="basis-color__item"><img src="img/nebraska/comb/comb-2/NERO.png" alt=""></div>
+							<div class="basis-color__skin basis-color__skin_idea"><img src="img/nebraska/comb/comb-2/mat/nebraska.png" alt=""></div>
+						</div><!--nebraska-->
+						<div data-taba="13" class="basis-color basis-color basis-color__pelush_comb basis-color__pelush">
+							<div data-taba="1" class="basis-color__item"><img src="img/pelush/comb/comb-2/026.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/pelush/comb/comb-2/049.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/pelush/comb/comb-2/083.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/pelush/comb/comb-2/mat/pelush.png" alt=""></div>
+						</div><!--pelush-->
+						<div data-taba="14" class="basis-color basis-color basis-color__plise_comb basis-color__plise">
+							<div data-taba="1" class="basis-color__item"><img src="img/plise/comb/comb-2/B113M.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/plise/comb/comb-2/B116M.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/plise/comb/comb-2/B122M.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/plise/comb/comb-2/mat/plise.png" alt=""></div>
+						</div><!--plise-->
+						<div data-taba="15" class="basis-color basis-color basis-color__poni_comb basis-color__poni">
+							<div data-taba="1" class="basis-color__item"><img src="img/poni/comb/comb-2/F125.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/poni/comb/comb-2/F126.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/poni/comb/comb-2/F176.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/poni/comb/comb-2/NERO.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/poni/comb/comb-2/mat/poni.png" alt=""></div>
+						</div><!--poni-->
+						<div data-taba="16" class="basis-color basis-color basis-color__tortuga_comb basis-color__tortuga">
+							<div data-taba="1" class="basis-color__item"><img src="img/tortuga/comb/comb-2/D900.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/tortuga/comb/comb-2/D901.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/tortuga/comb/comb-2/D923.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/tortuga/comb/comb-2/D926.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/tortuga/comb/comb-2/D945M.png" alt=""></div>
+							<div data-taba="6" class="basis-color__item"><img src="img/tortuga/comb/comb-2/D947M.png" alt=""></div>
+							<div data-taba="7" class="basis-color__item"><img src="img/tortuga/comb/comb-2/NERO.png" alt=""></div>
+							<div data-taba="8" class="basis-color__item"><img src="img/tortuga/comb/comb-2/D926.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/tortuga/comb/comb-2/mat/tortuga.png" alt=""></div>
+						</div><!--tortuga-->
+						<div data-taba="17" class="basis-color basis-color basis-color__toskana_comb basis-color__toskana">
+							<div data-taba="1" class="basis-color__item"><img src="img/toskana/comb/comb-2/A976.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/toskana/comb/comb-2/A977.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/toskana/comb/comb-2/A978.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/toskana/comb/comb-2/A979.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/toskana/comb/comb-2/NERO.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/toskana/comb/comb-2/mat/toskana.png" alt=""></div>
+						</div><!--toskana-->
+						<div data-taba="18" class="basis-color basis-color basis-color__uta_comb basis-color__uta">
+							<div data-taba="1" class="basis-color__item"><img src="img/uta/comb/comb-2/F336.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/uta/comb/comb-2/F340.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/uta/comb/comb-2/F341.png" alt=""></div>
+							<div data-taba="4" class="basis-color__item"><img src="img/uta/comb/comb-2/F355.png" alt=""></div>
+							<div data-taba="5" class="basis-color__item"><img src="img/uta/comb/comb-2/F356.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/uta/comb/comb-2/mat/uta.png" alt=""></div>
+						</div><!--uta-->
+						<div data-taba="19" class="basis-color basis-color basis-color__vintage_comb basis-color__vintage">
+							<div data-taba="1" class="basis-color__item"><img src="img/vintage/comb/comb-2/F441.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/vintage/comb/comb-2/F444.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/vintage/comb/comb-2/NERO.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/vintage/comb/comb-2/mat/vintag.png" alt=""></div>
+						</div><!--vintage-->
+						<div data-taba="20" class="basis-color basis-color basis-color__zebra_comb basis-color__zebra">
+							<div data-taba="1" class="basis-color__item"><img src="img/zebra/comb/comb-2/F155.png" alt=""></div>
+							<div data-taba="2" class="basis-color__item"><img src="img/zebra/comb/comb-2/F156.png" alt=""></div>
+							<div data-taba="3" class="basis-color__item"><img src="img/zebra/comb/comb-2/F157.png" alt=""></div>
+							<div class="basis-color__skin"><img src="img/zebra/comb/comb-2/mat/zebra.png" alt=""></div>
+						</div><!--zebra-->
+					</div><!--basis-comb-->
+					
 					<div data-taba="4" class="basis basis-comb">
-						<div id="basis-color__vivella_comb" data-taba="1" class="basis-color basis-color__vivella">
+						<div data-taba="1" class="basis-color basis-color__vivella_comb  basis-color__vivella">
 							<div data-taba="1" class="basis-color__item"><img src="img/vivella/comb/comb-4/4700.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/vivella/comb/comb-4/4714.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/vivella/comb/comb-4/4716.png" alt=""></div>
@@ -1385,7 +1773,7 @@
 							<div data-taba="21" class="basis-color__item"><img src="img/vivella/comb/comb-4/WHITE.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/vivella/comb/comb-4/mat/vivella.png" alt=""></div>
 						</div><!--vivella-->
-						<div id="basis-color__kapris_comb" data-taba="2" class="basis-color basis-color__kapris">
+						<div data-taba="2" class="basis-color basis-color__kapris_comb  basis-color__kapris">
 							<div data-taba="1" class="basis-color__item"><img src="img/kapris/comb/comb-4/A278.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/kapris/comb/comb-4/A322.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/kapris/comb/comb-4/A324.png" alt=""></div>
@@ -1395,7 +1783,7 @@
 							<div data-taba="7" class="basis-color__item"><img src="img/kapris/comb/comb-4/NERO.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_vivella"><img src="img/kapris/comb/comb-4/mat/kapris.png" alt=""></div>
 						</div><!--kapris-->
-						<div id="basis-color__dedalo_comb" data-taba="3" class="basis-color basis-color__dedalo">
+						<div data-taba="3" class="basis-color basis-color basis-color__dedalo_comb  basis-color__dedalo">
 							<div data-taba="1" class="basis-color__item"><img src="img/dedalo/comb/comb-4/B561.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/dedalo/comb/comb-4/B562.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/dedalo/comb/comb-4/B564.png" alt=""></div>
@@ -1403,33 +1791,33 @@
 							<div data-taba="5" class="basis-color__item"><img src="img/dedalo/comb/comb-4/B568.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_dedalo"><img src="img/dedalo/comb/comb-4/mat/dedalo.png" alt=""></div>
 						</div><!--dedalo-->
-						<div id="basis-color__diario_comb" data-taba="4" class="basis-color basis-color__diario">
+						<div data-taba="4" class="basis-color basis-color basis-color__diario_comb  basis-color__diario">
 							<div data-taba="1" class="basis-color__item"><img src="img/diario/comb/comb-4/A370.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_diario"><img src="img/diario/comb/comb-4/mat/diario.png" alt=""></div>
 						</div><!--diario-->
-						<div id="basis-color__idea_comb" data-taba="5" class="basis-color basis-color__idea">
+						<div data-taba="5" class="basis-color basis-color basis-color__idea_comb  basis-color__idea">
 							<div data-taba="1" class="basis-color__item"><img src="img/idea/comb/comb-4/A279.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_idea"><img src="img/idea/comb/comb-4//mat/idea.png" alt=""></div>
 						</div><!--idea-->
-						<div id="basis-color__kantanella_comb" data-taba="6" class="basis-color basis-color__kantanella">
+						<div data-taba="6" class="basis-color basis-color basis-color__kantanella_comb  basis-color__kantanella">
 							<div data-taba="1" class="basis-color__item"><img src="img/kantanella/comb/comb-4/4872.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/kantanella/comb/comb-4/4890.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/kantanella/comb/comb-4/D613M.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_idea"><img src="img/kantanella/comb/comb-4/mat/kantanella.png" alt=""></div>
 						</div><!--kantanella-->
-						<div id="basis-color__korduroi_comb" data-taba="7" class="basis-color basis-color__korduroi">
+						<div data-taba="7" class="basis-color basis-color basis-color__korduroi_comb  basis-color__korduroi">
 							<div data-taba="1" class="basis-color__item"><img src="img/korduroi/comb/comb-4/F355.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/korduroi/comb/comb-4/F358.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/korduroi/comb/comb-4/F359.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_idea"><img src="img/korduroi/comb/comb-4/mat/korduroy.png" alt=""></div>
 						</div><!--korduroi-->
-						<div id="basis-color__korolla_comb" data-taba="8" class="basis-color basis-color__korolla">
+						<div data-taba="8" class="basis-color basis-color basis-color__korolla_comb  basis-color__korolla">
 							<div data-taba="1" class="basis-color__item"><img src="img/korolla/comb/comb-4/4401.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/korolla/comb/comb-4/4407.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/korolla/comb/comb-4/A737.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_idea"><img src="img/korolla/comb/comb-4/mat/korolla.png" alt=""></div>
 						</div><!--korolla-->
-						<div id="basis-color__madera_comb" data-taba="9" class="basis-color basis-color__madera">
+						<div data-taba="9" class="basis-color basis-color basis-color__madera_comb  basis-color__madera">
 							<div data-taba="1" class="basis-color__item"><img src="img/madera/comb/comb-4/E324.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/madera/comb/comb-4/E328.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/madera/comb/comb-4/E329.png" alt=""></div>
@@ -1439,20 +1827,20 @@
 							<div data-taba="7" class="basis-color__item"><img src="img/madera/comb/comb-4/NERO.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_idea"><img src="img/madera/comb/comb-4/mat/madera.png" alt=""></div>
 						</div><!--madera-->
-						<div id="basis-color__memori_comb" data-taba="10" class="basis-color basis-color__memori">
+						<div data-taba="10" class="basis-color basis-color basis-color__memori_comb basis-color__memori">
 							<div data-taba="1" class="basis-color__item"><img src="img/memori/comb/comb-4/E044.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/memori/comb/comb-4/F311.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/memori/comb/comb-4/F313.png" alt=""></div>
 							<div data-taba="4" class="basis-color__item"><img src="img/memori/comb/comb-4/F319.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_idea"><img src="img/memori/comb/comb-4/mat/memory.png" alt=""></div>
 						</div><!--memori-->
-						<div id="basis-color__moonlight_comb" data-taba="11" class="basis-color basis-color__moonlight">
+						<div data-taba="11" class="basis-color basis-color basis-color__moonlight_comb basis-color__moonlight">
 							<div data-taba="1" class="basis-color__item"><img src="img/moonlight/comb/comb-4/B633M.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/moonlight/comb/comb-4/B634M.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/moonlight/comb/comb-4/B636M.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_idea"><img src="img/moonlight/comb/comb-4/mat/munlayt.png" alt=""></div>
 						</div><!--moonlight-->
-						<div id="basis-color__nebraska_comb" data-taba="12" class="basis-color basis-color__nebraska">
+						<div data-taba="12" class="basis-color basis-color basis-color__nebraska_comb basis-color__nebraska">
 							<div data-taba="1" class="basis-color__item"><img src="img/nebraska/comb/comb-4/077.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/nebraska/comb/comb-4/A220.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/nebraska/comb/comb-4/A222.png" alt=""></div>
@@ -1469,26 +1857,26 @@
 							<div data-taba="14" class="basis-color__item"><img src="img/nebraska/comb/comb-4/NERO.png" alt=""></div>
 							<div class="basis-color__skin basis-color__skin_idea"><img src="img/nebraska/comb/comb-4/mat/nebraska.png" alt=""></div>
 						</div><!--nebraska-->
-						<div id="basis-color__pelush_comb" data-taba="13" class="basis-color basis-color__pelush">
+						<div data-taba="13" class="basis-color basis-color basis-color__pelush_comb basis-color__pelush">
 							<div data-taba="1" class="basis-color__item"><img src="img/pelush/comb/comb-4/026.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/pelush/comb/comb-4/049.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/pelush/comb/comb-4/083.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/pelush/comb/comb-4/mat/pelush.png" alt=""></div>
 						</div><!--pelush-->
-						<div id="basis-color__plise_comb" data-taba="14" class="basis-color basis-color__plise">
+						<div data-taba="14" class="basis-color basis-color basis-color__plise_comb basis-color__plise">
 							<div data-taba="1" class="basis-color__item"><img src="img/plise/comb/comb-4/B113M.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/plise/comb/comb-4/B116M.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/plise/comb/comb-4/B122M.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/plise/comb/comb-4/mat/plise.png" alt=""></div>
 						</div><!--plise-->
-						<div id="basis-color__poni_comb" data-taba="15" class="basis-color basis-color__poni">
+						<div data-taba="15" class="basis-color basis-color basis-color__poni_comb basis-color__poni">
 							<div data-taba="1" class="basis-color__item"><img src="img/poni/comb/comb-4/F125.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/poni/comb/comb-4/F126.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/poni/comb/comb-4/F176.png" alt=""></div>
 							<div data-taba="4" class="basis-color__item"><img src="img/poni/comb/comb-4/NERO.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/poni/comb/comb-4/mat/poni.png" alt=""></div>
 						</div><!--poni-->
-						<div id="basis-color__tortuga_comb" data-taba="16" class="basis-color basis-color__tortuga">
+						<div data-taba="16" class="basis-color basis-color basis-color__tortuga_comb basis-color__tortuga">
 							<div data-taba="1" class="basis-color__item"><img src="img/tortuga/comb/comb-4/D900.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/tortuga/comb/comb-4/D901.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/tortuga/comb/comb-4/D923.png" alt=""></div>
@@ -1499,7 +1887,7 @@
 							<div data-taba="8" class="basis-color__item"><img src="img/tortuga/comb/comb-4/D926.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/tortuga/comb/comb-4/mat/tortuga.png" alt=""></div>
 						</div><!--tortuga-->
-						<div id="basis-color__toskana_comb" data-taba="17" class="basis-color basis-color__toskana">
+						<div data-taba="17" class="basis-color basis-color basis-color__toskana_comb basis-color__toskana">
 							<div data-taba="1" class="basis-color__item"><img src="img/toskana/comb/comb-4/A976.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/toskana/comb/comb-4/A977.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/toskana/comb/comb-4/A978.png" alt=""></div>
@@ -1507,7 +1895,7 @@
 							<div data-taba="5" class="basis-color__item"><img src="img/toskana/comb/comb-4/NERO.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/toskana/comb/comb-4/mat/toskana.png" alt=""></div>
 						</div><!--toskana-->
-						<div id="basis-color__uta_comb" data-taba="18" class="basis-color basis-color__uta">
+						<div data-taba="18" class="basis-color basis-color basis-color__uta_comb basis-color__uta">
 							<div data-taba="1" class="basis-color__item"><img src="img/uta/comb/comb-4/F336.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/uta/comb/comb-4/F340.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/uta/comb/comb-4/F341.png" alt=""></div>
@@ -1515,19 +1903,20 @@
 							<div data-taba="5" class="basis-color__item"><img src="img/uta/comb/comb-4/F356.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/uta/comb/comb-4/mat/uta.png" alt=""></div>
 						</div><!--uta-->
-						<div id="basis-color__vintage_comb" data-taba="19" class="basis-color basis-color__vintage">
+						<div data-taba="19" class="basis-color basis-color basis-color__vintage_comb basis-color__vintage">
 							<div data-taba="1" class="basis-color__item"><img src="img/vintage/comb/comb-4/F441.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/vintage/comb/comb-4/F444.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/vintage/comb/comb-4/NERO.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/vintage/comb/comb-4/mat/vintag.png" alt=""></div>
 						</div><!--vintage-->
-						<div id="basis-color__zebra_comb" data-taba="20" class="basis-color basis-color__zebra">
+						<div data-taba="20" class="basis-color basis-color basis-color__zebra_comb basis-color__zebra">
 							<div data-taba="1" class="basis-color__item"><img src="img/zebra/comb/comb-4/F155.png" alt=""></div>
 							<div data-taba="2" class="basis-color__item"><img src="img/zebra/comb/comb-4/F156.png" alt=""></div>
 							<div data-taba="3" class="basis-color__item"><img src="img/zebra/comb/comb-4/F157.png" alt=""></div>
 							<div class="basis-color__skin"><img src="img/zebra/comb/comb-4/mat/zebra.png" alt=""></div>
 						</div><!--zebra-->
 					</div><!--basis-comb-->
+					
 				</div><!--basis-comb-wrap-->
 				<div class="firmware">
 					<div class="firmware-item" data-taba="4"><img src="img/firmware/firm-4.png" alt=""></div>

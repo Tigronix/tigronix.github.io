@@ -534,8 +534,14 @@
 .hiderino {
   display: none !important; }
 
+.disabled .jq-selectbox__dropdown {
+  display: none !important; }
+
 .mr-20 {
   margin-right: 20px; }
+
+.nomg {
+  margin: 0 !important; }
 
 .border-bot {
   border-bottom: 1px solid #d8d8d8;
@@ -648,6 +654,10 @@ h3 {
     background: -webkit-gradient(linear, left top, left bottom, from(#17bc2e), to(#2e8c56));
     background: -webkit-linear-gradient(top, #17bc2e 0%, #2e8c56 100%);
     background: linear-gradient(to bottom, #17bc2e 0%, #2e8c56 100%); }
+  .button_reset {
+    background: none;
+    border: none;
+    cursor: pointer; }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -778,7 +788,9 @@ textarea:focus:-ms-input-placeholder {
     width: 60px;
     margin-right: 12px; }
     .constructor__nav-left .item {
+      display: block;
       height: 60px;
+      width: 60px;
       background: #00557d;
       -webkit-border-radius: 10px;
               border-radius: 10px;
@@ -1056,46 +1068,6 @@ textarea:focus:-ms-input-placeholder {
     margin-bottom: 0; }
   .constructor__combo-type {
     margin: 10px 0 20px; }
-  .constructor__combo-slider {
-    padding: 25px 30px 0 30px; }
-    .constructor__combo-slider .item {
-      position: relative;
-      cursor: pointer; }
-      .constructor__combo-slider .item img {
-        margin: 0 auto; }
-    .constructor__combo-slider .item:hover .img-hover {
-      opacity: 1; }
-    .constructor__combo-slider .img-default {
-      -webkit-transition: opacity .8s;
-      transition: opacity .8s;
-      opacity: 1; }
-    .constructor__combo-slider .img-hover {
-      opacity: 0;
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      text-align: center;
-      -webkit-transition: opacity .8s;
-      transition: opacity .8s; }
-    .constructor__combo-slider .item:hover .img-default {
-      opacity: 0; }
-    .constructor__combo-slider .slick-arrow {
-      z-index: 2;
-      width: 18px;
-      height: 31px;
-      background: url(../img/angle-left.svg) no-repeat;
-      background-size: 18px auto;
-      top: 57%;
-      position: absolute; }
-      .constructor__combo-slider .slick-arrow:before {
-        display: none; }
-    .constructor__combo-slider .slick-prev {
-      left: 0; }
-    .constructor__combo-slider .slick-next {
-      right: 0;
-      background-image: url(../img/angle-right.svg); }
   .constructor__cover-type_label-font .inpbox label {
     font-size: 15px; }
   .constructor__string {
@@ -1669,6 +1641,7 @@ textarea:focus:-ms-input-placeholder {
       color: #000;
       margin-left: 5px; }
   .top-nav .text {
+    width: 320px;
     font-size: 17px;
     color: #000;
     font-weight: 500; }
@@ -1678,6 +1651,15 @@ textarea:focus:-ms-input-placeholder {
       font-weight: 900; }
     .top-nav .text .red_ml {
       margin-left: 12px; }
+    .top-nav .text .summCount {
+      font-size: 17px;
+      color: #000;
+      font-weight: 500;
+      max-width: 40px; }
+  .top-nav input {
+    max-width: 60px;
+    background: #fff;
+    border: none; }
 
 .book-navigation {
   display: -webkit-box;
@@ -1787,6 +1769,49 @@ textarea:focus:-ms-input-placeholder {
       font-weight: 500;
       color: #000;
       text-align: center; }
+
+.combo-slider {
+  padding: 25px 30px 0 30px; }
+  .combo-slider .item {
+    position: relative;
+    cursor: pointer; }
+    .combo-slider .item img {
+      margin: 0 auto; }
+    .combo-slider .item.slick-current .img-hover {
+      opacity: 1; }
+  .combo-slider .item:hover .img-hover {
+    opacity: 1; }
+  .combo-slider .img-default {
+    -webkit-transition: opacity .8s;
+    transition: opacity .8s;
+    opacity: 1; }
+  .combo-slider .img-hover {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    -webkit-transition: opacity .8s;
+    transition: opacity .8s; }
+  .combo-slider .item:hover .img-default {
+    opacity: 0; }
+  .combo-slider .slick-arrow {
+    z-index: 2;
+    width: 18px;
+    height: 31px;
+    background: url(../img/angle-left.svg) no-repeat;
+    background-size: 18px auto;
+    top: 57%;
+    position: absolute; }
+    .combo-slider .slick-arrow:before {
+      display: none; }
+  .combo-slider .slick-prev {
+    left: 0; }
+  .combo-slider .slick-next {
+    right: 0;
+    background-image: url(../img/angle-right.svg); }
 
 .basis {
   position: absolute;
