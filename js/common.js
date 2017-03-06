@@ -14,19 +14,20 @@ $(document).ready(function() {
 					}
 			});
 			$('.' + clas + ' > [data-taba="' + taba + '"]').show().siblings().hide();
+			$('.basis-color__skin').show();
 	});
 
-	//class-tab
-	
-	$(document).on('click', '[data-class_2]', function () {
-			var clas = $(this).attr('data-class_2');
-			var taba = $(this).attr('data-taba_2');
-			$('[data-id="' + clas + '"]').each(function () {
-					if ($(this).attr('data-taba_2') == taba) {
+	//class-tab2
+	$(document).on('click', '[data-class2]', function () {
+			var clas = $(this).attr('data-class2');
+			var taba = $(this).attr('data-taba2');
+			$('[data-class2="' + clas + '"]').each(function () {
+					if ($(this).attr('data-taba2') == taba) {
 							$(this).addClass('act').siblings().removeClass('act');
 					}
 			});
-			$('.' + clas + ' > [data-taba_2="' + taba + '"]').show().siblings().hide();
+			$('.' + clas + ' > [data-taba2="' + taba + '"]').show().siblings().hide();
+			$('.basis-color__skin').show();
 	});
 	
 	//Universal Tabs
@@ -39,6 +40,7 @@ $(document).ready(function() {
 					}
 			});
 			$('#' + id + ' > [data-taba="' + taba + '"]').show().addClass('flex').siblings().hide().removeClass('flex');
+			$('.basis-color__skin').show();
 			$('.constructor__combo-slider').on('init', function () {
 				$('.constructor__combo-slider').slick({
 					slidesToShow: 5,
@@ -53,10 +55,13 @@ $(document).ready(function() {
 	//slick
 	$('.constructor__combo-slider').slick({
 		slidesToShow: 5,
-		slidesToScroll: 1,
+		slidesToScroll: 3,
 		arrows: true,
 		centerMode: true,
 		centerPadding: '0px'
+	});
+	$('.slick-slide').on('click', function(){
+		$(this).addClass('focus').siblings().removeClass('focus');
 	});
 	
 	$('.button__to2').click(function(){
@@ -122,6 +127,9 @@ $(document).ready(function() {
 		$(".summBlocks").val(summa);	
 		$(".summBlocks100").val(summa100);	
 		
+		
+		var summTop = parseInt($('.summTop').val());
+		var edition = parseInt($('.edition').val());
 		var countTop = parseInt($('#count').val());
 		var editionCount = countTop * summ;
 		$('.summCount').val(countTop);
@@ -171,8 +179,15 @@ $(document).ready(function() {
 	$('#srez-standart').click(function(){
 		$('.disable-block_srez').show();
 	});
+	
 	$('#indSrez').click(function(){
 		$('.disable-block_srez').hide();
+		$('.varBlock_srez').prop('checked', false);
+	});
+	
+	$('.varBlock_srez').click(function(){
+		$('.disable-block_srez').show();
+		$('#indSrez').prop('checked', false);
 	});
 	
 	$('#eyelet-color').click(function(){

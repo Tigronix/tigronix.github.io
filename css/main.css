@@ -1534,16 +1534,6 @@ textarea:focus:-ms-input-placeholder {
     .basis-comb-wrap div:first-child {
       display: block; }
 
-/*firmware*/
-.firmware {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 15;
-  display: none; }
-  .firmware-item {
-    text-align: center; }
-
 .top-nav {
   height: 61px;
   display: -webkit-box;
@@ -1770,6 +1760,19 @@ textarea:focus:-ms-input-placeholder {
       color: #000;
       text-align: center; }
 
+/*firmware*/
+.firmware {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 15;
+  display: none; }
+  .firmware__item {
+    text-align: center;
+    display: none; }
+    .firmware__item:first-child {
+      display: block; }
+
 .combo-slider {
   padding: 25px 30px 0 30px; }
   .combo-slider .item {
@@ -1777,7 +1780,7 @@ textarea:focus:-ms-input-placeholder {
     cursor: pointer; }
     .combo-slider .item img {
       margin: 0 auto; }
-    .combo-slider .item.slick-current .img-hover {
+    .combo-slider .item.focus .img-hover {
       opacity: 1; }
   .combo-slider .item:hover .img-hover {
     opacity: 1; }
@@ -1932,6 +1935,15 @@ textarea:focus:-ms-input-placeholder {
     display: none; }
     .eyelet__item:first-child {
       display: block; }
+
+.color-box__more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 207px; }
 
 .rubber {
   position: absolute;
