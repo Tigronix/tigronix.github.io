@@ -1933,11 +1933,11 @@ textarea:focus:-ms-input-placeholder {
   position: absolute;
   left: 0;
   top: 0;
+	display: none;
   z-index: 25;
   text-align: center; }
   .clishe__item {
-    text-align: center;
-    display: none; }
+    text-align: center; }
 
 .thread {
   position: absolute;

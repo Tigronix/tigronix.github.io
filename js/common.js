@@ -5,7 +5,24 @@ $(document).ready(function() {
 	var summBlock_2 = parseInt($('.block-types_2:checked').val());
 	var summBlock_3 = parseInt($('.block-types_3:checked').val());
 	
-
+	
+$(document).on('change', function () {	
+	$('.var7_label').click(function(){
+		$(this).addClass('active-cli');
+		$('.var8').removeClass('active-cli');
+		$('.clishe').show();
+	});
+	$('.var8').click(function(){
+		$(this).addClass('active-cli');
+		$('.var7_label').removeClass('active-cli');
+		$('.clishe').show();
+	});
+	
+	$('.active-cli').click(function(){
+		$(this).removeClass('active-cli');
+		$('.clishe').hide();
+	});
+});	
 	//class-tab
 	$(document).on('click', '[data-class]', function () {
 			var clas = $(this).attr('data-class');
@@ -342,6 +359,7 @@ $(document).ready(function() {
 			$('.nav-left__item4').addClass('item_lock');
 		});
 	});
+	
 	
 	$(".constructor__content")[0].reset();
 	
