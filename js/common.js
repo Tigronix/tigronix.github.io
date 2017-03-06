@@ -344,6 +344,5 @@ $(document).ready(function() {
 	});
 	
 	$(".constructor__content")[0].reset();
-	$(".loader").fadeOut(1000);
 	
 });
