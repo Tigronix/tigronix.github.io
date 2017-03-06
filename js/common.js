@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
 	var summBlock_1 = parseInt($('.block-types_1:checked').val());
 	var summBlock_2 = parseInt($('.block-types_2:checked').val());
@@ -342,4 +344,6 @@ $(document).ready(function() {
 	});
 	
 	$(".constructor__content")[0].reset();
+	$(".loader").fadeOut(1000);
+	
 });
