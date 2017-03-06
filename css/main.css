@@ -1569,7 +1569,7 @@ textarea:focus:-ms-input-placeholder {
       font-weight: 500;
       font-size: 19px;
       padding-left: 4px;
-      width: 72px; }
+      width: 90px; }
   .top-nav .blue-block {
     background: #7690c9;
     height: 100%;
@@ -1771,6 +1771,18 @@ textarea:focus:-ms-input-placeholder {
     text-align: center;
     display: none; }
     .firmware__item:first-child {
+      display: block; }
+
+.angle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 35;
+  display: none; }
+  .angle__item {
+    display: none;
+    text-align: center; }
+    .angle__item:first-child {
       display: block; }
 
 .combo-slider {

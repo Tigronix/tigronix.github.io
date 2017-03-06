@@ -118,11 +118,6 @@ $(document).ready(function() {
 		var summ = parseInt($('.summ').val());
 		var summa = summBlock_1 + summBlock_2 + summBlock_3 + summ;
 		var summa100 = summa * 100;
-		console.log('====='+summBlock_1);
-		console.log('====='+summBlock_2);
-		console.log('====='+summBlock_3);
-		console.log('====='+summ);
-		console.log('summa====='+summa);
 		$('.summTop').val(summ);
 		$(".summBlocks").val(summa);	
 		$(".summBlocks100").val(summa100);	
@@ -134,8 +129,6 @@ $(document).ready(function() {
 		var editionCount = countTop * summ;
 		$('.summCount').val(countTop);
 		$('.edition').val(editionCount);
-		console.log(countTop);
-		console.log(editionCount);
 	});
 	
 	
@@ -161,20 +154,6 @@ $(document).ready(function() {
 	})(jQuery);
 	
 	//color-box
-	/*
-	$('#forzac').click(function(){
-		$('.disable-block_forzac').show();
-	});
-	$('#indForzac').click(function(){
-		$('.disable-block_forzac').hide();
-	});
-	
-	$('#nahzac').click(function(){
-		$('.disable-block_nahzac').show();
-	});
-	$('#indNahzac').click(function(){
-		$('.disable-block_nahzac').hide();
-	});*/
 	
 	$('#srez-standart').click(function(){
 		$('.disable-block_srez').show();
@@ -266,7 +245,6 @@ $(document).ready(function() {
 	
 	$('.flex-checked').on('change', function(){
 		var checked = $(this).prop('checked');
-		console.log(checked);
 		if ($(checked == 'true')) {
 			$('.button__to3').attr('data-taba', '3');
 		}
@@ -274,11 +252,16 @@ $(document).ready(function() {
 	
 	$('.varRadio').on('change', function(){
 		var checked = $(this).prop('checked');
-		console.log(checked);
 		if ($(checked == 'true')) {
 			$('.button__to3').attr('data-taba', '3');
 		}
 	});
+	
+	$('#angle').on('change', function(){
+		$('.angle').toggle();
+	});
+	
+	
 	
 	$('.button__to2').click(function(){
 		$('.item_lock2').removeClass('item_lock').prop('disabled', false);
@@ -340,17 +323,6 @@ $(document).ready(function() {
 		$('.var13').click(function(){
 			$('.var12').prop('checked', false);
 		});
-		/*
-		var checked = $('.var14').prop('checked');
-		console.log(checked);
-		if ($(checked == 'true')) {
-			$('.material__select_width1').removeClass('disabled');
-			$('.material__select_width2').removeClass('disabled');
-		}
-		else {
-			$('.material__select_width1').addClass('disabled');
-			$('.material__select_width2').addClass('disabled');
-		}*/
 		$('.var14').click(function(){
 			$('.material__select_width1').toggleClass('disabled');
 			$('.material__select_width2').toggleClass('disabled');
@@ -367,7 +339,6 @@ $(document).ready(function() {
 		$('.nav-left__item3').click (function(){
 			$('.nav-left__item4').addClass('item_lock');
 		});
-		
 	});
 	
 	$(".constructor__content")[0].reset();
