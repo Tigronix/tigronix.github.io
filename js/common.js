@@ -60,32 +60,38 @@ $(document).on('change', function () {
 			});
 			$('#' + id + ' > [data-taba="' + taba + '"]').show().addClass('flex').siblings().hide().removeClass('flex');
 			$('.basis-color__skin').show();
-			$('.constructor__combo-slider').on('init', function () {
-				$('.constructor__combo-slider').slick({
-					slidesToShow: 5,
-					slidesToScroll: 1,
-					arrows: true,
-					centerMode: true,
-					centerPadding: '0px'
-				});
-			});
 	});
 	
 	//slick
 	$('.constructor__combo-slider').slick({
-		slidesToShow: 5,
+    slidesToShow: 5,
 		slidesToScroll: 3,
+    centerPadding: '0px',
 		arrows: true,
+    variableWidth: true,
+    focusOnSelect: true,
+    centerMode: true
+	});
+  
+  //planing-slider
+  $('.planing-slider').slick({
+    slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: true,
+		focusOnSelect: true,
 		centerMode: true,
 		centerPadding: '0px'
 	});
+	
 	$('.slick-slide').on('click', function(){
 		$(this).addClass('focus').siblings().removeClass('focus');
 	});
 	
 	$('.button__to2').click(function(){
 		$('.constructor__combo-slider').slick('slickNext');
+		$('.planing-slider').slick('slickNext');
 	});
+  
 	//calc	
 	$(document).on('change', '.varRadio', function () {		
 		var score = 0;
@@ -95,7 +101,8 @@ $(document).on('change', function () {
 		$(".summ").val(summ);	
 		});
 	});
-				
+	
+	//Block-types
 	$(document).on('change', '.block-types_1', function () {
 		$(".block-types_1:checked").each(function(){
 			var score = 0;
@@ -123,6 +130,7 @@ $(document).on('change', function () {
 		});
 	});
 	
+	//Расчет суммы для ежедневников
 	$(document).on('change', function () {
 		if (!summBlock_1){
 			summBlock_1 = 0;
@@ -165,7 +173,7 @@ $(document).on('change', function () {
 		}
 	});
 	
-	//styler
+	//styler- стилизация селектов
 	(function ($) {
 		$(function () {
 			$('.styler').styler();
@@ -173,7 +181,6 @@ $(document).on('change', function () {
 	})(jQuery);
 	
 	//color-box
-	
 	$('#srez-standart').click(function(){
 		$('.disable-block_srez').show();
 	});
@@ -233,6 +240,7 @@ $(document).on('change', function () {
 			$('.button__to2').attr('disabled', false);
 			$('.flex-checked').hide();
 			$('.tab_imba').addClass('hiderino');
+			$('.spring-on').removeClass('spring-checked');
 		}
 	});
 	
@@ -243,6 +251,9 @@ $(document).on('change', function () {
 			$('.button__to2').prop('disabled', false);
 			$('.flex-checked').show();
 			$('.tab_imba').removeClass('hiderino');
+			$('.spring-on').removeClass('spring-checked');
+			$('.constructor__combo-slider').addClass('active');
+			$('.firmware').removeClass('z-index');
 		}
 	});
 	
@@ -281,7 +292,7 @@ $(document).on('change', function () {
 	});
 	
 	
-	
+	//навигация по страницам
 	$('.button__to2').click(function(){
 		$('.item_lock2').removeClass('item_lock').prop('disabled', false);
 	});
@@ -294,6 +305,7 @@ $(document).on('change', function () {
 	});
 	$('.button__to3').click(function(){
 		$('.item_lock3').removeClass('item_lock').prop('disabled', false);
+		$('.button_to4').prop('disabled', false);
 	});
 	
 	$('.button_for3').click(function(){
@@ -328,7 +340,7 @@ $(document).on('change', function () {
 	});
 	
 	
-	
+	//Условия для открытия/скрытия блоков
 	$(document).on('change', function () {
 		$('.var7').click(function(){
 			$('.var8').prop('checked', false);
@@ -347,7 +359,7 @@ $(document).on('change', function () {
 			$('.material__select_width2').toggleClass('disabled');
 		});
 		$('.nav-left__item1').click (function(){
-			$('.nav-left__item2').addClass('item_lock');
+			$('.nav-left__item2').addClass('item_lock').prop('disabled', true);
 			$('.nav-left__item3').addClass('item_lock');
 			$('.nav-left__item4').addClass('item_lock');
 		});
@@ -360,6 +372,58 @@ $(document).on('change', function () {
 		});
 	});
 	
+	//Planing
+	$('.plan-show').hide();
+	$('.actPlaning').click(function(){
+		$('.plan-show').show();
+		$('.plan-hide').hide();
+		$('.planing-slider').addClass('planing-slider_active');
+	});
+	
+	$('.plan-off').click(function(){
+		$('.plan-show').hide();
+		$('.plan-hide').show();
+	});	
+	
+	$('#spring').on('change', function(){
+		var checked = $(this).prop('checked');
+		if ($(checked == 'true')) {
+        $('.button__to2').prop('disabled', false);
+        $('.spring-on').addClass('spring-checked');
+        $('#combo').prop('disabled', false);
+        $('.basis-comb-wrap').addClass('basis-comb-wrap_z-index');
+        $('.planing-slider').show();
+        $('.constructor__combo-slider').removeClass('active');
+		}
+	});
+	
+	$(document).on('change', '.varRadio', function () {	
+		var score = 0;
+		$(".varRadio:checked").each(function(){
+		var summPlan = score += parseInt($(this).attr('data-plan'));
+		console.log(summPlan);
+		$(".summPlaning").val(summPlan);	
+		});
+	
+		$('.mod .plan-off').on('click', function(){
+			$('.basis-comb_img').hide();
+			$('.basis-comb:first-child').show();
+			$('.firmware__item:first-child').show();
+			$('.planing-slider').removeClass('planing-slider_active');
+			$('.basis-comb-wrap_z-index').removeClass('basis-comb-wrap_z-index');
+			$('.firmware').removeClass('z-index');
+		});
+
+		$('.actPlaning').on('click', function(){
+			$('.basis-comb_img').show();
+			$('.basis-comb').hide();
+			$('.planing-slider').addClass('planing-slider_active');
+		});
+		
+		$('.planing-slider_item').on('click', function(){
+			$('.firmware').addClass('z-index');
+		});
+	});
 	
 	$(".constructor__content")[0].reset();
 	
