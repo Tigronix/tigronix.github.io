@@ -378,6 +378,7 @@ $(document).on('change', function () {
 		$('.plan-show').show();
 		$('.plan-hide').hide();
 		$('.planing-slider').addClass('planing-slider_active');
+		$('.basis-comb').hide();
 	});
 	
 	$('.plan-off').click(function(){
