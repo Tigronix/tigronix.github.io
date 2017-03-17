@@ -35,7 +35,7 @@
 		</div>
 	</div><!--page-header-->
 	<main class="main">
-		<div class="slider-main">
+		<div style="display: none;" class="slider-main">
 			<div class="slider-main__slide">
 				<div class="slider-main__text">
 					Аренда офисов, складских и производственных 
@@ -44,47 +44,50 @@
 				<div class="slider-main__circle-text">от 550 руб./м<sup>2</sup></div>
 			</div>
 		</div><!--slider-main-->
-		<section class="rooms">
-			<h2 class="h2">Какое помещение вы хотите снять?</h2>
-			<div class="room-type__links">
-				<a href="#" class="room-type__item">Офисное помещение</a>
-				<a href="#" class="room-type__item">Производственное помещение</a>
-				<a href="#" class="room-type__item">Складское помещение</a>
-			</div>
-		</section><!--room-type-->
-		<section class="layout">
-			<h2>Планировки складских помещений</h2>
-			<div class="layout__info">
-				<h4 class="h4">Об объекте</h4>
-				<div class="layout__type-line">
-					<div class="layout__type">Общая площадь:</div>
-					<div class="layout__value">3 223 м<sup>2</sup></div>
-				</div><!--layout__type-line-->
-				<div class="layout__type-line">
-					<div class="layout__type">Высота потолков:</div>
-					<div class="layout__value">7,8 м<sup>2</sup></div>
-				</div><!--layout__type-line-->
-				<div class="layout__type-line">
-					<div class="layout__type">Офисные помещения:</div>
-					<div class="layout__value">есть<sup>2</sup></div>
-				</div><!--layout__type-line-->
-				<div class="layout__type-line">
-					<div class="layout__type">Место под разгрузку:</div>
-					<div class="layout__value">есть<sup>2</sup></div>
-				</div><!--layout__type-line-->
-				<div class="layout__type-line">
-					<div class="layout__type">Шаг колонн:</div>
-					<div class="layout__value">6 м<sup>2</sup></div>
-				</div><!--layout__type-line-->
-				<div class="layout__type-line">
-					<div class="layout__type">Стоимость</div>
-					<div class="layout__value">от <span class="layout-price">550</span> руб. / м<sup>2</sup></div>
-				</div><!--layout__type-line-->
-			</div><!--layout__info-->
-		</section><!--layout-->
+		<div class="wrapper">
+			<section class="room-type">
+				<h2 class="h2">Какое помещение вы хотите снять?</h2>
+				<div class="room-type__links">
+					<a href="#" class="room-type__item"><span>Офисное помещение</span></a>
+					<a href="#" class="room-type__item"><span>Производственное помещение</span></a>
+					<a href="#" class="room-type__item room-type__item--active"><span>Складское помещение</span></a>
+				</div>
+			</section><!--room-type-->
+			<section class="layout">
+				<h2>Планировки складских помещений</h2>
+				<div class="layout__info">
+					<div class="layout__header">Об объекте</div>
+					<div class="layout__type-line">
+						<div class="layout__type">Общая площадь:</div>
+						<div class="layout__value">3 223 м<sup>2</sup></div>
+					</div><!--layout__type-line-->
+					<div class="layout__type-line">
+						<div class="layout__type">Высота потолков:</div>
+						<div class="layout__value">7,8 м<sup>2</sup></div>
+					</div><!--layout__type-line-->
+					<div class="layout__type-line">
+						<div class="layout__type">Офисные помещения:</div>
+						<div class="layout__value">есть<sup>2</sup></div>
+					</div><!--layout__type-line-->
+					<div class="layout__type-line">
+						<div class="layout__type">Место под разгрузку:</div>
+						<div class="layout__value">есть<sup>2</sup></div>
+					</div><!--layout__type-line-->
+					<div class="layout__type-line">
+						<div class="layout__type">Шаг колонн:</div>
+						<div class="layout__value">6 м<sup>2</sup></div>
+					</div><!--layout__type-line-->
+					<div class="layout__type-line layout__type-line--price">
+						<div class="layout__type"><span>Стоимость</span></div>
+						<div class="layout__value"><span>от <span class="price">550</span> руб. / м<sup>2</sup></span></div>
+					</div><!--layout__type-line-->
+				</div><!--layout__info-->
+			</section><!--layout-->
+		</div>
+		<h2>Информация для арендаторов</h2>
 		<section class="tenant-info">
 			<div class="tenant-info__item">
-				<div class="img"><img src="" alt=""></div>
+				<div class="tenant-info__img"><img width="155" height="155" src="img/tenant-info--1.png" alt=""></div>
 				<p class="tenant-info__text">
 					<b>От собственника</b><br>
 					без посредников<br>
@@ -92,14 +95,14 @@
 				</p>
 			</div><!--tenant-info__item-->
 			<div class="tenant-info__item">
-				<div class="img"><img src="" alt=""></div>
+				<div class="tenant-info__img"><img width="155" height="155" src="img/tenant-info--2.png" alt=""></div>
 				<p class="tenant-info__text">
 					Охрана объекта<br>
 					<b>24/7</b>
 				</p>
 			</div><!--tenant-info__item-->
 			<div class="tenant-info__item">
-				<div class="img"><img src="" alt=""></div>
+				<div class="tenant-info__img"><img width="155" height="155" src="img/tenant-info--3.png" alt=""></div>
 				<p class="tenant-info__text">
 					г. Мытищи <b>5</b> км.<br>
 					от МКАД
@@ -107,7 +110,7 @@
 				<a href="#" class="tenant-info__btn">Посмотреть на карте</a>
 			</div><!--tenant-info__item-->
 			<div class="tenant-info__item">
-				<div class="img"><img src="" alt=""></div>
+				<div class="tenant-info__img"><img width="155" height="155" src="img/tenant-info--4.png" alt=""></div>
 				<p class="tenant-info__text">
 					от <b>550</b> руб.<br>
 					за м2
@@ -115,7 +118,7 @@
 				<a href="#" class="tenant-info__btn">Скачать прайс</a>
 			</div><!--tenant-info__item-->
 			<div class="tenant-info__item">
-				<div class="img"><img src="" alt=""></div>
+				<div class="tenant-info__img"><img width="155" height="155" src="img/tenant-info--5.png" alt=""></div>
 				<p class="tenant-info__text">
 					<b>
 						Место под <br>
@@ -125,7 +128,7 @@
 				</p>
 			</div><!--tenant-info__item-->
 			<div class="tenant-info__item">
-				<div class="img"><img src="" alt=""></div>
+				<div class="tenant-info__img"><img width="155" height="155" src="img/tenant-info--6.png" alt=""></div>
 				<p class="tenant-info__text">
 					<b>
 						Ярославское,<br>
@@ -151,7 +154,7 @@
 		<section class="tenancy">
 			<h2 class="h2">Аренда складских помещений в Мытищах</h2>
 			<div class="tenancy__wrap">
-				<div class="img"><img src="" alt=""></div>
+				<div class="tenant-info__img"><img src="" alt=""></div>
 				<div class="tenancy__desc">
 					<p class="tenancy__text">Используйте и оплачивайте только ту площадь, которая Вам действительно необходима.</p>
 					<p class="tenancy__text">Наши разнообразные варианты офисных помещений, отвечающие любым Вашим требованиям, помогут наиболее эффективно организовать работу и повысить продуктивность Ваших сотрудников. Располагая сетью из 3000 бизнес-центров в 120 странах, Регус всегда рядом и готов оказать поддержку Вашему бизнесу, ведь у нас есть офисы на любой бюджет.</p>
@@ -176,14 +179,14 @@
 				<button type="submit" class="form__submit">Отправить заявку</button>
 			</form>
 		</section><!--sign-up-->
-		<div class="rooms">
+		<div class="room-type">
 			<h2 class="h2">Вас также может заинтересовать:</h2>
 			<div class="room-type__links">
 				<a href="#" class="room-type__item">Офисное помещение</a>
 				<a href="#" class="room-type__item">Производственное помещение</a>
 				<a href="#" class="room-type__item">Складское помещение</a>
 			</div>
-		</div><!--rooms-->
+		</div><!--room-type-->
 		<div class="map">
 			<h2 class="h2">Расположение бизнес-центра «ЗСА»</h2>
 			<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uttz4LWNti0yWVoETXFJUQEEAaE1Ctvq&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
@@ -192,7 +195,7 @@
 				<i class="header__open fa fa-bars header__icon"></i>
 				<i class="header__close fa fa-close header__icon"></i>
 		</div>
-		<a href="tel:" class="mob_phone2">+7(495)005-12-34</a>
+		<a href="tel:+74950051234" class="mob_phone2">+7(495)005-12-34</a>
 		<div class="blackout"></div>
 	</main><!--main-->
 	<footer class="page-footer">
@@ -228,5 +231,7 @@
 			<div class="by">Создание и продвижение сайта - <a href="#">ES-Studio</a></div>
 		</div><!--page-footer__tect-->
 	</footer><!--page-footer-->
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>
