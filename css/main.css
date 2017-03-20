@@ -200,6 +200,9 @@ h2 {
     h2 {
       font-size: 24px; } }
 
+.fancybox-container {
+  z-index: 1200; }
+
 .page-header {
   height: 136px;
   background: #D92B3C;
@@ -1047,8 +1050,8 @@ body .header__close {
           flex-wrap: wrap;
   position: relative; }
   .page-footer__contact {
-    width: -webkit-calc(auto + 10px);
-    width: calc(auto + 10px);
+    width: -webkit-calc(20.44711014176663% + 10px);
+    width: calc(20.44711014176663% + 10px);
     padding-right: 1.63576881134133%;
     border-right: 1px solid #b22222; }
     .page-footer__contact .line {
