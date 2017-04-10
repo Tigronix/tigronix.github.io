@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none; }
+
+body {
+  font-family: 'PT Sans', sans-serif; }
+
+.wrapper {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto; }

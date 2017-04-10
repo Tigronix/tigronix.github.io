@@ -1,0 +1,42 @@
+.page-header {
+		background: #f1f1f1;
+	&__top-links {
+		height: 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__link {
+		font-size: 12px;
+		font-weight: bold;
+		color: #0c4da2;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		&--clock-svg:before {
+			display: inline-block;
+			content: '';
+			background: url(../img/clock.svg) no-repeat;
+			width: 20px;
+			height: 20px;
+			background-size: 20px 20px;
+			background-position: left center;
+			margin-right: 10px;
+		}
+		&--clock-svg {
+			margin-right: 43px;
+		}
+	}
+	&__right-links {
+		display: flex;
+	}
+	&__navigation {
+		padding-top: 15px;
+		background: #fff;
+		border-bottom: 1px solid #c8c8c8;
+		.wrapper {
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+}

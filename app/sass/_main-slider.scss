@@ -1,0 +1,74 @@
+.main-slider {
+	width: 1100px!important;
+	position: relative!important;
+	margin: 30px auto 0 auto;
+	&__wrapper {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	
+	}
+	&__slide {
+		position: relative;
+	}
+	.slick-arrow {
+		font-size: 0;
+		border: none;
+		background: url(../img/left-arrow.png) no-repeat;
+		background-size: 31px 60px;
+		width: 31px;
+		height: 60px;
+		position: absolute;
+		left: 72px;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		cursor: pointer;
+		&.slick-next {
+			right: 72px;
+			left: auto;
+			background-image: url(../img/right-arrow.png);
+		}
+	}
+	&__t1 {
+		@include HeliosC;
+		font-weight: 100;
+		font-size: 48px;
+		color: #fff;
+		position: absolute;
+		left: 76px;
+		top: 210px;
+		z-index: 2;
+	}
+	&__t2 {
+		@include HeliosC;
+		font-size: 76px;
+		font-weight: 300;
+		color: #fff;
+		position: absolute;
+		left: 80px;
+		top: 260px;
+		letter-spacing: 5px;
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+			right: -30px;
+			top: 0;
+			background: url(../img/plan.svg) no-repeat;
+			width: 27px;
+			height: 28px;
+		}
+	}
+	&__t3 {
+		@include HeliosC;
+		font-size: 14px;
+		color: #fff;
+		position: absolute;
+		left: 80px;
+		top: 348px;
+		font-weight: 100;
+	}
+}
