@@ -59,7 +59,7 @@
 		</div><!--menu-->
 		<section class="block-text">
 			<h2 class="h2 h2--red">Реклама в транспорте</h2>
-			<div class="block-text__img"><img width="327" height="454" src="img/block-text_1.png" alt=""></div>
+			<a data-lightbox="gallery" href="img/block-text_1.png" class="block-text__img"><img width="327" height="454" src="img/block-text_1.png" alt=""></a>
 			<div class="block-text__desc">
 				<p> Используйте и оплачивайте только ту площадь, которая Вам действительно необходима.</p>
 				<p>Наши разнообразные варианты офисных помещений, отвечающие любым Вашим требованиям, помогут наиболее эффективно организовать работу и повысить продуктивность Ваших сотрудников. Располагая сетью из 3000 бизнес-центров в 120 странах, Регус всегда рядом и готов оказать поддержку Вашему бизнесу, ведь у нас есть офисы на любой бюджет.</p>
@@ -72,13 +72,13 @@
 			<div class="add-line__img"><img width="131" height="131" src="img/map.png" alt=""></div>
 			<div class="add-line__text"> Показ ролика в непосредственной близости от точек реализации рекламируемого товара или услуги. </div>
 		</section><!--ad-line-->
-		<section class="calculator">
+		<section class="calculator wrapper">
 			<h2 class="h2">КАЛЬКУЛЯТОР РЕКЛАМЫ МОСКОВСКАЯ ОБЛАСТЬ</h2>
 			<form action="" class="form-calc">
 				<div class="form-calc__top">
 					<div class="form-calc__inpbox">
-						<div class="form__imgbox"><img src="" alt=""></div>
-						<div class="form__top-text">Хронометраж</div>
+						<div class="form-calc__imgbox"><img width="70" height="70" src="img/clock.png" alt=""></div>
+						<div class="form-calc__top-text">Хронометраж</div>
 						<select data-placeholder="5 секунд" class="styler form-calc__select">
 							<option value=""></option>
 							<option value="">5 секунд</option>
@@ -96,8 +96,8 @@
 						</select>
 					</div><!--form-calc__inpbox-->
 					<div class="form-calc__inpbox">
-						<div class="form__imgbox"><img src="" alt=""></div>
-						<div class="form__top-text">Периодичность показа</div>
+						<div class="form-calc__imgbox"><img width="70" height="70" src="img/travel.png" alt=""></div>
+						<div class="form-calc__top-text">Периодичность показа</div>
 						<select data-placeholder="Каждые 5 минут" class="styler form-calc__select">
 							<option value=""></option>
 							<option value="">Каждые 5 минут</option>
@@ -107,8 +107,8 @@
 						</select>
 					</div><!--form-calc__inpbox-->
 					<div class="form-calc__inpbox">
-						<div class="form__imgbox"><img src="" alt=""></div>
-						<div class="form__top-text">Срок размещения</div>
+						<div class="form-calc__imgbox"><img width="70" height="70" src="img/calendar.png" alt=""></div>
+						<div class="form-calc__top-text">Срок размещения</div>
 						<select data-placeholder="1 неделя" class="styler form-calc__select">
 							<option value="">1 неделя</option>
 							<option value="">2 недели</option>
@@ -124,22 +124,25 @@
 							<option value="">1 год (52 недель)</option>
 						</select>
 					</div><!--form-calc__inpbox-->
-					
+
 				</div><!--form-calc__top-->
 				<div class="form-calc__content">
-					<table class="form-calc__table">
+					<div class="form-calc__table-wrap">
+						<table class="form-calc__table">
 						<tr class="form-calc__row form-calc__head">
 							<td class="form-calc__cell">
 								<i class="fa fa-bus"></i>
-								<span>Маршрут</span>
+								<span class="text">Маршрут</span>
 							</td>
 							<td class="form-calc__cell">
-								<i class="fa fa-television"></i>
-								<span>Количество мониторов</span>
+								<div class="flex">
+									<span class="icon"><i class="fa fa-television"></i></span>
+									<span class="text text--flex">Количество<br>мониторов</span>
+								</div>
 							</td>
 							<td class="form-calc__cell">
 								<i class="fa fa-check-square-o"></i>
-								<span>Выбрать</span>
+								<span class="text">Выбрать</span>
 							</td>
 						</tr><!--form-calc__row-->
 						<tr class="form-calc__row">
@@ -154,97 +157,103 @@
 							<td class="form-calc__cell"> МОСТРАНСАВТО №833 (ст. Опалиха - ст. Павшино) </td>
 							<td class="form-calc__cell">10</td>
 							<td class="form-calc__cell">
-								<input id="check1" type="checkbox" class="form-calc__check-input">
-								<label for="check1" class="form-calc__check-label"></label>
+								<input id="check2" type="checkbox" class="form-calc__check-input">
+								<label for="check2" class="form-calc__check-label"></label>
 							</td>
 						</tr><!--form-calc__row-->
 						<tr class="form-calc__row">
 							<td class="form-calc__cell"> МОСТРАНСАВТО №26 (ст. Химки - Красногорск) </td>
 							<td class="form-calc__cell">3</td>
 							<td class="form-calc__cell">
-								<input id="check1" type="checkbox" class="form-calc__check-input">
-								<label for="check1" class="form-calc__check-label"></label>
+								<input id="check3" type="checkbox" class="form-calc__check-input">
+								<label for="check3" class="form-calc__check-label"></label>
 							</td>
 						</tr><!--form-calc__row-->
 						<tr class="form-calc__row">
 							<td class="form-calc__cell"> МОСТРАНСАВТО №542 №542П (Красногорск Чернево - м. Тушинская) </td>
 							<td class="form-calc__cell">18</td>
 							<td class="form-calc__cell">
-								<input id="check1" type="checkbox" class="form-calc__check-input">
-								<label for="check1" class="form-calc__check-label"></label>
+								<input id="check4" type="checkbox" class="form-calc__check-input">
+								<label for="check4" class="form-calc__check-label"></label>
 							</td>
 						</tr><!--form-calc__row-->
 						<tr class="form-calc__row">
 							<td class="form-calc__cell"> МОСТРАНСАВТО №856М (Тушинская - Павшинская Пойма Красногорск) </td>
 							<td class="form-calc__cell">7</td>
 							<td class="form-calc__cell">
-								<input id="check1" type="checkbox" class="form-calc__check-input">
-								<label for="check1" class="form-calc__check-label"></label>
+								<input id="check5" type="checkbox" class="form-calc__check-input">
+								<label for="check5" class="form-calc__check-label"></label>
 							</td>
 						</tr><!--form-calc__row-->
 					</table><!--form-calc__table-->
+					</div>
 					<div class="form-calc__summ-box">
-						<div class="form-calc__summ-title">
-							<i class="fa fa-bookmark"></i><span class="text">Итого:</span>
-						</div>
-						<div class="form-calc__line">
-							<div class="type">
-								<i class="fa fa-television"></i>
-								<span class="text">Мониторов</span>
+						<div class="form-calc__box-wrap">
+							<div class="form-calc__summ-title">
+								<i class="fa fa-bookmark"></i><span class="text">Итого:</span>
 							</div>
-							<div class="value">12</div>
-						</div>
-						<div class="form-calc__line">
-							<div class="type">
-								<i class="fa fa-clone"></i>
-								<span class="text">Показов</span>
+							<div class="form-calc__line">
+								<div class="type">
+									<i class="fa fa-television"></i>
+									<span class="text">Мониторов</span>
+								</div>
+								<div class="value">12</div>
 							</div>
-							<div class="value">10 080</div>
-						</div>
-						<div class="form-calc__line form-calc__line--price">
+							<div class="form-calc__line">
+								<div class="type">
+									<i class="fa fa-clone"></i>
+									<span class="text">Показов</span>
+								</div>
+								<div class="value">10 080</div>
+							</div>
+							<div class="form-calc__line form-calc__line--price">
 							<div class="type">
 								<i class="fa fa-rouble"></i>
 								<span class="text">Стоимость</span>
 							</div>
 							<div class="value">30 240</div>
 						</div>
+						</div>
+						<button class="form-calc__submit" type="submit">отправить заявку</button>
 					</div><!--form-calc__summ-box-->
 				</div><!--form-calc__content-->
 			</form>
 		</section><!--calculator-->
 		<section class="advantages">
 			<h2 class="h2">Онлайн отчетность и полный контроль</h2>
-			<div class="advantages__item">
-				<div class="advantages__img">
-					<img src="" alt="">
-					<div class="advantages__text">Загрузка видероликов<br>через интернет</div>
-				</div>
-			</div>
-			<div class="advantages__item">
-				<div class="advantages__img">
-					<img src="" alt="">
-					<div class="advantages__text">Моментальное изменение<br>рекламных компаний</div>
-				</div>
-			</div>
-			<div class="advantages__item">
-				<div class="advantages__img">
-					<img src="" alt="">
-					<div class="advantages__text">Контроль работы<br>мониторов на транспорте</div>
-				</div>
-			</div>
-			<div class="advantages__item">
-				<div class="advantages__img">
-					<img src="" alt="">
-					<div class="advantages__text">Добавление GPS<br>координат к ролику</div>
+			<div class="advantages__items">
+					<div class="advantages__item">
+						<div class="advantages__img">
+							<img width="130" height="130" src="img/video.png" alt="">
+							<div class="advantages__text">Загрузка видероликов<br>через интернет</div>
+						</div>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__img">
+							<img width="130" height="130" src="img/moment.png" alt="">
+							<div class="advantages__text">Моментальное изменение<br>рекламных компаний</div>
+						</div>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__img">
+							<img width="130" height="130" src="img/control.png" alt="">
+							<div class="advantages__text">Контроль работы<br>мониторов на транспорте</div>
+						</div>
+					</div>
+					<div class="advantages__item">
+					<div class="advantages__img">
+						<img width="130" height="130" src="img/gps.png" alt="">
+						<div class="advantages__text">Добавление GPS<br>координат к ролику</div>
+					</div>
 				</div>
 			</div>
 		</section><!--advantages-->
-		<div class="slider-main">
-			<div class="slider-main__slide"><img src="" alt=""></div>
-			<div class="slider-main__slide"><img src="" alt=""></div>
-			<div class="slider-main__slide"><img src="" alt=""></div>
-			<div class="slider-main__slide"><img src="" alt=""></div>
-			<div class="slider-main__slide"><img src="" alt=""></div>
+		<div class="slider-main wrapper">
+			<a data-lightbox="slider-main" href="img/slider-main_1.jpeg" class="slider-main__slide"><img width="320" height="430" src="img/slider-img_1.jpeg" alt=""></a>
+			<a data-lightbox="slider-main" href="img/slider-main_2.jpeg" class="slider-main__slide"><img width="320" height="430" src="img/slider-img_2.jpeg" alt=""></a>
+			<a data-lightbox="slider-main" href="img/slider-main_3.jpeg" class="slider-main__slide"><img width="320" height="430" src="img/slider-img_3.jpeg" alt=""></a>
+			<a data-lightbox="slider-main" href="img/slider-main_4.jpeg" class="slider-main__slide"><img width="320" height="430" src="img/slider-img_4.jpeg" alt=""></a>
+			<a data-lightbox="slider-main" href="img/slider-main_1.jpeg" class="slider-main__slide"><img width="320" height="430" src="img/slider-img_1.jpeg" alt=""></a>
 		</div><!--slider-main-->
 		<section class="block-text">
 			<div class="block-text__desc">
@@ -254,41 +263,45 @@
 				<p>Наши разнообразные варианты офисных помещений, отвечающие любым Вашим требованиям, помогут наиболее эффективно организовать работу и повысить продуктивность Ваших сотрудников.</p>
 				<p>Располагая сетью из 3000 бизнес-центров в 120 странах, Регус всегда рядом и готов оказать поддержку Вашему бизнесу, ведь у нас есть офисы на любой бюджет. </p>
 			</div>
-			<div class="block-text__img"><img src="" alt=""></div>
+			<a data-lightbox="block-text2" href="img/block-text_2.png" class="block-text__img"><img src="img/block-text_2.png" alt=""></a>
 		</section><!--block-text-->
 		<section class="sale">
 			<h2 class="h2">Акции и предложения</h2>
-			<article class="sale__item">
-				<div class="sale__img"><img src="" alt=""></div>
+			<div class="sale__wrap">
+				<div class="sale__items">
+					<article class="sale__item">
+						<div class="sale__img"><img width="150" height="150" src="img/cup.png" alt=""></div>
+						<div class="sale__text">
+							<div class="header">Месяц рекламы</div>
+							<div class="desc">в подарок!</div>
+						</div>
+					</article>
+					<article class="sale__item">
+						<div class="sale__img"><img width="150" height="150" src="img/video.png" alt=""></div>
+						<div class="sale__text">
+							<div class="header">Видеоролик</div>
+							<div class="desc">в подарок</div>
+						</div>
+					</article>
+					<article class="sale__item">
+				<div class="sale__img"><img width="150" height="150" src="img/report.png" alt=""></div>
 				<div class="sale__text">
-					<span class="header">Месяц рекламы</span>
-					<span class="desc">в подарок!</span>
+					<div class="header">Онлайн отчет</div>
+					<div class="desc">каждый месяц</div>
 				</div>
 			</article>
-			<article class="sale__item">
-				<div class="sale__img"><img src="" alt=""></div>
-				<div class="sale__text">
-					<span class="header">Видеоролик</span>
-					<span class="desc">в подарок</span>
 				</div>
-			</article>
-			<article class="sale__item">
-				<div class="sale__img"><img src="" alt=""></div>
-				<div class="sale__text">
-					<span class="header">Онлайн отчет</span>
-					<span class="desc">каждый месяц</span>
-				</div>
-			</article>
+			</div>
 			<div class="sale__more">
 				<span class="t-desc"> Подробности у наших менеджеров. Звоните!</span>
 				<a href="tel:+74993807799" class="t-phone">+7 (499) 380-77-99</a>
 			</div>
 		</section><!--sale-->
 		<form action="" class="form">
-			<div class="form__header"> Оформите заявку на рекламу и получите спецпредложение! </div>
+			<div class="form__header"> Оформите заявку на рекламу и получите<br>спецпредложение! </div>
 			<input placeholder="Введите ваше имя" type="text" class="form__input">
-			<input placeholder="Введите ваш телефон" type="tel" class="form__input">
-			<input placeholder="Опишите ваши вопросы" type="textarea" class="form__input">
+			<input placeholder="Введите ваш телефон" type="tel" class="form__input form__tel">
+			<textarea placeholder="Опишите ваши вопросы" type="textarea" class="form__input form__textarea"></textarea>
 			<button type="submit" class="form__submit">Отправить заявку</button>
 		</form><!--form-->
 		<div class="mob_switcher">

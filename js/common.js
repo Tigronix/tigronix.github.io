@@ -43,41 +43,48 @@ $(document).ready(function(){
 		$('.global_wrapper').removeClass('body_overflow');
 		$('.page-header').removeClass('page-header--off');
 	});
-	
+
 	//Маска для телефона
-	$(".form__tel").mask("+7(999)999-99-99",{placeholder:"+7(___)___-__-__"});	
-	
+	$(".form__tel").mask("+7(999)999-99-99",{placeholder:"+7(___)___-__-__"});
+
 	//slider-main
 	$('.slider-main').slick({
-    slidesToShow: 1,
+    slidesToShow: 4,
 		slidesToScroll: 1,
-		arrows: true
+		arrows: true,
+		responsive: [
+			{
+				breakpoint: 1533,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 1070,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 690,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+			
+		]
 	});
-	
-	
-	
+
 	//popup
 	$('.popup__open').click(function(){
 		$('.popup').addClass('show').addClass('flex');
 		$('body').addClass('o-hidden');
-		
-		//slider-popup
-	$('.slider-for').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		fade: true,
-		asNavFor: '.slider-nav',
-		respondTo: 'slider'
-	});
-	$('.slider-nav').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		asNavFor: '.slider-for',
-		arrows: true,
-		focusOnSelect: true,
-		respondTo: 'slider'
-	});
 	});
 	$('.popup__close').click(function(){
 		$('.popup').removeClass('show').removeClass('flex');
@@ -90,10 +97,11 @@ $(document).ready(function(){
 				$('body').removeClass('o-hidden');
     }
 	});
-	
-	//map
-	$('.img-map').mapster({
-        fillColor: 'ff0000',
-        fillOpacity: 0.3
-    });
+
+	//styler
+	(function($) {
+		$(function() {
+		  $('.styler').styler();
+		});
+	})(jQuery);
 });
