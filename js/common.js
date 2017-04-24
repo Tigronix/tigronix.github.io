@@ -62,6 +62,19 @@ $(document).ready(function () {
 		, slidesToScroll: 1
 		, arrows: true
 	});
+	//slider-main
+	$('.slider-main').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true
+	});
+	//wrong-slider
+	$('.wrong-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true
+	});
+	
 	//metro-slider
 	$('.metro-slider').slick({
 		slidesToShow: 1
