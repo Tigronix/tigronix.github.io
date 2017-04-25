@@ -52,10 +52,6 @@ $(document).ready(function () {
 		$('.global_wrapper').removeClass('body_overflow');
 		$('.page-header').removeClass('page-header--off');
 	});
-	//Маска для телефона
-	$(".form__tel").mask("+7(999)999-99-99", {
-		placeholder: "+7(___)___-__-__"
-	});
 	//slider-main
 	$('.slider-main').slick({
 		slidesToShow: 1
@@ -104,4 +100,8 @@ $(document).ready(function () {
 			$('.styler').styler();
 		});
 	})(jQuery);
+	//Маска для телефона
+	/*$(".form__tel").mask("+7(999)999-99-99", {
+		placeholder: "+7(___)___-__-__"
+	});*/
 });
