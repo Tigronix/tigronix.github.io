@@ -1,11 +1,7 @@
 $(document).ready(function () {
 	//fa-star
-	$('.fa-star-o').click(function(){
-		if($(this).hover()){
-			$(this).removeClass('fa-star-o').addClass('fa-star');
-		}else {
-			$(this).removeClass('fa-star').addClass('fa-star-o');
-		}
+	$('#menu-link').on('click', function(){
+		$('.menu').toggle();
 	});
 	
 	//header-scroll
