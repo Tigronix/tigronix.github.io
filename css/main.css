@@ -1315,7 +1315,7 @@ body .header__close {
 
 .menu {
   position: fixed;
-  width: 0px;
+  width: 305px;
   height: 100%;
   z-index: 6;
   -webkit-transform: translate(-100%);
@@ -1324,9 +1324,6 @@ body .header__close {
   left: 0;
   top: 0;
   z-index: 500;
-}
-.menu_active {
-	width: 100%;
 }
 
 .menu__container {
