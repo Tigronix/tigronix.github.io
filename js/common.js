@@ -44,7 +44,7 @@ $(document).ready(function () {
 		$('.global_wrapper').removeClass('body_overflow');
 		$('.page-header').removeClass('page-header--off');
 	});
-	//slider-main
+/*	//slider-main
 	$('.slider-main').slick({
 		slidesToShow: 1
 		, slidesToScroll: 1
@@ -61,7 +61,7 @@ $(document).ready(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true
-	});
+	});*/
 	
 	//metro-slider
 	$('.metro-slider').slick({

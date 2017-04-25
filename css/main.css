@@ -175,7 +175,6 @@ body {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	display: none;
 }
 
 @media (max-width: 1024px) {
