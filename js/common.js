@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	
+	$('.menu').hide();
 	
 	//header-scroll
 	var header = $('.page-header');
