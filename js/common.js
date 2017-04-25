@@ -61,7 +61,7 @@ $(document).ready(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true
-	});*/
+	});
 	
 	//metro-slider
 	$('.metro-slider').slick({
@@ -69,7 +69,7 @@ $(document).ready(function () {
 		, slidesToScroll: 1
 		, arrows: true
 		, dots: true
-	});
+	});*/
 	//popup
 	$('.popup__open').click(function () {
 		$('.popup').addClass('show').addClass('flex');
