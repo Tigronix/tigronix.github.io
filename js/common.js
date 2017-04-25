@@ -1,8 +1,5 @@
 $(document).ready(function () {
-	//fa-star
-	$('#menu-link').on('click', function(){
-		$('.menu').toggle();
-	});
+	
 	
 	//header-scroll
 	var header = $('.page-header');
