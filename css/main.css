@@ -731,6 +731,8 @@ body .header__close {
 @media (max-width: 1024px) {
 	.content {
 		padding: 0 2%;
+		flex: auto;
+		width: 100%;
 	}
 }
 
@@ -8587,7 +8589,7 @@ button.close {
 }
 
 .metro-slider {
-	width: 282px;
+	width: 282px!important;
 	padding-bottom: 32px;
 	margin-right: 10px;
 }
@@ -8597,7 +8599,7 @@ button.close {
 	border: 3px solid #fdd802;
 }
 
-.metro-slider .slick-arrow {
+.metro-slider .owl-nav>div {
 	width: 29px;
 	height: 30px;
 	background-size: 29px auto !important;
@@ -8613,17 +8615,17 @@ button.close {
 	cursor: pointer;
 }
 
-.metro-slider .slick-arrow.slick-prev {
+.metro-slider .owl-prev {
 	left: 15px;
 	background: url(../img/left.svg) no-repeat;
 }
 
-.metro-slider .slick-arrow.slick-next {
+.metro-slider .owl-next {
 	right: 15px;
 	background: url(../img/right.svg) no-repeat;
 }
 
-.metro-slider .slick-dots {
+.metro-slider .owl-dots {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -8641,20 +8643,20 @@ button.close {
 	flex-wrap: wrap;
 }
 
-.metro-slider .slick-dots li {
+.metro-slider .owl-dot {
 	list-style: none;
 	margin-left: 10px;
 }
 
-.metro-slider .slick-dots li:first-child {
+.metro-slider .owl-dot:first-child {
 	margin-left: 0;
 }
 
-.metro-slider .slick-dots li.slick-active button {
+.metro-slider .owl-dot.active {
 	background: #1c87eb;
 }
 
-.metro-slider .slick-dots button {
+.metro-slider .owl-dot {
 	font-size: 0;
 	width: 18px;
 	height: 18px;
@@ -8668,10 +8670,10 @@ button.close {
 }
 
 @media (max-width: 1740px) {
-	.metro-slider .slick-arrow.slick-prev {
+	.metro-slider .owl-prev {
 		left: 10px;
 	}
-	.metro-slider .slick-arrow.slick-next {
+	.metro-slider .owl-next {
 		right: 10px;
 	}
 }
@@ -9476,6 +9478,7 @@ button.close {
 
 .wrong {
 	margin-bottom: 50px;
+	max-width: 100%!important;
 }
 
 .wrong__header {
@@ -9603,6 +9606,7 @@ button.close {
 
 .wrong-slider__slide {
 	position: relative;
+	display: block;
 }
 
 .wrong-slider__slide img {
@@ -9612,7 +9616,7 @@ button.close {
 	margin: 0 auto;
 }
 
-.wrong-slider__slide:after {
+.wrong-slider .wrong-slider__slide:after {
 	display: block;
 	content: '';
 	left: 60%;
@@ -9624,10 +9628,10 @@ button.close {
 	z-index: 5;
 	-webkit-transition: .6s;
 	transition: .6s;
-	opacity: 0;
+	opacity: 1;
 }
 
-.wrong-slider__slide:hover:after {
+.owl-item:hover .wrong-slider__slide:after {
 	left: 0;
 	right: 0;
 	top: 0;
@@ -9635,7 +9639,7 @@ button.close {
 	opacity: 1;
 }
 
-.wrong-slider .slick-arrow {
+.wrong-slider .owl-nav>div {
 	width: 24px;
 	height: 45px;
 	font-size: 0;
@@ -9649,12 +9653,12 @@ button.close {
 	cursor: pointer;
 }
 
-.wrong-slider .slick-arrow.slick-prev {
+.wrong-slider .owl-prev {
 	left: 15px;
 	background: url(../img/left.png) no-repeat;
 }
 
-.wrong-slider .slick-arrow.slick-next {
+.wrong-slider .owl-next {
 	right: 15px;
 	background: url(../img/right.png) no-repeat;
 }

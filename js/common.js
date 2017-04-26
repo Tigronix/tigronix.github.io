@@ -44,32 +44,21 @@ $(document).ready(function () {
 		$('.global_wrapper').removeClass('body_overflow');
 		$('.page-header').removeClass('page-header--off');
 	});
-/*	//slider-main
-	$('.slider-main').slick({
-		slidesToShow: 1
-		, slidesToScroll: 1
-		, arrows: true
-	});
-	//slider-main
-	$('.slider-main').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true
-	});
-	//wrong-slider
-	$('.wrong-slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true
+	
+	$('.metro-slider').owlCarousel({
+		nav: true,
+		items: 1,
+		loop:true
 	});
 	
-	//metro-slider
-	$('.metro-slider').slick({
-		slidesToShow: 1
-		, slidesToScroll: 1
-		, arrows: true
-		, dots: true
-	});*/
+	$('.wrong-slider').owlCarousel({
+		nav: true,
+		items: 1,
+		loop:true
+	});
+	
+	
+	
 	//popup
 	$('.popup__open').click(function () {
 		$('.popup').addClass('show').addClass('flex');
