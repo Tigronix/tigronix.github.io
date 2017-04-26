@@ -1822,7 +1822,7 @@ body .header__close {
 }
 
 .menu__dropdown {
-	color: #464868;
+	color: #fff;
 	font-size: 20px;
 }
 
@@ -1835,7 +1835,7 @@ body .header__close {
 }
 
 .menu__content a {
-	color: #50526b;
+	color: #fff;
 	text-decoration: none;
 }
 
