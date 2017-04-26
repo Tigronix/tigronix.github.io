@@ -1106,7 +1106,6 @@ body .header__close {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin-top: 9px;
 }
 
 .form-master__submit {
@@ -9474,6 +9473,7 @@ button.close {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
+	align-items: flex-start;
 }
 
 .wrong {
