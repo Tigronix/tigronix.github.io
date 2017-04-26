@@ -1669,7 +1669,7 @@ body .header__close {
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
-	background-color: #1a1b28;
+	background-color: #1B4E9B;
 	width: 71%;
 }
 
@@ -1940,7 +1940,7 @@ body .header__close {
 	left: 0;
 	width: 100%;
 	position: fixed;
-	background-color: #1a1b28;
+	background-color: #1B4E9B;
 	z-index: 1101;
 	display: none;
 	-webkit-box-pack: end;
