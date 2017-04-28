@@ -1,17 +1,17 @@
-$(document).ready(function () {
+$(document).ready(function(){
 	
-	//header-scroll
+//header-scroll
 	var header = $('.page-header');
 	$(window).scroll(function () {
-		var top = $(this).scrollTop();
-		if (top > 50) {
-			header.addClass('page-header--fixed');
-		}
-		else {
-			header.removeClass('page-header--fixed');
-		}
+			var top = $(this).scrollTop();
+			if (top > 50) {
+					header.addClass('page-header--fixed');
+			}
+			else {
+					header.removeClass('page-header--fixed');
+			}
 	});
-	//mob-menu-плавное появление
+ //mob-menu-плавное появление
 	$('.header__open').click(function () {
 		$(this).hide();
 		$('.header__close').show();
@@ -44,45 +44,36 @@ $(document).ready(function () {
 		$('.global_wrapper').removeClass('body_overflow');
 		$('.page-header').removeClass('page-header--off');
 	});
-	
-	$('.metro-slider').owlCarousel({
-		nav: true,
-		items: 1,
-		loop:true
-	});
-	
-	$('.wrong-slider').owlCarousel({
-		nav: true,
-		items: 1,
-		loop:true
-	});
-	
-	
-	
-	//popup
-	$('.popup__open').click(function () {
-		$('.popup').addClass('show').addClass('flex');
-		$('body').addClass('o-hidden');
-	});
-	$('.popup__close').click(function () {
-		$('.popup').removeClass('show').removeClass('flex');
-		$('body').removeClass('o-hidden');
-	});
-	$(document).mouseup(function (e) {
-		var container = $(".popup");
-		if (container.has(e.target).length === 0) {
-			container.removeClass('show').removeClass('flex');
-			$('body').removeClass('o-hidden');
-		}
-	});
-	//styler
-	(function ($) {
-		$(function () {
-			$('.styler').styler();
-		});
-	})(jQuery);
+
 	//Маска для телефона
-	/*$(".form__tel").mask("+7(999)999-99-99", {
-		placeholder: "+7(___)___-__-__"
-	});*/
+	$(".form__tel").mask("+7(999)999-99-99",{placeholder:"+7(___)___-__-__"});
+
+	//slider-page
+	$('.slider-main').owlCarousel({
+		animateOut: 'fadeOut', 
+		animateIn: 'zoomOut', 
+		items: 1, 
+		loop: true,
+		autoplay: true,
+		autoplayHoverPause: true, 
+		autoplayTimeout: 3000,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+	});
+	
+	//slider-page
+	$('.slider-page').owlCarousel({
+		animateOut: 'fadeOut', 
+		animateIn: 'zoomOut', 
+		items: 1, 
+		loop: true,
+		autoplay: true,
+		autoplayHoverPause: true, 
+		autoplayTimeout: 3000,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+	});
+	
+	//styler
+	$('.styler').styler();
 });
