@@ -1,0 +1,16 @@
+User-agent: Yandex
+Disallow: /?
+Disallow: /&
+Disallow: /webstat/
+
+Host: autotehpomosch-na-doroge.moscow
+
+User-agent: Googlebot
+Disallow: /?
+Disallow: /&
+Disallow: /webstat/
+
+User-agent: *
+Disallow: /?
+Disallow: /&
+Disallow: /webstat/
