@@ -11,6 +11,7 @@ Disallow: /&
 Disallow: /webstat/
 
 User-agent: *
+Disallow: /
 Disallow: /?
 Disallow: /&
 Disallow: /webstat/
