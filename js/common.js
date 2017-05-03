@@ -1,5 +1,9 @@
 $(document).ready(function(){
-	
+	$(".hamburger").click(function(){
+		$(this).toggleClass("hamburgerActive");
+		$('.page-header__menu').slideToggle(400).css('display', 'flex');
+		$('.page-header__form').slideToggle(400).css('display', 'flex');
+	});	
 //header-scroll
 	var header = $('.page-header');
 	$(window).scroll(function () {
@@ -76,4 +80,17 @@ $(document).ready(function(){
 	
 	//styler
 	$('.styler').styler();
+	
+	
+	var window = $('.page-header').width();
+	console.log(window);
+	if(window <= 1024) {
+		$('.page-header__menu').addClass('off');
+		$('.nav').addClass('off');
+		$('.page-header__form').addClass('off');
+		$(".hamburger").click(function(){
+		$(this).toggleClass("hamburgerActive");
+			$('.nav').slideToggle('400');
+		});	
+	}	
 });
