@@ -119,12 +119,13 @@
 			</div><!--text-block-->
 			<h2 class="h2">Цены на однокомнатные квартиры</h2>
 			<div class="table-tabs">
-				<button type="button" class="table-tabs__tab table-tabs__tab--active">Дом 4</button>
-				<button type="button" class="table-tabs__tab">Дом 4 корпус 1</button>
-				<button type="button" class="table-tabs__tab">Дом 4 корпус 2</button>
-				<button type="button" class="table-tabs__tab">Дом 4 корпус 3</button>
+				<button type="button" data-id="table-wrap" data-taba="1" class="table-tabs__tab table-tabs__tab--active">Дом 4</button>
+				<button type="button" data-id="table-wrap" data-taba="2" class="table-tabs__tab">Дом 4 корпус 1</button>
+				<button type="button" data-id="table-wrap" data-taba="3" class="table-tabs__tab">Дом 4 корпус 2</button>
+				<button type="button" data-id="table-wrap" data-taba="4" class="table-tabs__tab">Дом 4 корпус 3</button>
 			</div><!--table-tabs-->
-			<div class="table">
+			<div id="table-wrap">
+				<div data-taba="1" class="table">
 				<div class="table__row table__row--head">
 					<div class="table__cell">Выберите квартиру</div>
 					<div class="table__cell">№ КВ.</div>
@@ -230,15 +231,21 @@
 					<div class="table__cell table__cell--small">от <span class="table__number">3 750 000</span> руб.</div>
 				</div>
 			</div><!--table-->
-			<div class="links2">
-				<div class="links2__box"><a href="#" class="link2__link">Перейти на шахматку дома №4, корпус №1</a></div>
-				<div class="links2__box"><a href="#" class="link2__link">Перейти на шахматку дома №4, корпус №2</a></div>
-				<div class="links2__box"><a href="#" class="link2__link">Перейти на шахматку дома №4, корпус №3</a></div>
-				<div class="links2__box"><a href="#" class="link2__link">Перейти на шахматку дома №4, корпус №4</a></div>
+				<p data-taba="2" class="table hide">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился взобравшись залетают власти рыбного все свое если страну, однажды текстов запятой, запятых имеет, деревни ты, себя свой напоивший свой.</p>
+				<p data-taba="3" class="table hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non, similique excepturi error nisi perspiciatis voluptatibus temporibus maiores quia repellendus mollitia accusamus a asperiores numquam explicabo, aut corporis dolor amet.</p>
+				<p data-taba="4" class="table hide">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился взобравшись залетают власти рыбного все свое если страну, однажды текстов запятой, запятых имеет, деревни ты, себя свой напоивший свой.</p>
+				
 			</div>
+			<div class="links2">
+				<div class="links2__box"><a href="#" class="links2__link">Перейти на шахматку дома №4, корпус №1</a></div>
+				<div class="links2__box"><a href="#" class="links2__link">Перейти на шахматку дома №4, корпус №2</a></div>
+				<div class="links2__box"><a href="#" class="links2__link">Перейти на шахматку дома №4, корпус №3</a></div>
+				<div class="links2__box"><a href="#" class="links2__link">Перейти на шахматку дома №4, корпус №4</a></div>
+			</div>
+			<div class="look-also">Смотрите также:</div>
 			<div class="linksAlso">
-				<a href="#" class="linkAlso__link">Двухкомнатные квартиры в Королеве</a>
-				<a href="#" class="linkAlso__link">Трехкомнатные квартиры в Королеве</a>
+				<a href="#" class="linksAlso__link links2__link">Двухкомнатные квартиры в Королеве</a>
+				<a href="#" class="linksAlso__link links2__link">Трехкомнатные квартиры в Королеве</a>
 			</div>
 		</div><!--wrapper-->
 	</main>

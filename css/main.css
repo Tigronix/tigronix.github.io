@@ -145,6 +145,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url("../fonts/PFDinDisplayPro-Regular.woff2") format("woff2"), url("../fonts/PFDinDisplayPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   margin: 0;
   padding: 0;
@@ -189,10 +195,23 @@ p {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   margin-bottom: 15px; }
+  @media (max-width: 1280px) {
+    p {
+      font-size: 16px; } }
+
+.look-also {
+  font-size: 27px;
+  color: #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  color: #000; }
 
 a {
   font-size: 1.1vw;
   color: #017EEC; }
+  @media (max-width: 1280px) {
+    a {
+      font-size: 16px; } }
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -2585,6 +2604,9 @@ a {
       color: #000; }
     .bread__link:last-child:after {
       display: none; }
+  @media (max-width: 1280px) {
+    .bread__link {
+      font-size: 16px; } }
 
 .table-tabs {
   display: -webkit-box;
@@ -2626,6 +2648,20 @@ a {
       background: #BB0101; }
     .table-tabs__tab:first-child {
       margin-left: 0; }
+  @media (max-width: 1280px) {
+    .table-tabs__tab {
+      font-size: 18px; } }
+  @media (max-width: 1024px) {
+    .table-tabs__tab {
+      font-size: 16px;
+      width: auto;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; } }
+  @media (max-width: 768px) {
+    .table-tabs__tab {
+      font-size: 14px; } }
 
 .table {
   width: 100%;
@@ -2633,9 +2669,7 @@ a {
   .table__row {
     display: table-row;
     height: 72px;
-    border-bottom: 1px solid #b22222;
     background: #f9462f;
-    padding: 0 24px;
     -webkit-transition: background .4s;
     transition: background .4s;
     cursor: pointer; }
@@ -2648,8 +2682,11 @@ a {
       text-transform: uppercase;
       font-weight: 500;
       font-size: .8vw; }
+      .table__row--head .table__cell:first-child {
+        font-size: 1vw; }
   .table__cell {
-    font-size: 27px;
+    font-size: 1.36vw;
+    border-bottom: 1px solid #b22222;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #fff;
@@ -2658,15 +2695,147 @@ a {
     display: table-cell; }
     .table__cell:first-child {
       text-align: left;
-      padding-left: 30px;
-      font-size: 17px; }
+      padding-left: 1.306%;
+      font-size: .889vw; }
       .table__cell:first-child b {
-        font-size: 21px;
+        font-size: 1.1vw;
         text-align: center;
         padding-left: 6%;
         font-weight: 500; }
+    .table__cell--small {
+      font-size: 1.1vw;
+      text-transform: none; }
+      .table__cell--small span {
+        font-size: 1.36vw;
+        font-weight: 500; }
     .table__cell:last-child {
-      padding-right: 30px; }
+      padding-right: 1.306%; }
+  @media (max-width: 1280px) {
+    .table__row--head .table__cell {
+      font-size: 14px; }
+      .table__row--head .table__cell:first-child {
+        font-size: 16px; }
+    .table__cell {
+      font-size: 16px; }
+      .table__cell--small {
+        font-size: 14px;
+        text-transform: none; }
+        .table__cell--small span {
+          font-size: 16px;
+          font-weight: 500; }
+    .table__cell:nth-child(1), .table__cell:nth-child(6), .table__cell:nth-child(7), .table__cell:nth-child(8), .table__cell:nth-child(9) {
+      display: none; } }
+  @media (max-width: 600px) {
+    .table .table__row--head .table__cell, .table__cell {
+      text-transform: none;
+      font-size: 12px; }
+      .table .table__row--head .table__cell--small, .table__cell--small {
+        font-size: 10px; }
+        .table .table__row--head .table__cell--small span, .table__cell--small span {
+          font-size: 12px; } }
+
+.links2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55.20833333333333%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 55px; }
+  .links2__box {
+    width: 48%;
+    margin-bottom: 37px; }
+  .links2__link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .links2__link:before {
+      display: block;
+      content: '';
+      width: 40px;
+      height: 2px;
+      margin-right: 18px;
+      background: url(../img/tireBlue.jpg) left center no-repeat; }
+  @media (max-width: 1024px) {
+    .links2 {
+      width: 100%; } }
+
+.linksAlso {
+  width: 23.95833333333333%; }
+  .linksAlso__link {
+    margin-top: 15px; }
+  @media (max-width: 1024px) {
+    .linksAlso {
+      width: 100%; }
+      .linksAlso a {
+        max-width: 320px; } }
+
+.room {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.roomNav__item {
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 120px; }
+  .roomNav__item:nth-child(odd) {
+    background: #DB0000; }
+  .roomNav__item:nth-child(even) {
+    background: #E91B26; }
+
+.roomNav__number {
+  font-family: 'Lato', sans-serif;
+  font-size: 53px;
+  font-weight: 900;
+  color: #fff; }
+
+.roomNav__text {
+  font-family: 'PF DinDisplay Pro';
+  font-size: 1vw;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px; }
+
+.roomSlider__wrap {
+  width: 38.80208333333333%;
+  background: #f2ffe5;
+  border: 1px solid #8bd350;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 0 30px; }
 
 .slider-main {
   max-width: 100%;
@@ -3031,6 +3200,22 @@ span.hamburger.hamburgerActive span:after {
       color: #696969;
       font-size: 1.1vw;
       margin-left: 20px; }
+  @media (max-width: 1280px) {
+    .text-block {
+      display: block; }
+      .text-block .slider-main {
+        width: 100%; }
+      .text-block__icon-box {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .text-block__icon-box .text {
+          font-size: 16px; } }
 
 .logo {
   width: 110px;
