@@ -3642,7 +3642,8 @@ a {
 	.table__cell:nth-child(6),
 	.table__cell:nth-child(7),
 	.table__cell:nth-child(8),
-	.table__cell:nth-child(9) {
+	.table__cell:nth-child(9),
+	.table__cell:nth-child(10) {
 		display: none;
 	}
 }
@@ -3692,6 +3693,13 @@ table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc,
 table.dataTable thead .sorting {
 	background-size: 14px auto;
+}
+@media (max-width:768px) {
+	table.dataTable thead .sorting_asc,
+	table.dataTable thead .sorting_desc,
+	table.dataTable thead .sorting {
+		background-size: 7px auto;
+	}
 }
 
 .dataTables_filter,
@@ -4878,10 +4886,7 @@ span.hamburger.hamburgerActive span:after {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+	align-items: center;
 }
 
 .text-block__icon-box .text {
@@ -5350,10 +5355,6 @@ span.hamburger.hamburgerActive span:after {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-box-align: start;
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
-	align-items: flex-start;
 	margin-top: 40px;
 	margin-bottom: 30px;
 }
