@@ -2,6 +2,22 @@
 	$('.table__row[data-href]').click( function() {
 		window.location = $(this).attr('data-href');
 	});
+	// GO TOP
+	  $('.fixed_wrap').height( $('.go-top').outerHeight() );
+	  function goTop(){
+			var docBot = $('.go-top').offset().top + $(this).height();
+			console.log(docBot);
+			var footerTop = $('.page-footer').offset().top;
+			console.log(footerTop);
+			if (docBot >= footerTop){
+					$('.go-top').addClass('go-top--bottom');
+			}else{
+					$('.go-top').removeClass('go-top--bottom');
+			}
+	  }
+	  window.onscroll = function() {
+			goTop();
+	  }
 $(document).ready(function () {
 	$('.tables').DataTable({
 		paging: false
@@ -154,24 +170,4 @@ $(document).ready(function () {
 			$('.nav').slideToggle('400');
 		});
 	}
-	// GO TOP
-	/*  $('.fixed_wrap').height( $('.go-top').outerHeight() );
-	  
-	  
-	  function goTop(){
-
-	      var docBot = $('.go-top').offset().top;
-	     
-	      var footerTop = $('.page-footer').offset().top;
-	      
-	      if (docBot >= footerTop){
-	          $('.go-top').addClass('go-top--bottom');
-	      }else{
-	          $('.go-top').removeClass('go-top--bottom');
-	      }
-	  }
-
-	  window.onscroll = function() {
-	      goTop();
-	  }*/
 });

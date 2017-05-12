@@ -4958,7 +4958,7 @@ span.hamburger.hamburgerActive span:after {
 }
 
 .go-top--bottom {
-	position: static;
+	
 }
 
 .fixed_wrap {
@@ -4984,7 +4984,7 @@ span.hamburger.hamburgerActive span:after {
 
 .link-square .link {
 	font-size: 18px;
-	font-family: 'proxima-nova', sans-serif;
+	/*font-family: 'proxima-nova', sans-serif;*/
 	color: #fff;
 	display: block;
 	margin-bottom: 10px;
