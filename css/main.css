@@ -5418,8 +5418,10 @@ span.hamburger.hamburgerActive span:after {
 .slider-box__text {
 	color: #017EEC;
 	font-family: 'Gotham Pro';
-	font-size: 1.5vw;
+	font-size: 1.8vw;
 	margin-bottom: 10px;
+	padding-left: 5%;
+	text-align: left;
 }
 
 .slider-box__link {
@@ -5428,6 +5430,8 @@ span.hamburger.hamburgerActive span:after {
 	font-family: 'Gotham Pro';
 	display: block;
 	margin-top: 30px;
+	padding-left: 5%;
+	text-align: left;
 }
 
 .slider-box__btn {
@@ -6217,5 +6221,19 @@ span.hamburger.hamburgerActive span:after {
 	}
 	.link-box:first-child {
 		margin-top: 0;
+	}
+}
+.show-mobile {
+	display: none;
+}
+@media (max-width:768px) {
+	.hide-mobile {
+		display: none;
+	}	
+	.show-mobile {
+		display: block;
+	}
+	.show-mobile--mt-30 {
+		margin-top: 30px;
 	}
 }
