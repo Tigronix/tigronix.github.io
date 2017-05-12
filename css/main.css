@@ -5404,7 +5404,7 @@ span.hamburger.hamburgerActive span:after {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-	background: url(../img/tire.gif) no-repeat;
+	background: #000;
 	width: 41px;
 	height: 2px;
 }
@@ -5412,7 +5412,6 @@ span.hamburger.hamburgerActive span:after {
 .slider-box__header--mg {
 	margin-top: 20px;
 	margin-bottom: 40px;
-	padding-left: 5%;
 }
 
 .slider-box__text {
@@ -5420,8 +5419,8 @@ span.hamburger.hamburgerActive span:after {
 	font-family: 'Gotham Pro';
 	font-size: 1.8vw;
 	margin-bottom: 10px;
-	padding-left: 5%;
 	text-align: left;
+	position: relative;
 }
 
 .slider-box__link {
@@ -5430,7 +5429,6 @@ span.hamburger.hamburgerActive span:after {
 	font-family: 'Gotham Pro';
 	display: block;
 	margin-top: 30px;
-	padding-left: 5%;
 	text-align: left;
 }
 
@@ -5798,9 +5796,9 @@ span.hamburger.hamburgerActive span:after {
 .advan-list__li:before {
 	display: block;
 	content: '';
-	background: url(../img/tire.gif) no-repeat;
 	width: 40px;
 	height: 2px;
+	background: #017eec;
 	position: absolute;
 	left: 0;
 	top: 50%;
