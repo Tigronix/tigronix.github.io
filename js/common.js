@@ -6,7 +6,7 @@
 	  $('.fixed_wrap').height($('.go-top').outerHeight());
 	  function goTop(){
 			var footerHeight = $('.page-footer').innerHeight();
-			console.log(footerHeight + ' footerHeight');
+			console.log(footerHeight + ' footerHeight+');
 			var docBot = $('.fixed_wrap').offset().top;
 			console.log(docBot + ' go-top');
 			var footerTop = $('.page-footer').offset().top;
