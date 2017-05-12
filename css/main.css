@@ -4962,7 +4962,15 @@ span.hamburger.hamburgerActive span:after {
 }
 
 .fixed_wrap {
-	position: relative;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 50px;
+}
+
+.fixed-bot.static {
+	position: static;
 }
 
 .link-square {
@@ -5990,6 +5998,7 @@ span.hamburger.hamburgerActive span:after {
 .page-footer {
 	background: #CD0022;
 	padding: 30px 0;
+	position: relative;
 }
 
 .page-footer__top {

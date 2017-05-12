@@ -3,16 +3,18 @@
 		window.location = $(this).attr('data-href');
 	});
 	// GO TOP
-	  $('.fixed_wrap').height( $('.go-top').outerHeight() );
+	  $('.fixed_wrap').height($('.go-top').outerHeight());
 	  function goTop(){
-			var docBot = $('.go-top').offset().top + $(this).height();
-			console.log(docBot);
+			var footerHeight = $('.page-footer').innerHeight();
+			console.log(footerHeight + ' footerHeight');
+			var docBot = $('.fixed_wrap').offset().top;
+			console.log(docBot + ' go-top');
 			var footerTop = $('.page-footer').offset().top;
-			console.log(footerTop);
+			console.log(footerTop + ' footerTop');
 			if (docBot >= footerTop){
-					$('.go-top').addClass('go-top--bottom');
+					$('.go-top').addClass('static');
 			}else{
-					$('.go-top').removeClass('go-top--bottom');
+					$('.go-top').removeClass('static');
 			}
 	  }
 	  window.onscroll = function() {
