@@ -4235,6 +4235,13 @@ table.dataTable thead .sorting {
 	text-align: center;
 }
 
+.roomAlso__top > div, .roomAlso__bot > div {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .roomAlso .text {
 	font-size: 1vw;
 	text-transform: uppercase;
@@ -4335,6 +4342,10 @@ table.dataTable thead .sorting {
 	}
 	.roomAlso .valute {
 		font-size: 14px;
+	}
+	.roomAlso__top > div, .roomAlso__bot > div {
+		display: block;
+		height: auto;
 	}
 }
 
