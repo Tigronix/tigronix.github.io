@@ -3615,7 +3615,7 @@ a:hover {
 }
 
 .table__cell:last-child {
-	background-position: 95% center !important;
+	background-position: 90% center !important;
 }
 
 .table__cell--small {
@@ -3775,16 +3775,17 @@ table.dataTable thead .sorting {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+	border-bottom: 0;
 }
 
-.links2__link:before {
+/*.links2__link:before {
 	display: block;
 	content: '';
 	width: 40px;
 	height: 2px;
 	margin-right: 18px;
 	background: url(../img/tireBlue.jpg) left center no-repeat;
-}
+}*/
 
 @media (max-width: 1024px) {
 	.links2 {
@@ -5075,6 +5076,7 @@ span.hamburger.hamburgerActive span:after {
 	line-height: 50px;
 	text-align: center;
 	z-index: 999;
+	margin-top: 30px;
 }
 
 .fixed-bot .link {
@@ -5571,7 +5573,7 @@ span.hamburger.hamburgerActive span:after {
 	text-align: left;
 }
 
-.slider-box__header--tire:after {
+/*.slider-box__header--tire:after {
 	display: block;
 	content: '';
 	position: absolute;
@@ -5583,7 +5585,7 @@ span.hamburger.hamburgerActive span:after {
 	background: #000;
 	width: 41px;
 	height: 2px;
-}
+}*/
 
 .slider-box__header--mg {
 	margin-top: 20px;
