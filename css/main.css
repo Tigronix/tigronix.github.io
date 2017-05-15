@@ -3614,6 +3614,10 @@ a:hover {
 	font-weight: 500;
 }
 
+.table__cell:nth-child(10) {
+	background-position: 80% center !important;
+}
+
 .table__cell:last-child {
 	background-position: 90% center !important;
 }
