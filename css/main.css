@@ -4442,9 +4442,11 @@ table.dataTable thead .sorting {
 	border: 1px solid #8bd350;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
-	padding: 0 30px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	align-self: flex-start;
+}
+
+.roomSlider__wrap .roomSlider {
+	margin-bottom: 0;
 }
 
 .roomSlider__wrap .owl-nav i {
@@ -4452,11 +4454,11 @@ table.dataTable thead .sorting {
 }
 
 .roomSlider__wrap .owl-prev {
-	left: 0;
+	left: 20px;
 }
 
 .roomSlider__wrap .owl-next {
-	right: 0;
+	right: 20px;
 }
 
 
@@ -4477,7 +4479,6 @@ table.dataTable thead .sorting {
 
 @media (max-width: 1024px) {
 	.roomSlider__wrap {
-		padding: 0 2%;
 		width: 100%;
 	}
 }
