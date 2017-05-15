@@ -4337,8 +4337,8 @@ table.dataTable thead .sorting {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	width: 120px;
-	height: 120px;
+	width: 122px;
+	height: 122px;
 }
 
 .roomNav__item:nth-child(odd) {
