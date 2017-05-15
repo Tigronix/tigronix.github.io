@@ -3905,6 +3905,7 @@ table.dataTable thead .sorting {
 		-webkit-flex: auto;
 		-ms-flex: auto;
 		flex: auto;
+		padding: 10px 0;
 	}
 	.roomNumbers__number {
 		font-size: 40px;
@@ -3914,6 +3915,9 @@ table.dataTable thead .sorting {
 	}
 	.roomNumbers__small {
 		font-size: 24px;
+	}
+	.roomNumbers__valute {
+		font-size: 18px;
 	}
 }
 
@@ -4427,6 +4431,7 @@ table.dataTable thead .sorting {
 		-ms-flex: auto;
 		flex: auto;
 		width: 100%;
+		padding: 10px 0;
 	}
 	.roomNav__number {
 		font-size: 40px;
