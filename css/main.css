@@ -3450,10 +3450,11 @@ a:hover {
 	font-size: 1vw;
 	color: #000;
 	font-weight: 300;
-	font-family: 'open-sans', sans-serif;
+	font-family: 'roboto', sans-serif;
 	text-decoration: none;
 	-webkit-transition: color .4s;
 	transition: color .4s;
+	border-bottom: none;
 }
 
 .bread__link:hover {
