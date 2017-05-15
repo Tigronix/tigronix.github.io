@@ -3602,7 +3602,7 @@ a:hover {
 }
 
 .table__cell:first-child {
-	
+	width: 17%;
 	padding-left: 0.5% !important;
 	font-size: .8vw;
 }
@@ -4405,6 +4405,9 @@ table.dataTable thead .sorting {
 }
 
 @media (max-width:1440px) {
+	.roomNav, .roomSlider__wrap, .roomNumbers {
+		margin-right: 0.78125%;
+	}
 	.roomNav__item {
 		width: 100px;
 		height: 100px;
@@ -4513,6 +4516,9 @@ table.dataTable thead .sorting {
 @media (max-width:1440px) {
 	.roomSlider__item img {
 		max-height: 500px;
+	}
+	.roomSlider__wrap {
+		width: 45%;
 	}
 }
 
