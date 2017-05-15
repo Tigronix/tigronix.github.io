@@ -4147,6 +4147,7 @@ table.dataTable thead .sorting {
 	font-weight: 500;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
+	border-bottom: 0;
 }
 
 .variantBuy__item span {
@@ -5072,6 +5073,25 @@ span.hamburger.hamburgerActive span:after {
 .fixed-bot.static {
 	position: static;
 }
+@media (max-width:1024px) {
+	
+	.fixed-bot .link {
+		font-size: 20px;
+	}
+}
+@media (max-width:768px) {
+	.fixed-bot .link {
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
+@media (max-width:480px) {
+	.fixed-bot {
+		height: auto;
+		line-height: normal;
+		padding: 10px 0;
+	}
+}
 
 .link-square {
 	margin-left: 6.770833333333333%;
@@ -5552,6 +5572,7 @@ span.hamburger.hamburgerActive span:after {
 
 .slider-box__btn:hover {
 	background: #129724;
+	color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -5951,6 +5972,7 @@ span.hamburger.hamburgerActive span:after {
 .partners__item {
 	width: 25%;
 	text-align: center;
+	border-bottom: 0;
 }
 
 .partners__img {
@@ -6136,6 +6158,11 @@ span.hamburger.hamburgerActive span:after {
 	align-items: center;
 	text-decoration: none;
 	margin-bottom: 10px;
+	border-bottom: 0;
+}
+
+.page-footer__phone:hover {
+	color: #fff;
 }
 
 .page-footer__phone i {
@@ -6228,6 +6255,11 @@ span.hamburger.hamburgerActive span:after {
 	color: #FFF0AF;
 	display: inline-block;
 	text-decoration: none;
+	border-bottom: 0;
+}
+
+.page-footer__bot .by a:hover {
+	color: #fff0af;
 }
 
 .page-footer__bot .by a:hover:after {
@@ -6290,6 +6322,11 @@ span.hamburger.hamburgerActive span:after {
 	display: block;
 	margin-bottom: 10px;
 	text-decoration: none;
+	border-bottom: none;
+}
+
+.link-box__link:hover {
+	color: #FFF0AF;
 }
 
 .link-box__link span {
@@ -6335,4 +6372,8 @@ span.hamburger.hamburgerActive span:after {
 	.show-mobile--mt-30 {
 		margin-top: 30px;
 	}
+}
+
+.lightbox {
+	display: none;
 }
