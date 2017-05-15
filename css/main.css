@@ -4932,6 +4932,11 @@ span.hamburger.hamburgerActive span:after {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+	border-bottom: 0;
+}
+
+.nav__link:hover {
+	color: #fff;
 }
 
 .nav__link--active {
@@ -5026,6 +5031,7 @@ span.hamburger.hamburgerActive span:after {
 	position: relative;
 	margin: 0 10px 0 20px;
 	display: block;
+	border-bottom: 0;
 }
 
 .logo img {
@@ -5113,11 +5119,11 @@ span.hamburger.hamburgerActive span:after {
 
 .link-square .link {
 	font-size: 18px;
-	/*font-family: 'proxima-nova', sans-serif;*/
 	color: #fff;
 	display: block;
 	margin-bottom: 10px;
 	text-decoration: none;
+	border-bottom: 0;
 }
 
 .link-square .link:before {
@@ -5253,7 +5259,7 @@ span.hamburger.hamburgerActive span:after {
 }
 
 .page-header__top {
-	background: #E6E6FA;
+	background: #FEF6D2;
 	padding-left: 200px;
 	padding-right: 40px;
 	z-index: 1;
@@ -5302,6 +5308,11 @@ span.hamburger.hamburgerActive span:after {
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	text-decoration: none;
+	border-bottom: 0;
+}
+
+.page-header__phone:hover {
+	color: #fff;
 }
 
 .page-header__middle {
