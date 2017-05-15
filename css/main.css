@@ -4467,8 +4467,9 @@ table.dataTable thead .sorting {
 }
 
 .roomSlider__item img {
-	width: auto;
+	width: auto!important;
 	height: 100%;
+	max-height: 100%;
 }
 
 .roomSlider__wrap .owl-nav i {
