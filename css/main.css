@@ -5123,7 +5123,29 @@ span.hamburger.hamburgerActive span:after {
 	display: block;
 	margin-bottom: 10px;
 	text-decoration: none;
+	position: relative;
 	border-bottom: 0;
+}
+
+.link-square .link span {
+	position: relative;
+	display: inline-block;
+}
+
+.link-square .link span:after {
+	display: block;
+	content: '';
+	margin: 0 auto;
+	width: 0;
+	height: 2px;
+	background: #FFF0AF;
+	-webkit-transition: .4s;
+	transition: .4s;
+	margin-top: 5px;
+}
+
+ .link:hover span:after {
+	width: 100%;
 }
 
 .link-square .link:before {
