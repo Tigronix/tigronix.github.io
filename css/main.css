@@ -4494,7 +4494,16 @@ table.dataTable thead .sorting {
 	margin-bottom: 10px;
 }
 
+@media (max-width:1440px) {
+	.roomSlider__item img {
+		max-height: 500px;
+	}
+}
+
 @media (max-width: 1280px) {
+	.roomSlider__item img {
+		max-height: 492px;
+	}
 	.roomSlider__wrap {
 		width: 48%;
 		margin-right: 0;
@@ -4504,6 +4513,10 @@ table.dataTable thead .sorting {
 @media (max-width: 1024px) {
 	.roomSlider__wrap {
 		width: 100%;
+	}
+	.roomSlider__item img {
+		width: 100%!important;
+		height: auto;
 	}
 }
 
