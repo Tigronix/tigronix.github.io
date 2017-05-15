@@ -3793,10 +3793,6 @@ table.dataTable thead .sorting {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
 }
 
 .roomNumbers {
@@ -3804,6 +3800,7 @@ table.dataTable thead .sorting {
 	background: #db0000;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	margin-right: 3.75%;
 }
 
 .roomNumbers__item {
@@ -3876,6 +3873,7 @@ table.dataTable thead .sorting {
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
+		margin-right: 0;
 	}
 	.roomNumbers__item {
 		-webkit-box-flex: 1;
@@ -3922,7 +3920,7 @@ table.dataTable thead .sorting {
 }
 
 .roomForm {
-	width: 25.52083333333333%;
+	width: 26.76%;
 	background: #fff4d6;
 	border: 1px solid #55bb00;
 	-webkit-border-radius: 4px;
@@ -4075,6 +4073,7 @@ table.dataTable thead .sorting {
 @media (max-width: 1280px) {
 	.roomForm {
 		width: 48%;
+		margin-right: 0;
 	}
 	.roomForm__label {
 		-webkit-box-pack: start;
@@ -4343,6 +4342,10 @@ table.dataTable thead .sorting {
 	}
 }
 
+.roomNav {
+	margin-right: 0.8333333333333333%;
+}
+
 .roomNav__item {
 	text-align: center;
 	display: -webkit-box;
@@ -4393,6 +4396,9 @@ table.dataTable thead .sorting {
 }
 
 @media (max-width: 1280px) {
+	.room {
+		-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
+	}
 	.roomNav {
 		width: 100%;
 		display: -webkit-box;
@@ -4403,6 +4409,7 @@ table.dataTable thead .sorting {
 		-webkit-justify-content: center;
 		-ms-flex-pack: center;
 		justify-content: center;
+		margin-right: 0;
 	}
 	.roomNav__item {
 		-webkit-box-flex: 1;
@@ -4447,11 +4454,21 @@ table.dataTable thead .sorting {
 	border: 1px solid #8bd350;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
-	align-self: flex-start;
+	margin-right: 4.0625%;
 }
 
 .roomSlider__wrap .roomSlider {
 	margin-bottom: 0;
+	height: 100%;
+}
+
+.roomSlider .owl-stage-outer, .roomSlider .owl-stage, .roomSlider .owl-item, .roomSlider__item {
+	height: 100%;
+}
+
+.roomSlider__item img {
+	width: auto;
+	height: 100%;
 }
 
 .roomSlider__wrap .owl-nav i {
@@ -4479,6 +4496,7 @@ table.dataTable thead .sorting {
 @media (max-width: 1280px) {
 	.roomSlider__wrap {
 		width: 48%;
+		margin-right: 0;
 	}
 }
 
