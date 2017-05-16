@@ -5533,6 +5533,41 @@ span.hamburger.hamburgerActive span:after {
 	}
 }
 
+@media (max-width:768px) {
+	.page-header {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-direction: column;
+	}
+	.page-header--fixed .page-header__middle {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+	}
+	.page-header__top {
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
+	}
+	.page-header__middle {
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
+	}
+	.page-header__menu {
+		-webkit-box-ordinal-group: 4;
+		    -ms-flex-order: 3;
+		        order: 3;
+	}
+	.page-header__form {
+		-webkit-box-ordinal-group: 5;
+		    -ms-flex-order: 4;
+		        order: 4;
+	}
+}
+
 .slider-box {
 	display: -webkit-box;
 	display: -webkit-flex;

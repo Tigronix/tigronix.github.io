@@ -1,5 +1,18 @@
 
+//header-scroll
+	var header = $('.page-header');
+	$(window).scroll(function () {
+		var top = $(this).scrollTop();
+		if (top > 50) {
+			header.addClass('page-header--fixed');
+		}
+		else {
+			header.removeClass('page-header--fixed');
+		}
+	});
 $(document).ready(function () {
+	
+	
 	$('.table__row[data-href]').click( function() {
 		window.location = $(this).attr('data-href');
 	});
@@ -21,17 +34,6 @@ $(document).ready(function () {
 		$(this).toggleClass("hamburgerActive");
 		$('.page-header__menu').slideToggle(400).css('display', 'flex');
 		$('.page-header__form').slideToggle(400).css('display', 'flex');
-	});
-	//header-scroll
-	var header = $('.page-header');
-	$(window).scroll(function () {
-		var top = $(this).scrollTop();
-		if (top > 50) {
-			header.addClass('page-header--fixed');
-		}
-		else {
-			header.removeClass('page-header--fixed');
-		}
 	});
 	//mob-menu-плавное появление
 	$('.header__open').click(function () {
@@ -160,11 +162,8 @@ $(document).ready(function(){
 	  $('.fixed_wrap').height($('.go-top').outerHeight());
 	  function goTop(){
 			var footerHeight = $('.page-footer').innerHeight();
-			console.log(footerHeight + ' footerHeight+');
 			var docBot = $('.fixed_wrap').offset().top;
-			console.log(docBot + ' go-top');
 			var footerTop = $('.page-footer').offset().top;
-			console.log(footerTop + ' footerTop');
 			if (docBot >= footerTop){
 					$('.go-top').addClass('static');
 			}else{
