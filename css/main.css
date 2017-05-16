@@ -6201,7 +6201,7 @@ span.hamburger.hamburgerActive span:after {
 	vertical-align: middle;
 }
 
-@media (max-width:1440px) {
+@media (max-width:1400px) {
 	.slider-page__text {
 		height: 90px;
 		display: flex;
