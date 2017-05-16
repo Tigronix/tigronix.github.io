@@ -12,7 +12,6 @@
 	});
 $(document).ready(function () {
 	
-	
 	$('.table__row[data-href]').click( function() {
 		window.location = $(this).attr('data-href');
 	});
