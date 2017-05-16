@@ -270,7 +270,7 @@ p {
 
 a {
 	font-size: 1.1vw;
-	color: #0ca7ce;
+	color: #017eec;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(0,122,194,.3);
 	transition: color .4s, border-color .3s;
@@ -3771,15 +3771,7 @@ table.dataTable thead .sorting {
 }
 
 .links2__link {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	border-bottom: 0;
+	display: inline-block;
 }
 
 /*.links2__link:before {
