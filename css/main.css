@@ -5028,6 +5028,7 @@ span.hamburger.hamburgerActive span:after {
 	color: #696969;
 	font-size: 1.1vw;
 	margin-left: 20px;
+	font-weight: 500;
 }
 
 @media (max-width: 1280px) {
