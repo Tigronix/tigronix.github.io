@@ -6201,12 +6201,29 @@ span.hamburger.hamburgerActive span:after {
 	vertical-align: middle;
 }
 
+@media (max-width:1440px) {
+	.slider-page__text {
+		height: 90px;
+		display: flex;
+		align-items: center;
+		padding: 0;
+		justify-content: center;
+	}
+}
+@media (max-width:1280px) {
+	.slider-page__text {
+		height: 141px;
+	}
+}
 @media (max-width: 1024px) {
 	.slider-page {
 		width: 100%;
 	}
 	.slider-page__text {
 		font-size: 18px;
+		height: auto;
+		display: block;
+		padding: 16px 0;
 	}
 }
 
@@ -6473,4 +6490,8 @@ span.hamburger.hamburgerActive span:after {
 
 .lightbox {
 	display: none;
+}
+
+.owl-carousel .owl-stage-outer, .owl-carousel .owl-stage, .owl-carousel .owl-item, .slider-page__slide {
+	height: 100%;
 }
