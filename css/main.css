@@ -3645,7 +3645,7 @@ a:hover {
 }
 
 .table__cell:last-child {
-	background-position: 90% center !important;
+	background-position: 86% center !important;
 }
 
 .table__cell--small {
@@ -3661,7 +3661,11 @@ a:hover {
 .table__cell:last-child {
 	padding-right: 0.5% !important;
 }
-
+@media (max-width:1440px) {
+	.table__cell:last-child {
+		background-position: 92% center!important;
+	}
+}
 @media (max-width: 1280px) {
 	.table__row--head .table__cell {
 		font-size: 14px;
@@ -3721,6 +3725,20 @@ a:hover {
 	.table .table__row--head .table__cell--small span,
 	.table__cell--small span {
 		font-size: 12px;
+	}
+}
+@media (max-width:480px) {
+	.table .table__row--head .table__cell {
+		width: 20%;
+	}
+	.table .table__row--head .table__cell:nth-child(4) {
+		width: 26%!important;
+	}
+	.table .table__row--head .table__cell:nth-child(5) {
+		width: 21%!important;
+	}
+	.table__row--head .table__cell {
+		background-position: 95% center!important;
 	}
 }
 
@@ -5111,6 +5129,11 @@ span.hamburger.hamburgerActive span:after {
 	margin-top: 30px;
 }
 
+.hide-desk {
+	display: none;
+}
+
+
 .fixed-bot .link {
 	font-size: 24px;
 	color: #fff;
@@ -5146,6 +5169,12 @@ span.hamburger.hamburgerActive span:after {
 	.fixed-bot .link {
 		font-size: 14px;
 		line-height: 19px;
+	}
+	.hide-mobile {
+		display: none;
+	}
+	.hide-desk {
+		display: inline-block;
 	}
 }
 @media (max-width:480px) {
