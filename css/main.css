@@ -3796,6 +3796,11 @@ table.dataTable thead .sorting {
 	display: block;
 }
 
+.links2--full-width .links2__box {
+	width: 100%;
+	display: block;
+}
+
 .links2__box {
 	width: 48%;
 	margin-bottom: 37px;
