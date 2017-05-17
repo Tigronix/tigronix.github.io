@@ -6500,6 +6500,9 @@ span.hamburger.hamburgerActive span:after {
 	.link-box:first-child {
 		margin-top: 0;
 	}
+	.link-box__header {
+		border-bottom: 0;
+	}
 }
 .show-mobile {
 	display: none;
