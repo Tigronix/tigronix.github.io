@@ -6697,6 +6697,7 @@ span.hamburger.hamburgerActive span:after {
 	}
 	.colomn__img {
 		width: 100%;
+		margin-bottom: 20px;
 	}
 	.colomn__text {
 		width: 100%;
