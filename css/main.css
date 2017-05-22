@@ -281,6 +281,11 @@ p {
 		font-size: 16px;
 	}
 }
+@media (max-width:768px) {
+	p.text {
+		text-align: justify;
+	}
+}
 
 .look-also {
 	font-size: 27px;
@@ -6538,8 +6543,6 @@ span.hamburger.hamburgerActive span:after {
 	font-weight: 500;
 	color: #fff;
 	border-bottom: 1px solid #F00028;
-	padding-bottom: 5px;
-	margin-bottom: 15px;
 }
 
 .link-box__link {
@@ -6554,6 +6557,10 @@ span.hamburger.hamburgerActive span:after {
 	margin-bottom: 10px;
 	text-decoration: none;
 	border-bottom: none;
+}
+
+.link-box__link:nth-child(2) {
+	margin-top: 15px;
 }
 
 .link-box__link:hover {
