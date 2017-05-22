@@ -157,7 +157,6 @@ $(document).ready(function () {
 		$('.nav').addClass('off');
 		$('.page-header__form').addClass('off');
 		$(".hamburger").click(function () {
-			$(this).toggleClass("hamburgerActive");
 			$('.nav').slideToggle('400');
 		});
 	}
