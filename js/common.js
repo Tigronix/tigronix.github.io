@@ -1,5 +1,5 @@
-
-//header-scroll
+$(document).ready(function(){
+	//header-scroll
 	var header = $('.page-header');
 	$(window).scroll(function () {
 		var top = $(this).scrollTop();
@@ -10,8 +10,15 @@
 			header.removeClass('page-header--fixed');
 		}
 	});
-$(document).ready(function () {
+	$('.showLinks').click(function(){
+		var headHeight = $('.page-header__middle').innerHeight();
+		$('.page-header__menu').toggleClass('off page-header__menu--fixed').css('top', headHeight);
+	});
 	
+});
+$(document).ready(function () {
+	//styler
+	$('.styler').styler();
 	$('.table__row[data-href]').click( function() {
 		window.location = $(this).attr('data-href');
 	});
@@ -33,6 +40,7 @@ $(document).ready(function () {
 		$(this).toggleClass("hamburgerActive");
 		$('.page-header__menu').slideToggle(400).css('display', 'flex');
 		$('.page-header__form').slideToggle(400).css('display', 'flex');
+		$('.page-header__menu--fixed').removeClass('page-header__menu--fixed').addClass('off');
 	});
 	//mob-menu-плавное появление
 	$('.header__open').click(function () {
@@ -143,8 +151,6 @@ $(document).ready(function () {
 			}
 		}
 	});
-	//styler
-	$('.styler').styler();
 	var window = $('.page-header').width();
 	if (window <= 1024) {
 		$('.page-header__menu').addClass('off');

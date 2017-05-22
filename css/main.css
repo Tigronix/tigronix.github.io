@@ -3595,7 +3595,7 @@ a:hover {
 }
 
 .table__row--head .table__cell {
-	background-color: #bb0101;
+	background-color: #bb0101!important;
 	text-transform: none;
 	font-weight: 500;
 	font-size: .86vw;
@@ -4514,6 +4514,12 @@ table.dataTable thead .sorting {
 	}
 }
 
+@media (max-width:768px) {
+	.roomNav__item--print {
+		display: none;
+	}
+}
+
 @media (max-width: 480px) {
 	.roomNav {
 		display: block;
@@ -5242,6 +5248,15 @@ span.hamburger.hamburgerActive span:after {
 	margin-right: 10px;
 }
 
+@media (max-width:1024px) {
+	.link-square {
+		display: none;
+	}
+	.link-square--show {
+		display: block;
+	}
+}
+
 .btn {
 	text-align: center;
 	text-decoration: none;
@@ -5273,7 +5288,9 @@ span.hamburger.hamburgerActive span:after {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
-
+.jq-selectbox .placeholder {
+	width: 100%!important;
+}
 .jq-selectbox__select:hover,
 .jq-selectbox__select:active {
 	background: none;
@@ -5325,26 +5342,26 @@ span.hamburger.hamburgerActive span:after {
 	z-index: 999;
 }
 
-.jq-selectbox.w1 {
+.page-header__select.w1 {
 	width: 200px;
 }
 
-.jq-selectbox.w2 {
+.page-header__select.w2 {
 	width: 300px;
 }
 
-.jq-selectbox.w3 {
+.page-header__select.w3 {
 	width: 250px;
 }
 
 @media (max-width: 1280px) {
-	.jq-selectbox.w1 {
+	.page-header__select.w1 {
 		width: auto;
 	}
-	.jq-selectbox.w2 {
+	.page-header__select.w2 {
 		width: auto;
 	}
-	.jq-selectbox.w3 {
+	.page-header__select.w3 {
 		width: auto;
 	}
 }
@@ -5367,7 +5384,7 @@ span.hamburger.hamburgerActive span:after {
 
 .page-header__top {
 	background: #FEF6D2;
-	padding-left: 200px;
+	padding-left: 220px;
 	padding-right: 40px;
 	z-index: 1;
 	display: -webkit-box;
@@ -5455,6 +5472,14 @@ span.hamburger.hamburgerActive span:after {
 	background: #D0191F;
 }
 
+.page-header__menu--fixed {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	top: 0px;
+}
+
 .page-header__form {
 	background: #F1F1F1;
 	border-bottom: 2px solid #FFA500;
@@ -5523,6 +5548,38 @@ span.hamburger.hamburgerActive span:after {
 
 .page-header__submit:hover {
 	background: #55BB00;
+}
+
+.page-header__select {
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #000;
+	height: 50px;
+	margin-left: 9px;
+	-webkit-box-shadow: none;
+	padding-left: 5px;
+	box-shadow: none;
+	font-family: 'open-sans', sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #000 !important;
+}
+
+.page-header__select option {
+	padding: 10px;
+	color: #000;
+	font-size: 17px;
 }
 
 @media (max-width: 1280px) {
@@ -5761,6 +5818,9 @@ span.hamburger.hamburgerActive span:after {
 	.slider-box__text,
 	.slider-box__link {
 		font-size: 18px;
+		text-align: center;
+		width: 100%;
+		border-bottom: 0;
 	}
 	.slider-box__btn {
 		font-size: 24px;
@@ -6074,7 +6134,7 @@ span.hamburger.hamburgerActive span:after {
 	content: '';
 	width: 40px;
 	height: 2px;
-	background: #017eec;
+	background: #000;
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -6465,10 +6525,10 @@ span.hamburger.hamburgerActive span:after {
 
 @media (max-width: 400px) {
 	.page-footer__phone {
-		font-size: 23px;
+		font-size: 20px;
 	}
 	.page-footer__bot .copy {
-		font-size: 14px;
+		font-size: 13px;
 		margin-bottom: 15px;
 	}
 }
@@ -6643,6 +6703,9 @@ span.hamburger.hamburgerActive span:after {
 @media (max-width: 768px) {
 	.page-form__header {
 		font-size: 18px;
+	}
+	.page-form textarea {
+		font-size: 16px;
 	}
 }
 
@@ -6968,8 +7031,18 @@ span.hamburger.hamburgerActive span:after {
 		font-size: 16px;
 	}
 	.colomn .phone {
-		font-size: 24px;
+		font-size: 21px;
 		margin-left: 10px;
+	}
+	.colomn--triple .colomn__item {
+		padding-left: 50px;
+		position: relative;
+	}
+	.colomn--triple .colomn__item:before {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
 
@@ -7300,6 +7373,19 @@ span.hamburger.hamburgerActive span:after {
 	.list--2-colomn .list__li {
 		float: none;
 		width: 100%;
+	}
+	.list--teatr .list__li {
+		padding-left: 50px;
+	}
+	.list__li {
+		padding-left: 35px;
+		position: relative;
+	}
+	.list__li:before {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
 

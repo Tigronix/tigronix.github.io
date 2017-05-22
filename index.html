@@ -16,7 +16,7 @@
 			</div>
 			<div class="page-header__text-top">
 				<i class="fa fa-clock-o"></i>
-				<span>ПН-ЧТ с 09:00 - 18:00, ПТ с 09:00 - 17:00, СБ 11-00 - 14:00, ВС - выходной.</span>
+				<span>ПН-ЧТ с 09:00 - 18:00, ПТ с 09:00 - 17:00, СБ 11-00 - 14:00.</span>
 			</div>
 	  </div>
 	  <div class="page-header__middle">
@@ -73,20 +73,33 @@
 		<form class="page-header__form">
 			<div class="wrapper">
 				<div class="text">Подбор по параметрам:</div>
-				<select class="styler w1 page-header__select">
+				<select id="production" class="w1 page-header__select">
 					<option value="">Кол-во комнат</option>
-					<option value="">1</option>
-					<option value="">1</option>
+					<option value="1">Audi</option>
+					<option value="2">BMW</option>
+					<option value="3">Mercedes</option>
+					<option value="4">Hyundai</option>
+					<option value="5">Kia</option>
+					<option value="6">Honda</option>
+					<option value="7">Lexus</option>
+					<option value="8">Renault</option>
+					<option value="9">Mitsubishi</option>
+					<option value="10">Toyota</option>
+					<option value="11">Volkswagen</option>
+					<option value="12">Nissan</option>
+					<option value="13">Bentley</option>
+					<option value="14">Lada</option>
+					<option value="15">Jaguar</option>
+					<option value="16">Land Rover</option>
+					<option value="17">Skoda</option>
+					<option value="18">Porsche</option>
+					<option value="19">Range Rover</option>
 				</select>
-				<select class="styler w2 page-header__select">
+				<select id="series" class="w2 page-header__select" disabled="">
 					<option value="">Стоимость квартиры</option>
-					<option value="">2</option>
-					<option value="">2</option>
 				</select>
-				<select class="styler w3 page-header__select">
+				<select id="model" disabled="" class="w3 page-header__select">
 					<option value="">По номеру корпуса</option>
-					<option value="">3</option>
-					<option value="">3</option>
 				</select>
 				<button type="submit" class="page-header__submit">Найти</button>
 			</div>
@@ -342,7 +355,7 @@
 		</div><!--slider-main-->
 		<p class="wrapper text"> Дополнительно мы готовы предложить Вам выполнение отделочных работ с гарантией качества и сроков выполнения работ. Для покупателей готовых к заселению квартир действуют разнообразные ипотечные программы от ведущих банков с процентной ставкой от 10,5 % годовых в рублях! Оформление и регистрация права собственности сразу после заключения сделки купли-продажи! Не упустите возможность купить квартиру в Королеве в новостройке от застройщика по выгодной цене! </p>
 		<div class="fixed_wrap"></div>
-		<div class="fixed-bot go-top"><a href="#" class="link">ЗАПИШИТЕСЬ НА ПРОСМОТР И ПОЛУЧИТЕ СПЕЦПРЕДЛОЖЕНИЕ!</a></div>
+		<div class="fixed-bot go-top"><a href="#" class="link"><span class="hide-mobile">ЗАПИШИТЕСЬ НА ПРОСМОТР И ПОЛУЧИТЕ СПЕЦПРЕДЛОЖЕНИЕ!</span> <span class="hide-desk">записаться на просмотр</span></a></div>
 	</main>
 	<footer class="page-footer">
 	  <div class="page-footer__top">
@@ -398,6 +411,7 @@
 		</div>
 	</footer>
 	<script src="js/libs.min.js"></script>
+	<script src="js/select-search.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
