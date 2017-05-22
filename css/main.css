@@ -281,11 +281,6 @@ p {
 		font-size: 16px;
 	}
 }
-@media (max-width:768px) {
-	p.text {
-		text-align: justify;
-	}
-}
 
 .look-also {
 	font-size: 27px;
