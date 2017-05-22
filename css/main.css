@@ -281,6 +281,11 @@ p {
 		font-size: 16px;
 	}
 }
+@media (max-width:768px) {
+	p.text {
+		margin-bottom: 10px;
+	}
+}
 
 .look-also {
 	font-size: 27px;
