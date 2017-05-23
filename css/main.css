@@ -6155,15 +6155,38 @@ span.hamb-close.hamb-closeActive span:after {
 	align-items: center;
 	min-height: 40px;
 	position: relative;
+	background-size: 35px auto;
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 60px;
 }
 
-.advantages__text:before {
-	display: inline-block;
-	margin-right: 10px;
-	content: '';
-	width: 40px;
-	height: 2px;
-	background: #000;
+.advantages__text--subtitles {
+	background-image: url(../img/subtitles.svg);
+}
+
+.advantages__text--color-fill {
+	background-image: url(../img/color-fill.svg);
+}
+
+.advantages__text--power {
+	background-image: url(../img/power.svg);
+}
+
+.advantages__text--done {
+	background-image: url(../img/done.svg);
+}
+
+.advantages__text--invert-colors {
+	background-image: url(../img/invert-colors.svg);
+}
+
+.advantages__text--border-all {
+	background-image: url(../img/border-all.svg);
+}
+
+.advantages__text--thumb-up {
+	background-image: url(../img/thumb-up.svg);
 }
 
 @media (max-width: 1500px) {
