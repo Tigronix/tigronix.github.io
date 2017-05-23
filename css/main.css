@@ -4703,17 +4703,31 @@ table.dataTable thead .sorting {
 		display: none;
 	}
 	.slider-main__text {
-		position: static;
+		position: absolute;
 		left: 0;
-		top: 0;
+		top: auto;
+		bottom: 0;
 		right: 0;
 		width: auto;
 		font-size: 16px;
-		padding: 5px 2%;
+		padding: 0px 2%;
+		height: 50px;
+		line-height: 50px;
 		text-align: center;
 	}
-	.slider-main .owl-nav > div i {
+	.slider-main__slide {
+		padding-bottom: 50px;
+	}
+	.slider-main__text .inner {
+		 line-height: normal;
+			display: inline-block;
+			vertical-align: middle;
+	}
+	.slider-main .owl-nav > div {
 		font-size: 80px;
+		-webkit-transform: translateY(-80%);
+		-ms-transform: translateY(-80%);
+		transform: translateY(-80%);
 	}
 }
 
@@ -6222,6 +6236,9 @@ span.hamb-close.hamb-closeActive span:after {
 }
 
 @media (max-width: 768px) {
+	.video-box__desc {
+		padding-top: 0;
+	}
 	.video-box__header {
 		font-size: 21px;
 		text-align: center;
