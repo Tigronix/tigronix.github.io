@@ -4710,7 +4710,7 @@ table.dataTable thead .sorting {
 		right: 0;
 		width: auto;
 		font-size: 16px;
-		padding: 0px 2%;
+		padding: 0px 0;
 		height: 50px;
 		line-height: 50px;
 		text-align: center;
