@@ -6121,17 +6121,7 @@ span.hamb-close.hamb-closeActive span:after {
 }
 
 .advantages {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebf9dc+0,f5f6f5+100 */
-	background: #ebf9dc;
-	/* Old browsers */
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ebf9dc 0%, #f5f6f5 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: -webkit-gradient(linear, left top, left bottom, from(#ebf9dc), to(#f5f6f5));
-	background: linear-gradient(to bottom, #ebf9dc 0%, #f5f6f5 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ebf9dc', endColorstr='#f5f6f5', GradientType=0);
-	/* IE6-9 */
+	background: #E9F8D8;
 }
 
 .advantages__wrap {
