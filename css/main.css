@@ -4703,7 +4703,7 @@ table.dataTable thead .sorting {
 		display: none;
 	}
 	.slider-main__text {
-		position: absolute;
+		position: static;
 		left: 0;
 		top: 0;
 		right: 0;
