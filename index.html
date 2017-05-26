@@ -10,6 +10,13 @@
     </head>
     <body>
         <header class="main-header">
+					<div class="hamburger-wrap">
+						 <span class="hamburger">
+							<span class="hamburger__line"></span>
+							<span class="line hamburger__line"></span>
+							<div class="hamburger__back">Назад</div>
+						</span>
+					 </div>
             <div class="header-top">
                 <div class="top-menu" >
                     <ul class="row">
@@ -35,12 +42,12 @@
                             <h3>Сервисный центр</h3>
                         </a>
                     </li>
-                    <!--<li class="item item-2">
-                        <a class="header-site">
+                    <li class="item item-2">
+                        <a class="header-site header-site--pad">
                             <h2>Сервисный центр</h2>
-                            <h3>по ремонту ноутбуков</h3>
+                            <h3>Официальный сайт</h3>
                         </a>
-                    </li>-->
+                    </li>
                     <li class="item item-3">
                         <ul class="list-about-our">
                             <li class="ico-stopwatch">Работаем с 2006 года</li>
@@ -52,14 +59,18 @@
                         <div class="our-contacts">
                             <h2>+7 (495) 300-45-30</h2>
                             <a class="order-call">
-                                <span class="wrap-text">Москва, м.Цветной Бульвар, <br>2-й Колобовский пер., 9/2, стр.1</span>
+                                <i class="fa fa-volume-control-phone"></i><span class="wrap-text">Заказать звонок</span>
                             </a>
+                        		<div class="header-address"> Москва, Большой Каретный д. 2 </div>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="header-bottom">
                 <ul class="main-menu">
+                    <li><a class="active">Ремонт ноутбуков</a></li>
+                    <li><a>Ремонт ноутбуков</a></li>
+                    <li><a>Ремонт ноутбуков</a></li>
                     <li><a>Ремонт ноутбуков</a></li>
                     <li><a>Ремонт ноутбуков</a></li>
                     <li><a>Ремонт ноутбуков</a></li>
@@ -79,12 +90,30 @@
                             <input placeholder="Ваше имя" name="name" class="col-md-12 col-sm-12 col-xs-12 input input-name">
                             <input placeholder="Ваш телефон" name="call" class="col-md-12 col-sm-12 col-xs-12 input input-call">
                             <ul class="list-problems">
-                                <li class="col-md-12 col-sm-12 col-xs-12"><input type="radio" name="problem" class="radio"> Залили водой</li>
-                                <li class="col-md-12 col-sm-12 col-xs-12"><input type="radio" name="problem" class="radio"> Не включается</li>
-                                <li class="col-md-12 col-sm-12 col-xs-12"><input type="radio" name="problem" class="radio"> Нет изображения</li>
-                                <li class="col-md-12 col-sm-12 col-xs-12"><input type="radio" name="problem" class="radio"> Шумит вентилятор</li>
-                                <li class="col-md-12 col-sm-12 col-xs-12"><input type="radio" name="problem" class="radio"> Нет изображения</li>
-                                <li class="col-md-12 col-sm-12 col-xs-12"><input type="radio" name="problem" class="radio"> Другая проблема</li>
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                <input id="problem1" type="checkbox" name="problem" class="radio list-problems__input"> 
+                                <label for="problem1" class="list-problems__label">Залили водой</label>
+                                </li>
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                <input id="problem2" type="checkbox" name="problem" class="radio list-problems__input"> 
+                                <label for="problem2" class="list-problems__label">Не включается</label>
+                                </li>
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                <input id="problem3" type="checkbox" name="problem" class="radio list-problems__input"> 
+                                <label for="problem3" class="list-problems__label">Нет изображения</label>
+                                </li>
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                <input id="problem4" type="checkbox" name="problem" class="radio list-problems__input"> 
+                                <label for="problem4" class="list-problems__label">Шумит вентилятор</label>
+                                </li>
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                <input id="problem5" type="checkbox" name="problem" class="radio list-problems__input"> 
+                                <label for="problem5" class="list-problems__label">Нет изображения</label>
+                                </li>
+                                <li class="col-md-12 col-sm-12 col-xs-12">
+                                <input id="problem6" type="checkbox" name="problem" class="radio list-problems__input"> 
+                                <label for="problem6" class="list-problems__label">Другая проблема</label>
+                                </li>
                             </ul> 
                             <button type="submit"class="input-submit">Отправить заявку</button>
                         </form>
@@ -167,11 +196,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-actions" data-slide="prev">
-                        </a>
-                        <a class="right carousel-control" href="#carousel-actions" data-slide="next">
-                        </a>
                     </div>
                     <div class="right column">
                         <div class="here-our">
@@ -207,7 +231,7 @@
                         <li class="col-md-3 col-sm-6 col-xs-12">
                             <div id="carousel-service-1" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner services-slider slick">
                                     <div class="item active">
                                         <img src="images/fot_1.png" alt="..." class="zoom-slide">
                                         <div class="carousel-caption"></div>
@@ -217,11 +241,6 @@
                                         <div class="carousel-caption"></div>
                                     </div>
                                 </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-service-<?=$item?>" data-slide="prev">
-                                </a>
-                                <a class="right carousel-control" href="#carousel-service-<?=$item?>" data-slide="next">
-                                </a>
                             </div>
                             <div class="desc">
                                 <h3 class="ico-comment"><a>Ремонт ноутбуков</a></h3>
@@ -231,7 +250,7 @@
                         <li class="col-md-3 col-sm-6 col-xs-12">
                             <div id="carousel-service-2" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner services-slider slick">
                                     <div class="item active">
                                         <img src="images/fot_1.png" alt="..." class="zoom-slide">
                                         <div class="carousel-caption"></div>
@@ -241,11 +260,6 @@
                                         <div class="carousel-caption"></div>
                                     </div>
                                 </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-service-<?=$item?>" data-slide="prev">
-                                </a>
-                                <a class="right carousel-control" href="#carousel-service-<?=$item?>" data-slide="next">
-                                </a>
                             </div>
                             <div class="desc">
                                 <h3 class="ico-comment"><a>Ремонт ноутбуков</a></h3>
@@ -255,7 +269,7 @@
                         <li class="col-md-3 col-sm-6 col-xs-12">
                             <div id="carousel-service-3" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner services-slider slick">
                                     <div class="item active">
                                         <img src="images/fot_1.png" alt="..." class="zoom-slide">
                                         <div class="carousel-caption"></div>
@@ -265,11 +279,6 @@
                                         <div class="carousel-caption"></div>
                                     </div>
                                 </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-service-<?=$item?>" data-slide="prev">
-                                </a>
-                                <a class="right carousel-control" href="#carousel-service-<?=$item?>" data-slide="next">
-                                </a>
                             </div>
                             <div class="desc">
                                 <h3 class="ico-comment"><a>Ремонт ноутбуков</a></h3>
@@ -279,7 +288,7 @@
                         <li class="col-md-3 col-sm-6 col-xs-12">
                             <div id="carousel-service-4" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner services-slider slick">
                                     <div class="item active">
                                         <img src="images/fot_1.png" alt="..." class="zoom-slide">
                                         <div class="carousel-caption"></div>
@@ -289,11 +298,6 @@
                                         <div class="carousel-caption"></div>
                                     </div>
                                 </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-service-<?=$item?>" data-slide="prev">
-                                </a>
-                                <a class="right carousel-control" href="#carousel-service-<?=$item?>" data-slide="next">
-                                </a>
                             </div>
                             <div class="desc">
                                 <h3 class="ico-comment"><a>Ремонт ноутбуков</a></h3>
@@ -303,7 +307,7 @@
                         <li class="col-md-3 col-sm-6 col-xs-12">
                             <div id="carousel-service-5" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner services-slider slick">
                                     <div class="item active">
                                         <img src="images/fot_1.png" alt="..." class="zoom-slide">
                                         <div class="carousel-caption"></div>
@@ -313,11 +317,6 @@
                                         <div class="carousel-caption"></div>
                                     </div>
                                 </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-service-<?=$item?>" data-slide="prev">
-                                </a>
-                                <a class="right carousel-control" href="#carousel-service-<?=$item?>" data-slide="next">
-                                </a>
                             </div>
                             <div class="desc">
                                 <h3 class="ico-comment"><a>Ремонт ноутбуков</a></h3>
@@ -327,7 +326,7 @@
                         <li class="col-md-3 col-sm-6 col-xs-12">
                             <div id="carousel-service-6" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner services-slider slick">
                                     <div class="item active">
                                         <img src="images/fot_1.png" alt="..." class="zoom-slide">
                                         <div class="carousel-caption"></div>
@@ -337,11 +336,6 @@
                                         <div class="carousel-caption"></div>
                                     </div>
                                 </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-service-<?=$item?>" data-slide="prev">
-                                </a>
-                                <a class="right carousel-control" href="#carousel-service-<?=$item?>" data-slide="next">
-                                </a>
                             </div>
                             <div class="desc">
                                 <h3 class="ico-comment"><a>Ремонт ноутбуков</a></h3>
@@ -351,7 +345,7 @@
                         <li class="col-md-3 col-sm-6 col-xs-12">
                             <div id="carousel-service-7" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner services-slider slick">
                                     <div class="item active">
                                         <img src="images/fot_1.png" alt="..." class="zoom-slide">
                                         <div class="carousel-caption"></div>
@@ -361,11 +355,6 @@
                                         <div class="carousel-caption"></div>
                                     </div>
                                 </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-service-<?=$item?>" data-slide="prev">
-                                </a>
-                                <a class="right carousel-control" href="#carousel-service-<?=$item?>" data-slide="next">
-                                </a>
                             </div>
                             <div class="desc">
                                 <h3 class="ico-comment"><a>Ремонт ноутбуков</a></h3>
@@ -375,7 +364,7 @@
                         <li class="col-md-3 col-sm-6 col-xs-12">
                             <div id="carousel-service-8" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner services-slider slick">
                                     <div class="item active">
                                         <img src="images/fot_1.png" alt="..." class="zoom-slide">
                                         <div class="carousel-caption"></div>
@@ -385,11 +374,6 @@
                                         <div class="carousel-caption"></div>
                                     </div>
                                 </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-service-<?=$item?>" data-slide="prev">
-                                </a>
-                                <a class="right carousel-control" href="#carousel-service-<?=$item?>" data-slide="next">
-                                </a>
                             </div>
                             <div class="desc">
                                 <h3 class="ico-comment"><a>Ремонт ноутбуков</a></h3>
@@ -596,41 +580,6 @@
         <footer>
             <div class="left-column"></div>
             <div class="main-column">
-            <div class="our-reviews  ">
-                <h2>Отзывы</h2>
-                <ul class="list slick"  data-slick='{"slidesToShow": 4, "slidesToScroll": 1,"autoplay":true,"prevArrow":"<a class=\"slick-prev slick-arrow\"></a>","nextArrow":"<a class=\"slick-next slick-arrow\"></a>"}'>
-                    <li href="#control-review-1">
-                        <img src="images/reviews/otz_1 (1).jpg" class="zoom"/>
-                    </li>
-                    <li  href="#control-review-2">
-                        <img src="images/reviews/otz_1 (1).jpg" class="zoom"/>
-                    </li>
-                    <li  href="#control-review-3">
-                        <img src="images/reviews/otz_1 (1).jpg" class="zoom"/>
-                    </li>
-                    <li  href="#control-review-4">
-                        <img src="images/reviews/otz_1 (1).jpg" class="zoom"/>
-                    </li>
-                    <li  href="#control-review-5">
-                        <img src="images/reviews/otz_1 (1).jpg" class="zoom"/>
-                    </li>
-                    <li  href="#control-review-6">
-                        <img src="images/reviews/otz_1 (1).jpg" class="zoom"/>
-                    </li>
-                    <li  href="#control-review-7">
-                        <img src="images/reviews/otz_1 (1).jpg" class="zoom"/>
-                    </li>
-                </ul>
-                <ul class="list-controls">
-                    <li id="control-review-1"><a></a></li>
-                    <li id="control-review-2"><a></a></li>
-                    <li id="control-review-3"><a></a></li>
-                    <li id="control-review-4"><a></a></li>
-                    <li id="control-review-5"><a></a></li>
-                    <li id="control-review-6"><a></a></li>
-                    <li id="control-review-7"><a></a></li>
-                </ul>
-            </div>
             </div>
             <div class="ask-question">
                 <div class="wrap">
@@ -654,7 +603,7 @@
             <div class="we-on-map">
                 <h2>Где мы находимся</h2>
                 <div class="wrap-map">
-                    <img class="map" src="images/map.png"/>
+                    <script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A92dd4a29d1f46e268b0be00a17bc0a597a6457b62815cff1cde56717def22a98&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
                 </div>
             </div>
             <div class="footer-menu">

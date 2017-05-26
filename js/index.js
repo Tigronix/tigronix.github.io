@@ -4,7 +4,28 @@
  * and open the template in the editor.
  */
 
-
+$(document).ready(function(){
+	$(".hamburger").click(function () {
+		$(this).toggleClass("hamburgerActive");
+		$('.header-bottom').slideToggle(400).css('display', 'flex');
+	});
+	//header-scroll
+	var header = $('.hamburger-wrap');
+	$(window).scroll(function () {
+		var top = $(this).scrollTop();
+		if (top > 50) {
+			header.addClass('hamburger-wrap--fixed');
+		}
+		else {
+			header.removeClass('hamburger-wrap--fixed');
+		}
+	});
+});
+$('.services-slider').slick({
+  loop: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
 (function($){
     $(function(){
        $('.our-service .list .carousel .carousel-inner .item, .our-reviews .list li').each(function(){
