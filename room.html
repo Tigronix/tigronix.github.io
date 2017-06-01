@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Room</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="page-header">
+	  <div class="page-header__top">
+			<div class="page-header__text-top">
+				<i class="fa fa-map-marker"></i>
+				<span>Королев, ул. Академика Легостаева, д.4, корп.3</span>
+			</div>
+			<div class="page-header__text-top">
+				<i class="fa fa-clock-o"></i>
+				<span>ПН-ЧТ с 09:00 - 18:00, ПТ с 09:00 - 17:00, СБ 11-00 - 14:00, ВС - выходной.</span>
+			</div>
+	  </div>
+	  <div class="page-header__middle">
+	  	<span class="hamburger">
+				<span></span>
+				<span class="line"></span>
+			</span>
+			<a href="#" class="logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			<nav class="nav">
+				<ul class="nav__ul">
+					<li class="nav__li"><a href="#" class="nav__link">О комплексе</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Фотографии</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Выбрать квартиру</a></li>
+					<li class="nav__li"><a href="#" class="nav__link nav__link--active">Спецпредложения<span class="nav__counter">17</span></a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Как купить</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<a href="tel:+74952330246" class="page-header__phone">+7 (495) 233-02-46</a>
+		</div>
+		<div class="page-header__menu">
+			<div class="link-square">
+				<div class="header">О комплексе:</div>
+				<a href="#" class="link">Инфраструктура</a>
+				<a href="#" class="link">Паркинг</a>
+				<a href="#" class="link">Новости</a>
+				<a href="#" class="link">Фотографии</a>
+			</div>
+			<div class="link-square">
+				<div class="header">Квартиры в продаже:</div>
+				<a href="#" class="link">Однокомнатные квартиры</a>
+				<a href="#" class="link">Двухкомнатные квартиры</a>
+				<a href="#" class="link">Трехкомнатные квартиры</a>
+				<a href="#" class="link">Четырехкомнатные квартиры</a>
+				<a href="#" class="link">Квартиры с отделкой</a>
+			</div>
+			<div class="link-square">
+				<div class="header">Варианты покупки:</div>
+				<a href="#" class="link">Ипотека</a>
+				<a href="#" class="link">Военная ипотека</a>
+				<a href="#" class="link">Материнский капитал</a>
+				<a href="#" class="link">Субсидии</a>
+				<a href="#" class="link">Сертификаты</a>
+				<a href="#" class="link">Рассрочка</a>
+			</div>
+			<div class="link-square">
+				<div class="header">Информация</div>
+				<a href="#" class="link">О компании</a>
+				<a href="#" class="link">Контакты</a>
+			</div>
+		</div>
+		<form class="page-header__form">
+			<div class="wrapper">
+				<div class="text">Подбор по параметрам:</div>
+				<select class="styler w1 page-header__select">
+					<option value="">Кол-во комнат</option>
+					<option value="">1</option>
+					<option value="">1</option>
+				</select>
+				<select class="styler w2 page-header__select">
+					<option value="">Стоимость квартиры</option>
+					<option value="">2</option>
+					<option value="">2</option>
+				</select>
+				<select class="styler w3 page-header__select">
+					<option value="">По номеру корпуса</option>
+					<option value="">3</option>
+					<option value="">3</option>
+				</select>
+				<button type="submit" class="page-header__submit">Найти</button>
+			</div>
+		</form>
+	</div><!--page-header-->
+	<main class="main">
+		<div class="wrapper">
+			<div class="bread">
+				<a href="#" class="bread__link">Новостройки в Королеве</a>
+				<a href="#" class="bread__link">Купить квартиру</a>
+				<a href="#" class="bread__link">Однокомнатные квартиры</a>
+			</div><!--bread-->
+			<h2 class="h2">Однокомнатная квартира №10</h2>
+			<section class="room">
+				<div class="roomNav">
+					<div class="roomNav__item">
+						<div class="roomNav__number">3</div>
+						<div class="roomNav__text">корпус</div>
+					</div>
+					<div class="roomNav__item">
+						<div class="roomNav__number">5</div>
+						<div class="roomNav__text">секция</div>
+					</div>
+					<div class="roomNav__item">
+						<div class="roomNav__number">1</div>
+						<div class="roomNav__text">этаж</div>
+					</div>
+					<div class="roomNav__item">
+						<div class="roomNav__number">1</div>
+						<div class="roomNav__text">комнат</div>
+					</div>
+					<div class="roomNav__item">
+						<div class="roomNav__text">печать</div>
+						<div class="roomNav__text"><img src="img/print.png" alt=""></div>
+					</div>
+				</div>
+				<div class="roomSlider__wrap">
+					<div class="roomSlider__text">Расположение квартиры на этаже</div>
+					<div class="roomSlider slider-main owl-carousel">
+						<div class="roomSlider__item">
+							<img src="img/bl_22.png" alt="">
+						</div>
+						<div class="roomSlider__item">
+							<img src="img/bl_22.png" alt="">
+						</div>
+						<div class="roomSlider__item">
+							<img src="img/bl_22.png" alt="">
+						</div>
+					</div><!--roomSlider-->
+				</div>
+				<div class="roomNumbers">
+					<div class="roomNumbers__item">
+						<div class="roomNumbers__number">47,2 <span class="roomNumbers__small">м<sup>2</sup></span></div>
+						<div class="roomNumbers__text">общая площадь</div>
+					</div>
+					<div class="roomNumbers__item">
+						<div class="roomNumbers__number"> 16,6 <span class="roomNumbers__small">м<sup>2</sup></span> </div>
+						<div class="roomNumbers__text">жилая площадь</div>
+					</div>
+					<div class="roomNumbers__item">
+						<div class="roomNumbers__number"> 11,2 <span class="roomNumbers__small">м<sup>2</sup></span> </div>
+						<div class="roomNumbers__text">площадь кухни</div>
+					</div>
+					<div class="roomNumbers__item">
+						<div class="roomNumbers__number">89 990 <span class="roomNumbers__valute">руб.</span></div>
+						<div class="roomNumbers__text"> ЦЕНА ЗА КВ.М </div>
+					</div>
+					<div class="roomNumbers__item roomNumbers__item--last">
+						<div class="roomNumbers__text"><img src="../img/social.png" alt=""></div>
+					</div>
+				</div><!--roomNumbers-->
+				<div class="roomForm">
+					<div class="roomForm__header">Заявка на просмотр</div>
+					<input placeholder="Ваше имя" type="text" class="roomForm__input roomForm__input--name">
+					<input placeholder="Ваш телефон / E-mail" type="tel" class="roomForm__input roomForm__input--phone">
+					<textarea placeholder="Укажите дату и время просмотра квартиры" class="roomForm__textarea roomForm__input"></textarea>
+					<div class="roomForm__inpbox">
+						<input id="agree" type="checkbox" class="roomForm__input-hide">
+						<label for="agree" class="roomForm__label">Я согласен на обработку персональных данных</label>
+					</div>
+					<div class="roomForm__price">
+						<div class="roomForm__number">Стоимость квартиры:</div>
+						<div class="roomForm__bigNumber">
+							<span class="roomForm__priceNumber">3 950 000</span><span class="roomForm__valute">руб.</span>
+						</div>
+					</div>
+					<button type="submit" class="roomForm__submit">Отправить заявку</button>
+				</div>
+			</section><!--room-->
+			<div class="carousel owl-carousel">
+				<a data-lightbox="gallery" href="img/carousel1.jpg" class="carousel__slide"><img src="img/carousel1.jpg" alt=""></a>
+				<a data-lightbox="gallery" href="img/carousel2.jpg" class="carousel__slide"><img src="img/carousel2.jpg" alt=""></a>
+				<a data-lightbox="gallery" href="img/carousel3.jpg" class="carousel__slide"><img src="img/carousel3.jpg" alt=""></a>
+				<a data-lightbox="gallery" href="img/carousel4.jpg" class="carousel__slide"><img src="img/carousel4.jpg" alt=""></a>
+				<a data-lightbox="gallery" href="img/carousel5.jpg" class="carousel__slide"><img src="img/carousel5.jpg" alt=""></a>
+				<a data-lightbox="gallery" href="img/carousel6.jpg" class="carousel__slide"><img src="img/carousel6.jpg" alt=""></a>
+				<a data-lightbox="gallery" href="img/carousel7.jpg" class="carousel__slide"><img src="img/carousel7.jpg" alt=""></a>
+				<a data-lightbox="gallery" href="img/carousel1.jpg" class="carousel__slide"><img src="img/carousel1.jpg" alt=""></a>
+				<a data-lightbox="gallery" href="img/carousel2.jpg" class="carousel__slide"><img src="img/carousel2.jpg" alt=""></a>
+			</div>
+			<section class="partners">
+				<h2 class="h2">Банки-партнеры застройщика в Королеве</h2>
+				<div class="partners__wrap">
+					<a href="#" class="partners__item">
+						<div class="partners__img"><img width="296" src="img/part-1.jpg" alt=""></div>
+						<div class="partners__text">Сбербанк</div>
+					</a>
+					<a href="#" class="partners__item">
+						<div class="partners__img"><img width="280" src="img/part-2.gif" alt=""></div>
+						<div class="partners__text">Абсолют банк</div>
+					</a>
+					<a href="#" class="partners__item">
+						<div class="partners__img"><img width="213" src="img/part-3.jpg" alt=""></div>
+						<div class="partners__text">ВТБ-24</div>
+					</a>
+					<a href="#" class="partners__item">
+						<div class="partners__img"><img width="350" src="img/part-4.png" alt=""></div>
+						<div class="partners__text">Банк Россия</div>
+					</a>
+				</div>
+			</section><!--partners-->
+			<h2 class="h2 h2--mt-30">Варианты покупки</h2>
+			<div class="variantBuy">
+				<div class="wrapper">
+					<div class="variantBuy__line">
+						<a href="#" class="variantBuy__item"><i class="fa fa-rouble variantBuy__icon"></i><span class="variantBuy__text">Ипотека</span></a>
+						<a href="#" class="variantBuy__item"><i class="fa fa-percent variantBuy__icon"></i><span class="variantBuy__text">Рассрочка</span></a>
+						<a href="#" class="variantBuy__item"><i class="fa fa-pie-chart variantBuy__icon"></i><span class="variantBuy__text">Субсидии</span></a>
+					</div>
+					<div class="variantBuy__line">
+						<a href="#" class="variantBuy__item"><i class="fa fa-star-o variantBuy__icon"></i><span class="variantBuy__text">Военная ипотека</span></a>
+						<a href="#" class="variantBuy__item"><i class="fa fa-child variantBuy__icon"></i><span class="variantBuy__text">Материнский капитал</span></a>
+						<a href="#" class="variantBuy__item"><i class="fa fa-newspaper-o variantBuy__icon"></i><span class="variantBuy__text">Сертификаты</span></a>
+					</div>
+				</div>
+			</div>
+			<h2 class="h2 h2--mt-30">Посмотреть похожие квартиры</h2>
+			<div class="roomAlso  owl-carousel">
+				<div class="roomAlso__item">
+					<div class="roomAlso__top">
+						<div class="left">
+							<div class="text">площадь, м<sup>2</sup></div>
+							<div class="number">47</div>
+						</div>
+						<div class="right">
+							<div class="text">стоимость квартиры</div>
+							<div class="number">3 950 000 <span class="valute">руб.</span></div>
+						</div>
+					</div><!--roomAlso__top-->
+					<div class="roomAlso__img"><img width="221" src="img/kavart.png" alt=""></div>
+					<div class="roomAlso__bot">
+						<div class="item">
+							<div class="text">секция</div>
+							<div class="number">3</div>
+						</div>
+						<div class="item">
+							<div class="text">корпус №</div>
+							<div class="number">2</div>
+						</div>
+						<div class="item">
+							<div class="text">квартира №</div>
+							<div class="number">43</div>
+						</div>
+					</div>
+				</div><!--roomAlso__item-->
+				<div class="roomAlso__item">
+					<div class="roomAlso__top">
+						<div class="left">
+							<div class="text">площадь, м<sup>2</sup></div>
+							<div class="number">47</div>
+						</div>
+						<div class="right">
+							<div class="text">стоимость квартиры</div>
+							<div class="number">3 950 000 <span class="valute">руб.</span></div>
+						</div>
+					</div><!--roomAlso__top-->
+					<div class="roomAlso__img"><img width="221" src="img/kavart.png" alt=""></div>
+					<div class="roomAlso__bot">
+						<div class="item">
+							<div class="text">секция</div>
+							<div class="number">3</div>
+						</div>
+						<div class="item">
+							<div class="text">корпус №</div>
+							<div class="number">2</div>
+						</div>
+						<div class="item">
+							<div class="text">квартира №</div>
+							<div class="number">43</div>
+						</div>
+					</div>
+				</div><!--roomAlso__item-->
+				
+				<div class="roomAlso__item">
+					<div class="roomAlso__top">
+						<div class="left">
+							<div class="text">площадь, м<sup>2</sup></div>
+							<div class="number">47</div>
+						</div>
+						<div class="right">
+							<div class="text">стоимость квартиры</div>
+							<div class="number">3 950 000 <span class="valute">руб.</span></div>
+						</div>
+					</div><!--roomAlso__top-->
+					<div class="roomAlso__img"><img width="221" src="img/kavart.png" alt=""></div>
+					<div class="roomAlso__bot">
+						<div class="item">
+							<div class="text">секция</div>
+							<div class="number">3</div>
+						</div>
+						<div class="item">
+							<div class="text">корпус №</div>
+							<div class="number">2</div>
+						</div>
+						<div class="item">
+							<div class="text">квартира №</div>
+							<div class="number">43</div>
+						</div>
+					</div>
+				</div><!--roomAlso__item-->
+				<div class="roomAlso__item">
+					<div class="roomAlso__top">
+						<div class="left">
+							<div class="text">площадь, м<sup>2</sup></div>
+							<div class="number">47</div>
+						</div>
+						<div class="right">
+							<div class="text">стоимость квартиры</div>
+							<div class="number">3 950 000 <span class="valute">руб.</span></div>
+						</div>
+					</div><!--roomAlso__top-->
+					<div class="roomAlso__img"><img width="221" src="img/kavart.png" alt=""></div>
+					<div class="roomAlso__bot">
+						<div class="item">
+							<div class="text">секция</div>
+							<div class="number">3</div>
+						</div>
+						<div class="item">
+							<div class="text">корпус №</div>
+							<div class="number">2</div>
+						</div>
+						<div class="item">
+							<div class="text">квартира №</div>
+							<div class="number">43</div>
+						</div>
+					</div>
+				</div><!--roomAlso__item-->
+			</div>
+			<h2 class="h2">Фотографии жилого комплекса «Стрела»</h2>
+			<div class="slider-main slider-main--mgt owl-carousel">
+				<div class="slider-main__slide">
+					<img src="img/slide1.jpg" alt="">
+					<div class="slider-main__text">г. Королев, ул. Академика Легостаева, д.4, корп.1</div>
+				</div>
+				<div class="slider-main__slide">
+					<img src="img/slide2.jpg" alt="">
+					<div class="slider-main__text">г. Королев, ул. Академика Легостаева, д.4, корп.1</div>
+				</div>
+				<div class="slider-main__slide">
+					<img src="img/slide1.jpg" alt="">
+					<div class="slider-main__text">г. Королев, ул. Академика Легостаева, д.4, корп.1</div>
+				</div>
+				<div class="slider-main__slide">
+					<img src="img/slide2.jpg" alt="">
+					<div class="slider-main__text">г. Королев, ул. Академика Легостаева, д.4, корп.1</div>
+				</div>
+			</div><!--slider-main-->
+			<div class="links2">
+				<div class="also-look">Смотрите также:</div>
+				<div class="links2__box"><a href="#" class="link2__link">Перейти на шахматку дома №4, корпус №1</a></div>
+				<div class="links2__box"><a href="#" class="link2__link">Перейти на шахматку дома №4, корпус №2</a></div>
+				<div class="links2__box"><a href="#" class="link2__link">Перейти на шахматку дома №4, корпус №3</a></div>
+				<div class="links2__box"><a href="#" class="link2__link">Перейти на шахматку дома №4, корпус №4</a></div>
+			</div>
+			</div>
+			<div class="fixed_wrap"></div>
+			<div class="fixed-bot go-top"><a href="#" class="link">ЗАПИШИТЕСЬ НА ПРОСМОТР И ПОЛУЧИТЕ СПЕЦПРЕДЛОЖЕНИЕ!</a></div>
+	</main>
+	<footer class="page-footer">
+	  <div class="page-footer__top">
+      <div class="page-footer__contact">
+        <a href="tel:+74952330246" class="page-footer__phone"><i class="fa fa-phone"></i><span>+7 (495) 233-02-46</span></a>
+        <a href="tel:+79852330246" class="page-footer__phone page-footer__phone--social"><img width="40" height="40" src="img/viber.png" alt=""><img width="40" height="40" src="img/whatsup.png" alt=""><span>+7 (495) 233-02-46</span></a>
+        <div class="page-footer__schedule">
+          <div class="title">Время работы:</div>
+          <div class="line">Пн-Чт 9-00 - 18-00 / Пт 9-00 - 17-00</div>
+          <div class="line">Сб 11-00 - 14-00 / Вс выходной</div>
+          <div class="title title--mgt"> Отдел продаж:</div>
+          <div class="line"> г. Королев, ул. Академика Легостаева, д.4, корп.3</div>
+        </div>
+      </div>
+      <div class="page-footer__links">
+        <div class="link-box">
+          <div class="link-box__header">Квартиры в продаже</div>
+          <a href="#" class="link-box__link"><span>Однокомнатные квартиры</span></a>
+          <a href="#" class="link-box__link"><span>Двухкомнатные квартиры</span></a>
+          <a href="#" class="link-box__link"><span>Трехкомнатные квартиры</span></a>
+          <a href="#" class="link-box__link"><span>Четырехкомнатные квартиры</span></a>
+          <a href="#" class="link-box__link"><span>Квартиры с отделкой</span></a>
+        </div>
+        <div class="link-box">
+          <div class="link-box__header">Варианты покупки</div>
+          <a href="#" class="link-box__link"><span>Ипотека</span></a>
+          <a href="#" class="link-box__link"><span>Военная ипотека</span></a>
+          <a href="#" class="link-box__link"><span>Материнский капитал</span></a>
+          <a href="#" class="link-box__link"><span>Субсидии</span></a>
+          <a href="#" class="link-box__link"><span>Сертификаты</span></a>
+          <a href="#" class="link-box__link"><span>Рассрочка</span></a>
+        </div>
+        <div class="link-box">
+          <div href="#" class="link-box__header">Информация</div>
+          <a href="#" class="link-box__link"><span>О комплексе</span></a>
+          <a href="#" class="link-box__link"><span>О компании</span></a>
+          <a href="#" class="link-box__link"><span>Инфраструктура</span></a>
+          <a href="#" class="link-box__link"><span>Паркинг</span></a>
+          <a href="#" class="link-box__link"><span>Фотографии</span></a>
+          <a href="#" class="link-box__link"><span>Контакты</span></a>
+        </div>
+      </div>
+      <div class="page-footer__social">
+			<div class="text">Поделитесь с друзьями:</div>
+			<img src="img/socs.png" alt="">
+		</div>
+		</div>
+		<div class="page-footer__bot">
+			<div class="copy"> © 2013-2017 ЖК «Стрела» - официальный сайт</div>
+			<div class="by">
+				Создание и продвижение сайта <a href="#" class="link"> - Es-studio</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
