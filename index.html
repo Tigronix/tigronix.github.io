@@ -2,215 +2,331 @@
 <html lang="ru">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
 	<meta charset="utf-8">
-	<title>Стрела</title>
+	<title>ES Studio</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="page-header">
-	  <div class="page-header__top">
-			<div class="page-header__text-top">
-				<i class="fa fa-map-marker"></i>
-				<span>Королев, ул. Академика Легостаева, д.4, корп.3</span>
-			</div>
-			<div class="page-header__text-top">
-				<i class="fa fa-clock-o"></i>
-				<span>ПН-ЧТ с 09:00 - 18:00, ПТ с 09:00 - 17:00, СБ 11-00 - 14:00, ВС - выходной.</span>
-			</div>
-	  </div>
-	  <div class="page-header__middle">
-	  	<span class="hamburger">
-				<span></span>
-				<span class="line"></span>
+		<a href="#" class="page-header__logo">
+		</a>
+		<div class="menu__wrap">
+			<span class="hamburger">
+				<span class="hamburger__line"></span>
+				<span class="line hamburger__line"></span>
+				<div class="hamburger__back">Назад</div>
 			</span>
-			<a href="#" class="logo">
-				<img src="img/logo.png" alt="">
-			</a>
-			<nav class="nav">
-				<ul class="nav__ul">
-					<li class="nav__li"><a href="#" class="nav__link">О комплексе</a></li>
-					<li class="nav__li"><a href="#" class="nav__link">Фотографии</a></li>
-					<li class="nav__li"><a href="#" class="nav__link">Выбрать квартиру</a></li>
-					<li class="nav__li"><a href="#" class="nav__link nav__link--active">Спецпредложения</a></li>
-					<li class="nav__li"><a href="#" class="nav__link">Как купить</a></li>
-					<li class="nav__li"><a href="#" class="nav__link">Контакты</a></li>
-				</ul>
-			</nav>
-			<a href="tel:+74952330246" class="page-header__phone">+7 (495) 233-02-46</a>
+			<div class="hamburger__text">меню</div>
 		</div>
-		<div class="page-header__menu">
-			<div class="link-square">
-				<div class="header">О комплексе:</div>
-				<a href="#" class="link">Инфраструктура</a>
-				<a href="#" class="link">Паркинг</a>
-				<a href="#" class="link">Новости</a>
-				<a href="#" class="link">Фотографии</a>
-			</div>
-			<div class="link-square">
-				<div class="header">Квартиры в продаже:</div>
-				<a href="#" class="link">Однокомнатные квартиры</a>
-				<a href="#" class="link">Двухкомнатные квартиры</a>
-				<a href="#" class="link">Трехкомнатные квартиры</a>
-				<a href="#" class="link">Четырехкомнатные квартиры</a>
-				<a href="#" class="link">Квартиры с отделкой</a>
-			</div>
-			<div class="link-square">
-				<div class="header">Варианты покупки:</div>
-				<a href="#" class="link">Ипотека</a>
-				<a href="#" class="link">Военная ипотека</a>
-				<a href="#" class="link">Материнский капитал</a>
-				<a href="#" class="link">Субсидии</a>
-				<a href="#" class="link">Сертификаты</a>
-				<a href="#" class="link">Рассрочка</a>
-			</div>
-			<div class="link-square">
-				<div class="header">Информация</div>
-				<a href="#" class="link">О компании</a>
-				<a href="#" class="link">Контакты</a>
-			</div>
+		<nav class="nav">
+			<ul class="nav__ul">
+				<li class="nav__li"><a href="#" class="nav__link">Услуги</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">Портфолио</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">О компании</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="page-header__contact">
+			<div class="page-header__phone">+7(495) 506-08-31</div>
+			<div class="page-header__address">Москва, Большой Каретный пер., д.2</div>
 		</div>
-		<form class="page-header__form">
-			<div class="wrapper">
-				<div class="text text--font-family">Подбор по параметрам:</div>
-				<select class="styler w1 page-header__select">
-					<option value="">Кол-во комнат</option>
-					<option value="">1</option>
-					<option value="">1</option>
-				</select>
-				<select class="styler w2 page-header__select">
-					<option value="">Стоимость квартиры</option>
-					<option value="">2</option>
-					<option value="">2</option>
-				</select>
-				<select class="styler w3 page-header__select">
-					<option value="">По номеру корпуса</option>
-					<option value="">3</option>
-					<option value="">3</option>
-				</select>
-				<button type="submit" class="page-header__submit">Найти</button>
-			</div>
-		</form>
 	</div><!--page-header-->
 	<main class="main">
-		<div class="wrapper">
-			<div class="bread">
-				<a href="#" class="bread__link">Новостройки в Королеве</a>
-				<a href="#" class="bread__link">Контакты</a>
-			</div><!--bread-->
-			<h2 class="h2 h2--tl"> ЖК «Стрела», Королев: информация о проекте </h2>
-			<ul class="list list--custom">
-				<li class="list__li"><i class="fa fa-object-ungroup"></i><span class="list__text-red">Площадь     </span>участка на котором ведется строительство - <span class="list__text-big">5,68</span> Га.</li>
-				<li class="list__li"><i class="fa fa-check-square-o"></i><span class="list__text-red">Тип застройки</span> - комбинированные кирпично- каркасные 17-этажные дома из 5 и 6 секций.</li>
-				<li class="list__li"><i class="fa fa-building-o"></i><span class="list__text-red">Общее количество квартир</span> - <span class="list__text-big">2 000</span></li>
-				<li class="list__li"><i class="fa fa-building-o"></i><span class="list__text-red">Общая площадь квартир</span> - <span class="list__text-big">121 977</span> м<sup>2</sup></li>
-				<li class="list__li"><i class="fa fa-building-o"></i><span class="list__text-red">Обеспеченность дошкольными образовательными учреждениями</span></li>
-			</ul>
-			<h6 class="h6"> В пешей доступности 4 детских сада: </h6>
-			<ul class="list list--custom">
-				<li class="list__li"><i class="fa fa-child"></i> Детский сад №10 «Колокольчик», адрес: г. Королев, пр-т Космонавтов, дом 34 А; </li>
-				<li class="list__li"><i class="fa fa-child"></i> Детский сад №16 «Забава», адрес: г. Королев, пр-т Космонавтов, дом 45 Б; </li>
-				<li class="list__li"><i class="fa fa-child"></i> Детский сад №36, адрес: г. Королев, пр-т Космонавтов, дом 31 А; </li>
-				<li class="list__li"><i class="fa fa-child"></i> Детский сад №27 «Жемчужинка», адрес: г. Королев, ул. Горького, дом 4 А; </li>
-			</ul>
-			<p class="text text--font-family"> Утвержденным проектом планировки предусмотрено строительство нового детского дошкольного учреждения в непосредственной близости от домов на 260 мест.</p>
-			<p class="text text--font-family">Всего в нескольких километрах от комплекса расположен элитный детский сад «Садко»,
-адрес: г. Королев, ул. Пограничников, дом 45;</p>
-			<p class="text text--font-family"> Расположение объектов на карте: </p>
-			<div class="map">
-				<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tEGWuwJ2cKFnccGaijNZuxhRSDAEtW5E&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=false"></script>
+    <aside class="left-menu">
+    	<a href="#" class="left-menu__logo"></a>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header left-menu__header--code">Разработка сайтов</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Интернет магазины</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Лендинг пейдж</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Корпоративные сайты</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Сайт-визитка</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Адаптивные/мобильные сайты</a></li>
+    		</ul>
+    	</div>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header">Продвижение сайтов</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Стратегия и планирование</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Работа с конверсиями</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Внедрение новых каналов продвижения</a></li>
+    		</ul>
+    	</div>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header">Аудит и анализ</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Аналитика трафика</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Работа с конверсиями</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">SEO анализ</a></li>
+    		</ul>
+    	</div>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header left-menu__header--rocket">Реклама</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Контекстная реклама</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Продвижение в социальных сетях (SMM)</a></li>
+    		</ul>
+    	</div>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header">Поддержка</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Наполнение контентом</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Создание резервных копий</a></li>
+    		</ul>
+    	</div>
+    </aside>
+		<section class="slider-main">
+			<div class="slider-main__slide">
+			  <img src="img/slide1.jpg" alt="">
+				<div class="slider-main__text">
+					<div class="t1">Создаем адаптивные сайты</div>
+					<div class="t2">С высокой конверсией</div>
+				</div>
 			</div>
-			<p class="text text--font-family"> <span class="text text__red">Количество школ</span> - в пешей доступности 2 школы: </p>
-			<ul class="list list--custom">
-				<li class="list__li"><i class="fa fa-edit"></i> Муниципальное образовательное учреждение средняя общеобразовательная школа №2 имени В.Н. Михайлова, адрес:141080,г. Королёв,"Костино",ул. Стадионная, дом 4а; </li>
-				<li class="list__li"><i class="fa fa-edit"></i> Муниципальное образовательное учреждение Гимназия № 18, адрес: 141080,г. Королёв,
-пр-т Космонавтов, дом 37 б; </li>
-			</ul>
-			<p class="text text--font-family"> Утвержденным проектом планировки предусмотрено строительство новой школы в непосредственной близости от домов на 930 мест. </p>
-			<ul class="list list--custom">
-				<li class="list__li"><i class="fa fa-car"></i><span class="list__text-red">Количество автопарковок</span> - 3 паркинга в шаговой доступности</li>
-				<li class="list__li"><i class="fa fa-futbol-o"></i><span class="list__text-red">Физкультурно-оздоровительные комплексы и спортивные площадки</span> - стадион «Металлист»,
-адрес: г. Королев, ул. Орджоникидзе, дом 6.</li>
-			</ul>
-			<h6 class="h6"> Квартиры комфорт класса от застройщика в Королеве по цене эконом </h6>
-			<p class="text text--font-family"> В мае 2014 года в ЖК «Стрела» стартовали продажи готовых квартир в объекте первой очереди строительства - корпусе № 3. Это 17-этажный панельно-кирпичный дом, состоящий из 5-ти блок-секций. В доме предусмотрены однокомнатные и двухкомнатные квартиры комфорт класса. Примечательно, что на рынок недвижимости будут выведены однокомнатные квартиры по цене эконом - от 3 400 000 рублей! Право собственности на квартиру переходит к покупателю сразу после оформления сделки.</p>
-			<p class="text text--font-family">Жилой комплекс расположен в южной части Королева и почти вплотную примыкает к границе Национального парка «Лосиный остров». Строительство ведется по адресам: г.Королев, ул. Академика Легостаева, д.4, корп.1, 2, 3. Это многоквартирные панельно-кирпичные дома комфорт класса, образующие новый благоустроенный микрорайон с собственной инфраструктурой. Квартиры улучшенной планировки, подготовлены под чистовую отделку и готовы к заселению. </p>
-			<h6 class="h6"> Справочная информация: </h6>
-			<ul class="list list--custom">
-				<li class="list__li"><i class="fa fa-location-arrow"></i><span class="list__text-red">Расстояние от МКАД:</span> 11 км на северо-восток от Москвы по Ярославскому шоссе;</li>
-				<li class="list__li"><i class="fa fa-map-marker"></i><span class="list__text-red">Ближайшие города:</span> Мытищи, Щелково, Ивантеевка, Пушкино;</li>
-				<li class="list__li"><i class="fa fa-bus"></i><span class="list__text-red">Транспорт:</span> 5 ж/д платформ и станций Ярославской ж/д, автобусное сообщение;</li>
-				<li class="list__li"><i class="fa fa-clock-o"></i><span class="list__text-red">Время в пути до Москвы: 28 мин.</span> на скоростном электропоезде «Спутник»;</li>
-				<li class="list__li"><i class="fa fa-subway"></i><span class="list__text-red">35-45 мин.</span> на электричке до Ярославского вокзала, 30-60 мин. автобусом до метро ВДНХ;</li>
-				<li class="list__li"><i class="fa fa-arrows-h"></i><span class="list__text-red">От ЖК «Стрела» до станции «Болшево»</span> можно добраться на общественном транспорте за 5-7 минут;</li>
-				<li class="list__li"><i class="fa fa-road"></i><span class="list__text-red">Автомагистрали:</span> Ярославское шоссе, Щелковское шоссе.</li>
-			</ul>
-			<p class="text text--font-family"> Королев относительно небольшой, но уютный город Подмосковья с населением до 180 тыс. человек. Расположен в 23 км от центра Москвы и всего в 11км от МКАД. Имеет статус «Наукограда». Совместно с населенными пунктами Мытищи, Ивантеевка, Юбилейный, Пушкино образует северо-восточную агломерацию Подмосковья.</p>
-			<p class="text text--font-family">Новостройки в Королеве представлены объектами комплексной и точечной застройки. Преобладают типовые панельно-кирпичные многоэтажные дома (10 - 17 этажей) эконом и комфорт класса. </p>
+			<div class="slider-main__slide">
+			  <img src="img/slide1.jpg" alt="">
+				<div class="slider-main__text">
+					<div class="t1">Создаем адаптивные сайты</div>
+					<div class="t2">С высокой конверсией</div>
+				</div>
+			</div>
+			<div class="slider-main__slide">
+			  <img src="img/slide1.jpg" alt="">
+				<div class="slider-main__text">
+					<div class="t1">Создаем адаптивные сайты</div>
+					<div class="t2">С высокой конверсией</div>
+				</div>
+			</div>
+			<div class="slider-main__slide">
+			  <img src="img/slide1.jpg" alt="">
+				<div class="slider-main__text">
+					<div class="t1">Создаем адаптивные сайты</div>
+					<div class="t2">С высокой конверсией</div>
+				</div>
+			</div>
 			
-			<div class="look-also">Полезная информация:</div>
-			<div class="linksAlso">
-				<a href="#" class="linksAlso__link links2__link">Описание и месторасположение ЖК «Стрела»</a>
-				<a href="#" class="linksAlso__link links2__link">Экология в Королеве</a>
-				<a href="#" class="linksAlso__link links2__link">Уникальность проекта</a>
-				<a href="#" class="linksAlso__link links2__link">Физкультура и спорт</a>
-				<a href="#" class="linksAlso__link links2__link">Фотографии Жилого комплекса «Стрела»</a>
+		</section><!--slider-main-->
+		<section class="services-slider">
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Разработка <br>сайтов</div>
+				<div class="services-slider__img services-slider__img--blue"><img src="img/services-1.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">100 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Продвижение<br>сайтов</div>
+				<div class="services-slider__img services-slider__img--pink"><img src="img/services-2.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Аудит и анализ</div>
+				<div class="services-slider__img services-slider__img--green"><img src="img/services-3.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">80 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Реклама</div>
+				<div class="services-slider__img services-slider__img--purple"><img src="img/services-4.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">250 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Интернет<br>маркетинг</div>
+				<div class="services-slider__img services-slider__img--yellow"><img src="img/services-5.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">60 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Поддержка</div>
+				<div class="services-slider__img services-slider__img--darkblue"><img src="img/services-6.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Разработка <br>сайтов</div>
+				<div class="services-slider__img services-slider__img--blue"><img src="img/services-1.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">100 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Продвижение<br>сайтов</div>
+				<div class="services-slider__img services-slider__img--pink"><img src="img/services-2.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Аудит и анализ</div>
+				<div class="services-slider__img services-slider__img--green"><img src="img/services-3.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">80 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Реклама</div>
+				<div class="services-slider__img services-slider__img--purple"><img src="img/services-4.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">250 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Интернет<br>маркетинг</div>
+				<div class="services-slider__img services-slider__img--yellow"><img src="img/services-5.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">60 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Поддержка</div>
+				<div class="services-slider__img services-slider__img--darkblue"><img src="img/services-6.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
+			</a>
+			
+		</section>
+		<section class="our-goal wrapper">
+			<div class="our-goal__img">
+				<img src="img/boss.jpg" alt="" class="img">
+				<div class="name"> Директор студии Степанов Евгений</div>
 			</div>
-		</div><!--wrapper-->
-	</main>
+			<div class="our-goal__desc">
+				<div class="our-goal__header">Наша цель - рост вашего бизнеса</div>
+				<p class="text"> Главным преимуществом студии ES-Studio можно назвать наличие богатого опыта. Работаем с 2004 года. Большинство заказчиков не могут сформулировать задачу в технических терминах, опыт помогает лучше понимать пожелания клиентов и удовлетворять их. После того, как сайт будет готов и запущен, мы продолжаем оказывать поддержку и развитие. Такой подход дает результат в виде большого числа отзывов и постоянных клиентов, он позволяет совершенствовать наше мастерство.</p>
+				<p class="text">Первоначально нужно определиться с функциональностью страниц и их структурой. Для этого проводится моделирование сценариев возможного поведения пользователей. Второй этап включает в себя создание нескольких эскизов, выбор между которыми предлагается сделать заказчику. Их разработка проводится в соответствии с целью привлечения клиентов.</p>
+				<p class="text">Прототипы и концепция служат основой для создания полноценного макета. Он включает в себя верстку и написание скриптов для визуализации отдельных элементов. После окончательного согласования функциональности можно приступать к написанию кода и интеграции/настройке CMS и сторонних сервисов.</p>
+			</div>
+		</section><!--our-goal-->
+		<section style="display: none;" class="portfolio wrapper">
+			<a href="#" class="portfolio__item">
+				<img class="img" src="" alt="">
+				<div class="portfolio__logo"></div>
+			</a>
+		</section><!--portfolio-->
+		<a style="display: none;" href="#" class="btn btn--all-work">Все работы</a>
+		<section class="advantages">
+			<div class="advantages__item advantages__item--red">
+				<div class="advantages__top">
+					<div class="advantages__circle advantages__circle--red">
+						<div class="t t1">15</div>
+						<div class="t t2">лет<br>на рынке рекламы</div>
+					</div>
+				</div>
+				<div class="advantages__desc advantages__desc--first">
+					<div class="icon"></div>
+					<div class="text"> Главным преимуществом студии ES-Studio можно назвать наличие богатого опыта. Работаем с 2004 года. Большинство заказчиков не могут сформулировать задачу в технических терминах, опыт помогает лучше понимать пожелания клиентов и удовлетворять их.</div>
+				</div>
+			</div><!--advantages-item-->
+			<div class="advantages__item advantages__item--purple">
+				<div class="advantages__header">Преимущества</div>
+				<div class="advantages__top advantages__top--mt50">
+					<div class="advantages__circle advantages__circle--purple">
+						<div class="t t1">38</div>
+						<div class="t t2">успешных<br>проектов</div>
+					</div>
+				</div>
+				<div class="advantages__desc advantages__desc--second">
+					<div class="icon"></div>
+					<div class="text">  Первоначально нужно определиться с функциональностью страниц и их структурой. Для этого проводится моделирование сценариев возможного поведения пользователей. Второй этап включает в себя создание нескольких эскизов.</div>
+				</div>
+			</div><!--advantages-item-->
+			<div class="advantages__item advantages__item--blue">
+				<div class="advantages__top">
+					<div class="advantages__circle advantages__circle--blue">
+						<div class="t t1">10</div>
+						<div class="t t2">сотрудников<br>в штате</div>
+					</div>
+				</div>
+				<div class="advantages__desc  advantages__desc--third">
+					<div class="icon"></div>
+					<div class="text">  Прототипы и концепция служат основой для создания полноценного макета. Он включает в себя верстку и написание скриптов для визуализации отдельных элементов. После окончательного согласования функциональности.</div>
+				</div>
+			</div><!--advantages-item-->
+			<div class="advantages__bg"></div>
+		</section><!--advantages-->
+		<section class="form">
+			<div class="form__header">Онлайн заявка</div>
+			<form action="" class="form__content">
+				<div class="form__left">
+					<input placeholder="Введите ваше имя" type="text" class="form__input">
+					<input placeholder="Введите ваш телефон / E-mail" type="text" class="form__input">
+					<input placeholder="" type="text" class="form__input">
+					<textarea class="form__input form__textarea"></textarea>
+				</div>
+				<div class="form__right">
+					<div class="form__text">Какие услуги вас интересуют:</div>
+					<div class="form__inpbox">
+						<input id="form__ceo" type="text" class="form__check-input">
+						<label for="form__ceo" class="form__check-label">Продвижение сайта</label>
+					</div>
+					<div class="form__inpbox">
+						<input id="form__build" type="text" class="form__check-input">
+						<label for="form__build" class="form__check-label">Создание сайта</label>
+					</div>
+					<div class="form__inpbox">
+						<input id="form__audit" type="text" class="form__check-input">
+						<label for="form__audit" class="form__check-label">Аудит сайта</label>
+					</div>
+					<div class="form__inpbox">
+						<input id="form__ad" type="text" class="form__check-input">
+						<label for="form__ad" class="form__check-label">Контекстная реклама</label>
+					</div>
+					<div class="form__inpbox">
+						<input id="form__accept-personal" type="text" class="form__check-input">
+						<label for="form__accept-personal" class="form__check-label">Я согласен на обработку персональных данных</label>
+					</div>
+				</div>
+				<button type="submit" class="form__submit">Отправить заявку</button>
+			</form>
+		</section><!--form-->
+	</main><!--main-->
 	<footer class="page-footer">
-	  <div class="page-footer__top">
-      <div class="page-footer__contact">
-        <a href="tel:+74952330246" class="page-footer__phone"><i class="fa fa-phone"></i><span>+7 (495) 233-02-46</span></a>
-        <a href="tel:+79852330246" class="page-footer__phone page-footer__phone--social"><img width="40" height="40" src="img/viber.png" alt=""><img width="40" height="40" src="img/whatsup.png" alt=""><span>+7 (495) 233-02-46</span></a>
-        <div class="page-footer__schedule">
-          <div class="title">Время работы:</div>
-          <div class="line">Пн-Чт 9-00 - 18-00 / Пт 9-00 - 17-00</div>
-          <div class="line">Сб 11-00 - 14-00 / Вс выходной</div>
-          <div class="title title--mgt"> Отдел продаж:</div>
-          <div class="line"> г. Королев, ул. Академика Легостаева, д.4, корп.3</div>
-        </div>
-      </div>
-      <div class="page-footer__links">
-        <div class="link-box">
-          <div class="link-box__header">Квартиры в продаже</div>
-          <a href="#" class="link-box__link"><span>Однокомнатные квартиры</span></a>
-          <a href="#" class="link-box__link"><span>Двухкомнатные квартиры</span></a>
-          <a href="#" class="link-box__link"><span>Трехкомнатные квартиры</span></a>
-          <a href="#" class="link-box__link"><span>Четырехкомнатные квартиры</span></a>
-          <a href="#" class="link-box__link"><span>Квартиры с отделкой</span></a>
-        </div>
-        <div class="link-box">
-          <div class="link-box__header">Варианты покупки</div>
-          <a href="#" class="link-box__link"><span>Ипотека</span></a>
-          <a href="#" class="link-box__link"><span>Военная ипотека</span></a>
-          <a href="#" class="link-box__link"><span>Материнский капитал</span></a>
-          <a href="#" class="link-box__link"><span>Субсидии</span></a>
-          <a href="#" class="link-box__link"><span>Сертификаты</span></a>
-          <a href="#" class="link-box__link"><span>Рассрочка</span></a>
-        </div>
-        <div class="link-box">
-          <div href="#" class="link-box__header">Информация</div>
-          <a href="#" class="link-box__link"><span>О комплексе</span></a>
-          <a href="#" class="link-box__link"><span>О компании</span></a>
-          <a href="#" class="link-box__link"><span>Инфраструктура</span></a>
-          <a href="#" class="link-box__link"><span>Паркинг</span></a>
-          <a href="#" class="link-box__link"><span>Фотографии</span></a>
-          <a href="#" class="link-box__link"><span>Контакты</span></a>
-        </div>
-      </div>
-      <div class="page-footer__social">
-			<div class="text text--font-family">Поделитесь с друзьями:</div>
-			<img src="img/socs.png" alt="">
-		</div>
-		</div>
-		<div class="page-footer__bot">
-			<div class="copy"> © 2013-2017 ЖК «Стрела» - официальный сайт</div>
-			<div class="by">
-				Создание и продвижение сайта <a href="#" class="link"> - Es-studio</a>
+		<div class="page-footer__contact">
+			<a href="#" class="page-footer__logo"></a>
+			<div class="page-footer__email">ES-Studio@mail.ru</div>
+			<div class="page-footer__phone">+7(495) 123-45-67</div>
+			<div class="page-footer__address">Москва, Большой Каретный пер. д.2</div>
+			<div class="social">
+				<a href="#" class="social__item"></a>
+				<a href="#" class="social__item"></a>
+				<a href="#" class="social__item"></a>
+				<a href="#" class="social__item"></a>
+				<a href="#" class="social__item"></a>
 			</div>
 		</div>
-	</footer>
+		<div class="footer-nav">
+			<div class="footer-nav__item">
+				<div class="footer-nav__header">Наши услуги</div>
+				<div class="footer-nav__links">
+					<div class="footer-nav__title">Разработка сайтов</div>
+					<a href="#" class="footer-nav__link">Интернет-магазины</a>
+					<a href="#" class="footer-nav__link">Лендинг-пейдж</a>
+					<a href="#" class="footer-nav__link">Корпоративные сайты</a>
+					<a href="#" class="footer-nav__link">Сайт-визитка</a>
+					<a href="#" class="footer-nav__link">Адаптивные/мобильные сайты</a>
+				</div>
+			</div>
+			<div class="footer-nav__item">
+				<div class="footer-nav__header">Портфолио</div>
+				<div class="footer-nav__links">
+					<div class="footer-nav__title">Продвижение сайтов</div>
+					<a href="#" class="footer-nav__link">Стратегия и планирование</a>
+					<a href="#" class="footer-nav__link">Работа с конверсиями</a>
+					<a href="#" class="footer-nav__link">Внедрение новых каналов <br>продвижения</a>
+				</div>
+			</div>
+			<div class="footer-nav__item">
+				<div class="footer-nav__header">О компании</div>
+				<div class="footer-nav__links">
+					<div class="footer-nav__title">Аудит и анализ</div>
+					<a href="#" class="footer-nav__link">Аналитика трафика</a>
+					<a href="#" class="footer-nav__link">Работа с конверсиями</a>
+					<a href="#" class="footer-nav__link">SEO анализ</a>
+				</div>
+			</div>
+			<div class="footer-nav__item">
+				<div class="footer-nav__header">Контакты</div>
+				<div class="footer-nav__links">
+					<div class="footer-nav__title">Реклама</div>
+					<a href="#" class="footer-nav__link">Контекстная реклама</a>
+					<a href="#" class="footer-nav__link">Продвижение в<br> социальных сетях (SMM)</a>
+				</div>
+			</div>
+		</div>
+		<div class="page-footer__copyright">
+			<div class="page-footer__copy">2017 ES-Studio</div>
+			<div class="page-footer__wrap">
+				<div class="page-footer__metrika"></div>
+				<div class="page-footer__by">Создание и продвижение сайта <a href="#">ES-Studio</a></div>
+			</div>
+		</div>
+	</footer><!--page-footer-->
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
