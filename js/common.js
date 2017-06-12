@@ -1,4 +1,16 @@
 $(document).ready(function () {
+	//Universal Tabs
+	$(document).on('click', '[data-id]', function () {
+		var id = $(this).attr('data-id');
+		var taba = $(this).attr('data-taba');
+		$('[data-id="' + id + '"]').each(function () {
+			if ($(this).attr('data-taba') == taba) {
+				$(this).addClass('active').siblings().removeClass('active');
+			}
+		});
+		$('#' + id + ' > [data-taba="' + taba + '"]').show().removeClass('hide').siblings().hide().addClass('hide');
+	});
+	
 	$('.menu__wrap, .nav__link--services').click(function () {
 		$('.page-header').toggleClass('page-header--menu');
 		$('.left-menu').toggleClass('slide-left').css('transition', 'transform .6s');
