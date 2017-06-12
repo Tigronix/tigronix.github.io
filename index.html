@@ -11,7 +11,14 @@
 <body>
 	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
-			
+			<symbol id="icon-public" viewBox="0 0 32 32">
+			<title>public</title>
+			<path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM14.667 26.573c-5.267-0.653-9.333-5.133-9.333-10.573 0-0.827 0.107-1.613 0.28-2.387l6.387 6.387v1.333c0 1.467 1.2 2.667 2.667 2.667v2.573zM23.867 23.187c-0.347-1.080-1.333-1.853-2.533-1.853h-1.333v-4c0-0.733-0.6-1.333-1.333-1.333h-8v-2.667h2.667c0.733 0 1.333-0.6 1.333-1.333v-2.667h2.667c1.467 0 2.667-1.2 2.667-2.667v-0.547c3.907 1.587 6.667 5.413 6.667 9.88 0 2.773-1.067 5.293-2.8 7.187z"></path>
+			</symbol>
+			<symbol id="icon-location" viewBox="0 0 32 32">
+			<title>location</title>
+			<path d="M15.938 32c0 0-9.938-14.062-9.938-20.062 0-11.813 9.938-11.938 9.938-11.938s10.062 0.125 10.062 11.875c0 6.187-10.062 20.125-10.062 20.125zM16 6c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z"></path>
+			</symbol>
 		</defs>
 	</svg>
 	<header class="page-header">
@@ -23,649 +30,654 @@
 			</span>
 			<div class="hamburger__text">меню</div>
 		</div>
-		<a href="#" class="page-header__logo"></a>
+		<a href="#" class="page-header__logo"><svg class="icon icon-public"><use xlink:href="#icon-public"></use></svg></a>
 		<div class="page-header__desc">
 			<div class="t1">Лазерная эпиляция без боли</div>
 			<div class="t2">сеть клиник лазерной эпиляции и косметологии</div>
-			<div class="page-header__location">Москва</div>
-			<div class="page-header__metro">
-				<a href="#" class="page-header__metro-item">Ленинский проспект</a>
-				<a href="#" class="page-header__metro-item">Курская</a>
-				<a href="#" class="page-header__metro-item">Ломоносовский проспект</a>
-				<a href="#" class="page-header__metro-item">Октябрьское поле</a>
-			</div>
+		</div>
+		<div class="page-header__location"><i class="icon-wrap"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg></i><span>Москва</span></div>
+		<div class="page-header__metro">
+			<a href="#" class="page-header__metro-item">Ленинский проспект</a>
+			<a href="#" class="page-header__metro-item">Курская</a>
+			<a href="#" class="page-header__metro-item">Ломоносовский проспект</a>
+			<a href="#" class="page-header__metro-item">Октябрьское поле</a>
 		</div>
 		<div class="page-header__phone">+7 (495) 100-15-10</div>
 	</header><!--page-header-->
 	<main class="main">
-		<aside class="left-menu">
-			<form class="left-menu__form">
-				<div class="left-menu__sell">
-					<div class="t1">Акция!</div>
-					<div class="t2"> ТОЛЬКО ДО 07.06.2017 </div>
-					<div class="t3"> ЭПИЛЯЦИЯ ПОДМЫШЕК</div>
-					<div class="t4">БЕСПЛАТНО!</div>
-				</div>
-				<div class="left-menu__header"> ОНЛАЙН ЗАЯВКА </div>
-				<input placeholder="Введите ваше имя" type="text" class="left-menu__input">
-				<input placeholder="Введите ваш телефон" type="tel" class="left-menu__input">
-				<div class="left-menu__text">Выберите зону для эпиляции</div>
-				<div class="left-menu__list">
-					<div class="left-menu__inpbox"><input id="left-menu__input1"  type="checkbox" class="left-menu__input"><label for="left-menu__input1" class="left-menu__label">Зона бикини</label></div>
-					<div class="left-menu__inpbox"><input id="left-menu__input2"  type="checkbox" class="left-menu__input"><label for="left-menu__input2" class="left-menu__label">Спина</label></div>
-					<div class="left-menu__inpbox"><input id="left-menu__input3"  type="checkbox" class="left-menu__input"><label for="left-menu__input3" class="left-menu__label">Лицо</label></div>
-					<div class="left-menu__inpbox"><input id="left-menu__input4"  type="checkbox" class="left-menu__input"><label for="left-menu__input4" class="left-menu__label">Верхняя губа</label></div>
-					<div class="left-menu__inpbox"><input id="left-menu__input5"  type="checkbox" class="left-menu__input"><label for="left-menu__input5" class="left-menu__label">Руки</label></div>
-					<div class="left-menu__inpbox"><input id="left-menu__inputrEW"  type="checkbox" class="left-menu__input"><label for="left-menu__inputrEW" class="left-menu__label">Живот</label></div>
-					<div class="left-menu__inpbox"><input id="left-menu__input7"  type="checkbox" class="left-menu__input"><label for="left-menu__input7" class="left-menu__label">Подмышки</label></div>
-					<div class="left-menu__inpbox"><input id="left-menu__input8"  type="checkbox" class="left-menu__input"><label for="left-menu__input8" class="left-menu__label">Ноги</label></div>
-					<button type="submit" class="left-menu__submit">Отправить заявку</button>
-				</div>
-			</form>
-			<section class="menu-products">
-				<div class="menu-products__product">
-					<div class="menu-products__img"><img src="" alt=""></div>
-					<div class="menu-products__desc"></div>
-					<div class="menu-products__purpose"></div>
-				</div>
-				<div class="menu-products__product">
-					<div class="menu-products__img"><img src="" alt=""></div>
-					<div class="menu-products__desc"></div>
-					<div class="menu-products__purpose"></div>
-				</div>
-				<div class="menu-products__product">
-					<div class="menu-products__img"><img src="" alt=""></div>
-					<div class="menu-products__desc"></div>
-					<div class="menu-products__purpose"></div>
-				</div>
-				<div class="menu-products__product">
-					<div class="menu-products__img"><img src="" alt=""></div>
-					<div class="menu-products__desc"></div>
-					<div class="menu-products__purpose"></div>
-				</div>
-			</section>
-			<section class="licence">
-				<div class="licence__header">Лицензии</div>
-				<a href="#" data-lightbox="" class="licence__item"><img src="" alt=""></a>
-				<a href="#" data-lightbox="" class="licence__item"><img src="" alt=""></a>
-			</section>
-		</aside><!--left-menu-->
-		<div class="right-side">
-			<section class="slider-main">
-				<div class="slider-main__item">
-					<img src="" alt="" class="slider-main__img">
-					<div class="slider-main__text">
-						<div class="t1">Лазерная эпиляция</div>
-						<div class="t2">Современный безболезненный способ удаления волос</div>
-						<div class="t3">от <span class="price">1 000</span> руб.</div>
+		<div class="main-wrap">
+			<aside class="left-menu">
+				<form class="left-menu__form">
+					<div class="left-menu__sell">
+						<div class="t1">Акция!</div>
+						<div class="t2"> ТОЛЬКО ДО 07.06.2017 </div>
+						<div class="t3"> ЭПИЛЯЦИЯ ПОДМЫШЕК</div>
+						<div class="t4">БЕСПЛАТНО!</div>
 					</div>
-				</div>
-				<div class="slider-main__item">
-					<img src="" alt="" class="slider-main__img">
-					<div class="slider-main__text">
-						<div class="t1">Лазерная эпиляция</div>
-						<div class="t2">Современный безболезненный способ удаления волос</div>
-						<div class="t3">от <span class="price">1 000</span> руб.</div>
+					<div class="left-menu__header"> ОНЛАЙН ЗАЯВКА </div>
+					<input placeholder="Введите ваше имя" type="text" class="left-menu__input">
+					<input placeholder="Введите ваш телефон" type="tel" class="left-menu__input">
+					<div class="left-menu__text">Выберите зону для эпиляции</div>
+					<div class="left-menu__list">
+						<div class="inpbox"><input id="input1"  type="checkbox" class="inpbox__input"><label for="input1" class="inpbox__label">Зона бикини</label></div>
+						<div class="inpbox"><input id="input2"  type="checkbox" class="inpbox__input"><label for="input2" class="inpbox__label">Спина</label></div>
+						<div class="inpbox"><input id="input3"  type="checkbox" class="inpbox__input"><label for="input3" class="inpbox__label">Лицо</label></div>
+						<div class="inpbox"><input id="input4"  type="checkbox" class="inpbox__input"><label for="input4" class="inpbox__label">Верхняя губа</label></div>
+						<div class="inpbox"><input id="input5"  type="checkbox" class="inpbox__input"><label for="input5" class="inpbox__label">Руки</label></div>
+						<div class="inpbox"><input id="inputrEW"  type="checkbox" class="inpbox__input"><label for="inputrEW" class="inpbox__label">Живот</label></div>
+						<div class="inpbox"><input id="input7"  type="checkbox" class="inpbox__input"><label for="input7" class="inpbox__label">Подмышки</label></div>
+						<div class="inpbox"><input id="input8"  type="checkbox" class="inpbox__input"><label for="input8" class="inpbox__label">Ноги</label></div>
+						<button type="submit" class="btn left-menu__submit">Отправить заявку</button>
 					</div>
-				</div>
-				<div class="slider-main__item">
-					<img src="" alt="" class="slider-main__img">
-					<div class="slider-main__text">
-						<div class="t1">Лазерная эпиляция</div>
-						<div class="t2">Современный безболезненный способ удаления волос</div>
-						<div class="t3">от <span class="price">1 000</span> руб.</div>
+				</form>
+				<section class="menu-products">
+					<div class="menu-products__product">
+						<div class="menu-products__img"><img src="img/product1.jpg" alt=""></div>
+						<div class="menu-products__desc">
+							 LightSheer Duet от компании «Lumenis» (США).<br>
+							 Повзволяет проводить абсолютно безболезненную эпиляцию на самых чувствительных участках тела при любом фототипе кожи. 
+						</div>
+						<div class="menu-products__purpose"> Официально разрешён для применения на загорелой коже и идеально подходит для эпиляции светлых волос. </div>
 					</div>
-				</div>
-				<div class="slider-main__item">
-					<img src="" alt="" class="slider-main__img">
-					<div class="slider-main__text">
-						<div class="t1">Лазерная эпиляция</div>
-						<div class="t2">Современный безболезненный способ удаления волос</div>
-						<div class="t3">от <span class="price">1 000</span> руб.</div>
+					<div class="menu-products__product">
+						<div class="menu-products__img"><img src="img/product2.jpg" alt=""></div>
+						<div class="menu-products__desc"> М22 - многофункциональная платформа компании «Lumenis», сочетающая IPL-технологии и прогрессивные разработки лазерной косметологии. </div>
+						<div class="menu-products__purpose"> Удаление сосудистых и пигментных дисхромий, фотоомоложение и термолифтинг возрастной кожи, терапия проблемной кожи и многое-другое. </div>
 					</div>
-				</div>
-			</section>
-			<form action="" class="search-form">
-				<div class="search-form__desc">
-					<i class="icon"></i>
-					<span class="t">Форма быстрого поиска салона:</span>
-				</div>
-				<select class="search-form__select styler">
-					<option value="">Лазерная эпиляция</option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-				<select class="search-form__select styler">
-					<option value="">Зона бикини</option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-				<select class="search-form__select styler">
-					<option value="">Выберите метро</option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-				<button class="search-form__submit">Найти</button>
-			</form>
-			<h2 class="h2">Лазерная эпиляция в москве</h2>
-			<p class="text"> Эпиляция - одна из самых популярных процедур среди тех женщин, которые хотят быть красивыми каждый день. Удаление волос происходит на длительное время (в отличие от депиляции) путем разрушения структуры волосяных луковиц различными способами.</p>
-			<p class="text">Эпиляция в Москве осуществляется в огромном количестве салонов красоты, находящихся в разных уголках города: поможет вам быстро найти заведение, подходящее по расположению. Представленные салоны предлагают своим гостям расширенный комплекс услуг (уход за ногтями и волосами, косметология, инновационные методы поддержания красивой формы тела и прочее). Вы можете перейти на сайт интересующей вас студии красоты и здоровья и сразу же записаться на любую процедуру. </p>
-			<section class="product">
-				<div class="product__name">
-					<a href="#" class="product__logo"></a>
-					<div class="product__phone">+7 (495) 100-15-10</div>
-					<div class="product__address">
-						<div class="t1">м. Ленинский проспект</div>
-						<div class="t2">ЮЗАО, 5 минут от метро</div>
+					<div class="menu-products__product">
+						<div class="menu-products__img"><img src="img/product3.jpg" alt=""></div>
+						<div class="menu-products__desc"> Clear+Brilliant - первый фракционный неаблятивный лазер, применяемый для бережного лазерного омоложения кожи.Особая длина волны и оптимальное распределение светового потока позволяет создавать чувствительные микрозоны в толще кожи на безопасной глубине. </div>
+						<div class="menu-products__purpose"> Clear+Brilliant - эффективное и безопасное лазерное омоложение без реабилитационного периода. </div>
 					</div>
-					<div class="product__schedule">
-						<div class="t1">Время работы:</div>
-						<div class="t2">Ежедневно 10:00-21:00</div>
+					<div class="menu-products__product">
+						<div class="menu-products__img"><img src="img/product4.jpg" alt=""></div>
+						<div class="menu-products__desc"> Antera 3D - инновационная система сканирования, позволяющая проводить комплексную диагностику состояния кожного покрова. </div>
+						<div class="menu-products__purpose"> Antera 3D - незаменимый инструмент для полноценного консультативного приёма и отслеживания изменений в структуре кожи до и после процедур. </div>
 					</div>
-					<a href="#" class="product__btn">Отправить заявку</a>
-				</div>
-				<div class="product__list">
-					<div class="product__list-header">Список предоставляемых услуг:</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция бикини глубокое</a>
-						<div class="price">5 300 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция ноги полностью</a>
-						<div class="price">12 000 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция бикини классическое</a>
-						<div class="price">3 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция подмышечная область</a>
-						<div class="price">2 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция верхняя губа</a>
-						<div class="price">1 200 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция руки до или выше локтя</a>
-						<div class="price">4 300 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция голень</a>
-						<div class="price">6 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция руки полностью</a>
-						<div class="price">7 000 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция лицо</a>
-						<div class="price">4 800 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция грудь</a>
-						<div class="price">3 500 <span class="valute">руб.</span></div>
-					</div>
-				</div>
-				<div class="product__slider">
-					<img src="img/product-slider1.jpg" alt="">
-					<img src="img/product-slider2.jpg" alt="">
-					<img src="img/product-slider3.jpg" alt="">
-				</div>
-			</section>
-			<section class="product">
-				<div class="product__name">
-					<a href="#" class="product__logo"></a>
-					<div class="product__phone">+7 (495) 100-15-10</div>
-					<div class="product__address">
-						<div class="t1">м. Ленинский проспект</div>
-						<div class="t2">ЮЗАО, 5 минут от метро</div>
-					</div>
-					<div class="product__schedule">
-						<div class="t1">Время работы:</div>
-						<div class="t2">Ежедневно 10:00-21:00</div>
-					</div>
-					<a href="#" class="product__btn">Отправить заявку</a>
-				</div>
-				<div class="product__list">
-					<div class="product__list-header">Список предоставляемых услуг:</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция бикини глубокое</a>
-						<div class="price">5 300 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция ноги полностью</a>
-						<div class="price">12 000 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция бикини классическое</a>
-						<div class="price">3 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция подмышечная область</a>
-						<div class="price">2 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция верхняя губа</a>
-						<div class="price">1 200 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция руки до или выше локтя</a>
-						<div class="price">4 300 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция голень</a>
-						<div class="price">6 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция руки полностью</a>
-						<div class="price">7 000 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция лицо</a>
-						<div class="price">4 800 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция грудь</a>
-						<div class="price">3 500 <span class="valute">руб.</span></div>
-					</div>
-				</div>
-				<div class="product__slider">
-					<img src="img/product-slider1.jpg" alt="">
-					<img src="img/product-slider2.jpg" alt="">
-					<img src="img/product-slider3.jpg" alt="">
-				</div>
-			</section>
-			<section class="product">
-				<div class="product__name">
-					<a href="#" class="product__logo"></a>
-					<div class="product__phone">+7 (495) 100-15-10</div>
-					<div class="product__address">
-						<div class="t1">м. Ленинский проспект</div>
-						<div class="t2">ЮЗАО, 5 минут от метро</div>
-					</div>
-					<div class="product__schedule">
-						<div class="t1">Время работы:</div>
-						<div class="t2">Ежедневно 10:00-21:00</div>
-					</div>
-					<a href="#" class="product__btn">Отправить заявку</a>
-				</div>
-				<div class="product__list">
-					<div class="product__list-header">Список предоставляемых услуг:</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция бикини глубокое</a>
-						<div class="price">5 300 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция ноги полностью</a>
-						<div class="price">12 000 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция бикини классическое</a>
-						<div class="price">3 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция подмышечная область</a>
-						<div class="price">2 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция верхняя губа</a>
-						<div class="price">1 200 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция руки до или выше локтя</a>
-						<div class="price">4 300 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция голень</a>
-						<div class="price">6 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция руки полностью</a>
-						<div class="price">7 000 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция лицо</a>
-						<div class="price">4 800 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция грудь</a>
-						<div class="price">3 500 <span class="valute">руб.</span></div>
-					</div>
-				</div>
-				<div class="product__slider">
-					<img src="img/product-slider1.jpg" alt="">
-					<img src="img/product-slider2.jpg" alt="">
-					<img src="img/product-slider3.jpg" alt="">
-				</div>
-			</section>
-			<section class="product">
-				<div class="product__name">
-					<a href="#" class="product__logo"></a>
-					<div class="product__phone">+7 (495) 100-15-10</div>
-					<div class="product__address">
-						<div class="t1">м. Ленинский проспект</div>
-						<div class="t2">ЮЗАО, 5 минут от метро</div>
-					</div>
-					<div class="product__schedule">
-						<div class="t1">Время работы:</div>
-						<div class="t2">Ежедневно 10:00-21:00</div>
-					</div>
-					<a href="#" class="product__btn">Отправить заявку</a>
-				</div>
-				<div class="product__list">
-					<div class="product__list-header">Список предоставляемых услуг:</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция бикини глубокое</a>
-						<div class="price">5 300 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция ноги полностью</a>
-						<div class="price">12 000 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция бикини классическое</a>
-						<div class="price">3 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция подмышечная область</a>
-						<div class="price">2 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция верхняя губа</a>
-						<div class="price">1 200 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция руки до или выше локтя</a>
-						<div class="price">4 300 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция голень</a>
-						<div class="price">6 500 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция руки полностью</a>
-						<div class="price">7 000 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция лицо</a>
-						<div class="price">4 800 <span class="valute">руб.</span></div>
-					</div>
-					<div class="product__list-item">
-						<div class="img"><img src="" alt=""></div>
-						<a href="#" class="name">Эпиляция грудь</a>
-						<div class="price">3 500 <span class="valute">руб.</span></div>
-					</div>
-				</div>
-				<div class="product__slider">
-					<img src="img/product-slider1.jpg" alt="">
-					<img src="img/product-slider2.jpg" alt="">
-					<img src="img/product-slider3.jpg" alt="">
-				</div>
-			</section>
-			<h2 class="h2">Преимущества лазерной эпиляции:</h2>
-			<section class="advantages">
-				<div class="advantages__item"><span class="advantages__color-pink">Эпиляция без боли.</span>  Вакуумная технология гарантирует комфортность процедуры даже при низком болевом пороге. </div>
-				<div class="advantages__item"><span class="advantages__color-pink">Круглый год.</span>  Инновационные параметры LightSheer DUET позволяют проводить эпиляцию даже на загоревшей коже летом. </div>
-				<div class="advantages__item"><span class="advantages__color-pink">Удаление навсегда.</span>  Научно доказано, что после 4 процедур более 85% волос перестают расти. </div>
-				<div class="advantages__item"><span class="advantages__color-pink">Никаких вросших волос.</span>  LightSheer DUET не воздействует на волос механически, поэтому вероятность вросших волос исключена. </div>
-				<div class="advantages__item"><span class="advantages__color-pink">Универсальность.</span>  LightSheer DUET эффективен на светлых, темных и даже рыжих волосах (кроме седых), официально разрешен к применения
-на I-VI фототипах кожи. </div>
-				<div class="advantages__item"><span class="advantages__color-pink">Самая быстрая эпиляция.</span>  Лазерная эпиляция бикини или лазерная эпиляция ног, например, займет максимум 20 минут, а лазерная эпиляция подмышек пройдет всего за 5-7 минут. </div>
-				<div class="advantages__item"><span class="advantages__color-pink">Абсолютно безопасно.</span>  Безопасность лазерного воздействия на человека подтверждается обширной базой клинических исследований по
-LightSheer DUET  с 1998 года. </div>
-				<div class="advantages__item"><span class="advantages__color-pink">Эпиляция без следа.</span>  Сразу после процедуры Вы можете идти на важное совещание или романтическое свидание - никто не догадается, что только что Вы были на лазерной эпиляции. </div>
-			</section><!--advantages-->
-			<section class="why">
-				<h2 class="h2">Почему необходимо несколько процедур?</h2>
-				<p class="text"> В результате одной процедуры уничтожается 10-15% луковиц, находящихся на момент эпиляции в фазе роста.  Но поскольку лазер повреждает только волосяные луковицы, находящиеся в активной стадии цикла роста волос, для полного их удаления необходимо 6-8 процедур с интервалом 1-1,5-2 месяца. </p>
-				<div class="why__wrap">
-					<div class="why__item">
-						<div class="why__header">1-2 процедуры</div>
-						<div class="why__img"><img src="" alt=""></div>
-						<div class="why__circle">
-							<div class="t1">удалено</div>
-							<div class="t2">до <span class="number">30%</span></div>
-							<div class="t3">волосков</div>
+				</section>
+				<section class="licence">
+					<div class="licence__header">Лицензии</div>
+					<a href="img/licence1.jpg" data-lightbox="gallery" class="licence__item"><img src="img/licence1.jpg" alt=""></a>
+					<a href="img/licence2.jpg" data-lightbox="gallery" class="licence__item"><img src="img/licence2.jpg" alt=""></a>
+				</section>
+			</aside><!--left-menu-->
+			<div class="right-side">
+				<section class="slider-main">
+					<div class="slider-main__item">
+						<img src="" alt="" class="slider-main__img">
+						<div class="slider-main__text">
+							<div class="t1">Лазерная эпиляция</div>
+							<div class="t2">Современный безболезненный способ удаления волос</div>
+							<div class="t3">от <span class="price">1 000</span> руб.</div>
 						</div>
 					</div>
-					<div class="why__item">
-						<div class="why__header">3-4 процедуры</div>
-						<div class="why__img"><img src="" alt=""></div>
-						<div class="why__circle">
-							<div class="t1">удалено</div>
-							<div class="t2">до <span class="number">60%</span></div>
-							<div class="t3">волосков</div>
+					<div class="slider-main__item">
+						<img src="" alt="" class="slider-main__img">
+						<div class="slider-main__text">
+							<div class="t1">Лазерная эпиляция</div>
+							<div class="t2">Современный безболезненный способ удаления волос</div>
+							<div class="t3">от <span class="price">1 000</span> руб.</div>
 						</div>
 					</div>
-					<div class="why__item">
-						<div class="why__header">5-6 процедуры</div>
-						<div class="why__img"><img src="" alt=""></div>
-						<div class="why__circle why-circle--green">
-							<div class="t1">удалено</div>
-							<div class="t2">до <span class="number">90%</span></div>
-							<div class="t3">волосков</div>
+					<div class="slider-main__item">
+						<img src="" alt="" class="slider-main__img">
+						<div class="slider-main__text">
+							<div class="t1">Лазерная эпиляция</div>
+							<div class="t2">Современный безболезненный способ удаления волос</div>
+							<div class="t3">от <span class="price">1 000</span> руб.</div>
 						</div>
 					</div>
-					<div class="why__item">
-						<div class="why__header">Удаление навсегда</div>
-						<div class="why__desc">Научно доказано, что после 4 процедур более 85% волос перестают расти.</div>
-						<div class="why__img"><img src="" alt=""></div>
-						<div class="why__icon">
-							
+					<div class="slider-main__item">
+						<img src="" alt="" class="slider-main__img">
+						<div class="slider-main__text">
+							<div class="t1">Лазерная эпиляция</div>
+							<div class="t2">Современный безболезненный способ удаления волос</div>
+							<div class="t3">от <span class="price">1 000</span> руб.</div>
 						</div>
 					</div>
-				</div>
-			</section><!--why-->
-			<section class="contraindication">
-				<h2 class="h2">Противопоказания</h2>
-				<p class="text"> Перед процедурой Вас проконсультирует наш опытный специалист и предоставит индивидуальные рекомендации<br>
-				Ниже приведен список основных противопоказаний:
-				</p>
-				<ul class="list contraindication__list">
-					<li class="list__li">Различные заболевания эпидермиса - особенно воспаления;</li>
-					<li class="list__li">Герпес;</li>
-					<li class="list__li">Туберкулёз;</li>
-					<li class="list__li">Псориаз;</li>
-					<li class="list__li">Вирусные заболевания;</li>
-					<li class="list__li">Вирусные заболевания;</li>
-					<li class="list__li">Сердечно-сосудистые заболевания;</li>
-					<li class="list__li">Сахарный диабет;</li>
-					<li class="list__li">Доброкачественные и злокачественные опухоли;</li>
-					<li class="list__li">Фотодерматит;</li>
-					<li class="list__li">Лейкоз крови;</li>
-					<li class="list__li">Беременность;</li>
-					<li class="list__li">Волосяные родимые пятна в зоне воздействия;</li>
-					<li class="list__li">Эпилепсия;</li>
-				</ul><!--list-->
-				<div class="contraindication__img">
-					<img src="" alt="">
-					<div class="text">
-						<a href="#" class="contraindication__btn">Записаться на бесплатную консультацию</a>
+				</section>
+				<form action="" class="search-form">
+					<div class="search-form__desc">
+						<i class="icon"></i>
+						<span class="t">Форма быстрого поиска салона:</span>
 					</div>
-				</div>
-			</section><!--contraindication-->
-			<div class="table__header">Эпиляция LightSheer DUET для женщин</div>
-			<table class="table">
-				<thead>
-					<tr class="table__row table__row--head">
-						<td class="table__cell"></td>
-						<td class="table__cell">1 сеанс</td>
-						<td class="table__cell" rowspan="2">4 сеанса</td>
-						<td class="table__cell" rowspan="2">5 сеансов</td>
-						<td class="table__cell" rowspan="2">6 сеансов</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="table__row table__row--head-desc">
-						<td class="table__cell">Область эпиляции</td>
-						<td class="table__cell">за сеанс</td>
-						<td class="table__cell">за сеанс</td>
-						<td class="table__cell">всего</td>
-						<td class="table__cell">за сеанс</td>
-						<td class="table__cell">всего</td>
-						<td class="table__cell">за сеанс</td>
-						<td class="table__cell">всего</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					<tr class="table__row">
-						<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 200</span> руб.</td>
-						<td class="table__cell">от <span class="number">1 500</span> руб.</td>
-					</tr>
-					
-				</tbody>
-			</table>
-		</div><!--content-->
+					<select class="search-form__select styler">
+						<option value="">Лазерная эпиляция</option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+					</select>
+					<select class="search-form__select styler">
+						<option value="">Зона бикини</option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+					</select>
+					<select class="search-form__select styler">
+						<option value="">Выберите метро</option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+						<option value=""></option>
+					</select>
+					<button class="search-form__submit">Найти</button>
+				</form>
+				<h2 class="h2">Лазерная эпиляция в москве</h2>
+				<p class="text"> Эпиляция - одна из самых популярных процедур среди тех женщин, которые хотят быть красивыми каждый день. Удаление волос происходит на длительное время (в отличие от депиляции) путем разрушения структуры волосяных луковиц различными способами.</p>
+				<p class="text">Эпиляция в Москве осуществляется в огромном количестве салонов красоты, находящихся в разных уголках города: поможет вам быстро найти заведение, подходящее по расположению. Представленные салоны предлагают своим гостям расширенный комплекс услуг (уход за ногтями и волосами, косметология, инновационные методы поддержания красивой формы тела и прочее). Вы можете перейти на сайт интересующей вас студии красоты и здоровья и сразу же записаться на любую процедуру. </p>
+				<section class="product">
+					<div class="product__name">
+						<a href="#" class="product__logo"></a>
+						<div class="product__phone">+7 (495) 100-15-10</div>
+						<div class="product__address">
+							<div class="t1">м. Ленинский проспект</div>
+							<div class="t2">ЮЗАО, 5 минут от метро</div>
+						</div>
+						<div class="product__schedule">
+							<div class="t1">Время работы:</div>
+							<div class="t2">Ежедневно 10:00-21:00</div>
+						</div>
+						<a href="#" class="product__btn">Отправить заявку</a>
+					</div>
+					<div class="product__list">
+						<div class="product__list-header">Список предоставляемых услуг:</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция бикини глубокое</a>
+							<div class="price">5 300 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция ноги полностью</a>
+							<div class="price">12 000 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция бикини классическое</a>
+							<div class="price">3 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция подмышечная область</a>
+							<div class="price">2 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция верхняя губа</a>
+							<div class="price">1 200 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция руки до или выше локтя</a>
+							<div class="price">4 300 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция голень</a>
+							<div class="price">6 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция руки полностью</a>
+							<div class="price">7 000 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция лицо</a>
+							<div class="price">4 800 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция грудь</a>
+							<div class="price">3 500 <span class="valute">руб.</span></div>
+						</div>
+					</div>
+					<div class="product__slider">
+						<img src="img/product-slider1.jpg" alt="">
+						<img src="img/product-slider2.jpg" alt="">
+						<img src="img/product-slider3.jpg" alt="">
+					</div>
+				</section>
+				<section class="product">
+					<div class="product__name">
+						<a href="#" class="product__logo"></a>
+						<div class="product__phone">+7 (495) 100-15-10</div>
+						<div class="product__address">
+							<div class="t1">м. Ленинский проспект</div>
+							<div class="t2">ЮЗАО, 5 минут от метро</div>
+						</div>
+						<div class="product__schedule">
+							<div class="t1">Время работы:</div>
+							<div class="t2">Ежедневно 10:00-21:00</div>
+						</div>
+						<a href="#" class="product__btn">Отправить заявку</a>
+					</div>
+					<div class="product__list">
+						<div class="product__list-header">Список предоставляемых услуг:</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция бикини глубокое</a>
+							<div class="price">5 300 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция ноги полностью</a>
+							<div class="price">12 000 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция бикини классическое</a>
+							<div class="price">3 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция подмышечная область</a>
+							<div class="price">2 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция верхняя губа</a>
+							<div class="price">1 200 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция руки до или выше локтя</a>
+							<div class="price">4 300 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция голень</a>
+							<div class="price">6 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция руки полностью</a>
+							<div class="price">7 000 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция лицо</a>
+							<div class="price">4 800 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция грудь</a>
+							<div class="price">3 500 <span class="valute">руб.</span></div>
+						</div>
+					</div>
+					<div class="product__slider">
+						<img src="img/product-slider1.jpg" alt="">
+						<img src="img/product-slider2.jpg" alt="">
+						<img src="img/product-slider3.jpg" alt="">
+					</div>
+				</section>
+				<section class="product">
+					<div class="product__name">
+						<a href="#" class="product__logo"></a>
+						<div class="product__phone">+7 (495) 100-15-10</div>
+						<div class="product__address">
+							<div class="t1">м. Ленинский проспект</div>
+							<div class="t2">ЮЗАО, 5 минут от метро</div>
+						</div>
+						<div class="product__schedule">
+							<div class="t1">Время работы:</div>
+							<div class="t2">Ежедневно 10:00-21:00</div>
+						</div>
+						<a href="#" class="product__btn">Отправить заявку</a>
+					</div>
+					<div class="product__list">
+						<div class="product__list-header">Список предоставляемых услуг:</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция бикини глубокое</a>
+							<div class="price">5 300 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция ноги полностью</a>
+							<div class="price">12 000 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция бикини классическое</a>
+							<div class="price">3 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция подмышечная область</a>
+							<div class="price">2 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция верхняя губа</a>
+							<div class="price">1 200 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция руки до или выше локтя</a>
+							<div class="price">4 300 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция голень</a>
+							<div class="price">6 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция руки полностью</a>
+							<div class="price">7 000 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция лицо</a>
+							<div class="price">4 800 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция грудь</a>
+							<div class="price">3 500 <span class="valute">руб.</span></div>
+						</div>
+					</div>
+					<div class="product__slider">
+						<img src="img/product-slider1.jpg" alt="">
+						<img src="img/product-slider2.jpg" alt="">
+						<img src="img/product-slider3.jpg" alt="">
+					</div>
+				</section>
+				<section class="product">
+					<div class="product__name">
+						<a href="#" class="product__logo"></a>
+						<div class="product__phone">+7 (495) 100-15-10</div>
+						<div class="product__address">
+							<div class="t1">м. Ленинский проспект</div>
+							<div class="t2">ЮЗАО, 5 минут от метро</div>
+						</div>
+						<div class="product__schedule">
+							<div class="t1">Время работы:</div>
+							<div class="t2">Ежедневно 10:00-21:00</div>
+						</div>
+						<a href="#" class="product__btn">Отправить заявку</a>
+					</div>
+					<div class="product__list">
+						<div class="product__list-header">Список предоставляемых услуг:</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция бикини глубокое</a>
+							<div class="price">5 300 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция ноги полностью</a>
+							<div class="price">12 000 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция бикини классическое</a>
+							<div class="price">3 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция подмышечная область</a>
+							<div class="price">2 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция верхняя губа</a>
+							<div class="price">1 200 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция руки до или выше локтя</a>
+							<div class="price">4 300 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция голень</a>
+							<div class="price">6 500 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция руки полностью</a>
+							<div class="price">7 000 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция лицо</a>
+							<div class="price">4 800 <span class="valute">руб.</span></div>
+						</div>
+						<div class="product__list-item">
+							<div class="img"><img src="" alt=""></div>
+							<a href="#" class="name">Эпиляция грудь</a>
+							<div class="price">3 500 <span class="valute">руб.</span></div>
+						</div>
+					</div>
+					<div class="product__slider">
+						<img src="img/product-slider1.jpg" alt="">
+						<img src="img/product-slider2.jpg" alt="">
+						<img src="img/product-slider3.jpg" alt="">
+					</div>
+				</section>
+				<h2 class="h2">Преимущества лазерной эпиляции:</h2>
+				<section class="advantages">
+					<div class="advantages__item"><span class="advantages__color-pink">Эпиляция без боли.</span>  Вакуумная технология гарантирует комфортность процедуры даже при низком болевом пороге. </div>
+					<div class="advantages__item"><span class="advantages__color-pink">Круглый год.</span>  Инновационные параметры LightSheer DUET позволяют проводить эпиляцию даже на загоревшей коже летом. </div>
+					<div class="advantages__item"><span class="advantages__color-pink">Удаление навсегда.</span>  Научно доказано, что после 4 процедур более 85% волос перестают расти. </div>
+					<div class="advantages__item"><span class="advantages__color-pink">Никаких вросших волос.</span>  LightSheer DUET не воздействует на волос механически, поэтому вероятность вросших волос исключена. </div>
+					<div class="advantages__item"><span class="advantages__color-pink">Универсальность.</span>  LightSheer DUET эффективен на светлых, темных и даже рыжих волосах (кроме седых), официально разрешен к применения
+	на I-VI фототипах кожи. </div>
+					<div class="advantages__item"><span class="advantages__color-pink">Самая быстрая эпиляция.</span>  Лазерная эпиляция бикини или лазерная эпиляция ног, например, займет максимум 20 минут, а лазерная эпиляция подмышек пройдет всего за 5-7 минут. </div>
+					<div class="advantages__item"><span class="advantages__color-pink">Абсолютно безопасно.</span>  Безопасность лазерного воздействия на человека подтверждается обширной базой клинических исследований по
+	LightSheer DUET  с 1998 года. </div>
+					<div class="advantages__item"><span class="advantages__color-pink">Эпиляция без следа.</span>  Сразу после процедуры Вы можете идти на важное совещание или романтическое свидание - никто не догадается, что только что Вы были на лазерной эпиляции. </div>
+				</section><!--advantages-->
+				<section class="why">
+					<h2 class="h2">Почему необходимо несколько процедур?</h2>
+					<p class="text"> В результате одной процедуры уничтожается 10-15% луковиц, находящихся на момент эпиляции в фазе роста.  Но поскольку лазер повреждает только волосяные луковицы, находящиеся в активной стадии цикла роста волос, для полного их удаления необходимо 6-8 процедур с интервалом 1-1,5-2 месяца. </p>
+					<div class="why__wrap">
+						<div class="why__item">
+							<div class="why__header">1-2 процедуры</div>
+							<div class="why__img"><img src="" alt=""></div>
+							<div class="why__circle">
+								<div class="t1">удалено</div>
+								<div class="t2">до <span class="number">30%</span></div>
+								<div class="t3">волосков</div>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__header">3-4 процедуры</div>
+							<div class="why__img"><img src="" alt=""></div>
+							<div class="why__circle">
+								<div class="t1">удалено</div>
+								<div class="t2">до <span class="number">60%</span></div>
+								<div class="t3">волосков</div>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__header">5-6 процедуры</div>
+							<div class="why__img"><img src="" alt=""></div>
+							<div class="why__circle why-circle--green">
+								<div class="t1">удалено</div>
+								<div class="t2">до <span class="number">90%</span></div>
+								<div class="t3">волосков</div>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__header">Удаление навсегда</div>
+							<div class="why__desc">Научно доказано, что после 4 процедур более 85% волос перестают расти.</div>
+							<div class="why__img"><img src="" alt=""></div>
+							<div class="why__icon">
+
+							</div>
+						</div>
+					</div>
+				</section><!--why-->
+				<section class="contraindication">
+					<h2 class="h2">Противопоказания</h2>
+					<p class="text"> Перед процедурой Вас проконсультирует наш опытный специалист и предоставит индивидуальные рекомендации<br>
+					Ниже приведен список основных противопоказаний:
+					</p>
+					<ul class="list contraindication__list">
+						<li class="list__li">Различные заболевания эпидермиса - особенно воспаления;</li>
+						<li class="list__li">Герпес;</li>
+						<li class="list__li">Туберкулёз;</li>
+						<li class="list__li">Псориаз;</li>
+						<li class="list__li">Вирусные заболевания;</li>
+						<li class="list__li">Вирусные заболевания;</li>
+						<li class="list__li">Сердечно-сосудистые заболевания;</li>
+						<li class="list__li">Сахарный диабет;</li>
+						<li class="list__li">Доброкачественные и злокачественные опухоли;</li>
+						<li class="list__li">Фотодерматит;</li>
+						<li class="list__li">Лейкоз крови;</li>
+						<li class="list__li">Беременность;</li>
+						<li class="list__li">Волосяные родимые пятна в зоне воздействия;</li>
+						<li class="list__li">Эпилепсия;</li>
+					</ul><!--list-->
+					<div class="contraindication__img">
+						<img src="" alt="">
+						<div class="text">
+							<a href="#" class="contraindication__btn">Записаться на бесплатную консультацию</a>
+						</div>
+					</div>
+				</section><!--contraindication-->
+				<div class="table__header">Эпиляция LightSheer DUET для женщин</div>
+				<table class="table">
+					<thead>
+						<tr class="table__row table__row--head">
+							<td class="table__cell"></td>
+							<td class="table__cell">1 сеанс</td>
+							<td class="table__cell" rowspan="2">4 сеанса</td>
+							<td class="table__cell" rowspan="2">5 сеансов</td>
+							<td class="table__cell" rowspan="2">6 сеансов</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table__row table__row--head-desc">
+							<td class="table__cell">Область эпиляции</td>
+							<td class="table__cell">за сеанс</td>
+							<td class="table__cell">за сеанс</td>
+							<td class="table__cell">всего</td>
+							<td class="table__cell">за сеанс</td>
+							<td class="table__cell">всего</td>
+							<td class="table__cell">за сеанс</td>
+							<td class="table__cell">всего</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+						<tr class="table__row">
+							<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+							<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div><!--content-->
+		</div>
 		<form action="" class="form-main">
 			<div class="form-main__desc">
 				<div class="t1">Акция!</div>

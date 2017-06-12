@@ -13,7 +13,7 @@ $(document).ready(function () {
 	
 	$('.menu__wrap, .nav__link--services').click(function () {
 		$('.page-header').toggleClass('page-header--menu');
-		$('.left-menu').toggleClass('slide-left').css('transition', 'transform .6s');
+		$('.page-header__metro').toggleClass('slide-left active').css('transition', 'transform .6s');
 		$('.hamburger').toggleClass('hamburgerActive');
 		$('body').toggleClass('overflow');
 	});
