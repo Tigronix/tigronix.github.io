@@ -888,11 +888,13 @@ span.hamb-close.hamb-closeActive span:after {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   margin-bottom: 34px; }
+  .product .icon-wrap {
+    font-size: 1.6vw;
+    height: 1.6vw;
+    margin-right: 10px;
+    width: 40px;
+    text-align: center; }
   .product__name {
     width: 27.47778537252221%;
     background: #c4198c;
@@ -924,14 +926,56 @@ span.hamb-close.hamb-closeActive span:after {
     font-size: 1.2vw;
     font-family: 'Lato';
     color: #fff;
-    font-weight: 900; }
-  .product__address .t1 {
-    font-size: 1.1vw;
-    color: #fff;
-    font-weight: 600; }
-  .product__address .t2 {
-    font-size: 1vw;
-    color: #fff; }
+    font-weight: 900;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px; }
+  .product__address {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 15px; }
+    .product__address .img {
+      width: 40px;
+      height: 40px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: #fff;
+      margin-right: 10px; }
+      .product__address .img img {
+        vertical-align: bottom;
+        width: 70%;
+        max-width: 30px; }
+    .product__address .t1 {
+      font-size: 1.1vw;
+      color: #fff;
+      font-weight: 600; }
+    .product__address .t2 {
+      font-size: 1vw;
+      color: #fff; }
   .product__logo {
     display: block; }
     .product__logo img {
@@ -940,7 +984,15 @@ span.hamb-close.hamb-closeActive span:after {
       vertical-align: bottom; }
   .product__schedule {
     font-size: 1vw;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 13px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .product__btn {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1107,3 +1159,163 @@ span.hamb-close.hamb-closeActive span:after {
       width: 100%;
       height: auto;
       vertical-align: bottom; }
+
+.advantages {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .advantages__item {
+    width: 48%;
+    font-size: 1vw;
+    color: #000;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px; }
+    .advantages__item:before {
+      content: '';
+      display: block;
+      font-family: 'FuturaDemiC';
+      color: #be007f;
+      font-size: 32px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .advantages__item:nth-child(1):before {
+      content: '1'; }
+    .advantages__item:nth-child(2):before {
+      content: '2'; }
+    .advantages__item:nth-child(3):before {
+      content: '3'; }
+    .advantages__item:nth-child(4):before {
+      content: '4'; }
+    .advantages__item:nth-child(5):before {
+      content: '5'; }
+    .advantages__item:nth-child(6):before {
+      content: '6'; }
+    .advantages__item:nth-child(7):before {
+      content: '7'; }
+    .advantages__item:nth-child(8):before {
+      content: '8'; }
+  .advantages__color-pink {
+    color: #E11580; }
+
+.why__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-left: 5%; }
+
+.why__item {
+  position: relative;
+  width: 25%; }
+
+.why__header {
+  color: #be007f;
+  font-family: 'FuturaDemiC';
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.why__desc {
+  font-size: 1vw;
+  font-family: 'FuturaDemiC';
+  color: #36373b;
+  text-transform: uppercase;
+  text-align: center; }
+
+.why__img {
+  text-align: center; }
+  .why__img img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom; }
+
+.why__circle {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4fa2+0,be017f+100 */
+  background: #ff4fa2;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff4fa2 0%, #be017f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff4fa2), to(#be017f));
+  background: linear-gradient(to bottom, #ff4fa2 0%, #be017f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4fa2', endColorstr='#be017f',GradientType=0 );
+  /* IE6-9 */ }
+  .why__circle .t1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'FuturaDemiC'; }
+  .why__circle .t2 {
+    font-size: 19px;
+    font-family: 'FuturaDemiC';
+    color: #fff; }
+    .why__circle .t2 .number {
+      font-size: 48px; }
+  .why__circle .t3 {
+    font-size: 19px; }
+  .why__circle--green {
+    background: #2ec443;
+    background: -webkit-linear-gradient(top, #2ec443 0%, #1a9796 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#2ec443), to(#1a9796));
+    background: linear-gradient(to bottom, #2ec443 0%, #1a9796 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ec443', endColorstr='#1a9796',GradientType=0 ); }
+
+.why__icon {
+  position: absolute;
+  right: 60px;
+  top: 170px;
+  font-size: 80px;
+  color: #be007f; }
+
+.list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .list__li {
+    font-size: 1vw;
+    color: #36373b;
+    list-style-type: none;
+    width: 48%;
+    margin-bottom: 10px;
+    padding-left: 32px; }
+    .list__li:before {
+      content: '';
+      display: inline-block; }
+
+.contraindication__img {
+  border: 5px solid #ffcb00; }
