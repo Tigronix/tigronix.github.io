@@ -154,28 +154,30 @@
 						<i class="icon-wrap"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></i>
 						<span class="t">Форма быстрого поиска салона:</span>
 					</div>
-					<select class="search-form__select search-form__select--first styler">
-						<option value="">Лазерная эпиляция</option>
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
-					</select>
-					<select class="search-form__select search-form__select--second styler">
-						<option value="">Зона бикини</option>
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
-					</select>
-					<select class="search-form__select search-form__select--third styler">
-						<option value="">Выберите метро</option>
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
-					</select>
-					<button class="search-form__submit">Найти</button>
+					<div class="search-form__select-wrap">
+						<select class="search-form__select search-form__select--first styler">
+							<option value="">Лазерная эпиляция</option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+						<select class="search-form__select search-form__select--second styler">
+							<option value="">Зона бикини</option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+						<select class="search-form__select search-form__select--third styler">
+							<option value="">Выберите метро</option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+						<button class="search-form__submit">Найти</button>
+					</div>
 				</form>
 				<div class="wrapper">
 					<h2 class="h2 h2--tl">Лазерная эпиляция в москве</h2>
@@ -255,9 +257,9 @@
 							</div>
 						</div>
 						<div class="product__slider">
-							<img src="img/product-slider1.jpg" alt="">
-							<img src="img/product-slider2.jpg" alt="">
-							<img src="img/product-slider3.jpg" alt="">
+							<div class="product-slider__img"><img src="img/product-slider1.jpg" alt=""></div>
+							<div class="product-slider__img"><img src="img/product-slider2.jpg" alt=""></div>
+							<div class="product-slider__img"><img src="img/product-slider3.jpg" alt=""></div>
 						</div>
 					</section><!--product-->
 					<section class="product wow fadeIn">
@@ -335,9 +337,9 @@
 							</div>
 						</div>
 						<div class="product__slider">
-							<img src="img/product-slider1.jpg" alt="">
-							<img src="img/product-slider2.jpg" alt="">
-							<img src="img/product-slider3.jpg" alt="">
+							<div class="product-slider__img"><img src="img/product-slider1.jpg" alt=""></div>
+							<div class="product-slider__img"><img src="img/product-slider2.jpg" alt=""></div>
+							<div class="product-slider__img"><img src="img/product-slider3.jpg" alt=""></div>
 						</div>
 					</section><!--product-->
 					<section class="product wow fadeIn">
@@ -415,9 +417,9 @@
 							</div>
 						</div>
 						<div class="product__slider">
-							<img src="img/product-slider1.jpg" alt="">
-							<img src="img/product-slider2.jpg" alt="">
-							<img src="img/product-slider3.jpg" alt="">
+							<div class="product-slider__img"><img src="img/product-slider1.jpg" alt=""></div>
+							<div class="product-slider__img"><img src="img/product-slider2.jpg" alt=""></div>
+							<div class="product-slider__img"><img src="img/product-slider3.jpg" alt=""></div>
 						</div>
 					</section><!--product-->
 					<section class="product wow fadeIn">
@@ -495,9 +497,9 @@
 							</div>
 						</div>
 						<div class="product__slider">
-							<img src="img/product-slider1.jpg" alt="">
-							<img src="img/product-slider2.jpg" alt="">
-							<img src="img/product-slider3.jpg" alt="">
+							<div class="product-slider__img"><img src="img/product-slider1.jpg" alt=""></div>
+							<div class="product-slider__img"><img src="img/product-slider2.jpg" alt=""></div>
+							<div class="product-slider__img"><img src="img/product-slider3.jpg" alt=""></div>
 						</div>
 					</section><!--product-->
 					
@@ -747,7 +749,7 @@
 				<div class="form-main__user-info">
 					<input placeholder="Введите ваше имя" type="text" class="input">
 					<input placeholder="Введите ваш телефон" type="tel" class="input">
-					<button type="submit" class="btn form__submit">Отправить заявку</button>
+					<button type="submit" class="btn form-main__submit">Отправить заявку</button>
 				</div>
 			</div>
 		</form><!--form-main-->
@@ -766,8 +768,8 @@
 	</main>
 	<footer class="page-footer">
 		<div class="page-footer__contact">
-			<div class="page-footer__phone">+7 (495) 123-45-67</div>
-			<div class="page-footer__about">Сеть клиник лазерной эпиляции и косметологии</div>
+			<div class="page-footer__phone"><i class="icon-wrap"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></i>+7 (495) 123-45-67</div>
+			<div class="page-footer__about"><i class="icon-wrap"></i>Сеть клиник лазерной эпиляции и косметологии</div>
 			<a href="#" class="btn">Отправить заявку</a>
 		</div><!--page-footer__contact-->
 		<div class="footer-nav">
@@ -797,9 +799,9 @@
 			</div>
 		</div><!--footer-nav-->
 		<div class="page-footer__social">
-			<span>Понравился сервис? Расскажи друзьям!</span>
-			<img src="img/social.png" alt="">
-			<img src="img/metr.png" alt="">
+			<span class="t1">Понравился сервис? Расскажи друзьям!</span>
+			<div class="page-footer__soc-btns"><img src="img/social.png" alt=""></div>
+			<div class="page-footer__metrika"><img src="img/metr.png" alt=""></div>
 		</div>
 		<div class="page-footer__bot">
 			<div class="page-footer__copy"> © 2017 сеть клиник лазерной эпиляции и косметологии</div>
