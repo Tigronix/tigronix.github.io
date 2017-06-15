@@ -11,6 +11,14 @@
 <body>
 	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
+			<symbol id="icon-unlink" viewBox="0 0 26 28">
+			<title>unlink</title>
+			<path d="M6.859 19.859l-4 4c-0.109 0.094-0.234 0.141-0.359 0.141s-0.25-0.047-0.359-0.141c-0.187-0.203-0.187-0.516 0-0.719l4-4c0.203-0.187 0.516-0.187 0.719 0 0.187 0.203 0.187 0.516 0 0.719zM9.5 20.5v5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5v-5c0-0.281 0.219-0.5 0.5-0.5s0.5 0.219 0.5 0.5zM6 17c0 0.281-0.219 0.5-0.5 0.5h-5c-0.281 0-0.5-0.219-0.5-0.5s0.219-0.5 0.5-0.5h5c0.281 0 0.5 0.219 0.5 0.5zM25.75 19c0 1.203-0.469 2.328-1.328 3.172l-2.297 2.281c-0.844 0.844-1.969 1.297-3.172 1.297s-2.344-0.469-3.187-1.328l-5.219-5.234c-0.266-0.266-0.469-0.562-0.656-0.875l3.734-0.281 4.266 4.281c0.562 0.562 1.563 0.578 2.125 0.016l2.297-2.281c0.281-0.281 0.438-0.656 0.438-1.047 0-0.406-0.156-0.781-0.438-1.062l-4.281-4.297 0.281-3.734c0.313 0.187 0.609 0.391 0.875 0.656l5.25 5.25c0.844 0.859 1.313 1.984 1.313 3.187zM16.109 7.688l-3.734 0.281-4.266-4.281c-0.281-0.281-0.656-0.438-1.062-0.438s-0.781 0.156-1.062 0.422l-2.297 2.281c-0.281 0.281-0.438 0.656-0.438 1.047 0 0.406 0.156 0.781 0.438 1.062l4.281 4.281-0.281 3.75c-0.313-0.187-0.609-0.391-0.875-0.656l-5.25-5.25c-0.844-0.859-1.313-1.984-1.313-3.187s0.469-2.328 1.328-3.172l2.297-2.281c0.844-0.844 1.969-1.297 3.172-1.297s2.344 0.469 3.187 1.328l5.219 5.234c0.266 0.266 0.469 0.562 0.656 0.875zM26 9c0 0.281-0.219 0.5-0.5 0.5h-5c-0.281 0-0.5-0.219-0.5-0.5s0.219-0.5 0.5-0.5h5c0.281 0 0.5 0.219 0.5 0.5zM17.5 0.5v5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5v-5c0-0.281 0.219-0.5 0.5-0.5s0.5 0.219 0.5 0.5zM23.859 2.859l-4 4c-0.109 0.094-0.234 0.141-0.359 0.141s-0.25-0.047-0.359-0.141c-0.187-0.203-0.187-0.516 0-0.719l4-4c0.203-0.187 0.516-0.187 0.719 0 0.187 0.203 0.187 0.516 0 0.719z"></path>
+			</symbol>
+			<symbol id="icon-flare" viewBox="0 0 24 24">
+			<title>flare</title>
+			<path d="M11.016 23.016v-6h1.969v6h-1.969zM5.625 16.969l2.156-2.156 1.406 1.406-2.156 2.156zM14.813 16.219l1.406-1.406 2.156 2.156-1.406 1.406zM12 9c1.641 0 3 1.359 3 3s-1.359 3-3 3-3-1.359-3-3 1.359-3 3-3zM17.016 11.016h6v1.969h-6v-1.969zM18.375 7.031l-2.156 2.156-1.406-1.406 2.156-2.156zM12.984 0.984v6h-1.969v-6h1.969zM9.188 7.781l-1.406 1.406-2.156-2.156 1.406-1.406zM6.984 11.016v1.969h-6v-1.969h6z"></path>
+			</symbol>		
 			<symbol id="icon-clock" viewBox="0 0 24 24">
 			<title>clock</title>
 			<path d="M12 1c-6.063 0-11 4.938-11 11s4.938 11 11 11 11-4.938 11-11-4.938-11-11-11zM12 21c-4.962 0-9-4.038-9-9s4.038-9 9-9c4.962 0 9 4.038 9 9s-4.038 9-9 9z"></path>
@@ -39,77 +47,77 @@
 			<span class="hamburger">
 				<span class="hamburger__line"></span>
 				<span class="line hamburger__line"></span>
-				<div class="hamburger__back">РќР°Р·Р°Рґ</div>
+				<div class="hamburger__back">Назад</div>
 			</span>
-			<div class="hamburger__text">РјРµРЅСЋ</div>
+			<div class="hamburger__text">меню</div>
 		</div>
-		<a href="#" class="page-header__logo"><svg class="icon icon-public"><use xlink:href="#icon-public"></use></svg></a>
+		<a href="#" class="page-header__logo"><svg class="icon icon-flare"><use xlink:href="#icon-flare"></use></svg></a>
 		<div class="page-header__desc">
-			<div class="t1">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ Р±РµР· Р±РѕР»Рё</div>
-			<div class="t2">СЃРµС‚СЊ РєР»РёРЅРёРє Р»Р°Р·РµСЂРЅРѕР№ СЌРїРёР»СЏС†РёРё Рё РєРѕСЃРјРµС‚РѕР»РѕРіРёРё</div>
+			<div class="t1">Лазерная эпиляция без боли</div>
+			<div class="t2">сеть клиник лазерной эпиляции и косметологии</div>
 		</div>
-		<div class="page-header__location"><i class="icon-wrap"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg></i><span>РњРѕСЃРєРІР°</span></div>
+		<div class="page-header__location"><i class="icon-wrap"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg></i><span>Москва</span></div>
 		<div class="page-header__metro">
-			<a href="#" class="page-header__metro-item">Р›РµРЅРёРЅСЃРєРёР№ РїСЂРѕСЃРїРµРєС‚</a>
-			<a href="#" class="page-header__metro-item">РљСѓСЂСЃРєР°СЏ</a>
-			<a href="#" class="page-header__metro-item">Р›РѕРјРѕРЅРѕСЃРѕРІСЃРєРёР№ РїСЂРѕСЃРїРµРєС‚</a>
-			<a href="#" class="page-header__metro-item">РћРєС‚СЏР±СЂСЊСЃРєРѕРµ РїРѕР»Рµ</a>
+			<a href="#" class="page-header__metro-item">Ленинский проспект</a>
+			<a href="#" class="page-header__metro-item">Курская</a>
+			<a href="#" class="page-header__metro-item">Ломоносовский проспект</a>
+			<a href="#" class="page-header__metro-item">Октябрьское поле</a>
 		</div>
 		<div class="page-header__phone">+7 (495) 100-15-10</div>
 	</header><!--page-header-->
 	<main class="main">
 		<div class="main-wrap">
 			<aside class="left-menu wow fadeIn">
-				<form class="left-menu__form">
+				<form class="left-menu__form wow fadeIn">
 					<div class="left-menu__sell">
-						<div class="t1">РђРєС†РёСЏ!</div>
-						<div class="t2"> РўРћР›Р¬РљРћ Р”Рћ 07.06.2017 </div>
-						<div class="t3"> Р­РџРР›РЇР¦РРЇ РџРћР”РњР«РЁР•Рљ</div>
-						<div class="t4">Р‘Р•РЎРџР›РђРўРќРћ!</div>
+						<div class="t1">Акция!</div>
+						<div class="t2"> ТОЛЬКО ДО 07.06.2017 </div>
+						<div class="t3"> ЭПИЛЯЦИЯ ПОДМЫШЕК</div>
+						<div class="t4">БЕСПЛАТНО!</div>
 					</div>
-					<div class="left-menu__header"> РћРќР›РђР™Рќ Р—РђРЇР’РљРђ </div>
-					<input placeholder="Р’РІРµРґРёС‚Рµ РІР°С€Рµ РёРјСЏ" type="text" class="input">
-					<input placeholder="Р’РІРµРґРёС‚Рµ РІР°С€ С‚РµР»РµС„РѕРЅ" type="tel" class="input">
-					<div class="left-menu__text">Р’С‹Р±РµСЂРёС‚Рµ Р·РѕРЅСѓ РґР»СЏ СЌРїРёР»СЏС†РёРё</div>
+					<div class="left-menu__header"> ОНЛАЙН ЗАЯВКА </div>
+					<input placeholder="Введите ваше имя" type="text" class="input input--name">
+					<input placeholder="Введите ваш телефон" type="tel" class="input input--phone">
+					<div class="left-menu__text">Выберите зону для эпиляции</div>
 					<div class="left-menu__list">
-						<div class="inpbox"><input id="input1"  type="checkbox" class="inpbox__input"><label for="input1" class="inpbox__label">Р—РѕРЅР° Р±РёРєРёРЅРё</label></div>
-						<div class="inpbox"><input id="input2"  type="checkbox" class="inpbox__input"><label for="input2" class="inpbox__label">РЎРїРёРЅР°</label></div>
-						<div class="inpbox"><input id="input3"  type="checkbox" class="inpbox__input"><label for="input3" class="inpbox__label">Р›РёС†Рѕ</label></div>
-						<div class="inpbox"><input id="input4"  type="checkbox" class="inpbox__input"><label for="input4" class="inpbox__label">Р’РµСЂС…РЅСЏСЏ РіСѓР±Р°</label></div>
-						<div class="inpbox"><input id="input5"  type="checkbox" class="inpbox__input"><label for="input5" class="inpbox__label">Р СѓРєРё</label></div>
-						<div class="inpbox"><input id="inputrEW"  type="checkbox" class="inpbox__input"><label for="inputrEW" class="inpbox__label">Р–РёРІРѕС‚</label></div>
-						<div class="inpbox"><input id="input7"  type="checkbox" class="inpbox__input"><label for="input7" class="inpbox__label">РџРѕРґРјС‹С€РєРё</label></div>
-						<div class="inpbox"><input id="input8"  type="checkbox" class="inpbox__input"><label for="input8" class="inpbox__label">РќРѕРіРё</label></div>
-						<button type="submit" class="btn left-menu__submit">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</button>
+						<div class="inpbox"><input id="input1"  type="checkbox" class="inpbox__input"><label for="input1" class="inpbox__label">Зона бикини</label></div>
+						<div class="inpbox"><input id="input2"  type="checkbox" class="inpbox__input"><label for="input2" class="inpbox__label">Спина</label></div>
+						<div class="inpbox"><input id="input3"  type="checkbox" class="inpbox__input"><label for="input3" class="inpbox__label">Лицо</label></div>
+						<div class="inpbox"><input id="input4"  type="checkbox" class="inpbox__input"><label for="input4" class="inpbox__label">Верхняя губа</label></div>
+						<div class="inpbox"><input id="input5"  type="checkbox" class="inpbox__input"><label for="input5" class="inpbox__label">Руки</label></div>
+						<div class="inpbox"><input id="inputrEW"  type="checkbox" class="inpbox__input"><label for="inputrEW" class="inpbox__label">Живот</label></div>
+						<div class="inpbox"><input id="input7"  type="checkbox" class="inpbox__input"><label for="input7" class="inpbox__label">Подмышки</label></div>
+						<div class="inpbox"><input id="input8"  type="checkbox" class="inpbox__input"><label for="input8" class="inpbox__label">Ноги</label></div>
+						<button type="submit" class="btn left-menu__submit">Отправить заявку</button>
 					</div>
 				</form>
-				<section class="menu-products">
+				<section class="menu-products wow fadeIn">
 					<div class="menu-products__product">
 						<div class="menu-products__img"><img src="img/product1.jpg" alt=""></div>
 						<div class="menu-products__desc">
-							 LightSheer Duet РѕС‚ РєРѕРјРїР°РЅРёРё В«LumenisВ» (РЎРЁРђ).<br>
-							 РџРѕРІР·РІРѕР»СЏРµС‚ РїСЂРѕРІРѕРґРёС‚СЊ Р°Р±СЃРѕР»СЋС‚РЅРѕ Р±РµР·Р±РѕР»РµР·РЅРµРЅРЅСѓСЋ СЌРїРёР»СЏС†РёСЋ РЅР° СЃР°РјС‹С… С‡СѓРІСЃС‚РІРёС‚РµР»СЊРЅС‹С… СѓС‡Р°СЃС‚РєР°С… С‚РµР»Р° РїСЂРё Р»СЋР±РѕРј С„РѕС‚РѕС‚РёРїРµ РєРѕР¶Рё. 
+							 LightSheer Duet от компании «Lumenis» (США).<br>
+							 Повзволяет проводить абсолютно безболезненную эпиляцию на самых чувствительных участках тела при любом фототипе кожи. 
 						</div>
-						<div class="menu-products__purpose"> РћС„РёС†РёР°Р»СЊРЅРѕ СЂР°Р·СЂРµС€С‘РЅ РґР»СЏ РїСЂРёРјРµРЅРµРЅРёСЏ РЅР° Р·Р°РіРѕСЂРµР»РѕР№ РєРѕР¶Рµ Рё РёРґРµР°Р»СЊРЅРѕ РїРѕРґС…РѕРґРёС‚ РґР»СЏ СЌРїРёР»СЏС†РёРё СЃРІРµС‚Р»С‹С… РІРѕР»РѕСЃ. </div>
+						<div class="menu-products__purpose"> Официально разрешён для применения на загорелой коже и идеально подходит для эпиляции светлых волос. </div>
 					</div>
 					<div class="menu-products__product">
 						<div class="menu-products__img"><img src="img/product2.jpg" alt=""></div>
-						<div class="menu-products__desc"> Рњ22 - РјРЅРѕРіРѕС„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅР°СЏ РїР»Р°С‚С„РѕСЂРјР° РєРѕРјРїР°РЅРёРё В«LumenisВ», СЃРѕС‡РµС‚Р°СЋС‰Р°СЏ IPL-С‚РµС…РЅРѕР»РѕРіРёРё Рё РїСЂРѕРіСЂРµСЃСЃРёРІРЅС‹Рµ СЂР°Р·СЂР°Р±РѕС‚РєРё Р»Р°Р·РµСЂРЅРѕР№ РєРѕСЃРјРµС‚РѕР»РѕРіРёРё. </div>
-						<div class="menu-products__purpose"> РЈРґР°Р»РµРЅРёРµ СЃРѕСЃСѓРґРёСЃС‚С‹С… Рё РїРёРіРјРµРЅС‚РЅС‹С… РґРёСЃС…СЂРѕРјРёР№, С„РѕС‚РѕРѕРјРѕР»РѕР¶РµРЅРёРµ Рё С‚РµСЂРјРѕР»РёС„С‚РёРЅРі РІРѕР·СЂР°СЃС‚РЅРѕР№ РєРѕР¶Рё, С‚РµСЂР°РїРёСЏ РїСЂРѕР±Р»РµРјРЅРѕР№ РєРѕР¶Рё Рё РјРЅРѕРіРѕРµ-РґСЂСѓРіРѕРµ. </div>
+						<div class="menu-products__desc"> М22 - многофункциональная платформа компании «Lumenis», сочетающая IPL-технологии и прогрессивные разработки лазерной косметологии. </div>
+						<div class="menu-products__purpose"> Удаление сосудистых и пигментных дисхромий, фотоомоложение и термолифтинг возрастной кожи, терапия проблемной кожи и многое-другое. </div>
 					</div>
 					<div class="menu-products__product">
 						<div class="menu-products__img"><img src="img/product3.jpg" alt=""></div>
-						<div class="menu-products__desc"> Clear+Brilliant - РїРµСЂРІС‹Р№ С„СЂР°РєС†РёРѕРЅРЅС‹Р№ РЅРµР°Р±Р»СЏС‚РёРІРЅС‹Р№ Р»Р°Р·РµСЂ, РїСЂРёРјРµРЅСЏРµРјС‹Р№ РґР»СЏ Р±РµСЂРµР¶РЅРѕРіРѕ Р»Р°Р·РµСЂРЅРѕРіРѕ РѕРјРѕР»РѕР¶РµРЅРёСЏ РєРѕР¶Рё.РћСЃРѕР±Р°СЏ РґР»РёРЅР° РІРѕР»РЅС‹ Рё РѕРїС‚РёРјР°Р»СЊРЅРѕРµ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ СЃРІРµС‚РѕРІРѕРіРѕ РїРѕС‚РѕРєР° РїРѕР·РІРѕР»СЏРµС‚ СЃРѕР·РґР°РІР°С‚СЊ С‡СѓРІСЃС‚РІРёС‚РµР»СЊРЅС‹Рµ РјРёРєСЂРѕР·РѕРЅС‹ РІ С‚РѕР»С‰Рµ РєРѕР¶Рё РЅР° Р±РµР·РѕРїР°СЃРЅРѕР№ РіР»СѓР±РёРЅРµ. </div>
-						<div class="menu-products__purpose"> Clear+Brilliant - СЌС„С„РµРєС‚РёРІРЅРѕРµ Рё Р±РµР·РѕРїР°СЃРЅРѕРµ Р»Р°Р·РµСЂРЅРѕРµ РѕРјРѕР»РѕР¶РµРЅРёРµ Р±РµР· СЂРµР°Р±РёР»РёС‚Р°С†РёРѕРЅРЅРѕРіРѕ РїРµСЂРёРѕРґР°. </div>
+						<div class="menu-products__desc"> Clear+Brilliant - первый фракционный неаблятивный лазер, применяемый для бережного лазерного омоложения кожи.Особая длина волны и оптимальное распределение светового потока позволяет создавать чувствительные микрозоны в толще кожи на безопасной глубине. </div>
+						<div class="menu-products__purpose"> Clear+Brilliant - эффективное и безопасное лазерное омоложение без реабилитационного периода. </div>
 					</div>
 					<div class="menu-products__product">
 						<div class="menu-products__img"><img src="img/product4.jpg" alt=""></div>
-						<div class="menu-products__desc"> Antera 3D - РёРЅРЅРѕРІР°С†РёРѕРЅРЅР°СЏ СЃРёСЃС‚РµРјР° СЃРєР°РЅРёСЂРѕРІР°РЅРёСЏ, РїРѕР·РІРѕР»СЏСЋС‰Р°СЏ РїСЂРѕРІРѕРґРёС‚СЊ РєРѕРјРїР»РµРєСЃРЅСѓСЋ РґРёР°РіРЅРѕСЃС‚РёРєСѓ СЃРѕСЃС‚РѕСЏРЅРёСЏ РєРѕР¶РЅРѕРіРѕ РїРѕРєСЂРѕРІР°. </div>
-						<div class="menu-products__purpose"> Antera 3D - РЅРµР·Р°РјРµРЅРёРјС‹Р№ РёРЅСЃС‚СЂСѓРјРµРЅС‚ РґР»СЏ РїРѕР»РЅРѕС†РµРЅРЅРѕРіРѕ РєРѕРЅСЃСѓР»СЊС‚Р°С‚РёРІРЅРѕРіРѕ РїСЂРёС‘РјР° Рё РѕС‚СЃР»РµР¶РёРІР°РЅРёСЏ РёР·РјРµРЅРµРЅРёР№ РІ СЃС‚СЂСѓРєС‚СѓСЂРµ РєРѕР¶Рё РґРѕ Рё РїРѕСЃР»Рµ РїСЂРѕС†РµРґСѓСЂ. </div>
+						<div class="menu-products__desc"> Antera 3D - инновационная система сканирования, позволяющая проводить комплексную диагностику состояния кожного покрова. </div>
+						<div class="menu-products__purpose"> Antera 3D - незаменимый инструмент для полноценного консультативного приёма и отслеживания изменений в структуре кожи до и после процедур. </div>
 					</div>
 				</section>
-				<section class="licence">
-					<div class="licence__header">Р›РёС†РµРЅР·РёРё</div>
+				<section class="licence wow fadeIn">
+					<div class="licence__header">Лицензии</div>
 					<a href="img/licence1.jpg" data-lightbox="gallery" class="licence__item"><img src="img/licence1.jpg" alt=""></a>
 					<a href="img/licence2.jpg" data-lightbox="gallery" class="licence__item"><img src="img/licence2.jpg" alt=""></a>
 				</section>
@@ -119,141 +127,141 @@
 					<div class="slider-main__slide">
 						<img src="img/slide1.jpg" alt="" class="slider-main__img">
 						<div class="slider-main__text">
-							<div class="t1">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</div>
-							<div class="t2">РЎРѕРІСЂРµРјРµРЅРЅС‹Р№ Р±РµР·Р±РѕР»РµР·РЅРµРЅРЅС‹Р№ СЃРїРѕСЃРѕР± СѓРґР°Р»РµРЅРёСЏ РІРѕР»РѕСЃ</div>
-							<div class="t3">РѕС‚ <span class="price">1 000</span> СЂСѓР±.</div>
+							<div class="t1">Лазерная эпиляция</div>
+							<div class="t2">Современный безболезненный способ удаления волос</div>
+							<div class="t3">от <span class="price">1 000</span> руб.</div>
 						</div>
 					</div>
 					<div class="slider-main__slide">
 						<img src="img/slide1.jpg" alt="" class="slider-main__img">
 						<div class="slider-main__text">
-							<div class="t1">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</div>
-							<div class="t2">РЎРѕРІСЂРµРјРµРЅРЅС‹Р№ Р±РµР·Р±РѕР»РµР·РЅРµРЅРЅС‹Р№ СЃРїРѕСЃРѕР± СѓРґР°Р»РµРЅРёСЏ РІРѕР»РѕСЃ</div>
-							<div class="t3">РѕС‚ <span class="price">1 000</span> СЂСѓР±.</div>
+							<div class="t1">Лазерная эпиляция</div>
+							<div class="t2">Современный безболезненный способ удаления волос</div>
+							<div class="t3">от <span class="price">1 000</span> руб.</div>
 						</div>
 					</div>
 					<div class="slider-main__slide">
 						<img src="img/slide1.jpg" alt="" class="slider-main__img">
 						<div class="slider-main__text">
-							<div class="t1">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</div>
-							<div class="t2">РЎРѕРІСЂРµРјРµРЅРЅС‹Р№ Р±РµР·Р±РѕР»РµР·РЅРµРЅРЅС‹Р№ СЃРїРѕСЃРѕР± СѓРґР°Р»РµРЅРёСЏ РІРѕР»РѕСЃ</div>
-							<div class="t3">РѕС‚ <span class="price">1 000</span> СЂСѓР±.</div>
+							<div class="t1">Лазерная эпиляция</div>
+							<div class="t2">Современный безболезненный способ удаления волос</div>
+							<div class="t3">от <span class="price">1 000</span> руб.</div>
 						</div>
 					</div>
 					<div class="slider-main__slide">
 						<img src="img/slide1.jpg" alt="" class="slider-main__img">
 						<div class="slider-main__text">
-							<div class="t1">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</div>
-							<div class="t2">РЎРѕРІСЂРµРјРµРЅРЅС‹Р№ Р±РµР·Р±РѕР»РµР·РЅРµРЅРЅС‹Р№ СЃРїРѕСЃРѕР± СѓРґР°Р»РµРЅРёСЏ РІРѕР»РѕСЃ</div>
-							<div class="t3">РѕС‚ <span class="price">1 000</span> СЂСѓР±.</div>
+							<div class="t1">Лазерная эпиляция</div>
+							<div class="t2">Современный безболезненный способ удаления волос</div>
+							<div class="t3">от <span class="price">1 000</span> руб.</div>
 						</div>
 					</div>
 				</section>
 				<form action="" class="search-form wrapper wow fadeIn">
 					<div class="search-form__desc">
 						<i class="icon-wrap"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></i>
-						<span class="t">Р¤РѕСЂРјР° Р±С‹СЃС‚СЂРѕРіРѕ РїРѕРёСЃРєР° СЃР°Р»РѕРЅР°:</span>
+						<span class="t">Форма быстрого поиска салона:</span>
 					</div>
 					<div class="search-form__select-wrap">
 						<select class="search-form__select search-form__select--first styler">
-							<option value="">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</option>
+							<option value="">Лазерная эпиляция</option>
 							<option value=""></option>
 							<option value=""></option>
 							<option value=""></option>
 							<option value=""></option>
 						</select>
 						<select class="search-form__select search-form__select--second styler">
-							<option value="">Р—РѕРЅР° Р±РёРєРёРЅРё</option>
+							<option value="">Зона бикини</option>
 							<option value=""></option>
 							<option value=""></option>
 							<option value=""></option>
 							<option value=""></option>
 						</select>
 						<select class="search-form__select search-form__select--third styler">
-							<option value="">Р’С‹Р±РµСЂРёС‚Рµ РјРµС‚СЂРѕ</option>
+							<option value="">Выберите метро</option>
 							<option value=""></option>
 							<option value=""></option>
 							<option value=""></option>
 							<option value=""></option>
 						</select>
-						<button class="search-form__submit">РќР°Р№С‚Рё</button>
+						<button class="search-form__submit">Найти</button>
 					</div>
 				</form>
 				<div class="wrapper">
-					<h2 class="h2 h2--tl">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РІ РјРѕСЃРєРІРµ</h2>
-					<p class="text"> Р­РїРёР»СЏС†РёСЏ - РѕРґРЅР° РёР· СЃР°РјС‹С… РїРѕРїСѓР»СЏСЂРЅС‹С… РїСЂРѕС†РµРґСѓСЂ СЃСЂРµРґРё С‚РµС… Р¶РµРЅС‰РёРЅ, РєРѕС‚РѕСЂС‹Рµ С…РѕС‚СЏС‚ Р±С‹С‚СЊ РєСЂР°СЃРёРІС‹РјРё РєР°Р¶РґС‹Р№ РґРµРЅСЊ. РЈРґР°Р»РµРЅРёРµ РІРѕР»РѕСЃ РїСЂРѕРёСЃС…РѕРґРёС‚ РЅР° РґР»РёС‚РµР»СЊРЅРѕРµ РІСЂРµРјСЏ (РІ РѕС‚Р»РёС‡РёРµ РѕС‚ РґРµРїРёР»СЏС†РёРё) РїСѓС‚РµРј СЂР°Р·СЂСѓС€РµРЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ РІРѕР»РѕСЃСЏРЅС‹С… Р»СѓРєРѕРІРёС† СЂР°Р·Р»РёС‡РЅС‹РјРё СЃРїРѕСЃРѕР±Р°РјРё.<br>Р­РїРёР»СЏС†РёСЏ РІ РњРѕСЃРєРІРµ РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ РІ РѕРіСЂРѕРјРЅРѕРј РєРѕР»РёС‡РµСЃС‚РІРµ СЃР°Р»РѕРЅРѕРІ РєСЂР°СЃРѕС‚С‹, РЅР°С…РѕРґСЏС‰РёС…СЃСЏ РІ СЂР°Р·РЅС‹С… СѓРіРѕР»РєР°С… РіРѕСЂРѕРґР°: РїРѕРјРѕР¶РµС‚ РІР°Рј Р±С‹СЃС‚СЂРѕ РЅР°Р№С‚Рё Р·Р°РІРµРґРµРЅРёРµ, РїРѕРґС…РѕРґСЏС‰РµРµ РїРѕ СЂР°СЃРїРѕР»РѕР¶РµРЅРёСЋ. РџСЂРµРґСЃС‚Р°РІР»РµРЅРЅС‹Рµ СЃР°Р»РѕРЅС‹ РїСЂРµРґР»Р°РіР°СЋС‚ СЃРІРѕРёРј РіРѕСЃС‚СЏРј СЂР°СЃС€РёСЂРµРЅРЅС‹Р№ РєРѕРјРїР»РµРєСЃ СѓСЃР»СѓРі (СѓС…РѕРґ Р·Р° РЅРѕРіС‚СЏРјРё Рё РІРѕР»РѕСЃР°РјРё, РєРѕСЃРјРµС‚РѕР»РѕРіРёСЏ, РёРЅРЅРѕРІР°С†РёРѕРЅРЅС‹Рµ РјРµС‚РѕРґС‹ РїРѕРґРґРµСЂР¶Р°РЅРёСЏ РєСЂР°СЃРёРІРѕР№ С„РѕСЂРјС‹ С‚РµР»Р° Рё РїСЂРѕС‡РµРµ). Р’С‹ РјРѕР¶РµС‚Рµ РїРµСЂРµР№С‚Рё РЅР° СЃР°Р№С‚ РёРЅС‚РµСЂРµСЃСѓСЋС‰РµР№ РІР°СЃ СЃС‚СѓРґРёРё РєСЂР°СЃРѕС‚С‹ Рё Р·РґРѕСЂРѕРІСЊСЏ Рё СЃСЂР°Р·Сѓ Р¶Рµ Р·Р°РїРёСЃР°С‚СЊСЃСЏ РЅР° Р»СЋР±СѓСЋ РїСЂРѕС†РµРґСѓСЂСѓ.</p>
+					<h2 class="h2 h2--tl">Лазерная эпиляция в москве</h2>
+					<p class="text"> Эпиляция - одна из самых популярных процедур среди тех женщин, которые хотят быть красивыми каждый день. Удаление волос происходит на длительное время (в отличие от депиляции) путем разрушения структуры волосяных луковиц различными способами.<br>Эпиляция в Москве осуществляется в огромном количестве салонов красоты, находящихся в разных уголках города: поможет вам быстро найти заведение, подходящее по расположению. Представленные салоны предлагают своим гостям расширенный комплекс услуг (уход за ногтями и волосами, косметология, инновационные методы поддержания красивой формы тела и прочее). Вы можете перейти на сайт интересующей вас студии красоты и здоровья и сразу же записаться на любую процедуру.</p>
 					<section class="product wow fadeIn">
 						<div class="product__name">
 							<a href="#" class="product__logo"><img src="img/product-logo.png" alt=""></a>
 							<div class="product__phone">
 								<i class="icon-wrap"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></i>+7 (495) 100-15-10</div>
 							<div class="product__address">
-								<div class="icon-wrap img"><img src="img/metr_1.png" alt=""></div>
+								<div class="icon-wrap img img--orange"><img src="img/metr_1.png" alt=""></div>
 								<div class="text-wrap">
-									<div class="t1">Рј. Р›РµРЅРёРЅСЃРєРёР№ РїСЂРѕСЃРїРµРєС‚</div>
-									<div class="t2">Р®Р—РђРћ, 5 РјРёРЅСѓС‚ РѕС‚ РјРµС‚СЂРѕ</div>
+									<div class="t1">м. Ленинский проспект</div>
+									<div class="t2">ЮЗАО, 5 минут от метро</div>
 								</div>
 							</div>
 							<div class="product__schedule">
 								<i class="icon-wrap"><svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg></i>
 								<div class="text-wrap">
-									<div class="t1">Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹:</div>
-									<div class="t2">Р•Р¶РµРґРЅРµРІРЅРѕ 10:00-21:00</div>
+									<div class="t1">Время работы:</div>
+									<div class="t2">Ежедневно 10:00-21:00</div>
 								</div>
 							</div>
-							<a href="#" class="btn product__btn">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</a>
+							<a href="#" class="btn product__btn">Отправить заявку</a>
 						</div>
 						<div class="product__list">
-							<div class="product__list-header">РЎРїРёСЃРѕРє РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµРјС‹С… СѓСЃР»СѓРі:</div>
+							<div class="product__list-header">Список предоставляемых услуг:</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list1.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РіР»СѓР±РѕРєРѕРµ</a>
-								<div class="price">5 300 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция бикини глубокое</a>
+								<div class="price">5 300 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list2.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РЅРѕРіРё РїРѕР»РЅРѕСЃС‚СЊСЋ</a>
-								<div class="price">12 000 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция ноги полностью</a>
+								<div class="price">12 000 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list3.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РєР»Р°СЃСЃРёС‡РµСЃРєРѕРµ</a>
-								<div class="price">3 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция бикини классическое</a>
+								<div class="price">3 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list4.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РїРѕРґРјС‹С€РµС‡РЅР°СЏ РѕР±Р»Р°СЃС‚СЊ</a>
-								<div class="price">2 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция подмышечная область</a>
+								<div class="price">2 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list5.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РІРµСЂС…РЅСЏСЏ РіСѓР±Р°</a>
-								<div class="price">1 200 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция верхняя губа</a>
+								<div class="price">1 200 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list6.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ СЂСѓРєРё РґРѕ РёР»Рё РІС‹С€Рµ Р»РѕРєС‚СЏ</a>
-								<div class="price">4 300 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция руки до или выше локтя</a>
+								<div class="price">4 300 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list7.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РіРѕР»РµРЅСЊ</a>
-								<div class="price">6 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция голень</a>
+								<div class="price">6 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list8.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ СЂСѓРєРё РїРѕР»РЅРѕСЃС‚СЊСЋ</a>
-								<div class="price">7 000 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция руки полностью</a>
+								<div class="price">7 000 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list9.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р»РёС†Рѕ</a>
-								<div class="price">4 800 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция лицо</a>
+								<div class="price">4 800 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list10.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РіСЂСѓРґСЊ</a>
-								<div class="price">3 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция грудь</a>
+								<div class="price">3 500 <span class="valute">руб.</span></div>
 							</div>
 						</div>
 						<div class="product__slider">
@@ -268,72 +276,72 @@
 							<div class="product__phone">
 								<i class="icon-wrap"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></i>+7 (495) 100-15-10</div>
 							<div class="product__address">
-								<div class="icon-wrap img"><img src="img/metr_1.png" alt=""></div>
+								<div class="icon-wrap img img--yellow"><img src="img/metr_3.png" alt=""></div>
 								<div class="text-wrap">
-									<div class="t1">Рј. Р›РµРЅРёРЅСЃРєРёР№ РїСЂРѕСЃРїРµРєС‚</div>
-									<div class="t2">Р®Р—РђРћ, 5 РјРёРЅСѓС‚ РѕС‚ РјРµС‚СЂРѕ</div>
+									<div class="t1">м. Ленинский проспект</div>
+									<div class="t2">ЮЗАО, 5 минут от метро</div>
 								</div>
 							</div>
 							<div class="product__schedule">
 								<i class="icon-wrap"><svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg></i>
 								<div class="text-wrap">
-									<div class="t1">Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹:</div>
-									<div class="t2">Р•Р¶РµРґРЅРµРІРЅРѕ 10:00-21:00</div>
+									<div class="t1">Время работы:</div>
+									<div class="t2">Ежедневно 10:00-21:00</div>
 								</div>
 							</div>
-							<a href="#" class="btn product__btn">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</a>
+							<a href="#" class="btn product__btn">Отправить заявку</a>
 						</div>
 						<div class="product__list">
-							<div class="product__list-header">РЎРїРёСЃРѕРє РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµРјС‹С… СѓСЃР»СѓРі:</div>
+							<div class="product__list-header">Список предоставляемых услуг:</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list1.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РіР»СѓР±РѕРєРѕРµ</a>
-								<div class="price">5 300 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция бикини глубокое</a>
+								<div class="price">5 300 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list2.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РЅРѕРіРё РїРѕР»РЅРѕСЃС‚СЊСЋ</a>
-								<div class="price">12 000 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция ноги полностью</a>
+								<div class="price">12 000 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list3.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РєР»Р°СЃСЃРёС‡РµСЃРєРѕРµ</a>
-								<div class="price">3 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция бикини классическое</a>
+								<div class="price">3 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list4.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РїРѕРґРјС‹С€РµС‡РЅР°СЏ РѕР±Р»Р°СЃС‚СЊ</a>
-								<div class="price">2 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция подмышечная область</a>
+								<div class="price">2 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list5.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РІРµСЂС…РЅСЏСЏ РіСѓР±Р°</a>
-								<div class="price">1 200 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция верхняя губа</a>
+								<div class="price">1 200 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list6.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ СЂСѓРєРё РґРѕ РёР»Рё РІС‹С€Рµ Р»РѕРєС‚СЏ</a>
-								<div class="price">4 300 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция руки до или выше локтя</a>
+								<div class="price">4 300 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list7.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РіРѕР»РµРЅСЊ</a>
-								<div class="price">6 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция голень</a>
+								<div class="price">6 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list8.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ СЂСѓРєРё РїРѕР»РЅРѕСЃС‚СЊСЋ</a>
-								<div class="price">7 000 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция руки полностью</a>
+								<div class="price">7 000 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list9.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р»РёС†Рѕ</a>
-								<div class="price">4 800 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция лицо</a>
+								<div class="price">4 800 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list10.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РіСЂСѓРґСЊ</a>
-								<div class="price">3 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция грудь</a>
+								<div class="price">3 500 <span class="valute">руб.</span></div>
 							</div>
 						</div>
 						<div class="product__slider">
@@ -348,72 +356,72 @@
 							<div class="product__phone">
 								<i class="icon-wrap"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></i>+7 (495) 100-15-10</div>
 							<div class="product__address">
-								<div class="icon-wrap img"><img src="img/metr_1.png" alt=""></div>
+								<div class="icon-wrap img img--blue"><img src="img/metr_2.png" alt=""></div>
 								<div class="text-wrap">
-									<div class="t1">Рј. Р›РµРЅРёРЅСЃРєРёР№ РїСЂРѕСЃРїРµРєС‚</div>
-									<div class="t2">Р®Р—РђРћ, 5 РјРёРЅСѓС‚ РѕС‚ РјРµС‚СЂРѕ</div>
+									<div class="t1">м. Ленинский проспект</div>
+									<div class="t2">ЮЗАО, 5 минут от метро</div>
 								</div>
 							</div>
 							<div class="product__schedule">
 								<i class="icon-wrap"><svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg></i>
 								<div class="text-wrap">
-									<div class="t1">Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹:</div>
-									<div class="t2">Р•Р¶РµРґРЅРµРІРЅРѕ 10:00-21:00</div>
+									<div class="t1">Время работы:</div>
+									<div class="t2">Ежедневно 10:00-21:00</div>
 								</div>
 							</div>
-							<a href="#" class="btn product__btn">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</a>
+							<a href="#" class="btn product__btn">Отправить заявку</a>
 						</div>
 						<div class="product__list">
-							<div class="product__list-header">РЎРїРёСЃРѕРє РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµРјС‹С… СѓСЃР»СѓРі:</div>
+							<div class="product__list-header">Список предоставляемых услуг:</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list1.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РіР»СѓР±РѕРєРѕРµ</a>
-								<div class="price">5 300 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция бикини глубокое</a>
+								<div class="price">5 300 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list2.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РЅРѕРіРё РїРѕР»РЅРѕСЃС‚СЊСЋ</a>
-								<div class="price">12 000 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция ноги полностью</a>
+								<div class="price">12 000 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list3.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РєР»Р°СЃСЃРёС‡РµСЃРєРѕРµ</a>
-								<div class="price">3 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция бикини классическое</a>
+								<div class="price">3 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list4.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РїРѕРґРјС‹С€РµС‡РЅР°СЏ РѕР±Р»Р°СЃС‚СЊ</a>
-								<div class="price">2 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция подмышечная область</a>
+								<div class="price">2 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list5.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РІРµСЂС…РЅСЏСЏ РіСѓР±Р°</a>
-								<div class="price">1 200 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция верхняя губа</a>
+								<div class="price">1 200 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list6.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ СЂСѓРєРё РґРѕ РёР»Рё РІС‹С€Рµ Р»РѕРєС‚СЏ</a>
-								<div class="price">4 300 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция руки до или выше локтя</a>
+								<div class="price">4 300 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list7.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РіРѕР»РµРЅСЊ</a>
-								<div class="price">6 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция голень</a>
+								<div class="price">6 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list8.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ СЂСѓРєРё РїРѕР»РЅРѕСЃС‚СЊСЋ</a>
-								<div class="price">7 000 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция руки полностью</a>
+								<div class="price">7 000 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list9.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р»РёС†Рѕ</a>
-								<div class="price">4 800 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция лицо</a>
+								<div class="price">4 800 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list10.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РіСЂСѓРґСЊ</a>
-								<div class="price">3 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция грудь</a>
+								<div class="price">3 500 <span class="valute">руб.</span></div>
 							</div>
 						</div>
 						<div class="product__slider">
@@ -428,72 +436,72 @@
 							<div class="product__phone">
 								<i class="icon-wrap"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></i>+7 (495) 100-15-10</div>
 							<div class="product__address">
-								<div class="icon-wrap img"><img src="img/metr_1.png" alt=""></div>
+								<div class="icon-wrap img img--pink"><img src="img/metr_4.png" alt=""></div>
 								<div class="text-wrap">
-									<div class="t1">Рј. Р›РµРЅРёРЅСЃРєРёР№ РїСЂРѕСЃРїРµРєС‚</div>
-									<div class="t2">Р®Р—РђРћ, 5 РјРёРЅСѓС‚ РѕС‚ РјРµС‚СЂРѕ</div>
+									<div class="t1">м. Ленинский проспект</div>
+									<div class="t2">ЮЗАО, 5 минут от метро</div>
 								</div>
 							</div>
 							<div class="product__schedule">
 								<i class="icon-wrap"><svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg></i>
 								<div class="text-wrap">
-									<div class="t1">Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹:</div>
-									<div class="t2">Р•Р¶РµРґРЅРµРІРЅРѕ 10:00-21:00</div>
+									<div class="t1">Время работы:</div>
+									<div class="t2">Ежедневно 10:00-21:00</div>
 								</div>
 							</div>
-							<a href="#" class="btn product__btn">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</a>
+							<a href="#" class="btn product__btn">Отправить заявку</a>
 						</div>
 						<div class="product__list">
-							<div class="product__list-header">РЎРїРёСЃРѕРє РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµРјС‹С… СѓСЃР»СѓРі:</div>
+							<div class="product__list-header">Список предоставляемых услуг:</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list1.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РіР»СѓР±РѕРєРѕРµ</a>
-								<div class="price">5 300 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция бикини глубокое</a>
+								<div class="price">5 300 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list2.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РЅРѕРіРё РїРѕР»РЅРѕСЃС‚СЊСЋ</a>
-								<div class="price">12 000 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция ноги полностью</a>
+								<div class="price">12 000 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list3.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РєР»Р°СЃСЃРёС‡РµСЃРєРѕРµ</a>
-								<div class="price">3 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция бикини классическое</a>
+								<div class="price">3 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list4.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РїРѕРґРјС‹С€РµС‡РЅР°СЏ РѕР±Р»Р°СЃС‚СЊ</a>
-								<div class="price">2 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция подмышечная область</a>
+								<div class="price">2 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list5.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РІРµСЂС…РЅСЏСЏ РіСѓР±Р°</a>
-								<div class="price">1 200 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция верхняя губа</a>
+								<div class="price">1 200 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list6.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ СЂСѓРєРё РґРѕ РёР»Рё РІС‹С€Рµ Р»РѕРєС‚СЏ</a>
-								<div class="price">4 300 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция руки до или выше локтя</a>
+								<div class="price">4 300 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list7.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РіРѕР»РµРЅСЊ</a>
-								<div class="price">6 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция голень</a>
+								<div class="price">6 500 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list8.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ СЂСѓРєРё РїРѕР»РЅРѕСЃС‚СЊСЋ</a>
-								<div class="price">7 000 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция руки полностью</a>
+								<div class="price">7 000 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list9.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ Р»РёС†Рѕ</a>
-								<div class="price">4 800 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция лицо</a>
+								<div class="price">4 800 <span class="valute">руб.</span></div>
 							</div>
 							<div class="product__list-item">
 								<div class="img"><img src="img/product-list10.png" alt=""></div>
-								<a href="#" class="name">Р­РїРёР»СЏС†РёСЏ РіСЂСѓРґСЊ</a>
-								<div class="price">3 500 <span class="valute">СЂСѓР±.</span></div>
+								<a href="#" class="name">Эпиляция грудь</a>
+								<div class="price">3 500 <span class="valute">руб.</span></div>
 							</div>
 						</div>
 						<div class="product__slider">
@@ -503,53 +511,53 @@
 						</div>
 					</section><!--product-->
 					
-					<h2 class="h2 h2--tl">РџСЂРµРёРјСѓС‰РµСЃС‚РІР° Р»Р°Р·РµСЂРЅРѕР№ СЌРїРёР»СЏС†РёРё:</h2>
+					<h2 class="h2 h2--tl">Преимущества лазерной эпиляции:</h2>
 					<section class="advantages wow fadeIn">
-						<div class="advantages__item"><span class="advantages__color-pink">Р­РїРёР»СЏС†РёСЏ Р±РµР· Р±РѕР»Рё.</span>  Р’Р°РєСѓСѓРјРЅР°СЏ С‚РµС…РЅРѕР»РѕРіРёСЏ РіР°СЂР°РЅС‚РёСЂСѓРµС‚ РєРѕРјС„РѕСЂС‚РЅРѕСЃС‚СЊ РїСЂРѕС†РµРґСѓСЂС‹ РґР°Р¶Рµ РїСЂРё РЅРёР·РєРѕРј Р±РѕР»РµРІРѕРј РїРѕСЂРѕРіРµ. </div>
-						<div class="advantages__item"><span class="advantages__color-pink">РљСЂСѓРіР»С‹Р№ РіРѕРґ.</span>  РРЅРЅРѕРІР°С†РёРѕРЅРЅС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ LightSheer DUET РїРѕР·РІРѕР»СЏСЋС‚ РїСЂРѕРІРѕРґРёС‚СЊ СЌРїРёР»СЏС†РёСЋ РґР°Р¶Рµ РЅР° Р·Р°РіРѕСЂРµРІС€РµР№ РєРѕР¶Рµ Р»РµС‚РѕРј. </div>
-						<div class="advantages__item"><span class="advantages__color-pink">РЈРґР°Р»РµРЅРёРµ РЅР°РІСЃРµРіРґР°.</span>  РќР°СѓС‡РЅРѕ РґРѕРєР°Р·Р°РЅРѕ, С‡С‚Рѕ РїРѕСЃР»Рµ 4 РїСЂРѕС†РµРґСѓСЂ Р±РѕР»РµРµ 85% РІРѕР»РѕСЃ РїРµСЂРµСЃС‚Р°СЋС‚ СЂР°СЃС‚Рё. </div>
-						<div class="advantages__item"><span class="advantages__color-pink">РќРёРєР°РєРёС… РІСЂРѕСЃС€РёС… РІРѕР»РѕСЃ.</span>  LightSheer DUET РЅРµ РІРѕР·РґРµР№СЃС‚РІСѓРµС‚ РЅР° РІРѕР»РѕСЃ РјРµС…Р°РЅРёС‡РµСЃРєРё, РїРѕСЌС‚РѕРјСѓ РІРµСЂРѕСЏС‚РЅРѕСЃС‚СЊ РІСЂРѕСЃС€РёС… РІРѕР»РѕСЃ РёСЃРєР»СЋС‡РµРЅР°. </div>
-						<div class="advantages__item"><span class="advantages__color-pink">РЈРЅРёРІРµСЂСЃР°Р»СЊРЅРѕСЃС‚СЊ.</span>  LightSheer DUET СЌС„С„РµРєС‚РёРІРµРЅ РЅР° СЃРІРµС‚Р»С‹С…, С‚РµРјРЅС‹С… Рё РґР°Р¶Рµ СЂС‹Р¶РёС… РІРѕР»РѕСЃР°С… (РєСЂРѕРјРµ СЃРµРґС‹С…), РѕС„РёС†РёР°Р»СЊРЅРѕ СЂР°Р·СЂРµС€РµРЅ Рє РїСЂРёРјРµРЅРµРЅРёСЏ
-		РЅР° I-VI С„РѕС‚РѕС‚РёРїР°С… РєРѕР¶Рё. </div>
-						<div class="advantages__item"><span class="advantages__color-pink">РЎР°РјР°СЏ Р±С‹СЃС‚СЂР°СЏ СЌРїРёР»СЏС†РёСЏ.</span>  Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ Р±РёРєРёРЅРё РёР»Рё Р»Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РЅРѕРі, РЅР°РїСЂРёРјРµСЂ, Р·Р°Р№РјРµС‚ РјР°РєСЃРёРјСѓРј 20 РјРёРЅСѓС‚, Р° Р»Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РїРѕРґРјС‹С€РµРє РїСЂРѕР№РґРµС‚ РІСЃРµРіРѕ Р·Р° 5-7 РјРёРЅСѓС‚. </div>
-						<div class="advantages__item"><span class="advantages__color-pink">РђР±СЃРѕР»СЋС‚РЅРѕ Р±РµР·РѕРїР°СЃРЅРѕ.</span>  Р‘РµР·РѕРїР°СЃРЅРѕСЃС‚СЊ Р»Р°Р·РµСЂРЅРѕРіРѕ РІРѕР·РґРµР№СЃС‚РІРёСЏ РЅР° С‡РµР»РѕРІРµРєР° РїРѕРґС‚РІРµСЂР¶РґР°РµС‚СЃСЏ РѕР±С€РёСЂРЅРѕР№ Р±Р°Р·РѕР№ РєР»РёРЅРёС‡РµСЃРєРёС… РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РїРѕ
-		LightSheer DUET  СЃ 1998 РіРѕРґР°. </div>
-						<div class="advantages__item"><span class="advantages__color-pink">Р­РїРёР»СЏС†РёСЏ Р±РµР· СЃР»РµРґР°.</span>  РЎСЂР°Р·Сѓ РїРѕСЃР»Рµ РїСЂРѕС†РµРґСѓСЂС‹ Р’С‹ РјРѕР¶РµС‚Рµ РёРґС‚Рё РЅР° РІР°Р¶РЅРѕРµ СЃРѕРІРµС‰Р°РЅРёРµ РёР»Рё СЂРѕРјР°РЅС‚РёС‡РµСЃРєРѕРµ СЃРІРёРґР°РЅРёРµ - РЅРёРєС‚Рѕ РЅРµ РґРѕРіР°РґР°РµС‚СЃСЏ, С‡С‚Рѕ С‚РѕР»СЊРєРѕ С‡С‚Рѕ Р’С‹ Р±С‹Р»Рё РЅР° Р»Р°Р·РµСЂРЅРѕР№ СЌРїРёР»СЏС†РёРё. </div>
+						<div class="advantages__item"><span class="advantages__color-pink">Эпиляция без боли.</span>  Вакуумная технология гарантирует комфортность процедуры даже при низком болевом пороге. </div>
+						<div class="advantages__item"><span class="advantages__color-pink">Круглый год.</span>  Инновационные параметры LightSheer DUET позволяют проводить эпиляцию даже на загоревшей коже летом. </div>
+						<div class="advantages__item"><span class="advantages__color-pink">Удаление навсегда.</span>  Научно доказано, что после 4 процедур более 85% волос перестают расти. </div>
+						<div class="advantages__item"><span class="advantages__color-pink">Никаких вросших волос.</span>  LightSheer DUET не воздействует на волос механически, поэтому вероятность вросших волос исключена. </div>
+						<div class="advantages__item"><span class="advantages__color-pink">Универсальность.</span>  LightSheer DUET эффективен на светлых, темных и даже рыжих волосах (кроме седых), официально разрешен к применения
+		на I-VI фототипах кожи. </div>
+						<div class="advantages__item"><span class="advantages__color-pink">Самая быстрая эпиляция.</span>  Лазерная эпиляция бикини или лазерная эпиляция ног, например, займет максимум 20 минут, а лазерная эпиляция подмышек пройдет всего за 5-7 минут. </div>
+						<div class="advantages__item"><span class="advantages__color-pink">Абсолютно безопасно.</span>  Безопасность лазерного воздействия на человека подтверждается обширной базой клинических исследований по
+		LightSheer DUET  с 1998 года. </div>
+						<div class="advantages__item"><span class="advantages__color-pink">Эпиляция без следа.</span>  Сразу после процедуры Вы можете идти на важное совещание или романтическое свидание - никто не догадается, что только что Вы были на лазерной эпиляции. </div>
 					</section><!--advantages-->
 					<section class="why wow fadeIn">
-						<h2 class="h2 h2--tl">РџРѕС‡РµРјСѓ РЅРµРѕР±С…РѕРґРёРјРѕ РЅРµСЃРєРѕР»СЊРєРѕ РїСЂРѕС†РµРґСѓСЂ?</h2>
-						<p class="text"> Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РѕРґРЅРѕР№ РїСЂРѕС†РµРґСѓСЂС‹ СѓРЅРёС‡С‚РѕР¶Р°РµС‚СЃСЏ 10-15% Р»СѓРєРѕРІРёС†, РЅР°С…РѕРґСЏС‰РёС…СЃСЏ РЅР° РјРѕРјРµРЅС‚ СЌРїРёР»СЏС†РёРё РІ С„Р°Р·Рµ СЂРѕСЃС‚Р°.  РќРѕ РїРѕСЃРєРѕР»СЊРєСѓ Р»Р°Р·РµСЂ РїРѕРІСЂРµР¶РґР°РµС‚ С‚РѕР»СЊРєРѕ РІРѕР»РѕСЃСЏРЅС‹Рµ Р»СѓРєРѕРІРёС†С‹, РЅР°С…РѕРґСЏС‰РёРµСЃСЏ РІ Р°РєС‚РёРІРЅРѕР№ СЃС‚Р°РґРёРё С†РёРєР»Р° СЂРѕСЃС‚Р° РІРѕР»РѕСЃ, РґР»СЏ РїРѕР»РЅРѕРіРѕ РёС… СѓРґР°Р»РµРЅРёСЏ РЅРµРѕР±С…РѕРґРёРјРѕ 6-8 РїСЂРѕС†РµРґСѓСЂ СЃ РёРЅС‚РµСЂРІР°Р»РѕРј 1-1,5-2 РјРµСЃСЏС†Р°. </p>
+						<h2 class="h2 h2--tl">Почему необходимо несколько процедур?</h2>
+						<p class="text"> В результате одной процедуры уничтожается 10-15% луковиц, находящихся на момент эпиляции в фазе роста.  Но поскольку лазер повреждает только волосяные луковицы, находящиеся в активной стадии цикла роста волос, для полного их удаления необходимо 6-8 процедур с интервалом 1-1,5-2 месяца. </p>
 						<div class="why__wrap">
 							<div class="why__item">
-								<div class="why__header">1-2 РїСЂРѕС†РµРґСѓСЂС‹</div>
+								<div class="why__header">1-2 процедуры</div>
 								<div class="why__img"><img src="img/why1.png" alt=""></div>
 								<div class="why__circle">
-									<div class="t1">СѓРґР°Р»РµРЅРѕ</div>
-									<div class="t2">РґРѕ <span class="number">30%</span></div>
-									<div class="t3">РІРѕР»РѕСЃРєРѕРІ</div>
+									<div class="t1">удалено</div>
+									<div class="t2">до <span class="number">30%</span></div>
+									<div class="t3">волосков</div>
 								</div>
 							</div>
 							<div class="why__item">
-								<div class="why__header">3-4 РїСЂРѕС†РµРґСѓСЂС‹</div>
+								<div class="why__header">3-4 процедуры</div>
 								<div class="why__img"><img src="img/why2.png" alt=""></div>
 								<div class="why__circle">
-									<div class="t1">СѓРґР°Р»РµРЅРѕ</div>
-									<div class="t2">РґРѕ <span class="number">60%</span></div>
-									<div class="t3">РІРѕР»РѕСЃРєРѕРІ</div>
+									<div class="t1">удалено</div>
+									<div class="t2">до <span class="number">60%</span></div>
+									<div class="t3">волосков</div>
 								</div>
 							</div>
 							<div class="why__item">
-								<div class="why__header">5-6 РїСЂРѕС†РµРґСѓСЂС‹</div>
+								<div class="why__header">5-6 процедуры</div>
 								<div class="why__img"><img src="img/why3.png" alt=""></div>
 								<div class="why__circle why__circle--green">
-									<div class="t1">СѓРґР°Р»РµРЅРѕ</div>
-									<div class="t2">РґРѕ <span class="number">90%</span></div>
-									<div class="t3">РІРѕР»РѕСЃРєРѕРІ</div>
+									<div class="t1">удалено</div>
+									<div class="t2">до <span class="number">90%</span></div>
+									<div class="t3">волосков</div>
 								</div>
 							</div>
 							<div class="why__item">
-								<div class="why__header">РЈРґР°Р»РµРЅРёРµ РЅР°РІСЃРµРіРґР°</div>
-								<div class="why__desc">РќР°СѓС‡РЅРѕ РґРѕРєР°Р·Р°РЅРѕ, С‡С‚Рѕ РїРѕСЃР»Рµ 4 РїСЂРѕС†РµРґСѓСЂ Р±РѕР»РµРµ 85% РІРѕР»РѕСЃ РїРµСЂРµСЃС‚Р°СЋС‚ СЂР°СЃС‚Рё.</div>
+								<div class="why__header">Удаление навсегда</div>
+								<div class="why__desc">Научно доказано, что после 4 процедур более 85% волос перестают расти.</div>
 								<div class="why__img"><img src="img/why4.png" alt=""></div>
 								<div class="why__icon">
 									<svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg>
@@ -558,164 +566,164 @@
 						</div>
 					</section><!--why-->
 					<section class="contraindication wow fadeIn">
-						<h2 class="h2 h2--tl">РџСЂРѕС‚РёРІРѕРїРѕРєР°Р·Р°РЅРёСЏ</h2>
-						<p class="text"> РџРµСЂРµРґ РїСЂРѕС†РµРґСѓСЂРѕР№ Р’Р°СЃ РїСЂРѕРєРѕРЅСЃСѓР»СЊС‚РёСЂСѓРµС‚ РЅР°С€ РѕРїС‹С‚РЅС‹Р№ СЃРїРµС†РёР°Р»РёСЃС‚ Рё РїСЂРµРґРѕСЃС‚Р°РІРёС‚ РёРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ СЂРµРєРѕРјРµРЅРґР°С†РёРё<br>
-						РќРёР¶Рµ РїСЂРёРІРµРґРµРЅ СЃРїРёСЃРѕРє РѕСЃРЅРѕРІРЅС‹С… РїСЂРѕС‚РёРІРѕРїРѕРєР°Р·Р°РЅРёР№:
+						<h2 class="h2 h2--tl">Противопоказания</h2>
+						<p class="text"> Перед процедурой Вас проконсультирует наш опытный специалист и предоставит индивидуальные рекомендации<br>
+						Ниже приведен список основных противопоказаний:
 						</p>
 						<ul class="list contraindication__list">
-							<li class="list__li">Р Р°Р·Р»РёС‡РЅС‹Рµ Р·Р°Р±РѕР»РµРІР°РЅРёСЏ СЌРїРёРґРµСЂРјРёСЃР° - РѕСЃРѕР±РµРЅРЅРѕ РІРѕСЃРїР°Р»РµРЅРёСЏ;</li>
-							<li class="list__li">Р“РµСЂРїРµСЃ;</li>
-							<li class="list__li">РўСѓР±РµСЂРєСѓР»С‘Р·;</li>
-							<li class="list__li">РџСЃРѕСЂРёР°Р·;</li>
-							<li class="list__li">Р’РёСЂСѓСЃРЅС‹Рµ Р·Р°Р±РѕР»РµРІР°РЅРёСЏ;</li>
-							<li class="list__li">Р’РёСЂСѓСЃРЅС‹Рµ Р·Р°Р±РѕР»РµРІР°РЅРёСЏ;</li>
-							<li class="list__li">РЎРµСЂРґРµС‡РЅРѕ-СЃРѕСЃСѓРґРёСЃС‚С‹Рµ Р·Р°Р±РѕР»РµРІР°РЅРёСЏ;</li>
-							<li class="list__li">РЎР°С…Р°СЂРЅС‹Р№ РґРёР°Р±РµС‚;</li>
-							<li class="list__li">Р”РѕР±СЂРѕРєР°С‡РµСЃС‚РІРµРЅРЅС‹Рµ Рё Р·Р»РѕРєР°С‡РµСЃС‚РІРµРЅРЅС‹Рµ РѕРїСѓС…РѕР»Рё;</li>
-							<li class="list__li">Р¤РѕС‚РѕРґРµСЂРјР°С‚РёС‚;</li>
-							<li class="list__li">Р›РµР№РєРѕР· РєСЂРѕРІРё;</li>
-							<li class="list__li">Р‘РµСЂРµРјРµРЅРЅРѕСЃС‚СЊ;</li>
-							<li class="list__li">Р’РѕР»РѕСЃСЏРЅС‹Рµ СЂРѕРґРёРјС‹Рµ РїСЏС‚РЅР° РІ Р·РѕРЅРµ РІРѕР·РґРµР№СЃС‚РІРёСЏ;</li>
-							<li class="list__li">Р­РїРёР»РµРїСЃРёСЏ;</li>
+							<li class="list__li">Различные заболевания эпидермиса - особенно воспаления;</li>
+							<li class="list__li">Герпес;</li>
+							<li class="list__li">Туберкулёз;</li>
+							<li class="list__li">Псориаз;</li>
+							<li class="list__li">Вирусные заболевания;</li>
+							<li class="list__li">Вирусные заболевания;</li>
+							<li class="list__li">Сердечно-сосудистые заболевания;</li>
+							<li class="list__li">Сахарный диабет;</li>
+							<li class="list__li">Доброкачественные и злокачественные опухоли;</li>
+							<li class="list__li">Фотодерматит;</li>
+							<li class="list__li">Лейкоз крови;</li>
+							<li class="list__li">Беременность;</li>
+							<li class="list__li">Волосяные родимые пятна в зоне воздействия;</li>
+							<li class="list__li">Эпилепсия;</li>
 						</ul><!--list-->
 						<div class="contraindication__img">
 							<img src="img/contra.jpg" alt="">
 							<div class="text">
-								<a href="#" class="btn contraindication__btn">Р—Р°РїРёСЃР°С‚СЊСЃСЏ РЅР° Р±РµСЃРїР»Р°С‚РЅСѓСЋ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЋ</a>
+								<a href="#" class="btn contraindication__btn">Записаться на бесплатную консультацию</a>
 							</div>
 						</div>
 					</section><!--contraindication-->
-					<div class="table__header">Р­РїРёР»СЏС†РёСЏ LightSheer DUET РґР»СЏ Р¶РµРЅС‰РёРЅ</div>
+					<div class="table__header">Эпиляция LightSheer DUET для женщин</div>
 					<table class="table wow fadeIn">
 						<thead>
 							<tr class="table__row table__row--head">
 								<td class="table__cell"></td>
-								<td class="table__cell">1 СЃРµР°РЅСЃ</td>
-								<td class="table__cell" colspan="2">4 СЃРµР°РЅСЃР°</td>
-								<td class="table__cell" colspan="2">5 СЃРµР°РЅСЃРѕРІ</td>
-								<td class="table__cell" colspan="2">6 СЃРµР°РЅСЃРѕРІ</td>
+								<td class="table__cell">1 сеанс</td>
+								<td class="table__cell" colspan="2">4 сеанса</td>
+								<td class="table__cell" colspan="2">5 сеансов</td>
+								<td class="table__cell" colspan="2">6 сеансов</td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr class="table__row table__row--head-desc">
-								<td class="table__cell">РћР±Р»Р°СЃС‚СЊ СЌРїРёР»СЏС†РёРё</td>
-								<td class="table__cell">Р·Р° СЃРµР°РЅСЃ</td>
-								<td class="table__cell">Р·Р° СЃРµР°РЅСЃ</td>
-								<td class="table__cell">РІСЃРµРіРѕ</td>
-								<td class="table__cell">Р·Р° СЃРµР°РЅСЃ</td>
-								<td class="table__cell">РІСЃРµРіРѕ</td>
-								<td class="table__cell">Р·Р° СЃРµР°РЅСЃ</td>
-								<td class="table__cell">РІСЃРµРіРѕ</td>
+								<td class="table__cell">Область эпиляции</td>
+								<td class="table__cell">за сеанс</td>
+								<td class="table__cell">за сеанс</td>
+								<td class="table__cell">всего</td>
+								<td class="table__cell">за сеанс</td>
+								<td class="table__cell">всего</td>
+								<td class="table__cell">за сеанс</td>
+								<td class="table__cell">всего</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 							<tr class="table__row">
-								<td class="table__cell"><a href="#" class="table__link">Р›РѕР± (РїРѕ Р»РёРЅРёРё СЂРѕСЃС‚Р° РІРѕР»РѕСЃ)</a></td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 200</span> СЂСѓР±.</td>
-								<td class="table__cell">РѕС‚ <span class="number">1 500</span> СЂСѓР±.</td>
+								<td class="table__cell"><a href="#" class="table__link">Лоб (по линии роста волос)</a></td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 200</span> руб.</td>
+								<td class="table__cell">от <span class="number">1 500</span> руб.</td>
 							</tr>
 
 						</tbody>
@@ -723,89 +731,89 @@
 				</div><!--wrapper-->
 			</div><!--content-->
 		</div><!--right-side-->
-		<form action="" class="form-main">
+		<form action="" class="form-main wow fadeIn">
 			<div class="form-main__desc">
 				<div class="text-wrap">
-					<div class="t1">РђРєС†РёСЏ!</div>
-					<div class="t2">Р»Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ<br>РїРѕРґРјС‹С€РµРє</div>
-					<div class="t3">Р±РµСЃРїР»Р°С‚РЅРѕ!</div>
+					<div class="t1">Акция!</div>
+					<div class="t2">лазерная эпиляция<br>подмышек</div>
+					<div class="t3">бесплатно!</div>
 				</div>
 			</div>
 			<div class="form-main__content">
 				<div class="form-main__services">
-					<p class="text">Р’С‹Р±РµСЂРёС‚Рµ Р·РѕРЅСѓ РґР»СЏ СЌРїРёР»СЏС†РёРё:</p>
+					<p class="text">Выберите зону для эпиляции:</p>
 					<div class="form-main__list">
-						<div class="form-main__inpbox inpbox"><input id="form-main--1" type="checkbox" class="inpbox__input"><label for="form-main--1" class="inpbox__label">Р—РѕРЅР° Р±РёРєРёРЅРё</label></div>
-						<div class="form-main__inpbox inpbox"><input id="form-main--2" type="checkbox" class="inpbox__input"><label for="form-main--2" class="inpbox__label">РЎРїРёРЅР°</label></div>
-						<div class="form-main__inpbox inpbox"><input id="form-main--3" type="checkbox" class="inpbox__input"><label for="form-main--3" class="inpbox__label">Р СѓРєРё</label></div>
-						<div class="form-main__inpbox inpbox"><input id="form-main--4" type="checkbox" class="inpbox__input"><label for="form-main--4" class="inpbox__label">РќРѕРіРё</label></div>
-						<div class="form-main__inpbox inpbox"><input id="form-main--5" type="checkbox" class="inpbox__input"><label for="form-main--5" class="inpbox__label">Р›РёС†Рѕ</label></div>
-						<div class="form-main__inpbox inpbox"><input id="form-main--6" type="checkbox" class="inpbox__input"><label for="form-main--6" class="inpbox__label">Р’РµСЂС…РЅСЏСЏ РіСѓР±Р°</label></div>
-						<div class="form-main__inpbox inpbox"><input id="form-main--7" type="checkbox" class="inpbox__input"><label for="form-main--7" class="inpbox__label">РџРѕРґРјС‹С€РєРё</label></div>
-						<div class="form-main__inpbox inpbox"><input id="form-main--8" type="checkbox" class="inpbox__input"><label for="form-main--8" class="inpbox__label">Р–РёРІРѕС‚</label></div>
+						<div class="form-main__inpbox inpbox"><input id="form-main--1" type="checkbox" class="inpbox__input"><label for="form-main--1" class="inpbox__label">Зона бикини</label></div>
+						<div class="form-main__inpbox inpbox"><input id="form-main--2" type="checkbox" class="inpbox__input"><label for="form-main--2" class="inpbox__label">Спина</label></div>
+						<div class="form-main__inpbox inpbox"><input id="form-main--3" type="checkbox" class="inpbox__input"><label for="form-main--3" class="inpbox__label">Руки</label></div>
+						<div class="form-main__inpbox inpbox"><input id="form-main--4" type="checkbox" class="inpbox__input"><label for="form-main--4" class="inpbox__label">Ноги</label></div>
+						<div class="form-main__inpbox inpbox"><input id="form-main--5" type="checkbox" class="inpbox__input"><label for="form-main--5" class="inpbox__label">Лицо</label></div>
+						<div class="form-main__inpbox inpbox"><input id="form-main--6" type="checkbox" class="inpbox__input"><label for="form-main--6" class="inpbox__label">Верхняя губа</label></div>
+						<div class="form-main__inpbox inpbox"><input id="form-main--7" type="checkbox" class="inpbox__input"><label for="form-main--7" class="inpbox__label">Подмышки</label></div>
+						<div class="form-main__inpbox inpbox"><input id="form-main--8" type="checkbox" class="inpbox__input"><label for="form-main--8" class="inpbox__label">Живот</label></div>
 					</div>
-					<textarea placeholder="РќР°РїРёС€РёС‚Рµ РІР°С€Рё РІРѕРїСЂРѕСЃС‹..." class="textarea input"></textarea>
+					<textarea placeholder="Напишите ваши вопросы..." class="textarea input"></textarea>
 				</div>
 				<div class="form-main__user-info">
-					<input placeholder="Р’РІРµРґРёС‚Рµ РІР°С€Рµ РёРјСЏ" type="text" class="input">
-					<input placeholder="Р’РІРµРґРёС‚Рµ РІР°С€ С‚РµР»РµС„РѕРЅ" type="tel" class="input">
-					<button type="submit" class="btn form-main__submit">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</button>
+					<input placeholder="Введите ваше имя" type="text" class="input input--name">
+					<input placeholder="Введите ваш телефон" type="tel" class="input input--phone">
+					<button type="submit" class="btn form-main__submit">Отправить заявку</button>
 				</div>
 			</div>
 		</form><!--form-main-->
-		<div class="map-tabs">
-			<div data-taba="1" data-id="map-wrap" class="map-tabs__item"><img src="img/metr_1.png" alt="">Р›РµРЅРёРЅСЃРєРёР№ РїСЂРѕСЃРїРµРєС‚</div>
-			<div data-taba="2" data-id="map-wrap" class="map-tabs__item"><img src="img/metr_2.png" alt="">Р›РѕРјРѕРЅРѕСЃРѕРІСЃРєРёР№ РїСЂРѕСЃРїРµРєС‚</div>
-			<div data-taba="3" data-id="map-wrap" class="map-tabs__item"><img src="img/metr_3.png" alt="">РљСѓСЂСЃРєР°СЏ</div>
-			<div data-taba="4" data-id="map-wrap" class="map-tabs__item"><img src="img/metr_4.png" alt="">РћРєС‚СЏР±СЂСЊСЃРєРѕРµ РїРѕР»Рµ</div>
+		<div class="map-tabs wow fadeIn">
+			<div data-taba="1" data-id="map-wrap" class="map-tabs__item active"><img src="img/metr_1.png" alt="">Ленинский проспект</div>
+			<div data-taba="2" data-id="map-wrap" class="map-tabs__item"><img src="img/metr_2.png" alt="">Ломоносовский проспект</div>
+			<div data-taba="3" data-id="map-wrap" class="map-tabs__item"><img src="img/metr_3.png" alt="">Курская</div>
+			<div data-taba="4" data-id="map-wrap" class="map-tabs__item"><img src="img/metr_4.png" alt="">Октябрьское поле</div>
 		</div><!--map-tabs-->
-		<section id="map-wrap" class="map-wrap">
+		<section id="map-wrap" class="map-wrap wow fadeIn">
 			<div data-taba="1" class="map-wrap__item"><script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A957a1f151cedf380f38bb433cf3ee1453aa9e2fde0fb2d5756c3fad7c9bce5a1&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script></div>
 			<div data-taba="2" class="map-wrap__item">2</div>
 			<div data-taba="3" class="map-wrap__item">3</div>
 			<div data-taba="4" class="map-wrap__item">4</div>
 		</section>
 	</main>
-	<footer class="page-footer">
+	<footer class="page-footer wow fadeIn">
 		<div class="page-footer__contact">
 			<div class="page-footer__phone"><i class="icon-wrap"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></i>+7 (495) 123-45-67</div>
-			<div class="page-footer__about"><i class="icon-wrap"></i>РЎРµС‚СЊ РєР»РёРЅРёРє Р»Р°Р·РµСЂРЅРѕР№ СЌРїРёР»СЏС†РёРё Рё РєРѕСЃРјРµС‚РѕР»РѕРіРёРё</div>
-			<a href="#" class="btn">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</a>
+			<div class="page-footer__about">Сеть клиник лазерной эпиляции и косметологии</div>
+			<a href="#" class="btn">Отправить заявку</a>
 		</div><!--page-footer__contact-->
 		<div class="footer-nav">
 			<div class="footer-nav__item">
-				<a href="#" class="footer-nav__header">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ СЂСѓРє</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ СЂСѓРє</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ СЂСѓРє</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ СЂСѓРє</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ СЂСѓРє</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ СЂСѓРє</a>
+				<a href="#" class="footer-nav__header">Лазерная эпиляция рук</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция рук</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция рук</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция рук</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция рук</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция рук</a>
 			</div>
 			<div class="footer-nav__item">
-				<a href="#" class="footer-nav__header">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РЅРѕРі</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РЅРѕРі</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РЅРѕРі</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РЅРѕРі</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РЅРѕРі</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ РЅРѕРі</a>
+				<a href="#" class="footer-nav__header">Лазерная эпиляция ног</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция ног</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция ног</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция ног</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция ног</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция ног</a>
 			</div>
 			<div class="footer-nav__item">
-				<a href="#" class="footer-nav__header">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</a>
-				<a href="#" class="footer-nav__link">Р›Р°Р·РµСЂРЅР°СЏ СЌРїРёР»СЏС†РёСЏ</a>
+				<a href="#" class="footer-nav__header">Лазерная эпиляция</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция</a>
+				<a href="#" class="footer-nav__link">Лазерная эпиляция</a>
 			</div>
 		</div><!--footer-nav-->
 		<div class="page-footer__social">
-			<span class="t1">РџРѕРЅСЂР°РІРёР»СЃСЏ СЃРµСЂРІРёСЃ? Р Р°СЃСЃРєР°Р¶Рё РґСЂСѓР·СЊСЏРј!</span>
+			<span class="t1">Понравился сервис? Расскажи друзьям!</span>
 			<div class="page-footer__soc-btns"><img src="img/social.png" alt=""></div>
 			<div class="page-footer__metrika"><img src="img/metr.png" alt=""></div>
 		</div>
 		<div class="page-footer__bot">
-			<div class="page-footer__copy"> В© 2017 СЃРµС‚СЊ РєР»РёРЅРёРє Р»Р°Р·РµСЂРЅРѕР№ СЌРїРёР»СЏС†РёРё Рё РєРѕСЃРјРµС‚РѕР»РѕРіРёРё</div>
-			<div class="page-footer__by"> РЎРѕР·РґР°РЅРёРµ Рё РїСЂРѕРґРІРёР¶РµРЅРёРµ СЃР°Р№С‚Р° <a href="#">Es-Studio</a></div>
+			<div class="page-footer__copy"> © 2017 сеть клиник лазерной эпиляции и косметологии</div>
+			<div class="page-footer__by"> Создание и продвижение сайта <a href="#">Es-Studio</a></div>
 		</div>
 	</footer>
 	<script src="js/libs.min.js"></script>
