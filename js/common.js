@@ -14,6 +14,7 @@ $(document).ready(function () {
 	$('.menu__wrap, .nav__link--services').click(function () {
 		$('.page-header').toggleClass('page-header--menu');
 		$('.page-header__metro').fadeToggle().toggleClass('slide-left active');
+		$('.hamburger__text').toggle();
 		$('.hamburger').toggleClass('hamburgerActive');
 		$('body').toggleClass('overflow');
 	});
