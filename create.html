@@ -4,13 +4,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<meta charset="utf-8">
-	<title>ES Studio</title>
+	<title> СОЗДАНИЕ САЙТА ЗАСТРОЙЩИКА</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
+			<symbol id="icon-arrow_back" viewBox="0 0 24 24">
+			<title>arrow_back</title>
+			<path d="M20.016 11.016v1.969h-12.188l5.578 5.625-1.406 1.406-8.016-8.016 8.016-8.016 1.406 1.406-5.578 5.625h12.188z"></path>
+			</symbol>
+			<symbol id="icon-arrow_forward" viewBox="0 0 24 24">
+			<title>arrow_forward</title>
+			<path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z"></path>
+			</symbol>
 			<symbol id="icon-phone_in_talk" viewBox="0 0 24 24">
 			<title>phone_in_talk</title>
 			<path d="M15 12c0-1.641-1.359-3-3-3v-2.016c2.766 0 5.016 2.25 5.016 5.016h-2.016zM18.984 12c0-3.891-3.094-6.984-6.984-6.984v-2.016c4.969 0 9 4.031 9 9h-2.016zM20.016 15.516c0.563 0 0.984 0.422 0.984 0.984v3.516c0 0.563-0.422 0.984-0.984 0.984-9.375 0-17.016-7.641-17.016-17.016 0-0.563 0.422-0.984 0.984-0.984h3.516c0.563 0 0.984 0.422 0.984 0.984 0 1.266 0.188 2.438 0.563 3.563 0.094 0.328 0.047 0.75-0.234 1.031l-2.203 2.203c1.453 2.859 3.797 5.156 6.609 6.609l2.203-2.203c0.281-0.281 0.703-0.328 1.031-0.234 1.125 0.375 2.297 0.563 3.563 0.563z"></path>
@@ -109,7 +117,7 @@
 			<div class="page-header__address">Москва, Большой Каретный пер., д.2</div>
 		</div>
 	</div><!--page-header-->
-	<main class="main">
+	<main class="main main--static">
     <aside class="left-menu">
     	<a href="#" class="left-menu__logo"></a>
     	<div class="left-menu__item">
@@ -153,284 +161,126 @@
     		</ul>
     	</div>
     </aside>
-    <div class="slider-main__wrap">
-			<section class="slider-main wow fadeIn">
-			<div class="slider-main__slide">
-			  <img src="img/slide1.jpg" alt="">
-				<div class="slider-main__text">
-					<div class="t1">Создаем адаптивные сайты</div>
-					<div class="t2">С высокой конверсией</div>
+    <section class="bread wrapper">
+			<a href="#" class="bread__link">ES-Studio</a>
+			<a href="#" class="bread__link">Портфолио</a>
+			<a href="#" class="bread__link">Создание сайта застройщика</a>
+		</section><!--bread-->
+		<h2 class="h1"> СОЗДАНИЕ САЙТА ЗАСТРОЙЩИКА</h2>
+		<div class="portfolio-page wow fadeIn">
+    	<div style="background-image: url(img/portfolio-static1.jpg);" class="portfolio-page__img">
+				<img src="img/portfolio-static1.jpg" alt="">
+    		<div class="portfolio-page__img-desc">
+    			<div class="t1"> ЖК «АФРОДИТА»</div>
+    			<div class="t2"> Разработка сайта компании застройщика</div>
+    		</div>
+    	</div><!--portfolio-page__img-->
+    	<div class="portfolio-page__desc">
+    		<div class="portfolio-page__info portfolio-page__info--aliance">
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Клиент:</div>
+    				<div class="portfolio-page__name">ЖК «АФРОДИТА»</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type"> Услуги:</div>
+    				<div class="portfolio-page__value">
+    					<a href="#" class="portfolio-page__link">создание сайта,</a>
+    					<a href="#" class="portfolio-page__link">контекстная реклама,</a><br>
+    					<a href="#" class="portfolio-page__link">продвижение сайта</a>
+    				</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Ссылка:</div>
+    				<div class="portfolio-page__value"><a href="#" class="portfolio-page__link">http://0051234.ru</a></div>
+    			</div>
+    		</div><!--portfolio-page__info-->
+    		<div class="portfolio-page__spec">
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Задача:</div>
+						<div class="portfolio-page__text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</div>
+    			</div>
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Решение:</div>
+						<div class="portfolio-page__text">  Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</div>
+    			</div>
+    		</div><!--portfolio-page__spec-->
+    	</div><!--portfolio-page__desc-->
+    </div><!--portfolio-page-->
+		<section class="gallery">
+			<div id="galleryWrap" class="gallery__img-wrap">
+				<div data-taba="1" class="gallery__img first active"><img src="img/product1.jpg" alt=""></div>
+				<div data-taba="2" class="gallery__img"><img src="img/product1.jpg" alt="">2</div>
+				<div data-taba="3" class="gallery__img last"><img src="img/product1.jpg" alt="">3</div>
+			</div>
+			<div class="gallery__nav">
+				<button type="button" class="gallery__arrow gallery__arrow--prev disabled"><svg class="icon icon-arrow_back"><use xlink:href="#icon-arrow_back"></use></svg></button>
+				<div class="gallery__nav-wrap">
+					<button data-id="galleryWrap" data-taba="1" type="button" class="gallery__nav-item active">Главная страница</button>
+					<button data-id="galleryWrap" data-taba="2" type="button" class="gallery__nav-item">Карточка</button>
+					<button data-id="galleryWrap" data-taba="3" type="button" class="gallery__nav-item">Адаптивность</button>
+				</div>
+				<button type="button" class="gallery__arrow gallery__arrow--next"><svg class="icon icon-arrow_forward"><use xlink:href="#icon-arrow_forward"></use></svg></button>
+			</div>
+		</section>
+		<h2 class="h2">РЕЗУЛЬТАТ</h2>
+		<section class="result">
+			<div class="result__item">
+				<div class="result__wrap">
+					<div class="result__img"><img src="img/result.jpg" alt=""></div>
+					<div class="result__text">
+						<div class="result__header"><i class="icon-wrap"><svg class="icon icon-timeline"><use xlink:href="#icon-timeline"></use></svg></i>Анализ YANDEX метрики:</div>
+						<p class="text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</p>
+						<p class="text">Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</p>
+						<p class="text">Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</p>
+					</div>
 				</div>
 			</div>
-			<div class="slider-main__slide">
-			  <img src="img/slide1.jpg" alt="">
-				<div class="slider-main__text">
-					<div class="t1">Создаем адаптивные сайты</div>
-					<div class="t2">С высокой конверсией</div>
+			<div class="result__item">
+				<div class="result__wrap">
+					<div class="result__img"><img src="img/result.jpg" alt=""></div>
+					<div class="result__text">
+						<div class="result__header"><i class="icon-wrap"><svg class="icon icon-timeline"><use xlink:href="#icon-timeline"></use></svg></i>Анализ YANDEX метрики:</div>
+						<p class="text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</p>
+						<p class="text">Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</p>
+						<p class="text">Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</p>
+					</div>
 				</div>
 			</div>
-			<div class="slider-main__slide">
-			  <img src="img/slide1.jpg" alt="">
-				<div class="slider-main__text">
-					<div class="t1">Создаем адаптивные сайты</div>
-					<div class="t2">С высокой конверсией</div>
+			<div class="result__item">
+				<div class="result__wrap">
+					<div class="result__img"><img src="img/result.jpg" alt=""></div>
+					<div class="result__text">
+						<div class="result__header"><i class="icon-wrap"><svg class="icon icon-timeline"><use xlink:href="#icon-timeline"></use></svg></i>Анализ YANDEX метрики:</div>
+						<p class="text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</p>
+						<p class="text">Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</p>
+						<p class="text">Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</p>
+					</div>
 				</div>
 			</div>
-			<div class="slider-main__slide">
-			  <img src="img/slide1.jpg" alt="">
-				<div class="slider-main__text">
-					<div class="t1">Создаем адаптивные сайты</div>
-					<div class="t2">С высокой конверсией</div>
+			<div class="result__item">
+				<div class="result__wrap">
+					<div class="result__img"><img src="img/result.jpg" alt=""></div>
+					<div class="result__text">
+						<div class="result__header"><i class="icon-wrap"><svg class="icon icon-timeline"><use xlink:href="#icon-timeline"></use></svg></i>Анализ YANDEX метрики:</div>
+						<p class="text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</p>
+						<p class="text">Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</p>
+						<p class="text">Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</p>
+					</div>
 				</div>
 			</div>
-			
-		</section><!--slider-main-->
-			<a href="#" class="slider-main__angle"></a>
-		</div>
-		<h2 class="h2 h2--mt70">Наши услуги</h2>
-		<section class="services-slider wow fadeIn">
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Разработка <br>сайтов</div>
-				<div class="services-slider__icon">
-    			<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
-    		</div>
-				<div class="services-slider__img services-slider__img--blue"><img src="img/services-1.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">100 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Продвижение<br>сайтов</div>
-				<div class="services-slider__icon">
-    			<svg class="icon icon-timeline"><use xlink:href="#icon-timeline"></use></svg>
-    		</div>
-				<div class="services-slider__img services-slider__img--pink"><img src="img/services-2.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Аудит и анализ</div>
-				<div class="services-slider__icon">
-    			<svg class="icon icon-equalizer"><use xlink:href="#icon-equalizer"></use></svg>
-    		</div>
-				<div class="services-slider__img services-slider__img--green"><img src="img/services-3.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">80 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Реклама</div>
-				<div class="services-slider__icon">
-    			<svg class="icon icon-rocket"><use xlink:href="#icon-rocket"></use></svg>
-    		</div>
-				<div class="services-slider__img services-slider__img--purple"><img src="img/services-4.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">250 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Интернет<br>маркетинг</div>
-				<div class="services-slider__icon">
-    			<svg class="icon icon-chat"><use xlink:href="#icon-chat"></use></svg>
-    		</div>
-				<div class="services-slider__img services-slider__img--yellow"><img src="img/services-5.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">60 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Поддержка</div>
-				<div class="services-slider__icon">
-    			<svg class="icon icon-handshake"><use xlink:href="#icon-handshake-o"></use></svg>
-    		</div>
-				<div class="services-slider__img services-slider__img--darkblue"><img src="img/services-6.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Разработка <br>сайтов</div>
-				<div class="services-slider__img services-slider__img--blue"><img src="img/services-1.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">100 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Продвижение<br>сайтов</div>
-				<div class="services-slider__img services-slider__img--pink"><img src="img/services-2.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Аудит и анализ</div>
-				<div class="services-slider__img services-slider__img--green"><img src="img/services-3.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">80 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Реклама</div>
-				<div class="services-slider__img services-slider__img--purple"><img src="img/services-4.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">250 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Интернет<br>маркетинг</div>
-				<div class="services-slider__img services-slider__img--yellow"><img src="img/services-5.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">60 000</span> руб.</div>
-			</a>
-			<a href="#" class="services-slider__item">
-				<div class="services-slider__desc">Поддержка</div>
-				<div class="services-slider__img services-slider__img--darkblue"><img src="img/services-6.jpg" alt=""></div>
-				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
-			</a>
 			
 		</section>
-		<section class="our-goal wow fadeIn wrapper">
-			<div class="our-goal__img">
-				<img src="img/boss.jpg" alt="" class="img">
-				<div class="name"> Директор студии Степанов Евгений</div>
+		<h2 class="h2">ДО/ПОСЛЕ</h2>
+		<div class="before-after">
+			<div class="before-after__img">
+				<img src="img/b4-after.jpg" alt="">
+				<div class="before-after__desc">
+					<div class="before-after__text before-after__text--b4">до</div>
+					<div class="before-after__text before-after__text--after">после</div>
+				</div>
 			</div>
-			<div class="our-goal__desc">
-				<div class="our-goal__header">Наша цель - рост вашего бизнеса</div>
-				<p class="text">
-				 Главным преимуществом студии ES-Studio можно назвать наличие богатого опыта. Работаем с 2004 года. Большинство заказчиков не могут сформулировать задачу в технических терминах, опыт помогает лучше понимать пожелания клиентов и удовлетворять их. После того, как сайт будет готов и запущен, мы продолжаем оказывать поддержку и развитие. Такой подход дает результат в виде большого числа отзывов и постоянных клиентов, он позволяет совершенствовать наше мастерство.
-				</p>
-				<p class="text">
-				Первоначально нужно определиться с функциональностью страниц и их структурой. Для этого проводится моделирование сценариев возможного поведения пользователей. Второй этап включает в себя создание нескольких эскизов, выбор между которыми предлагается сделать заказчику. Их разработка проводится в соответствии с целью привлечения клиентов.
-				</p>
-				<p class="text">Прототипы и концепция служат основой для создания полноценного макета. Он включает в себя верстку и написание скриптов для визуализации отдельных элементов. После окончательного согласования функциональности можно приступать к написанию кода и интеграции/настройке CMS и сторонних сервисов.</p>
-			</div>
-		</section><!--our-goal-->
-		<h2 class="h2 h2--mt100">Портфолио</h2>
-		<section class="portfolio wow fadeIn">
-			<a href="#" class="portfolio__item portfolio__item--arrow">
-				<img class="img" src="img/portfolio1.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo1.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--aliance">
-				<img class="img" src="img/portfolio2.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo2.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--ekofin">
-				<img class="img" src="img/portfolio3.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo3.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--nika">
-				<img class="img" src="img/portfolio4.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo4.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--illusion">
-				<img class="img" src="img/portfolio5.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo5.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--arrow">
-				<img class="img" src="img/portfolio1.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo1.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--aliance">
-				<img class="img" src="img/portfolio2.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo2.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--ekofin">
-				<img class="img" src="img/portfolio3.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo3.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--nika">
-				<img class="img" src="img/portfolio4.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo4.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="portfolio__item portfolio__item--illusion">
-				<img class="img" src="img/portfolio5.jpg" alt="">
-				<div class="portfolio__logo"><img src="img/portfolio-logo5.png" alt=""></div>
-				<div class="portfolio__popup">
-					<div class="wrap">
-						<div class="portfolio__title"> СГ «АЛЬЯНС»</div>
-						<div class="portfolio__desc"> Разработка сайта для<br>компании застройщика</div>
-					</div>
-				</div>
-			</a>
-			
-		</section><!--portfolio-->
-		<a href="#" class="btn btn--all">Все работы</a>
-		<a style="display: none;" href="#" class="btn btn--all-work">Все работы</a>
-		<section class="advantages  wow fadeIn">
-			<div class="advantages__item advantages__item--red">
-				<div class="advantages__top">
-					<div class="advantages__circle advantages__circle--red">
-						<div class="t t1 spincrement">15</div>
-						<div class="t t2">лет<br>на рынке рекламы</div>
-					</div>
-				</div>
-				<div class="advantages__desc advantages__desc--first">
-					<div class="icon"><svg class="icon icon-verifed-user"><use xlink:href="#icon-verifed-user"></use></svg></div>
-					<div class="text"> Главным преимуществом студии ES-Studio можно назвать наличие богатого опыта. Работаем с 2004 года. Большинство заказчиков не могут сформулировать задачу в технических терминах, опыт помогает лучше понимать пожелания клиентов и удовлетворять их.</div>
-				</div>
-			</div><!--advantages-item-->
-			<div class="advantages__item advantages__item--purple">
-				<div class="advantages__header">Преимущества</div>
-				<div class="advantages__top">
-					<div class="advantages__circle advantages__circle--purple">
-						<div class="t t1 spincrement">38</div>
-						<div class="t t2">успешных<br>проектов</div>
-					</div>
-				</div>
-				<div class="advantages__desc advantages__desc--second">
-					<div class="icon icon--purple"><svg class="icon business_center"><use xlink:href="#icon-business_center"></use></svg></div>
-					<div class="text">  Первоначально нужно определиться с функциональностью страниц и их структурой. Для этого проводится моделирование сценариев возможного поведения пользователей. Второй этап включает в себя создание нескольких эскизов.</div>
-				</div>
-			</div><!--advantages-item-->
-			<div class="advantages__item advantages__item--blue">
-				<div class="advantages__top">
-					<div class="advantages__circle advantages__circle--blue">
-						<div class="t t1 spincrement">10</div>
-						<div class="t t2">сотрудников<br>в штате</div>
-					</div>
-				</div>
-				<div class="advantages__desc  advantages__desc--third">
-					<div class="icon icon--blue"><svg class="icon supervisor-account"><use xlink:href="#icon-supervisor-account"></use></svg></div>
-					<div class="text">  Прототипы и концепция служат основой для создания полноценного макета. Он включает в себя верстку и написание скриптов для визуализации отдельных элементов. После окончательного согласования функциональности.</div>
-				</div>
-			</div><!--advantages-item-->
-			<div class="advantages__bg"></div>
-		</section><!--advantages-->
+		</div>
+		<a href="#" class="btn btn--all btn--all-320">Следующий проект</a>
 		<section class="form  wow pulse">
 			<div class="form__header">Онлайн заявка</div>
 			<form action="" class="form__content">
@@ -472,7 +322,7 @@
 						<label for="form__accept-personal" class="form__check-label">Я согласен на обработку персональных данных</label>
 					</div>
 				</div>
-				<button type="submit" class="form__submit">Отправить заявку</button>
+				<button type="button" type="submit" class="form__submit">Отправить заявку</button>
 			</form>
 		</section><!--form-->
 	</main><!--main-->
