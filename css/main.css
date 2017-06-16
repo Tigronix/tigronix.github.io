@@ -1925,14 +1925,12 @@ span.hamb-close.hamb-closeActive span:after {
   padding-top: 30px; }
   .footer-nav .icon {
     margin-right: 10px;
-    font-size: 30px; }
+    font-size: 24px; }
   .footer-nav__item {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    .footer-nav__item:first-child .footer-nav__header {
-      padding-left: 17px; }
   .footer-nav__header {
     border-bottom: 1px solid #735D88;
     padding-bottom: 30px;
