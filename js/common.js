@@ -65,9 +65,36 @@ $(document).ready(function () {
 	});
 	//slider-main
 	$('.portfolio').slick({
-		slidesToShow: 5
-		, slidesToScroll: 1
-		, arrows: true
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 401,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+			
+		]
 	});
 	//services
 	$('.services-slider').slick({
