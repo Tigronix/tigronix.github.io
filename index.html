@@ -1,10 +1,918 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-	<h1>test</h1>
+	<div id="global-svg">
+		<global-svg></global-svg>
+	</div>
+	<header class="header">
+		<div data-class="mobile-menu" data-number="1" class="menu__wrap animate__button">
+			<span class="hamburger">
+				<span class="hamburger__line"></span>
+				<span class="line hamburger__line"></span>
+				<div class="hamburger__back">Назад</div>
+			</span>
+			<div class="hamburger__text">меню</div>
+		</div>
+		<a href="#" class="header__logo">
+			<i class="icon wow rollIn"><svg class="icon icon-down"><use xlink:href="#icon-donut_small"></use></svg></i>
+			<span class="text"><span>Осетинский</span> Пир</span>
+			<img src="img/logo.png" alt="">
+		</a>
+		<nav data-class="mobile-menu" data-number="1" class="nav animate__content animated">
+			<ul class="nav__ul">
+				<li class="nav__li"><a href="#" class="nav__link">Доставка</a></li>
+				<li class="nav__li"><a href="#" class="nav__link nav__link--active wow jackInTheBox">Акции и скидки</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">Оплата</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">Отзывы</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="header__contact">
+			<div class="phone wow pulse infinite">+7 (495) 100-15-10</div>
+			<div class="schedule">Звоните с 9:00 до 21:00 ПН-ВС</div>
+		</div>
+	</header>
+	<main>
+		<section class="about-us">
+			<h1 class="h1">ОСЕТИНСКИЕ ПИРОГИ С ДОСТАВКОЙ</h1>
+			<p class="text">«ОСЕТИНСКИЙ ПИР» найдет наиболее подходящий вариант среди сотен пекарен Москвы в кратчайший срок. Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом. Осетинские пироги издавна были одним из основных блюд этого народа. Традиционно подаются три осетинских пирога, что символизирует три природных стихии: воду и землю.</p>
+		</section>
+		<h2 class="h2 catalog__h2">ВЫБЕРИТЕ НАЧИНКУ ДЛЯ ПИРОГОВ:</h2>
+		<section class="catalog">
+			<div class="catalog__wrapper">
+				<div class="catalog__nav">
+					<div class="catalog__filter"><i class="icon"><svg class="icon icon-down"><use xlink:href="#icon-tune"></use></svg></i>Фильтр</div>
+					<div data-tabclass="pie" data-tabnumber="1" class="catalog__tab active">С МЯСОМ</div>
+					<div data-tabclass="pie" data-tabnumber="2" class="catalog__tab">С СЫРОМ</div>
+					<div data-tabclass="pie" data-tabnumber="3" class="catalog__tab">С КАРТОШКОЙ</div>
+					<div data-tabclass="pie" data-tabnumber="4" class="catalog__tab">С РЫБОЙ</div>
+					<div data-tabclass="pie" data-tabnumber="5" class="catalog__tab">СЛАДКИЕ</div>
+					<div data-tabclass="pie" data-tabnumber="6" class="catalog__tab">ПОСТНЫЕ</div>
+				</div>
+			</div>
+			<div class="catalog__content pie">
+				<div data-tabnumber="1" class="catalog__tab-category">
+					<form class="catalog__item">
+						<div style="background-image: url(img/sale__green.png)" class="catalog__sale wow infinite pulse">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie1" type="radio" class="catalog__input" name="pie1">
+								<label for="pie1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie2" type="radio" class="catalog__input" name="pie1">
+								<label for="pie2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie3" type="radio" class="catalog__input" name="pie1">
+								<label for="pie3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie4" type="radio" class="catalog__input" name="pie2">
+								<label for="pie4" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie5" type="radio" class="catalog__input" name="pie2">
+								<label for="pie5" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie6" type="radio" class="catalog__input" name="pie2">
+								<label for="pie6" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie7" type="radio" class="catalog__input" name="pie3">
+								<label for="pie7" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie8" type="radio" class="catalog__input" name="pie3">
+								<label for="pie8" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie9" type="radio" class="catalog__input" name="pie3">
+								<label for="pie9" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie10" type="radio" class="catalog__input" name="pie4">
+								<label for="pie10" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie11" type="radio" class="catalog__input" name="pie4">
+								<label for="pie11" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie12" type="radio" class="catalog__input" name="pie4">
+								<label for="pie12" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie13" type="radio" class="catalog__input" name="pie5">
+								<label for="pie13" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie14" type="radio" class="catalog__input" name="pie5">
+								<label for="pie14" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie15" type="radio" class="catalog__input" name="pie5">
+								<label for="pie15" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						<div style="background-image: url(img/sale__blue.png)" class="catalog__sale wow infinite tada">new</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie16" type="radio" class="catalog__input" name="pie6">
+								<label for="pie16" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie17" type="radio" class="catalog__input" name="pie6">
+								<label for="pie17" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie18" type="radio" class="catalog__input" name="pie6">
+								<label for="pie18" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie19" type="radio" class="catalog__input" name="pie7">
+								<label for="pie19" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie20" type="radio" class="catalog__input" name="pie7">
+								<label for="pie20" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie21" type="radio" class="catalog__input" name="pie7">
+								<label for="pie21" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie22" type="radio" class="catalog__input" name="pie8">
+								<label for="pie22" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie23" type="radio" class="catalog__input" name="pie8">
+								<label for="pie23" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie24" type="radio" class="catalog__input" name="pie8">
+								<label for="pie24" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie25" type="radio" class="catalog__input" name="pie9">
+								<label for="pie25" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie26" type="radio" class="catalog__input" name="pie9">
+								<label for="pie26" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie27" type="radio" class="catalog__input" name="pie9">
+								<label for="pie27" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					
+					<form class="catalog__item">
+						
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie28" type="radio" class="catalog__input" name="pie10">
+								<label for="pie28" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie29" type="radio" class="catalog__input" name="pie10">
+								<label for="pie29" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie30" type="radio" class="catalog__input" name="pie10">
+								<label for="pie30" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div data-tabnumber="2" class="catalog__tab-category">22222222</div>
+				<div data-tabnumber="3" class="catalog__tab-category">333333333</div>
+				<div data-tabnumber="4" class="catalog__tab-category">44444444</div>
+				<div data-tabnumber="5" class="catalog__tab-category">555555555555</div>
+				<div data-tabnumber="6" class="catalog__tab-category">66666666666</div>
+				<div data-tabnumber="7" class="catalog__tab-category">77777777777</div>
+			</div>
+		</section>
+		<section class="choice wow fadeIn">
+			<div class="choice__img">
+				<div class="choice__sale wow pulse infinite">
+					<div class="t1">Скидка</div>
+					<div class="t2">10%</div>
+					<div class="t3">на день рождения</div>
+				</div>
+			</div>
+			<div class="choice__desc">
+				<div class="choice__title wow lightSpeedIn">Выбирайте пироги на любой вкус:</div>
+				<div class="choice__item-wrap wow lightSpeedIn">
+					<a href="#" class="choice__item choice__item--meat">С мясом</a>
+					<a href="#" class="choice__item choice__item--cabbage">С капустой</a>
+					<a href="#" class="choice__item choice__item--potato">С картошкой</a>
+					<a href="#" class="choice__item choice__item--greens">С зеленью</a>
+					<a href="#" class="choice__item choice__item--cheese">С сыром</a>
+					<a href="#" class="choice__item choice__item--limon">С лимоном</a>
+					<a href="#" class="choice__item choice__item--mushrooms">С грибами</a>
+					<a href="#" class="choice__item choice__item--berries">С ягодами</a>
+					<a href="#" class="choice__item choice__item--chicken">С курицей</a>
+				</div>
+			</div>
+		</section>
+		<section class="about-us wow fadeIn">
+			<h2 class="h2 h2--green">ОСЕТИНСКИЕ ПИРОГИ С ДОСТАВКОЙ</h2>
+			<p class="text">«ОСЕТИНСКИЙ ПИР» найдет наиболее подходящий вариант среди сотен пекарен Москвы в кратчайший срок.  Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом. Осетинские пироги издавна были одним из основных блюд этого народа. Традиционно подаются три осетинских пирога, что символизирует три природных стихии: воду и землю.</p>
+		</section>
+		<section class="popular wow fadeIn">
+			<h2 class="h2">Популярные пироги</h2>
+			<div class="popular__slider">
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(../img/sale__blue.png);" class="catalog__sale wow infinite tada animated">new</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(&quot;img/sale__green.png&quot;); visibility: visible; animation-name: pulse;" class="catalog__sale wow infinite pulse animated">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(&quot;img/sale__green.png&quot;); visibility: visible; animation-name: pulse;" class="catalog__sale wow infinite pulse animated">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(&quot;img/sale__green.png&quot;); visibility: visible; animation-name: pulse;" class="catalog__sale wow infinite pulse animated">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(&quot;img/sale__green.png&quot;); visibility: visible; animation-name: pulse;" class="catalog__sale wow infinite pulse animated">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(&quot;img/sale__green.png&quot;); visibility: visible; animation-name: pulse;" class="catalog__sale wow infinite pulse animated">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(&quot;img/sale__green.png&quot;); visibility: visible; animation-name: pulse;" class="catalog__sale wow infinite pulse animated">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(&quot;img/sale__green.png&quot;); visibility: visible; animation-name: pulse;" class="catalog__sale wow infinite pulse animated">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+				<div class="popular__slide">
+					<form class="catalog__item">
+						<div style="background-image: url(&quot;img/sale__green.png&quot;); visibility: visible; animation-name: pulse;" class="catalog__sale wow infinite pulse animated">HIT</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pop1" type="radio" class="catalog__input" name="popular1">
+								<label for="pop1" class="catalog__label">1000 г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop2" type="radio" class="catalog__input" name="popular1">
+								<label for="pop2" class="catalog__label">1200 г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pop3" type="radio" class="catalog__input" name="popular1">
+								<label for="pop3" class="catalog__label">1400 г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="usage wow fadeIn">
+			<h2 class="h2 usage__title wow zoomIn">У нас заказывают осетинские пироги</h2>
+			<div class="usage__wrap">
+				<div class="usage__item">
+					<i class="usage__icon"><svg class="icon icon-star_half"><use xlink:href="#icon-star_half"></use></svg></i>
+					<div class="usage__text">На день рождения</div>
+				</div>	
+				<div class="usage__item">
+					<i class="usage__icon"><svg class="icon icon-account_balance_black"><use xlink:href="#icon-account_balance_black"></use></svg></i>
+					<div class="usage__text">На дом</div>
+				</div>
+				<div class="usage__item">
+					<i class="usage__icon"><svg class="icon icon-local_play"><use xlink:href="#icon-local_play"></use></svg></i>
+					<div class="usage__text">На торжество</div>
+				</div>
+			</div>
+			<div class="usage__wrap">	
+				<div class="usage__item">
+					<i class="usage__icon"><svg class="icon icon-favorite_black"><use xlink:href="#icon-favorite_black"></use></svg></i>
+					<div class="usage__text">На свадьбу</div>
+				</div>
+				<div class="usage__item">
+					<i class="usage__icon"><svg class="icon icon-business_center"><use xlink:href="#icon-business_center"></use></svg></i>
+					<div class="usage__text">В офис</div>
+				</div>
+				<div class="usage__item">
+					<i class="usage__icon"><svg class="icon icon-ac_unit"><use xlink:href="#icon-ac_unit"></use></svg></i>
+					<div class="usage__text">На Новый год</div>
+				</div>
+			</div>
+			<div class="usage__wrap">	
+				<div class="usage__item">
+				<i class="usage__icon"><svg class="icon icon-bookmark_border"><use xlink:href="#icon-bookmark_border"></use></svg></i>
+				<div class="usage__text">На Юбилей</div>
+				</div>
+				<div class="usage__item">
+					<i class="usage__icon"><svg class="icon icon-contact_phone"><use xlink:href="#icon-contact_phone"></use></svg></i>
+					<div class="usage__text">На работу</div>
+				</div>
+				
+				<div class="usage__item">
+				<i class="usage__icon"><svg class="icon icon-add_shopping_cart"><use xlink:href="#icon-add_shopping_cart"></use></svg></i>
+				<div class="usage__text">Оптом</div>
+			</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__box footer__top">
+			<a href="#" class="footer__logo">
+				<i class="icon wow rollIn"><svg class="icon icon-down"><use xlink:href="#icon-donut_small"></use></svg></i>
+				<span class="text">Осетинский пир</span>
+			</a>
+			<div class="footer__nav">
+				<a href="#" class="footer__nav-link">Доставка</a>
+				<a href="#" class="footer__nav-link">Акции и скидки</a>
+				<a href="#" class="footer__nav-link">Оплата</a>
+				<a href="#" class="footer__nav-link">Отзывы</a>
+				<a href="#" class="footer__nav-link">Контакты</a>
+			</div>
+			<div class="footer__social">
+				<div class="text">Понравилось? Поделитесь!</div>
+				<img src="img/soc.png" alt="">
+			</div>
+		</div>
+		<div class="footer__box footer__middle">
+			<div class="footer__contact">
+				<div class="phone">+7 (495) 100-15-10</div>
+				<div class="when">Звоните с 9:00 до 21:00 ПН-ВС</div>
+				<div class="address">Москва, Энтузиастов, 15А</div>
+			</div>
+			<div class="footer__links">
+				<div class="footer__link-box">
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+				</div>
+				<div class="footer__link-box">
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+				</div>
+				<div class="footer__link-box">
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+					<a href="#" class="footer__link">Осетинские пироги с мясом</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__box footer__bottom">
+			<div class="footer__copy">© Осетинские пироги 2017</div>
+			<div class="footer__metrika"><img src="img/metr.png" alt=""></div>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
+
 </html>
