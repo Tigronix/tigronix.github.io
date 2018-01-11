@@ -142,11 +142,17 @@ function summPrice() {
 		var value = parseInt($(this).val());
 		var price = $(this).closest('.catalog__count').next().find('.number');
 		var summ = value * parseInt(price.data('value'));
-		if(value <= 0){
-			var dataValue = price.data('value');
-			price.html(0);
+		var dec = $(this).next();
+		var inc = $(this).next().next();
+		if(value <= 1){
+			dec.attr('disabled', '');
 		}else{
 			price.html(summ);
+			dec.attr('disabled', false);
+		}
+		if(value <= 0) {
+			var dataValue = price.data('value');
+			price.html(0);
 		}
 	});
 	
