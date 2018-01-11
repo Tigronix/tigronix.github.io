@@ -80,7 +80,6 @@ function catalogItemCounter(field){
 					function decrement() {
 						var value = parseInt(el[0].value);
 						value--;
-
 						if(!min || value >= min) {
 							el[0].value = value;
 						}
@@ -114,17 +113,57 @@ function catalogItemCounter(field){
 		}
 
 //пересчёт цены товара
-/*$('.input-number__button').on('click', function(){
-	var price = parseInt($(this).closest('.catalog__count').next().find('.number').html());
-	if($(this).hasClass('dec')){
-		var value = parseInt($(this).prev().val());
-	}else if($(this).hasClass('inc')){
-		var value = parseInt($(this).prev().prev().val());
-	}
-	var summ = price * value;
-	$(this).closest('.catalog__count').next().find('.number').html(summ);
+function summPrice() {
+	$('.input-number__button').on('click', function(){
+		var price = parseInt($(this).closest('.catalog__count').next().find('.number').data('value'));
+		if($(this).hasClass('dec')){
+			var value = parseInt($(this).prev().val());
+			--value;
+		}else if($(this).hasClass('inc')){
+			var value = parseInt($(this).prev().prev().val());
+			++value;
+		}
+		if($(this).hasClass('dec')){
+			if(value == 1){
+				$(this).attr('disabled', '');
+			}
+		}
+		if($(this).hasClass('inc')){
+			if(value > 1){
+				$(this).prev().attr('disabled', false);
+			}
+		}
+		var summ = price * value;
+		$(this).closest('.catalog__count').next().find('.number').html(summ);
+
+	});
 	
-});*/
+	$('.fieldCount').on('keyup', function(){
+		var value = parseInt($(this).val());
+		var price = $(this).closest('.catalog__count').next().find('.number');
+		var summ = value * parseInt(price.data('value'));
+		if(value <= 0){
+			var dataValue = price.data('value');
+			price.html(0);
+		}else{
+			price.html(summ);
+		}
+	});
+	
+	$('.catalog__label').on('click', function(){
+		var disabled = $(this).prev().attr('disabled');
+		var numberWeight = $(this).data('price');
+		var price = $(this).closest('.catalog__size').next().next().find('.number');
+		var input = $(this).closest('.catalog__size').next().find('.fieldCount');
+		console.log(input);
+		if(disabled == 'disabled'){
+			console.log('disabled');
+		}else{
+			parseInt(price.html(numberWeight).data('value', numberWeight));
+			parseInt(input.val(1));
+		}
+	});
+}
 
 //mobile menu
 $('.hamburger').on('click', function(){
@@ -187,6 +226,6 @@ $('.hamburger').on('click', function(){
 			
 		]
 	});
-
+summPrice();
 catalogItemCounter('.fieldCount');
 animate('mobile-menu', 'bounceIn', 'bounceOut', 800);

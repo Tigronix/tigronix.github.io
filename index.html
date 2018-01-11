@@ -69,15 +69,15 @@
 						<div class="catalog__size">
 							<div class="catalog__inp-box">
 								<input checked id="pie1" type="radio" class="catalog__input" name="pie1">
-								<label for="pie1" class="catalog__label">1000 г <p>(30см)</p></label>
+								<label data-price="800" for="pie1" class="catalog__label"><span  class="numberWeight">1000</span> г <p>(30см)</p></label>
 							</div>
 							<div class="catalog__inp-box">
-								<input id="pie2" type="radio" class="catalog__input" name="pie1">
-								<label for="pie2" class="catalog__label">1200 г <p>(35см)</p></label>
+								<input id="pie2" type="radio" class="catalog__input" name="pie1" disabled="disabled">
+								<label data-price="1000" for="pie2" class="catalog__label"><span  class="numberWeight">1200</span> г <p>(35см)</p></label>
 							</div>
 							<div class="catalog__inp-box">
 								<input id="pie3" type="radio" class="catalog__input" name="pie1">
-								<label for="pie3" class="catalog__label">1400 г <p>(38см)</p></label>
+								<label data-price="1200" for="pie3" class="catalog__label"><span  class="numberWeight">1400</span> г <p>(38см)</p></label>
 							</div>
 						</div>
 						<div class="catalog__count">
@@ -85,7 +85,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -93,344 +93,48 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
+							</div>
+						</div>
+						<button class="catalog__submit" type="submit">Добавить в корзину</button>
+					</form>
+					<form class="catalog__item">
+						<div style="background-image: url(img/sale__blue.png)" class="catalog__sale wow infinite tada">NEW</div>
+						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
+						<div class="catalog__name">«Фыдджин» - с мясом</div>
+						<div class="catalog__size">
+							<div class="catalog__inp-box">
+								<input checked id="pie4" type="radio" class="catalog__input" name="pie1">
+								<label data-price="1000" for="pie4" class="catalog__label"><span  class="numberWeight">1000</span> г <p>(30см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input id="pie5" type="radio" class="catalog__input" name="pie1">
+								<label data-price="1500" for="pie5" class="catalog__label"><span  class="numberWeight">1200</span> г <p>(35см)</p></label>
+							</div>
+							<div class="catalog__inp-box">
+								<input disabled="" id="pie6" type="radio" class="catalog__input" name="pie1">
+								<label data-price="1200" for="pie6" class="catalog__label"><span  class="numberWeight">1400</span> г <p>(38см)</p></label>
+							</div>
+						</div>
+						<div class="catalog__count">
+							<div class="catalog__item-title">кол-во:</div>
+							<div class="catalog__item-align">
+								<div class="input-number">
+									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__price">
+							<div class="catalog__item-title">стоимость:</div>
+							<div class="catalog__item-align">
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
 					</form>
 					
-					<form class="catalog__item">
-						
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie4" type="radio" class="catalog__input" name="pie2">
-								<label for="pie4" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie5" type="radio" class="catalog__input" name="pie2">
-								<label for="pie5" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie6" type="radio" class="catalog__input" name="pie2">
-								<label for="pie6" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
-					
-					<form class="catalog__item">
-						
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie7" type="radio" class="catalog__input" name="pie3">
-								<label for="pie7" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie8" type="radio" class="catalog__input" name="pie3">
-								<label for="pie8" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie9" type="radio" class="catalog__input" name="pie3">
-								<label for="pie9" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
-					
-					<form class="catalog__item">
-						
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie10" type="radio" class="catalog__input" name="pie4">
-								<label for="pie10" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie11" type="radio" class="catalog__input" name="pie4">
-								<label for="pie11" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie12" type="radio" class="catalog__input" name="pie4">
-								<label for="pie12" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
-					
-					<form class="catalog__item">
-						
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie13" type="radio" class="catalog__input" name="pie5">
-								<label for="pie13" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie14" type="radio" class="catalog__input" name="pie5">
-								<label for="pie14" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie15" type="radio" class="catalog__input" name="pie5">
-								<label for="pie15" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
-					
-					<form class="catalog__item">
-						<div style="background-image: url(img/sale__blue.png)" class="catalog__sale wow infinite tada">new</div>
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie16" type="radio" class="catalog__input" name="pie6">
-								<label for="pie16" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie17" type="radio" class="catalog__input" name="pie6">
-								<label for="pie17" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie18" type="radio" class="catalog__input" name="pie6">
-								<label for="pie18" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
-					
-					<form class="catalog__item">
-						
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie19" type="radio" class="catalog__input" name="pie7">
-								<label for="pie19" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie20" type="radio" class="catalog__input" name="pie7">
-								<label for="pie20" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie21" type="radio" class="catalog__input" name="pie7">
-								<label for="pie21" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
-					
-					<form class="catalog__item">
-						
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie22" type="radio" class="catalog__input" name="pie8">
-								<label for="pie22" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie23" type="radio" class="catalog__input" name="pie8">
-								<label for="pie23" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie24" type="radio" class="catalog__input" name="pie8">
-								<label for="pie24" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
-					
-					<form class="catalog__item">
-						
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie25" type="radio" class="catalog__input" name="pie9">
-								<label for="pie25" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie26" type="radio" class="catalog__input" name="pie9">
-								<label for="pie26" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie27" type="radio" class="catalog__input" name="pie9">
-								<label for="pie27" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
-					
-					<form class="catalog__item">
-						
-						<div class="catalog__img"><img src="img/pirg_1--edited.jpg" alt=""></div>
-						<div class="catalog__name">«Фыдджин» - с мясом</div>
-						<div class="catalog__size">
-							<div class="catalog__inp-box">
-								<input checked id="pie28" type="radio" class="catalog__input" name="pie10">
-								<label for="pie28" class="catalog__label">1000 г <p>(30см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie29" type="radio" class="catalog__input" name="pie10">
-								<label for="pie29" class="catalog__label">1200 г <p>(35см)</p></label>
-							</div>
-							<div class="catalog__inp-box">
-								<input id="pie30" type="radio" class="catalog__input" name="pie10">
-								<label for="pie30" class="catalog__label">1400 г <p>(38см)</p></label>
-							</div>
-						</div>
-						<div class="catalog__count">
-							<div class="catalog__item-title">кол-во:</div>
-							<div class="catalog__item-align">
-								<div class="input-number">
-									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
-									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog__price">
-							<div class="catalog__item-title">стоимость:</div>
-							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
-							</div>
-						</div>
-						<button class="catalog__submit" type="submit">Добавить в корзину</button>
-					</form>
 				</div>
 				<div data-tabnumber="2" class="catalog__tab-category">22222222</div>
 				<div data-tabnumber="3" class="catalog__tab-category">333333333</div>
@@ -494,7 +198,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -502,7 +206,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
@@ -532,7 +236,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -540,7 +244,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
@@ -570,7 +274,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -578,7 +282,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
@@ -608,7 +312,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -616,7 +320,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
@@ -646,7 +350,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -654,7 +358,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
@@ -684,7 +388,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -692,7 +396,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
@@ -722,7 +426,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -730,7 +434,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
@@ -760,7 +464,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -768,7 +472,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>
@@ -798,7 +502,7 @@
 							<div class="catalog__item-align">
 								<div class="input-number">
 									<input type="text" placeholder="1" value="1" data-min="1" class="input-number__input fieldCount">
-									<button type="button" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
+									<button type="button" disabled="disabled" class="input-number__button input-number__button--less dec"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_down"></use></svg></i></button>
 									<button type="button" class="input-number__button input-number__button--more inc"><i class="icon"><svg class="icon icon-arrow_drop_up"><use xlink:href="#icon-arrow_drop_up"></use></svg></i></button>
 								</div>
 							</div>
@@ -806,7 +510,7 @@
 						<div class="catalog__price">
 							<div class="catalog__item-title">стоимость:</div>
 							<div class="catalog__item-align">
-								<div class="price"><span class="number">800</span> руб.</div>
+								<div class="price"><span class="number" data-value="800">800</span> руб.</div>
 							</div>
 						</div>
 						<button class="catalog__submit" type="submit">Добавить в корзину</button>

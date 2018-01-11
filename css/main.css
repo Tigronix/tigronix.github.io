@@ -2686,7 +2686,7 @@ button {
       display: none; } }
   @media (max-width: 400px) {
     .header__contact .phone {
-      font-size: 24px; }
+      font-size: 23px; }
     .header__contact .schedule {
       font-size: 13px; } }
 
@@ -2966,6 +2966,9 @@ button {
     border-color: #FF5400; }
   .catalog__input:checked + label, .catalog__input:checked + label p {
     color: #FF5400; }
+  .catalog__input:disabled + label, .catalog__input:disabled + label p, .catalog__input:disabled + label:after {
+    color: #ccc;
+    border-color: #ccc; }
   .catalog__label {
     font-size: 1.09375vw;
     color: #000;
@@ -3079,19 +3082,8 @@ button {
     margin-top: 14px;
     display: block;
     width: 89.62264150943396%;
+    text-align: center;
     height: 50px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
     background: #FF5400;
     color: #fff;
     border: none;
@@ -3229,10 +3221,10 @@ button {
     background: #fcfcfc; }
   .input-number__button {
     position: absolute;
-    right: 0;
-    top: -5px;
-    width: 16px;
-    height: 22px;
+    right: -10px;
+    top: -7px;
+    width: 30px;
+    height: 25px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3251,18 +3243,30 @@ button {
       fill: #FF5400;
       width: 34px;
       height: 34px;
-      -webkit-transition: fill .4s, -webkit-transform .1s;
-      transition: fill .4s, -webkit-transform .1s;
-      -o-transition: fill .4s, transform .1s;
-      transition: fill .4s, transform .1s;
-      transition: fill .4s, transform .1s, -webkit-transform .1s; }
+      -webkit-transition: -webkit-transform .1s;
+      transition: -webkit-transform .1s;
+      -o-transition: transform .1s;
+      transition: transform .1s;
+      transition: transform .1s, -webkit-transform .1s; }
       .input-number__button .icon:hover {
         fill: #EE1C24;
         -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
                 transform: scale(1.1); }
+    .input-number__button:disabled .icon {
+      fill: #ccc;
+      -webkit-transition: fill 0s, -webkit-transform 0s;
+      transition: fill 0s, -webkit-transform 0s;
+      -o-transition: fill 0s, transform 0s;
+      transition: fill 0s, transform 0s;
+      transition: fill 0s, transform 0s, -webkit-transform 0s; }
+    .input-number__button:disabled:hover .icon {
+      fill: #ccc;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
   .input-number__button--less {
-    bottom: 6px;
+    bottom: 3px;
     top: auto; }
   @media (max-width: 1440px) {
     .input-number__input {
