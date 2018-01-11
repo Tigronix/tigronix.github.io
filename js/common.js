@@ -146,6 +146,7 @@ function summPrice() {
 		var inc = $(this).next().next();
 		if(value <= 1){
 			dec.attr('disabled', '');
+			price.html(summ);
 		}else{
 			price.html(summ);
 			dec.attr('disabled', false);
