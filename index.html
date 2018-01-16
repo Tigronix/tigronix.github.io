@@ -16,373 +16,636 @@
 	</div>
 	<header class="page-header">
 		<div class="page-header__top">
-			<div class="menu__wrap animate__button">
-				<span class="hamburger hamburgerActive">
+			<div class="menu__wrap">
+				<span class="hamburger">
 					<span class="hamburger__line"></span>
-				<span class="line hamburger__line"></span>
-				<div class="hamburger__back">Назад</div>
+					<span class="line hamburger__line"></span>
+					<div class="hamburger__back">Назад</div>
 				</span>
 				<div class="hamburger__text">меню</div>
 			</div>
-			<nav class="nav">
-				<ul class="nav__ul">
-					<li class="nav__li"><a href="#" class="nav__link">Оплата</a></li>
-					<li class="nav__li"><a href="#" class="nav__link">Доставка</a></li>
-					<li class="nav__li"><a href="#" class="nav__link nav__link--active animated infinite pulse">Акции</a></li>
-					<li class="nav__li"><a href="#" class="nav__link">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="page-header__phone">+7 (495) 100-15-10</div>
-			<div class="page-header__bucket">
-				<div class="bucket"><i class="icon"><svg class="icon icon-shopping_cart"><use xlink:href="#icon-shopping_cart"></use></svg></i> Корзина</div>
-				<div class="count">
-					<span class="number">3</span>
-					<span class="value">шт.</span>
-				</div>
-				<div class="price">
-					<span class="number">1 250</span>
-					<span class="value">руб.</span>
-				</div>
+			<div class="page-header__city">
+				<div class="page-header__city-title">Ваш город:</div>
+				<select name="" id="" class="page-header__select">
+					<option value="0" class="page-header__option">Москва</option>
+					<option value="1" class="page-header__option">Санкт-Петербург</option>
+				</select>
+			</div>
+			<div class="page-header__quick page-header__text">
+				<i class="icon"><svg class="icon icon-motorcycle"><use xlink:href="#icon-motorcycle"></use></svg></i>
+				Срочный выезд мастера
+			</div>
+			<div class="page-header__call-me page-header__text">
+				<i class="icon"><svg class="icon icon-phone_forwarded"><use xlink:href="#icon-phone_forwarded"></use></svg></i>
+				Позвоните мне
 			</div>
 		</div>
-		<div class="page-header__bottom slideInDown animated">
-			<a href="#" class="page-header__logo"><img src="img/logo.png" alt=""></a>
-			<div class="menu">
-				<a href="#" class="menu__item">
-					<div class="menu__img"><img src="img/m_1.png" alt=""></div>
-					<div class="menu__name">С мясом</div>
-				</a>
-				<a href="#" class="menu__item">
-					<div class="menu__img"><img src="img/m_2.png" alt=""></div>
-					<div class="menu__name">С сыром</div>
-				</a>
-				<a href="#" class="menu__item">
-					<div class="menu__img"><img src="img/m_3.png" alt=""></div>
-					<div class="menu__name">С капустой</div>
-				</a>
-				<a href="#" class="menu__item">
-					<div class="menu__img"><img src="img/m_4.png" alt=""></div>
-					<div class="menu__name">С рыбой</div>
-				</a>
-				<a href="#" class="menu__item">
-					<div class="menu__img"><img src="img/m_5.png" alt=""></div>
-					<div class="menu__name">С грибами</div>
-				</a>
-				<a href="#" class="menu__item">
-					<div class="menu__img"><img src="img/m_7.png" alt=""></div>
-					<div class="menu__name">С картофелем</div>
-				</a>
-				<a href="#" class="menu__item">
-					<div class="menu__img"><img src="img/m_6.png" alt=""></div>
-					<div class="menu__name">Сладкие</div>
-				</a>
+		<div class="page-header__mid">
+			<a href="#" class="page-header__logo">
+				<i class="icon"><svg class="icon icon-rv_hookup"><use xlink:href="#icon-rv_hookup"></use></svg></i>
+				Техпомощь<br /> на дороге
+			</a>
+			<div class="page-header__from">Работаем с 2005 года</div>
+			<div class="page-header__location">
+				<i class="icon"><svg class="icon icon-location_on"><use xlink:href="#icon-location_on"></use></svg></i>
+				<span>Москва и Московская обл.</span>
 			</div>
-			<nav class="nav nav--hide">
-				<div class="nav__title">Как купить</div>
-				<ul class="nav__ul">
-					<li class="nav__li"><a href="#" class="nav__link">Оплата</a></li>
-					<li class="nav__li"><a href="#" class="nav__link">Доставка</a></li>
-					<li class="nav__li"><a href="#" class="nav__link nav__link--active animated infinite pulse">Акции</a></li>
-					<li class="nav__li"><a href="#" class="nav__link">Контакты</a></li>
-				</ul>
-			</nav>
+			<div class="page-header__sale">
+				<i class="icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+				Акции и<br /> Спецпредложения
+			</div>
+			<div class="page-header__consultation">
+				<i class="icon"><svg class="icon icon-record-voice-over"><use xlink:href="#icon-record-voice-over"></use></svg></i>
+				Консультация мастера<br /> бесплатно
+			</div>
+			<div class="page-header__phone">
+				<div class="page-header__phone-number">+7 (495) 100-15-10</div>
+				<div class="page-header__phone-text">Звоните круглосуточно</div>
+			</div>
 		</div>
+		<nav class="nav animated">
+			<ul class="nav__ul">
+				<li class="nav__li"><a href="#" class="nav__link">выездная техпомощь</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">выездной автоэлектрик</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">мобильный шиномонтаж</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">диагностика, ремонт авто</a></li>
+				<li class="nav__li"><a href="#" class="nav__link">акции и скидки</a></li>
+			</ul>
+		</nav>
 	</header>
-	<main>
-		<h1 class="h1">Осетинские пироги срочная доставка по Москве</h1>
-		<p class="text">Ищете идеальный вариант угощения, который понравится всем гостям? Предлагаем вам заказать осетинские пироги! Сочные, невероятно вкусные и питательные, они будут уместными на любом торжестве.<br> К примеру, пироги с курицей, сыром, луком и укропом можно
-			подавать в качестве закуски, а ягодные сладкие осетинские пироги станут изумительным десертом.</p>
-		<section class="catalog wow fadeIn">
-			<form class="catalog__item">
-				<div class="catalog__sale animated infinite tada">Хит продаж</div>
-				<div class="catalog__name">«Фыдджин» с говядиной</div>
-				<div class="catalog__weight">
-					<div class="catalog__value">Вес:</div>
-					<div class="catalog__weight-item">
-						<input disabled="" id="pie1" type="radio" name="pie1" class="catalog__input">
-						<label for="pie1" data-price="800" class="catalog__label"><span class="number">1 000 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input id="pie2" type="radio" name="pie1" class="catalog__input" checked>
-						<label for="pie2" data-price="1000" class="catalog__label"><span class="number">1 200 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input id="pie3" type="radio" name="pie1" class="catalog__input">
-						<label for="pie3" data-price="1200" class="catalog__label">1 400 г</span></label>
-					</div>
+	<main class="main">
+		<section class="section order">
+			<div class="order__wrap">
+				<h2 class="h2">Срочная техпомощь на дороге, круглосуточно с выездом к вашему автомобилю</h2>
+				<div class="order__item">
+					<select name="" id="" class="order__select">
+						<option value="" class="order__option">Марка и модель</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+					</select>
 				</div>
-				<div class="catalog__img"><img src="img/pirogs_1.png" alt=""></div>
-				<div class="input-number">
-					<div class="catalog__value">ШТ:</div>
-					<button type="button" class="input-number__button inc">+</button>
-					<input placeholder="1" value="1" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-					<button type="button" class="input-number__button dec">-</button>
+				<div class="order__item">
+					<select name="" id="" class="order__select">
+						<option value="" class="order__option">Выберите услугу</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+					</select>
 				</div>
-				<div class="catalog__btns">
-					<button class="catalog__submit"><i class="icon"><svg class="icon icon-lnr-cart"><use xlink:href="#icon-lnr-cart"></use></svg></i> В корзину</button>
-					<div class="catalog__price"><span data-value="780" class="number">780</span> руб.</div>
-				</div>
-			</form>
-			<form class="catalog__item">
-				<div class="catalog__name">«Фыдджин» с говядиной</div>
-				<div class="catalog__weight">
-					<div class="catalog__value">Вес:</div>
-					<div class="catalog__weight-item">
-						<input id="pie4" type="radio" name="pie1" class="catalog__input">
-						<label for="pie4" data-price="780" class="catalog__label"><span class="number">1 000 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input disabled="" id="pie5" type="radio" name="pie1" class="catalog__input" checked>
-						<label for="pie5" data-price="500" class="catalog__label"><span class="number">1 200 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input id="pie6" type="radio" name="pie1" class="catalog__input">
-						<label for="pie6" data-price="1600" class="catalog__label">1 400 г</span></label>
-					</div>
-				</div>
-				<div class="catalog__img"><img src="img/pirogs_1.png" alt=""></div>
-				<div class="input-number">
-					<div class="catalog__value">ШТ:</div>
-					<button type="button" class="input-number__button inc">+</button>
-					<input placeholder="1" value="1" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-					<button type="button" class="input-number__button dec">-</button>
-				</div>
-				<div class="catalog__btns">
-					<button class="catalog__submit"><i class="icon"><svg class="icon icon-lnr-cart"><use xlink:href="#icon-lnr-cart"></use></svg></i> В корзину</button>
-					<div class="catalog__price"><span data-value="780" class="number">780</span> руб.</div>
-				</div>
-			</form>
-			<form class="catalog__item">
-				<div class="catalog__name">«Фыдджин» с говядиной</div>
-				<div class="catalog__weight">
-					<div class="catalog__value">Вес:</div>
-					<div class="catalog__weight-item">
-						<input id="pie4" type="radio" name="pie1" class="catalog__input">
-						<label for="pie4" data-price="780" class="catalog__label"><span class="number">1 000 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input disabled="" id="pie5" type="radio" name="pie1" class="catalog__input" checked>
-						<label for="pie5" data-price="500" class="catalog__label"><span class="number">1 200 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input id="pie6" type="radio" name="pie1" class="catalog__input">
-						<label for="pie6" data-price="1600" class="catalog__label">1 400 г</span></label>
-					</div>
-				</div>
-				<div class="catalog__img"><img src="img/pirogs_1.png" alt=""></div>
-				<div class="input-number">
-					<div class="catalog__value">ШТ:</div>
-					<button type="button" class="input-number__button inc">+</button>
-					<input placeholder="1" value="1" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-					<button type="button" class="input-number__button dec">-</button>
-				</div>
-				<div class="catalog__btns">
-					<button class="catalog__submit"><i class="icon"><svg class="icon icon-lnr-cart"><use xlink:href="#icon-lnr-cart"></use></svg></i> В корзину</button>
-					<div class="catalog__price"><span data-value="780" class="number">780</span> руб.</div>
-				</div>
-			</form>
-			<form class="catalog__item">
-				<div class="catalog__name">«Фыдджин» с говядиной</div>
-				<div class="catalog__weight">
-					<div class="catalog__value">Вес:</div>
-					<div class="catalog__weight-item">
-						<input id="pie4" type="radio" name="pie1" class="catalog__input">
-						<label for="pie4" data-price="780" class="catalog__label"><span class="number">1 000 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input disabled="" id="pie5" type="radio" name="pie1" class="catalog__input" checked>
-						<label for="pie5" data-price="500" class="catalog__label"><span class="number">1 200 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input id="pie6" type="radio" name="pie1" class="catalog__input">
-						<label for="pie6" data-price="1600" class="catalog__label">1 400 г</span></label>
-					</div>
-				</div>
-				<div class="catalog__img"><img src="img/pirogs_1.png" alt=""></div>
-				<div class="input-number">
-					<div class="catalog__value">ШТ:</div>
-					<button type="button" class="input-number__button inc">+</button>
-					<input placeholder="1" value="1" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-					<button type="button" class="input-number__button dec">-</button>
-				</div>
-				<div class="catalog__btns">
-					<button class="catalog__submit"><i class="icon"><svg class="icon icon-lnr-cart"><use xlink:href="#icon-lnr-cart"></use></svg></i> В корзину</button>
-					<div class="catalog__price"><span data-value="780" class="number">780</span> руб.</div>
-				</div>
-			</form>
-			<form class="catalog__item">
-				<div class="catalog__name">«Фыдджин» с говядиной</div>
-				<div class="catalog__weight">
-					<div class="catalog__value">Вес:</div>
-					<div class="catalog__weight-item">
-						<input id="pie4" type="radio" name="pie1" class="catalog__input">
-						<label for="pie4" data-price="780" class="catalog__label"><span class="number">1 000 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input disabled="" id="pie5" type="radio" name="pie1" class="catalog__input" checked>
-						<label for="pie5" data-price="500" class="catalog__label"><span class="number">1 200 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input id="pie6" type="radio" name="pie1" class="catalog__input">
-						<label for="pie6" data-price="1600" class="catalog__label">1 400 г</span></label>
-					</div>
-				</div>
-				<div class="catalog__img"><img src="img/pirogs_1.png" alt=""></div>
-				<div class="input-number">
-					<div class="catalog__value">ШТ:</div>
-					<button type="button" class="input-number__button inc">+</button>
-					<input placeholder="1" value="1" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-					<button type="button" class="input-number__button dec">-</button>
-				</div>
-				<div class="catalog__btns">
-					<button class="catalog__submit"><i class="icon"><svg class="icon icon-lnr-cart"><use xlink:href="#icon-lnr-cart"></use></svg></i> В корзину</button>
-					<div class="catalog__price"><span data-value="780" class="number">780</span> руб.</div>
-				</div>
-			</form>
-			<form class="catalog__item">
-				<div class="catalog__name">«Фыдджин» с говядиной</div>
-				<div class="catalog__weight">
-					<div class="catalog__value">Вес:</div>
-					<div class="catalog__weight-item">
-						<input id="pie4" type="radio" name="pie1" class="catalog__input">
-						<label for="pie4" data-price="780" class="catalog__label"><span class="number">1 000 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input disabled="" id="pie5" type="radio" name="pie1" class="catalog__input" checked>
-						<label for="pie5" data-price="500" class="catalog__label"><span class="number">1 200 г</span></label>
-					</div>
-					<div class="catalog__weight-item">
-						<input id="pie6" type="radio" name="pie1" class="catalog__input">
-						<label for="pie6" data-price="1600" class="catalog__label">1 400 г</span></label>
-					</div>
-				</div>
-				<div class="catalog__img"><img src="img/pirogs_1.png" alt=""></div>
-				<div class="input-number">
-					<div class="catalog__value">ШТ:</div>
-					<button type="button" class="input-number__button inc">+</button>
-					<input placeholder="1" value="1" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-					<button type="button" class="input-number__button dec">-</button>
-				</div>
-				<div class="catalog__btns">
-					<button class="catalog__submit"><i class="icon"><svg class="icon icon-lnr-cart"><use xlink:href="#icon-lnr-cart"></use></svg></i> В корзину</button>
-					<div class="catalog__price"><span data-value="780" class="number">780</span> руб.</div>
-				</div>
-			</form>
-
-		</section>
-		<section class="desc wow fadeIn">
-			<h2 class="h2">Более 50 видов разнообразных начинок</h2>
-			<p class="text">Ищете идеальный вариант угощения, который понравится всем гостям? Предлагаем вам заказать осетинские пироги! Сочные, невероятно вкусные и питательные, они будут уместными на любом торжестве.<br> К примеру, пироги с курицей, сыром, луком и укропом можно
-				подавать в качестве закуски, а ягодные сладкие осетинские пироги станут изумительным десертом.</p>
-		</section>
-		<section class="pie-info wow fadeIn">
-			<a href="#" class="pie-info__item">
-				<div class="pie-info__head">
-					<div class="pie-info__img"><img src="img/m_1.png" alt=""></div>
-					<div class="pie-info__name">С мясом</div>
-				</div>
-				<ul class="pie-info__list">
-					<li class="pie-info__list-name">С мясом (говядина)</li>
-					<li class="pie-info__list-name">С курицей, сыром, грибами</li>
-					<li class="pie-info__list-name">С говядиной и болгарским перцем</li>
-					<li class="pie-info__list-name">С говядиной, капустой и сыром</li>
-					<li class="pie-info__list-name">С индейкой, капустой и сыром</li>
-					<li class="pie-info__list-name">С говядиной, кабачками и сыром</li>
-				</ul>
-			</a>
-			<a href="#" class="pie-info__item">
-				<div class="pie-info__head">
-					<div class="pie-info__img"><img src="img/m_2.png" alt=""></div>
-					<div class="pie-info__name">С мясом</div>
-				</div>
-				<ul class="pie-info__list">
-					<li class="pie-info__list-name">С мясом (говядина)</li>
-					<li class="pie-info__list-name">С курицей, сыром, грибами</li>
-					<li class="pie-info__list-name">С говядиной и болгарским перцем</li>
-					<li class="pie-info__list-name">С говядиной, капустой и сыром</li>
-					<li class="pie-info__list-name">С индейкой, капустой и сыром</li>
-					<li class="pie-info__list-name">С говядиной, кабачками и сыром</li>
-				</ul>
-			</a>
-			<a href="#" class="pie-info__item">
-				<div class="pie-info__head">
-					<div class="pie-info__img"><img src="img/m_3.png" alt=""></div>
-					<div class="pie-info__name">С мясом</div>
-				</div>
-				<ul class="pie-info__list">
-					<li class="pie-info__list-name">С мясом (говядина)</li>
-					<li class="pie-info__list-name">С курицей, сыром, грибами</li>
-					<li class="pie-info__list-name">С говядиной и болгарским перцем</li>
-					<li class="pie-info__list-name">С говядиной, капустой и сыром</li>
-					<li class="pie-info__list-name">С индейкой, капустой и сыром</li>
-					<li class="pie-info__list-name">С говядиной, кабачками и сыром</li>
-				</ul>
-			</a>
-			<a href="#" class="pie-info__item">
-				<div class="pie-info__head">
-					<div class="pie-info__img"><img src="img/m_4.png" alt=""></div>
-					<div class="pie-info__name">С мясом</div>
-				</div>
-				<ul class="pie-info__list">
-					<li class="pie-info__list-name">С мясом (говядина)</li>
-					<li class="pie-info__list-name">С курицей, сыром, грибами</li>
-					<li class="pie-info__list-name">С говядиной и болгарским перцем</li>
-					<li class="pie-info__list-name">С говядиной, капустой и сыром</li>
-					<li class="pie-info__list-name">С индейкой, капустой и сыром</li>
-					<li class="pie-info__list-name">С говядиной, кабачками и сыром</li>
-				</ul>
-			</a>
-			<a href="#" class="pie-info__item">
-				<div class="pie-info__head">
-					<div class="pie-info__img"><img src="img/m_5.png" alt=""></div>
-					<div class="pie-info__name">С мясом</div>
-				</div>
-				<ul class="pie-info__list">
-					<li class="pie-info__list-name">С мясом (говядина)</li>
-					<li class="pie-info__list-name">С курицей, сыром, грибами</li>
-					<li class="pie-info__list-name">С говядиной и болгарским перцем</li>
-					<li class="pie-info__list-name">С говядиной, капустой и сыром</li>
-					<li class="pie-info__list-name">С индейкой, капустой и сыром</li>
-					<li class="pie-info__list-name">С говядиной, кабачками и сыром</li>
-				</ul>
-			</a>
-			<a href="#" class="pie-info__item">
-				<div class="pie-info__head">
-					<div class="pie-info__img"><img src="img/m_6.png" alt=""></div>
-					<div class="pie-info__name">С мясом</div>
-				</div>
-				<ul class="pie-info__list">
-					<li class="pie-info__list-name">С мясом (говядина)</li>
-					<li class="pie-info__list-name">С курицей, сыром, грибами</li>
-					<li class="pie-info__list-name">С говядиной и болгарским перцем</li>
-					<li class="pie-info__list-name">С говядиной, капустой и сыром</li>
-					<li class="pie-info__list-name">С индейкой, капустой и сыром</li>
-					<li class="pie-info__list-name">С говядиной, кабачками и сыром</li>
-				</ul>
-			</a>
-		</section>
-		<footer class="page-footer">
-			<div class="page-footer__top">
-				<div class="page-footer__copy">© Пекарня «Фыдджин» 2017</div>
-				<div class="page-footer__contact">
-					<div class="page-footer__address"><i class="icon"><svg class="icon icon-location_on"><use xlink:href="#icon-location_on"></use></svg></i>Москва, Большой Каретный 10</div>
-					<div class="page-footer__name">Пекарня «Фыдджин»</div>
-					<div class="page-footer__phone"><i class="icon"><svg class="icon icon-phone_in_talk"><use xlink:href="#icon-phone_in_talk"></use></svg></i>+7 (495) 100-15-10</div>
+				<div class="order__item">
+					<select name="" id="" class="order__select">
+						<option value="" class="order__option">Выберите метро</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+						<option value="" class="order__option">bmw</option>
+					</select>
 				</div>
 			</div>
-			<div class="page-footer__bottom">
-				<div class="page-footer__nav">
-					<ul class="page-footer__nav-ul">
-						<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Оплата</a></li>
-						<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Доставка</a></li>
-						<li class="page-footer__nav-li animated infinite pulse"><a href="#" class="page-footer__nav-link page-footer__nav-link--active">Акции</a></li>
-						<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Контакты</a></li>
+		</section>
+		<section class="section text-block">
+			<h2 class="h2">Ремонт автомобиля на дороге - служба техпомощи</h2>
+			<p class="text">Московская служба техпомощи на дороге предлагает круглосуточную автопомощь при любых поломках. Выезд техпомощи осуществляется 24 часа в сутки. Расстояние роли не играет. У нас также есть служба эвакуации на дорогах столицы, в пригороде, за МКАДом. Наши мастера осуществляют квалифицированную автотехпомощь в Москве для водителей легковых и грузовых автомобилей, автобусов, других видов техники. Если вам не посчастливилось стать участником аварии, не исключено, что вам потребуется услуга эвакуатора. Мы предлагаем клиентам помощь на дороге в Москве и московской области. Компания оказывает автотехпомощь в разных ситуациях. Если вас интересует только транспортировка, а не технический аспект, мы доставим авто, куда скажете.</p>
+		</section>
+		<section class="section product">
+			<div class="product__desc">
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Техпомощь на дороге</a>
+					<a href="#" class="breadcrumbs__link">Москва</a>
+					<a href="#" class="breadcrumbs__link">ЦАО</a>
+					<a href="#" class="breadcrumbs__link">метро</a>
+					<a href="#" class="breadcrumbs__link">Китай-город</a>
+				</div>
+				<div class="product__line">
+					<div class="product__title">Срочная техпомощь на дороге</div>
+					<div class="product__rating">
+						<span class="product__rating-text">Рейтинг: 4,35</span>
+						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+						<i class="product__rating-item icon"><svg class="icon icon-star-half"><use xlink:href="#icon-star-half"></use></svg></i>
+					</div>
+				</div>
+				<div class="product__line product__line--block product__line--no-border column column--2">
+					<div class="product__left">
+						<div class="product__text">
+							<i class="icon icon--default"><svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg></i>
+							<span>Круглосуточно 24 часа</span>
+						</div>
+						<div class="product__text">
+							<i class="icon icon--default"><svg class="icon icon-add_location"><use xlink:href="#icon-add_location"></use></svg></i>
+							<span>Москва, ЦАО Китай-город</span>
+						</div>
+						<div class="product__text product__text--no-border column column--2">
+							<span class="product__t1 column column--align">
+								<i class="icon icon--ball"><svg class="icon icon-brightness_1"><use xlink:href="#icon-brightness_1"></use></svg></i>
+								<span class="text">Китай-город</span>
+							</span>
+							<span class="product__t2 column column--align">
+								<i class="icon icon--car"><svg class="icon icon-directions-car"><use xlink:href="#icon-directions-car"></use></svg></i>
+								<span class="text">Выезд мастера на место</span>
+							</span>
+						</div>
+					</div><!--product__left-->
+					<div class="product__right">
+						<div class="product__price">
+							<span class="product__t3">Стоимость услуг:</span>
+							<span class="product__t4">от 1 200 руб.</span>
+						</div>
+						<div class="product__phone">+7 (495) 100-15-10</div>
+						<div class="product__send">Отправить заявку на ремонт</div>
+					</div><!--product__right-->
+				</div>
+			</div>
+			<div class="product__services">
+				<div class="product__list">
+					<div class="product__list-title">Оказываемые услуги:</div>
+					<ul class="product__list-ul">
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Зарядка АКБ
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Вскрытие капота
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Снятие секреток
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Вскрытие авто
+						</li>
+						<li class="product__list-li product__list-li--error">
+							<svg class="icon icon-error icon-cancel"><use xlink:href="#icon-cancel"></use></svg>
+							Слив топлива
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Зарядка АКБ
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Замена колеса
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Разблокировка техноблока
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Снятие секреток
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Вскрытие авто
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Слив топлива
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Отключение сигнализации
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Слив топлива
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Отключение сигнализации
+						</li>
 					</ul>
 				</div>
-				<div class="page-footer__metrika"><img src="img/metr.png" alt=""></div>
 			</div>
-		</footer>
+			<div class="product-slider">
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+			</div>
+		</section><!--product-->
+		<section class="section product">
+			<div class="product__desc">
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Техпомощь на дороге</a>
+					<a href="#" class="breadcrumbs__link">Москва</a>
+					<a href="#" class="breadcrumbs__link">ЦАО</a>
+					<a href="#" class="breadcrumbs__link">метро</a>
+					<a href="#" class="breadcrumbs__link">Китай-город</a>
+				</div>
+				<div class="product__line">
+					<div class="product__title">Срочная техпомощь на дороге</div>
+					<div class="product__rating">
+						<span class="product__rating-text">Рейтинг: 4,35</span>
+						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
+						<i class="product__rating-item icon"><svg class="icon icon-star-half"><use xlink:href="#icon-star-half"></use></svg></i>
+					</div>
+				</div>
+				<div class="product__line product__line--block product__line--no-border column column--2">
+					<div class="product__left">
+						<div class="product__text">
+							<i class="icon icon--default"><svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg></i>
+							<span>Круглосуточно 24 часа</span>
+						</div>
+						<div class="product__text">
+							<i class="icon icon--default"><svg class="icon icon-add_location"><use xlink:href="#icon-add_location"></use></svg></i>
+							<span>Москва, ЦАО Китай-город</span>
+						</div>
+						<div class="product__text product__text--no-border column column--2">
+							<span class="product__t1 column column--align">
+								<i class="icon icon--ball"><svg class="icon icon-brightness_1"><use xlink:href="#icon-brightness_1"></use></svg></i>
+								<span class="text">Китай-город</span>
+							</span>
+							<span class="product__t2 column column--align">
+								<i class="icon icon--car"><svg class="icon icon-directions-car"><use xlink:href="#icon-directions-car"></use></svg></i>
+								<span class="text">Выезд мастера на место</span>
+							</span>
+						</div>
+					</div><!--product__left-->
+					<div class="product__right">
+						<div class="product__price">
+							<span class="product__t3">Стоимость услуг:</span>
+							<span class="product__t4">от 1 200 руб.</span>
+						</div>
+						<div class="product__phone">+7 (495) 100-15-10</div>
+						<div class="product__send">Отправить заявку на ремонт</div>
+					</div><!--product__right-->
+				</div>
+			</div>
+			<div class="product__services">
+				<div class="product__list">
+					<div class="product__list-title">Оказываемые услуги:</div>
+					<ul class="product__list-ul">
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Зарядка АКБ
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Вскрытие капота
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Снятие секреток
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Вскрытие авто
+						</li>
+						<li class="product__list-li product__list-li--error">
+							<svg class="icon icon-error icon-cancel"><use xlink:href="#icon-cancel"></use></svg>
+							Слив топлива
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Зарядка АКБ
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Замена колеса
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Разблокировка техноблока
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Снятие секреток
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Вскрытие авто
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Слив топлива
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Отключение сигнализации
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Слив топлива
+						</li>
+						<li class="product__list-li">
+							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
+							Отключение сигнализации
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="product-slider">
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+				<div class="product-slider__slide">
+					<img src="img/f_1_2.jpeg" alt="">
+				</div>
+			</div>
+		</section><!--product-->
+		<section class="section brands">
+			<h2 class="h2">Мы производим ремонт автомобилей любых марок</h2>
+			<div class="brands__container">
+				<div class="brands__wrap">
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/vw.png" alt=""></div>
+					<div class="brands__name">volkswagen</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/toyota.png" alt=""></div>
+					<div class="brands__name">toyota</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/hyndai.png" alt=""></div>
+					<div class="brands__name">hyundai</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/honda-icon.png" alt=""></div>
+					<div class="brands__name">honda</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/bmw-icon-1.png" alt=""></div>
+					<div class="brands__name">bmw</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/lexus.png" alt=""></div>
+					<div class="brands__name">lexus</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/audi-icon.png" alt=""></div>
+					<div class="brands__name">audi</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/renault.png" alt=""></div>
+					<div class="brands__name">renault</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/mitsubishi.png" alt=""></div>
+					<div class="brands__name">mitsubishi</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/mercedes.png" alt=""></div>
+					<div class="brands__name">mercedes benz</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/dutsun.png" alt=""></div>
+					<div class="brands__name">datsun</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/kia-logo-sm1.png" alt=""></div>
+					<div class="brands__name">kia</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/nissan.png" alt=""></div>
+					<div class="brands__name">nissan</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/rover.png" alt=""></div>
+					<div class="brands__name">land rover</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/skoda.png" alt=""></div>
+					<div class="brands__name">skoda</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/bentley-icon.png" alt=""></div>
+					<div class="brands__name">bentley</div>
+				</a>
+			</div>
+			<a href="#" class="brands__more">Показать другие</a>
+			</div>
+		</section>
+		<section class="section offer">
+			<h2 class="h2">Мы предлагаем только профессиональный ремонт автомобилей</h2>
+			<div class="offer__wrap">
+				<div class="offer__left">
+					<div class="offer__item">Прогреем двигатель и поможем его завести;</div>
+					<div class="offer__item">Выполним ремонт АКПП;</div>
+					<div class="offer__item">Прикурим севший аккумулятор либо заменим его;</div>
+					<div class="offer__item">Прогреем двигатель и поможем его завести;</div>
+				</div>
+				<div class="offer__right">Также круглосуточная срочная помощь на дороге в Москве может понадобиться водителю, у которого некорректно работают элементы противоугонной системы. Мы поможем отключить сигнализацию, иммобилайзер. Если у вас сломался или потерялся ключ, вы его оставили в замке зажигания, эти вопросы решит профессиональная помощь на дороге в Москве.</div>
+			</div>
+		</section>
+		<section class="section services">
+			<h2 class="h2">Какие услуги мы оказываем:</h2>
+			<div class="services__wrap">
+				<div class="services__item">
+					<div class="services__title"><span class="text">электрооборудование</span></div>
+					<ul class="services__ul">
+						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
+						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
+					</ul>
+				</div><!--services__item-->
+				<div class="services__item">
+					<div class="services__title"><span class="text">двигатель и система охлаждения</span></div>
+					<ul class="services__ul">
+						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
+						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
+					</ul>
+				</div><!--services__item-->
+				<div class="services__item">
+					<div class="services__title"><span class="text">колеса, тормозная система</span></div>
+					<ul class="services__ul">
+						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
+						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
+					</ul>
+				</div><!--services__item-->
+				<div class="services__item">
+					<div class="services__title"><span class="text">рулевое управление</span></div>
+					<ul class="services__ul">
+						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
+						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
+					</ul>
+				</div><!--services__item-->
+				<div class="services__item">
+					<div class="services__title"><span class="text">шиномонтаж</span></div>
+					<ul class="services__ul">
+						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
+						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
+					</ul>
+				</div><!--services__item-->
+				<div class="services__item">
+					<div class="services__title"><span class="text">установка доп. оборудования</span></div>
+					<ul class="services__ul">
+						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
+						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
+					</ul>
+				</div><!--services__item-->
+				<div class="services__item">
+					<div class="services__title"><span class="text">техническое обслуживание</span></div>
+					<ul class="services__ul">
+						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
+						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
+					</ul>
+				</div><!--services__item-->
+				<div class="services__item">
+					<div class="services__title"><span class="text">подвеска</span></div>
+					<ul class="services__ul">
+						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
+						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
+						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
+						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
+					</ul>
+				</div><!--services__item-->
+			</div>
+		</section>
+		<section class="section examples">
+			<h2 class="h2">Примеры выполненных работ:</h2>
+			<div class="example__slider owl-carousel">
+				<div class="examples__slider-item">
+					<img src="img/f_1_1.jpeg" alt="">
+					<div class="examples__slider-desc">Снятие секреток</div>
+				</div>
+				<div class="examples__slider-item">
+					<img src="img/f_1_2.jpeg" alt="">
+					<div class="examples__slider-desc">Вскрытие авто</div>
+				</div>
+				<div class="examples__slider-item">
+					<img src="img/f_1_10.jpeg" alt="">
+					<div class="examples__slider-desc">Замена акб</div>
+				</div>
+				<div class="examples__slider-item">
+					<img src="img/f_1_1.jpeg" alt="">
+					<div class="examples__slider-desc">Снятие секреток</div>
+				</div>
+				<div class="examples__slider-item">
+					<img src="img/f_1_2.jpeg" alt="">
+					<div class="examples__slider-desc">Вскрытие авто</div>
+				</div>
+				<div class="examples__slider-item">
+					<img src="img/f_1_10.jpeg" alt="">
+					<div class="examples__slider-desc">Замена акб</div>
+				</div>
+			</div>
+		</section>
+		<section class="section map">
+			<h2 class="h2">Наши мастера выезжают в любой район Москвы</h2>
+			<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa243e33910611364c18b912369d4ca04b08935b1ae076c0deca5d9b14e5cf738&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+		</section>
 	</main>
+	<footer class="page-footer">
+		<div class="page-footer__top">
+			<a href="#" class="page-footer__logo">
+				<i class="icon"></i>
+				<span class="text">Техпомощь<br /> на дороге</span>
+			</a>
+			<div class="page-footer__nav">
+				<ul class="page-footer__ul">
+					<li class="page-footer__li"><a href="#" class="page-footer__link">Выездная техпомощь</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">выездной автоэлектрик</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">мобильный шиномонтаж</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">диагностика, ремонт авто</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">акции и скидки</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__bottom">
+				<div class="page-footer__contact">
+					<div class="page-footer__worktime">Работаем круглосуточно, без выходных</div>
+					<div class="page-footer__phone">
+						<i class="icon"></i>
+						<span class="number">+7 (495) 100-15-10</span>
+					</div>
+					<div class="page-footer__address">Москва, Большой Каретный, 2</div>
+				</div>
+				<ul class="page-footer__links">
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Замена АКБ</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Замена АКБ</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Замена АКБ</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Подвоз топлива</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Подвоз топлива</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Подвоз топлива</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Снятие секреток</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Снятие секреток</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Снятие секреток</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Замена АКБ</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Замена АКБ</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Замена АКБ</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Подвоз топлива</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Подвоз топлива</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Подвоз топлива</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Снятие секреток</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Снятие секреток</a></li>
+					<li class="page-footer__links-li"><a href="#" class="page-footer__link">Снятие секреток</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__social">
+				<div class="page-footer__social-title">Поделитесь с друзьями:</div>
+				<img src="img/soc.png" >
+			</div>
+			<div class="page-footer__copy-wrap">
+				<div class="page-footer__copy">© 2018 Срочная техпомощь</div>
+				<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
+			</div>
+		</div>
+	</footer>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
