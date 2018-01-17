@@ -63,6 +63,9 @@ body {
   font-family: 'Circe';
   line-height: 1.1875; }
 
+.clearfix:after {
+  clear: both; }
+
 .overflow {
   overflow: hidden; }
 
@@ -3103,21 +3106,26 @@ span.hamb-close.hamb-closeActive span:after {
       .page-header__phone-text {
         font-size: 15px; } }
   @media (max-width: 768px) {
+    .page-header__mid {
+      display: block; }
+      .page-header__mid:after {
+        content: '';
+        display: block;
+        clear: both; }
     .page-header__text {
       font-size: 0; }
     .page-header__call-me {
       margin-left: 10px; }
     .page-header__location {
       display: none; }
-    .page-header__mid {
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
     .page-header__logo {
-      line-height: normal; }
+      line-height: normal;
+      float: left; }
+    .page-header__phone {
+      float: right; }
     .page-header__phone-number {
-      font-size: 18px; }
+      font-size: 18px;
+      margin-bottom: 5px; }
     .page-header__phone-text {
       font-size: 14px; }
     .page-header__city {
@@ -3128,7 +3136,9 @@ span.hamb-close.hamb-closeActive span:after {
     .page-header__select {
       width: 180px; }
     .page-header__city-title {
-      display: none; } }
+      display: none; }
+    .page-header__contact {
+      margin-right: 0; } }
 
 .nav {
   height: 50px;
@@ -4584,13 +4594,15 @@ span.hamb-close.hamb-closeActive span:after {
     .page-footer__social {
       width: 24%; } }
   @media (max-width: 768px) {
-    .page-footer__links-li {
-      width: 100%; }
-    .page-footer__middle {
-      display: block; }
-    .page-footer__social {
-      width: 100%; }
-      .page-footer__social img {
-        width: auto; }
-    .page-footer__worktime {
-      text-align: center; } }
+    .page-footer {
+      margin-top: 20px; }
+      .page-footer__links-li {
+        width: 100%; }
+      .page-footer__middle {
+        display: block; }
+      .page-footer__social {
+        width: 100%; }
+        .page-footer__social img {
+          width: auto; }
+      .page-footer__worktime {
+        text-align: center; } }
