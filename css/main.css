@@ -3107,11 +3107,9 @@ span.hamb-close.hamb-closeActive span:after {
         font-size: 15px; } }
   @media (max-width: 768px) {
     .page-header__mid {
-      display: block; }
-      .page-header__mid:after {
-        content: '';
-        display: block;
-        clear: both; }
+      display: block;
+      height: 60px;
+      position: relative; }
     .page-header__text {
       font-size: 0; }
     .page-header__call-me {
@@ -3120,17 +3118,25 @@ span.hamb-close.hamb-closeActive span:after {
       display: none; }
     .page-header__logo {
       line-height: normal;
-      float: left;
-      font-size: 14px; }
+      font-size: 14px;
+      position: absolute;
+      left: 1vw;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
       .page-header__logo .icon {
         font-size: 24px; }
     .page-header__phone {
-      float: right; }
+      position: absolute;
+      right: 1vw;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
     .page-header__phone-number {
       font-size: 16px;
       margin-bottom: 5px; }
-    .page-header__top {
-      display: none; }
     .page-header__phone-text {
       font-size: 12px; }
     .page-header__city {
