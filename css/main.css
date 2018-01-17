@@ -3129,6 +3129,8 @@ span.hamb-close.hamb-closeActive span:after {
     .page-header__phone-number {
       font-size: 16px;
       margin-bottom: 5px; }
+    .page-header__top {
+      display: none; }
     .page-header__phone-text {
       font-size: 12px; }
     .page-header__city {
