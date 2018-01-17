@@ -4280,6 +4280,9 @@ span.hamb-close.hamb-closeActive span:after {
 
 .map {
   padding: 0; }
+  @media (max-width: 768px) {
+    .map > ymaps {
+      height: 200px !important; } }
 
 .owl-theme .owl-nav {
   position: absolute;
