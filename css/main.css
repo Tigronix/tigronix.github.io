@@ -5002,7 +5002,6 @@
  @media (max-width: 768px) {
      .map > ymaps {
          height: 200px !important;
-         display: none;
     }
 }
  .owl-theme .owl-nav {
