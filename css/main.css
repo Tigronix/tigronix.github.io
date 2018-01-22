@@ -3451,21 +3451,7 @@ span.hamb-close.hamb-closeActive span:after {
   .form__submit {
     height: 53px;
     background: #00b300;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
     border: none;
     color: #fff;
     font-size: 1.09375vw;
@@ -3527,6 +3513,13 @@ span.hamb-close.hamb-closeActive span:after {
       z-index: 3; }
     .select-box__item:nth-child(2n) {
       z-index: 2; }
+    .select-box__item.active .select-box__select {
+      border-color: #8BC34A;
+      color: #8BC34A; }
+    .select-box__item.active .select-box__icon {
+      background: #8BC34A; }
+    .select-box__item.active .select-box__arrow {
+      color: #8BC34A; }
   .select-box__select {
     position: relative;
     z-index: 1 !important;
