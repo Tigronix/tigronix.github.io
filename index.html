@@ -15,6 +15,13 @@
 		<global-svg></global-svg>
 	</div>
 	<header class="page-header">
+		<a href="#" class="page-header__logo">
+			<img src="img/logo.jpg" alt="">
+			<div class="page-header__logo-desc">
+				<p class="page-header__logo-t1">техпомдор</p>
+				<p class="page-header__logo-t2">техпомощь на дороге</p>
+			</div>
+		</a>
 		<div class="page-header__top">
 			<div class="menu__wrap">
 				<span class="hamburger">
@@ -24,626 +31,576 @@
 				</span>
 				<div class="hamburger__text">меню</div>
 			</div>
-			<div class="page-header__city">
-				<div class="page-header__city-title">Ваш город:</div>
-				<select name="" id="" class="page-header__select">
-					<option value="0" class="page-header__option">Москва</option>
-					<option value="1" class="page-header__option">Санкт-Петербург</option>
+			<div class="page-header__city select">
+				<select name="" id="" class="page-header__select selectStyle">
+					<option value="0" class="page-header__option">Москва и Московская область</option>
 				</select>
+				<div class="select__icon"><svg class="icon icon-edit-location"><use xlink:href="#icon-edit-location"></use></svg></div>
 			</div>
-			<div class="page-header__quick page-header__text">
-				<i class="icon"><svg class="icon icon-motorcycle"><use xlink:href="#icon-motorcycle"></use></svg></i>
-				Срочный выезд мастера
-			</div>
-			<a href="tel:74951001510" class="page-header__call-me page-header__text">
-				<i class="icon"><svg class="icon icon-phone_forwarded"><use xlink:href="#icon-phone_forwarded"></use></svg></i>
-				Позвоните мне
+			<a href="#" class="page-header__button hvr-float-shadow button hvr-float-shadow"><span class="icon-box"><svg class="icon  icon-airport-shuttle"><use xlink:href="#icon-airport-shuttle"></use></svg></span><span class="text">Срочный вызов мастера</span></a>
+			<a href="#" class="page-header__button hvr-float-shadow button hvr-float-shadow"><span class="icon-box"><svg class="icon  icon-phone-forwarded"><use xlink:href="#icon-phone-forwarded"></use></svg></span><span class="text">Перезвоните мне</span></a>
+			<a href="tel:74951001510" class="page-header__phone">
+				<div class="page-header__phone-icon"><img src="img/clock.png" alt=""></div>
+				<div class="page-header__phone-text">+7 (495) 100-15-10</div>
 			</a>
 		</div>
-		<div class="page-header__mid">
-			<a href="#" class="page-header__logo">
-				<i class="icon"><svg class="icon icon-rv_hookup"><use xlink:href="#icon-rv_hookup"></use></svg></i>
-				Техпомощь<br /> на дороге
-			</a>
-			<div class="page-header__from">Работаем с 2005 года</div>
-			<div class="page-header__location">
-				<i class="icon"><svg class="icon icon-location_on"><use xlink:href="#icon-location_on"></use></svg></i>
-				<span>Москва и Московская обл.</span>
-			</div>
-			<div class="page-header__sale">
-				<i class="icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-				Акции и<br /> Спецпредложения
-			</div>
-			<div class="page-header__consultation">
-				<i class="icon"><svg class="icon icon-record-voice-over"><use xlink:href="#icon-record-voice-over"></use></svg></i>
-				Консультация мастера<br /> бесплатно
-			</div>
-			<div class="page-header__phone">
-				<a href="tel:+74951001510" class="page-header__phone-number">+7 (495) 100-15-10</a>
-				<div class="page-header__phone-text">Звоните круглосуточно</div>
-			</div>
-		</div>
-		<nav class="nav animated">
-			<ul class="nav__ul">
-				<li class="nav__li"><a href="#" class="nav__link">выездная техпомощь</a></li>
-				<li class="nav__li"><a href="#" class="nav__link">выездной автоэлектрик</a></li>
-				<li class="nav__li"><a href="#" class="nav__link">мобильный шиномонтаж</a></li>
-				<li class="nav__li"><a href="#" class="nav__link">диагностика, ремонт авто</a></li>
-				<li class="nav__li"><a href="#" class="nav__link">акции и скидки</a></li>
-			</ul>
-		</nav>
+		<nav class="nav">
+		<ul class="nav__ul">
+			<li class="nav__li">
+				<a href="#" class="nav__link">
+					<svg class="icon icon-battery-charging-full"><use xlink:href="#icon-battery-charging-full"></use></svg>
+					<span class="nav__text">Разрядился аккумулятор</span>
+				</a>
+			</li>
+			<li class="nav__li">
+					<a href="#" class="nav__link">
+						<svg class="icon icon-block"><use xlink:href="#icon-block"></use></svg>
+						<span class="nav__text">Пробили колесо</span>
+					</a>
+			</li>
+			<li class="nav__li">
+				<a href="#" class="nav__link">
+					<svg class="icon icon-volume-up"><use xlink:href="#icon-volume-up"></use></svg>
+					<span class="nav__text">Отключить сигнализацию</span>
+				</a>
+			</li>
+			<li class="nav__li">
+				<a href="#" class="nav__link">
+					<svg class="icon icon-warning_black"><use xlink:href="#icon-warning_black"></use></svg>
+					<span class="nav__text">Проблемы с электрооборудованием</span></a></li>
+			<li class="nav__li">
+				<a href="#" class="nav__link">
+					<svg class="icon icon-invert-colors-off"><use xlink:href="#icon-invert-colors-off"></use></svg>
+					<span class="nav__text">Закончилось топливо</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
 	</header>
-	<main class="main">
-		<section class="section wow fadeIn order">
-			<div class="order__wrap">
-				<h2 class="h2 wow slideInDown">Срочная техпомощь на дороге, круглосуточно с выездом к вашему автомобилю</h2>
-				<div class="order__item">
-					<select name="" id="" class="order__select wow slideInRight">
-						<option value="" class="order__option">Марка и модель</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
+	<main>
+		<h1 class="h1">Онлайн подбор мастера техпомощь на дороге</h1>
+		<section class="section select-box">
+			<div class="select-box__wrap">
+				<div class="select-box__item">
+					<i class="select-box__icon"><svg class="icon icon-directions-car"><use xlink:href="#icon-directions-car"></use></svg></i>
+					<select name="" id="" class="select-box__select">
+						<option value="" class="select-box__option">Выберите марку</option>
 					</select>
+					<svg class="icon select-box__arrow icon-keyboard-arrow-down"><use xlink:href="#icon-keyboard-arrow-down"></use></svg>
 				</div>
-				<div class="order__item">
-					<select name="" id="" class="order__select wow slideInDown">
-						<option value="" class="order__option">Выберите услугу</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
+				<div class="select-box__item">
+					<i class="select-box__icon"><svg class="icon icon-directions-car"><use xlink:href="#icon-directions-car"></use></svg></i>
+					<select name="" id="" class="select-box__select">
+						<option value="" class="select-box__option">Выберите модель</option>
 					</select>
+					<svg class="icon select-box__arrow icon-keyboard-arrow-down"><use xlink:href="#icon-keyboard-arrow-down"></use></svg>
 				</div>
-				<div class="order__item">
-					<select name="" id="" class="order__select wow slideInLeft">
-						<option value="" class="order__option">Выберите метро</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
-						<option value="" class="order__option">bmw</option>
+				<div class="select-box__item">
+					<i class="select-box__icon"><svg class="icon icon-build"><use xlink:href="#icon-build"></use></svg></i>
+					<select name="" id="" class="select-box__select">
+						<option value="" class="select-box__option">Выберите услугу</option>
 					</select>
+					<svg class="icon select-box__arrow icon-keyboard-arrow-down"><use xlink:href="#icon-keyboard-arrow-down"></use></svg>
 				</div>
 			</div>
 		</section>
-		<section class="section wow fadeIn text-block">
-			<h2 class="h2">Ремонт автомобиля на дороге - служба техпомощи</h2>
-			<p class="text">Московская служба техпомощи на дороге предлагает круглосуточную автопомощь при любых поломках. Выезд техпомощи осуществляется 24 часа в сутки. Расстояние роли не играет. У нас также есть служба эвакуации на дорогах столицы, в пригороде, за МКАДом. Наши мастера осуществляют квалифицированную автотехпомощь в Москве для водителей легковых и грузовых автомобилей, автобусов, других видов техники. Если вам не посчастливилось стать участником аварии, не исключено, что вам потребуется услуга эвакуатора. Мы предлагаем клиентам помощь на дороге в Москве и московской области. Компания оказывает автотехпомощь в разных ситуациях. Если вас интересует только транспортировка, а не технический аспект, мы доставим авто, куда скажете.</p>
+		<section class="section defect">
+			<h2 class="h2"><div class="h2__text">Выберите неисправность</div></h2>
+			<div class="defect__wrap">
+				<div class="defect__item">
+					<div class="defect__title">
+						<div class="defect__title-icon"><svg class="icon icon-show-chart"><use xlink:href="#icon-show-chart"></use></svg></div>
+						<div class="defect__title-text">Электрооборудование</div>
+					</div>
+					<a href="#" class="defect__line">Отключение сигнализации</a>
+					<a href="#" class="defect__line">Отключение спутниковой сигнализации</a>
+					<a href="#" class="defect__line">Быстрая подзарядка АКБ</a>
+					<a href="#" class="defect__line">Запуск автомобиля от внешнего источника</a>
+					<a href="#" class="defect__line">Замена свечей зажигания</a>
+					<a href="#" class="defect__line">Замена неисправных реле</a>
+				</div>
+				<div class="defect__item">
+					<div class="defect__title">
+						<div class="defect__title-icon"><svg class="icon icon-radio-button-checked"><use xlink:href="#icon-radio-button-checked"></use></svg></div>
+						<div class="defect__title-text">Шиномонтаж</div>
+					</div>
+					<a href="#" class="defect__line">Отключение сигнализации</a>
+					<a href="#" class="defect__line">Отключение спутниковой сигнализации</a>
+					<a href="#" class="defect__line">Быстрая подзарядка АКБ</a>
+					<a href="#" class="defect__line">Запуск автомобиля от внешнего источника</a>
+					<a href="#" class="defect__line">Замена свечей зажигания</a>
+					<a href="#" class="defect__line">Замена неисправных реле</a>
+				</div>
+				<div class="defect__item">
+					<div class="defect__title">
+						<div class="defect__title-icon"><svg class="icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg></div>
+						<div class="defect__title-text">Автосигнализация</div>
+					</div>
+					<a href="#" class="defect__line">Отключение сигнализации</a>
+					<a href="#" class="defect__line">Отключение спутниковой сигнализации</a>
+					<a href="#" class="defect__line">Быстрая подзарядка АКБ</a>
+					<a href="#" class="defect__line">Запуск автомобиля от внешнего источника</a>
+					<a href="#" class="defect__line">Замена свечей зажигания</a>
+					<a href="#" class="defect__line">Замена неисправных реле</a>
+				</div>
+				<div class="defect__item">
+					<div class="defect__title">
+						<div class="defect__title-icon"><svg class="icon icon-lock"><use xlink:href="#icon-lock"></use></svg></div>
+						<div class="defect__title-text">Открытие автомобиля</div>
+					</div>
+					<a href="#" class="defect__line">Отключение сигнализации</a>
+					<a href="#" class="defect__line">Отключение спутниковой сигнализации</a>
+					<a href="#" class="defect__line">Быстрая подзарядка АКБ</a>
+					<a href="#" class="defect__line">Запуск автомобиля от внешнего источника</a>
+					<a href="#" class="defect__line">Замена свечей зажигания</a>
+					<a href="#" class="defect__line">Замена неисправных реле</a>
+				</div>
+				<div class="defect__item">
+					<div class="defect__title">
+						<div class="defect__title-icon"><svg class="icon icon-settings"><use xlink:href="#icon-settings"></use></svg></div>
+						<div class="defect__title-text">Двигатель</div>
+					</div>
+					<a href="#" class="defect__line">Отключение сигнализации</a>
+					<a href="#" class="defect__line">Отключение спутниковой сигнализации</a>
+					<a href="#" class="defect__line">Быстрая подзарядка АКБ</a>
+					<a href="#" class="defect__line">Запуск автомобиля от внешнего источника</a>
+					<a href="#" class="defect__line">Замена свечей зажигания</a>
+					<a href="#" class="defect__line">Замена неисправных реле</a>
+				</div>
+				<div class="defect__item">
+					<div class="defect__title">
+						<div class="defect__title-icon"><svg class="icon icon-rotate-90-degrees"><use xlink:href="#icon-rotate-90-degrees"></use></svg></div>
+						<div class="defect__title-text">Снятие секреток</div>
+					</div>
+					<a href="#" class="defect__line">Отключение сигнализации</a>
+					<a href="#" class="defect__line">Отключение спутниковой сигнализации</a>
+					<a href="#" class="defect__line">Быстрая подзарядка АКБ</a>
+					<a href="#" class="defect__line">Запуск автомобиля от внешнего источника</a>
+					<a href="#" class="defect__line">Замена свечей зажигания</a>
+					<a href="#" class="defect__line">Замена неисправных реле</a>
+				</div>
+				<div class="defect__item">
+					<div class="defect__title">
+						<div class="defect__title-icon"><svg class="icon icon-perm-data-setting"><use xlink:href="#icon-perm-data-setting"></use></svg></div>
+						<div class="defect__title-text">Трансмиссия</div>
+					</div>
+					<a href="#" class="defect__line">Отключение сигнализации</a>
+					<a href="#" class="defect__line">Отключение спутниковой сигнализации</a>
+					<a href="#" class="defect__line">Быстрая подзарядка АКБ</a>
+					<a href="#" class="defect__line">Запуск автомобиля от внешнего источника</a>
+					<a href="#" class="defect__line">Замена свечей зажигания</a>
+					<a href="#" class="defect__line">Замена неисправных реле</a>
+				</div>
+				<div class="defect__item">
+					<div class="defect__title">
+						<div class="defect__title-icon"><svg class="icon icon-local-gas-station"><use xlink:href="#icon-local-gas-station"></use></svg></div>
+						<div class="defect__title-text">Топливная система</div>
+					</div>
+					<a href="#" class="defect__line">Отключение сигнализации</a>
+					<a href="#" class="defect__line">Отключение спутниковой сигнализации</a>
+					<a href="#" class="defect__line">Быстрая подзарядка АКБ</a>
+					<a href="#" class="defect__line">Запуск автомобиля от внешнего источника</a>
+					<a href="#" class="defect__line">Замена свечей зажигания</a>
+					<a href="#" class="defect__line">Замена неисправных реле</a>
+				</div>
+			</div>
 		</section>
-		<section class="section product">
-			<div class="product__desc">
-				<div class="breadcrumbs">
-					<a href="#" class="breadcrumbs__link">Техпомощь на дороге</a>
-					<a href="#" class="breadcrumbs__link">Москва</a>
-					<a href="#" class="breadcrumbs__link">ЦАО</a>
-					<a href="#" class="breadcrumbs__link">метро</a>
-					<a href="#" class="breadcrumbs__link">Китай-город</a>
+		<section class="section text-box">
+			<h2 class="h2"><div class="h2__text">Срочная техпомощь на дороге</div></h2>
+			<p class="text">Московская служба техпомощи на дороге предлагает круглосуточную автопомощь при любых поломках. Выезд техпомощи осуществляется 24 часа в сутки. Расстояние роли не играет. У нас также есть служба эвакуации на дорогах столицы, в пригороде, за МКАДом.
+				Наши мастера осуществляют квалифицированную автотехпомощь в Москве для водителей легковых и грузовых автомобилей, автобусов, других видов техники. Если вам не посчастливилось стать участником аварии, не исключено, что вам потребуется услуга эвакуатора.
+				Мы предлагаем клиентам помощь на дороге в Москве и Московской области. Компания оказывает автотехпомощь в разных ситуациях. Если вас интересует только транспортировка, а не технический аспект, мы доставим авто, куда скажете.</p>
+		</section>
+		<section class="section popular">
+			<h2 class="h2"><div class="h2__text">Популярные услуги</div></h2>
+			<div class="popular__nav">
+				<div data-tabclass="popular__content" data-tabnumber="1" class="popular__nav-item active">
+					<div class="popular__nav-title">
+						<div class="popular__nav-icon"><img src="img/ikon_1.jpg" alt=""></div>
+						<div class="popular__nav-title-text">от 1 500 руб.</div>
+					</div>
+					<div class="popular__text">Прикурить автомобиль (замена АКБ)</div>
+					<i class="popular__arrow"><svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg></i>
 				</div>
-				<div class="product__line">
-					<div class="product__title">Срочная техпомощь на дороге</div>
-					<div class="product__rating">
-						<span class="product__rating-text">Рейтинг: 4,35</span>
-						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-						<i class="product__rating-item icon"><svg class="icon icon-star-half"><use xlink:href="#icon-star-half"></use></svg></i>
+				<div data-tabclass="popular__content" data-tabnumber="2" class="popular__nav-item">
+					<div class="popular__nav-title">
+						<div class="popular__nav-icon"><img src="img/ikon_2.jpg" alt=""></div>
+						<div class="popular__nav-title-text">от 2 500 руб.</div>
+					</div>
+					<div class="popular__text">Замена колеса</div>
+					<i class="popular__arrow"><svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg></i>
+				</div>
+				<div data-tabclass="popular__content" data-tabnumber="3" class="popular__nav-item">
+					<div class="popular__nav-title">
+						<div class="popular__nav-icon"><img src="img/ikon_3.jpg" alt=""></div>
+						<div class="popular__nav-title-text">от 800 руб.</div>
+					</div>
+					<div class="popular__text">Подвоз топлива</div>
+					<i class="popular__arrow"><svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg></i>
+				</div>
+				<div data-tabclass="popular__content" data-tabnumber="4" class="popular__nav-item">
+					<div class="popular__nav-title">
+						<div class="popular__nav-icon"><img src="img/ikon_5.jpg" alt=""></div>
+						<div class="popular__nav-title-text">от 1 200 руб.</div>
+					</div>
+					<div class="popular__text">Отключение сигнализации</div>
+					<i class="popular__arrow"><svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg></i>
+				</div>
+			</div>
+			<div class="popular__content">
+				<div data-tabnumber="1" class="popular__tab-box animated slideInUp">
+					<div class="popular__call">
+						<div style="background-image: url(img/fots_1.jpg);" class="popular__content-img">
+							<div class="popular__desc">
+								<span class="t1">Звоните:</span><span class="t2">+7 (495) 100-15-10</span>
+							</div>
+						</div>
+					</div>
+					<div class="popular__map">
+						<div style="background-image: url(img/kart.jpg);" class="popular__content-img">
+							<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A86831b1046552d569e35350d7ccf31c406eb845a0821d0552ddabe0d16ab2501&amp;width=100%&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
+							<div class="popular__desc">
+								<div class="t1">Приедем в любой р-н Москвы</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="form popular__form">
+						<div class="form__title">Онлайн заявка вызова мастера</div>
+						<div class="form__inpbox">
+							<input type="text" class="form__input formInput">
+							<label class="form__label formLabel animated slideInDown">Ваше имя</label>
+						</div>
+						<div class="form__inpbox">
+							<input type="tel" placeholder="Телефон" class="form__input formTel formInput">
+						</div>
+						<div class="form__inpbox selectStyle">
+							<select name="" id="" class="form__input form__select selectStyle">
+								<option value="0">Ближайшая станция метро</option>
+								<option value="1">Ближайшая станция метро</option>
+								<option value="2">Ближайшая станция метро</option>
+								<option value="3">Ближайшая станция метро</option>
+								<option value="4">Ближайшая станция метро</option>
+							</select>
+						</div>
+						<div class="form__inpbox">
+							<textarea class="form__input  formInput form__textarea"></textarea>
+							<label class="form__label form__label--textarea formLabel animated slideInDown">Опишите вашу проблему...</label>
+						</div>
+						<button hvr-float-shadow type="submit" class="form__submit">Отправить заявку на ремонт</button hvr-float-shadow>
+					</form>
+					<div class="popular-slider owl-carousel owl-theme popular__slider">
+						<div style="background-image: url(img/f_1_10.jpeg);" class="popular-slider__item">
+							<div class="popular-slider__text">Примеры выполненных работ</div>
+						</div>
+						<div style="background-image: url(img/f_1_10.jpeg);" class="popular-slider__item">
+							<div class="popular-slider__text">Примеры выполненных работ</div>
+						</div>
+						<div style="background-image: url(img/f_1_10.jpeg);" class="popular-slider__item">
+							<div class="popular-slider__text">Примеры выполненных работ</div>
+						</div>
 					</div>
 				</div>
-				<div class="product__line product__line--block product__line--no-border column column--2">
-					<div class="product__left">
-						<div class="product__text">
-							<i class="icon icon--default"><svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg></i>
-							<span>Круглосуточно 24 часа</span>
-						</div>
-						<div class="product__text">
-							<i class="icon icon--default"><svg class="icon icon-add_location"><use xlink:href="#icon-add_location"></use></svg></i>
-							<span>Москва, ЦАО Китай-город</span>
-						</div>
-						<div class="product__text product__text--no-border column column--2">
-							<span class="product__t1 column column--align">
-								<i class="icon icon--ball"><svg class="icon icon-brightness_1"><use xlink:href="#icon-brightness_1"></use></svg></i>
-								<span class="text">Китай-город</span>
-							</span>
-							<span class="product__t2 column column--align">
-								<i class="icon icon--car"><svg class="icon icon-directions-car"><use xlink:href="#icon-directions-car"></use></svg></i>
-								<span class="text">Выезд мастера на место</span>
-							</span>
-						</div>
-					</div><!--product__left-->
-					<div class="product__right">
-						<div class="product__price">
-							<span class="product__t3">Стоимость услуг:</span>
-							<span class="product__t4">от 1 200 руб.</span>
-						</div>
-						<a href="tel:74951001510" class="product__phone">+7 (495) 100-15-10</a>
-						<div class="product__send">Отправить заявку на ремонт</div>
-					</div><!--product__right-->
+				<div data-tabnumber="2" class="popular__tab-box animated slideInUp">
+					<h2 class="h2">22222222222</h2>
+				</div>
+				<div data-tabnumber="3" class="popular__tab-box animated slideInUp">
+					<h2 class="h2">33333333333</h2>
+				</div>
+				<div data-tabnumber="4" class="popular__tab-box animated slideInUp">
+					<h2 class="h2">44444444444444</h2>
 				</div>
 			</div>
-			<div class="product__services">
-				<div class="product__list">
-					<div class="product__list-title">Оказываемые услуги:</div>
-					<ul class="product__list-ul">
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Зарядка АКБ
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Вскрытие капота
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Снятие секреток
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Вскрытие авто
-						</li>
-						<li class="product__list-li product__list-li--error">
-							<svg class="icon icon-error icon-cancel"><use xlink:href="#icon-cancel"></use></svg>
-							Слив топлива
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Зарядка АКБ
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Замена колеса
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Разблокировка техноблока
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Снятие секреток
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Вскрытие авто
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Слив топлива
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Отключение сигнализации
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Слив топлива
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Отключение сигнализации
-						</li>
-					</ul>
+		</section>
+		<section class="section about">
+			<h2 class="h2"><div class="h2__text">Ремонт автомобиля на дороге - служба техпомощи</div></h2>
+			<div class="about__wrap">
+				<div class="about__left">
+				<form action="" class="form about__form">
+					<div class="form__title">Онлайн заявка вызова мастера</div>
+					<div class="form__inpbox">
+						<input type="text" class="form__input formInput">
+						<label class="form__label formLabel animated slideInDown">Ваше имя</label>
+					</div>
+					<div class="form__inpbox">
+						<input type="tel" placeholder="Телефон" class="form__input formTel formInput">
+					</div>
+					<div class="form__inpbox selectStyle">
+						<select name="" id="" class="form__input form__select selectStyle">
+							<option value="0">Ближайшая станция метро</option>
+							<option value="1">Ближайшая станция метро</option>
+							<option value="2">Ближайшая станция метро</option>
+							<option value="3">Ближайшая станция метро</option>
+							<option value="4">Ближайшая станция метро</option>
+						</select>
+					</div>
+					<div class="form__inpbox">
+						<textarea class="form__input  formInput form__textarea"></textarea>
+						<label class="form__label form__label--textarea formLabel animated slideInDown">Опишите вашу проблему...</label>
+					</div>
+					<button hvr-float-shadow type="submit" class="form__submit">Отправить заявку на ремонт</button hvr-float-shadow>
+				</form>
 				</div>
-			</div>
-			<div class="product-slider">
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-			</div>
-		</section><!--product-->
-		<section class="section wow lightSpeedIn product">
-			<div class="product__desc">
-				<div class="breadcrumbs">
-					<a href="#" class="breadcrumbs__link">Техпомощь на дороге</a>
-					<a href="#" class="breadcrumbs__link">Москва</a>
-					<a href="#" class="breadcrumbs__link">ЦАО</a>
-					<a href="#" class="breadcrumbs__link">метро</a>
-					<a href="#" class="breadcrumbs__link">Китай-город</a>
-				</div>
-				<div class="product__line">
-					<div class="product__title">Срочная техпомощь на дороге</div>
-					<div class="product__rating">
-						<span class="product__rating-text">Рейтинг: 4,35</span>
-						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-						<i class="product__rating-item icon"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></i>
-						<i class="product__rating-item icon"><svg class="icon icon-star-half"><use xlink:href="#icon-star-half"></use></svg></i>
+				<div class="about__right">
+					<p class="text">Московская служба техпомощи на дороге предлагает круглосуточную автопомощь при любых поломках. Выезд техпомощи осуществляется 24 часа в сутки. Расстояние роли не играет. У нас также есть служба эвакуации на дорогах столицы, в пригороде, за МКАДом.
+						Наши мастера осуществляют квалифицированную автотехпомощь в Москве для водителей легковых и грузовых автомобилей, автобусов, других видов техники. Если вам не посчастливилось стать участником аварии, не исключено, что вам потребуется услуга эвакуатора.
+						Мы предлагаем клиентам помощь на дороге в Москве и Московской области. Компания оказывает автотехпомощь в разных ситуациях. Если вас интересует только транспортировка, а не технический аспект, мы доставим авто, куда скажете.</p>
+					<div class="services">
+						<div class="services__item">
+							<div class="services__img"><img src="img/benefit-1.png" alt=""></div>
+							<div class="services__name">Большой список<br />оказываемых услуг</div>
+						</div>
+						<div class="services__item">
+							<div class="services__img"><img src="img/benefit-2.png" alt=""></div>
+							<div class="services__name">Срочный везд мастера <br /> от 20 минут</div>
+						</div>
+						<div class="services__item">
+							<div class="services__img"><img src="img/benefit-3.png" alt=""></div>
+							<div class="services__name">Удобная онлайн <br />заявка</div>
+						</div>
+						<div class="services__item">
+							<div class="services__img"><img src="img/benefit-4.png" alt=""></div>
+							<div class="services__name">Работаем круглосуточно <br />без выходных</div>
+						</div>
 					</div>
 				</div>
-				<div class="product__line product__line--block product__line--no-border column column--2">
-					<div class="product__left">
-						<div class="product__text">
-							<i class="icon icon--default"><svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg></i>
-							<span>Круглосуточно 24 часа</span>
-						</div>
-						<div class="product__text">
-							<i class="icon icon--default"><svg class="icon icon-add_location"><use xlink:href="#icon-add_location"></use></svg></i>
-							<span>Москва, ЦАО Китай-город</span>
-						</div>
-						<div class="product__text product__text--no-border column column--2">
-							<span class="product__t1 column column--align">
-								<i class="icon icon--ball"><svg class="icon icon-brightness_1"><use xlink:href="#icon-brightness_1"></use></svg></i>
-								<span class="text">Китай-город</span>
-							</span>
-							<span class="product__t2 column column--align">
-								<i class="icon icon--car"><svg class="icon icon-directions-car"><use xlink:href="#icon-directions-car"></use></svg></i>
-								<span class="text">Выезд мастера на место</span>
-							</span>
-						</div>
-					</div><!--product__left-->
-					<div class="product__right">
-						<div class="product__price">
-							<span class="product__t3">Стоимость услуг:</span>
-							<span class="product__t4">от 1 200 руб.</span>
-						</div>
-						<a href="tel:74951001510" class="product__phone">+7 (495) 100-15-10</a>
-						<div class="product__send">Отправить заявку на ремонт</div>
-					</div><!--product__right-->
-				</div>
 			</div>
-			<div class="product__services">
-				<div class="product__list">
-					<div class="product__list-title">Оказываемые услуги:</div>
-					<ul class="product__list-ul">
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Зарядка АКБ
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Вскрытие капота
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Снятие секреток
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Вскрытие авто
-						</li>
-						<li class="product__list-li product__list-li--error">
-							<svg class="icon icon-error icon-cancel"><use xlink:href="#icon-cancel"></use></svg>
-							Слив топлива
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Зарядка АКБ
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Замена колеса
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Разблокировка техноблока
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Снятие секреток
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Вскрытие авто
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Слив топлива
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Отключение сигнализации
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Слив топлива
-						</li>
-						<li class="product__list-li">
-							<svg class="icon icon-check_circle"><use xlink:href="#icon-check_circle"></use></svg>
-							Отключение сигнализации
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="product-slider">
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-				<div class="product-slider__slide">
-					<img src="img/f_1_2.jpeg" alt="">
-				</div>
-			</div>
-		</section><!--product-->
-		<section class="section wow flipInX brands">
-			<h2 class="h2 wow slideInDown">Мы производим ремонт автомобилей любых марок</h2>
-			<div class="brands__container">
-				<div class="brands__wrap">
+		</section>
+		<section class="section brands">
+			<h2 class="h2"><div class="h2__text">Мы осуществляем ремонт автомобилей всех марок</div></h2>
+			<div class="brands__wrap">
 				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/vw.png" alt=""></div>
-					<div class="brands__name">volkswagen</div>
-				</a>
-				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/toyota.png" alt=""></div>
-					<div class="brands__name">toyota</div>
-				</a>
-				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/hyndai.png" alt=""></div>
-					<div class="brands__name">hyundai</div>
-				</a>
-				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/honda-icon.png" alt=""></div>
-					<div class="brands__name">honda</div>
-				</a>
-				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/bmw-icon-1.png" alt=""></div>
-					<div class="brands__name">bmw</div>
-				</a>
-				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/lexus.png" alt=""></div>
-					<div class="brands__name">lexus</div>
-				</a>
-				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/audi-icon.png" alt=""></div>
+					<div class="brands__img"><img src="img/b_1.jpg" alt=""></div>
 					<div class="brands__name">audi</div>
 				</a>
 				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/renault.png" alt=""></div>
-					<div class="brands__name">renault</div>
+					<div class="brands__img"><img src="img/b_2.jpg" alt=""></div>
+					<div class="brands__name">bmw</div>
 				</a>
 				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/mitsubishi.png" alt=""></div>
-					<div class="brands__name">mitsubishi</div>
+					<div class="brands__img"><img src="img/b_3.jpg" alt=""></div>
+					<div class="brands__name">ford</div>
 				</a>
 				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/mercedes.png" alt=""></div>
-					<div class="brands__name">mercedes benz</div>
-				</a>
-				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/dutsun.png" alt=""></div>
-					<div class="brands__name">datsun</div>
-				</a>
-				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/kia-logo-sm1.png" alt=""></div>
+					<div class="brands__img"><img src="img/b_4.jpg" alt=""></div>
 					<div class="brands__name">kia</div>
 				</a>
 				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/nissan.png" alt=""></div>
+					<div class="brands__img"><img src="img/b_5.jpg" alt=""></div>
+					<div class="brands__name">opel</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_6.jpg" alt=""></div>
+					<div class="brands__name">toyota</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_7.jpg" alt=""></div>
+					<div class="brands__name">jeep</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_8.jpg" alt=""></div>
 					<div class="brands__name">nissan</div>
 				</a>
 				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/rover.png" alt=""></div>
-					<div class="brands__name">land rover</div>
+					<div class="brands__img"><img src="img/b_9.jpg" alt=""></div>
+					<div class="brands__name">suzuki</div>
 				</a>
 				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/skoda.png" alt=""></div>
+					<div class="brands__img"><img src="img/b_10.jpg" alt=""></div>
+					<div class="brands__name">land-rover</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_11.jpg" alt=""></div>
+					<div class="brands__name">peugeot</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_12.jpg" alt=""></div>
+					<div class="brands__name">volkswagen</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_13.jpg" alt=""></div>
+					<div class="brands__name">chery</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_14.jpg" alt=""></div>
+					<div class="brands__name">lexus</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_15.jpg" alt=""></div>
+					<div class="brands__name">porsche</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_16.jpg" alt=""></div>
+					<div class="brands__name">volvo</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_17.jpg" alt=""></div>
+					<div class="brands__name">chevrolet</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_18.jpg" alt=""></div>
+					<div class="brands__name">honda</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_19.jpg" alt=""></div>
+					<div class="brands__name">renault</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_20.jpg" alt=""></div>
+					<div class="brands__name">citroen</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_21.jpg" alt=""></div>
+					<div class="brands__name">hundai</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_22.jpg" alt=""></div>
+					<div class="brands__name">mazda</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_23.jpg" alt=""></div>
 					<div class="brands__name">skoda</div>
 				</a>
 				<a href="#" class="brands__item">
-					<div class="brands__img"><img src="img/bentley-icon.png" alt=""></div>
-					<div class="brands__name">bentley</div>
+					<div class="brands__img"><img src="img/b_24.jpg" alt=""></div>
+					<div class="brands__name">lada</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_25.jpg" alt=""></div>
+					<div class="brands__name">infiniti</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_26.jpg" alt=""></div>
+					<div class="brands__name">mercedes</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_27.jpg" alt=""></div>
+					<div class="brands__name">mitsubishu</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_28.jpg" alt=""></div>
+					<div class="brands__name">subaru</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_29.jpg" alt=""></div>
+					<div class="brands__name">jaguar</div>
+				</a>
+				<a href="#" class="brands__item">
+					<div class="brands__img"><img src="img/b_30.jpg" alt=""></div>
+					<div class="brands__name">datsun</div>
 				</a>
 			</div>
-			<a href="#" class="brands__more wow slideInUp">Показать другие</a>
-			</div>
+			<a href="#" class="brands__all">Смотреть все модели</a>
 		</section>
-		<section class="section wow fadeIn offer">
-			<h2 class="h2 wow slideInDown">Мы предлагаем только профессиональный ремонт автомобилей</h2>
-			<div class="offer__wrap">
-				<div class="offer__left wow slideInLeft">
-					<div class="offer__item">Прогреем двигатель и поможем его завести;</div>
-					<div class="offer__item">Выполним ремонт АКПП;</div>
-					<div class="offer__item">Прикурим севший аккумулятор либо заменим его;</div>
-					<div class="offer__item">Прогреем двигатель и поможем его завести;</div>
+		<section class="section info">
+			<h2 class="h2"><div class="h2__text">Мы работаем по всей Москве и Московской области</div></h2>
+			<div class="info__wrap">
+				<div class="info__map">
+					<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A86831b1046552d569e35350d7ccf31c406eb845a0821d0552ddabe0d16ab2501&amp;width=100%&amp;height=370&amp;lang=ru_RU&amp;scroll=false"></script>
 				</div>
-				<div class="offer__right wow slideInRight">Также круглосуточная срочная помощь на дороге в Москве может понадобиться водителю, у которого некорректно работают элементы противоугонной системы. Мы поможем отключить сигнализацию, иммобилайзер. Если у вас сломался или потерялся ключ, вы его оставили в замке зажигания, эти вопросы решит профессиональная помощь на дороге в Москве.</div>
-			</div>
-		</section>
-		<section class="section wow slideInUp services">
-			<h2 class="h2 wow slideInDown">Какие услуги мы оказываем:</h2>
-			<div class="services__wrap">
-				<div class="services__item">
-					<div class="services__title"><span class="text">электрооборудование</span></div>
-					<ul class="services__ul">
-						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
-						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
-					</ul>
-				</div><!--services__item-->
-				<div class="services__item">
-					<div class="services__title"><span class="text">двигатель и система охлаждения</span></div>
-					<ul class="services__ul">
-						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
-						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
-					</ul>
-				</div><!--services__item-->
-				<div class="services__item">
-					<div class="services__title"><span class="text">колеса, тормозная система</span></div>
-					<ul class="services__ul">
-						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
-						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
-					</ul>
-				</div><!--services__item-->
-				<div class="services__item">
-					<div class="services__title"><span class="text">рулевое управление</span></div>
-					<ul class="services__ul">
-						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
-						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
-					</ul>
-				</div><!--services__item-->
-				<div class="services__item">
-					<div class="services__title"><span class="text">шиномонтаж</span></div>
-					<ul class="services__ul">
-						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
-						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
-					</ul>
-				</div><!--services__item-->
-				<div class="services__item">
-					<div class="services__title"><span class="text">установка доп. оборудования</span></div>
-					<ul class="services__ul">
-						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
-						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
-					</ul>
-				</div><!--services__item-->
-				<div class="services__item">
-					<div class="services__title"><span class="text">техническое обслуживание</span></div>
-					<ul class="services__ul">
-						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
-						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
-					</ul>
-				</div><!--services__item-->
-				<div class="services__item">
-					<div class="services__title"><span class="text">подвеска</span></div>
-					<ul class="services__ul">
-						<li class="services__li"><a href="#" class="services__link">Отключение сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Отключение спутниковой сигнализации</a></li>
-						<li class="services__li"><a href="#" class="services__link">Быстрая подзарядка АКБ</a></li>
-						<li class="services__li"><a href="#" class="services__link">Запуск автомобиля от внешнего источника</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена свечей зажигания</a></li>
-						<li class="services__li"><a href="#" class="services__link">Замена неисправных реле</a></li>
-					</ul>
-				</div><!--services__item-->
-			</div>
-		</section>
-		<section class="section wow zoomIn examples">
-			<h2 class="h2 wow slideInDown">Примеры выполненных работ:</h2>
-			<div class="example__slider owl-carousel owl-theme">
-				<div class="examples__slider-item">
-					<img src="img/f_1_1.jpeg" alt="">
-					<div class="examples__slider-desc">Снятие секреток</div>
-				</div>
-				<div class="examples__slider-item">
-					<img src="img/f_1_2.jpeg" alt="">
-					<div class="examples__slider-desc">Вскрытие авто</div>
-				</div>
-				<div class="examples__slider-item">
-					<img src="img/f_1_10.jpeg" alt="">
-					<div class="examples__slider-desc">Замена акб</div>
-				</div>
-				<div class="examples__slider-item">
-					<img src="img/f_1_1.jpeg" alt="">
-					<div class="examples__slider-desc">Снятие секреток</div>
-				</div>
-				<div class="examples__slider-item">
-					<img src="img/f_1_2.jpeg" alt="">
-					<div class="examples__slider-desc">Вскрытие авто</div>
-				</div>
-				<div class="examples__slider-item">
-					<img src="img/f_1_10.jpeg" alt="">
-					<div class="examples__slider-desc">Замена акб</div>
+				<div class="info__location">
+					<div class="info__title">Наши мастера дежурят на основных направлениях</div>
+					<div class="info__location-wrap">
+						<div class="info__location-text">ЦАО</div>
+						<div class="info__location-text">юзаю</div>
+						<div class="info__location-text">сао</div>
+						<div class="info__location-text">зао</div>
+						<div class="info__location-text">свао</div>
+						<div class="info__location-text">сзао</div>
+						<div class="info__location-text">вао</div>
+						<div class="info__location-text">сао</div>
+						<div class="info__location-text">ювао</div>
+						<div class="info__location-text">Новая Москва</div>
+						<div class="info__location-text">юао</div>
+						<div class="info__location-text">Зеленоград</div>
+					</div>
 				</div>
 			</div>
-		</section>
-		<section class="section wow slideInUp map">
-			<h2 class="h2 wow slideInDown">Наши мастера выезжают в любой район Москвы</h2>
-			<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa243e33910611364c18b912369d4ca04b08935b1ae076c0deca5d9b14e5cf738&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
 		</section>
 	</main>
-	<footer class="page-footer wow fadeIn">
-		<div class="page-footer__box page-footer__top">
-			<a href="#" class="page-footer__logo">
-				<svg class="icon icon-rv_hookup"><use xlink:href="#icon-rv_hookup"></use></svg>
-				<span class="page-footer__logo-text">Техпомощь<br /> на дороге</span>
-			</a>
+	<footer class="page-footer">
+		<div class="page-footer__top">
 			<div class="page-footer__nav">
 				<ul class="page-footer__nav-ul">
-					<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Выездная техпомощь</a></li>
-					<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">выездной автоэлектрик</a></li>
-					<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">мобильный шиномонтаж</a></li>
-					<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">диагностика, ремонт авто</a></li>
-					<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">акции и скидки</a></li>
+					<li class="page-footer__nav-li">
+						<a href="#" class="page-footer__nav-link">
+							<svg class="icon icon-battery-charging-full"><use xlink:href="#icon-battery-charging-full"></use></svg>
+							<span class="page-footer__nav-text">Разрядился аккумулятор</span>
+						</a>
+					</li>
+					<li class="page-footer__nav-li">
+							<a href="#" class="page-footer__nav-link">
+								<svg class="icon icon-block"><use xlink:href="#icon-block"></use></svg>
+								<span class="page-footer__nav-text">Пробили колесо</span>
+							</a>
+					</li>
+					<li class="page-footer__nav-li">
+						<a href="#" class="page-footer__nav-link">
+							<svg class="icon icon-volume-up"><use xlink:href="#icon-volume-up"></use></svg>
+							<span class="page-footer__nav-text">Отключить сигнализацию</span>
+						</a>
+					</li>
+					<li class="page-footer__nav-li">
+						<a href="#" class="page-footer__nav-link">
+							<svg class="icon icon-warning_black"><use xlink:href="#icon-warning_black"></use></svg>
+							<span class="page-footer__nav-text">Проблемы с электрооборудованием</span></a></li>
+					<li class="page-footer__nav-li">
+						<a href="#" class="page-footer__nav-link">
+							<svg class="icon icon-invert-colors-off"><use xlink:href="#icon-invert-colors-off"></use></svg>
+							<span class="page-footer__nav-text">Закончилось топливо</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="page-footer__box page-footer__middle">
+		<div class="page-footer__mid">
 			<div class="page-footer__contact">
-				<div class="page-footer__worktime">Работаем круглосуточно, без выходных</div>
-				<div class="page-footer__phone">
-					<svg class="icon icon-settings_phone"><use xlink:href="#icon-settings_phone"></use></svg>
-					<a href="tel:74951001510" class="page-footer__phone-number">+7 (495) 100-15-10</a>
-					<div class="page-footer__address">Москва, Большой Каретный, 2</div>
+				<div class="page-footer__contact-t1">
+					<svg class="icon icon-edit-location"><use xlink:href="#icon-edit-location"></use></svg>
+					<div class="text">Москва и Московская область</div>
+				</div>
+				<a href="tel:+74951001510" class="page-footer__phone">
+					<div class="page-footer__phone-icon"><img src="img/clock.png" alt=""></div>
+					<div class="page-footer__phone-number">+7 (495) 100-15-10</div>
+				</a>
+				<div class="page-footer__address">Москва, Большой Каретный, 2</div>
+				<div class="page-footer__contact-t2">Работаем круглосуточно без выходных</div>
+			</div>
+			<div class="page-footer__links">
+				<a href="#" class="page-footer__links-link">Отключение сигнализации</a>
+				<a href="#" class="page-footer__links-link">Отключение сигнализации</a>
+				<a href="#" class="page-footer__links-link">Отключение спутниковой сигнализации</a>
+				<a href="#" class="page-footer__links-link">Отключение спутниковой сигнализации</a>
+				<a href="#" class="page-footer__links-link">Быстрая подзарядка АКБ</a>
+				<a href="#" class="page-footer__links-link">Быстрая подзарядка АКБ</a>
+				<a href="#" class="page-footer__links-link">Запуск автомобиля от внешнего источника</a>
+				<a href="#" class="page-footer__links-link">Запуск автомобиля от внешнего источника</a>
+				<a href="#" class="page-footer__links-link">Замена свечей зажигания</a>
+				<a href="#" class="page-footer__links-link">Замена свечей зажигания</a>
+				<a href="#" class="page-footer__links-link">Замена неисправных реле</a>
+				<a href="#" class="page-footer__links-link">Замена неисправных реле</a>
+				<a href="#" class="page-footer__links-link">Быстрая подзарядка АКБ</a>
+				<a href="#" class="page-footer__links-link">Быстрая подзарядка АКБ</a>
+				<a href="#" class="page-footer__links-link">Быстрая подзарядка АКБ</a>
+				<a href="#" class="page-footer__links-link">Быстрая подзарядка АКБ</a>
+			</div>
+			<div class="page-footer__help">
+				<a href="#" class="button hvr-float-shadow">
+					<span class="icon-box"><svg class="icon icon-airport-shuttle"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-airport-shuttle"></use></svg></span>
+					<span class="text">Срочный вызов мастера</span>
+				</a>
+				<a href="#" class="button hvr-float-shadow">
+					<span class="icon-box"><svg class="icon icon-phone-forwarded"><use xlink:href="#icon-phone-forwarded"></use></svg></span>
+					<span class="text">Срочный вызов мастера</span>
+				</a>
+				<div class="social">
+					<div class="social__text">Поделитесь с друзьями:</div>
+					<img src="img/soc.png" alt="">
 				</div>
 			</div>
-			<ul class="page-footer__links">
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Замена АКБ</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Замена АКБ</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Замена АКБ</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Подвоз топлива</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Подвоз топлива</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Подвоз топлива</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Снятие секреток</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Снятие секреток</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Снятие секреток</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Замена АКБ</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Замена АКБ</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Замена АКБ</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Подвоз топлива</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Подвоз топлива</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Подвоз топлива</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Снятие секреток</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Снятие секреток</a></li>
-				<li class="page-footer__links-li"><a href="#" class="page-footer__links-link">Снятие секреток</a></li>
-			</ul>
-			<div class="page-footer__social">
-				<div class="page-footer__social-title">Поделитесь с друзьями:</div>
-				<img src="img/soc.png" >
-			</div>
 		</div>
-		<div class="page-footer__box page-footer__bottom">
-			<div class="page-footer__copy">© 2018 Срочная техпомощь</div>
-			<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
+		<div class="page-footer__bottom">
+			<div class="page-footer__copy">© 2018 «ТЕХПОМДОР» Срочная техпомощь на дороге</div>
+			<div class="page-footer__metrika"><img src="img/metr.png" alt=""></div>
 		</div>
 	</footer>
 	<script src="js/libs.min.js"></script>
