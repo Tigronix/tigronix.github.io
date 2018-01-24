@@ -14,110 +14,574 @@
 	<div id="global-svg">
 		<global-svg></global-svg>
 	</div>
-	<main>
-		<form class="basket">
-			<h1 class="h1">Ваша корзина:</h1>
-			<div class="basket__wrap">
-				<table class="basket__table">
-					<thead>
-						<tr class="basket__tr">
-							<td class="basket__td basket__td--head">Наименование</td>
-							<td class="basket__td basket__td--head">Стоимость</td>
-							<td class="basket__td basket__td--head">Количество (ШТ.)</td>
-							<td class="basket__td basket__td--head">Общая сумма</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="basket__tr">
-							<td class="basket__td">1. Кабушкаджин - с капустой 1000 г <svg class="basket__cancel icon icon-cancel"><use xlink:href="#icon-cancel"></use></svg></td>
-							<td class="basket__td">400 руб.</td>
-							<td class="basket__td">
-									<div class="basket__input-number">
-										<button type="button" class="input-number__button inc">+</button>
-										<input placeholder="1" value="2" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-										<button type="button" class="input-number__button dec">-</button>
-									</div>
-							</td>
-							<td class="basket__td basketItemPrice"><span data-value="400" class="number">400</span> руб.</td>
-						</tr>
-						<tr class="basket__tr">
-							<td class="basket__td">2. С индейкой 1000 г <svg class="basket__cancel icon icon-cancel"><use xlink:href="#icon-cancel"></use></svg></td>
-							<td class="basket__td">600 руб.</td>
-							<td class="basket__td">
-									<div class="basket__input-number">
-										<button type="button" class="input-number__button inc">+</button>
-										<input placeholder="1" value="1" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-										<button type="button" class="input-number__button dec">-</button>
-									</div>
-							</td>
-							<td class="basket__td basketItemPrice"><span data-value="600" class="number">600</span> руб.</td>
-						</tr>
-						<tr class="basket__tr">
-							<td class="basket__td">3. С сыром, курицей и грибами 1000 г <svg class="basket__cancel icon icon-cancel"><use xlink:href="#icon-cancel"></use></svg></td>
-							<td class="basket__td">600 руб.</td>
-							<td class="basket__td">
-									<div class="basket__input-number">
-										<button type="button" class="input-number__button inc">+</button>
-										<input placeholder="1" value="2" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-										<button type="button" class="input-number__button dec">-</button>
-									</div>
-							</td>
-							<td class="basket__td basketItemPrice"><span data-value="600" class="number">600</span> руб.</td>
-						</tr>
-						<tr class="basket__tr">
-							<td></td>
-							<td></td>
-							<td></td>
-							<td class="basket__td basket__total"><span>ИТОГО:</span> <span class="numberTotal"></span> <span class="value">руб.</span></td>
-						</tr>
-					</tbody>
-				</table>
-				<h2 class="h1">Информация о доставке</h2>
-				<div class="basket__delivery">
-					<div class="basket__left">
-						<input placeholder="Ваше имя" type="text" class="basket__input">
-						<input placeholder="+7(___)___-__-__" type="tel" class="basket__input formTel basket__tel">
-						<input placeholder="Ближайшая станция метро" type="text" class="basket__input">
-						<textarea placeholder="Ваши пожелания к заказу..." class="basket__input basket__textarea"></textarea>
-						<textarea placeholder="Адрес доставки" class="basket__input basket__textarea--height basket__textarea"></textarea>
+	<header class="page-header">
+		<div class="page-header__info">
+			<div class="menu__wrap">
+				<span class="hamburger">
+					<span class="hamburger__line"></span>
+					<span class="line hamburger__line"></span>
+					<div class="hamburger__back">Назад</div>
+				</span>
+				<div class="hamburger__text">меню</div>
+			</div>
+			<div class="page-header__logo">
+				<svg class="page-header__logo-icon icon icon-add-to-photos"><use xlink:href="#icon-add-to-photos"></use></svg>
+				<div class="page-header__logo-text">медицинские книжки официально</div>
+			</div>
+			<div class="page-header__location">
+				<svg class="page-header__location-icon icon icon-my-location"><use xlink:href="#icon-my-location"></use></svg>
+				<div class="page-header__location-text">Москва</div>
+			</div>
+			<div class="page-header__contact">
+				<svg title="Пн-Пт: с 09:00 до 21:00 Сб: с 10:00 до 16:00" class="page-header__contact-icon titleHover icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+				<div class="page-header__contact-t1">Пн-Пт: с 09:00 до 21:00 Сб: с 10:00 до 16:00</div>
+				<div class="page-header__contact-t2">Вс: - выходной</div>
+			</div>
+			<a href="+74951001510" class="animated pulse infinite page-header__phone">+7 (495) 100-15-10</a>
+			<nav class="nav">
+				<ul class="nav__ul">
+					<li class="nav__li"><a href="#" class="nav__link">Для работников с продуктами питания</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для водителя экспедитора</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для водителя экспедитора</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для работников промышленной торговли</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для иностранных граждан</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для иностранных граждан</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для медицинских работников, сфера здравоохранения</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для работы с детьми</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для работы с детьми</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для работников салонов красоты и парикмахерских</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для горничной</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для горничной</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для работников образовательных учреждений</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для официанта</a></li>
+					<li class="nav__li"><a href="#" class="nav__link">Для официанта</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div style="background-image: url(img/kn_1.jpg);" class="page-header__desc">
+			<div class="page-header__sale wow slideInLeft">
+				<div class="page-header__sale-t1">Скидка</div>
+				<div class="page-header__sale-t2">10%</div>
+				<div class="page-header__sale-t3">при онлайн<br />заявке</div>
+			</div>
+			<div class="page-header__desc-title">
+				<svg class="page-header__desc-icon icon icon-assignment-turned-in"><use xlink:href="#icon-assignment-turned-in"></use></svg>
+				Все медицинские книжки, которые выдает наш медицинский центр внесены в росреестр.
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="section wow fadeIn order">
+			<h1 class="h1 wow slideInDown">Оформить официально медкнижку за 1 день</h1>
+			<p class="text wow slideInUp">Оформление начинается с весьма стандартного похода в отделение поликлиники. На первом этапе вы получаете направления к врачам, которых нужно посетить, а также необходимые для сдачи анализы. Все это требует массу времени и психологическую устойчивость во время пребывания в очереди. Кстати, деньги берут далеко не все врачи, потому начинать с них никогда не стоит. На первом этапе вы получаете направления к врачам, которых нужно посетить, а также необходимые для сдачи анализы. Все это требует массу времени.</p>
+			<div class="order__wrap">
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_1.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
 					</div>
-					<div class="basket__right">
-						<button type="submit" class="basket__submit">отправить заявку</button>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_2.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_3.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_4.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_5.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_6.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_7.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_8.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_9.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+				<form class="order__item wow zoomIn">
+					<div class="order__img"><img src="img/sf_10.jpg" alt=""></div>
+					<a href="#" class="order__title">Для работников<br /> с продуктами питания</a>
+					<div class="order__check-wrap">
+						<div class="order__inpbox">
+							<input id="ex1" type="radio" name="ex1" class="order__input">
+							<label for="ex1" class="order__label">Новая</label>
+						</div>
+						<div class="order__inpbox">
+							<input checked id="ex2" type="radio" name="ex1" class="order__input">
+							<label for="ex2" class="order__label">Продление</label>
+						</div>
+					</div>
+					<div class="order__terms">
+						<svg class="order__terms-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+						Оформление от 1 - 5 дней
+					</div>
+					<div class="order__price">
+						от 1 500 руб.
+					</div>
+					<button type="submit" class="order__submit">
+						<svg class="order__submit-icon icon icon-send"><use xlink:href="#icon-send"></use></svg>
+						<span>оформить книжку</span>
+					</button>
+				</form>
+			</div>
+		</section>
+		<section class="section wow fadeIn assay">
+			<h2 class="h2">Какие анализы нужно сдавать:</h2>
+			<div class="assay__wrap">
+				<div class="assay__item">
+					<div class="assay__title">
+						<svg class="icon assay__title-icon icon-add-to-photos"><use xlink:href="#icon-add-to-photos"></use></svg>
+						Работникам пищевых производств
+					</div>
+					<ul class="assay__list">
+						<li class="assay__list-li">пройти рентгенографию грудной клетки;</li>
+						<li class="assay__list-li">сдать кал на на кишечные инфекции;</li>
+						<li class="assay__list-li">сдать кровь на клинический анализ;</li>
+						<li class="assay__list-li">сдать кровь на уровень глюкозы и холестерина;</li>
+						<li class="assay__list-li">сдать мочу на общий анализ;</li>
+						<li class="assay__list-li">сдать кровь на брюшной тиф;</li>
+						<li class="assay__list-li">пройти ЭКГ;</li>
+						<li class="assay__list-li">сдать кровь на сифилис;</li>
+						<li class="assay__list-li">сдать мазок на анализ наличия стафилококков.</li>
+					</ul>
+				</div>
+				<div class="assay__item">
+					<div class="assay__title assay__title--border">
+						<svg class="icon assay__title-icon icon-add-to-photos"><use xlink:href="#icon-add-to-photos"></use></svg>
+						Работникам общепита, детских<br />
+						дошкольных учреждений, торговли<br />
+						продовольственными товарами
+					</div>
+					<ul class="assay__list">
+						<li class="assay__list-li">рентгенография грудной клетки;</li>
+						<li class="assay__list-li">ЭКГ;</li>
+						<li class="assay__list-li">анализ крови на сифилис;</li>
+						<li class="assay__list-li">анализ мазка на гонорею (при поступлении на работу);</li>
+						<li class="assay__list-li">анализ кала на гельминты;</li>
+						<li class="assay__list-li">общий анализ крови и мочи;</li>
+						<li class="assay__list-li">анализ крови на уровень глюкозы и холестерина.</li>
+					</ul>
+				</div>
+				<div class="assay__item">
+					<div class="assay__title">
+						<svg class="icon assay__title-icon icon-add-to-photos"><use xlink:href="#icon-add-to-photos"></use></svg>
+						Работникам торговли, сферы<br />
+						коммунального обслуживания,<br />
+						фармацевтам
+					</div>
+					<ul class="assay__list">
+						<li class="assay__list-li">сдать кровь и мочу на общий анализ;</li>
+						<li class="assay__list-li">сделать ЭКГ;</li>
+						<li class="assay__list-li">кровь на определение уровня глюкозы и холестерина;</li>
+						<li class="assay__list-li">сдать мазок на гонорею;</li>
+						<li class="assay__list-li">сдать кал на гельминтов;</li>
+						<li class="assay__list-li">пройти рентгенографию грудной клетки.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="section wow fadeIn checkin">
+			<h2 class="h2">Порядок оформления легальной медкнижки:</h2>
+			<p class="text">Перед оформлением медицинской книжки советуем уточнить у работодателя необходимость прохождения дополнительных медицинских обследований и/или анализов Перед оформлением медицинской книжки советуем уточнить у работодателя необходимость прохождения дополнительных медицинских обследований и/или анализов Перед оформлением медицинской книжки советуем уточнить у работодателя необходимость прохождения дополнительных медицинских обследований и/или анализов</p>
+			<div class="checkin__wrap">
+				<div class="checkin__item">
+					<div class="checkin__img">
+						<img class="checkin__img-1" src="img/pasports.jpg" alt="">
+						<svg class="checkin__icon icon icon-check-circle"><use xlink:href="#icon-check-circle"></use></svg>
+					</div>
+					<div class="checkin__title">1. Удостоверение личности</div>
+				</div>
+				<div class="checkin__item">
+					<div class="checkin__img">
+						<img class="checkin__img-2" src="img/bl_1.jpg" alt="">
+						<svg class="checkin__icon icon icon-check-circle"><use xlink:href="#icon-check-circle"></use></svg>
+					</div>
+					<div class="checkin__title">2. Фотография 3х4 матовая</div>
+				</div>
+				<div class="checkin__item">
+					<div class="checkin__img">
+						<img class="checkin__img-3" src="img/bl_2.jpg" alt="">
+						<svg class="checkin__icon icon icon-check-circle"><use xlink:href="#icon-check-circle"></use></svg>
+					</div>
+					<div class="checkin__title">
+						3. Действующая медкнижка<br /> (в случае продления)
+					</div>
+				</div>
+				<div class="checkin__item">
+					<div class="checkin__img">
+						<img class="checkin__img-4" src="img/bl_3.jpg" alt="">
+						<svg class="checkin__icon icon icon-check-circle"><use xlink:href="#icon-check-circle"></use></svg>
+					</div>
+					<div class="checkin__title">
+						4. Сведения о сделанных<br /> прививках (при наличии)
 					</div>
 				</div>
 			</div>
-		</form>
-		<form class="catalog__item">
-			<div class="catalog__sale animated infinite tada">Хит продаж</div>
-			<div class="catalog__name">«Фыдджин» с говядиной</div>
-			<div class="catalog__weight">
-				<div class="catalog__value">Вес:</div>
-				<div class="catalog__weight-item">
-					<input disabled="" id="pie1" type="radio" name="pie1" class="catalog__input">
-					<label for="pie1" data-price="800" class="catalog__label"><span class="number">1 000 г</span></label>
+			<p class="text text--red">Официальное оформление медкнижек происходит только при условии прохождения медицинского осмотра. После медосмотра выдается квитанция установленного образца, подтверждающая, что медкнижка находится на оформлении в одном из наших медцентров.</p>
+		</section>
+		<section class="section wow fadeIn register">
+			<form action="" class="register__form">
+				<div class="register__title">Отправьте заявку на оформление медкнижки</div>
+				<div class="register__text">В течении 2 минут с Вами свяжется наш специалист и ответит на все ваши вопросы.</div>
+				<textarea placeholder="Опишите какая Вам нужна медицинская книжка..." class="register__textarea"></textarea>
+				<div class="register__form-right">
+					<input placeholder="Введите ваш телефон" type="tel" class="register__input formTel">
+					<button type="submit" class="register__submit">Отправить заявку</button>
 				</div>
-				<div class="catalog__weight-item">
-					<input id="pie2" type="radio" name="pie1" class="catalog__input" checked>
-					<label for="pie2" data-price="1000" class="catalog__label"><span class="number">1 200 г</span></label>
+			</form>
+			<div style="background-image: url(img/kn_3.jpg);" class="register__img"></div>
+		</section>
+		<section class="section wow fadeIn price">
+			<h2 class="h2">Стоимость медицинских книжек</h2>
+			<table class="table">
+				<thead>
+					<tr class="table__tr">
+						<td class="table__td table__td--head">Наименование медицинской книжки:</td>
+						<td class="table__td table__td--head">Время прохождения медосмотра:</td>
+						<td class="table__td table__td--head">Стоимость медкнижки:</td>
+						<td class="table__td table__td--head">При онлайн заказе:</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+					<tr class="table__tr">
+						<td class="table__td"><a href="#" class="table__link">Для медицинских работников, сфера здравоохранения</a></td>
+						<td class="table__td">от 30 мин</td>
+						<td class="table__td">2 500 руб.</td>
+						<td class="table__td">Скидка 10%</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="section wow fadeIn services">
+			<div class="services__wrap">
+				<div class="services__item">
+					<div class="services__img"><img src="img/benefit-1.png" alt=""></div>
+					<div class="services__name">Оформляем книжки для<br /> всех сфер и услуг</div>
 				</div>
-				<div class="catalog__weight-item">
-					<input id="pie3" type="radio" name="pie1" class="catalog__input">
-					<label for="pie3" data-price="1200" class="catalog__label">1 400 г</span></label>
+				<div class="services__item">
+					<div class="services__img"><img src="img/benefit-2.png" alt=""></div>
+					<div class="services__name">Прохождение <br />медосмотра занимает <br />20-30 мин.</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img"><img src="img/benefit-3.png" alt=""></div>
+					<div class="services__name">Удобная онлайн<br />заявка</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img"><img src="img/benefit-4.png" alt=""></div>
+					<div class="services__name">Работаем <br />с 9:00 до 21:00<br />ПН-СБ</div>
 				</div>
 			</div>
-			<div class="catalog__img"><img src="img/pirogs_1.png" alt=""></div>
-			<div class="input-number">
-				<div class="catalog__value">ШТ:</div>
-				<button type="button" class="input-number__button inc">+</button>
-				<input placeholder="1" value="2" data-min="1" type="text" class="input-number__input input-number__button fieldCount">
-				<button type="button" class="input-number__button dec">-</button>
-			</div>
-			<div class="catalog__btns">
-				<button class="catalog__submit"><i class="icon"><svg class="icon icon-lnr-cart"><use xlink:href="#icon-lnr-cart"></use></svg></i> В корзину</button>
-				<div class="catalog__price"><span data-value="780" class="number">780</span> руб.</div>
-			</div>
-		</form>
+		</section>
 	</main>
+	<footer class="page-footer">
+		<div class="page-footer__top">
+			<a href="#" class="page-footer__logo">
+				<svg class="page-footer__logo-icon icon icon-add-to-photos"><use xlink:href="#icon-add-to-photos"></use></svg>
+				МЕДИЦИНСКИЕ КНИЖКИ <br />ОФИЦИАЛЬНО
+			</a>
+			<div class="page-footer__nav">
+				<a href="#" class="page-footer__nav-link">Наши услуги</a>
+				<a href="#" class="page-footer__nav-link">Сертификаты</a>
+				<a href="#" class="page-footer__nav-link">Контакты</a>
+			</div>
+			<div class="page-footer__contact">
+				<a href="tel:+74957553572" class="page-footer__phone"><svg class="icon page-footer__phone-icon icon-settings-phone"><use xlink:href="#icon-settings-phone"></use></svg> + 7 (495) 755-35-72</a>
+				<div class="page-footer__address">Москва, Варшавское шоссе, 125</div>
+			</div>
+		</div>
+		<div class="page-footer__mid">
+			<div class="page-footer__schedule">
+				<svg class="page-footer__schedule-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+				Пн-Пт: с 09:00 до 21:00
+				<br />Сб: с 10:00 до 16:00
+				<br />Вс: - выходной
+			</div>
+			<div class="page-footer__links">
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+				<a href="#" class="page-footer__links-link">Для работников с продуктами питания</a>
+			</div>
+			<div class="page-footer__social">
+				<div class="page-footer__social-text">Понравился сервис? Расскажи друзьям!</div>
+				<img src="img/soc.png" alt="">
+			</div>
+		</div>
+		<div class="page-footer__bottom">
+			<div class="page-footer__copy">© 2010 - 2017 Медицинские книжки</div>
+			<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
+		</div>
+	</footer>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
