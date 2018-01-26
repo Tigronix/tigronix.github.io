@@ -1,104 +1,107 @@
 "use strict"
-$(document).ready(function() {
-  //wow animation
-  new WOW().init();
+//templates
+new Vue({
+		el: '#global-svg',
+		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-drafts" viewBox="0 0 32 32"><title>drafts</title><path d="M29.32 10.667c0-0.96-0.493-1.8-1.253-2.267l-12.067-7.067-12.067 7.067c-0.76 0.467-1.267 1.307-1.267 2.267v13.333c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667l-0.013-13.333zM16 17.333l-11.013-6.88 11.013-6.453 11.013 6.453-11.013 6.88z"></path></symbol><symbol id="icon-keyboard-arrow-left" viewBox="0 0 32 32"><title>keyboard-arrow-left</title><path d="M20.547 21.453l-6.107-6.12 6.107-6.12-1.88-1.88-8 8 8 8z"></path></symbol><symbol id="icon-keyboard-arrow-right" viewBox="0 0 32 32"><title>keyboard-arrow-right</title><path d="M11.453 21.787l6.107-6.12-6.107-6.12 1.88-1.88 8 8-8 8z"></path></symbol><symbol id="icon-location-on" viewBox="0 0 32 32"><title>location-on</title><path d="M16 2.667c-5.16 0-9.333 4.173-9.333 9.333 0 7 9.333 17.333 9.333 17.333s9.333-10.333 9.333-17.333c0-5.16-4.173-9.333-9.333-9.333zM16 15.333c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333-1.493 3.333-3.333 3.333z"></path></symbol><symbol id="icon-phone" viewBox="0 0 32 32"><title>phone</title><path d="M8.827 14.387c1.92 3.773 5.013 6.853 8.787 8.787l2.933-2.933c0.36-0.36 0.893-0.48 1.36-0.32 1.493 0.493 3.107 0.76 4.76 0.76 0.733 0 1.333 0.6 1.333 1.333v4.653c0 0.733-0.6 1.333-1.333 1.333-12.52 0-22.667-10.147-22.667-22.667 0-0.733 0.6-1.333 1.333-1.333h4.667c0.733 0 1.333 0.6 1.333 1.333 0 1.667 0.267 3.267 0.76 4.76 0.147 0.467 0.040 0.987-0.333 1.36l-2.933 2.933z"></path></symbol><symbol id="icon-place" viewBox="0 0 32 32"><title>place</title><path d="M16 2.667c-5.16 0-9.333 4.173-9.333 9.333 0 7 9.333 17.333 9.333 17.333s9.333-10.333 9.333-17.333c0-5.16-4.173-9.333-9.333-9.333zM16 15.333c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333-1.493 3.333-3.333 3.333z"></path></symbol><symbol id="icon-portrait" viewBox="0 0 32 32"><title>portrait</title><path d="M16 16.333c1.653 0 3-1.347 3-3s-1.347-3-3-3-3 1.347-3 3 1.347 3 3 3zM22 21.667c0-2-4-3-6-3s-6 1-6 3v1h12v-1zM25.333 4h-18.667c-1.467 0-2.667 1.2-2.667 2.667v18.667c0 1.467 1.2 2.667 2.667 2.667h18.667c1.467 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.2-2.667-2.667-2.667zM25.333 25.333h-18.667v-18.667h18.667v18.667z"></path></symbol><symbol id="icon-vpn-key" viewBox="0 0 32 32"><title>vpn-key</title><path d="M16.867 13.333c-1.093-3.107-4.053-5.333-7.533-5.333-4.413 0-8 3.587-8 8s3.587 8 8 8c3.48 0 6.44-2.227 7.533-5.333h5.8v5.333h5.333v-5.333h2.667v-5.333h-13.8zM9.333 18.667c-1.467 0-2.667-1.2-2.667-2.667s1.2-2.667 2.667-2.667 2.667 1.2 2.667 2.667-1.2 2.667-2.667 2.667z"></path></symbol></defs></svg>'
+	})
 
-  //templates
-  new Vue({
-    el: '#global-svg',
-    template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-access-time" viewBox="0 0 20 20"><title>access-time</title><path d="M9.992 1.667c-4.6 0-8.325 3.733-8.325 8.333s3.725 8.333 8.325 8.333c4.608 0 8.342-3.733 8.342-8.333s-3.733-8.333-8.342-8.333zM10 16.667c-3.683 0-6.667-2.983-6.667-6.667s2.983-6.667 6.667-6.667 6.667 2.983 6.667 6.667-2.983 6.667-6.667 6.667z"></path><path d="M10.417 5.833h-1.25v5l4.375 2.625 0.625-1.025-3.75-2.225z"></path></symbol><symbol id="icon-add-to-photos" viewBox="0 0 20 20"><title>add-to-photos</title><path d="M3.333 5h-1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h11.667v-1.667h-11.667v-11.667zM16.667 1.667h-10c-0.917 0-1.667 0.75-1.667 1.667v10c0 0.917 0.75 1.667 1.667 1.667h10c0.917 0 1.667-0.75 1.667-1.667v-10c0-0.917-0.75-1.667-1.667-1.667zM15.833 9.167h-3.333v3.333h-1.667v-3.333h-3.333v-1.667h3.333v-3.333h1.667v3.333h3.333v1.667z"></path></symbol><symbol id="icon-assignment-turned-in" viewBox="0 0 20 20"><title>assignment-turned-in</title><path d="M15.833 2.5h-3.483c-0.35-0.967-1.267-1.667-2.35-1.667s-2 0.7-2.35 1.667h-3.483c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h11.667c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM10 2.5c0.458 0 0.833 0.375 0.833 0.833s-0.375 0.833-0.833 0.833-0.833-0.375-0.833-0.833 0.375-0.833 0.833-0.833zM8.333 14.167l-3.333-3.333 1.175-1.175 2.158 2.15 5.492-5.492 1.175 1.183-6.667 6.667z"></path></symbol><symbol id="icon-check-box" viewBox="0 0 20 20"><title>check-box</title><path d="M15.833 2.5h-11.667c-0.925 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.742 1.667 1.667 1.667h11.667c0.925 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.742-1.667-1.667-1.667zM8.333 14.167l-4.167-4.167 1.175-1.175 2.992 2.983 6.325-6.325 1.175 1.183-7.5 7.5z"></path></symbol><symbol id="icon-check-circle" viewBox="0 0 20 20"><title>check-circle</title><path d="M10 1.667c-4.6 0-8.333 3.733-8.333 8.333s3.733 8.333 8.333 8.333 8.333-3.733 8.333-8.333-3.733-8.333-8.333-8.333zM8.333 14.167l-4.167-4.167 1.175-1.175 2.992 2.983 6.325-6.325 1.175 1.183-7.5 7.5z"></path></symbol><symbol id="icon-my-location" viewBox="0 0 20 20"><title>my-location</title><path d="M10 6.667c-1.842 0-3.333 1.492-3.333 3.333s1.492 3.333 3.333 3.333 3.333-1.492 3.333-3.333-1.492-3.333-3.333-3.333zM17.45 9.167c-0.383-3.475-3.142-6.233-6.617-6.617v-1.717h-1.667v1.717c-3.475 0.383-6.233 3.142-6.617 6.617h-1.717v1.667h1.717c0.383 3.475 3.142 6.233 6.617 6.617v1.717h1.667v-1.717c3.475-0.383 6.233-3.142 6.617-6.617h1.717v-1.667h-1.717zM10 15.833c-3.225 0-5.833-2.608-5.833-5.833s2.608-5.833 5.833-5.833 5.833 2.608 5.833 5.833-2.608 5.833-5.833 5.833z"></path></symbol><symbol id="icon-phone" viewBox="0 0 20 20"><title>phone</title><path d="M5.517 8.992c1.2 2.358 3.133 4.283 5.492 5.492l1.833-1.833c0.225-0.225 0.558-0.3 0.85-0.2 0.933 0.308 1.942 0.475 2.975 0.475 0.458 0 0.833 0.375 0.833 0.833v2.908c0 0.458-0.375 0.833-0.833 0.833-7.825 0-14.167-6.342-14.167-14.167 0-0.458 0.375-0.833 0.833-0.833h2.917c0.458 0 0.833 0.375 0.833 0.833 0 1.042 0.167 2.042 0.475 2.975 0.092 0.292 0.025 0.617-0.208 0.85l-1.833 1.833z"></path></symbol><symbol id="icon-send" viewBox="0 0 20 20"><title>send</title><path d="M1.675 17.5l17.492-7.5-17.492-7.5-0.008 5.833 12.5 1.667-12.5 1.667z"></path></symbol><symbol id="icon-settings-phone" viewBox="0 0 20 20"><title>settings-phone</title><path d="M10.833 7.5h-1.667v1.667h1.667v-1.667zM14.167 7.5h-1.667v1.667h1.667v-1.667zM16.667 12.917c-1.042 0-2.042-0.167-2.975-0.475-0.292-0.092-0.617-0.025-0.85 0.2l-1.833 1.833c-2.358-1.2-4.292-3.125-5.492-5.483l1.833-1.842c0.233-0.225 0.3-0.55 0.208-0.842-0.308-0.933-0.475-1.933-0.475-2.975 0-0.458-0.375-0.833-0.833-0.833h-2.917c-0.458 0-0.833 0.375-0.833 0.833 0 7.825 6.342 14.167 14.167 14.167 0.458 0 0.833-0.375 0.833-0.833v-2.917c0-0.458-0.375-0.833-0.833-0.833zM15.833 7.5v1.667h1.667v-1.667h-1.667z"></path></symbol></defs></svg>'
-  })
+//wow animation
+function scrollEffects(){
+	new WOW().init();
+}
 
-  //animate
-  function animate(button, content, animationIn, animationOut, hideTiming) {
-    hideTiming = hideTiming || 1000;
-		var elem = document.querySelector(content);
-    $(button).on('click', function() {
-      $(this).addClass('active');
-      $(content).show();
-      var animateContent = content;
-      if ($(content).hasClass(animationIn)) {
-        $(content).removeClass(animationIn).addClass(animationOut);
+//active
+function active(elem) {
+	$(elem).on('click', function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+		}else{
+			$(this).addClass('active');
+		}
+	});
+}
 
-      } else {
-        $(content).removeClass(animationOut).addClass(animationIn + ' animated');
-      }
+//bodyOverflow
+function bodyOverflow(elem) {
+	var btn = $(elem);
+	var body = $('body');
+	btn.on('click', function(){
+		body.toggleClass('overflow');
+	});
+}
 
-      elem.addEventListener('keyframeend', function(){
-        alert(1);
-      });
-    });
-  }
-
-  //Universal Tabs
+//Universal Tabs
 function tabs() {
 	$(document).on('click', '[data-tabclass]', function() {
-	  var content = $(this).attr('data-tabclass');
-	  var number = $(this).attr('data-tabnumber');
-	  $('[data-tabclass="' + content + '"]').each(function() {
-	    if ($(this).attr('data-tabnumber') == number) {
-	      $(this).addClass('active').siblings().removeClass('active');
-	    }
-	  });
-	  $('.' + content + ' > [data-tabnumber="' + number + '"]').show().addClass('active').css('display', 'flex').siblings().hide().removeClass('active');
+		var content = $(this).attr('data-tabclass');
+		var number = $(this).attr('data-tabnumber');
+		$('[data-tabclass="' + content + '"]').each(function() {
+			if ($(this).attr('data-tabnumber') == number) {
+				$(this).addClass('active').siblings().removeClass('active');
+			}
+		});
+		$('.' + content + ' > [data-tabnumber="' + number + '"]').show().addClass('active flex').css('display', 'flex').siblings().hide().removeClass('active flex');
 	});
 };
 
-  //mobile menu
-  function mobileMenu() {
-    $('.menu__wrap').on('click', function() {
-      if ($('.hamburger').hasClass('hamburgerActive')) {
-        $('.hamburger').removeClass('hamburgerActive');
-        $('.nav').css('display', 'none');
-      } else {
-        $('.hamburger').addClass('hamburgerActive');
-        $('.nav').css('display', 'flex');
-      }
-      if ($(window).width() < 769) {
-        if ($('.hamburger').hasClass('hamburgerActive')) {
-          $('body').addClass('overflow');
-        } else {
-          $('body').removeClass('overflow');
-        }
-      } else {
-        $('body').removeClass('overflow');
-      }
-    });
-  }
+//animate
+function animate(button, content, animationIn, animationOut, hideTiming) {
+	hideTiming = hideTiming || 1000;
+	var elem = document.querySelector(content);
+	$(button).on('click', function() {
+		$(content).show();
+		var animateContent = content;
+		if ($(content).hasClass(animationIn)) {
+			$(content).removeClass(animationIn).addClass(animationOut);
+		} else {
+			$(content).removeClass(animationOut).addClass(animationIn + ' animated');
+		}
+	});
+}
 
-  //owl bug fixes
-  function owlVerticalAlign(slider) {
-    $(window).on('load && resize', function() {
-      var height = $(slider + ' .owl-dots').innerHeight();
-      var elem = document.querySelector(slider + ' .owl-nav');
-      elem.style.marginTop = -height + 'px';
-    });
-  }
+//accordion
+function accordion() {
+	$( ".accordion" ).accordion();
+}
 
-	//form inputs
-	function formInput(elInput, elLabel) {
-		var input = $(elInput);
-		var label = $(elLabel);
-		input.on('keyup', function(){
-			var value = $(this).val();
-			if(value == ''){
-				$(this).next().show()
-			}else{
-				$(this).next().hide()
-			}
-		});
-    input.on('keydown', function(){
-        $(this).next().hide();
-    });
+//owl bug fixes
+function owlVerticalAlign(elem) {
+	$(window).on('load && resize', function() {
+		var height = $(elem + ' .owl-dots').innerHeight();
+		var elem = document.querySelector(elem + ' .owl-nav');
+		elem.style.marginTop = -height + 'px';
+	});
+}
 
-		//Маска для телефона
-		$(".formTel").mask("+7(999)999-99-99", {
-			placeholder: "+7(___)___-__-__"
-		});
-	}
+//owl-slider
+function slider(animationIn, animationOut, elem) {
+	elem = elem || '.slider';
+	animationIn = animationIn || 'fadeIn';
+	animationOut = animationOut || 'fadeOut';
+	$(elem).owlCarousel({
+		loop: true,
+		nav: true,
+		items: 1,
+		dots: false,
+		animateIn: animationIn,
+		animateOut: animationOut,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		navText: ['<svg class="icon icon-arrow-back"><use xlink:href="#icon-arrow-back"></use></svg>', '<svg class="icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>'],
+	});
+}
 
+window.onload = function() {
+	slider('zoomIn', 'fadeOut');
+	scrollEffects()
+	accordion();
 	tabs();
-  mobileMenu();
-  animate('.menu__wrap', '.nav', 'slideInDown', 'slideOutUp')
-	formInput('.formInput', '.formLabel');
-});
+	active('.hamburger');
+	bodyOverflow('.hamburger');
+	active('.slider-main__btn-menu');
+	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
+	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
+	animate('.slider-main__btn-menu', '.menu', 'slideInRight', 'slideOutRight');
+	animate('.slider-main__btn-menu', '.slider-main__btn-menu', 'btnMenuIn', 'btnMenuOut');
+};
