@@ -65,10 +65,10 @@ function accordion() {
 }
 
 //owl bug fixes
-function owlVerticalAlign(elem) {
-	$(window).on('load && resize', function() {
-		var height = $(elem + ' .owl-dots').innerHeight();
-		var elem = document.querySelector(elem + ' .owl-nav');
+function owlVerticalAlign(slider){
+	$(window).on('load || resize', function(){
+		var height = $(slider + ' .owl-dots').innerHeight();
+		var elem = document.querySelector(slider + ' .owl-nav');
 		elem.style.marginTop = -height + 'px';
 	});
 }
@@ -88,13 +88,62 @@ function slider(animationIn, animationOut, elem) {
 		autoplay: true,
 		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
-		navText: ['<svg class="icon icon-arrow-back"><use xlink:href="#icon-arrow-back"></use></svg>', '<svg class="icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>'],
+	});
+}
+function staticSlider(animationIn, animationOut, elem) {
+	elem = elem || '.staticSlider';
+	animationIn = animationIn || 'fadeIn';
+	animationOut = animationOut || 'fadeOut';
+	$(elem).owlCarousel({
+		loop: true,
+		nav: true,
+		items: 1,
+		animateIn: animationIn,
+		animateOut: animationOut,
+		navText: ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg>'],
+	});
+}
+function photoSlider(animationIn, animationOut, elem) {
+	elem = elem || '.staticSlider';
+	animationIn = animationIn || 'fadeIn';
+	animationOut = animationOut || 'fadeOut';
+	$(elem).owlCarousel({
+		loop: true,
+		nav: true,
+		items: 1,
+		animateIn: animationIn,
+		animateOut: animationOut,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		navText: ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg>'],
 	});
 }
 
+//toggleClass on window scroll
+function changeClassOnScroll(){
+	$(window).scroll(function() {
+    var header = $('.page-header');
+    var height = header.innerHeight();
+    var elem = document.querySelector('main');
+    var top = $(this).scrollTop();
+    if (top > 50) {
+      header.addClass('page-header--fixed');
+      elem.style.marginTop = height + 'px';
+    } else {
+      header.removeClass('page-header--fixed');
+      elem.style.marginTop = '0px';
+    }
+  });
+}
+
+
 window.onload = function() {
 	slider('zoomIn', 'fadeOut');
-	scrollEffects()
+	staticSlider('slideInDown', 'slideOutDown');
+	photoSlider('fadeIn', 'fadeOut', '.photo-slider')
+	changeClassOnScroll();
+	//scrollEffects();
 	accordion();
 	tabs();
 	active('.hamburger');
@@ -105,3 +154,4 @@ window.onload = function() {
 	animate('.slider-main__btn-menu', '.menu', 'slideInRight', 'slideOutRight');
 	animate('.slider-main__btn-menu', '.slider-main__btn-menu', 'btnMenuIn', 'btnMenuOut');
 };
+owlVerticalAlign('.staticSlider');
