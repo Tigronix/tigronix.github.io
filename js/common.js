@@ -1,14 +1,13 @@
 "use strict"
+function scrollEffects() {
+	new WOW().init();
+}
+
 //templates
 new Vue({
 		el: '#global-svg',
-		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-drafts" viewBox="0 0 32 32"><title>drafts</title><path d="M29.32 10.667c0-0.96-0.493-1.8-1.253-2.267l-12.067-7.067-12.067 7.067c-0.76 0.467-1.267 1.307-1.267 2.267v13.333c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667l-0.013-13.333zM16 17.333l-11.013-6.88 11.013-6.453 11.013 6.453-11.013 6.88z"></path></symbol><symbol id="icon-keyboard-arrow-left" viewBox="0 0 32 32"><title>keyboard-arrow-left</title><path d="M20.547 21.453l-6.107-6.12 6.107-6.12-1.88-1.88-8 8 8 8z"></path></symbol><symbol id="icon-keyboard-arrow-right" viewBox="0 0 32 32"><title>keyboard-arrow-right</title><path d="M11.453 21.787l6.107-6.12-6.107-6.12 1.88-1.88 8 8-8 8z"></path></symbol><symbol id="icon-location-on" viewBox="0 0 32 32"><title>location-on</title><path d="M16 2.667c-5.16 0-9.333 4.173-9.333 9.333 0 7 9.333 17.333 9.333 17.333s9.333-10.333 9.333-17.333c0-5.16-4.173-9.333-9.333-9.333zM16 15.333c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333-1.493 3.333-3.333 3.333z"></path></symbol><symbol id="icon-phone" viewBox="0 0 32 32"><title>phone</title><path d="M8.827 14.387c1.92 3.773 5.013 6.853 8.787 8.787l2.933-2.933c0.36-0.36 0.893-0.48 1.36-0.32 1.493 0.493 3.107 0.76 4.76 0.76 0.733 0 1.333 0.6 1.333 1.333v4.653c0 0.733-0.6 1.333-1.333 1.333-12.52 0-22.667-10.147-22.667-22.667 0-0.733 0.6-1.333 1.333-1.333h4.667c0.733 0 1.333 0.6 1.333 1.333 0 1.667 0.267 3.267 0.76 4.76 0.147 0.467 0.040 0.987-0.333 1.36l-2.933 2.933z"></path></symbol><symbol id="icon-place" viewBox="0 0 32 32"><title>place</title><path d="M16 2.667c-5.16 0-9.333 4.173-9.333 9.333 0 7 9.333 17.333 9.333 17.333s9.333-10.333 9.333-17.333c0-5.16-4.173-9.333-9.333-9.333zM16 15.333c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333-1.493 3.333-3.333 3.333z"></path></symbol><symbol id="icon-portrait" viewBox="0 0 32 32"><title>portrait</title><path d="M16 16.333c1.653 0 3-1.347 3-3s-1.347-3-3-3-3 1.347-3 3 1.347 3 3 3zM22 21.667c0-2-4-3-6-3s-6 1-6 3v1h12v-1zM25.333 4h-18.667c-1.467 0-2.667 1.2-2.667 2.667v18.667c0 1.467 1.2 2.667 2.667 2.667h18.667c1.467 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.2-2.667-2.667-2.667zM25.333 25.333h-18.667v-18.667h18.667v18.667z"></path></symbol><symbol id="icon-vpn-key" viewBox="0 0 32 32"><title>vpn-key</title><path d="M16.867 13.333c-1.093-3.107-4.053-5.333-7.533-5.333-4.413 0-8 3.587-8 8s3.587 8 8 8c3.48 0 6.44-2.227 7.533-5.333h5.8v5.333h5.333v-5.333h2.667v-5.333h-13.8zM9.333 18.667c-1.467 0-2.667-1.2-2.667-2.667s1.2-2.667 2.667-2.667 2.667 1.2 2.667 2.667-1.2 2.667-2.667 2.667z"></path></symbol></defs></svg>'
+		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-menu" viewBox="0 0 32 32"><title>menu</title><path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path></symbol><symbol id="icon-cancel-circle" viewBox="0 0 32 32"><title>cancel-circle</title><path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path><path d="M21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"></path></symbol><symbol id="icon-drafts" viewBox="0 0 20 20"><title>drafts</title><path d="M18.325 6.667c0-0.6-0.308-1.125-0.783-1.417l-7.542-4.417-7.542 4.417c-0.475 0.292-0.792 0.817-0.792 1.417v8.333c0 0.917 0.75 1.667 1.667 1.667h13.333c0.917 0 1.667-0.75 1.667-1.667l-0.008-8.333zM10 10.833l-6.883-4.3 6.883-4.033 6.883 4.033-6.883 4.3z"></path></symbol><symbol id="icon-keyboard-arrow-left" viewBox="0 0 20 20"><title>keyboard-arrow-left</title><path d="M12.842 13.408l-3.817-3.825 3.817-3.825-1.175-1.175-5 5 5 5z"></path></symbol><symbol id="icon-keyboard-arrow-right" viewBox="0 0 20 20"><title>keyboard-arrow-right</title><path d="M7.158 13.617l3.817-3.825-3.817-3.825 1.175-1.175 5 5-5 5z"></path></symbol><symbol id="icon-location-on" viewBox="0 0 20 20"><title>location-on</title><path d="M10 1.667c-3.225 0-5.833 2.608-5.833 5.833 0 4.375 5.833 10.833 5.833 10.833s5.833-6.458 5.833-10.833c0-3.225-2.608-5.833-5.833-5.833zM10 9.583c-1.15 0-2.083-0.933-2.083-2.083s0.933-2.083 2.083-2.083 2.083 0.933 2.083 2.083-0.933 2.083-2.083 2.083z"></path></symbol><symbol id="icon-phone" viewBox="0 0 20 20"><title>phone</title><path d="M5.517 8.992c1.2 2.358 3.133 4.283 5.492 5.492l1.833-1.833c0.225-0.225 0.558-0.3 0.85-0.2 0.933 0.308 1.942 0.475 2.975 0.475 0.458 0 0.833 0.375 0.833 0.833v2.908c0 0.458-0.375 0.833-0.833 0.833-7.825 0-14.167-6.342-14.167-14.167 0-0.458 0.375-0.833 0.833-0.833h2.917c0.458 0 0.833 0.375 0.833 0.833 0 1.042 0.167 2.042 0.475 2.975 0.092 0.292 0.025 0.617-0.208 0.85l-1.833 1.833z"></path></symbol><symbol id="icon-place" viewBox="0 0 20 20"><title>place</title><path d="M10 1.667c-3.225 0-5.833 2.608-5.833 5.833 0 4.375 5.833 10.833 5.833 10.833s5.833-6.458 5.833-10.833c0-3.225-2.608-5.833-5.833-5.833zM10 9.583c-1.15 0-2.083-0.933-2.083-2.083s0.933-2.083 2.083-2.083 2.083 0.933 2.083 2.083-0.933 2.083-2.083 2.083z"></path></symbol><symbol id="icon-portrait" viewBox="0 0 20 20"><title>portrait</title><path d="M10 10.208c1.033 0 1.875-0.842 1.875-1.875s-0.842-1.875-1.875-1.875-1.875 0.842-1.875 1.875 0.842 1.875 1.875 1.875zM13.75 13.542c0-1.25-2.5-1.875-3.75-1.875s-3.75 0.625-3.75 1.875v0.625h7.5v-0.625zM15.833 2.5h-11.667c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h11.667c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM15.833 15.833h-11.667v-11.667h11.667v11.667z"></path></symbol><symbol id="icon-vpn-key" viewBox="0 0 20 20"><title>vpn-key</title><path d="M10.542 8.333c-0.683-1.942-2.533-3.333-4.708-3.333-2.758 0-5 2.242-5 5s2.242 5 5 5c2.175 0 4.025-1.392 4.708-3.333h3.625v3.333h3.333v-3.333h1.667v-3.333h-8.625zM5.833 11.667c-0.917 0-1.667-0.75-1.667-1.667s0.75-1.667 1.667-1.667 1.667 0.75 1.667 1.667-0.75 1.667-1.667 1.667z"></path></symbol></defs></svg>'
 	})
-
-//wow animation
-function scrollEffects(){
-	new WOW().init();
-}
 
 //active
 function active(elem) {
@@ -30,6 +29,20 @@ function bodyOverflow(elem) {
 	});
 }
 
+//toggleClass on window scroll
+function changeClassOnScroll(){
+	$(window).scroll(function() {
+    var elem = $('.menuButton');
+    var height = elem.innerHeight();
+    var top = $(this).scrollTop();
+    if (top > 50) {
+      elem.addClass('menuButton--position');
+    } else {
+      elem.removeClass('menuButton--position');
+    }
+  });
+}
+
 //Universal Tabs
 function tabs() {
 	$(document).on('click', '[data-tabclass]', function() {
@@ -40,7 +53,7 @@ function tabs() {
 				$(this).addClass('active').siblings().removeClass('active');
 			}
 		});
-		$('.' + content + ' > [data-tabnumber="' + number + '"]').show().addClass('active flex').css('display', 'flex').siblings().hide().removeClass('active flex');
+		$('.' + content + ' > [data-tabnumber="' + number + '"]').show().addClass('active flex animated').css('display', 'flex').siblings().hide().removeClass('active flex animated');
 	});
 };
 
@@ -52,12 +65,32 @@ function animate(button, content, animationIn, animationOut, hideTiming) {
 		$(content).show();
 		var animateContent = content;
 		if ($(content).hasClass(animationIn)) {
-			$(content).removeClass(animationIn).addClass(animationOut);
+			$(content).removeClass(animationIn).addClass(animationOut + ' animated');
 		} else {
 			$(content).removeClass(animationOut).addClass(animationIn + ' animated');
 		}
 	});
 }
+
+//animate + hide
+function animateHide(button, content, animationIn, animationOut, hideTiming) {
+	hideTiming = hideTiming || 1000;
+	var elem = document.querySelector(content);
+	$(button).on('click', function() {
+		$(content).show();
+		var animateContent = content;
+		if ($(content).hasClass(animationIn)) {
+			$(content).removeClass(animationIn).addClass(animationOut + ' animated');
+			setTimeout(function(){
+				$(content).hide();
+			}, hideTiming);
+		} else {
+			$(content).removeClass(animationOut).addClass(animationIn + ' animated');
+		}
+	});
+}
+
+
 
 //accordion
 function accordion() {
@@ -120,38 +153,33 @@ function photoSlider(animationIn, animationOut, elem) {
 	});
 }
 
-//toggleClass on window scroll
-function changeClassOnScroll(){
-	$(window).scroll(function() {
-    var header = $('.page-header');
-    var height = header.innerHeight();
-    var elem = document.querySelector('main');
-    var top = $(this).scrollTop();
-    if (top > 50) {
-      header.addClass('page-header--fixed');
-      elem.style.marginTop = height + 'px';
-    } else {
-      header.removeClass('page-header--fixed');
-      elem.style.marginTop = '0px';
-    }
-  });
-}
-
-
 window.onload = function() {
+	//slider
 	slider('zoomIn', 'fadeOut');
 	staticSlider('slideInDown', 'slideOutDown');
-	photoSlider('fadeIn', 'fadeOut', '.photo-slider')
+	photoSlider('fadeIn', 'fadeOut', '.photo-slider');
+
+	//scollEvents
+	scrollEffects();
 	changeClassOnScroll();
-	//scrollEffects();
+
+	//other
 	accordion();
 	tabs();
-	active('.hamburger');
 	bodyOverflow('.hamburger');
+	bodyOverflow('.map__menu');
+
+	//active toggle
+	active('.hamburger');
 	active('.slider-main__btn-menu');
+	active('.map__menu')
+
+	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	animate('.slider-main__btn-menu', '.menu', 'slideInRight', 'slideOutRight');
 	animate('.slider-main__btn-menu', '.slider-main__btn-menu', 'btnMenuIn', 'btnMenuOut');
+	//Animation+hide
+	animateHide('.map__menu', '.map__desc', 'slideInDown', 'slideOutDown');
 };
 owlVerticalAlign('.staticSlider');
