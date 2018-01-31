@@ -137,7 +137,7 @@ function staticSlider(animationIn, animationOut, elem) {
 	});
 }
 function photoSlider(animationIn, animationOut, elem) {
-	elem = elem || '.staticSlider';
+	elem = elem || '.photoSlider';
 	animationIn = animationIn || 'fadeIn';
 	animationOut = animationOut || 'fadeOut';
 	$(elem).owlCarousel({
