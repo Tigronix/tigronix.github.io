@@ -3,6 +3,17 @@ function scrollEffects() {
 	new WOW().init();
 }
 
+//функция помощник: siblings
+var getSiblings = function(elem) {
+	var siblings = [];
+	var sibling = elem.parentNode.firstChild;
+	for(; sibling; sibling = sibling.nextSibling) {
+		if(sibling.nodeType !== 1 || sibling === elem) continue;
+		siblings.push(sibling);
+	}
+	return siblings;
+}
+
 //templates
 new Vue({
 		el: '#global-svg',
@@ -53,8 +64,41 @@ function tabs() {
 				$(this).addClass('active').siblings().removeClass('active');
 			}
 		});
-		$('.' + content + ' > [data-tabnumber="' + number + '"]').show().addClass('active flex animated').css('display', 'flex').siblings().hide().removeClass('active flex animated');
+		$('.' + content + ' > [data-tabnumber="' + number + '"]').show().addClass('active flex animated').removeClass('hide').css('display', 'flex').siblings().hide().removeClass('active flex animated showFlex');
 	});
+};
+
+function sliderTabs() {
+	var slider = document.querySelector('.edge__wrap');
+	var prev = slider.querySelector('.owl-prev');
+	var next = slider.querySelector('.owl-next');
+	var dotItems = slider.querySelectorAll('.edge__desc-item');
+
+	var tabs = function() {
+		dotItems.forEach(function(item, index, array){
+			if(item.classList.contains('active')){
+				var dataNumber = item.dataset.tabnumber;
+				var dataClass = item.dataset.tabclass;
+				var tabItem = document.querySelectorAll('.' + dataClass + ' .edge__tab-item');
+				tabItem.forEach(function(item, index, array){
+					if(item.dataset.tabnumber == dataNumber){
+						var siblings = getSiblings(item);
+
+						item.classList.add('active', 'showFlex', 'animated');
+						item.classList.remove('hide');
+
+						siblings.forEach(function(item, index, array){
+							item.classList.add('hide');
+							item.classList.remove('active', 'showFlex', 'animated');
+						});
+					}
+				});
+			}
+		});
+	}
+
+	prev.addEventListener('click', tabs);
+	next.addEventListener('click', tabs);
 };
 
 //animate
@@ -180,8 +224,6 @@ function photoSlider(animationIn, animationOut, elem) {
 }
 
 window.onload = function() {
-
-
 	//scollEvents
 	scrollEffects();
 	changeClassOnScroll();
@@ -204,10 +246,11 @@ window.onload = function() {
 	animate('.slider-main__btn-menu', '.slider-main__btn-menu', 'btnMenuIn', 'btnMenuOut');
 	//Animation+hide
 	animateHide('.map__menu', '.map__desc', 'slideInDown', 'slideOutDown');
-};
 
-//slider
-slider('zoomIn', 'fadeOut');
-roomSlider('slideInDown', 'slideOutDown');
-staticSlider('slideInDown', 'slideOutDown');
-photoSlider('fadeIn', 'fadeOut', '.photo-slider');
+	//slider
+	slider('zoomIn', 'fadeOut');
+	roomSlider('slideInDown', 'slideOutDown');
+	photoSlider('fadeIn', 'fadeOut', '.photo-slider');
+	staticSlider('slideInDown', 'slideOutDown');
+	sliderTabs();
+};
