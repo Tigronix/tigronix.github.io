@@ -48,6 +48,7 @@ function changeClassOnScroll(){
     var top = $(this).scrollTop();
     if (top > 50) {
       elem.addClass('menuButton--position');
+			elem.removeClass('btnMenuOut');
     } else {
       elem.removeClass('menuButton--position');
     }
@@ -166,7 +167,7 @@ function slider(animationIn, animationOut, elem) {
 		dots: false,
 		animateIn: animationIn,
 		animateOut: animationOut,
-		//autoplay: true,
+		autoplay: true,
 		autoplayTimeout: 5000,
 	});
 }
@@ -233,6 +234,14 @@ function photoSlider(animationIn, animationOut, elem) {
 		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		navText: ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg>'],
+		responsive: {
+				0: {
+					dots: false
+				},
+				768: {
+					dots: true
+				}
+		}
 	});
 }
 
@@ -265,5 +274,32 @@ window.onload = function() {
 	roomSlider('slideInDown', 'slideOutDown');
 	photoSlider('fadeIn', 'fadeOut', '.photo-slider');
 	slider('zoomIn', 'fadeOut', '.contacts__slider');
+
+	//slick slider
+	$('.product__slider').slick({
+		 slidesToShow: 1,
+		 slidesToScroll: 1,
+		 arrows: false,
+		 fade: true,
+		 adaptiveHeight: true,
+		 asNavFor: '.product__nav'
+		});
+		$('.product__nav').slick({
+		 slidesToShow: 6,
+		 slidesToScroll: 1,
+		 asNavFor: '.product__slider',
+		 dots: false,
+		 arrows: false,
+		 focusOnSelect: true,
+		 responsive: [
+	    {
+	      breakpoint: 551,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1,
+	      }
+	    },
+	  ]
+		});
 	staticSlider('slideInDown', 'slideOutDown');
 };
