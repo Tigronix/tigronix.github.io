@@ -363,6 +363,7 @@ p, .text {
 @media (max-width: 768px) {
   .h1, .h2 {
     text-align: center;
+    font-size: 21px;
   }
 }
 
@@ -4836,6 +4837,7 @@ p, .text {
 @media (max-width: 1024px) {
   .advantages {
     padding: 0;
+    display: block;
     height: auto !important;
   }
   .advantages--slider .advantages__item {
@@ -4891,6 +4893,27 @@ p, .text {
   }
   .advantages__item-t1-2 {
     font-size: 19px;
+  }
+}
+@media (max-width: 768px) {
+  .advantages__item-t1 {
+    font-size: 21px;
+  }
+  .advantages--slider .advantages__item-t2 {
+    font-size: 19px;
+  }
+  .advantages--slider .advantages__item {
+    font-size: 16px;
+  }
+  .advantages__item:last-child {
+    display: block;
+    text-align: center;
+  }
+  .advantages__price {
+    width: 100%;
+  }
+  .advantages__item span {
+    display: inline-block;
   }
 }
 
@@ -6151,11 +6174,7 @@ p, .text {
   }
   .page-footer__nav {
     margin-left: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
   }
   .page-footer__nav-ul {
     margin-bottom: 20px;
@@ -7714,8 +7733,18 @@ p, .text {
 }
 
 @media (max-width: 500px) {
+  .scheme {
+    display: block;
+  }
+  .scheme__item--mobile, .scheme__item--number {
+    display: none;
+  }
+  .scheme__section:nth-child(6) {
+    width: 200px;
+  }
   .scheme__section {
-    width: 100%;
+    width: 140px;
+    margin: 0 auto 20px auto;
   }
   .scheme__line:after {
     display: none !important;
@@ -7848,21 +7877,6 @@ p, .text {
 }
 
 .product__nav-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
   -webkit-box-shadow: inset 0 0 0 0px transparent;
           box-shadow: inset 0 0 0 0px transparent;
@@ -8061,12 +8075,6 @@ p, .text {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .product__nav {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .product__nav-item {
     height: auto;
   }
@@ -8076,18 +8084,7 @@ p, .text {
   }
   .product__left {
     width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
   }
   .product__title {
     font-size: 18px;
@@ -8101,10 +8098,7 @@ p, .text {
     font-size: 16px;
   }
   .product__nav {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
+
   }
   .product__slider-item {
     overflow: hidden;
@@ -8166,11 +8160,7 @@ p, .text {
     padding: 0;
   }
   .product__slider-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
   }
   .product__slider-item {
     -webkit-box-flex: 0;
@@ -8452,10 +8442,17 @@ p, .text {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            -webkit-box-align: center;
+        -ms-flex-align: center;
+                align-items: center;
   }
   .product-specs__value {
     margin: 10px 0 10px 0;
-    width: 100%;
+    width: auto;
+    font-size: 14px;
+  }
+  .product-specs__value span {
+    font-size: 12px;
   }
   .product-specs__price {
     -webkit-box-orient: vertical;
@@ -8474,6 +8471,12 @@ p, .text {
   }
   .product-specs__img-box img {
     margin-bottom: 10px;
+  }
+  .product-specs__name {
+    font-size: 14px;
+  }
+  .product-specs__icon {
+    padding-right: 10px;
   }
 }
 

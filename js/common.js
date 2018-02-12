@@ -245,6 +245,35 @@ function photoSlider(animationIn, animationOut, elem) {
 	});
 }
 
+function slickSlider() {
+	//slick slider
+	$('.product__slider').slick({
+		 slidesToShow: 1,
+		 slidesToScroll: 1,
+		 arrows: false,
+		 fade: true,
+		 adaptiveHeight: true,
+		 asNavFor: '.product__nav'
+		});
+		$('.product__nav').slick({
+		 slidesToShow: 6,
+		 slidesToScroll: 1,
+		 asNavFor: '.product__slider',
+		 dots: false,
+		 arrows: false,
+		 focusOnSelect: true,
+		 responsive: [
+	    {
+	      breakpoint: 551,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1,
+	      }
+	    },
+	  ]
+		});
+}
+
 window.onload = function() {
 	//scollEvents
 	scrollEffects();
@@ -274,32 +303,6 @@ window.onload = function() {
 	roomSlider('slideInDown', 'slideOutDown');
 	photoSlider('fadeIn', 'fadeOut', '.photo-slider');
 	slider('zoomIn', 'fadeOut', '.contacts__slider');
-
-	//slick slider
-	$('.product__slider').slick({
-		 slidesToShow: 1,
-		 slidesToScroll: 1,
-		 arrows: false,
-		 fade: true,
-		 adaptiveHeight: true,
-		 asNavFor: '.product__nav'
-		});
-		$('.product__nav').slick({
-		 slidesToShow: 6,
-		 slidesToScroll: 1,
-		 asNavFor: '.product__slider',
-		 dots: false,
-		 arrows: false,
-		 focusOnSelect: true,
-		 responsive: [
-	    {
-	      breakpoint: 551,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 1,
-	      }
-	    },
-	  ]
-		});
+	slickSlider();
 	staticSlider('slideInDown', 'slideOutDown');
 };
