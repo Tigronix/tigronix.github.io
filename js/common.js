@@ -169,6 +169,14 @@ function slider(animationIn, animationOut, elem) {
 		animateOut: animationOut,
 		autoplay: true,
 		autoplayTimeout: 5000,
+		responsive: {
+		 0: {
+			 arrows: false
+		 },
+		 1280: {
+			 arrows: true
+		 }
+		}
 	});
 }
 function staticSlider(animationIn, animationOut, elem) {
@@ -258,10 +266,10 @@ function slickSlider() {
 	$('.product__slider').slick({
 		 slidesToShow: 1,
 		 slidesToScroll: 1,
-		 arrows: false,
+		 arrows: true,
 		 fade: true,
 		 adaptiveHeight: true,
-		 asNavFor: '.product__nav'
+		 asNavFor: '.product__nav',
 		});
 		$('.product__nav').slick({
 		 slidesToShow: 6,
