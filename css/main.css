@@ -8147,6 +8147,9 @@ p, .text {
 }
 
 @media (max-width: 700px) {
+  .product__slider {
+    width: 100%;
+  }
   .product__info {
     width: 100%;
     -webkit-box-orient: horizontal;
@@ -8168,6 +8171,7 @@ p, .text {
         -ms-flex: 0;
             flex: 0;
     width: 100%;
+    text-align: center;
   }
   .product__nav-item {
     width: -webkit-calc(100% / 4);
@@ -8191,7 +8195,7 @@ p, .text {
     display: block;
   }
   .product__info-text {
-    font-size: 11px;
+    font-size: 10px;
   }
   .product__info-icon {
     font-size: 37px;
