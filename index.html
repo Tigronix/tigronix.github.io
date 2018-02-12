@@ -15,1973 +15,655 @@
 		<global-svg></global-svg>
 	</div>
 	<header class="page-header">
-		<a href="#" class="page-header__logo"><img src="img/logos_1.png" alt=""></a>
-		<a href="#" class="button bttn-fill page-header__button"><svg class="button__icon icon icon-vpn-key"><use xlink:href="#icon-vpn-key"></use></svg>Выбрать квартиру</a>
-		<nav class="nav">
-			<ul class="nav__ul">
-				<li class="nav__li"><a href="#" class="nav__link">ипотека</a></li>
-				<li class="nav__li"><a href="#" class="nav__link">фотографии</a></li>
-				<li class="nav__li"><a href="#" class="nav__link">спецпредложения</a></li>
-				<li class="nav__li"><a href="#" class="nav__link">о компании</a></li>
-				<li class="nav__li"><a href="#" class="nav__link">контакты</a></li>
-			</ul>
-		</nav>
-		<a href="tel:+74957888265" class="page-header__phone">+7 (495) 788-82-65</a>
+		<div class="page-header__top">
+			<div class="hamburger osetinColors">
+				<div class="hamburger__line animated hamburger__line1"></div>
+				<div class="hamburger__line animated hamburger__line2"></div>
+				<div class="hamburger__line animated hamburger__line3"></div>
+			</div>
+				<div class="page-header__location">
+					<div class="page-header__location-t1">Ваш город:</div>
+					<select class="page-header__select select-location">
+						<option class="select-location__option" value="1">Москва</option>
+					</select>
+					<svg class="page-header__location-icon icon icon-keyboard-arrow-down"><use xlink:href="#icon-keyboard-arrow-down"></use></svg>
+				</div>
+				<div class="page-header__delivery">
+					<svg class="page-header__delivery-icon icon icon-motorcycle"><use xlink:href="#icon-motorcycle"></use></svg>
+					<div class="page-header__delivery-t">Бесплатная доставка от 1 000 руб.</div>
+				</div>
+				<a href="#" class="page-header__call"><svg class="page-header__call-icon icon icon-phone-forwarded"><use xlink:href="#icon-phone-forwarded"></use></svg>Заказать обратный звонок</a>
+		</div>
+		<div class="page-header__content">
+			<div class="page-header__left">
+				<a href="#" class="page-header__logo"><img src="img/logo.png" alt=""></a>
+				<div class="page-header__from">Работаем с 2005 года</div>
+				<div class="page-header__hot-item page-header__hot-item--sale"><svg class="page-header__hot-item-star page-header__hot-item-icon icon icon-icon"><use xlink:href="#icon-grade"></use></svg>Акции и спецпредложения</div>
+				<div class="page-header__hot-item"><svg class="page-header__hot-item-icon page-header__hot-item-card icon icon-credit-card"><use xlink:href="#icon-credit-card"></use></svg>Доставка и оплата</div>
+				<div class="menu">
+					<ul class="menu__ul">
+						<li class="menu__li"><a href="#" class="menu__link"><img src="img/menu1.png" alt=""><span class="menu__link-text">Мясные</span></a></li>
+						<li class="menu__li"><a href="#" class="menu__link"><img src="img/menu2.png" alt=""><span class="menu__link-text">С капустой</span></a></li>
+						<li class="menu__li"><a href="#" class="menu__link"><img src="img/menu3.png" alt=""><span class="menu__link-text">С курицей</span></a></li>
+						<li class="menu__li"><a href="#" class="menu__link"><img src="img/menu4.png" alt=""><span class="menu__link-text">С сыром</span></a></li>
+						<li class="menu__li"><a href="#" class="menu__link"><img src="img/menu5.png" alt=""><span class="menu__link-text">С рыбой</span></a></li>
+						<li class="menu__li"><a href="#" class="menu__link"><img src="img/menu6.png" alt=""><span class="menu__link-text">Сладкие</span></a></li>
+						<li class="menu__li"><a href="#" class="menu__link"><img src="img/menu7.png" alt=""><span class="menu__link-text">Постные</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="page-header__contact">
+				<a href="tel:+74951001510" class="page-header__phone">+7 (495) 100-15-10</a>
+				<div class="page-header__schedule">Часы работы: с 8-00 до 21-00</div>
+				<div class="page-header__cart">
+					<svg class="page-header__cart-icon icon icon-shopping-basket"><use xlink:href="#icon-shopping-basket"></use></svg>
+					<div class="page-header__cart-t1">корзина</div>
+					<div class="page-header__cart-price">3 200</div>
+					<svg class="page-header__cart-ruble icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+				</div>
+			</div>
+		</div>
 	</header>
 	<main class="main overflow">
-		<section class="slider-main">
-			<div class="slider-main__slider-wrap">
-				<img class="slider-main__bg-fix" src="img/fonst_11.jpg" alt="">
-				<div class="slider owl-carousel owl-theme slider-main__wrap">
-				<div class="slider__slide slider-main__slide">
-					<img src="img/fonst_11.jpg" alt="">
-					<div class="slider-main__t1">
-						ЖК «ПИРОГОВСКИЙ» - ГОТОВЫЕ КВАРТИРЫ <br />
-						В МЫТИЩАХ ОТ 3,7 МЛН. РУБ. КЛЮЧИ В ДЕНЬ ОПЛАТЫ!
+		<h1 class="h1">Осетинские пироги с бесплатной доставкой по Москве</h1>
+		<section class="carousel owl-carousel">
+			<form class="carousel__item">
+				<div class="carousel__sale carousel__sale--red1">Хит продаж</div>
+				<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+				<div class="carousel__desc">Состав: сочное филе из говядины</div>
+				<div class="carousel__weight product-weight">
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="650" for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">650 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
 					</div>
-					<div class="slider-main__t2">
-						<div class="slider-main__t2-t1">ОСТАЛОСЬ <span>28</span> КВАРТИР</div>
-						<a href="#" class="button slider-main__button animated infinite pulse bttn-fill"><svg class="button__icon icon icon-vpn-key"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vpn-key"></use></svg>Выбрать квартиру</a>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="700" for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">700 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
 					</div>
-				</div>
-				<div class="slider__slide slider-main__slide">
-					<img src="img/fonst_4.jpg" alt="">
-					<div class="slider-main__t1">
-						ЖК «ПИРОГОВСКИЙ» - ГОТОВЫЕ КВАРТИРЫ <br />
-						В МЫТИЩАХ ОТ 3,7 МЛН. РУБ. КЛЮЧИ В ДЕНЬ ОПЛАТЫ!
-					</div>
-					<div class="slider-main__t2">
-						<div class="slider-main__t2-t1">ОСТАЛОСЬ <span>28</span> КВАРТИР</div>
-						<a href="#" class="button slider-main__button animated infinite pulse bttn-fill"><svg class="button__icon icon icon-vpn-key"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vpn-key"></use></svg>Выбрать квартиру</a>
-					</div>
-				</div>
-				<div class="slider__slide slider-main__slide">
-					<img src="img/fonst_12.jpg" alt="">
-					<div class="slider-main__t1">
-						ЖК «ПИРОГОВСКИЙ» - ГОТОВЫЕ КВАРТИРЫ <br />
-						В МЫТИЩАХ ОТ 3,7 МЛН. РУБ. КЛЮЧИ В ДЕНЬ ОПЛАТЫ!
-					</div>
-					<div class="slider-main__t2">
-						<div class="slider-main__t2-t1">ОСТАЛОСЬ <span>28</span> КВАРТИР</div>
-						<a href="#" class="button slider-main__button animated infinite pulse bttn-fill"><svg class="button__icon icon icon-vpn-key"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vpn-key"></use></svg>Выбрать квартиру</a>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="800" for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">800 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
 					</div>
 				</div>
-				<div class="slider__slide slider-main__slide">
-					<img src="img/fonst_13.jpg" alt="">
-					<div class="slider-main__t1">
-						ЖК «ПИРОГОВСКИЙ» - ГОТОВЫЕ КВАРТИРЫ <br />
-						В МЫТИЩАХ ОТ 3,7 МЛН. РУБ. КЛЮЧИ В ДЕНЬ ОПЛАТЫ!
-					</div>
-					<div class="slider-main__t2">
-						<div class="slider-main__t2-t1">ОСТАЛОСЬ <span>28</span> КВАРТИР</div>
-						<a href="#" class="button slider-main__button animated infinite pulse bttn-fill"><svg class="button__icon icon icon-vpn-key"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vpn-key"></use></svg>Выбрать квартиру</a>
-					</div>
-				</div>
-			</div>
-			</div>
-			<div class="menu menu--scheme">
-				<ul class="menu__nav">
-					<li data-tabclass="menu__tab-content" data-tabnumber="1" class="menu__nav-li active">
-						<button class="menu__nav-button">Варианты покупки</button>
-					</li>
-					<li data-tabclass="menu__tab-content" data-tabnumber="2" class="menu__nav-li">
-						<button class="menu__nav-button">Выбрать квартиру</button>
-					</li>
-					<li data-tabclass="menu__tab-content" data-tabnumber="3" class="menu__nav-li">
-						<button class="menu__nav-button">Фотографии</button>
-					</li>
-					<li data-tabclass="menu__tab-content" data-tabnumber="4" class="menu__nav-li">
-						<button class="menu__nav-button">О компании</button>
-					</li>
-					<li data-tabclass="menu__tab-content" data-tabnumber="5" class="menu__nav-li">
-						<button class="menu__nav-button">Контакты</button>
-					</li>
-				</ul>
-				<div class="menu__tab-content">
-					<div data-tabnumber="1" class="menu__tab-item animated slideInUp">
-						<div class="links accordion">
-							<h3><a href="#" class="links__title accordionButton"><span>Ипотека</span></a></h3>
-							<div class="links__content accordionContent">
-								<a href="#" class="links__link">Сбербанк</a>
-								<a href="#" class="links__link">ВТБ 24</a>
-								<a href="#" class="links__link">Абсолют банк</a>
-								<a href="#" class="links__link">Банк Россия</a>
+				<div class="carousel__buy">
+					<div class="product__counter">
+						<div class="product__counter-btns">
+							<div class="product__btn product__inc">
+								<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
 							</div>
-
-							<h3><a href="#" class="links__title accordionButton"><span>Военная ипотека</span></a></h3>
-							<div class="links__content accordionContent">
-								<a href="#" class="links__link">Сбербанк</a>
-								<a href="#" class="links__link">ВТБ 24</a>
-								<a href="#" class="links__link">Абсолют банк</a>
-								<a href="#" class="links__link">Банк Россия</a>
-							</div>
-
-							<h3><a href="#" class="links__title accordionButton"><span>Материнский капитал</span></a></h3>
-							<div class="links__content accordionContent">
-								<a href="#" class="links__link">Сбербанк</a>
-								<a href="#" class="links__link">ВТБ 24</a>
-								<a href="#" class="links__link">Абсолют банк</a>
-								<a href="#" class="links__link">Банк Россия</a>
-							</div>
-
-							<h3><a href="#" class="links__title accordionButton"><span>Субсидии</span></a></h3>
-							<div class="links__content accordionContent">
-								<a href="#" class="links__link">Сбербанк</a>
-								<a href="#" class="links__link">ВТБ 24</a>
-								<a href="#" class="links__link">Абсолют банк</a>
-								<a href="#" class="links__link">Банк Россия</a>
-							</div>
-
-							<h3><a href="#" class="links__title accordionButton"><span>Сертификаты</span></a></h3>
-							<div class="links__content accordionContent">
-								<a href="#" class="links__link">Сбербанк</a>
-								<a href="#" class="links__link">ВТБ 24</a>
-								<a href="#" class="links__link">Абсолют банк</a>
-								<a href="#" class="links__link">Банк Россия</a>
+							<div class="product__btn product__dec">
+								<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
 							</div>
 						</div>
-						<section class="partners">
-							<div class="partners__item"><img src="img/sber.jpg" alt=""></div>
-							<div class="partners__item"><img src="img/vtb24b.jpg" alt=""></div>
-							<div class="partners__item"><img src="img/absolute-bank.png" alt=""></div>
-							<div class="partners__item"><img src="img/logo-bank-rossiya.png" alt=""></div>
-						</section>
+						<div class="product__counter-number">
+							<div class="product__amount">2</div>
+						</div>
 					</div>
-					<div data-tabnumber="2" class="menu__tab-item animated slideInUp">
-						<section class="scheme menu__scheme">
-						  <div class="scheme__title">Дом уже заселен. Осталось всего 28 квартир из 439</div>
-						  <div class="scheme__section scheme__section--first">
-						    <div class="scheme__section-name">Секция 1</div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">17</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">16</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">15</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">14</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">13</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">12</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">11</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">10</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">9</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">8</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">7</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">6</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">5</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">4</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">3</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">2</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">1</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						  </div>
-						  <div class="scheme__section">
-						    <div class="scheme__section-name">Секция 2</div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						  </div>
-						  <div class="scheme__section">
-						    <div class="scheme__section-name">Секция 3</div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">17</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">16</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">15</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">14</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">13</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">12</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">11</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">10</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">9</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">8</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">7</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">6</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">5</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">4</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">3</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">2</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">1</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						  </div>
-						  <div class="scheme__section">
-						    <div class="scheme__section-name">Секция 4</div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						  </div>
-						  <div class="scheme__section">
-						    <div class="scheme__section-name">Секция 5</div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">17</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-									<div class="scheme__item scheme__item--number scheme__item--mobile">16</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-									<div class="scheme__item scheme__item--number scheme__item--mobile">15</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-									<div class="scheme__item scheme__item--number scheme__item--mobile">14</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">13</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">12</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">11</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">10</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">9</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">8</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">7</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">6</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">5</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">4</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">3</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">2</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number scheme__item--mobile">1</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						  </div>
-						  <div class="scheme__section scheme__section--no-border scheme__section--number-reverse">
-						    <div class="scheme__section-name">Секция 6</div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">17</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">16</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">15</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">14</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">13</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">12</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">11</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">10</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">9</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">8</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">7</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">6</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">5</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">4</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">3</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">2</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						    <div class="scheme__line">
-						      <div class="scheme__item scheme__item--number">1</div>
-						      <a href="#" class="scheme__item scheme__item--buy">
-						        2
-						        <div class="scheme__popup animated slideInDownPopup">
-						          <div class="scheme__popup-text">2-комн. <br /> квартира</div>
-						          <div class="span scheme__popup-number">№ 234</div>
-						        </div>
-						      </a>
-						      <a href="#" class="scheme__item scheme__item--booking">2</a>
-						      <a href="" class="scheme__item"></a>
-						      <a href="" class="scheme__item"></a>
-						    </div>
-						  </div>
-							<div class="scheme__transcript">
-								<div class="scheme__transcript-item">
-									<div class="scheme__item"></div>
-									<span class="scheme__transcript-text">Квартира продана</span>
+					<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+				</div>
+			</form>
+			<form class="carousel__item">
+				<div class="carousel__sale carousel__sale--green">Рекомендуем</div>
+				<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+				<div class="carousel__desc">Состав: сочное филе из говядины</div>
+				<div class="carousel__weight product-weight">
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="650" for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">650 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="700" for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">700 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="800" for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">800 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+				</div>
+				<div class="carousel__buy">
+					<div class="product__counter">
+						<div class="product__counter-btns">
+							<div class="product__btn product__inc">
+								<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+							</div>
+							<div class="product__btn product__dec">
+								<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+							</div>
+						</div>
+						<div class="product__counter-number">
+							<div class="product__amount">2</div>
+						</div>
+					</div>
+					<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+				</div>
+			</form>
+			<form class="carousel__item">
+				<div class="carousel__sale carousel__sale--purple">Новинка</div>
+				<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+				<div class="carousel__desc">Состав: сочное филе из говядины</div>
+				<div class="carousel__weight product-weight">
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="650" for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">650 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="700" for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">700 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="800" for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">800 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+				</div>
+				<div class="carousel__buy">
+					<div class="product__counter">
+						<div class="product__counter-btns">
+							<div class="product__btn product__inc">
+								<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+							</div>
+							<div class="product__btn product__dec">
+								<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+							</div>
+						</div>
+						<div class="product__counter-number">
+							<div class="product__amount">2</div>
+						</div>
+					</div>
+					<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+				</div>
+			</form>
+			<form class="carousel__item">
+				<div class="carousel__sale carousel__sale--red2">Скидка до 10%</div>
+				<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+				<div class="carousel__desc">Состав: сочное филе из говядины</div>
+				<div class="carousel__weight product-weight">
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="650" for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">650 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="700" for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">700 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="800" for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">800 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+				</div>
+				<div class="carousel__buy">
+					<div class="product__counter">
+						<div class="product__counter-btns">
+							<div class="product__btn product__inc">
+								<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+							</div>
+							<div class="product__btn product__dec">
+								<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+							</div>
+						</div>
+						<div class="product__counter-number">
+							<div class="product__amount">2</div>
+						</div>
+					</div>
+					<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+				</div>
+			</form>
+			<form class="carousel__item">
+				<div class="carousel__sale carousel__sale--red2">Скидка до 10%</div>
+				<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+				<div class="carousel__desc">Состав: сочное филе из говядины</div>
+				<div class="carousel__weight product-weight">
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="650" for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">650 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="700" for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">700 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="800" for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">800 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+				</div>
+				<div class="carousel__buy">
+					<div class="product__counter">
+						<div class="product__counter-btns">
+							<div class="product__btn product__inc">
+								<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+							</div>
+							<div class="product__btn product__dec">
+								<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+							</div>
+						</div>
+						<div class="product__counter-number">
+							<div class="product__amount">2</div>
+						</div>
+					</div>
+					<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+				</div>
+			</form>
+			<form class="carousel__item">
+				<div class="carousel__sale carousel__sale--red2">Скидка до 10%</div>
+				<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+				<div class="carousel__desc">Состав: сочное филе из говядины</div>
+				<div class="carousel__weight product-weight">
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="650" for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">650 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="700" for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">700 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="800" for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">800 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+				</div>
+				<div class="carousel__buy">
+					<div class="product__counter">
+						<div class="product__counter-btns">
+							<div class="product__btn product__inc">
+								<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+							</div>
+							<div class="product__btn product__dec">
+								<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+							</div>
+						</div>
+						<div class="product__counter-number">
+							<div class="product__amount">2</div>
+						</div>
+					</div>
+					<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+				</div>
+			</form>
+			<form class="carousel__item">
+				<div class="carousel__sale carousel__sale--red2">Скидка до 10%</div>
+				<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+				<div class="carousel__desc">Состав: сочное филе из говядины</div>
+				<div class="carousel__weight product-weight">
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="650" for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">650 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="700" for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">700 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+					<div class="carousel__weight-item product-weight__item">
+						<div class="check-wrap">
+							<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+							<label data-price="800" for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+						</div>
+						<span class="carousel__price product-weight__price">800 <img src="img/ruble-sign.svg" class="product-weight__price-icon" alt=""></span>
+					</div>
+				</div>
+				<div class="carousel__buy">
+					<div class="product__counter">
+						<div class="product__counter-btns">
+							<div class="product__btn product__inc">
+								<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+							</div>
+							<div class="product__btn product__dec">
+								<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+							</div>
+						</div>
+						<div class="product__counter-number">
+							<div class="product__amount">2</div>
+						</div>
+					</div>
+					<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+				</div>
+			</form>
+		</section>
+		<section class="fast">
+			<h2 class="h2 fast__h2">Нет времени выбирать пироги</h2>
+			<form class="fast__wrapper">
+				<div class="fast__left">
+					<div class="fast__t1">Мы поможем выбрать самое выгодное предложение!</div>
+					<div class="fast__t2">Просто отметьте нужные начинки для пирогов и отправьте заявку, мы перезвоним и все остальное мы сделаем за Вас!</div>
+					<div class="fast__select">
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С мясом</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С сыром</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С рыбой</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С луком</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С картофелем</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С шоколадом</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С тыквой</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">Сладкие</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С лимоном</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С грибами</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С зеленью</label></div>
+						<div class="check-wrap"><input id="fast__select1" type="checkbox" class="check-wrap__input"><label for="fast__select1" class="check-wrap__label">С птицей</label></div>
+					</div>
+				</div>
+				<div class="fast__right">
+					<div class="form">
+						<input type="tel" class="form__input">
+						<input placeholder="Имя" type="text" class="form__input">
+						<textarea placeholder="Опишите Ваши пожелания по заказу" class="form__textarea"></textarea>
+						<button type="submit" class="form__submit">Заказать пироги со скидкой</button>
+					</div>
+				</div>
+			</form>
+		</section>
+		<section class="page-desc">
+			<h2 class="h2 page-desc__h2">Осетинские пироги с бесплатной доставкой по Москве</h2>
+			<p class="text page-desc__text">Портал «ОСЕТИНСКИЕ ПИРОГИ С ДОСТАВКОЙ» найдет наиболее подходящий вариант среди сотен пекарен Москвы в кратчайший срок. Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом. Осетинские пироги издавна были одним из основных блюд этого народа. Традиционно подаются три осетинских пирога, что символизирует три природных стихии: солнце, воду и землю.</p>
+		</section>
+		<section class="product">
+			<div class="product__info">
+				<div class="product__img"><img src="" alt=""></div>
+				<div class="product__desc">Состав пирога: осетинский сыр по старинным технологиям</div>
+				<div class="product__cook-time">Время приготовления: 25 мин</div>
+			</div><!--product__info-->
+			<div class="product__content">
+				<div class="product__about">
+					<div class="rating">
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+					</div>
+					<div class="product__name">Пирог с сыром и луком «Кадындзджин»</div>
+					<div class="product__weight">
+						<div class="product__weight-item">
+							<div class="check-wrap"><input type="radio" id="product1" class="check-wrap__input"><label data-price="650" for="product1" class="check-wrap__label">1 000 г</label></div>
+							<div class="product__weight-price">650</div>
+						</div>
+						<div class="product__weight-item">
+							<div class="check-wrap"><input type="radio" id="product2" class="check-wrap__input"><label data-price="700" for="product2" class="check-wrap__label">1 200 г</label></div>
+							<div class="product__weight-price">700</div>
+						</div>
+						<div class="product__weight-item">
+							<div class="check-wrap"><input type="radio" id="product3" class="check-wrap__input"><label data-price="810" for="product3" class="check-wrap__label">1 400 г</label></div>
+							<div class="product__weight-price">810</div>
+						</div>
+						<div class="product__buy">
+							<div class="product__counter">
+								<div class="product__counter-btns">
+									<div class="product__btn product__inc"></div>
+									<div class="product__btn product__dec"></div>
 								</div>
-								<div class="scheme__transcript-item">
-									<div class="scheme__item scheme__item--buy"></div>
-									<span class="scheme__transcript-text">Квартира в продаже</span>
-								</div>
-								<div class="scheme__transcript-item">
-									<div class="scheme__item scheme__item--booking"></div>
-									<span class="scheme__transcript-text">Квартира на брони</span>
-								</div>
-								<div style="background-image:url(img/korp1.png);" class="scheme__transcript-item scheme__transcript-item--corp">
-									<span class="scheme__transcript-text--corp">Корпус 41</span>
+								<div class="product__counter-number">
+									<div class="product__amount"></div>
 								</div>
 							</div>
-						</section>
+							<button type="submit" class="product__submit">в корзину</button>
+						</div>
+					</div><!--product-weight-->
+				</div><!--product-about-->
+				<div class="product__sale">
+					<div class="product__sale-title">Акции! Скидки! Спецпредложения!</div>
+					<div class="product__sale-wrap">
+						<div class="product__sale-item check-wrap">
+							<input type="radio" id="sale1" class="check-wrap__input">
+							<label data-price="10" for="sale1" class="check-wrap__label"><span class="product__sale-number">-10%</span> День рождения</label>
+						</div>
+						<div class="product__sale-item check-wrap">
+							<input type="radio" id="sale2" class="check-wrap__input">
+							<label data-price="15" for="sale2" class="check-wrap__label"><span class="product__sale-number">-15%</span> Крта постоянного клиента</label>
+						</div>
+						<div class="product__sale-item check-wrap">
+							<input type="radio" id="sale3" class="check-wrap__input">
+							<label data-price="7" for="sale3" class="check-wrap__label"><span class="product__sale-number">-7%</span> Юбилей</label>
+						</div>
+						<div class="product__sale-item check-wrap">
+							<input type="radio" id="sale4" class="check-wrap__input">
+							<label data-price="10" for="sale4" class="check-wrap__label"><span class="product__sale-number">-10%</span> На второй заказ</label>
+						</div>
+						<div class="product__sale-item check-wrap">
+							<input type="radio" id="sale5" class="check-wrap__input">
+							<label data-price="5" for="sale5" class="check-wrap__label"><span class="product__sale-number">-5%</span> Корпоратив</label>
+						</div>
+						<div class="product__sale-item check-wrap">
+							<input type="radio" id="sale" class="check-wrap__input">
+							<label data-price="3" for="sale" class="check-wrap__label"><span class="product__sale-number">-3%</span> Первый заказ</label>
+						</div>
 					</div>
+					<div class="product__payvar">
+						Способы оплаты заказа:
+					</div>
+				</div><!--product-sale-->
+				<div class="product__calc">
+					<div class="product__calc-item">
+						<div class="product__calc-text">Доставка по Москве:</div>
+						<div class="product__calc-price">0</div>
+					</div>
+					<div class="product__calc-item">
+						<div class="product__calc-text">Доставка за МКАД:</div>
+						<div class="product__calc-price">300</div>
+					</div>
+					<div class="product__calc-title">Оплата:</div>
+					<div class="product__calc-item">
+						<div class="product__calc-text">Наличными:</div>
+						<div class="product__calc-price">Курьеру</div>
+					</div>
+					<div class="product__calc-item">
+						<div class="product__calc-text">По карте онлайн:</div>
+						<div class="product__calc-price">Сбербанк</div>
+					</div>
+				</div><!--product-calc-->
+			</div><!--product__content-->
+		</section>
+		<section class="sale">
+			<div class="sale__title">Скидка на заказ в ночное время!</div>
+			<div class="sale__desc">При отправке заявки с 21-00 до 07-00 мы дарим Вам скидку -10% на любой заказ!</div>
+			<div class="sale__item">
+				<div class="sale__header">Пирог с мясом</div>
+				<div class="check-wrap">
+					<input id="sale1" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale1" class="check-wrap__label">1200 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
+				</div>
+				<div class="check-wrap">
+					<input id="sale2" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale2" class="check-wrap__label">1400 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
 				</div>
 			</div>
-			<button type="button" class="menuButton slider-main__nav-btn slider-main__btn-menu bttn-jelly slideInRight animated">
-				<div class="hamburger redToGreen">
-					<div class="hamburger__line animated hamburger__line1"></div>
-					<div class="hamburger__line animated hamburger__line2"></div>
-					<div class="hamburger__line animated hamburger__line3"></div>
+			<div class="sale__item">
+				<div class="sale__header">Пирог с капустой</div>
+				<div class="check-wrap">
+					<input id="sale3" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale3" class="check-wrap__label">1200 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
 				</div>
-			</button>
-			<button type="button" class="slider-main__nav-btn slider-main__contact bttn-jelly slideInRight animated"><svg class="icon icon-mail-outline"><use xlink:href="#icon-mail-outline"></use></svg></button>
-			<div class="advantages advantages--slider">
-				<div class="advantages__item">
-					<div class="advantages__text">
-						<span class="advantages__item-t1">12</span>
-						 км от
-						 <span class="advantages__item-t2">МКАД</span>
-					 </div>
+				<div class="check-wrap">
+					<input id="sale4" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale4" class="check-wrap__label">1400 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
 				</div>
-				<div class="advantages__item">
-					<div class="advantages__text">
-						РЯДОМ ПИРОГОВСКОЕ<br /> ВОДОХРАНИЛИЩЕ
-					</div>
+			</div>
+			<div class="sale__item">
+				<div class="sale__header">Пирог с курицей</div>
+				<div class="check-wrap">
+					<input id="sale5" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale5" class="check-wrap__label">1200 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
 				</div>
-				<div class="advantages__item">
-					<div class="advantages__text">
-						<span class="advantages__item-t1">1,2,3</span><br />
-						КОМНАТНЫЕ КВАРТИРЫ
-					</div>
+				<div class="check-wrap">
+					<input id="sale6" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale6" class="check-wrap__label">1400 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
 				</div>
-				<div class="advantages__item">
-					<div class="advantages__text">
-						РАЗВИТАЯ<br />
-						ИНФРАСТРУКТУРА
-					</div>
+			</div>
+			<div class="sale__item">
+				<div class="sale__header">Пирог с сыром</div>
+				<div class="check-wrap">
+					<input id="sale7" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale7" class="check-wrap__label">1200 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
 				</div>
+				<div class="check-wrap">
+					<input id="sale8" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale8" class="check-wrap__label">1400 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
+				</div>
+			</div>
+			<div class="sale__item">
+				<div class="sale__header">Пирог с сыром</div>
+				<div class="check-wrap">
+					<input id="sale9" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale9" class="check-wrap__label">1200 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
+				</div>
+				<div class="check-wrap">
+					<input id="sale10" type="radio" class="check-wrap__input">
+					<label data-price="650" for="sale10" class="check-wrap__label">1400 г <span class="sale__old-price">700</span> <span class="new-price">650</span></label>
+				</div>
+			</div>
+			<div class="form">
+				<input type="tel" class="form__input">
+				<input placeholder="Имя" type="text" class="form__input">
+				<textarea placeholder="Опишите Ваши пожелания по заказу" class="form__textarea"></textarea>
+				<button type="submit" class="form__submit">Зафиксировать скидку</button>
+			</div>
+			<div class="sale__tip">Отметьте нужные пироги и отправьте заявку, все остальое мы сделаем за Вас!</div>
+		</section>
+		<section class="certifications">
+			<h2 class="h2 certifications__h2">Благодарности и сертификаты</h2>
+			<div class="carousel certifications__carousel owl-carousel">
+				<div class="certifications__item carousel__item"><img src="" alt=""></div>
+				<div class="certifications__item carousel__item"><img src="" alt=""></div>
+				<div class="certifications__item carousel__item"><img src="" alt=""></div>
+				<div class="certifications__item carousel__item"><img src="" alt=""></div>
+				<div class="certifications__item carousel__item"><img src="" alt=""></div>
+				<div class="certifications__item carousel__item"><img src="" alt=""></div>
 			</div>
 		</section>
-		<h1 class="h1 mt40">ЖК «ПИРОГОВСКИЙ» О КОМПЛЕКСЕ</h1>
-		<p class="text mb76">Более 12 лет компания застройщик жилого комплекса Пироговский представляет свои объекты на рынке подмосковной недвижимости. Деловая репутация компании подтверждена успешной реализацией ряда проектов. Среди них новостройки в Мытищах от застройщика в ЖК «Пироговский», многоквартирные жилые объекты комплексной и точечной застройки в Королеве и Пирогово.
-		Одним из самых успешных проектов завершенного строительства стал жилой комплекс Пироговский в Мытищах. Это всего в 12 км от МКАД. В составе ЖК 14 многоэтажных кирпично-панельных домов, образующих новый благоустроенный микрорайон с собственной инфраструктурой. 12 домов уже полностью заселены.</p>
-		<h2 class="h2">СОВРЕМЕННЫЕ ПЛАНИРОВКИ КВАРТИР</h2>
-		<section class="wow fadeIn layout">
-			<div class="advantages advantages--lightblue">
-				<div class="advantages__item advantages__item--fz">
-					<div class="advantages__item-wrap"><span class="advantages__item-t1">1</span> <span class="advantages__item-t1-2">КОМН. КВАРТИРЫ</span></div>
+		<section class="partners">
+			<h2 class="h2">Среди наших клиентов</h2>
+			<div class="partners__wrap">
+				<div class="partner-slider">
+					<div class="partner-slider__item"><img src="img/" alt=""></div>
+					<div class="partner-slider__item"><img src="img/" alt=""></div>
+					<div class="partner-slider__item"><img src="img/" alt=""></div>
+					<div class="partner-slider__item"><img src="img/" alt=""></div>
+					<div class="partner-slider__item"><img src="img/" alt=""></div>
+					<div class="partner-slider__item"><img src="img/" alt=""></div>
+					<div class="partner-slider__item"><img src="img/" alt=""></div>
+					<div class="partner-slider__item"><img src="img/" alt=""></div>
 				</div>
-				<div class="advantages__item advantages__item--fz">
-					<svg class="advantages__location icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>
-					<span>
-						Мытищи, пос. Пироговский,<br />
-						ул. Фабричная, 15
-					</span>
-				</div>
-				<div class="advantages__item advantages__item--fz">
-					Общая площадь: <span class="advantages__metr">51,4 <span>м<sup>2</sup></span></span>
-				</div>
-				<div class="advantages__item advantages__item--fz">
-					<span>Стоимость квартиры:</span> <span class="advantages__price">3 600 000 <span>РУБ.</span></span>
-				</div>
-			</div>
-			<div class="layout__wrap">
-				<form action="" class="layout__form form">
-					<div class="form__title">Онлайн заявка на просмотр</div>
-					<input placeholder="Ваше имя" type="text" class="form__input form__input--name form__input--name">
-					<input placeholder="Телефон" type="tel" class="form__input form__input--tel formTel form__input--tel formTel">
-					<textarea placeholder="Опишите ваши вопросы" class="form__input form__textarea"></textarea>
-					<button class="form__submit">Отправить заявку</button>
-				</form>
-				<div class="owl-carousel roomSlider layout__slider layout-slider">
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-				</div>
-			</div>
-		</section>
-		<section class="wow fadeIn layout">
-			<div class="advantages advantages--blue">
-				<div class="advantages__item advantages__item--fz">
-					<div class="advantages__item-wrap"><span class="advantages__item-t1">2</span> <span class="advantages__item-t1-2">КОМН. КВАРТИРЫ</span></div>
-				</div>
-				<div class="advantages__item advantages__item--fz">
-					<svg class="advantages__location icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>
-					<span>
-						Мытищи, пос. Пироговский,<br />
-						ул. Фабричная, 15
-					</span>
-				</div>
-				<div class="advantages__item advantages__item--fz">
-					Общая площадь: <span class="advantages__metr">78,7 <span>м<sup>2</sup></span></span>
-				</div>
-				<div class="advantages__item advantages__item--fz">
-					<span>Стоимость квартиры:</span> <span class="advantages__price">4 750 000 <span>РУБ.</span></span>
-				</div>
-			</div>
-			<div class="layout__wrap">
-				<form action="" class="layout__form form">
-					<div class="form__title">Онлайн заявка на просмотр</div>
-					<input placeholder="Ваше имя" type="text" class="form__input form__input--name form__input--name">
-					<input placeholder="Телефон" type="tel" class="form__input form__input--tel formTel form__input--tel formTel">
-					<textarea placeholder="Опишите ваши вопросы" class="form__input form__textarea"></textarea>
-					<button class="form__submit">Отправить заявку</button>
-				</form>
-				<div class="owl-carousel roomSlider layout__slider layout-slider">
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-				</div>
-			</div>
-		</section>
-		<section class="wow fadeIn layout">
-			<div class="advantages advantages--orange">
-				<div class="advantages__item advantages__item--fz">
-					<div class="advantages__item-wrap"><span class="advantages__item-t1">3</span> <span class="advantages__item-t1-2">КОМН. КВАРТИРЫ</span></div>
-				</div>
-				<div class="advantages__item advantages__item--fz">
-					<svg class="advantages__location icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>
-					<span>
-						Мытищи, пос. Пироговский,<br />
-						ул. Фабричная, 15
-					</span>
-				</div>
-				<div class="advantages__item advantages__item--fz">
-					Общая площадь: <span class="advantages__metr">111,2 <span>м<sup>2</sup></span></span>
-				</div>
-				<div class="advantages__item advantages__item--fz">
-					<span>Стоимость квартиры:</span> <span class="advantages__price">6 700 000 <span>РУБ.</span></span>
-				</div>
-			</div>
-			<div class="layout__wrap">
-				<form action="" class="layout__form form">
-					<div class="form__title">Онлайн заявка на просмотр</div>
-					<input placeholder="Ваше имя" type="text" class="form__input form__input--name form__input--name">
-					<input placeholder="Телефон" type="tel" class="form__input form__input--tel formTel form__input--tel formTel">
-					<textarea placeholder="Опишите ваши вопросы" class="form__input form__textarea"></textarea>
-					<button class="form__submit">Отправить заявку</button>
-				</form>
-				<div class="owl-carousel roomSlider layout__slider layout-slider">
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-					<div class="layout-slider__slide"><img src="img/plan_8.png" alt=""></div>
-				</div>
-			</div>
-		</section>
-		<section class="wow fadeIn about">
-			<div class="about__from">
-				<div class="about__from-t1"><span>15</span> лет</div>
-				<div class="about__from-t2">На рынке <br> недвижимости</div>
-			</div>
-			<div class="about__desc">Более 15 лет компания застройщик жилого комплекса Пироговский представляет свои объекты на рынке подмосковной недвижимости. Деловая репутация компании подтверждена успешной реализацией ряда проектов. Среди них новостройки в Мытищах от застройщика в ЖК «Пироговский», многоквартирные жилые объекты комплексной и точечной застройки в Королеве и Пирогово.</div>
-		</section>
-		<section class="wow fadeIn price">
-			<h2 class="h2">ЦЕНЫ НА КВАРТИРЫ В ЖК «ПИРОГОВСКИЙ»</h2>
-			<div class="price__nav">
-				<div data-tabclass="price__content" data-tabnumber="1" class="price__nav-item active">ОДНОКОМНАТНЫЕ КВАРТИРЫ</div>
-				<div data-tabclass="price__content" data-tabnumber="2" class="price__nav-item">двухкомнатные квартиры</div>
-				<div data-tabclass="price__content" data-tabnumber="3" class="price__nav-item">трехкомнатные квартиры</div>
-			</div>
-			<div data-tabclass="price__content" class="price__content">
-				<div data-tabnumber="1" class="price__item price__item--table animated slideInUp">
-					<table class="table">
-						<thead>
-							<tr class="table__tr table__tr--head">
-								<td class="table__td table__td--head">Выберите квартиру</td>
-								<td class="table__td table__td--head">Кол-во<br>комнат</td>
-								<td class="table__td table__td--head">Этаж</td>
-								<td class="table__td table__td--head">Секция</td>
-								<td class="table__td table__td--head">№ КВ.</td>
-								<td class="table__td table__td--head">Общая, м <sup>2</sup></td>
-								<td class="table__td table__td--head">ЖИЛАЯ, М<sup>2</sup></td>
-								<td class="table__td table__td--head">КУХНЯ, М<sup>2</sup></td>
-								<td class="table__td table__td--head">ЦЕНА, М<sup>2</sup></td>
-								<td class="table__td table__td--head">СТОИМОСТЬ КВАРТИРЫ</td>
-								<td class="table__td table__td--head">ПЛАНИРОВКА</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="table__tr">
-								<td class="table__td">Двухкомнатная квартира <br /> Мытищи, Фабричная, 15</td>
-								<td class="table__td">2</td>
-								<td class="table__td">8</td>
-								<td class="table__td">4</td>
-								<td class="table__td">232</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">12</td>
-								<td class="table__td"><span class="value">от</span> 60 000 <span class="value">руб.</span></td>
-								<td class="table__td">4 750 000 <span class="value"></span></td>
-								<td class="table__td"><a href="#" class="table__link"><img src="img/file-o.svg" alt=""></a></td>
-							</tr>
-							<tr class="table__tr">
-								<td class="table__td">Двухкомнатная квартира <br /> Мытищи, Фабричная, 15</td>
-								<td class="table__td">2</td>
-								<td class="table__td">8</td>
-								<td class="table__td">4</td>
-								<td class="table__td">232</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">12</td>
-								<td class="table__td"><span class="value">от</span> 60 000 <span class="value">руб.</span></td>
-								<td class="table__td">4 750 000 <span class="value"></span></td>
-								<td class="table__td"><a href="#" class="table__link"><img src="img/file-o.svg" alt=""></a></td>
-							</tr>
-							<tr class="table__tr">
-								<td class="table__td">Двухкомнатная квартира <br /> Мытищи, Фабричная, 15</td>
-								<td class="table__td">2</td>
-								<td class="table__td">8</td>
-								<td class="table__td">4</td>
-								<td class="table__td">232</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">12</td>
-								<td class="table__td"><span class="value">от</span> 60 000 <span class="value">руб.</span></td>
-								<td class="table__td">4 750 000 <span class="value"></span></td>
-								<td class="table__td"><a href="#" class="table__link"><img src="img/file-o.svg" alt=""></a></td>
-							</tr>
-							<tr class="table__tr">
-								<td class="table__td">Двухкомнатная квартира <br /> Мытищи, Фабричная, 15</td>
-								<td class="table__td">2</td>
-								<td class="table__td">8</td>
-								<td class="table__td">4</td>
-								<td class="table__td">232</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">12</td>
-								<td class="table__td"><span class="value">от</span> 60 000 <span class="value">руб.</span></td>
-								<td class="table__td">4 750 000 <span class="value"></span></td>
-								<td class="table__td"><a href="#" class="table__link"><img src="img/file-o.svg" alt=""></a></td>
-							</tr>
-							<tr class="table__tr">
-								<td class="table__td">Двухкомнатная квартира <br /> Мытищи, Фабричная, 15</td>
-								<td class="table__td">2</td>
-								<td class="table__td">8</td>
-								<td class="table__td">4</td>
-								<td class="table__td">232</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">12</td>
-								<td class="table__td"><span class="value">от</span> 60 000 <span class="value">руб.</span></td>
-								<td class="table__td">4 750 000 <span class="value"></span></td>
-								<td class="table__td"><a href="#" class="table__link"><img src="img/file-o.svg" alt=""></a></td>
-							</tr>
-							<tr class="table__tr">
-								<td class="table__td">Двухкомнатная квартира <br /> Мытищи, Фабричная, 15</td>
-								<td class="table__td">2</td>
-								<td class="table__td">8</td>
-								<td class="table__td">4</td>
-								<td class="table__td">232</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">12</td>
-								<td class="table__td"><span class="value">от</span> 60 000 <span class="value">руб.</span></td>
-								<td class="table__td">4 750 000 <span class="value"></span></td>
-								<td class="table__td"><a href="#" class="table__link"><img src="img/file-o.svg" alt=""></a></td>
-							</tr>
-							<tr class="table__tr">
-								<td class="table__td">Двухкомнатная квартира <br /> Мытищи, Фабричная, 15</td>
-								<td class="table__td">2</td>
-								<td class="table__td">8</td>
-								<td class="table__td">4</td>
-								<td class="table__td">232</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">87,2</td>
-								<td class="table__td">12</td>
-								<td class="table__td"><span class="value">от</span> 60 000 <span class="value">руб.</span></td>
-								<td class="table__td">4 750 000 <span class="value"></span></td>
-								<td class="table__td"><a href="#" class="table__link"><img src="img/file-o.svg" alt=""></a></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div data-tabnumber="2" class="price__item price__item--table animated slideInUp">222222</div>
-				<div data-tabnumber="3" class="price__item price__item--table animated slideInUp">333333</div>
-			</div>
-		</section>
-		<section class="wow fadeIn location">
-			<h2 class="h2">До москвы за 30 минут</h2>
-			<div class="location__item-box">
-				<div class="location__title">На автобусе</div>
-				<div class="location__item location__number">
-					1.
-				</div>
-				<div class="location__wrap">
-					<div class="location__to-bus location__name">
-						5 минут
-						<svg class="location__walk icon icon-directions-walk"><use xlink:href="#icon-directions-walk"></use></svg>
-					</div>
-					<div class="location__item">
-						<div class="location__img location__img--logo"><img src="img/logos_1.png" alt="" width="196" height="65"></div>
-						<div class="location__name">ЖК «Пироговский»</div>
-					</div>
-					<div class="location__item">
-						<div class="location__img"><div class="location__bus"><svg class="icon icon-directions-bus"><use xlink:href="#icon-directions-bus"></use></svg></div></div>
-						<div class="location__name">Автобусная остановка</div>
-					</div>
-					<div class="location__item">
-						<div class="location__from-bus location__name">25 минут</div>
-						<div class="location__img location__img--bus"><img src="img/bus.png" width="200" height="88" alt=""></div>
-						<div class="location__name">Автобус № 314</div>
-					</div>
-					<div class="location__item">
-						<div class="location__img location__img--metro"><img src="img/108724_original.png" width="120" height="120" alt=""></div>
-						<div class="location__name">м. Медведково</div>
-					</div>
-					<div class="location__item">
-						<div class="location__img"><svg class="location__destination icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg></div>
-						<div class="location__name">Москва</div>
-					</div>
-				</div>
-			</div>
-			<div class="location__item-box">
-				<div class="location__title">На электричке</div>
-				<div class="location__item location__number">
-					2.
-				</div>
-				<div class="location__wrap location__wrap--tram">
-					<div class="location__to-bus location__to-bus--tram location__name">5 минут
-					<svg class="location__walk location__walk--tram icon icon-directions-walk"><use xlink:href="#icon-directions-walk"></use></svg></div>
-					<div class="location__item">
-						<div class="location__img location__img--logo"><img src="img/logos_1.png" alt="" width="196" height="65"></div>
-						<div class="location__name">ЖК «Пироговский»</div>
-					</div>
-					<div class="location__item">
-						<div class="location__img"><div class="location__bus"><svg class="icon icon-directions-bus"><use xlink:href="#icon-directions-bus"></use></svg></div></div>
-						<div class="location__name">Автобусная остановка</div>
-					</div>
-					<div class="location__item">
-						<div class="location__from-bus location__name">10 минут</div>
-						<div class="location__img location__img--bus"><img src="img/bus.png" width="200" height="88" alt=""></div>
-						<div class="location__name">Автобус № 314</div>
-					</div>
-					<div class="location__item">
-						<div class="location__from-tram location__name">18 минут</div>
-						<div class="location__img"><div class="location__bus"><svg class="icon icon-tram"><use xlink:href="#icon-tram"></use></svg></div></div>
-						<div class="location__name">ж/д Мытищи<br />«СПУТНИК»</div>
-					</div>
-					<div class="location__item">
-						<div class="location__img location__img--metro"><img src="img/108724_original.png" width="120" height="120" alt=""></div>
-						<div class="location__name">м. Комсомольская</div>
-					</div>
-					<div class="location__item">
-						<div class="location__img"><svg class="location__destination icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg></div>
-						<div class="location__name">Москва</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="wow fadeIn edge">
-			<h2 class="h2">ОСНОВНЫЕ ПРЕИМУЩЕСТВА ЖК «ПИРОГОВСКИЙ»</h2>
-			<div class="edge__wrap">
-				<div class="edge__slider-wrap edge__content">
-					<div class="staticSlider owl-carousel edge__slider">
-						<div style="background-image: url(img/fonst_1.jpg);" class="slider__slide edge__slider-slide"><img src="img/fonst_1.jpg" alt=""></div>
-						<div style="background-image: url(img/fonst_2.jpg);" class="slider__slide edge__slider-slide"><img src="img/fonst_2.jpg" alt=""></div>
-						<div style="background-image: url(img/fonst_1.jpg);" class="slider__slide edge__slider-slide"><img src="img/fonst_1.jpg" alt=""></div>
-						<div style="background-image: url(img/fonst_2.jpg);" class="slider__slide edge__slider-slide"><img src="img/fonst_2.jpg" alt=""></div>
-						<div style="background-image: url(img/fonst_1.jpg);" class="slider__slide edge__slider-slide"><img src="img/fonst_1.jpg" alt=""></div>
-					</div>
-				</div>
-				<div class="edge__circle">
-					<a href="#" class="edge__button button bttn-fill"><svg class="button__icon icon icon-vpn-key"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vpn-key"></use></svg>Выбрать квартиру</a>
-				</div>
-				<div class="edge__desc">
-					<div class="edge__desc-item" data-tabclass="edge__content" data-tabnumber="1">ТРАНСПОРТНАЯ ДОСТУПНОСТЬ</div>
-					<div class="edge__desc-item" data-tabclass="edge__content" data-tabnumber="2">РАЗВИТАЯ ИНФРАСТРУКТУРА</div>
-					<div class="edge__desc-item" data-tabclass="edge__content" data-tabnumber="3">ЭКОЛОГИЯ И ПРИРОДА</div>
-					<div class="edge__desc-item" data-tabclass="edge__content" data-tabnumber="4">ПРОДУМАННОЕ ПРОСТРАНСТВО</div>
-					<div class="edge__desc-item" data-tabclass="edge__content" data-tabnumber="5">НАДЕЖНЫЙ ЗАСТРОЙЩИК</div>
-				</div>
-			</div>
-			<div class="edge__desc2 edge__content">
-				<div class="edge__tab-item animated slideInUp" data-tabnumber="1">
-					<div class="edge__desc2-number">1.</div>
-					<p class="text">Более 12 лет компания застройщик жилого комплекса Пироговский представляет свои объекты на рынке подмосковной недвижимости. Деловая репутация компании подтверждена успешной реализацией ряда проектов. Среди них новостройки в Мытищах от застройщика в ЖК «Пироговский», многоквартирные жилые объекты комплексной и точечной застройки в Королеве и Пирогово. Одним из самых успешных проектов завершенного строительства стал жилой комплекс Пироговский в Мытищах. Это всего в 12 км от МКАД. В составе ЖК 14 многоэтажных кирпично-панельных домов, образующих новый благоустроенный микрорайон с собственной инфраструктурой. 12 домов уже полностью заселены.</p>
-				</div>
-				<div class="edge__tab-item animated slideInUp" data-tabnumber="2">
-					<div class="edge__desc2-number">2.</div>
-					<p class="text">Более 12 лет компания застройщик жилого комплекса Пироговский представляет свои объекты на рынке подмосковной недвижимости. Деловая репутация компании подтверждена успешной реализацией ряда проектов. Среди них новостройки в Мытищах от застройщика в ЖК «Пироговский», многоквартирные жилые объекты комплексной и точечной застройки в Королеве и Пирогово. Одним из самых успешных проектов завершенного строительства стал жилой комплекс Пироговский в Мытищах. Это всего в 12 км от МКАД. В составе ЖК 14 многоэтажных кирпично-панельных домов, образующих новый благоустроенный микрорайон с собственной инфраструктурой. 12 домов уже полностью заселены.</p>
-				</div>
-				<div class="edge__tab-item animated slideInUp" data-tabnumber="3">
-					<div class="edge__desc2-number">3.</div>
-					<p class="text">Более 12 лет компания застройщик жилого комплекса Пироговский представляет свои объекты на рынке подмосковной недвижимости. Деловая репутация компании подтверждена успешной реализацией ряда проектов. Среди них новостройки в Мытищах от застройщика в ЖК «Пироговский», многоквартирные жилые объекты комплексной и точечной застройки в Королеве и Пирогово. Одним из самых успешных проектов завершенного строительства стал жилой комплекс Пироговский в Мытищах. Это всего в 12 км от МКАД. В составе ЖК 14 многоэтажных кирпично-панельных домов, образующих новый благоустроенный микрорайон с собственной инфраструктурой. 12 домов уже полностью заселены.</p>
-				</div>
-				<div class="edge__tab-item animated slideInUp" data-tabnumber="4">
-					<div class="edge__desc2-number">4.</div>
-					<p class="text">Более 12 лет компания застройщик жилого комплекса Пироговский представляет свои объекты на рынке подмосковной недвижимости. Деловая репутация компании подтверждена успешной реализацией ряда проектов. Среди них новостройки в Мытищах от застройщика в ЖК «Пироговский», многоквартирные жилые объекты комплексной и точечной застройки в Королеве и Пирогово. Одним из самых успешных проектов завершенного строительства стал жилой комплекс Пироговский в Мытищах. Это всего в 12 км от МКАД. В составе ЖК 14 многоэтажных кирпично-панельных домов, образующих новый благоустроенный микрорайон с собственной инфраструктурой. 12 домов уже полностью заселены.</p>
-				</div>
-				<div class="edge__tab-item animated slideInUp" data-tabnumber="5">
-					<div class="edge__desc2-number">5.</div>
-					<p class="text">Более 12 лет компания застройщик жилого комплекса Пироговский представляет свои объекты на рынке подмосковной недвижимости. Деловая репутация компании подтверждена успешной реализацией ряда проектов. Среди них новостройки в Мытищах от застройщика в ЖК «Пироговский», многоквартирные жилые объекты комплексной и точечной застройки в Королеве и Пирогово. Одним из самых успешных проектов завершенного строительства стал жилой комплекс Пироговский в Мытищах. Это всего в 12 км от МКАД. В составе ЖК 14 многоэтажных кирпично-панельных домов, образующих новый благоустроенный микрорайон с собственной инфраструктурой. 12 домов уже полностью заселены.</p>
-				</div>
-			</div>
-		</section>
-		<section class="wow fadeIn photo">
-			<h2 class="h2">ФОТОГРАФИИ ЖК «ПИРОГОВСКИЙ»</h2>
-			<div class="photo-slider photo__slider owl-carousel">
-				<div class="photo__slide slider__slide">
-					<img src="img/fonst_6.jpg" alt="">
-				</div>
-				<div class="photo__slide slider__slide">
-					<img src="img/fonst_7.jpg" alt="">
-				</div>
-				<div class="photo__slide slider__slide">
-					<img src="img/fonst_8.jpg" alt="">
-				</div>
-				<div class="photo__slide slider__slide">
-					<img src="img/fonst_9.jpg" alt="">
-				</div>
-			</div>
-		</section>
-		<section class="wow fadeIn map">
-			<script charset="utf-8" defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A363b53b21ba0afd7f90e0db98f5c8606679aaf6433bb1565b66a3f37061803d7&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
-			<div class="map__menu">
-				<svg class="map__open icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
-				<svg class="map__close icon icon-cancel-circle"><use xlink:href="#icon-cancel-circle"></use></svg>
-			</div>
-			<div class="map__desc animated">
-				<div class="map__title">Расположение</div>
-				<div class="map__title2">На машине</div>
-				<div class="map__text">2 км от МКАД по Осташковскому шоссе до д. Челобитьево, далее свернуть в сторону г.Мытищи на Волковское шоссе и проехать 6,5 км до круговой развязки на которой нужно повернуть на Пироговское шоссе (3-й съезд) и двигаться 5 км. до ЖК «Пироговский».</div>
-				<div class="map__title2">На автобусе</div>
-				<div class="map__text">От метро «Медведково» (общественный транспорт):<br />Автобусы № 314, 166 до ЖК «Пироговский», Маршрутное такси № 509, 166 до ЖК «Пироговский».</div>
-				<div class="map__title2">На электричке</div>
-				<div class="map__text">От ЖД станции «Мытищи» (общественный транспорт):<br />Автобусы № 22, 23, 26, 314 до ЖК «Пироговский»</div>
 			</div>
 		</section>
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__contact">
-			<a href="tel:+74957888265" class="page-footer__phone">+7 (495) 788-82-65</a>
-			<div class="page-footer__address-title">Адрес отдела продаж:</div>
-			<div class="page-footer__address-text">
-				<svg class="icon page-footer__address-icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>
-				Мытищи, Советская, 2
+		<div class="page-footer__top">
+			<div class="page-footer__title">Осетинские пироги:</div>
+			<div class="page-footer__menu">
+				<a href="#" class="page-footer__menu-link">мясные</a>
+				<a href="#" class="page-footer__menu-link">С капустой</a>
+				<a href="#" class="page-footer__menu-link">с курицей</a>
+				<a href="#" class="page-footer__menu-link">с сыром</a>
+				<a href="#" class="page-footer__menu-link">с рыбой</a>
+				<a href="#" class="page-footer__menu-link">сладкие</a>
+				<a href="#" class="page-footer__menu-link">постные</a>
 			</div>
-			<div class="page-footer__address-text">
-				<svg class="icon page-footer__address-icon icon-drafts"><use xlink:href="#icon-drafts"></use></svg>
-				info@7888265.ru
-			</div>
-			<a href="#" class="button bttn-fill"><svg class="button__icon icon icon-vpn-key"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vpn-key"></use></svg>Выбрать квартиру</a>
+			<a href="tel:+74951001510" class="page-footer__phone">+7 (495) 100-15-10</a>
 		</div>
-		<div class="page-footer__nav">
-			<ul class="page-footer__nav-ul">
-				<li class="page-footer__nav-title">Квартиры в продаже:</li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Однокомнатные квартиры</a></li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Двухкомнатные квартиры</a></li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Трехкомнатные квартиры</a></li>
-			</ul>
-			<ul class="page-footer__nav-ul">
-				<li class="page-footer__nav-title">Варианты покупки:</li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Ипотека</a></li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Военная ипотека</a></li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Материнский капитал</a></li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Субсидии</a></li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Сертификаты</a></li>
-			</ul>
-			<ul class="page-footer__nav-ul">
-				<li class="page-footer__nav-title">Информация:</li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">О компании</a></li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Фотографии</a></li>
-				<li class="page-footer__nav-li"><a href="#" class="page-footer__nav-link">Контакты</a></li>
-			</ul>
+		<div class="page-footer__content">
+			<a href="#" class="page-footer__logo"></a>
+			<div class="page-footer__links">
+				<ul class="page-footer__ul">
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С мясом</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С Сыром</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С картошкой</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С рыбой</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С капустой</a></li>
+				</ul>
+				<ul class="page-footer__ul">
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С мясом</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С Сыром</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С картошкой</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С рыбой</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С капустой</a></li>
+				</ul>
+				<ul class="page-footer__ul">
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С мясом</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С Сыром</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С картошкой</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С рыбой</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С капустой</a></li>
+				</ul>
+				<ul class="page-footer__ul">
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С мясом</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С Сыром</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С картошкой</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С рыбой</a></li>
+					<li class="page-footer__li"><a href="#" class="page-footer__link">С капустой</a></li>
+				</ul>
+		</div>
+		<div class="page-footer__info">
+			<div class="page-footer__info-pay">
+				Оплата:
+			</div>
+			<div class="page-footer__info-address">
+				Москва, Волгоградский пр-т, 45 К1
+			</div>
 		</div>
 		<div class="page-footer__bottom">
-			<div class="page-footer__address-title">Официальный сайт застройщика</div>
-			<div class="page-footer__copy">© 2018 ЖК «Пироговский»</div>
-			<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
+			<div class="page-footer__copy">© 2005 - 2018 Осетинские пироги  «Легенда Аланов»</div>
+			<div class="page-footer__metrika"></div>
 		</div>
 	</footer>
 	<script src="js/libs.min.js"></script>

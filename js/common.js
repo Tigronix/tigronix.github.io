@@ -17,7 +17,7 @@ var getSiblings = function(elem) {
 //templates
 new Vue({
 		el: '#global-svg',
-		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-access-time" viewBox="0 0 20 20"><title>access-time</title><path d="M9.992 1.667c-4.6 0-8.325 3.733-8.325 8.333s3.725 8.333 8.325 8.333c4.608 0 8.342-3.733 8.342-8.333s-3.733-8.333-8.342-8.333zM10 16.667c-3.683 0-6.667-2.983-6.667-6.667s2.983-6.667 6.667-6.667 6.667 2.983 6.667 6.667-2.983 6.667-6.667 6.667z"></path><path d="M10.417 5.833h-1.25v5l4.375 2.625 0.625-1.025-3.75-2.225z"></path></symbol><symbol id="icon-directions-car" viewBox="0 0 20 20"><title>directions-car</title><path d="M15.767 5.008c-0.167-0.492-0.633-0.842-1.183-0.842h-9.167c-0.55 0-1.008 0.35-1.183 0.842l-1.733 4.992v6.667c0 0.458 0.375 0.833 0.833 0.833h0.833c0.458 0 0.833-0.375 0.833-0.833v-0.833h10v0.833c0 0.458 0.375 0.833 0.833 0.833h0.833c0.458 0 0.833-0.375 0.833-0.833v-6.667l-1.733-4.992zM5.417 13.333c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM14.583 13.333c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM4.167 9.167l1.25-3.75h9.167l1.25 3.75h-11.667z"></path></symbol><symbol id="icon-email" viewBox="0 0 20 20"><title>email</title><path d="M16.667 3.333h-13.333c-0.917 0-1.658 0.75-1.658 1.667l-0.008 10c0 0.917 0.75 1.667 1.667 1.667h13.333c0.917 0 1.667-0.75 1.667-1.667v-10c0-0.917-0.75-1.667-1.667-1.667zM16.667 6.667l-6.667 4.167-6.667-4.167v-1.667l6.667 4.167 6.667-4.167v1.667z"></path></symbol><symbol id="icon-phone-on" viewBox="0 0 20 20"><title>phone-on</title><path d="M16.667 12.917c-1.042 0-2.042-0.167-2.975-0.475-0.292-0.092-0.617-0.025-0.85 0.2l-1.833 1.833c-2.358-1.2-4.292-3.125-5.492-5.492l1.833-1.842c0.233-0.217 0.3-0.542 0.208-0.833-0.308-0.933-0.475-1.933-0.475-2.975 0-0.458-0.375-0.833-0.833-0.833h-2.917c-0.458 0-0.833 0.375-0.833 0.833 0 7.825 6.342 14.167 14.167 14.167 0.458 0 0.833-0.375 0.833-0.833v-2.917c0-0.458-0.375-0.833-0.833-0.833zM15.833 10h1.667c0-4.142-3.358-7.5-7.5-7.5v1.667c3.225 0 5.833 2.608 5.833 5.833zM12.5 10h1.667c0-2.3-1.867-4.167-4.167-4.167v1.667c1.383 0 2.5 1.117 2.5 2.5z"></path></symbol><symbol id="icon-directions-walk" viewBox="0 0 20 20"><title>directions-walk</title><path d="M11.25 4.583c0.917 0 1.667-0.75 1.667-1.667s-0.75-1.667-1.667-1.667-1.667 0.75-1.667 1.667 0.75 1.667 1.667 1.667zM8.167 7.417l-2.333 11.75h1.75l1.5-6.667 1.75 1.667v5h1.667v-6.25l-1.75-1.667 0.5-2.5c1.083 1.25 2.75 2.083 4.583 2.083v-1.667c-1.583 0-2.917-0.833-3.583-2l-0.833-1.333c-0.333-0.5-0.833-0.833-1.417-0.833-0.25 0-0.417 0.083-0.667 0.083l-4.333 1.833v3.917h1.667v-2.833l1.5-0.583z"></path></symbol><symbol id="icon-mail-outline" viewBox="0 0 20 20"><title>mail-outline</title><path d="M16.667 3.333h-13.333c-0.917 0-1.658 0.75-1.658 1.667l-0.008 10c0 0.917 0.75 1.667 1.667 1.667h13.333c0.917 0 1.667-0.75 1.667-1.667v-10c0-0.917-0.75-1.667-1.667-1.667zM16.667 15h-13.333v-8.333l6.667 4.167 6.667-4.167v8.333zM10 9.167l-6.667-4.167h13.333l-6.667 4.167z"></path></symbol><symbol id="icon-directions-bus" viewBox="0 0 20 20"><title>directions-bus</title><path d="M3.333 13.333c0 0.733 0.325 1.392 0.833 1.85v1.483c0 0.458 0.375 0.833 0.833 0.833h0.833c0.458 0 0.833-0.375 0.833-0.833v-0.833h6.667v0.833c0 0.458 0.375 0.833 0.833 0.833h0.833c0.458 0 0.833-0.375 0.833-0.833v-1.483c0.508-0.458 0.833-1.117 0.833-1.85v-8.333c0-2.917-2.983-3.333-6.667-3.333s-6.667 0.417-6.667 3.333v8.333zM6.25 14.167c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM13.75 14.167c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM15 9.167h-10v-4.167h10v4.167z"></path></symbol><symbol id="icon-tram" viewBox="0 0 20 20"><title>tram</title><path d="M15.833 14.117v-7.033c0-2.325-2.175-2.833-5.008-2.908l0.633-1.258h2.708v-1.25h-8.333v1.25h3.958l-0.633 1.267c-2.608 0.075-4.992 0.592-4.992 2.9v7.033c0 1.208 0.992 2.217 2.158 2.475l-1.325 1.325v0.417h1.858l1.667-1.667h3.142l1.667 1.667h1.667v-0.417l-1.25-1.25h-0.067c1.408 0 2.15-1.142 2.15-2.55zM10 15.417c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM14.167 11.667h-8.333v-4.167h8.333v4.167z"></path></symbol><symbol id="icon-aspect-ratio" viewBox="0 0 20 20"><title>aspect-ratio</title><path d="M15.833 10h-1.667v2.5h-2.5v1.667h4.167v-4.167zM5.833 7.5h2.5v-1.667h-4.167v4.167h1.667v-2.5zM17.5 2.5h-15c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h15c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM17.5 15.842h-15v-11.683h15v11.683z"></path></symbol><symbol id="icon-filter-frames" viewBox="0 0 20 20"><title>filter-frames</title><path d="M16.667 3.333h-3.333l-3.333-3.333-3.333 3.333h-3.333c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h13.333c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM16.667 16.667h-13.333v-11.667h3.767l2.933-2.917 2.9 2.917h3.733v11.667zM15 6.667h-10v8.333h10z"></path></symbol><symbol id="icon-restaurant-menu" viewBox="0 0 20 20"><title>restaurant-menu</title><path d="M6.75 11.117l2.358-2.358-5.85-5.842c-1.3 1.3-1.3 3.408 0 4.717l3.492 3.483zM12.4 9.608c1.275 0.592 3.067 0.175 4.392-1.15 1.592-1.592 1.9-3.875 0.675-5.1-1.217-1.217-3.5-0.917-5.1 0.675-1.325 1.325-1.742 3.117-1.15 4.392l-8.133 8.133 1.175 1.175 5.742-5.725 5.733 5.733 1.175-1.175-5.733-5.733 1.225-1.225z"></path></symbol><symbol id="icon-ruble-sign" viewBox="0 0 15 20"><title>ruble-sign</title><path d="M9.35 12.5c3.325 0 5.65-2.323 5.65-5.661s-2.325-5.589-5.65-5.589h-6.381c-0.259 0-0.469 0.21-0.469 0.469v8.072h-2.031c-0.259 0-0.469 0.21-0.469 0.469v1.772c0 0.259 0.21 0.469 0.469 0.469h2.031v1.25h-2.031c-0.259 0-0.469 0.21-0.469 0.469v1.563c0 0.259 0.21 0.469 0.469 0.469h2.031v2.031c0 0.259 0.21 0.469 0.469 0.469h2.287c0.259 0 0.469-0.21 0.469-0.469v-2.031h6.306c0.259 0 0.469-0.21 0.469-0.469v-1.563c0-0.259-0.21-0.469-0.469-0.469h-6.306v-1.25h3.625zM5.725 3.935h3.075c1.825 0 2.925 1.137 2.925 2.903 0 1.79-1.1 2.952-2.975 2.952h-3.025v-5.855z"></path></symbol><symbol id="icon-wallpaper" viewBox="0 0 20 20"><title>wallpaper</title><path d="M3.333 3.333h5.833v-1.667h-5.833c-0.917 0-1.667 0.75-1.667 1.667v5.833h1.667v-5.833zM8.333 10.833l-3.333 4.167h10l-2.5-3.333-1.692 2.258-2.475-3.092zM14.167 7.083c0-0.692-0.558-1.25-1.25-1.25s-1.25 0.558-1.25 1.25 0.558 1.25 1.25 1.25 1.25-0.558 1.25-1.25zM16.667 1.667h-5.833v1.667h5.833v5.833h1.667v-5.833c0-0.917-0.75-1.667-1.667-1.667zM16.667 16.667h-5.833v1.667h5.833c0.917 0 1.667-0.75 1.667-1.667v-5.833h-1.667v5.833zM3.333 10.833h-1.667v5.833c0 0.917 0.75 1.667 1.667 1.667h5.833v-1.667h-5.833v-5.833z"></path></symbol><symbol id="icon-wc" viewBox="0 0 20 20"><title>wc</title><path d="M4.583 18.333v-6.25h-1.25v-4.583c0-0.917 0.75-1.667 1.667-1.667h2.5c0.917 0 1.667 0.75 1.667 1.667v4.583h-1.25v6.25h-3.333zM15 18.333v-5h2.5l-2.117-6.358c-0.233-0.683-0.867-1.142-1.583-1.142h-0.1c-0.717 0-1.358 0.458-1.583 1.142l-2.117 6.358h2.5v5h2.5zM6.25 5c0.925 0 1.667-0.742 1.667-1.667s-0.742-1.667-1.667-1.667-1.667 0.742-1.667 1.667 0.742 1.667 1.667 1.667zM13.75 5c0.925 0 1.667-0.742 1.667-1.667s-0.742-1.667-1.667-1.667-1.667 0.742-1.667 1.667 0.742 1.667 1.667 1.667z"></path></symbol><symbol id="icon-lock" viewBox="0 0 20 20"><title>lock</title><path d="M15 6.667h-0.833v-1.667c0-2.3-1.867-4.167-4.167-4.167s-4.167 1.867-4.167 4.167v1.667h-0.833c-0.917 0-1.667 0.75-1.667 1.667v8.333c0 0.917 0.75 1.667 1.667 1.667h10c0.917 0 1.667-0.75 1.667-1.667v-8.333c0-0.917-0.75-1.667-1.667-1.667zM10 14.167c-0.917 0-1.667-0.75-1.667-1.667s0.75-1.667 1.667-1.667 1.667 0.75 1.667 1.667-0.75 1.667-1.667 1.667zM12.583 6.667h-5.167v-1.667c0-1.425 1.158-2.583 2.583-2.583s2.583 1.158 2.583 2.583v1.667z"></path></symbol><symbol id="icon-print" viewBox="0 0 20 20"><title>print</title><path d="M15.833 6.667h-11.667c-1.383 0-2.5 1.117-2.5 2.5v5h3.333v3.333h10v-3.333h3.333v-5c0-1.383-1.117-2.5-2.5-2.5zM13.333 15.833h-6.667v-4.167h6.667v4.167zM15.833 10c-0.458 0-0.833-0.375-0.833-0.833s0.375-0.833 0.833-0.833 0.833 0.375 0.833 0.833-0.375 0.833-0.833 0.833zM15 2.5h-10v3.333h10v-3.333z"></path></symbol><symbol id="icon-drafts" viewBox="0 0 20 20"><title>drafts</title><path d="M18.325 6.667c0-0.6-0.308-1.125-0.783-1.417l-7.542-4.417-7.542 4.417c-0.475 0.292-0.792 0.817-0.792 1.417v8.333c0 0.917 0.75 1.667 1.667 1.667h13.333c0.917 0 1.667-0.75 1.667-1.667l-0.008-8.333zM10 10.833l-6.883-4.3 6.883-4.033 6.883 4.033-6.883 4.3z"></path></symbol><symbol id="icon-keyboard-arrow-left" viewBox="0 0 20 20"><title>keyboard-arrow-left</title><path d="M12.842 13.408l-3.817-3.825 3.817-3.825-1.175-1.175-5 5 5 5z"></path></symbol><symbol id="icon-keyboard-arrow-right" viewBox="0 0 20 20"><title>keyboard-arrow-right</title><path d="M7.158 13.617l3.817-3.825-3.817-3.825 1.175-1.175 5 5-5 5z"></path></symbol><symbol id="icon-location-on" viewBox="0 0 20 20"><title>location-on</title><path d="M10 1.667c-3.225 0-5.833 2.608-5.833 5.833 0 4.375 5.833 10.833 5.833 10.833s5.833-6.458 5.833-10.833c0-3.225-2.608-5.833-5.833-5.833zM10 9.583c-1.15 0-2.083-0.933-2.083-2.083s0.933-2.083 2.083-2.083 2.083 0.933 2.083 2.083-0.933 2.083-2.083 2.083z"></path></symbol><symbol id="icon-phone" viewBox="0 0 20 20"><title>phone</title><path d="M5.517 8.992c1.2 2.358 3.133 4.283 5.492 5.492l1.833-1.833c0.225-0.225 0.558-0.3 0.85-0.2 0.933 0.308 1.942 0.475 2.975 0.475 0.458 0 0.833 0.375 0.833 0.833v2.908c0 0.458-0.375 0.833-0.833 0.833-7.825 0-14.167-6.342-14.167-14.167 0-0.458 0.375-0.833 0.833-0.833h2.917c0.458 0 0.833 0.375 0.833 0.833 0 1.042 0.167 2.042 0.475 2.975 0.092 0.292 0.025 0.617-0.208 0.85l-1.833 1.833z"></path></symbol><symbol id="icon-place" viewBox="0 0 20 20"><title>place</title><path d="M10 1.667c-3.225 0-5.833 2.608-5.833 5.833 0 4.375 5.833 10.833 5.833 10.833s5.833-6.458 5.833-10.833c0-3.225-2.608-5.833-5.833-5.833zM10 9.583c-1.15 0-2.083-0.933-2.083-2.083s0.933-2.083 2.083-2.083 2.083 0.933 2.083 2.083-0.933 2.083-2.083 2.083z"></path></symbol><symbol id="icon-portrait" viewBox="0 0 20 20"><title>portrait</title><path d="M10 10.208c1.033 0 1.875-0.842 1.875-1.875s-0.842-1.875-1.875-1.875-1.875 0.842-1.875 1.875 0.842 1.875 1.875 1.875zM13.75 13.542c0-1.25-2.5-1.875-3.75-1.875s-3.75 0.625-3.75 1.875v0.625h7.5v-0.625zM15.833 2.5h-11.667c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h11.667c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM15.833 15.833h-11.667v-11.667h11.667v11.667z"></path></symbol><symbol id="icon-vpn-key" viewBox="0 0 20 20"><title>vpn-key</title><path d="M10.542 8.333c-0.683-1.942-2.533-3.333-4.708-3.333-2.758 0-5 2.242-5 5s2.242 5 5 5c2.175 0 4.025-1.392 4.708-3.333h3.625v3.333h3.333v-3.333h1.667v-3.333h-8.625zM5.833 11.667c-0.917 0-1.667-0.75-1.667-1.667s0.75-1.667 1.667-1.667 1.667 0.75 1.667 1.667-0.75 1.667-1.667 1.667z"></path></symbol><symbol id="icon-menu" viewBox="0 0 32 32"><title>menu</title><path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path></symbol><symbol id="icon-cancel-circle" viewBox="0 0 32 32"><title>cancel-circle</title><path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path><path d="M21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"></path></symbol></defs></svg>'
+		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-arrow-drop-down" viewBox="0 0 32 32"><title>arrow-drop-down</title><path d="M9.333 13.333l6.667 6.667 6.667-6.667z"></path></symbol><symbol id="icon-add-shopping-cart" viewBox="0 0 32 32"><title>add-shopping-cart</title><path d="M14.667 12h2.667v-4h4v-2.667h-4v-4h-2.667v4h-4v2.667h4v4zM9.333 24c-1.467 0-2.653 1.2-2.653 2.667s1.187 2.667 2.653 2.667 2.667-1.2 2.667-2.667-1.2-2.667-2.667-2.667zM22.667 24c-1.467 0-2.653 1.2-2.653 2.667s1.187 2.667 2.653 2.667 2.667-1.2 2.667-2.667-1.2-2.667-2.667-2.667zM9.56 19.667l0.040-0.16 1.2-2.173h9.933c1 0 1.88-0.547 2.333-1.373l5.147-9.347-2.32-1.28h-0.013l-1.467 2.667-3.68 6.667h-9.36l-0.173-0.36-2.987-6.307-1.267-2.667-1.253-2.667h-4.36v2.667h2.667l4.8 10.12-1.8 3.267c-0.213 0.373-0.333 0.813-0.333 1.28 0 1.467 1.2 2.667 2.667 2.667h16v-2.667h-15.44c-0.173 0-0.333-0.147-0.333-0.333z"></path></symbol><symbol id="icon-arrow-back" viewBox="0 0 32 32"><title>arrow-back</title><path d="M26.667 14.667h-16.227l7.453-7.453-1.893-1.88-10.667 10.667 10.667 10.667 1.88-1.88-7.44-7.453h16.227v-2.667z"></path></symbol><symbol id="icon-arrow-drop-up" viewBox="0 0 32 32"><title>arrow-drop-up</title><path d="M9.333 18.667l6.667-6.667 6.667 6.667z"></path></symbol><symbol id="icon-arrow-forward" viewBox="0 0 32 32"><title>arrow-forward</title><path d="M16 5.333l-1.88 1.88 7.44 7.453h-16.227v2.667h16.227l-7.44 7.453 1.88 1.88 10.667-10.667z"></path></symbol><symbol id="icon-check-box" viewBox="0 0 32 32"><title>check-box</title><path d="M25.333 4h-18.667c-1.48 0-2.667 1.2-2.667 2.667v18.667c0 1.467 1.187 2.667 2.667 2.667h18.667c1.48 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.187-2.667-2.667-2.667zM13.333 22.667l-6.667-6.667 1.88-1.88 4.787 4.773 10.12-10.12 1.88 1.893-12 12z"></path></symbol><symbol id="icon-contacts" viewBox="0 0 32 32"><title>contacts</title><path d="M26.667 0h-21.333v2.667h21.333v-2.667zM5.333 32h21.333v-2.667h-21.333v2.667zM26.667 5.333h-21.333c-1.467 0-2.667 1.2-2.667 2.667v16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667zM16 9c1.653 0 3 1.347 3 3s-1.347 3-3 3-3-1.347-3-3 1.347-3 3-3zM22.667 22.667h-13.333v-2c0-2.227 4.44-3.333 6.667-3.333s6.667 1.107 6.667 3.333v2z"></path></symbol><symbol id="icon-credit-card" viewBox="0 0 32 32"><title>credit-card</title><path d="M26.667 5.333h-21.333c-1.48 0-2.653 1.187-2.653 2.667l-0.013 16c0 1.48 1.187 2.667 2.667 2.667h21.333c1.48 0 2.667-1.187 2.667-2.667v-16c0-1.48-1.187-2.667-2.667-2.667zM26.667 24h-21.333v-8h21.333v8zM26.667 10.667h-21.333v-2.667h21.333v2.667z"></path></symbol><symbol id="icon-done" viewBox="0 0 32 32"><title>done</title><path d="M12 21.6l-5.6-5.6-1.867 1.867 7.467 7.467 16-16-1.867-1.867-14.133 14.133z"></path></symbol><symbol id="icon-grade" viewBox="0 0 32 32"><title>grade</title><path d="M16 23.027l8.24 4.973-2.187-9.373 7.28-6.307-9.587-0.813-3.747-8.84-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373z"></path></symbol><symbol id="icon-keyboard-arrow-down" viewBox="0 0 32 32"><title>keyboard-arrow-down</title><path d="M9.88 10.453l6.12 6.107 6.12-6.107 1.88 1.88-8 8-8-8z"></path></symbol><symbol id="icon-moon" viewBox="0 0 32 32"><title>moon</title><path d="M17.446 32c4.922 0 9.436-2.238 12.428-5.923 1.767-2.177-0.16-5.358-2.891-4.838-5.147 0.98-9.892-2.954-9.892-8.175 0-3.027 1.629-5.768 4.215-7.24 2.422-1.378 1.812-5.049-0.939-5.557-0.878-0.17-1.888-0.267-2.921-0.267h-0c-8.835 0-16 7.161-16 16 0 8.835 7.161 16 16 16zM17.446 3c0.812 0 1.606 0.075 2.376 0.217-3.422 1.948-5.731 5.628-5.731 9.847 0 7.115 6.478 12.45 13.453 11.121-2.384 2.937-6.021 4.814-10.098 4.814-7.18 0-13-5.82-13-13s5.82-13 13-13z"></path></symbol><symbol id="icon-motorcycle" viewBox="0 0 32 32"><title>motorcycle</title><path d="M25.92 12.040l-5.373-5.373h-5.88v2.667h4.787l2.667 2.667h-15.453c-3.733 0-6.667 2.933-6.667 6.667s2.933 6.667 6.667 6.667c3.28 0 5.933-2.253 6.533-5.333h2.2l3.693-3.693c-0.28 0.72-0.427 1.52-0.427 2.36 0 3.733 2.933 6.667 6.667 6.667s6.667-2.933 6.667-6.667c0-3.533-2.627-6.36-6.080-6.627zM10.427 20c-0.56 1.533-2.053 2.667-3.76 2.667-2.173 0-4-1.827-4-4s1.827-4 4-4c1.707 0 3.2 1.133 3.76 2.667h-3.76v2.667h3.76zM25.333 22.667c-2.213 0-4-1.787-4-4s1.787-4 4-4 4 1.787 4 4-1.787 4-4 4z"></path></symbol><symbol id="icon-percent" viewBox="0 0 28 32"><title>percent</title><path d="M7 14c3.869 0 7-3.131 7-7s-3.131-7-7-7-7 3.131-7 7 3.131 7 7 7zM7 4c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zM21 18c-3.869 0-7 3.131-7 7s3.131 7 7 7 7-3.131 7-7-3.131-7-7-7zM21 28c-1.656 0-3-1.344-3-3s1.344-3 3-3 3 1.344 3 3-1.344 3-3 3zM24.519 0.013l1.975-0.006c1.212-0.006 1.931 1.363 1.231 2.362l-22.887 28.981c-0.274 0.387-0.72 0.637-1.225 0.637h-0l-2.087 0.006c-1.219 0-1.931-1.369-1.231-2.363l23-28.981c0.281-0.4 0.738-0.637 1.225-0.637z"></path></symbol><symbol id="icon-phone-forwarded" viewBox="0 0 32 32"><title>phone-forwarded</title><path d="M24 14.667l6.667-6.667-6.667-6.667v4h-5.333v5.333h5.333v4zM26.667 20.667c-1.667 0-3.267-0.267-4.76-0.76-0.467-0.147-0.987-0.040-1.36 0.32l-2.933 2.933c-3.773-1.92-6.867-5-8.787-8.787l2.933-2.947c0.373-0.347 0.48-0.867 0.333-1.333-0.493-1.493-0.76-3.093-0.76-4.76 0-0.733-0.6-1.333-1.333-1.333h-4.667c-0.733 0-1.333 0.6-1.333 1.333 0 12.52 10.147 22.667 22.667 22.667 0.733 0 1.333-0.6 1.333-1.333v-4.667c0-0.733-0.6-1.333-1.333-1.333z"></path></symbol><symbol id="icon-query-builder" viewBox="0 0 32 32"><title>query-builder</title><path d="M15.987 2.667c-7.36 0-13.32 5.973-13.32 13.333s5.96 13.333 13.32 13.333c7.373 0 13.347-5.973 13.347-13.333s-5.973-13.333-13.347-13.333zM16 26.667c-5.893 0-10.667-4.773-10.667-10.667s4.773-10.667 10.667-10.667 10.667 4.773 10.667 10.667-4.773 10.667-10.667 10.667z"></path><path d="M16.667 9.333h-2v8l7 4.2 1-1.64-6-3.56z"></path></symbol><symbol id="icon-room" viewBox="0 0 32 32"><title>room</title><path d="M16 2.667c-5.16 0-9.333 4.173-9.333 9.333 0 7 9.333 17.333 9.333 17.333s9.333-10.333 9.333-17.333c0-5.16-4.173-9.333-9.333-9.333zM16 15.333c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333-1.493 3.333-3.333 3.333z"></path></symbol><symbol id="icon-ruble-sign" viewBox="0 0 24 32"><title>ruble-sign</title><path d="M14.96 20c5.32 0 9.040-3.716 9.040-9.058s-3.72-8.942-9.040-8.942h-10.21c-0.414 0-0.75 0.336-0.75 0.75v12.915h-3.25c-0.414 0-0.75 0.336-0.75 0.75v2.835c0 0.414 0.336 0.75 0.75 0.75h3.25v2h-3.25c-0.414 0-0.75 0.336-0.75 0.75v2.5c0 0.414 0.336 0.75 0.75 0.75h3.25v3.25c0 0.414 0.336 0.75 0.75 0.75h3.66c0.414 0 0.75-0.336 0.75-0.75v-3.25h10.090c0.414 0 0.75-0.336 0.75-0.75v-2.5c0-0.414-0.336-0.75-0.75-0.75h-10.090v-2h5.8zM9.16 6.297h4.92c2.92 0 4.68 1.819 4.68 4.645 0 2.864-1.76 4.723-4.76 4.723h-4.84v-9.368z"></path></symbol><symbol id="icon-settings-phone" viewBox="0 0 32 32"><title>settings-phone</title><path d="M17.333 12h-2.667v2.667h2.667v-2.667zM22.667 12h-2.667v2.667h2.667v-2.667zM26.667 20.667c-1.667 0-3.267-0.267-4.76-0.76-0.467-0.147-0.987-0.040-1.36 0.32l-2.933 2.933c-3.773-1.92-6.867-5-8.787-8.773l2.933-2.947c0.373-0.36 0.48-0.88 0.333-1.347-0.493-1.493-0.76-3.093-0.76-4.76 0-0.733-0.6-1.333-1.333-1.333h-4.667c-0.733 0-1.333 0.6-1.333 1.333 0 12.52 10.147 22.667 22.667 22.667 0.733 0 1.333-0.6 1.333-1.333v-4.667c0-0.733-0.6-1.333-1.333-1.333zM25.333 12v2.667h2.667v-2.667h-2.667z"></path></symbol><symbol id="icon-shopping-basket" viewBox="0 0 32 32"><title>shopping-basket</title><path d="M22.947 12l-5.84-8.747c-0.253-0.373-0.68-0.56-1.107-0.56s-0.853 0.187-1.107 0.573l-5.84 8.733h-6.387c-0.733 0-1.333 0.6-1.333 1.333 0 0.12 0.013 0.24 0.053 0.36l3.387 12.36c0.307 1.12 1.333 1.947 2.56 1.947h17.333c1.227 0 2.253-0.827 2.573-1.947l3.387-12.36 0.040-0.36c0-0.733-0.6-1.333-1.333-1.333h-6.387zM12 12l4-5.867 4 5.867h-8zM16 22.667c-1.467 0-2.667-1.2-2.667-2.667s1.2-2.667 2.667-2.667 2.667 1.2 2.667 2.667-1.2 2.667-2.667 2.667z"></path></symbol><symbol id="icon-star-half" viewBox="0 0 32 32"><title>star-half</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533v-12.4l2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol><symbol id="icon-star" viewBox="0 0 32 32"><title>star</title><path d="M16 23.027l8.24 4.973-2.187-9.373 7.28-6.307-9.587-0.813-3.747-8.84-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373z"></path></symbol></defs></svg>'
 	})
 
 //active
@@ -48,7 +48,6 @@ function changeClassOnScroll(){
     var top = $(this).scrollTop();
     if (top > 50) {
       elem.addClass('menuButton--position');
-			elem.removeClass('btnMenuOut');
     } else {
       elem.removeClass('menuButton--position');
     }
@@ -66,36 +65,6 @@ function tabs() {
 			}
 		});
 		$('.' + content + ' > [data-tabnumber="' + number + '"]').show().addClass('active flex animated').removeClass('hide').css('display', 'flex').siblings().hide().removeClass('active flex animated showFlex');
-	});
-};
-
-
-//sliderTabs
-function sliderTabs() {
-	var slider = document.querySelector('.edge__wrap');
-	var prev = slider.querySelector('.owl-prev');
-	var next = slider.querySelector('.owl-next');
-	var dotItems = slider.querySelectorAll('.edge__desc-item');
-	dotItems.forEach(function(item, index, array){
-		if(item.classList.contains('active')){
-			var dataNumber = item.dataset.tabnumber;
-			var dataClass = item.dataset.tabclass;
-			var tabItem = document.querySelectorAll('.' + dataClass + ' .edge__tab-item');
-
-			tabItem.forEach(function(item, index, array){
-				if(item.dataset.tabnumber == dataNumber){
-					var siblings = getSiblings(item);
-
-					item.classList.add('active', 'showFlex', 'animated');
-					item.classList.remove('hide');
-
-					siblings.forEach(function(item, index, array){
-						item.classList.add('hide');
-						item.classList.remove('active', 'showFlex', 'animated');
-					});
-				}
-			});
-		}
 	});
 };
 
@@ -132,163 +101,28 @@ function animateHide(button, content, animationIn, animationOut, hideTiming) {
 	});
 }
 
-//accordion
-function accordion() {
-	$( ".accordion" ).accordion();
-}
-
-//owl bug fixes
-function owlVerticalAlign(slider){
-	$(window).on('load || resize', function(){
-		var height = $(slider + ' .owl-dots').innerHeight();
-		var elem = document.querySelector(slider + ' .owl-nav');
-		elem.style.marginTop = -height + 'px';
-	});
-}
-
-//Смена табов слайдера при клике
-function sliderArrowHandler() {
-	var prev = document.querySelector('.edge__slider .owl-prev');
-	var next = document.querySelector('.edge__slider .owl-next');
-
-	prev.addEventListener('click', sliderTabs);
-	next.addEventListener('click', sliderTabs);
-}
-
 //owl-slider
-function slider(animationIn, animationOut, elem) {
-	elem = elem || '.slider';
+function carousel(animationIn, animationOut, elem) {
+	elem = elem || '.carousel';
 	animationIn = animationIn || 'fadeIn';
 	animationOut = animationOut || 'fadeOut';
 	$(elem).owlCarousel({
 		loop: true,
 		nav: true,
-		items: 1,
+		items: 4,
 		dots: false,
-		animateIn: animationIn,
-		animateOut: animationOut,
-		autoplay: true,
-		autoplayTimeout: 5000,
-		responsive: {
-		 0: {
-			 arrows: false
-		 },
-		 1280: {
-			 arrows: true
-		 }
-		}
-	});
-}
-function staticSlider(animationIn, animationOut, elem) {
-	elem = elem || '.staticSlider';
-	animationIn = animationIn || 'fadeIn';
-	animationOut = animationOut || 'fadeOut';
-
-	$(elem).owlCarousel({
-		loop: true,
-		nav: true,
-		dots: true,
-		dotsContainer: '.edge__desc',
-		dotClass: 'edge__desc-item',
-		onDragged: onDrag,
-		dotData: true,
-		items: 1,
-		animateIn: animationIn,
-		animateOut: animationOut,
-		navText: ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg>'],
-	});
-
-	var dotElem = document.querySelector('.edge__desc-item:last-child');
-	dotElem.innerHTML = 'НАДЕЖНЫЙ ЗАСТРОЙЩИК';
-	$(elem).on('changed.owl.carousel', function(event) {
-		var dotElem = document.querySelector('.edge__desc-item:nth-child(4)');
-		var dotDomElems = document.querySelector('.edge__desc-item:last-child');
-		dotDomElems.innerHTML = 'НАДЕЖНЫЙ ЗАСТРОЙЩИК';
-		dotElem.innerHTML = 'ПРОДУМАННОЕ ПРОСТРАНСТВО';
-	})
-
-	function onDrag() {
-		sliderTabs();
-	}
-
-	sliderArrowHandler();
-}
-function roomSlider(animationIn, animationOut, elem) {
-	elem = elem || '.roomSlider';
-	animationIn = animationIn || 'fadeIn';
-	animationOut = animationOut || 'fadeOut';
-	$(elem).owlCarousel({
-		loop: true,
-		nav: true,
-		dots: true,
-		dotData: true,
-		items: 1,
-		animateIn: animationIn,
-		animateOut: animationOut,
-		navText: ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg>'],
 		responsive: {
 			0: {
-				dots: false
+				items: 1
 			},
 			768: {
-				dots: true
+				items: 3
 			}
 		}
 	});
 }
-function photoSlider(animationIn, animationOut, elem) {
-	elem = elem || '.photoSlider';
-	animationIn = animationIn || 'fadeIn';
-	animationOut = animationOut || 'fadeOut';
-	$(elem).owlCarousel({
-		loop: true,
-		nav: true,
-		items: 1,
-		animateIn: animationIn,
-		animateOut: animationOut,
-		autoplay: true,
-		autoplayTimeout: 5000,
-		autoplayHoverPause: true,
-		navText: ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg>'],
-		responsive: {
-				0: {
-					dots: false
-				},
-				768: {
-					dots: true
-				}
-		}
-	});
-}
 
-function slickSlider() {
-	//slick slider
-	$('.product__slider').slick({
-		 slidesToShow: 1,
-		 slidesToScroll: 1,
-		 arrows: true,
-		 fade: true,
-		 adaptiveHeight: true,
-		 asNavFor: '.product__nav',
-		});
-		$('.product__nav').slick({
-		 slidesToShow: 6,
-		 slidesToScroll: 1,
-		 asNavFor: '.product__slider',
-		 dots: false,
-		 arrows: false,
-		 focusOnSelect: true,
-		 responsive: [
-	    {
-	      breakpoint: 551,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 1,
-	      }
-	    },
-	  ]
-		});
-}
+
 
 window.onload = function() {
 	//scollEvents
@@ -296,29 +130,17 @@ window.onload = function() {
 	changeClassOnScroll();
 
 	//other
-	accordion();
-	tabs();
 	bodyOverflow('.hamburger');
-	bodyOverflow('.map__menu');
 
 	//active toggle
 	active('.hamburger');
-	active('.slider-main__btn-menu');
-	active('.map__menu')
 
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
-	animate('.slider-main__btn-menu', '.menu', 'slideInRight', 'slideOutRight');
-	animate('.slider-main__btn-menu', '.slider-main__btn-menu', 'btnMenuIn', 'btnMenuOut');
 	//Animation+hide
-	animateHide('.map__menu', '.map__desc', 'slideInDown', 'slideOutDown');
+	animateHide('.hamburger', '.menu', 'slideInDown', 'slideOutUp');
 
 	//slider
-	slider('zoomIn', 'fadeOut');
-	roomSlider('slideInDown', 'slideOutDown');
-	photoSlider('fadeIn', 'fadeOut', '.photo-slider');
-	slider('zoomIn', 'fadeOut', '.contacts__slider');
-	slickSlider();
-	staticSlider('slideInDown', 'slideOutDown');
+	carousel();
 };
