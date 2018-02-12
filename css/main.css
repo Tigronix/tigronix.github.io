@@ -6460,6 +6460,7 @@ display: flex;
   align-items: center;
   height: 0;
   padding: 0 1vw;
+  padding-right: 6%;
 }
 .slider-main__wrap .owl-nav > div {
   width: 37px;
@@ -6477,7 +6478,6 @@ display: flex;
 }
 .slider-main__wrap div.owl-next {
   background-image: url(../img/arr-right.png)!important;
-  transform: translateY(-50px);
 }
 
 .slider-main__wrap .owl-item {
