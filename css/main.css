@@ -8196,6 +8196,16 @@ p, .text {
   .product__info-icon {
     font-size: 37px;
   }
+  .product__info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+  }
+  .product__left {
+    padding-top: 70px;
+    position: relative;
+  }
 }
 
 @media (max-width: 450px) {
