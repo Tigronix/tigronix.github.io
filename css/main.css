@@ -6450,7 +6450,7 @@ display: flex;
 .slider-main__wrap .owl-nav {
   left: 0;
   position: absolute;
-  top: 60%;
+  top: 30%;
   transform: translateY(-50%);
   margin: 0;
   right: 0;
@@ -6477,6 +6477,7 @@ display: flex;
 }
 .slider-main__wrap div.owl-next {
   background-image: url(../img/arr-right.png)!important;
+  transform: translateY(-50px);
 }
 
 .slider-main__wrap .owl-item {
@@ -6610,6 +6611,10 @@ display: flex;
   top: 430px;
 }
 @media (max-width: 1440px) {
+  .slider-main__wrap .owl-nav > div {
+    background-repeat: no-repeat!important;
+    background-size: 25px auto!important;
+  }
   .slider-main__btn-menu {
     top: 283px;
   }
