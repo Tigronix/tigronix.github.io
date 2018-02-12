@@ -8196,6 +8196,7 @@ p, .text {
   }
   .product__info-text {
     font-size: 10px;
+    margin-top: 4px;
   }
   .product__info-icon {
     font-size: 37px;
