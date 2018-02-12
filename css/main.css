@@ -8186,6 +8186,15 @@ p, .text {
   }
   .product__info-item {
     margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+  .product__info-text {
+    font-size: 11px;
+  }
+  .product__info-icon {
+    font-size: 37px;
   }
 }
 
