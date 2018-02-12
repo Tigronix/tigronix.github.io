@@ -5429,10 +5429,21 @@ p, .text {
 }
 
 @media (max-width: 768px) {
+  .layout__wrap {
+    display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+        flex-direction: column;
+  }
   .layout__form {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
+    order: 1;
+    margin-top: 20px;
   }
   .layout__slider {
     width: 100%;
@@ -6991,7 +7002,7 @@ p, .text {
 
 @media (max-width: 1024px) {
   .layout-slider__slide img {
-    max-width: 80%;
+    max-width: 100%;
   }
   .layout-slider .owl-nav > div .icon {
     font-size: 65px;

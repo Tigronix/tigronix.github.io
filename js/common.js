@@ -218,6 +218,14 @@ function roomSlider(animationIn, animationOut, elem) {
 		animateIn: animationIn,
 		animateOut: animationOut,
 		navText: ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg>'],
+		responsive: {
+			0: {
+				dots: false
+			},
+			768: {
+				dots: true
+			}
+		}
 	});
 }
 function photoSlider(animationIn, animationOut, elem) {
