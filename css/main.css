@@ -6588,7 +6588,7 @@ button {
 
 .backet__td:last-child {
   border-right: 0;
-  width: 130px;
+  width: 225px;
 }
 
 .backet .product__counter {
@@ -6644,7 +6644,7 @@ button {
   color: #fff;
   font-weight: bold;
   background: #FF0000;
-  width: 130px;
+  width: 225px;
   height: 50px;
 }
 
@@ -6675,13 +6675,22 @@ button {
   }
 }
 
+@media (max-width: 1024px) {
+  .backet__td:last-child {
+    width: 130px;
+  }
+  .backet__summ {
+    width: 130px;
+  }
+}
+
 @media (max-width: 768px) {
   .backet {
     overflow: auto;
   }
   .backet__header {
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
   }
   .backet__table-wrap {
     overflow: auto;
