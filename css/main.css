@@ -6681,6 +6681,7 @@ button {
   }
   .backet__header {
     text-align: center;
+    font-size: 18px;
   }
   .backet__table-wrap {
     overflow: auto;
