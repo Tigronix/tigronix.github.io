@@ -3991,7 +3991,7 @@ button {
   background: #d32f42;
   width: 100%;
   border-top: 1px solid #FF0000;
-  padding: 18px 0;
+  padding: 18px 1.5625vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4145,7 +4145,85 @@ button {
 .page-footer__copy {
   font-size: 16px;
   color: #fff;
-  padding-left: 1.5625vw;
+}
+
+.page-footer__logo {
+  margin-right: 4.6875vw;
+  width: 14.6875vw;
+}
+
+.page-footer__logo img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1440px) {
+  .page-footer__link {
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-footer__top {
+    display: block;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .page-footer__title {
+    font-size: 18px;
+  }
+  .page-footer__menu {
+    display: block;
+    width: 100%;
+  }
+  .page-footer__menu-link {
+    font-size: 16px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .page-footer__menu-link img {
+    width: 30px;
+  }
+  .page-footer__phone {
+    font-size: 21px;
+  }
+  .page-footer__content {
+    display: block;
+  }
+  .page-footer__logo {
+    width: 190px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .page-footer__links {
+    width: 100%;
+  }
+  .page-footer__link {
+    font-size: 16px;
+  }
+  .page-footer__info {
+    width: 100%;
+  }
+  .page-footer__info-pay {
+    font-size: 16px;
+  }
+  .page-footer__info-address {
+    font-size: 16px;
+  }
+  .page-footer__info-icon {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-footer__copy {
+    margin-bottom: 20px;
+  }
+  .page-footer__ul {
+    width: 50%;
+    margin-bottom: 15px;
+  }
 }
 
 .hamburger {
@@ -4837,6 +4915,15 @@ button {
   }
   .carousel__desc {
     font-size: 1.1vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .carousel__item {
+    width: 300px;
+  }
+  .carousel__submit {
+    width: auto;
   }
 }
 

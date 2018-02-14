@@ -121,10 +121,10 @@ function carousel(animationIn, animationOut, elem) {
 				768: {
 					items: 2
 				},
-				1200: {
-					items: 2
+				1024: {
+					items: 3
 				},
-				1520: {
+				1400: {
 					items: 4
 				}
 			}
