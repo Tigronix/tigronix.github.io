@@ -114,6 +114,10 @@ function carousel(animationIn, animationOut, elem) {
 			dots: true,
 			dotsEach: true,
 			dotsContainer: '.carousel__dots',
+			mouseDrag: false,
+			touchDrag: false,
+			pullDrag: false,
+			freeDrag: false,
 			responsive: {
 				0: {
 					items: 1
@@ -125,7 +129,7 @@ function carousel(animationIn, animationOut, elem) {
 					items: 3
 				},
 				1400: {
-					items: 4
+					items: 1
 				}
 			}
 		});
@@ -213,16 +217,15 @@ function phoneMask() {
 }
 
 // +/- для input-number. имитация input:type[number]
-function catalogItemCounter(field){
+function catalogItemCounter(field, container){
 
 			var fieldCount = function(el) {
-				var elContainer = (el.closest('.backet__tr--content'));
+				var elContainer = (el.closest(container));
 				var
 					min = el.data('min') || false,
 					max = el.data('max') || false,
 					dec = elContainer.find('.dec'),
 					inc = elContainer.find('.inc');
-
 				function init(el) {
 					if(!el.attr('disabled')){
 						dec.on('click', decrement);
@@ -260,7 +263,6 @@ function catalogItemCounter(field){
 				fieldCount($(this));
 				function calcPrice() {
 						var value = parseInt($(this));
-						console.log(value * 2);
 					};
 			});
 		}
@@ -276,18 +278,20 @@ function calcTotal() {
 		var number = parseInt(item.textContent);
 		sumArray.push(number);
 	});
-	for(var key in sumArray) {
-		sum = sum + parseInt(sumArray[key]);
+	if(total){
+		for(var key in sumArray) {
+			sum = sum + parseInt(sumArray[key]);
+		}
+		if(!sum){
+			sum = 0;
+		}
+		total.textContent = sum;
 	}
-	if(!sum){
-		sum = 0;
-	}
-	total.textContent = sum;
 }
 
-function summPrice() {
+function summPrice(elem) {
 	$('.product__btn').on('click', function(){
-		var elContainer = $(this).closest('.backet__tr--content');
+		var elContainer = $(this).closest(elem);
 		var price = elContainer.find('.itemSumm');
 		var output = elContainer.find('.fieldCount');
 		var dec = elContainer.find('.dec');
@@ -316,7 +320,7 @@ function summPrice() {
 		calcTotal();
 	});
 	$('.fieldCount').on('keyup', function(){
-		var elContainer = $(this).closest('.backet__tr--content');
+		var elContainer = $(this).closest(elem);
 		var price = elContainer.find('.itemSumm');
 		var dec = elContainer.find('.dec');
 		var inc = elContainer.find('.inc');
@@ -335,20 +339,48 @@ function summPrice() {
 		}
 		calcTotal()
 	});
-	var itemContainer = document.querySelectorAll('.backet__tr--content');
-	itemContainer.forEach(function(item, index, array){
-		var itemSumm = item.querySelector('.product__counter-number');
-		var itemValue = item.querySelector('.itemSumm');
-		var summ = itemSumm.getAttribute('value') * itemValue.dataset.summ;
-		itemValue.textContent = summ;
-	});
+	var test = document.querySelectorAll('.backet__tr--content');
+	var owl = $('.owl-carousel');
+	if(owl){
+		owl.on('initialize.owl.carousel', function(event) {
+			backetOnload();
+			calcWeight();
+		})
+	}
+	function backetOnload(){
+		var itemContainer = document.querySelectorAll(elem);
+		itemContainer.forEach(function(item, index, array){
+			var itemSumm = item.querySelector('.fieldCount');
+			if(itemSumm){
+				var itemValue = item.querySelector('.itemSumm');
+				var summ = itemSumm.getAttribute('value') * itemValue.dataset.summ;
+				itemValue.textContent = summ;
+			}
+		});
+	}
+	backetOnload();
 	$('.backet__close').on('click', function(){
-		var elContainer = $(this).closest('.backet__tr--content');
+		var elContainer = $(this).closest(elem);
 		var itemValue = elContainer.find('.itemSumm');
 		itemValue.html('0');
 		elContainer.hide(400);
 		calcTotal()
 	});
+
+	function calcWeight() {
+		var elContainer = document.querySelectorAll(elem);
+		elContainer.forEach(function(item, index, array){
+			var weightItems = item.querySelectorAll('.check-wrap__input');
+			weightItems.forEach(function(item, index, array){
+				function calc(){
+					if(item.checked){
+						console.log(this);
+					}
+				}
+				item.addEventListener('click', calc);
+			});
+		});
+	}
 
 	calcTotal()
 }//конец пересчёт цены товара
@@ -360,8 +392,10 @@ window.onload = function() {
 
 	//other
 	bodyOverflow('.hamburger');
-	summPrice();
-	catalogItemCounter('.fieldCount');
+	summPrice('.backet__tr--content');
+	catalogItemCounter('.fieldCount', '.backet__tr--content');
+	summPrice('.carousel__item');
+	catalogItemCounter('.fieldCount', '.carousel__item');
 
 	//active toggle
 	active('.hamburger');
