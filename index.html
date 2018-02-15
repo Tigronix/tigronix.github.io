@@ -76,24 +76,308 @@
 					<div class="carousel__weight product-weight">
 						<div class="carousel__weight-item product-weight__item">
 							<div class="check-wrap">
-								<input data-price="650" id="test1" type="radio" class="check-wrap__input" name="testus">
-								<label for="test1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+								<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
 							</div>
-							<span class="carousel__price product-weight__price">650<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg> </span>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">650</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
 						</div>
 						<div class="carousel__weight-item product-weight__item">
 							<div class="check-wrap">
-								<input data-price="700" id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+								<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
 								<label for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
 							</div>
-							<span class="carousel__price product-weight__price">700<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg> </span>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">700</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
 						</div>
 						<div class="carousel__weight-item product-weight__item">
 							<div class="check-wrap">
-								<input data-price="800" id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+								<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
 								<label  for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
 							</div>
-							<span class="carousel__price product-weight__price">800 <svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></span>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">800</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+					</div>
+					<div class="carousel__buy">
+						<div class="product__counter">
+							<div class="product__counter-btns">
+								<button type="button" class="product__btn product__inc inc">
+									<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+								</button>
+								<button type="button" class="product__btn product__dec dec">
+									<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+								</button>
+							</div>
+							<div class="product__counter-number">
+								<input type="text" class="product__amount fieldCount" data-min="1" value="2">
+							</div>
+						</div>
+						<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+					</div>
+					<span data-summ="650" class="itemSumm">0</span><br />
+				</form>
+				<form class="carousel__item">
+					<div class="carousel__sale carousel__sale--red1">Хит продаж</div>
+					<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+					<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+					<div class="carousel__desc">Состав: сочное филе из говядины</div>
+					<div class="carousel__weight product-weight">
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">650</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">700</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+								<label  for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">800</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+					</div>
+					<div class="carousel__buy">
+						<div class="product__counter">
+							<div class="product__counter-btns">
+								<button type="button" class="product__btn product__inc inc">
+									<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+								</button>
+								<button type="button" class="product__btn product__dec dec">
+									<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+								</button>
+							</div>
+							<div class="product__counter-number">
+								<input type="text" class="product__amount fieldCount" data-min="1" value="2">
+							</div>
+						</div>
+						<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+					</div>
+					<span data-summ="650" class="itemSumm">0</span><br />
+				</form>
+				<form class="carousel__item">
+					<div class="carousel__sale carousel__sale--red1">Хит продаж</div>
+					<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+					<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+					<div class="carousel__desc">Состав: сочное филе из говядины</div>
+					<div class="carousel__weight product-weight">
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">650</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">700</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+								<label  for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">800</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+					</div>
+					<div class="carousel__buy">
+						<div class="product__counter">
+							<div class="product__counter-btns">
+								<button type="button" class="product__btn product__inc inc">
+									<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+								</button>
+								<button type="button" class="product__btn product__dec dec">
+									<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+								</button>
+							</div>
+							<div class="product__counter-number">
+								<input type="text" class="product__amount fieldCount" data-min="1" value="2">
+							</div>
+						</div>
+						<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+					</div>
+					<span data-summ="650" class="itemSumm">0</span><br />
+				</form>
+				<form class="carousel__item">
+					<div class="carousel__sale carousel__sale--red1">Хит продаж</div>
+					<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+					<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+					<div class="carousel__desc">Состав: сочное филе из говядины</div>
+					<div class="carousel__weight product-weight">
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">650</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">700</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+								<label  for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">800</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+					</div>
+					<div class="carousel__buy">
+						<div class="product__counter">
+							<div class="product__counter-btns">
+								<button type="button" class="product__btn product__inc inc">
+									<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+								</button>
+								<button type="button" class="product__btn product__dec dec">
+									<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+								</button>
+							</div>
+							<div class="product__counter-number">
+								<input type="text" class="product__amount fieldCount" data-min="1" value="2">
+							</div>
+						</div>
+						<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+					</div>
+					<span data-summ="650" class="itemSumm">0</span><br />
+				</form>
+				<form class="carousel__item">
+					<div class="carousel__sale carousel__sale--red1">Хит продаж</div>
+					<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+					<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+					<div class="carousel__desc">Состав: сочное филе из говядины</div>
+					<div class="carousel__weight product-weight">
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">650</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">700</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+								<label  for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">800</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+					</div>
+					<div class="carousel__buy">
+						<div class="product__counter">
+							<div class="product__counter-btns">
+								<button type="button" class="product__btn product__inc inc">
+									<svg class="icon icon-arrow-drop-up"><use xlink:href="#icon-arrow-drop-up"></use></svg>
+								</button>
+								<button type="button" class="product__btn product__dec dec">
+									<svg class="icon icon-arrow-drop-down"><use xlink:href="#icon-arrow-drop-down"></use></svg>
+								</button>
+							</div>
+							<div class="product__counter-number">
+								<input type="text" class="product__amount fieldCount" data-min="1" value="2">
+							</div>
+						</div>
+						<button type="submit" class="carousel__submit"><svg class="carousel__submit-icon icon icon-add-shopping-cart"><use xlink:href="#icon-add-shopping-cart"></use></svg><span class="carousel__submit-text">в корзину</span></button>
+					</div>
+					<span data-summ="650" class="itemSumm">0</span><br />
+				</form>
+				<form class="carousel__item">
+					<div class="carousel__sale carousel__sale--red1">Хит продаж</div>
+					<div class="carousel__img"><img src="img/product1.jpg" alt=""></div>
+					<div class="carousel__name">Пирог с мясом «Фыдджин»</div>
+					<div class="carousel__desc">Состав: сочное филе из говядины</div>
+					<div class="carousel__weight product-weight">
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input checked id="carousel1" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel1" class="check-wrap__label product-weight__number">30 см (1 000г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">650</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel2" type="radio" class="check-wrap__input" name="carousel">
+								<label for="carousel2" class="check-wrap__label product-weight__number">35 см (1 200г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">700</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
+						</div>
+						<div class="carousel__weight-item product-weight__item">
+							<div class="check-wrap">
+								<input id="carousel3" type="radio" class="check-wrap__input" name="carousel">
+								<label  for="carousel3" class="check-wrap__label product-weight__number">37 см (1 400г)</label>
+							</div>
+							<span class="carousel__price product-weight__price">
+								<span class="weigtNumber">800</span>
+								<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</span>
 						</div>
 					</div>
 					<div class="carousel__buy">

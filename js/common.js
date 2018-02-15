@@ -129,7 +129,7 @@ function carousel(animationIn, animationOut, elem) {
 					items: 3
 				},
 				1400: {
-					items: 1
+					items: 4
 				}
 			}
 		});
@@ -289,15 +289,43 @@ function calcTotal() {
 	}
 }
 
+function backetOnload(elem){
+	var itemContainer = document.querySelectorAll(elem);
+	itemContainer.forEach(function(item, index, array){
+		var itemSumm = item.querySelector('.fieldCount');
+		if(itemSumm){
+			var itemValue = item.querySelector('.itemSumm');
+			var summ = itemSumm.getAttribute('value') * itemValue.dataset.summ;
+			itemValue.textContent = summ;
+		}
+	});
+
+	calcTotal()
+}
+
 function summPrice(elem) {
-	$('.product__btn').on('click', function(){
+	$('.check-wrap__input').on('click', function(){
 		var elContainer = $(this).closest(elem);
+		var container = $(this).closest('.carousel__weight-item');
+		var numberWeight = container.find('.weigtNumber').text();
+		var disabled = $(this).attr('disabled');
 		var price = elContainer.find('.itemSumm');
 		var output = elContainer.find('.fieldCount');
+		if(disabled == 'disabled'){
+
+		}else{
+		parseInt(price.html(numberWeight).data('summ', numberWeight));
+		parseInt(output.val(1));
+	}
+	});
+	$('.product__btn').on('click', function(){
+		var elContainer = $(this).closest(elem);
+		var output = elContainer.find('.fieldCount');
+		var value = parseInt($(output).val());
+		var price = elContainer.find('.itemSumm');
 		var dec = elContainer.find('.dec');
 		var inc = elContainer.find('.inc');
-		var value = parseInt($(output).val());
-
+		var summ = value * parseInt(price.data('summ'));
 		if($(this).hasClass('dec')){
 			--value;
 		}else if($(this).hasClass('inc')){
@@ -313,19 +341,18 @@ function summPrice(elem) {
 				$(dec).attr('disabled', false);
 			}
 		}
-		var summ = parseInt(price.data('summ')) * value;
+		var summ = value * parseInt(price.data('summ'));
 		price.html(summ);
-
-
 		calcTotal();
 	});
 	$('.fieldCount').on('keyup', function(){
 		var elContainer = $(this).closest(elem);
+		var output = elContainer.find('.fieldCount');
+		var value = parseInt($(output).val());
 		var price = elContainer.find('.itemSumm');
 		var dec = elContainer.find('.dec');
 		var inc = elContainer.find('.inc');
-		var value = parseInt($(this).val());
-		var summ = value * parseInt(price.data('summ'))
+		var summ = value * parseInt(price.data('summ'));
 		if(value <= 1){
 			dec.attr('disabled', '');
 			price.html(summ);
@@ -334,55 +361,17 @@ function summPrice(elem) {
 			dec.attr('disabled', false);
 		}
 		if(value <= 0) {
-			var dataValue = price.data('summ');
 			price.html(0);
 		}
 		calcTotal()
 	});
-	var test = document.querySelectorAll('.backet__tr--content');
-	var owl = $('.owl-carousel');
-	if(owl){
-		owl.on('initialize.owl.carousel', function(event) {
-			backetOnload();
-			calcWeight();
-		})
-	}
-	function backetOnload(){
-		var itemContainer = document.querySelectorAll(elem);
-		itemContainer.forEach(function(item, index, array){
-			var itemSumm = item.querySelector('.fieldCount');
-			if(itemSumm){
-				var itemValue = item.querySelector('.itemSumm');
-				var summ = itemSumm.getAttribute('value') * itemValue.dataset.summ;
-				itemValue.textContent = summ;
-			}
-		});
-	}
-	backetOnload();
 	$('.backet__close').on('click', function(){
 		var elContainer = $(this).closest(elem);
-		var itemValue = elContainer.find('.itemSumm');
-		itemValue.html('0');
+		var price = elContainer.find('.itemSumm');
+		price.html('0');
 		elContainer.hide(400);
 		calcTotal()
 	});
-
-	function calcWeight() {
-		var elContainer = document.querySelectorAll(elem);
-		elContainer.forEach(function(item, index, array){
-			var weightItems = item.querySelectorAll('.check-wrap__input');
-			weightItems.forEach(function(item, index, array){
-				function calc(){
-					if(item.checked){
-						console.log(this);
-					}
-				}
-				item.addEventListener('click', calc);
-			});
-		});
-	}
-
-	calcTotal()
 }//конец пересчёт цены товара
 
 window.onload = function() {
@@ -392,8 +381,13 @@ window.onload = function() {
 
 	//other
 	bodyOverflow('.hamburger');
+	//calc корзина
+	backetOnload('.backet__tr--content');
 	summPrice('.backet__tr--content');
 	catalogItemCounter('.fieldCount', '.backet__tr--content');
+
+	//calc главная
+	backetOnload('.carousel__item');
 	summPrice('.carousel__item');
 	catalogItemCounter('.fieldCount', '.carousel__item');
 

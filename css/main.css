@@ -4572,6 +4572,22 @@ button {
   margin-bottom: 0px;
 }
 
+.carousel .check-wrap {
+  position: relative;
+}
+
+.carousel .check-wrap__input {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+}
+
 .carousel__item {
   background: #fcf9f2;
   border: 1px solid #dfdeda;
@@ -6503,8 +6519,7 @@ button {
 
 .backet {
   width: 1178px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   padding-bottom: 40px;
   background: #f0ecdc;
 }
@@ -6603,6 +6618,7 @@ button {
 .backet .product__counter-number {
   background: #fff;
   height: 100%;
+  font-size: 1.51042vw;
 }
 
 .backet .product__btn {
@@ -6783,9 +6799,9 @@ button {
   text-transform: uppercase;
   -webkit-box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.6);
           box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.6);
-  -webkit-transition: background .4s;
-  -o-transition: background .4s;
-  transition: background .4s;
+  -webkit-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
 }
 
 .backet-form__submit:hover {
