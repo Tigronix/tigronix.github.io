@@ -108,16 +108,12 @@ function carousel(animationIn, animationOut, elem) {
 	animationOut = animationOut || 'fadeOut';
 	if($('*').is(elem)){
 		$(elem).owlCarousel({
-			loop: true,
+			loop: false,
 			nav: true,
 			items: 4,
-			dots: true,
 			dotsEach: true,
+			dots: true,
 			dotsContainer: '.carousel__dots',
-			mouseDrag: false,
-			touchDrag: false,
-			pullDrag: false,
-			freeDrag: false,
 			responsive: {
 				0: {
 					items: 1
@@ -268,6 +264,7 @@ function catalogItemCounter(field, container){
 		}
 
 //начало пересчёт цены товара
+//складывание всех сумм продуктов
 function calcTotal() {
 	var summTotal = document.querySelector('.backet__summ');
 	var itemsSumm = document.querySelectorAll('.itemSumm');
@@ -288,7 +285,7 @@ function calcTotal() {
 		total.textContent = sum;
 	}
 }
-
+//значения при загрузке страницы
 function backetOnload(elem){
 	var itemContainer = document.querySelectorAll(elem);
 	itemContainer.forEach(function(item, index, array){
@@ -302,6 +299,7 @@ function backetOnload(elem){
 
 	calcTotal()
 }
+
 
 function summPrice(elem) {
 	$('.check-wrap__input').on('click', function(){
@@ -374,6 +372,192 @@ function summPrice(elem) {
 	});
 }//конец пересчёт цены товара
 
+//calc main
+function summPriceMain(elem) {
+	$('.check-wrap__input').on('click', function(){
+		var elContainer = $(this).closest(elem);
+		var container = $(this).closest('.carousel__weight-item');
+		var numberWeightItem = container.find('.weigtNumber')
+		var numberWeight = container.find('.weigtNumber').text();
+		var disabled = $(this).attr('disabled');
+		var price = elContainer.find('.itemSumm');
+		var output = elContainer.find('.fieldCount');
+		if(disabled == 'disabled'){
+
+		}else{
+		parseInt(numberWeightItem.html(numberWeight).data('summ', numberWeight));
+		parseInt(output.val(1));
+	}
+	});
+	$('.product__btn').on('click', function(){
+		var elContainer = $(this).closest(elem);
+		var output = elContainer.find('.fieldCount');
+		var value = parseInt($(output).val());
+		var price = elContainer.find('.carousel__price').children('.weigtNumber');
+		var dec = elContainer.find('.dec');
+		var inc = elContainer.find('.inc');
+		var saleItem = elContainer.find('.product__sale-item');
+		if($(this).hasClass('dec')){
+			--value;
+		}else if($(this).hasClass('inc')){
+			++value;
+		}
+		if($(this).hasClass('dec')){
+			if(value <= 1){
+				$(this).attr('disabled', '');
+			}
+		}
+		if($(this).hasClass('inc')){
+			if(value > 1){
+				$(dec).attr('disabled', false);
+			}
+		}
+		$(price).each(function(index){
+			var number = parseInt($(this).data('number'));
+			var summ = value * number;
+			$(this).html(summ);
+		});
+		//расчет скидки
+		function calcSale(){
+			if(saleItem){
+				var saleItems = elContainer.find('.saleNumber');
+				var saleInputsContainer =  elContainer.find('.product__sale-wrap');
+				var saleInputs = saleInputsContainer.find('.check-wrap__input:checked');
+				$(saleInputs).each(function(index){
+					var saleInput = $(this);
+					$(price).each(function(index){
+						var priceItem = $(this);
+						var priceNumber = parseInt($(this).text());
+						$(saleItems).each(function(index){
+							var saleNumber = parseInt(saleInput.closest('.product__sale-item').find('.saleNumber').text());
+							var saleItem = $(this);
+							var percent = Math.round((priceNumber / 100) * saleNumber);
+							var summ = priceNumber - percent;
+							return priceItem.html(summ);
+						});
+					});
+				});
+			}
+		}
+		calcSale();
+		calcTotal();
+	});
+	$('.fieldCount').on('keyup', function(){
+		var elContainer = $(this).closest(elem);
+		var output = elContainer.find('.fieldCount');
+		var value = parseInt($(output).val());
+		var price = elContainer.find('.carousel__price').children('.weigtNumber');
+		var dec = elContainer.find('.dec');
+		var inc = elContainer.find('.inc');
+		var saleItem = elContainer.find('.product__sale-item');
+		if(!value){
+			$(price).each(function(index){
+				$(this).text(0);
+				value = 1;
+			});
+		}
+		if(value <= 1){
+			dec.attr('disabled', '');
+			$(price).each(function(index){
+				value = 1;
+				var number = parseInt($(this).data('number'));
+				var summ = value * number;
+				$(this).text(summ);
+			});
+		}
+		if(value > 1){
+			$(price).each(function(index){
+				var number = parseInt($(this).data('number'));
+				var summ = value * number;
+				$(this).text(summ);
+			});
+			dec.attr('disabled', false);
+		}
+		//расчет скидки
+		function calcSale(){
+			if(saleItem){
+				var saleItems = elContainer.find('.saleNumber');
+				var saleInputsContainer =  elContainer.find('.product__sale-wrap');
+				var saleInputs = saleInputsContainer.find('.check-wrap__input:checked');
+				$(saleInputs).each(function(index){
+					var saleInput = $(this);
+					$(price).each(function(index){
+						var priceItem = $(this);
+						var priceNumber = parseInt($(this).text());
+						$(saleItems).each(function(index){
+							var saleNumber = parseInt(saleInput.closest('.product__sale-item').find('.saleNumber').text());
+							var saleItem = $(this);
+							var percent = Math.round((priceNumber / 100) * saleNumber);
+							var summ = priceNumber - percent;
+							return priceItem.html(summ);
+						});
+					});
+				});
+			}
+		}
+		calcSale();
+		calcTotal()
+	});
+	$('.backet__close').on('click', function(){
+		var elContainer = $(this).closest(elem);
+		var price = elContainer.find('.itemSumm');
+		price.html('0');
+		elContainer.hide(400);
+		calcTotal()
+	});
+
+	//calc sale при клике на скидковый инпут
+	var saleInputContainer = $(elem).find('.product__sale-wrap');
+	var saleInputs = saleInputContainer.find('.check-wrap__input');
+	saleInputs.on('click', function(){
+		var elContainer = $(this).closest(elem);
+		var saleItem = elContainer.find('.product__sale-item');
+		var price = elContainer.find('.carousel__price').children('.weigtNumber');
+		var check = $(this).prop('checked');
+		var productWeight = elContainer.find('.product-weight__item');
+
+		function clearSale(){
+			$(productWeight).each(function(index){
+				var target = $(this).find('.weigtNumber');
+				$(price).each(function(index){
+					var defaultNumber = parseInt($(target).data('number'));
+					target.html(defaultNumber);
+				});
+			});
+		}
+		function calcSale(){
+			if(saleItem){
+				var saleItems = elContainer.find('.saleNumber');
+				var saleInputsContainer =  elContainer.find('.product__sale-wrap');
+				var saleInputs = saleInputsContainer.find('.check-wrap__input:checked');
+				$(saleInputs).each(function(index){
+					var saleInput = $(this);
+					$(price).each(function(index){
+						var priceItem = $(this);
+						var priceNumber = parseInt($(this).text());
+						$(saleItems).each(function(index){
+							var saleNumber = parseInt(saleInput.closest('.product__sale-item').find('.saleNumber').text());
+							var saleItem = $(this);
+							var percent = Math.round((priceNumber / 100) * saleNumber);
+							var summ = priceNumber - percent;
+							return priceItem.html(summ);
+						});
+					});
+				});
+			}
+		}
+
+		if(this + ':checked'){
+			clearSale();
+			$(this).closest('.product__sale-item').siblings().find('.check-wrap__input').prop('checked', false);
+		}
+		calcSale();
+		if(!check){
+			clearSale();
+		}
+	});
+}//конец пересчёт цены товара
+
 window.onload = function() {
 	//scollEvents
 	scrollEffects();
@@ -388,8 +572,12 @@ window.onload = function() {
 
 	//calc главная
 	backetOnload('.carousel__item');
-	summPrice('.carousel__item');
+	summPriceMain('.carousel__item');
 	catalogItemCounter('.fieldCount', '.carousel__item');
+
+	//calc product
+	summPriceMain('.product__content');
+	catalogItemCounter('.fieldCount', '.product__content');
 
 	//active toggle
 	active('.hamburger');

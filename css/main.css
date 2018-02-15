@@ -4594,6 +4594,14 @@ button {
   height: 100%;
 }
 
+.carousel .itemSumm {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 .carousel__item {
   background: #fcf9f2;
   border: 1px solid #dfdeda;
@@ -4878,6 +4886,21 @@ button {
   border: 3px solid #ffb400;
   cursor: pointer;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .carousel .owl-dot:first-child {
@@ -4889,19 +4912,12 @@ button {
   height: 13px;
   display: block;
   content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background: transparent;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   -webkit-transition: color .4s;
   -o-transition: color .4s;
   transition: color .4s;
-  transform: translate(-50%, -50%);
 }
 
 .carousel .owl-dot.active {
@@ -4910,6 +4926,18 @@ button {
 
 .carousel .owl-dot.active:before {
   background: #fff;
+}
+
+@media (max-width: 1440px) {
+  .carousel .owl-dot {
+    border-width: 3px;
+    width: 18px;
+    height: 18px;
+  }
+  .carousel .owl-dot:before {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -5241,6 +5269,10 @@ button {
   margin-right: 1.92708vw;
 }
 
+.product__about .product__buy {
+  margin-top: 49px;
+}
+
 .product__sale {
   padding-top: 40px;
   border-right: 1px solid #fff2b8;
@@ -5309,8 +5341,15 @@ button {
   font-size: 1.66667vw;
   color: #ee1c24;
   font-family: 'FuturaDemiC';
-  width: 30%;
+  width: 34%;
   margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .product__payvar {
@@ -5388,7 +5427,7 @@ button {
 }
 
 .product__calc-price {
-  font-size: 1.66667vw;
+  font-size: 1.45833vw;
   color: #1F9D00;
   font-family: 'FuturaDemiC';
   display: -webkit-box;
@@ -5456,7 +5495,7 @@ button {
   }
   .product__sale-number {
     font-size: 1.3vw;
-    width: 23%;
+    width: 30%;
     margin-right: 0;
   }
   .product__sale-item-text {
@@ -5652,8 +5691,19 @@ button {
   }
 }
 
+.check-wrap {
+  position: relative;
+}
+
 .check-wrap__input {
-  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
 }
 
 .check-wrap__input:checked + label:before {
@@ -5692,8 +5742,8 @@ button {
   -o-transition: background .4s;
   transition: background .4s;
   margin-right: 0.52083vw;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
   -webkit-background-size: 20px auto;
           background-size: 20px auto;
 }
