@@ -108,7 +108,6 @@ function carousel(animationIn, animationOut, elem) {
 	animationOut = animationOut || 'fadeOut';
 	if($('*').is(elem)){
 		$(elem).owlCarousel({
-			loop: false,
 			nav: true,
 			items: 4,
 			dotsEach: true,
