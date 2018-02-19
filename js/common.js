@@ -102,14 +102,19 @@ function animateHide(button, content, animationIn, animationOut, hideTiming) {
 }
 
 //owl-slider
-function slider(animationIn, animationOut, elem) {
-	elem = elem || '.slider-main';
+function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.slider-main';
+	items = items || 1;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
 	if(elem){
 		$(elem).owlCarousel({
 			nav: true,
-			items: 1,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
 			animateIn: animationIn,
 			animateOut: animationOut,
 			loop: true,
@@ -127,6 +132,123 @@ function slider(animationIn, animationOut, elem) {
 		});
 	}
 }
+//carousel
+function carousel(animationIn, animationOut, elem, items, navContainer, navText) {
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.portfolio-slider';
+	items = items || 3;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			dotsEach: true,
+			dots: true,
+			loop: false,
+			responsive: {
+				0: {
+					dots: false,
+					items: 1
+				},
+				550: {
+					dots: true,
+					items: 1
+				},
+				768: {
+					items: 1
+				},
+				1024: {
+					items: 2
+				},
+				1281: {
+					items: 3
+				}
+			}
+		});
+	}
+}
+
+//carousel-mail
+function carouselMail(animationIn, animationOut, elem, items, navContainer, navText) {
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.mail__carousel';
+	items = items || 4;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			dots: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				400: {
+					items: 2
+				},
+				768: {
+					items: 3
+				},
+				1024: {
+					items: 3
+				},
+				1281: {
+					items: 4
+				}
+			}
+		});
+	}
+}
+
+//carousel-partners
+function carouselPartners(animationIn, animationOut, elem, items, navContainer, navText) {
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.partners-carousel';
+	items = items || 6;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			dots: false,
+			responsive: {
+				0: {
+					items: 2
+				},
+				400: {
+					items: 3
+				},
+				768: {
+					items: 4
+				},
+				1024: {
+					items: 5
+				},
+				1281: {
+					items: 6
+				}
+			}
+		});
+	}
+}
+
 
 //Маска для телефона
 function phoneMask() {
@@ -156,7 +278,11 @@ window.onload = function() {
 	//Animation+hide
 	animateHide('.hamburger', '.menu', 'lightSpeedIn', 'lightSpeedOut');
 
-	//slider
+	//slider(animationIn, animationOut, elem, items, navContainer, navText)
 	slider();
 	slider('slideInDown', 'slideOutDown', '.services-slider');
+	carousel('', '');
+	carouselMail('', '');
+	carouselPartners('', '');
+	slider('lightSpeedIn', 'lightSpeedOut', '.img-carousel', 1, '', ['<div class="portfolio-slider__arrow portfolio-slider__arrow--prev"><svg class="portfolio-slider__arrow-icon icon icon-chevron_left"><use xlink:href="#icon-chevron_left"></use></svg></div>', '<div class="portfolio-slider__arrow portfolio-slider__arrow--next"><svg class="portfolio-slider__arrow-icon icon icon-chevron_right"><use xlink:href="#icon-chevron_right"></use></svg></div>']);
 };
