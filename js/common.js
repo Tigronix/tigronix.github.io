@@ -31,6 +31,13 @@ function active(elem) {
 	});
 }
 
+//active & siblings off
+function activeSiblings(elem) {
+	$(elem).on('click', function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	});
+}
+
 //bodyOverflow
 function bodyOverflow(elem) {
 	var btn = $(elem);
@@ -109,6 +116,19 @@ function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 	items = items || 1;
 	navContainer = navContainer || '';
 	navText = navText || ['<svg class="icon icon-caret-left"><use xlink:href="#icon-caret-left"></use></svg>', '<svg class="icon icon-caret-right"><use xlink:href="#icon-caret-right"></use></svg>'];
+
+	$(elem).on('initialized.owl.carousel', function(event) {
+		setTimeout(function(){
+			var navItems = $('.gallery__nav-item');
+			var owlItems = $(elem + ' .owl-item.active .gallery__slider-item').data('hash');
+			navItems.each(function(){
+				var href = $(this).attr('href');
+				if('#'+owlItems == href){
+					$(this).addClass('active').siblings().removeClass('active');
+				}
+			});
+		}, 10);
+	});
 	if(elem){
 		$(elem).owlCarousel({
 			nav: true,
@@ -118,10 +138,53 @@ function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 			animateIn: animationIn,
 			animateOut: animationOut,
 			loop: true,
+			URLhashListener: true,
+      startPosition: 'URLHash',
 			dots: false
 		});
 	}
+	$(elem).on('changed.owl.carousel', function(event) {
+		setTimeout(function(){
+			var navItems = $('.gallery__nav-item');
+			var owlItems = $(elem + ' .owl-item.active .gallery__slider-item').data('hash');
+			navItems.each(function(){
+				var href = $(this).attr('href');
+				if('#'+owlItems == href){
+					$(this).addClass('active').siblings().removeClass('active');
+				}
+			});
+		}, 10);
+	})
 }
+
+function sliderRoom(animationIn, animationOut, elem, items, navContainer, navText) {
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.room__gallery-bigSlider';
+	items = items || 1;
+	navContainer = navContainer || '';
+	navText = navText || ['<svg class="icon icon-caret-left"><use xlink:href="#icon-caret-left"></use></svg>', '<svg class="icon icon-caret-right"><use xlink:href="#icon-caret-right"></use></svg>'];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: false,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: false,
+			dots: false,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			mouseDrag: false,
+			touchDrag: false,
+			pullDrag: false,
+			freeDrag: false
+		});
+	}
+}
+
+
 
 //Маска для телефона
 function phoneMask() {
@@ -158,6 +221,7 @@ function tabsNav() {
 
 					if(itemContentNumber == itemDataNumber){
 						item.style.display = 'block';
+						item.classList.add('animated');
 					}
 				});
 
@@ -182,6 +246,7 @@ function tabsNav() {
 
 					if(itemContentNumber == itemDataNumber){
 						item.style.display = 'block';
+						item.classList.add('animated');
 					}
 				});
 
@@ -213,6 +278,10 @@ window.onload = function() {
 	active('.hamburger');
 	active('.hamburger__wrap');
 
+	//activeSiblings
+	activeSiblings('.room__gallery-small-slide');
+	activeSiblings('.gallery__nav-item');
+
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
@@ -222,4 +291,6 @@ window.onload = function() {
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
 	slider();
+	sliderRoom();
+	slider('zoomIn', 'fadeOut', '.gallery__slider', 3);
 };
