@@ -265,7 +265,17 @@ body {
 }
 
 .main {
-  padding-top: 828px;
+  padding-top: 43.125vw;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding-top: 0;
+  }
+}
+
+section {
+  background: #fff;
 }
 
 .clearfix:after {
@@ -4485,7 +4495,8 @@ button {
   margin-bottom: 15px;
   position: relative;
   z-index: 10;
-  margin-top: -234px;
+  background: transparent !important;
+  margin-top: -12.1875vw;
 }
 
 .order__input, .order__submit {
@@ -4585,6 +4596,7 @@ button {
 
 @media (max-width: 1024px) {
   .order {
+    margin-top: 0;
     width: 100%;
   }
 }
@@ -4620,6 +4632,7 @@ button {
   position: relative;
   z-index: 110;
   margin-bottom: 35px;
+  background: transparent !important;
 }
 
 .choose__nav {
@@ -4883,6 +4896,9 @@ button {
 }
 
 @media (max-width: 1024px) {
+  .choose {
+    margin-top: 0;
+  }
   .choose__nav, .choose__roomNav {
     width: 100%;
     display: block;
@@ -5898,5 +5914,10 @@ button {
 .parallax__after {
   position: relative;
   z-index: 5;
-  background: #fff;
+}
+
+@media (max-width: 1024px) {
+  .parallax__container {
+    position: static;
+  }
 }

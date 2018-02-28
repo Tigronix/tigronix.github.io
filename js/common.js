@@ -58,6 +58,20 @@ function changeClassOnScroll(){
     } else {
       elem.removeClass('parallax__container--off');
     }
+		if (screen.width <= 1440) {
+			if (top > 626) {
+	      elem.addClass('parallax__container--off');
+	    } else {
+	      elem.removeClass('parallax__container--off');
+	    }
+		}
+		if (screen.width <= 1280) {
+			if (top > 556) {
+	      elem.addClass('parallax__container--off');
+	    } else {
+	      elem.removeClass('parallax__container--off');
+	    }
+		}
   });
 }
 
