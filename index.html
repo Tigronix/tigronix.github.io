@@ -15,744 +15,191 @@
 		<global-svg></global-svg>
 	</div>
 	<header class="page-header">
-		<a href="#" class="page-header__logo">
-			<img src="img/logo.png" alt="">
-			<div class="page-header__logo-wrap">
-				<div class="page-header__logo-t1"><span>мед</span>портал</div>
-				<div class="page-header__logo-t2">справки - книжки</div>
-			</div>
-		</a>
 		<div class="page-header__location">
-			<select class="page-header__select">
-				<option value="1">Москва</option>
-			</select>
-		</div>
-		<div class="page-header__ref">
-			<svg class="page-header__ref-icon icon icon-content-paste"><use xlink:href="#icon-content-paste"></use></svg>
-			<span>Медицинские справки</span>
-		</div>
-		<div class="page-header__books">
-			<svg class="page-header__books-icon icon icon-import-contacts"><use xlink:href="#icon-import-contacts"></use></svg>
-			<span>Медицинские книжки</span>
-		</div>
-		<div class="page-header__popular">
-			<svg class="page-header__popular-icon icon icon-whatshot"><use xlink:href="#icon-whatshot"></use></svg>
-			<span>Популярные услуги</span>
+			<img src="img/ik.png" alt="">
+			<span class="city">Москва</span>
 		</div>
 		<div class="page-header__contact">
 			<a href="tel:+74951001510" class="page-header__phone">+7 (495) 100-15-10</a>
-			<div class="page-header__contact-desc">Единый справочный телефон</div>
+			<div class="page-header__contact-desc">заказать обратный звонок</div>
+		</div>
+		<nav class="nav">
+			<a href="#" class="nav__link">Меню</a>
+			<a href="#" class="nav__link">Доставка</a>
+			<a href="#" class="nav__link active">Акция дня</a>
+			<a href="#" class="nav__link">Оплата</a>
+			<a href="#" class="nav__link">О компании</a>
+			<a href="#" class="nav__link">Контакты</a>
+		</nav>
+		<div class="page-header__cart">
+			<img src="img/cart.png" alt="">
+			<div class="page-header__cart-number">
+				<span class="cartNumber">4 750</span>
+				<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+			</div>
 		</div>
 	</header>
 	<main class="main overflow">
-		<section class="buy">
-			<img src="img/bg1.jpg" alt="">
-			<div class="buy__desc">
-				<div class="buy__desc-t1">При онлайн записи с сайта <br /> скидки 10%</div>
-				<button type="button" class="buy__btn btn">
-					<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-					Записаться на приём
-				</button>
-			</div>
-			<div class="buy__title">
-				МЕДИЦИНСКИЕ СПРАВКИ И МЕДИЦИНСКИЕ КНИЖКИ В МОСКВЕ<br />
-				ОПЕРАТИВНО ПОДБЕРЕМ ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ!
-			</div>
-		</section>
-		<section class="select-offer">
-			<div class="select-offer__wrap">
-				<select class="select-offer__select">
-					<option value="">Что вам необходимо получить?</option>
-				</select>
-			</div>
-			<div class="select-offer__wrap">
-				<select class="select-offer__select">
-					<option value="">Выберите тип справки</option>
-				</select>
-			</div>
-			<div class="select-offer__wrap">
-				<select class="select-offer__select">
-					<option value="">Ближайшая станция метро</option>
-				</select>
-			</div>
-		</section>
-		<section class="text-box">
-			<h2 class="h2">Найдите проверенную клинику и запишитесь на приём</h2>
-			<p class="text">Медицинские справки требуются всегда и везде и пусть даже ценой того самого здоровья. Ведь чтобы получить желаемую мед справку приходится испытывать огромные неудобства и тратить массу времени, от чего ухудшается не только настроение, но порой и наше самочувствие. Наш медицинский центр в Москве - ваш надежный партнер в оформлении медицинских справок Вам нужна мед справка установленной формы или возникла необходимость пройти медицинскую комиссию на профпригодность по состоянию здоровья?</p>
-		</section>
-		<section class="product">
-			<div class="product__about">
-				<div class="product__about-title">
-					<div class="desc">Мед справка водительская</div>
-					<div class="price">от 2 500 руб.</div>
+		<section class="menu animated bounceInDown">
+			<div class="hamburger__wrap">
+				<div class="hamburger">
+					<div class="hamburger__line animated hamburger__line1"></div>
+					<div class="hamburger__line animated hamburger__line2"></div>
+					<div class="hamburger__line animated hamburger__line3"></div>
 				</div>
-				<div class="product__about-content">
-					<ul class="list product__list">
-						<li class="list__li"><a href="#" class="list__link"> Справка на оружие 002-о/у 046-1</a></li>
-						<li class="list__li"><a href="#" class="list__link"> Справка 086 у для работы</a></li>
-						<li class="list__li"><a href="#" class="list__link"> Справка в бассейн (с анализами)</a></li>
-						<li class="list__li"><a href="#" class="list__link"> Справка 001-гсу для госслужащих</a></li>
-						<li class="list__li"><a href="#" class="list__link"> Медсправка для охранника</a></li>
-						<li class="list__li"><a href="#" class="list__link"> Медсправка для ГИМС</a></li>
-					</ul>
-				</div>
-			</div><!--product__about-->
-			<div class="product__img">
-				<div class="product__slider owl-carousel">
-					<div class="product__slider-slide"><img src="img/product1.jpg" alt=""></div>
-					<div class="product__slider-slide"><img src="img/product1.jpg" alt=""></div>
-					<div class="product__slider-slide"><img src="img/product1.jpg" alt=""></div>
-					<div class="product__slider-slide"><img src="img/product1.jpg" alt=""></div>
-				</div>
-			</div><!--product__img-->
-			<div class="product__desc">
-				<div class="product__left">
-					<div class="product__title">Клиника «Логон АС»</div>
-					<div class="product__info-wrap">
-						<div class="product__rating">
-							<div class="product__rating-item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="product__rating-item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="product__rating-item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="product__rating-item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="product__rating-item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-						</div>
-						<div class="product__schedule">
-							<svg class="product__schedule-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							<div class="product__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="product__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
-					</div>
-					<div class="product__location"><svg class="product__location-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="product__metro">м. Шоссе Энтузиастов ( 5 мин. пешком)</div>
-					<div class="product__call">
-						Звоните перед визитом: <a href="tel:+74951001510" class="product__phone">+7 (495) 100-15-10</a>
-					</div>
-				</div><!--product__left-->
-				<div class="product__right">
-					<div class="product__advantages">
-						<div class="product__advantages-item">
-							<svg class="product__advantages-item-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							Бесплатная консультация
-						</div>
-						<div class="product__advantages-item">
-							<svg class="product__advantages-item-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							Оформление от 30 минут
-						</div>
-						<div class="product__advantages-item">
-							<svg class="product__advantages-item-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							Справки выдаются на руки
-						</div>
-						<div class="product__advantages-item">
-							<svg class="product__advantages-item-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							Проверенные врачи
-						</div>
-					</div>
-				</div><!--product__right-->
-				<form class="product__form">
-					<input placeholder="Имя" type="text" class="product__input product__input--name">
-					<input placeholder="Телефон" type="tel" class="product__input product__input--tel formTel">
-					<textarea placeholder="Что нужно сделать..." class="product__textarea product__input"></textarea>
-					<button type="submit" class="product__submit">Отправить заявку</button>
-				</form>
-			</div><!--product-desc-->
-		</section>
-		<section class="progress">
-			<div class="progress__item">
-				<svg class="progress__icon icon icon-message"><use xlink:href="#icon-message"></use></svg>
-				<div class="progress__t1">325</div>
-				<div class="progress__t2">Отличных отзывов</div>
 			</div>
-			<div class="progress__item">
-				<svg class="progress__icon icon icon-assignment-turned-in"><use xlink:href="#icon-assignment-turned-in"></use></svg>
-				<div class="progress__t1">65</div>
-				<div class="progress__t2">проверенных<br />врачей</div>
-			</div>
-			<div class="progress__item">
-				<svg class="progress__icon icon icon-assignment-turned-in"><use xlink:href="#icon-assignment-turned-in"></use></svg>
-				<div class="progress__t1"><span>от</span> 500 <svg class="progress__ruble icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-				<div class="progress__t2">самые низкие цены</div>
-			</div>
-			<div class="progress__item">
-				<svg class="progress__icon icon icon-store"><use xlink:href="#icon-store"></use></svg>
-				<div class="progress__t1">15</div>
-				<div class="progress__t2">клиник партнеров</div>
+			<div class="menu__title">меню</div>
+			<div class="menu__item" data-item="1"><img src="img/menu1.png" alt=""></div>
+			<div class="menu__item" data-item="2"><img src="img/menu2.png" alt=""></div>
+			<div class="menu__item" data-item="3"><img src="img/menu3.png" alt=""></div>
+			<div class="menu__item" data-item="4"><img src="img/menu4.png" alt=""></div>
+			<div class="menu__item" data-item="5"><img src="img/menu5.png" alt=""></div>
+			<div class="menu__item" data-item="6"><img src="img/menu6.png" alt=""></div>
+			<div class="menu__item" data-item="7"><img src="img/menu7.png" alt=""></div>
+			<div class="menu__item" data-item="8"><img src="img/menu8.png" alt=""></div>
+			<div class="menu__item" data-item="9"><img src="img/menu9.png" alt=""></div>
+			<div class="menu__item" data-item="10"><img src="img/menu10.png" alt=""></div>
+			<div class="menu__item" data-item="11"><img src="img/menu11.png" alt=""></div>
+			<div class="menu__item" data-item="12"><img src="img/menu12.png" alt=""></div>
+			<div class="menu__drop animated lightSpeedOut--menu">
+				<div class="menu__link-title">осетинские пироги:</div>
+				<a href="#" class="menu__link" data-item="1">с мясом</a>
+				<a href="#" class="menu__link" data-item="2">с курицей</a>
+				<a href="#" class="menu__link" data-item="3">с рыбой</a>
+				<a href="#" class="menu__link" data-item="4">с сыром</a>
+				<a href="#" class="menu__link" data-item="5">с капустой</a>
+				<a href="#" class="menu__link" data-item="6">с картошкой</a>
+				<a href="#" class="menu__link" data-item="7">с грибами</a>
+				<a href="#" class="menu__link" data-item="8">с зеленью</a>
+				<a href="#" class="menu__link" data-item="9">с луком</a>
+				<a href="#" class="menu__link" data-item="10">с перцем</a>
+				<a href="#" class="menu__link" data-item="11">с кабачком</a>
+				<a href="#" class="menu__link" data-item="12">сладкие</a>
 			</div>
 		</section>
+		<h1 class="h1">Осетинские пироги в Москве с доставкой</h1>
+		<div class="text-box">
+			Портал «ОСЕТИНСКИЕ ПИРОГИ С ДОСТАВКОЙ» найдет наиболее подходящий вариант среди сотен пекарен Москвы в кратчайший срок.  Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом.
+		</div>
+		<h2 class="h2"><img src="img/menu1.png" alt="">Осетинские пироги с мясом</h2>
+		<section class="products">
+			<div class="product">
+				<div class="product__img"><img src="" alt=""></div>
+				<div class="product__name product__name--red">пирог <span>с мясом</span></div>
+				<div class="product__weight">
+					<div class="product__inp-box">
+						<input  id="prod1" type="radio" class="product__checkbox">
+						<label for="prod1" class="product__label">
+							1 000<br />
+							грамм
+						</label>
+					</div>
+					<div class="product__inp-box">
+						<input  id="prod2" type="radio" class="product__checkbox">
+						<label for="prod2" class="product__label">
+							1 200<br />
+							грамм
+						</label>
+					</div>
+					<div class="product__price">
+						<span class="productNumber">750</span>.00
+					</div>
+				</div>
+				<div class="product__bottom">
+					<div class="product__counter">
+						<button class="product__btn product__btn--dec btnDec"><img src="img/minus.png" alt=""></button>
+						<span class="product__number">1</span>
+						<button class="product__btn product__btn--inc btnInc"><img src="img/plus.png" alt=""></button>
+					</div>
+					<button class="product__cart">В корзину</button>
+				</div>
+			</div>
+		</section>
+		<div class="text-box">
+			Портал «ОСЕТИНСКИЕ ПИРОГИ С ДОСТАВКОЙ» найдет наиболее подходящий вариант среди сотен пекарен Москвы в кратчайший срок.  Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом.
+		</div>
 		<section class="popular">
-			<h2 class="h2">Популярные медицинские справки</h2>
-			<div class="slider owl-carousel">
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref1.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref2.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref3.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref4.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref4.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-			</div><!--slider-->
-		</section>
-		<section class="ask">
-			<div class="ask__title">Задайте вопрос специалисту:</div>
-			<div class="ask__wrap">
-				<div class="ask__left">
-					<input placeholder="Ваше имя" type="text" class="ask__input">
-					<input placeholder="Телефон" type="tel" class="ask__input formTel">
-				</div>
-				<div class="ask__right">
-					<textarea placeholder="Опишите ваши вопросы..." class="ask__input ask__textarea"></textarea>
-				</div>
-				<button type="submit" class="ask__btn btn">
-					<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-					Получить бесплатную консультацию
-				</button>
-			</div>
-		</section>
-		<section class="popular">
-			<h2 class="h2">Популярные медицинские справки</h2>
-			<div class="slider owl-carousel">
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref1.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref2.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref3.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref4.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-				<div class="slider__item">
-					<a href="#" class="slider__title">Мед справка водительская (ГИБДД)</a>
-					<div class="slider__img">
-						<img src="img/ref4.jpg" alt="">
-						<div class="slider__time">
-							<svg class="slider__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-							оформление <br />от 30 минут
-						</div>
-						<div class="slider__price">
-							от <span>1 500</span> руб.
-						</div>
-					</div>
-					<button type="button" class="slider__btn btn">
-						<svg class="btn__icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-						Оформить справку
-					</button>
-				</div><!--slider__item-->
-			</div><!--slider-->
-		</section>
-		<section class="text-box">
-			<h2 class="h2">Найдите проверенную клинику и запишитесь на приём</h2>
-			<p class="text">Медицинские справки требуются всегда и везде и пусть даже ценой того самого здоровья. Ведь чтобы получить желаемую мед справку приходится испытывать огромные неудобства и тратить массу времени, от чего ухудшается не только настроение, но порой и наше самочувствие. Наш медицинский центр в Москве - ваш надежный партнер в оформлении медицинских справок Вам нужна мед справка установленной формы или возникла необходимость пройти медицинскую комиссию на профпригодность по состоянию здоровья?</p>
-		</section>
-		<section class="table__wrap">
-			<h2 class="h2">Список медицинских центров где можно оформить медкнижку для повара:</h2>
-			<div class="table">
-				<div class="table__tr table__header">
-					<div class="table__td table__td--header">название клиники</div>
-					<div class="table__td table__td--header">метро</div>
-					<div class="table__td table__td--header">округ</div>
-					<div class="table__td table__td--header">адрес</div>
-					<div class="table__td table__td--header">телефон</div>
-					<div class="table__td table__td--header">режим работы</div>
-					<div class="table__td table__td--header">цены</div>
-					<div class="table__td table__td--header">рейтинг</div>
-					<div class="table__td table__td--header">отзывы</div>
-				</div>
-				<div class="table__tr">
-					<div class="table__td">
-						<img src="img/cup.png" alt="">
-						Медицинский центр ЛОГОН
-					</div>
-					<div class="table__td">
-						<span class="table__circle table__circle--yellow"></span>
-						Авиамоторная
-					</div>
-					<div class="table__td">
-						ЮВАО
-					</div>
-					<div class="table__td">
-						<a href="#" class="table__address"> Москва, Шоссе Энтузиастов, 11а</a>
-					</div>
-					<div class="table__td">
-						<a href="tel:+74951034238" class="table__phone">+7 (495) 103-42-38</a>
-					</div>
-					<div class="table__td">
-						<p class="table__schedule-item">пн.-пт. 08:00-21:00</p>
-						<p class="table__schedule-item">сб.-вс. 09:00-19:00</p>
-					</div>
-					<div class="table__td">
-						<div class="table__price">
-							от <span>2 500</span> руб.
-						</div>
-					</div>
-					<div class="table__td">
-						<div class="table-rating">
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__text">4,9 <sup>+1</sup></div>
-						</div>
-					</div>
-					<div class="table__td">
-						<div class="table__like"><svg class="icon icon-thumbs-up"><use xlink:href="#icon-thumbs-up"></use></svg></div>
-						<div class="table__dislike"><svg class="icon icon-thumbs-down"><use xlink:href="#icon-thumbs-down"></use></svg></div>
+			<h2 class="h2">Популярные осетинские пироги</h2>
+			<div class="popular__wrap">
+				<div class="popular__item">
+					<img src="img/product1.jpg" alt="">
+					<div class="popular__popup">
+						<div class="popular__price">750</div>
+						<div class="popular__name">Пирог с <br />мясом</div>
+						<div class="popular__weight">1 000 г</div>
+						<button class="popular__submit">В корзину</button>
 					</div>
 				</div>
-
-				<div class="table__tr">
-					<div class="table__td">
-						<img src="img/cup.png" alt="">
-						Медицинский центр ЛОГОН
-					</div>
-					<div class="table__td">
-						<span class="table__circle table__circle--green"></span>
-						Авиамоторная
-					</div>
-					<div class="table__td">
-						ЮВАО
-					</div>
-					<div class="table__td">
-						<a href="#" class="table__address"> Москва, Шоссе Энтузиастов, 11а</a>
-					</div>
-					<div class="table__td">
-						<a href="tel:+74951034238" class="table__phone">+7 (495) 103-42-38</a>
-					</div>
-					<div class="table__td">
-						<p class="table__schedule-item">пн.-пт. 08:00-21:00</p>
-						<p class="table__schedule-item">сб.-вс. 09:00-19:00</p>
-					</div>
-					<div class="table__td">
-						<div class="table__price">
-							от <span>2 500</span> руб.
-						</div>
-					</div>
-					<div class="table__td">
-						<div class="table-rating">
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__text">4,9 <sup>+1</sup></div>
-						</div>
-					</div>
-					<div class="table__td">
-						<div class="table__like"><svg class="icon icon-thumbs-up"><use xlink:href="#icon-thumbs-up"></use></svg></div>
-						<div class="table__dislike"><svg class="icon icon-thumbs-down"><use xlink:href="#icon-thumbs-down"></use></svg></div>
+				<div class="popular__item">
+					<img src="img/product1.jpg" alt="">
+					<div class="popular__popup">
+						<div class="popular__price">750</div>
+						<div class="popular__name">Пирог с <br />мясом</div>
+						<div class="popular__weight">1 000 г</div>
+						<button class="popular__submit">В корзину</button>
 					</div>
 				</div>
-				<div class="table__tr">
-					<div class="table__td">
-						<img src="img/cup.png" alt="">
-						Медицинский центр ЛОГОН
-					</div>
-					<div class="table__td">
-						<span class="table__circle table__circle--purple"></span>
-						Авиамоторная
-					</div>
-					<div class="table__td">
-						ЮВАО
-					</div>
-					<div class="table__td">
-						<a href="#" class="table__address"> Москва, Шоссе Энтузиастов, 11а</a>
-					</div>
-					<div class="table__td">
-						<a href="tel:+74951034238" class="table__phone">+7 (495) 103-42-38</a>
-					</div>
-					<div class="table__td">
-						<p class="table__schedule-item">пн.-пт. 08:00-21:00</p>
-						<p class="table__schedule-item">сб.-вс. 09:00-19:00</p>
-					</div>
-					<div class="table__td">
-						<div class="table__price">
-							от <span>2 500</span> руб.
-						</div>
-					</div>
-					<div class="table__td">
-						<div class="table-rating">
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__item"><svg class="table__rating-icon icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
-							<div class="table-rating__text">4,9 <sup>+1</sup></div>
-						</div>
-					</div>
-					<div class="table__td">
-						<div class="table__like"><svg class="icon icon-thumbs-up"><use xlink:href="#icon-thumbs-up"></use></svg></div>
-						<div class="table__dislike"><svg class="icon icon-thumbs-down"><use xlink:href="#icon-thumbs-down"></use></svg></div>
+				<div class="popular__item">
+					<img src="img/product1.jpg" alt="">
+					<div class="popular__popup">
+						<div class="popular__price">750</div>
+						<div class="popular__name">Пирог с <br />мясом</div>
+						<div class="popular__weight">1 000 г</div>
+						<button class="popular__submit">В корзину</button>
 					</div>
 				</div>
-
-			</div>
-		</section>
-		<section class="list__wrap">
-			<ul class="list">
-				<li class="list__title">Медицинский центр</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-			</ul>
-			<ul class="list">
-				<li class="list__title">Медицинский центр</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-			</ul>
-			<ul class="list">
-				<li class="list__title">Медицинский центр</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-			</ul>
-			<ul class="list">
-				<li class="list__title">Медицинский центр</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-				<li class="list__li">Медицинский центр ЛОГОН</li>
-			</ul>
-		</section>
-		<section class="location">
-			<div class="location__item">
-				<div class="location__map"><img src="img/map.png" alt=""></div>
-				<div class="location__desc">
-					<div class="location__header">Клиника «Айболит»</div>
-					<div class="location__title">Режим работы:</div>
-					<div class="location__schedule">
-						<svg class="location__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-						<div class="location__schedule-wrap">
-							<div class="location__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="location__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
+				<div class="popular__item">
+					<img src="img/product1.jpg" alt="">
+					<div class="popular__popup">
+						<div class="popular__price">750</div>
+						<div class="popular__name">Пирог с <br />мясом</div>
+						<div class="popular__weight">1 000 г</div>
+						<button class="popular__submit">В корзину</button>
 					</div>
-					<div class="location__title">Адрес:</div>
-					<div class="location__address"><svg class="location__address-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="location__title">Ближайшая станция метро:</div>
-					<div class="location__metro">м. Шоссе Энтузиастов (5 мин. пешком)</div>
 				</div>
 			</div>
-			<div class="location__item">
-				<div class="location__map"><img src="img/map.png" alt=""></div>
-				<div class="location__desc">
-					<div class="location__header">Клиника «Айболит»</div>
-					<div class="location__title">Режим работы:</div>
-					<div class="location__schedule">
-						<svg class="location__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-						<div class="location__schedule-wrap">
-							<div class="location__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="location__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
-					</div>
-					<div class="location__title">Адрес:</div>
-					<div class="location__address"><svg class="location__address-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="location__title">Ближайшая станция метро:</div>
-					<div class="location__metro">м. Шоссе Энтузиастов (5 мин. пешком)</div>
-				</div>
-			</div>
-			<div class="location__item">
-				<div class="location__map"><img src="img/map.png" alt=""></div>
-				<div class="location__desc">
-					<div class="location__header">Клиника «Айболит»</div>
-					<div class="location__title">Режим работы:</div>
-					<div class="location__schedule">
-						<svg class="location__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-						<div class="location__schedule-wrap">
-							<div class="location__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="location__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
-					</div>
-					<div class="location__title">Адрес:</div>
-					<div class="location__address"><svg class="location__address-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="location__title">Ближайшая станция метро:</div>
-					<div class="location__metro">м. Шоссе Энтузиастов (5 мин. пешком)</div>
-				</div>
-			</div>
-			<div class="location__item">
-				<div class="location__map"><img src="img/map.png" alt=""></div>
-				<div class="location__desc">
-					<div class="location__header">Клиника «Айболит»</div>
-					<div class="location__title">Режим работы:</div>
-					<div class="location__schedule">
-						<svg class="location__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-						<div class="location__schedule-wrap">
-							<div class="location__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="location__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
-					</div>
-					<div class="location__title">Адрес:</div>
-					<div class="location__address"><svg class="location__address-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="location__title">Ближайшая станция метро:</div>
-					<div class="location__metro">м. Шоссе Энтузиастов (5 мин. пешком)</div>
-				</div>
-			</div>
-			<div class="location__item">
-				<div class="location__map"><img src="img/map.png" alt=""></div>
-				<div class="location__desc">
-					<div class="location__header">Клиника «Айболит»</div>
-					<div class="location__title">Режим работы:</div>
-					<div class="location__schedule">
-						<svg class="location__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-						<div class="location__schedule-wrap">
-							<div class="location__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="location__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
-					</div>
-					<div class="location__title">Адрес:</div>
-					<div class="location__address"><svg class="location__address-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="location__title">Ближайшая станция метро:</div>
-					<div class="location__metro">м. Шоссе Энтузиастов (5 мин. пешком)</div>
-				</div>
-			</div>
-			<div class="location__item">
-				<div class="location__map"><img src="img/map.png" alt=""></div>
-				<div class="location__desc">
-					<div class="location__header">Клиника «Айболит»</div>
-					<div class="location__title">Режим работы:</div>
-					<div class="location__schedule">
-						<svg class="location__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-						<div class="location__schedule-wrap">
-							<div class="location__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="location__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
-					</div>
-					<div class="location__title">Адрес:</div>
-					<div class="location__address"><svg class="location__address-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="location__title">Ближайшая станция метро:</div>
-					<div class="location__metro">м. Шоссе Энтузиастов (5 мин. пешком)</div>
-				</div>
-			</div>
-			<div class="location__item">
-				<div class="location__map"><img src="img/map.png" alt=""></div>
-				<div class="location__desc">
-					<div class="location__header">Клиника «Айболит»</div>
-					<div class="location__title">Режим работы:</div>
-					<div class="location__schedule">
-						<svg class="location__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-						<div class="location__schedule-wrap">
-							<div class="location__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="location__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
-					</div>
-					<div class="location__title">Адрес:</div>
-					<div class="location__address"><svg class="location__address-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="location__title">Ближайшая станция метро:</div>
-					<div class="location__metro">м. Шоссе Энтузиастов (5 мин. пешком)</div>
-				</div>
-			</div>
-			<div class="location__item">
-				<div class="location__map"><img src="img/map.png" alt=""></div>
-				<div class="location__desc">
-					<div class="location__header">Клиника «Айболит»</div>
-					<div class="location__title">Режим работы:</div>
-					<div class="location__schedule">
-						<svg class="location__icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-						<div class="location__schedule-wrap">
-							<div class="location__schedule-item">пн-пт: 08:00-20:00</div>
-							<div class="location__schedule-item">сб-вс: 08:00-20:00</div>
-						</div>
-					</div>
-					<div class="location__title">Адрес:</div>
-					<div class="location__address"><svg class="location__address-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>Москва, ЮАО, Шоссе Энтузиастов, 11А</div>
-					<div class="location__title">Ближайшая станция метро:</div>
-					<div class="location__metro">м. Шоссе Энтузиастов (5 мин. пешком)</div>
-				</div>
-			</div>
-		</section>
-		<section class="sale">
-			<div class="sale__title">МЕДИЦИНСКИЕ КНИЖКИ <span>ОФИЦИАЛЬНО И БЫСТРО!</span></div>
-			<a href="#" class="sale__link">медицинские-книжки.москва</a>
-			<a href="tel:+74951001510" class="sale__phone">+7 (495) 100-15-10</a>
-		</section>
-		<section class="text-box">
-			<h2 class="h2">Найдите проверенную клинику и запишитесь на прием</h2>
-			<p class="text">Медицинские справки требуются всегда и везде и пусть даже ценой того самого здоровья. Ведь чтобы получить желаемую мед справку приходится испытывать огромные неудобства и тратить массу времени, от чего ухудшается не только настроение, но порой и наше самочувствие. Наш медицинский центр в Москве - ваш надежный партнер в оформлении медицинских справок Вам нужна мед справка установленной формы или возникла необходимость пройти медицинскую комиссию на профпригодность по состоянию здоровья?</p>
-		</section>
-		<section class="map">
-			<h2 class="h2">Наши медицинские центры в Москве</h2>
-			<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A971e638a6a18f28a568c6571c2fda6749efe5086457fd63ac0af6c291d492bf1&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
 		</section>
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__top">
-				<a href="#" class="page-header__logo page-footer__logo">
-					<img src="img/logo.png" alt="">
-					<div class="page-header__logo-wrap page-footer__logo-wrap">
-						<div class="page-footer__logo-t1 page-header__logo-t1"><span>мед</span>портал</div>
-						<div class="page-footer__logo-t2 page-header__logo-t2">справки - книжки</div>
-					</div>
-				</a>
-				<div class="page-footer__title"><span>мед</span>справки</div>
-				<div class="page-footer__title"><span>мед</span>книжки</div>
-				<div class="page-footer__contact">
-					<a href="tel:+74951001510" class="page-footer__phone">+7 (495) 100-15-10</a>
-					<div class="page-footer__contact-desc">Единый справочный телефон</div>
-				</div>
+		<div class="page-footer__left">
+			<div class="page-footer__menu">
+				<a href="#" class="page-footer__menu-link">меню</a>
+				<a href="#" class="page-footer__menu-link page-footer__menu-link--active">акция дня</a>
+				<a href="#" class="page-footer__menu-link">доставка</a>
+			</div>
+			<ul class="list">
+				<li class="list__li"><a href="#" class="list__link">пироги с мясом</a></li>
+				<li class="list__li"><a href="#" class="list__link">пироги с капустой</a></li>
+				<li class="list__li"><a href="#" class="list__link">пироги с картошкой</a></li>
+				<li class="list__li"><a href="#" class="list__link">пироги с рыбой</a></li>
+			</ul>
+			<div class="page-footer__copy">Пекарня «Осетинские пироги» © 2018</div>
 		</div>
-		<div class="page-footer__content">
-			<div class="page-footer__links">
-				<a href="#" class="page-footer__link">Справка на оружие 002-о/у 046-1</a>
-				<a href="#" class="page-footer__link">Справка 086 у для работы</a>
-				<a href="#" class="page-footer__link">Справка в бассейн (с анализами)</a>
-				<a href="#" class="page-footer__link">Справка 001-гсу для госслужащих</a>
-				<a href="#" class="page-footer__link">Медсправка для охранника</a>
-				<a href="#" class="page-footer__link">Медсправка для ГИМС</a>
-			</div>
-			<div class="page-footer__links">
-				<a href="#" class="page-footer__link">Справка на оружие 002-о/у 046-1</a>
-				<a href="#" class="page-footer__link">Справка 086 у для работы</a>
-				<a href="#" class="page-footer__link">Справка в бассейн (с анализами)</a>
-				<a href="#" class="page-footer__link">Справка 001-гсу для госслужащих</a>
-				<a href="#" class="page-footer__link">Медсправка для охранника</a>
-				<a href="#" class="page-footer__link">Медсправка для ГИМС</a>
-			</div>
-			<div class="page-footer__social">
-				<div class="page-footer__social-title">Поделиться в соцсетях</div>
-				<img src="img/soc.png" alt="">
+		<div class="page-footer__contact">
+			<div class="page-footer__address">Москва, ул. Варшавская, 23</div>
+			<a href="tel:+74951001510" class="page-footer__phone">+7 (495) 100-15-10</a>
+			<a href="tel:+74951001510" class="page-footer__call">заказать обратный звонок</a>
+			<div class="page-footer__payvar">
+				способы оплаты: <img src="img/visa.png" alt="">
 			</div>
 		</div>
-		<div class="page-footer__bottom">
-			<div class="page-footer__copy">© 2010 - 2018 МЕДПОРТАЛ</div>
-			<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
+		<div class="page-footer__right">
+			<div class="page-footer__menu">
+				<a href="#" class="page-footer__menu-link">оплата</a>
+				<a href="#" class="page-footer__menu-link">о компании</a>
+				<a href="#" class="page-footer__menu-link">контакты</a>
+			</div>
+			<ul class="list">
+				<li class="list__li"><a href="#" class="list__link">пироги с мясом</a></li>
+				<li class="list__li"><a href="#" class="list__link">пироги с капустой</a></li>
+				<li class="list__li"><a href="#" class="list__link">пироги с картошкой</a></li>
+				<li class="list__li"><a href="#" class="list__link">пироги с рыбой</a></li>
+			</ul>
+			<div class="page-footer__by">
+				Создание и продвижение сайта -
+				<img class="page-footer__logo" src="img/es.png" alt="">
+				<img class="page-footer__metr" src="img/metr.png" alt="">
+			</div>
 		</div>
 	</footer>
 	<script src="js/libs.min.js"></script>
