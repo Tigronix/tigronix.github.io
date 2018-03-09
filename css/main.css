@@ -4679,7 +4679,7 @@ button {
 
 @media (max-width: 768px) {
   .menu__link {
-    height: auto;
+    height: auto !important;
     padding: 15px 0;
     padding-left: 12px;
   }
@@ -5095,6 +5095,7 @@ button {
   }
   .product__cart {
     margin: 0 auto;
+    line-height: 50px;
   }
   .product__btn {
     display: inline-block;
@@ -5111,6 +5112,14 @@ button {
   .product__cart {
     display: block;
     text-align: center;
+  }
+  .product__inp-box {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .product__price {
+    display: inline-block;
+    margin-left: 10px;
   }
 }
 
