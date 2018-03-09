@@ -34,7 +34,7 @@
 		<div class="page-header__cart">
 			<img src="img/cart.png" alt="">
 			<div class="page-header__cart-number">
-				<span class="cartNumber">4 750</span>
+				<span class="cartNumber">0</span>
 				<svg class="icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
 			</div>
 		</div>
@@ -61,7 +61,7 @@
 			<div class="menu__item" data-item="10"><img src="img/menu10.png" alt=""></div>
 			<div class="menu__item" data-item="11"><img src="img/menu11.png" alt=""></div>
 			<div class="menu__item" data-item="12"><img src="img/menu12.png" alt=""></div>
-			<div class="menu__drop animated lightSpeedOut--menu">
+			<div class="menu__drop menu__hide animated">
 				<div class="menu__link-title">осетинские пироги:</div>
 				<a href="#" class="menu__link" data-item="1">с мясом</a>
 				<a href="#" class="menu__link" data-item="2">с курицей</a>
@@ -79,53 +79,162 @@
 		</section>
 		<h1 class="h1">Осетинские пироги в Москве с доставкой</h1>
 		<div class="text-box">
+			<svg class="text-box__icon icon icon-android"><use xlink:href="#icon-android"></use></svg>
 			Портал «ОСЕТИНСКИЕ ПИРОГИ С ДОСТАВКОЙ» найдет наиболее подходящий вариант среди сотен пекарен Москвы в кратчайший срок.  Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом.
 		</div>
 		<h2 class="h2"><img src="img/menu1.png" alt="">Осетинские пироги с мясом</h2>
 		<section class="products">
 			<div class="product">
-				<div class="product__img"><img src="" alt=""></div>
-				<div class="product__name product__name--red">пирог <span>с мясом</span></div>
-				<div class="product__weight">
-					<div class="product__inp-box">
-						<input  id="prod1" type="radio" class="product__checkbox">
-						<label for="prod1" class="product__label">
-							1 000<br />
-							грамм
-						</label>
+				<div class="product__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="product__content">
+					<div class="product__name product__name--red">пирог <span>с мясом</span></div>
+					<div class="product__weight">
+						<div class="product__inp-box">
+							<input data-number="750" checked  id="prod1" type="radio" name="product1" class="product__checkbox">
+							<label for="prod1" class="product__label">
+								1 000
+								<span>грамм</span>
+							</label>
+						</div>
+						<div class="product__inp-box">
+							<input data-number="950" id="prod2" type="radio" name="product1" class="product__checkbox">
+							<label for="prod2" class="product__label">
+								1 200
+								<span>грамм</span>
+							</label>
+						</div>
+						<div class="product__price">
+							<span class="productNumber">750</span>.00
+							<svg class="product__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+						</div>
 					</div>
-					<div class="product__inp-box">
-						<input  id="prod2" type="radio" class="product__checkbox">
-						<label for="prod2" class="product__label">
-							1 200<br />
-							грамм
-						</label>
-					</div>
-					<div class="product__price">
-						<span class="productNumber">750</span>.00
+					<div class="product__bottom">
+						<div class="product__counter">
+							<button class="product__btn product__btn--dec btnDec"><img src="img/minus.png" alt=""></button>
+							<span class="product__number">1</span>
+							<button class="product__btn product__btn--inc btnInc"><img src="img/plus.png" alt=""></button>
+						</div>
+						<button class="product__cart">В корзину</button>
 					</div>
 				</div>
-				<div class="product__bottom">
-					<div class="product__counter">
-						<button class="product__btn product__btn--dec btnDec"><img src="img/minus.png" alt=""></button>
-						<span class="product__number">1</span>
-						<button class="product__btn product__btn--inc btnInc"><img src="img/plus.png" alt=""></button>
+			</div>
+			<div class="product">
+				<div class="product__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="product__content">
+					<div class="product__name product__name--blue">пирог <span>С НЕЖНОЙ ТЕЛЯТИНОЙ</span></div>
+					<div class="product__weight">
+						<div class="product__inp-box">
+							<input data-number="750" checked id="prod3" type="radio" name="product2" class="product__checkbox">
+							<label for="prod3" class="product__label">
+								1 000
+								<span>грамм</span>
+							</label>
+						</div>
+						<div class="product__inp-box">
+							<input data-number="950" id="prod4" type="radio" name="product2" class="product__checkbox">
+							<label for="prod4" class="product__label">
+								1 200
+								<span>грамм</span>
+							</label>
+						</div>
+						<div class="product__price">
+							<span class="productNumber">750</span>.00
+							<svg class="product__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+						</div>
 					</div>
-					<button class="product__cart">В корзину</button>
+					<div class="product__bottom">
+						<div class="product__counter">
+							<button class="product__btn product__btn--dec btnDec"><img src="img/minus.png" alt=""></button>
+							<span class="product__number">1</span>
+							<button class="product__btn product__btn--inc btnInc"><img src="img/plus.png" alt=""></button>
+						</div>
+						<button class="product__cart">В корзину</button>
+					</div>
+				</div>
+			</div>
+			<div class="product">
+				<div class="product__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="product__content">
+					<div class="product__name product__name--green">пирог <span>с рыбой</span></div>
+					<div class="product__weight">
+						<div class="product__inp-box">
+							<input data-number="750" checked id="prod5" type="radio" name="product3" class="product__checkbox">
+							<label for="prod5" class="product__label">
+								1 000
+								<span>грамм</span>
+							</label>
+						</div>
+						<div class="product__inp-box">
+							<input data-number="950" id="prod6" type="radio" name="product3" class="product__checkbox">
+							<label for="prod6" class="product__label">
+								1 200
+								<span>грамм</span>
+							</label>
+						</div>
+						<div class="product__price">
+							<span class="productNumber">750</span>.00
+							<svg class="product__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+						</div>
+					</div>
+					<div class="product__bottom">
+						<div class="product__counter">
+							<button class="product__btn product__btn--dec btnDec"><img src="img/minus.png" alt=""></button>
+							<span class="product__number">1</span>
+							<button class="product__btn product__btn--inc btnInc"><img src="img/plus.png" alt=""></button>
+						</div>
+						<button class="product__cart">В корзину</button>
+					</div>
+				</div>
+			</div>
+			<div class="product">
+				<div class="product__img"><img src="img/product1.jpg" alt=""></div>
+				<div class="product__content">
+					<div class="product__name product__name--yellow">пирог <span>с капустой</span></div>
+					<div class="product__weight">
+						<div class="product__inp-box">
+							<input data-number="750" checked id="prod7" type="radio" name="product4" class="product__checkbox">
+							<label for="prod7" class="product__label">
+								1 000
+								<span>грамм</span>
+							</label>
+						</div>
+						<div class="product__inp-box">
+							<input data-number="950" id="prod8" type="radio" name="product4" class="product__checkbox">
+							<label for="prod8" class="product__label">
+								1 200
+								<span>грамм</span>
+							</label>
+						</div>
+						<div class="product__price">
+							<span class="productNumber">750</span>.00
+							<svg class="product__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+						</div>
+					</div>
+					<div class="product__bottom">
+						<div class="product__counter">
+							<button class="product__btn product__btn--dec btnDec"><img src="img/minus.png" alt=""></button>
+							<span class="product__number">1</span>
+							<button class="product__btn product__btn--inc btnInc"><img src="img/plus.png" alt=""></button>
+						</div>
+						<button class="product__cart">В корзину</button>
+					</div>
 				</div>
 			</div>
 		</section>
 		<div class="text-box">
+			<svg class="text-box__icon icon icon-android"><use xlink:href="#icon-android"></use></svg>
 			Портал «ОСЕТИНСКИЕ ПИРОГИ С ДОСТАВКОЙ» найдет наиболее подходящий вариант среди сотен пекарен Москвы в кратчайший срок.  Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом.
 		</div>
 		<section class="popular">
-			<h2 class="h2">Популярные осетинские пироги</h2>
+			<h2 class="h2">
+				<svg class="icon icon-favorite-border"><use xlink:href="#icon-favorite-border"></use></svg>
+				Популярные осетинские пироги</h2>
 			<div class="popular__wrap">
 				<div class="popular__item">
 					<img src="img/product1.jpg" alt="">
 					<div class="popular__popup">
-						<div class="popular__price">750</div>
-						<div class="popular__name">Пирог с <br />мясом</div>
+						<div class="popular__price"><span class="popPrice">750</span> <svg class="popular-price__icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
+						<div class="popular__name popular__name--red">Пирог с <br />мясом</div>
 						<div class="popular__weight">1 000 г</div>
 						<button class="popular__submit">В корзину</button>
 					</div>
@@ -133,8 +242,8 @@
 				<div class="popular__item">
 					<img src="img/product1.jpg" alt="">
 					<div class="popular__popup">
-						<div class="popular__price">750</div>
-						<div class="popular__name">Пирог с <br />мясом</div>
+						<div class="popular__price"><span class="popPrice">750</span> <svg class="popular-price__icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
+						<div class="popular__name popular__name--blue">Пирог с <br />лососем</div>
 						<div class="popular__weight">1 000 г</div>
 						<button class="popular__submit">В корзину</button>
 					</div>
@@ -142,8 +251,8 @@
 				<div class="popular__item">
 					<img src="img/product1.jpg" alt="">
 					<div class="popular__popup">
-						<div class="popular__price">750</div>
-						<div class="popular__name">Пирог с <br />мясом</div>
+						<div class="popular__price"><span class="popPrice">750</span> <svg class="popular-price__icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
+						<div class="popular__name popular__name--green">Пирог с <br />капустой</div>
 						<div class="popular__weight">1 000 г</div>
 						<button class="popular__submit">В корзину</button>
 					</div>
@@ -151,8 +260,8 @@
 				<div class="popular__item">
 					<img src="img/product1.jpg" alt="">
 					<div class="popular__popup">
-						<div class="popular__price">750</div>
-						<div class="popular__name">Пирог с <br />мясом</div>
+						<div class="popular__price"><span class="popPrice">750</span> <svg class="popular-price__icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
+						<div class="popular__name popular__name--yellow">Пирог с <br />лимоном</div>
 						<div class="popular__weight">1 000 г</div>
 						<button class="popular__submit">В корзину</button>
 					</div>

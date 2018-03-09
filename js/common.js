@@ -281,12 +281,12 @@ function productToggle(elem) {
 
 //menuHover
 function menuHover() {
+	var menuDrop = $('.menu__drop');
 	var menuItem = $('.menu__item');
 	var menuLink = $('.menu__link');
 
 	$('[data-item]').mouseenter(function(){
 		var itemData = $(this).data('item');
-		console.log(itemData);
 		menuLink.each(function(){
 			var linkData = $(this).data('item');
 
@@ -298,7 +298,6 @@ function menuHover() {
 
 	$('[data-item]').mouseleave(function(){
 		var itemData = $(this).data('item');
-		console.log(itemData);
 		menuLink.each(function(){
 			var linkData = $(this).data('item');
 
@@ -306,6 +305,62 @@ function menuHover() {
 				$(this).removeClass('active');
 			}
 		});
+	});
+}
+
+//productCalc
+function productCalc() {
+	var btn = $('.product__btn');
+	var btnWeight = $('.product__checkbox');
+	var btnCart = $('.product__cart');
+	var cartTotal = $('.cartNumber');
+	var itemPop = $('.popular__item');
+
+	$(itemPop).on('click', function(){
+		var number = parseInt($(this).find('.popPrice').html());
+		var cartNumber = parseInt($(cartTotal).html());
+		var cartCalc = number + cartNumber;
+
+		cartTotal.html(cartCalc);
+	});
+
+	$(btnCart).on('click', function(){
+		var number = parseInt($(this).closest('.product').find('.productNumber').html());
+		var cartNumber = parseInt($(cartTotal).html());
+		var cartCalc = number + cartNumber;
+
+		cartTotal.html(cartCalc);
+	});
+
+	$(btnWeight).on('click', function(){
+		var number = $(this).data('number');
+		var price = $(this).closest('.product__weight').find('.productNumber');
+		var output = $(this).closest('.product__content').find('.product__number');
+
+		price.html(number);
+		output.html(1);
+	});
+
+	$(btn).on('click', function(){
+		var output = $(this).closest('div').find('.product__number');
+		var number = parseInt($(this).closest('div').find('.product__number').html());
+		var price = $(this).closest('.product').find('.productNumber');
+		var priceNumber = parseInt($(this).closest('.product').find('.product__checkbox:checked').data('number'));
+
+		if($(this).hasClass('btnDec')){
+			--number
+		}else if($(this).hasClass('btnInc')){
+			++number
+		}
+
+		if(number <= 1){
+			number = 1;
+		}
+
+		var summPrice = priceNumber * number;
+
+		price.html(summPrice);
+		output.html(number);
 	});
 }
 
@@ -318,6 +373,7 @@ window.onload = function() {
 	bodyOverflow('.hamburger');
 	phoneMask();
 	menuHover();
+	productCalc();
 
 	//tabs
 	tabs();
