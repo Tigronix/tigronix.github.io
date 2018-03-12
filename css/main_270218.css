@@ -9188,56 +9188,6 @@ section.map_box {padding:0; margin:0;}
 .bold {font-weight:bold;}
 .list-unstyled-text {}
 
-/******* Popup form *******/
-.popup_wrap {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, .2);
-  opacity: 1;
-  display: none;
-  z-index: 1023;
-  width: 100%;
-  height: 100%;
-}
-.popup-wrap-background {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.popup_wrap .form--product {
-  width: auto!important;
-  max-width: 100%;
-  padding: 20px;
-  position: relative;
-}
-.popup_wrap 
-.popup_content {
-  max-width: 100%;
-  border: 1px solid #dcdcdc;
-  padding: 15px;
-  font-size: 1rem;
-  background: #ffffff;
-  position: absolute;
-  border-radius: 7px;
-  width: 470px;
-}
-.popup_close{
-    background: url(../img/popup_close.png) no-repeat;
-    width: 13px;
-    height: 13px;
-    position: absolute;
-    right: 9px;
-    top: 9px;
-    cursor: pointer;
-}
-/**************************/
 
-.link {color: #b10837;transition: color .4s;}
-.link:hover {
-    color: #FFA500;
-    text-decoration: underline;
-}
+
+

@@ -1,0 +1,4 @@
+.product__nav, .product-specs__button, .product-specs__img-box, .bread, .partners, .nav-static, .page-footer, .menu__nav, .product__info, .menuButton, .slider-main__nav-btn {display: none !important;}
+.product__slider-item img {width: 80%;}
+.img--vertical img {width: 300px;}
+.product__right {margin-top:-150px;}

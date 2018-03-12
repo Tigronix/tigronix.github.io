@@ -9,189 +9,189 @@
 
 @font-face {
   font-family: 'Roboto Cn';
-  src: url("http://www.7888265.ru/fonts/Roboto-Condensed.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Roboto-Condensed.woff") format("woff");
+  src: url("../fonts/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-SemiboldItalic.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-SemiboldItalic.woff") format("woff");
+  src: url("../fonts/SegoeUI-SemiboldItalic.woff2") format("woff2"), url("../fonts/SegoeUI-SemiboldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-Italic.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-Italic.woff") format("woff");
+  src: url("../fonts/SegoeUI-Italic.woff2") format("woff2"), url("../fonts/SegoeUI-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-Bold.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-Bold.woff") format("woff");
+  src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"), url("../fonts/SegoeUI-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUIBlack-Italic.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUIBlack-Italic.woff") format("woff");
+  src: url("../fonts/SegoeUIBlack-Italic.woff2") format("woff2"), url("../fonts/SegoeUIBlack-Italic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("http://www.7888265.ru/fonts/Roboto-Black.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Roboto-Black.woff") format("woff");
+  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUI.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI.woff") format("woff");
+  src: url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-Light.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-Light.woff") format("woff");
+  src: url("../fonts/SegoeUI-Light.woff2") format("woff2"), url("../fonts/SegoeUI-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("http://www.7888265.ru/fonts/Roboto-Light.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Roboto-Light.woff") format("woff");
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("http://www.7888265.ru/fonts/Roboto-Bold.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Roboto-Bold.woff") format("woff");
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-Semibold.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-Semibold.woff") format("woff");
+  src: url("../fonts/SegoeUI-Semibold.woff2") format("woff2"), url("../fonts/SegoeUI-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUIBlack.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUIBlack.woff") format("woff");
+  src: url("../fonts/SegoeUIBlack.woff2") format("woff2"), url("../fonts/SegoeUIBlack.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI Semilight';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-SemilightItalic.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-SemilightItalic.woff") format("woff");
+  src: url("../fonts/SegoeUI-SemilightItalic.woff2") format("woff2"), url("../fonts/SegoeUI-SemilightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Segoe UI Semilight';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-Semilight.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-Semilight.woff") format("woff");
+  src: url("../fonts/SegoeUI-Semilight.woff2") format("woff2"), url("../fonts/SegoeUI-Semilight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-BoldItalic.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-BoldItalic.woff") format("woff");
+  src: url("../fonts/SegoeUI-BoldItalic.woff2") format("woff2"), url("../fonts/SegoeUI-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("http://www.7888265.ru/fonts/Roboto-Medium.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Roboto-Medium.woff") format("woff");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("http://www.7888265.ru/fonts/SegoeUI-LightItalic.woff2") format("woff2"), url("http://www.7888265.ru/fonts/SegoeUI-LightItalic.woff") format("woff");
+  src: url("../fonts/SegoeUI-LightItalic.woff2") format("woff2"), url("../fonts/SegoeUI-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("http://www.7888265.ru/fonts/Roboto-Regular.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LetoSans';
-  src: url("http://www.7888265.ru/fonts/LetoSans-Bold.woff2") format("woff2"), url("http://www.7888265.ru/fonts/LetoSans-Bold.woff") format("woff");
+  src: url("../fonts/LetoSans-Bold.woff2") format("woff2"), url("../fonts/LetoSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LetoSans';
-  src: url("http://www.7888265.ru/fonts/LetoSans-Thin.woff2") format("woff2"), url("http://www.7888265.ru/fonts/LetoSans-Thin.woff") format("woff");
+  src: url("../fonts/LetoSans-Thin.woff2") format("woff2"), url("../fonts/LetoSans-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe Extra';
-  src: url("http://www.7888265.ru/fonts/Circe-ExtraBold.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Circe-ExtraBold.woff") format("woff");
+  src: url("../fonts/Circe-ExtraBold.woff2") format("woff2"), url("../fonts/Circe-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FuturaDemiC';
-  src: url("http://www.7888265.ru/fonts/FuturaDemiC.woff2") format("woff2"), url("http://www.7888265.ru/fonts/FuturaDemiC.woff") format("woff");
+  src: url("../fonts/FuturaDemiC.woff2") format("woff2"), url("../fonts/FuturaDemiC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LetoSans';
-  src: url("http://www.7888265.ru/fonts/LetoSans.woff2") format("woff2"), url("http://www.7888265.ru/fonts/LetoSans.woff") format("woff");
+  src: url("../fonts/LetoSans.woff2") format("woff2"), url("../fonts/LetoSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe Extra';
-  src: url("http://www.7888265.ru/fonts/Circe-ExtraLight.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Circe-ExtraLight.woff") format("woff");
+  src: url("../fonts/Circe-ExtraLight.woff2") format("woff2"), url("../fonts/Circe-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url("http://www.7888265.ru/fonts/Circe-Bold.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Circe-Bold.woff") format("woff");
+  src: url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url("http://www.7888265.ru/fonts/Circe-Light.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Circe-Light.woff") format("woff");
+  src: url("../fonts/Circe-Light.woff2") format("woff2"), url("../fonts/Circe-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url("http://www.7888265.ru/fonts/Circe-Regular.woff2") format("woff2"), url("http://www.7888265.ru/fonts/Circe-Regular.woff") format("woff");
+  src: url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -298,12 +298,6 @@ p, .text {
   padding: 0 2.8125vw;
   font-size: 1.5vw;
 }
-.h1--static--inner {
-  padding: 0 2.4125vw;
-}
-.h2--static--inner {
-  padding: 0;
-}
 
 .h2--nopd {
   padding: 0;
@@ -369,7 +363,6 @@ p, .text {
 @media (max-width: 768px) {
   .h1, .h2 {
     text-align: center;
-    font-size: 21px;
   }
 }
 
@@ -412,7 +405,7 @@ p, .text {
 }
 
 .ui-accordion-header-active {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @-webkit-keyframes accordionInDown {
@@ -3879,9 +3872,8 @@ p, .text {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .nav__li {
@@ -4345,7 +4337,6 @@ p, .text {
   transition: color .4s;
   display: block;
   font-weight: normal;
-  margin-bottom:30px;
 }
 
 .links__title span {
@@ -4414,7 +4405,6 @@ p, .text {
 
 .partners {
   width: 15vw;
-  margin-top: 20px;
 }
 
 .partners__item {
@@ -4846,7 +4836,6 @@ p, .text {
 @media (max-width: 1024px) {
   .advantages {
     padding: 0;
-    display: block;
     height: auto !important;
   }
   .advantages--slider .advantages__item {
@@ -4902,27 +4891,6 @@ p, .text {
   }
   .advantages__item-t1-2 {
     font-size: 19px;
-  }
-}
-@media (max-width: 768px) {
-  .advantages__item-t1 {
-    font-size: 21px;
-  }
-  .advantages--slider .advantages__item-t2 {
-    font-size: 19px;
-  }
-  .advantages--slider .advantages__item {
-    font-size: 16px;
-  }
-  .advantages__item:last-child {
-    display: block;
-    text-align: center;
-  }
-  .advantages__price {
-    width: 100%;
-  }
-  .advantages__item span {
-    display: inline-block;
   }
 }
 
@@ -5438,21 +5406,10 @@ p, .text {
 }
 
 @media (max-width: 768px) {
-  .layout__wrap {
-    display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
--ms-flex-direction: column;
-        flex-direction: column;
-  }
   .layout__form {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
-    order: 1;
-    margin-top: 20px;
   }
   .layout__slider {
     width: 100%;
@@ -6194,7 +6151,11 @@ display: flex;
   }
   .page-footer__nav {
     margin-left: 0;
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .page-footer__nav-ul {
     margin-bottom: 20px;
@@ -6457,36 +6418,7 @@ display: flex;
 }
 
 .slider-main__wrap .owl-nav {
-  left: 0;
-  position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  margin: 0;
-  right: 0;
-  z-index: 5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 0;
-  padding: 0 1vw;
-  padding-right: 6%;
-}
-.slider-main__wrap .owl-nav > div {
-  width: 37px;
-  height: 86px;
-  font-size: 0!important;
-  background: none!important;
-  padding: 0!important;
-  margin: 0!important;
-  padding: 0 1vw;
-  transform: translateY(86px);
-}
-
-.slider-main__wrap div.owl-prev {
-  background-image: url(http://www.7888265.ru/img/arr-left.png)!important;
-}
-.slider-main__wrap div.owl-next {
-  background-image: url(http://www.7888265.ru/img/arr-right.png)!important;
+  display: none;
 }
 
 .slider-main__wrap .owl-item {
@@ -6620,10 +6552,6 @@ display: flex;
   top: 430px;
 }
 @media (max-width: 1440px) {
-  .slider-main__wrap .owl-nav > div {
-    background-repeat: no-repeat!important;
-    background-size: 25px auto!important;
-  }
   .slider-main__btn-menu {
     top: 283px;
   }
@@ -6633,9 +6561,6 @@ display: flex;
 }
 
 @media (max-width: 1280px) {
-  .slider-main__wrap .owl-nav {
-    display: none;
-  }
   .slider-main__t1 {
     left: 2vw;
     font-size: 2vw;
@@ -7047,7 +6972,7 @@ display: flex;
 
 @media (max-width: 1024px) {
   .layout-slider__slide img {
-    max-width: 100%;
+    max-width: 80%;
   }
   .layout-slider .owl-nav > div .icon {
     font-size: 65px;
@@ -7789,18 +7714,8 @@ display: flex;
 }
 
 @media (max-width: 500px) {
-  .scheme {
-    display: block;
-  }
-  .scheme__item--mobile, .scheme__item--number {
-    display: none;
-  }
-  .scheme__section:nth-child(6) {
-    width: 200px;
-  }
   .scheme__section {
-    width: 140px;
-    margin: 0 auto 20px auto;
+    width: 100%;
   }
   .scheme__line:after {
     display: none !important;
@@ -7933,6 +7848,21 @@ display: flex;
 }
 
 .product__nav-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   -webkit-box-shadow: inset 0 0 0 0px transparent;
           box-shadow: inset 0 0 0 0px transparent;
@@ -7957,7 +7887,7 @@ display: flex;
 .product__slider {
   width: 86.4%;
   height: 100%;
-  padding-left: 1.5625vw;
+  padding-right: 1.5625vw;
 }
 
 .product__slider-item {
@@ -7992,7 +7922,7 @@ display: flex;
 .product__info {
   height: 100%;
   z-index: 5;
-  margin-left: 1.5625vw;
+  margin-right: 1.5625vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8101,6 +8031,12 @@ display: flex;
   color: #fff;
 }
 
+@media (max-width: 1600px) {
+  .product__slider {
+    padding-right: 1.5625vw;
+  }
+}
+
 @media (max-width: 1440px) {
   .product__right .menu__nav-button {
     font-size: .9vw;
@@ -8125,6 +8061,12 @@ display: flex;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .product__nav {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .product__nav-item {
     height: auto;
   }
@@ -8134,13 +8076,21 @@ display: flex;
   }
   .product__left {
     width: 100%;
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .product__title {
     font-size: 18px;
-  }
-  .product__slider-wrap {
-    justify-content: space-between;
   }
   .product__right {
     width: 100%;
@@ -8151,7 +8101,10 @@ display: flex;
     font-size: 16px;
   }
   .product__nav {
-
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .product__slider-item {
     overflow: hidden;
@@ -8200,9 +8153,6 @@ display: flex;
 }
 
 @media (max-width: 700px) {
-  .product__slider {
-    width: 100%;
-  }
   .product__info {
     width: 100%;
     -webkit-box-orient: horizontal;
@@ -8216,7 +8166,11 @@ display: flex;
     padding: 0;
   }
   .product__slider-wrap {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .product__slider-item {
     -webkit-box-flex: 0;
@@ -8224,7 +8178,6 @@ display: flex;
         -ms-flex: 0;
             flex: 0;
     width: 100%;
-    text-align: center;
   }
   .product__nav-item {
     width: -webkit-calc(100% / 4);
@@ -8243,27 +8196,6 @@ display: flex;
   }
   .product__info-item {
     margin-bottom: 10px;
-    width: 60px;
-    height: 60px;
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .product__info-text {
-    font-size: 10px;
-  }
-  .product__info-icon, .product__info-number {
-    font-size: 30px;
-  }
-  .product__info {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 60px;
-  }
-  .product__left {
-    padding-top: 70px;
-    position: relative;
   }
 }
 
@@ -8520,17 +8452,10 @@ display: flex;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            -webkit-box-align: center;
-        -ms-flex-align: center;
-                align-items: center;
   }
   .product-specs__value {
     margin: 10px 0 10px 0;
-    width: auto;
-    font-size: 14px;
-  }
-  .product-specs__value span {
-    font-size: 12px;
+    width: 100%;
   }
   .product-specs__price {
     -webkit-box-orient: vertical;
@@ -8549,12 +8474,6 @@ display: flex;
   }
   .product-specs__img-box img {
     margin-bottom: 10px;
-  }
-  .product-specs__name {
-    font-size: 14px;
-  }
-  .product-specs__icon {
-    padding-right: 10px;
   }
 }
 
@@ -8991,7 +8910,7 @@ display: flex;
   padding: 0 2.8125vw;
   margin-bottom: 23px;
 }
-.page-about-inner {padding: 0 !important;}
+
 .page-about .h2 {
   margin-bottom: 14px;
 }
@@ -9033,7 +8952,7 @@ display: flex;
 .page-list {
   padding: 0 2.8125vw;
 }
-.page-list-inner {padding: 0 .8125vw;}
+
 .page-list .h2 {
   margin-bottom: 23px;
 }
@@ -9095,149 +9014,4 @@ display: flex;
   .page-list__li {
     width: 100%;
   }
-}
-.img--vertical img {
-  max-width: 280px;
-  margin: 0 auto;
-}
-.map-box *{
-	-webkit-transition: none !important;
-	-moz-transition: none !important;
-	transition: none !important;
-}
-
-.map-box{position: relative;}
-.map-m{margin: 10px;}
-#map{
-	width: 100%;
-	height: 600px;
-}
-.map-descr{
-	width: 450px;
-	height: 100%;
-	padding: 0 10px 0 30px ;
-	background: rgba(177, 8, 55, 0.8);
-	position: absolute;
-	right: 50px;
-	z-index: 100;
-}
-.map-box p,
-.map-box li{
-	color: #fff;
-	font-size: 16px;
-	font-family: 'Roboto';
-	font-weight: 300;
-}
-.map-box .title{
-	margin-bottom: 8px;
-	font-size: 25px;
-	font-family: 'LetoSans';
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 30px;
-	margin-left: -30px;
-}
-.map-box a{
-    font-family: 'LetoSans';
-    font-size: 19px;
-    padding-bottom: 3px;
-    margin-bottom: -2px;
-    display: block;
-	color: #fff;
-    }
-.map-box a.active{text-decoration: underline;}
-.map-box ul{margin-bottom: 22px;}
-
-.contacts-box{margin-bottom: 10px;}
-.contacts-box .left li{
-	margin: 10px;
-	color: #323232;
-	font-size: 16px;
-	position: relative;
-}
-.hidden {display:none; width:0; height:0; margin:0; padding:0;}
-p.title {margin:0;}
-section.map_box {padding:0; margin:0;}
-.shosse-color-1 {color:#eb5e5a !important;}
-.shosse-color-2 {color:#4fd6a5 !important;}
-.shosse-color-3 {color:#0099b5 !important;}
-
-
-
-
-.list-unstyled-first li {
-	margin-bottom:10px;
-}
-.list-unstyled-first li, .list-unstyled li {
-
-  list-style: none; 
-}
- .list-unstyled li::before {color:#fff !important;}
- .list-unstyled-first li:nth-child(1)::before {color:#eb5e5a !important;}
- .list-unstyled-first li:nth-child(2)::before {color:#4fd6a5 !important;}
- .list-unstyled-first li:nth-child(3)::before {color:#0099b5 !important;}
- .list-unstyled-first li::before,  .list-unstyled li::before {
-  content: "\2022";
-  font-size: 29px;
-  padding-right: 10px;
-  line-height: 20px;
-  position: relative;
-  top: 7px;
-  }
-.bold {font-weight:bold;}
-.list-unstyled-text {}
-
-/******* Popup form *******/
-.popup_wrap {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, .2);
-  opacity: 1;
-  display: none;
-  z-index: 1023;
-  width: 100%;
-  height: 100%;
-}
-.popup-wrap-background {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.popup_wrap .form--product {
-  width: auto!important;
-  max-width: 100%;
-  padding: 20px;
-  position: relative;
-}
-.popup_wrap 
-.popup_content {
-  max-width: 100%;
-  border: 1px solid #dcdcdc;
-  padding: 15px;
-  font-size: 1rem;
-  background: #ffffff;
-  position: absolute;
-  border-radius: 7px;
-  width: 470px;
-}
-.popup_close{
-    background: url(../img/popup_close.png) no-repeat;
-    width: 13px;
-    height: 13px;
-    position: absolute;
-    right: 9px;
-    top: 9px;
-    cursor: pointer;
-}
-/**************************/
-
-.link {color: #b10837;transition: color .4s;}
-.link:hover {
-    color: #FFA500;
-    text-decoration: underline;
 }

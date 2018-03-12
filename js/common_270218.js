@@ -290,26 +290,6 @@ function slickSlider() {
 		});
 }
 
-function validate (form){
-	// Form validation
- 	var valid = true;
- 	var inputname=$(form).find('input.form__input--name');
-    if ((inputname.val()=="") && valid) {
-    	valid = false;
-    	inputname.attr("style","border:2px solid #ff0000");
-    	inputname.val('Обязательное поле');
-    	setTimeout(function(){inputname.val(''); inputname.focus(); inputname.attr("style","border: 1px solid #dadbde");}, 1000);
-    } 
-    var inputphone=$(form).find("input.form__input--tel");
-    if ((inputphone.val()=="") && valid){
-    	valid = false;
-    	inputphone.attr("style","border:2px solid #ff0000");
-    	inputphone.val('Обязательное поле');
-    	setTimeout(function(){inputphone.val(''); inputphone.focus(); inputphone.attr("style","border: 1px solid #dadbde");}, 1000);
-    } 
-    return valid;
-}
-
 window.onload = function() {
 	//scollEvents
 	scrollEffects();
@@ -342,47 +322,3 @@ window.onload = function() {
 	slickSlider();
 	staticSlider('slideInDown', 'slideOutDown');
 };
-$(function(){
-	$('a.product-specs__button').click(function(e){
-		e.preventDefault();
-		$('.menu__nav-button').trigger('click');
-	});
-	$('button.form__submit').click(function(e){	
-		e.preventDefault();	
-		var $form = $(this).parents('form');	
-		if (validate($form)){ 
-			$.ajax({
-			    url: '/send/',
-		        type: 'POST',
-		        dataType: 'json',
-		        data: {
-		          user_name: $form.find("input.form__input--name").val(),
-		          user_phone: $form.find("input.form__input--tel").val(),
-		          user_comment: $form.find("textarea.form__textarea").val()
-		        },
-		        error: function() {},
-		        success: function(resp) {
-		        	yaCounter18362293.reachGoal('ORDER');
-		        	$('#popup_wrap').fadeOut(400);
-		            swal({
-		              type: 'success',
-		              title: 'Благодарим Вас!',
-		              text: 'Мы свяжемся с Вами в ближайшее время',
-		              showConfirmButton: false,
-		              timer: 2000
-		            });
-		            $form[0].reset();
-		        }
-		    });
-		}
-		return false;
-	});
-	$("input.form__input--tel").mask("+7(999)999-99-99");
-	$('button.slider-main__contact').click(function(e){
-		e.preventDefault();
-		$('#popup_wrap').fadeIn(400);
-	});
-	$('.popup_close').click(function(){
-		$('#popup_wrap').fadeOut(400);
-	});
-});
