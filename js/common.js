@@ -321,59 +321,57 @@ function menuHover() {
 	});
 }
 
-//productCalc
-function productCalc() {
-	var btn = $('.product__btn');
-	var btnWeight = $('.product__checkbox');
-	var btnCart = $('.product__cart');
-	var cartTotal = $('.cartNumber');
-	var itemPop = $('.popular__item');
+//catalogCalc
+function catalogCalc(){
+	var select = $('.catalog__select');
+	var btn = $('.catalog__btn');
+	var dec = $('.catalog__btn--dec');
+	var inc = $('.catalog__btn--inc');
+	var output = $('.catalog__price-number');
+	var valueBox = $('.catalog__output');
 
-	$(itemPop).on('click', function(){
-		var number = parseInt($(this).find('.popPrice').html());
-		var cartNumber = parseInt($(cartTotal).html());
-		var cartCalc = number + cartNumber;
+	$(select).on('change', function(){
+		var options = $(this).find('option');
+		var value = $(this).val();
+		var output = $(this).closest('.catalog__item').find($('.catalog__price-number'));
+		var valueBox = $(this).closest('.catalog__item').find($('.catalog__output'));
 
-		cartTotal.html(cartCalc);
-	});
-
-	$(btnCart).on('click', function(){
-		var number = parseInt($(this).closest('.product').find('.productNumber').html());
-		var cartNumber = parseInt($(cartTotal).html());
-		var cartCalc = number + cartNumber;
-
-		cartTotal.html(cartCalc);
-	});
-
-	$(btnWeight).on('click', function(){
-		var number = $(this).data('number');
-		var price = $(this).closest('.product__weight').find('.productNumber');
-		var output = $(this).closest('.product__content').find('.product__number');
-
-		price.html(number);
-		output.html(1);
+		options.each(function(){
+			var optionValue = $(this).val();
+			if(value == optionValue){
+				var price = $(this).data('price');
+				$(output).html(price).attr('data-price', price);
+				$(valueBox).html(1);
+			}
+		});
 	});
 
 	$(btn).on('click', function(){
-		var output = $(this).closest('div').find('.product__number');
-		var number = parseInt($(this).closest('div').find('.product__number').html());
-		var price = $(this).closest('.product').find('.productNumber');
-		var priceNumber = parseInt($(this).closest('.product').find('.product__checkbox:checked').data('number'));
+		var output = $(this).closest('.catalog__item').find('.catalog__price-number');
+		var value = $(this).closest('.catalog__item').find('.catalog__output');
+		var valueHtml = $(value).html();
 
-		if($(this).hasClass('btnDec')){
-			--number
-		}else if($(this).hasClass('btnInc')){
-			++number
+		if($(this).hasClass('dec')){
+			--valueHtml
+		}else if($(this).hasClass('inc')){
+			++valueHtml
 		}
-
-		if(number <= 1){
-			number = 1;
+		if(valueHtml <= 1){
+			valueHtml = 1;
 		}
+		var summ = valueHtml * parseInt(output.attr('data-price'));
 
-		var summPrice = priceNumber * number;
+		$(value).html(valueHtml);
+		$(output).html(summ);
+	});
+}
 
-		price.html(summPrice);
-		output.html(number);
+//checkSort
+function checkSort(){
+	var input = $('.sort__input');
+
+	$(input).on('change', function(){
+		$(this).closest('.sort__inpbox').siblings().find('.sort__input').attr('checked', false);
 	});
 }
 
@@ -385,6 +383,8 @@ window.onload = function() {
 	//other
 	bodyOverflow('.hamburger');
 	phoneMask();
+	catalogCalc();
+	checkSort();
 
 	//tabs
 	tabs();
