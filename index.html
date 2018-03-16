@@ -15,781 +15,655 @@
 		<global-svg></global-svg>
 	</div>
 	<header class="page-header">
-		<div class="hamburger__wrap">
-			<div class="hamburger">
-				<div class="hamburger__line animated hamburger__line1"></div>
-				<div class="hamburger__line animated hamburger__line2"></div>
-				<div class="hamburger__line animated hamburger__line3"></div>
+		<div class="page-header__top">
+			<div class="hamburger__wrap">
+				<div class="hamburger">
+					<div class="hamburger__line animated hamburger__line1"></div>
+					<div class="hamburger__line animated hamburger__line2"></div>
+					<div class="hamburger__line animated hamburger__line3"></div>
+				</div>
 			</div>
-		</div>
-		<a href="#" class="page-header__logo">
-			<div class="page-header__logo-img"><img src="img/logo.png" alt=""></div>
-			<div class="page-header__logo-wrap">
-				<div class="page-header__logo-t1">Осетинские пироги</div>
-				<div class="page-header__logo-t2">сеть лучших пекарен в Москве</div>
-			</div>
-		</a>
-		<div class="page-header__location">
-			<svg class="page-header__location-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>
-			<span>москва</span>
-		</div>
-		<nav class="nav">
-			<a href="#" class="page-header__link">
-				<svg class="page-header__icon icon icon-local-shipping"><use xlink:href="#icon-local-shipping"></use></svg>
-				доставка
+			<a href="#" class="page-header__logo">
+				<img width="60" src="img/logo.png" alt="">
+				пироги осетинские
 			</a>
-			<a href="#" class="page-header__link">
-				<svg class="page-header__icon icon icon-payment"><use xlink:href="#icon-payment"></use></svg>
-				оплата
-			</a>
-			<a href="#" class="page-header__link">
-				<svg class="page-header__icon icon icon-person-pin"><use xlink:href="#icon-person-pin"></use></svg>
-				о компании
-			</a>
-			<a href="#" class="page-header__link">
-				<svg class="page-header__icon icon icon-turned-in-not"><use xlink:href="#icon-turned-in-not"></use></svg>
-				контакты
-			</a>
-		</nav>
-		<div class="page-header__contact">
+			<nav class="nav">
+				<a href="#" class="nav__link">Доставка</a>
+				<a href="#" class="nav__link">Оплата</a>
+				<a href="#" class="nav__link nav__link--red">Акции и спецпредложения</a>
+				<a href="#" class="nav__link">О компании</a>
+				<a href="#" class="nav__link">Контакты</a>
+			</nav>
+			<div class="page-header__delivery">доставка с 08:00 до 22:00</div>
 			<a href="tel:+74951001510" class="page-header__phone">+7 (495) 100-15-10</a>
-			<div class="page-header__contact-desc">единый справочный телефон</div>
+		</div>
+		<div class="page-header__bottom">
+			<div class="menu">
+				<a href="#" class="menu__link"><img src="img/menu1.png" alt=""> мясо</a>
+				<a href="#" class="menu__link"><img src="img/menu2.png" alt=""> курица</a>
+				<a href="#" class="menu__link"><img src="img/menu3.png" alt=""> капуста</a>
+				<a href="#" class="menu__link"><img src="img/menu4.png" alt=""> картошка</a>
+				<a href="#" class="menu__link"><img src="img/menu5.png" alt=""> сыр</a>
+				<a href="#" class="menu__link"><img src="img/menu6.png" alt=""> рыба</a>
+				<a href="#" class="menu__link"><img src="img/menu7.png" alt=""> сладкие</a>
+				<a href="#" class="menu__link"><img src="img/menu8.png" alt=""> постные</a><a href="tel:+74951001510" class="page-header__phone page-header__phone--scroll">+7 (495) 100-15-10</a>
+			</div>
+			<div class="page-header__cart">
+				<div class="page-header__cart-title">Ваша корзина:</div>
+				<div class="page-header__cart-content">
+					<svg class="page-header__cart-icon icon icon-shopping-cart"><use xlink:href="#icon-shopping-cart"></use></svg>
+					<span class="page-header__cart-count calcCartCount">0</span>
+					<span class="page-header__cart-number calcCart">0</span>
+					<span class="page-header__cart-value">руб.</span>
+				</div>
+			</div>
 		</div>
 	</header>
 	<main class="main overflow">
-		<div class="bg-sale">
-			<img src="img/page-header__bg.png" alt="">
-		</div>
-		<div class="sort">
-			<div class="sort__title">
-				<svg class="sort__icon icon icon-playlist-add-check"><use xlink:href="#icon-playlist-add-check"></use></svg>
-				Сортировка:
-			</div>
-			<div class="sort__wrap">
-				<div class="sort__inpbox">
-					<input checked id="sort1" type="checkbox" name="sort1" class="sort__input">
-					<label for="sort1" class="sort__label">по рейтингу пекарен</label>
-				</div>
-				<div class="sort__inpbox">
-					<input  id="sort2" type="checkbox" name="sort1" class="sort__input">
-					<label for="sort2" class="sort__label">по рейтингу пекарен</label>
-				</div>
-				<div class="sort__inpbox">
-					<input  id="sort3" type="checkbox" name="sort1" class="sort__input">
-					<label for="sort3" class="sort__label">по рейтингу пекарен</label>
-				</div>
-				<div class="sort__inpbox">
-					<input  id="sort4" type="checkbox" name="sort1" class="sort__input">
-					<label for="sort4" class="sort__label">по рейтингу пекарен</label>
-				</div>
-				<div class="sort__inpbox">
-					<input  id="sort5" type="checkbox" name="sort1" class="sort__input">
-					<label for="sort5" class="sort__label">по рейтингу пекарен</label>
-				</div>
-				<div class="sort__inpbox">
-					<input  id="sort6" type="checkbox" name="sort1" class="sort__input">
-					<label for="sort6" class="sort__label">по рейтингу пекарен</label>
-				</div>
-			</div>
-		</div>
-		<h1 class="h1"><span>осетинские пироги с бесплатной доставкой по москве</span></h1>
-		<section class="product">
-			<div class="product__header">
-				<div class="product__header-title">Пекарня «Традиции Осетии»</div>
-				<div class="rating">
-					<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-					<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-					<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-					<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-					<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-				</div>
-				<div class="product__header-info product__header-info--no-mgl">
-					<svg class="product__header-info-icon icon icon-tram"><use xlink:href="#icon-tram"></use></svg>
-					Москва, м. Киевская
-				</div>
-				<div class="product__header-info">
-					<svg class="product__header-info-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-					Доставка: с 09:00 до 21:00
-				</div>
-				<a href="tel:+74951001510" class="product__phone">+7 (495) 100-15-10</a>
-			</div>
-			<div class="product__wrapper">
-				<div class="product__img"><img src="img/prod1.jpg" alt=""></div>
-				<div class="product__content">
-					<div class="product__item">
-						<div class="product__item-img"><img src="img/prodItem1.jpg" alt=""></div>
-						<div class="product__item-desc">
-							<div class="product__title">Осетинский пирог с мясом</div>
-							<div class="product__weight">
-								<svg class="product__weight-icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg> 1 200 г
-							</div>
-							<div class="product__price">
-								750 <span class="product__value">руб.</span>
-							</div>
-							<a href="#" class="product__buy">заказать</a>
+		<section class="wow fadeIn text-box text-box--shadow">
+			<h1 class="h1 h1--left">Осетинские пироги с бесплатной доставкой по Москве</h1>
+			<p class="text">Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!</p>
+		</section>
+		<section class="wow fadeIn product">
+			<h2 class="h2">Осетинские пироги с мясом</h2>
+			<div class="product__wrap">
+				<div class="product__item">
+					<div class="product__img"><img src="img/product1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог с мясом «Фыдджын»</div>
+					<select name="" id="" class="product__select calcSelect">
+						<option data-price="750" value="0">36 см 1 200 г 60 мин</option>
+						<option data-price="950" value="1">36 см 1 200 г 60 мин</option>
+						<option data-price="450" value="2">50 см 1 500 г 90 мин</option>
+					</select>
+					<div class="product__buy-wrap">
+						<div class="product__calc">
+							<div class="product__btn calcBtn calcDec">-</div>
+							<div class="product__output calcOutput">1</div>
+							<div class="product__btn calcBtn calcInc">+</div>
 						</div>
-					</div><!--product-item-->
-					<div class="product__item">
-						<div class="product__item-img"><img src="img/prodItem1.jpg" alt=""></div>
-						<div class="product__item-desc">
-							<div class="product__title">Осетинский пирог с мясом</div>
-							<div class="product__weight">
-								<svg class="product__weight-icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg> 1 200 г
-							</div>
-							<div class="product__price">
-								750 руб.
-							</div>
-							<a href="#" class="product__buy">заказать</a>
+						<div class="product__price">
+							<span data-price="750" class="product__price-number calcNumber">750</span>
+							<span class="product__value"> руб.</span>
 						</div>
-					</div><!--product-item-->
-					<div class="product__item">
-						<div class="product__item-img"><img src="img/prodItem1.jpg" alt=""></div>
-						<div class="product__item-desc">
-							<div class="product__title">Осетинский пирог с мясом</div>
-							<div class="product__weight">
-								<svg class="product__weight-icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg> 1 200 г
-							</div>
-							<div class="product__price">
-								750 руб.
-							</div>
-							<a href="#" class="product__buy">заказать</a>
-						</div>
-					</div><!--product-item-->
-					<div class="product__item">
-						<div class="product__item-img"><img src="img/prodItem1.jpg" alt=""></div>
-						<div class="product__item-desc">
-							<div class="product__title">Осетинский пирог с мясом</div>
-							<div class="product__weight">
-								<svg class="product__weight-icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg> 1 200 г
-							</div>
-							<div class="product__price">
-								750 руб.
-							</div>
-							<a href="#" class="product__buy">заказать</a>
-						</div>
-					</div><!--product-item-->
-					<div class="product__item">
-						<div class="product__item-img"><img src="img/prodItem1.jpg" alt=""></div>
-						<div class="product__item-desc">
-							<div class="product__title">Осетинский пирог с мясом</div>
-							<div class="product__weight">
-								<svg class="product__weight-icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg> 1 200 г
-							</div>
-							<div class="product__price">
-								750 руб.
-							</div>
-							<a href="#" class="product__buy">заказать</a>
-						</div>
-					</div><!--product-item-->
-					<div class="product__item">
-						<div class="product__item-img"><img src="img/prodItem1.jpg" alt=""></div>
-						<div class="product__item-desc">
-							<div class="product__title">Осетинский пирог с мясом</div>
-							<div class="product__weight">
-								<svg class="product__weight-icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg> 1 200 г
-							</div>
-							<div class="product__price">
-								750 руб.
-							</div>
-							<a href="#" class="product__buy">заказать</a>
-						</div>
-					</div><!--product-item-->
-					<div class="product__item">
-						<div class="product__item-img"><img src="img/prodItem1.jpg" alt=""></div>
-						<div class="product__item-desc">
-							<div class="product__title">Осетинский пирог с мясом</div>
-							<div class="product__weight">
-								<svg class="product__weight-icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg> 1 200 г
-							</div>
-							<div class="product__price">
-								750 руб.
-							</div>
-							<a href="#" class="product__buy">заказать</a>
-						</div>
-					</div><!--product-item-->
-					<div class="product__item">
-						<div class="product__item-img"><img src="img/prodItem1.jpg" alt=""></div>
-						<div class="product__item-desc">
-							<div class="product__title">Осетинский пирог с мясом</div>
-							<div class="product__weight">
-								<svg class="product__weight-icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg> 1 200 г
-							</div>
-							<div class="product__price">
-								750 руб.
-							</div>
-							<a href="#" class="product__buy">заказать</a>
-						</div>
-					</div><!--product-item-->
-				</div><!--product-content-->
-				<div class="product__info">
-					<div class="product__info-title">
-						<svg class="product__info-icon icon icon-check"><use xlink:href="#icon-check"></use></svg>
-						Большой ассортимент
 					</div>
-					<div class="product__info-title">
-						<svg class="product__info-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-						Доставка от 30 минут
+					<button type="button" class="product__submit calcSubmit">В корзину</button>
+				</div><!--product__item-->
+				<div class="product__item">
+					<div class="product__img"><img src="img/product1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог с мясом «Фыдджын»</div>
+					<select name="" id="" class="product__select calcSelect">
+						<option data-price="750" value="0">36 см 1 200 г 60 мин</option>
+						<option data-price="950" value="1">36 см 1 200 г 60 мин</option>
+						<option data-price="450" value="2">50 см 1 500 г 90 мин</option>
+					</select>
+					<div class="product__buy-wrap">
+						<div class="product__calc">
+							<div class="product__btn calcBtn calcDec">-</div>
+							<div class="product__output calcOutput">1</div>
+							<div class="product__btn calcBtn calcInc">+</div>
+						</div>
+						<div class="product__price">
+							<span data-price="750" class="product__price-number calcNumber">750</span>
+							<span class="product__value"> руб.</span>
+						</div>
 					</div>
-					<div class="product__info-title">
-						<svg class="product__info-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-						Лучшее предположение
+					<button type="button" class="product__submit calcSubmit">В корзину</button>
+				</div><!--product__item-->
+				<div class="product__item">
+					<div class="product__img"><img src="img/product1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог с мясом «Фыдджын»</div>
+					<select name="" id="" class="product__select calcSelect">
+						<option data-price="750" value="0">36 см 1 200 г 60 мин</option>
+						<option data-price="950" value="1">36 см 1 200 г 60 мин</option>
+						<option data-price="450" value="2">50 см 1 500 г 90 мин</option>
+					</select>
+					<div class="product__buy-wrap">
+						<div class="product__calc">
+							<div class="product__btn calcBtn calcDec">-</div>
+							<div class="product__output calcOutput">1</div>
+							<div class="product__btn calcBtn calcInc">+</div>
+						</div>
+						<div class="product__price">
+							<span data-price="750" class="product__price-number calcNumber">750</span>
+							<span class="product__value"> руб.</span>
+						</div>
 					</div>
-					<div class="product__info-title">
-						<svg class="product__info-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-						Проверенные пекарни
+					<button type="button" class="product__submit calcSubmit">В корзину</button>
+				</div><!--product__item-->
+				<div class="product__item">
+					<div class="product__img"><img src="img/product1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог с мясом «Фыдджын»</div>
+					<select name="" id="" class="product__select calcSelect">
+						<option data-price="750" value="0">36 см 1 200 г 60 мин</option>
+						<option data-price="950" value="1">36 см 1 200 г 60 мин</option>
+						<option data-price="450" value="2">50 см 1 500 г 90 мин</option>
+					</select>
+					<div class="product__buy-wrap">
+						<div class="product__calc">
+							<div class="product__btn calcBtn calcDec">-</div>
+							<div class="product__output calcOutput">1</div>
+							<div class="product__btn calcBtn calcInc">+</div>
+						</div>
+						<div class="product__price">
+							<span data-price="750" class="product__price-number calcNumber">750</span>
+							<span class="product__value"> руб.</span>
+						</div>
 					</div>
-					<div class="product__pay-title">Способы оплаты заказа:</div>
-					<div class="product__cash-desc">
-						<svg class="product__cash-icon icon icon-payment"><use xlink:href="#icon-payment"></use></svg>
-						Наличными курьеру
-					</div>
-					<img class="product__cash-img" width="150" src="img/visa-mastercard.png" alt="" class="product__visa">
-				</div><!--product-info-->
-				<a href="#" class="product__link">
-					<svg class="product__link-icon icon icon-arrow-forward"><use xlink:href="#icon-arrow-forward"></use></svg>
-					Перейти в каталог и заказать осетинские пироги с доставкой
-				</a>
+					<button type="button" class="product__submit calcSubmit">В корзину</button>
+				</div><!--product__item-->
 			</div>
 		</section>
-		<section class="popular">
-			<h2 class="popular__h2 h2 h2--red"><span>Самые вкусные осетинские пироги согласно рейтингу</span></h2>
+		<section class="wow fadeIn product">
+			<h2 class="h2">Осетинские пироги с капустой</h2>
+			<div class="product__wrap">
+				<div class="product__item">
+					<div class="product__img"><img src="img/product1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог с мясом «Фыдджын»</div>
+					<select name="" id="" class="product__select calcSelect">
+						<option data-price="750" value="0">36 см 1 200 г 60 мин</option>
+						<option data-price="950" value="1">36 см 1 200 г 60 мин</option>
+						<option data-price="450" value="2">50 см 1 500 г 90 мин</option>
+					</select>
+					<div class="product__buy-wrap">
+						<div class="product__calc">
+							<div class="product__btn calcBtn calcDec">-</div>
+							<div class="product__output calcOutput">1</div>
+							<div class="product__btn calcBtn calcInc">+</div>
+						</div>
+						<div class="product__price">
+							<span data-price="750" class="product__price-number calcNumber">750</span>
+							<span class="product__value"> руб.</span>
+						</div>
+					</div>
+					<button type="button" class="product__submit calcSubmit">В корзину</button>
+				</div><!--product__item-->
+				<div class="product__item">
+					<div class="product__img"><img src="img/product1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог с мясом «Фыдджын»</div>
+					<select name="" id="" class="product__select calcSelect">
+						<option data-price="750" value="0">36 см 1 200 г 60 мин</option>
+						<option data-price="950" value="1">36 см 1 200 г 60 мин</option>
+						<option data-price="450" value="2">50 см 1 500 г 90 мин</option>
+					</select>
+					<div class="product__buy-wrap">
+						<div class="product__calc">
+							<div class="product__btn calcBtn calcDec">-</div>
+							<div class="product__output calcOutput">1</div>
+							<div class="product__btn calcBtn calcInc">+</div>
+						</div>
+						<div class="product__price">
+							<span data-price="750" class="product__price-number calcNumber">750</span>
+							<span class="product__value"> руб.</span>
+						</div>
+					</div>
+					<button type="button" class="product__submit calcSubmit">В корзину</button>
+				</div><!--product__item-->
+				<div class="product__item">
+					<div class="product__img"><img src="img/product1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог с мясом «Фыдджын»</div>
+					<select name="" id="" class="product__select calcSelect">
+						<option data-price="750" value="0">36 см 1 200 г 60 мин</option>
+						<option data-price="950" value="1">36 см 1 200 г 60 мин</option>
+						<option data-price="450" value="2">50 см 1 500 г 90 мин</option>
+					</select>
+					<div class="product__buy-wrap">
+						<div class="product__calc">
+							<div class="product__btn calcBtn calcDec">-</div>
+							<div class="product__output calcOutput">1</div>
+							<div class="product__btn calcBtn calcInc">+</div>
+						</div>
+						<div class="product__price">
+							<span data-price="750" class="product__price-number calcNumber">750</span>
+							<span class="product__value"> руб.</span>
+						</div>
+					</div>
+					<button type="button" class="product__submit calcSubmit">В корзину</button>
+				</div><!--product__item-->
+				<div class="product__item">
+					<div class="product__img"><img src="img/product1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог с мясом «Фыдджын»</div>
+					<select name="" id="" class="product__select calcSelect">
+						<option data-price="750" value="0">36 см 1 200 г 60 мин</option>
+						<option data-price="950" value="1">36 см 1 200 г 60 мин</option>
+						<option data-price="450" value="2">50 см 1 500 г 90 мин</option>
+					</select>
+					<div class="product__buy-wrap">
+						<div class="product__calc">
+							<div class="product__btn calcBtn calcDec">-</div>
+							<div class="product__output calcOutput">1</div>
+							<div class="product__btn calcBtn calcInc">+</div>
+						</div>
+						<div class="product__price">
+							<span data-price="750" class="product__price-number calcNumber">750</span>
+							<span class="product__value"> руб.</span>
+						</div>
+					</div>
+					<button type="button" class="product__submit calcSubmit">В корзину</button>
+				</div><!--product__item-->
+			</div>
+		</section>
+		<section class="wow fadeIn popular">
+			<h2 class="h2">Популярные осетинские пироги</h2>
 			<div class="popular__slider owl-carousel">
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--red"><svg class="icon icon-star-border"><use xlink:href="#icon-star-border"></use></svg></div>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--red"><svg class="icon icon-star-border"><use xlink:href="#icon-star-border"></use></svg></div>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--green">
-							<svg class="icon icon-spa"><use xlink:href="#icon-spa"></use></svg>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
+					</div>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
-						</div>
-					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--red"><svg class="icon icon-star-border"><use xlink:href="#icon-star-border"></use></svg></div>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--red"><svg class="icon icon-star-border"><use xlink:href="#icon-star-border"></use></svg></div>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--green">
-							<svg class="icon icon-spa"><use xlink:href="#icon-spa"></use></svg>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
+					</div>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
-						</div>
-					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--red"><svg class="icon icon-star-border"><use xlink:href="#icon-star-border"></use></svg></div>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--red"><svg class="icon icon-star-border"><use xlink:href="#icon-star-border"></use></svg></div>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
 				<div class="popular__item">
-					<div class="popular__name"><span>Пирог с мясом</span></div>
 					<div class="popular__img">
 						<img src="img/popular1.png" alt="">
-						<div class="popular__sale popular__sale--green">
-							<svg class="icon icon-spa"><use xlink:href="#icon-spa"></use></svg>
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
+					</div>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<div class="popular__buy">
-						<div class="popular__weight">
-							<svg class="popular__weight-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-							1 200 г
-						</div>
-						<div class="popular__price">
-							650
-							<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+				</div><!--popular-item-->
+				<div class="popular__item">
+					<div class="popular__img">
+						<img src="img/popular1.png" alt="">
+						<div class="popular__name">Осетинский пирог <br /> с мясом «Фыдджын»</div>
+					</div>
+					<div class="popular__buy-wrap">
+						<div class="popular__calc">
+							<div class="popular__radius">
+								<svg class="popular__icon icon icon-track-changes"><use xlink:href="#icon-track-changes"></use></svg>
+								32 см
+							</div>
+							<div class="popular__weight">
+								<svg class="popular__icon icon icon-balance-scale"><use xlink:href="#icon-balance-scale"></use></svg>
+								1 000г
+							</div>
+							<div class="popular__price">
+								<span class="calcNumber">750</span>
+								<svg class="popular__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg>
+							</div>
+							<button type="button" class="popular__button calcSingleItem">в корзину</button>
 						</div>
 					</div>
-					<a href="#" class="popular__submit">заказать</a>
-				</div>
+				</div><!--popular-item-->
+			</div>
+			<div class="popular__dots"></div>
+		</section>
+		<section class="wow fadeIn advantages">
+			<h2 class="h2">Качество и точное соблюдение сроков доставки</h2>
+			<div class="advantages__wrap">
+				<div class="advantages__item">
+					<div class="advantages__icon"><img src="img/advan1.png" alt=""></div>
+					<div class="advantages__name">Удобная доставка</div>
+					<div class="advantages__desc">
+						Бесплатная доставка при заказе
+						от 1 000 руб. Срочная доставка
+						на работу и домой.
+					</div>
+				</div><!--advantages__item-->
+				<div class="advantages__item">
+					<div class="advantages__icon"><img src="img/advan2.png" alt=""></div>
+					<div class="advantages__name">
+						Мы работаем<br />
+						по всей Москве
+					</div>
+					<div class="advantages__desc">
+						Наши курьеры выезжают
+						в любые районы Москвы
+					</div>
+				</div><!--advantages__item-->
+				<div class="advantages__item">
+					<div class="advantages__icon"><img src="img/advan3.png" alt=""></div>
+					<div class="advantages__name">
+						Оплата наличными<br />
+						и по карте
+					</div>
+					<div class="advantages__desc">
+						Множество способов оплаты,
+						для вашего удобства
+					</div>
+				</div><!--advantages__item-->
+				<div class="advantages__item">
+					<div class="advantages__icon"><img src="img/advan4.png" alt=""></div>
+					<div class="advantages__name">
+						Натуральные продукты гарантия отличного вкуса
+					</div>
+					<div class="advantages__desc">
+						Для приготовления наших
+						пирогов мы используем продукты
+						высшего качества
+					</div>
+				</div><!--advantages__item-->
+				<div class="advantages__item">
+					<div class="advantages__icon"><img src="img/advan5.png" alt=""></div>
+					<div class="advantages__name">
+						Среднее время <br />доставки от 45 мин
+					</div>
+					<div class="advantages__desc">
+						Курьер приедет к вам с горячими<br />
+						пирогами точно в срок
+					</div>
+				</div><!--advantages__item-->
 			</div>
 		</section>
-		<section class="text-box">
-			<h2 class="h2"><span>Осетинские пироги с бесплатной доставкой по москве</span></h2>
-			<p class="text">Портал «ОСЕТИНСКИЕ ПИРОГИ С ДОСТАВКОЙ» найдет наиболее подходящий вариант среди сотен пекарен Москвы в кратчайший срок.  Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом. Осетинские пироги издавна были одним из основных блюд этого народа. Традиционно подаются три осетинских пирога, что символизирует три природных стихии: солнце, воду и землю. Заполните форму ниже, чтобы заказать осетинские пироги с доставкой по Москве, пекарня которых расположена рядом с введенным Вами адресом. Осетинские пироги издавна были одним из основных блюд этого народа. Традиционно подаются три осетинских пирога, что символизирует три природных стихии: солнце, воду и землю.</p>
+		<section class="wow fadeIn pies">
+			<h2 class="h2">Осетинские пироги более 100 разнообразных начинок!</h2>
+			<div class="pies__slider owl-carousel">
+				<div class="pies__item">
+					<div class="pies__name"><img width="40" src="img/menu1.png">мясо</div>
+					<div class="pies__item-content">
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link-all">Смотреть все пироги с мясом</a>
+					</div>
+				</div><!--pies-item-->
+				<div class="pies__item">
+					<div class="pies__name"><img width="25" src="img/menu2.png">мясо</div>
+					<div class="pies__item-content">
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link-all">Смотреть все пироги с мясом</a>
+					</div>
+				</div><!--pies-item-->
+				<div class="pies__item">
+					<div class="pies__name"><img width="23" src="img/menu3.png">мясо</div>
+					<div class="pies__item-content">
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link-all">Смотреть все пироги с мясом</a>
+					</div>
+				</div><!--pies-item-->
+				<div class="pies__item">
+					<div class="pies__name"><img width="24" src="img/menu4.png">мясо</div>
+					<div class="pies__item-content">
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link-all">Смотреть все пироги с мясом</a>
+					</div>
+				</div><!--pies-item-->
+				<div class="pies__item">
+					<div class="pies__name"><img width="40" src="img/menu1.png">мясо</div>
+					<div class="pies__item-content">
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link-all">Смотреть все пироги с мясом</a>
+					</div>
+				</div><!--pies-item-->
+				<div class="pies__item">
+					<div class="pies__name"><img width="40" src="img/menu1.png">мясо</div>
+					<div class="pies__item-content">
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link">Осетинские пироги с мясом</a>
+						<a href="#" class="pies__link-all">Смотреть все пироги с мясом</a>
+					</div>
+				</div><!--pies-item-->
+			</div>
+			<div class="pies__dots"></div>
 		</section>
-		<section class="bakery">
-			<div class="bakery__item">
-				<div class="bakery__top">
-					<div class="bakery__img"><img src="img/prod1.jpg" alt=""></div>
-					<div class="bakery__desc">
-						<div class="bakery__title">
-							Пекарня «Традиции Осетии»
-							<div class="rating">
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-							</div>
-							- <span class="bakery__blue">15 отзывов</span>
-							<svg class="bakery__icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg>
-						</div>
-						<div class="bakery__desc-left">
-							<div class="bakery__desc-item">
-								<div class="bakery__header">Режим работы:</div>
-								<svg class="bakery__item-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-								<div class="bakery__text">пн-пт: 08:00-21:00</div>
-								<div class="bakery__text">сб-вс: 08:00-21:00</div>
-							</div>
-							<div class="bakery__desc-item bakery__desc-item--no-pd bakery__desc-item--nomg">
-								<div class="bakery__header">Ближайшая станция метро:</div>
-								<div class="bakery__text bakery__text--metro">
-									м. Проспект Мира
-								</div>
-							</div>
-						</div>
-						<div class="bakery__desc-right">
-							<div class="bakery__desc-item ">
-								<div class="bakery__header">Адрес:</div>
-								<svg class="bakery__item-icon icon icon-location-on2"><use xlink:href="#icon-location-on2"></use></svg>
-								<div class="bakery__text">
-									Москва, ЮАО,<br />
-									Проспект Мира, 123
-								</div>
-							</div>
-							<div class="bakery__desc-item bakery__desc-item--nomg">
-								<div class="bakery__text bakery__text--delivery">
-									<svg class="bakery__item-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-									Доставка от 40 минут
-								</div>
-							</div>
-						</div>
-					</div><!--bakery-desc-->
-				</div><!--bakery-top-->
-				<div class="bakery__bottom">
-					<div class="bakery__type">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type bakery__type--nomg">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type bakery__type--nomg">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-				</div><!--bakery-bottom-->
-			</div><!--bakery-item-->
-			<div class="bakery__item">
-				<div class="bakery__top">
-					<div class="bakery__img"><img src="img/prod1.jpg" alt=""></div>
-					<div class="bakery__desc">
-						<div class="bakery__title">
-							Пекарня «Традиции Осетии»
-							<div class="rating">
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-							</div>
-							- <span class="bakery__blue">15 отзывов</span>
-							<svg class="bakery__icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg>
-						</div>
-						<div class="bakery__desc-left">
-							<div class="bakery__desc-item">
-								<div class="bakery__header">Режим работы:</div>
-								<svg class="bakery__item-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-								<div class="bakery__text">пн-пт: 08:00-21:00</div>
-								<div class="bakery__text">сб-вс: 08:00-21:00</div>
-							</div>
-							<div class="bakery__desc-item bakery__desc-item--no-pd bakery__desc-item--nomg">
-								<div class="bakery__header">Ближайшая станция метро:</div>
-								<div class="bakery__text bakery__text--metro">
-									м. Проспект Мира
-								</div>
-							</div>
-						</div>
-						<div class="bakery__desc-right">
-							<div class="bakery__desc-item ">
-								<div class="bakery__header">Адрес:</div>
-								<svg class="bakery__item-icon icon icon-location-on2"><use xlink:href="#icon-location-on2"></use></svg>
-								<div class="bakery__text">
-									Москва, ЮАО,<br />
-									Проспект Мира, 123
-								</div>
-							</div>
-							<div class="bakery__desc-item bakery__desc-item--nomg">
-								<div class="bakery__text bakery__text--delivery">
-									<svg class="bakery__item-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-									Доставка от 40 минут
-								</div>
-							</div>
-						</div>
-					</div><!--bakery-desc-->
-				</div><!--bakery-top-->
-				<div class="bakery__bottom">
-					<div class="bakery__type">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type bakery__type--nomg">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type bakery__type--nomg">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-				</div><!--bakery-bottom-->
-			</div><!--bakery-item-->
-			<div class="bakery__item">
-				<div class="bakery__top">
-					<div class="bakery__img"><img src="img/prod1.jpg" alt=""></div>
-					<div class="bakery__desc">
-						<div class="bakery__title">
-							Пекарня «Традиции Осетии»
-							<div class="rating">
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-							</div>
-							- <span class="bakery__blue">15 отзывов</span>
-							<svg class="bakery__icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg>
-						</div>
-						<div class="bakery__desc-left">
-							<div class="bakery__desc-item">
-								<div class="bakery__header">Режим работы:</div>
-								<svg class="bakery__item-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-								<div class="bakery__text">пн-пт: 08:00-21:00</div>
-								<div class="bakery__text">сб-вс: 08:00-21:00</div>
-							</div>
-							<div class="bakery__desc-item bakery__desc-item--no-pd bakery__desc-item--nomg">
-								<div class="bakery__header">Ближайшая станция метро:</div>
-								<div class="bakery__text bakery__text--metro">
-									м. Проспект Мира
-								</div>
-							</div>
-						</div>
-						<div class="bakery__desc-right">
-							<div class="bakery__desc-item ">
-								<div class="bakery__header">Адрес:</div>
-								<svg class="bakery__item-icon icon icon-location-on2"><use xlink:href="#icon-location-on2"></use></svg>
-								<div class="bakery__text">
-									Москва, ЮАО,<br />
-									Проспект Мира, 123
-								</div>
-							</div>
-							<div class="bakery__desc-item bakery__desc-item--nomg">
-								<div class="bakery__text bakery__text--delivery">
-									<svg class="bakery__item-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-									Доставка от 40 минут
-								</div>
-							</div>
-						</div>
-					</div><!--bakery-desc-->
-				</div><!--bakery-top-->
-				<div class="bakery__bottom">
-					<div class="bakery__type">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type bakery__type--nomg">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type bakery__type--nomg">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-				</div><!--bakery-bottom-->
-			</div><!--bakery-item-->
-			<div class="bakery__item">
-				<div class="bakery__top">
-					<div class="bakery__img"><img src="img/prod1.jpg" alt=""></div>
-					<div class="bakery__desc">
-						<div class="bakery__title">
-							Пекарня «Традиции Осетии»
-							<div class="rating">
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-								<svg class="rating__icon icon icon-star"><use xlink:href="#icon-star"></use></svg>
-							</div>
-							- <span class="bakery__blue">15 отзывов</span>
-							<svg class="bakery__icon icon icon-comment-alt"><use xlink:href="#icon-comment-alt"></use></svg>
-						</div>
-						<div class="bakery__desc-left">
-							<div class="bakery__desc-item">
-								<div class="bakery__header">Режим работы:</div>
-								<svg class="bakery__item-icon icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
-								<div class="bakery__text">пн-пт: 08:00-21:00</div>
-								<div class="bakery__text">сб-вс: 08:00-21:00</div>
-							</div>
-							<div class="bakery__desc-item bakery__desc-item--no-pd bakery__desc-item--nomg">
-								<div class="bakery__header">Ближайшая станция метро:</div>
-								<div class="bakery__text bakery__text--metro">
-									м. Проспект Мира
-								</div>
-							</div>
-						</div>
-						<div class="bakery__desc-right">
-							<div class="bakery__desc-item ">
-								<div class="bakery__header">Адрес:</div>
-								<svg class="bakery__item-icon icon icon-location-on2"><use xlink:href="#icon-location-on2"></use></svg>
-								<div class="bakery__text">
-									Москва, ЮАО,<br />
-									Проспект Мира, 123
-								</div>
-							</div>
-							<div class="bakery__desc-item bakery__desc-item--nomg">
-								<div class="bakery__text bakery__text--delivery">
-									<svg class="bakery__item-icon icon icon-access-alarm"><use xlink:href="#icon-access-alarm"></use></svg>
-									Доставка от 40 минут
-								</div>
-							</div>
-						</div>
-					</div><!--bakery-desc-->
-				</div><!--bakery-top-->
-				<div class="bakery__bottom">
-					<div class="bakery__type">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type bakery__type--nomg">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-					<div class="bakery__type bakery__type--nomg">
-						<div class="bakery__name">Пирог с мясом</div>
-						<div class="bakery__weight"><svg class="bakery__weight-icon icon icon-star"><use xlink:href="#icon-star"></use></svg> 1 200 г</div>
-						<div class="bakery__price">650 <svg class="bakery__price-icon icon icon-ruble-sign"><use xlink:href="#icon-ruble-sign"></use></svg></div>
-					</div>
-				</div><!--bakery-bottom-->
-			</div><!--bakery-item-->
+		<section class="wow fadeIn text-box text-box--nomb">
+			<h2 class="h2 h2--left">Осетинские пироги с бесплатной доставкой по Москве</h2>
+			<p class="text">Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!</p>
+			<p class="text">Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!</p>
 		</section>
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__left">
-			<a href="#" class="page-header__logo page-footer__logo">
-				<div class="page-header__logo-img page-footer__logo-img"><img src="img/logo.png" alt=""></div>
-				<div class="page-header__logo-wrap page-footer__logo-wrap">
-					<div class="page-header__logo-t1 page-footer__logo-t1">Осетинские пироги</div>
-					<div class="page-header__logo-t2 page-footer__logo-t2">сеть лучших пекарен в Москве</div>
-				</div>
+		<div class="page-footer__contact">
+			<a href="#" class="page-footer__logo">
+				<img width="60" src="img/logo.png" alt="">
+				пироги осетинские
 			</a>
-			<div class="page-footer__call">
-				<svg class="page-footer__call-icon icon icon-phone-in-talk"><use xlink:href="#icon-phone-in-talk"></use></svg>
-				<a href="tel:+74951001510" class="page-footer__phone">+7 (495) 100-15-10</a>
-				<div class="page-footer__call-text">единый справочные телефон</div>
+			<div class="page-footer__title">Контакты</div>
+			<div class="page-footer__text">Москва, ул. Малахитовая, 27</div>
+			<a href="tel:+74951001510" class="page-footer__phone">+7 (495) 100-15-10</a>
+			<div class="page-footer__text">Доставка с 8:00 до 22:00</div>
+		</div>
+		<div class="page-footer__item">
+			<div class="page-footer__title">Информация:</div>
+			<div class="page-footer__links">
+				<a href="#" class="page-footer__link">Доставка</a>
+				<a href="#" class="page-footer__link">Оплата</a>
+				<a href="#" class="page-footer__link">Акции и спецпредложения</a>
+				<a href="#" class="page-footer__link">О компании</a>
+				<a href="#" class="page-footer__link">Контакты</a>
 			</div>
-			<div class="page-footer__address">
-				<svg class="page-footer__call-icon icon icon-location-on"><use xlink:href="#icon-location-on"></use></svg>
-				Москва, ул. Малахитовая, 25
+		</div>
+		<div class="page-footer__item">
+			<div class="page-footer__title">Пироги</div>
+			<div class="page-footer__links">
+				<a href="#" class="page-footer__link">С мясом</a>
+				<a href="#" class="page-footer__link">С капустой</a>
+				<a href="#" class="page-footer__link">С курицей</a>
+				<a href="#" class="page-footer__link">С рыбой</a>
+				<a href="#" class="page-footer__link">С сыром</a>
 			</div>
-			<div class="page-footer__payvar">
-				<svg class="page-footer__call-icon icon icon-payment"><use xlink:href="#icon-payment"></use></svg>
-				<p>Способы оплаты:</p>
-				<div class="page-footer__img-wrap">
-					<img width="55" src="img/pay1.png" alt="" class="page-footer__visa">
-					<img width="55" src="img/pay2.png" alt="" class="page-footer__visa">
-				</div>
+			<div class="page-footer__links">
+				<a href="#" class="page-footer__link">С мясом</a>
+				<a href="#" class="page-footer__link">С капустой</a>
+				<a href="#" class="page-footer__link">С курицей</a>
+				<a href="#" class="page-footer__link">С рыбой</a>
+				<a href="#" class="page-footer__link">С сыром</a>
 			</div>
-			<div class="page-footer__copy">© 2018 Осетинские пироги  «Сеть пекарен»</div>
-		</div><!--page-footer__left-->
-		<div class="page-footer__right">
-			<div class="page-footer__header">
-				<div class="page-footer__title">
-					<svg class="page-footer__title-icon icon icon-content-paste"><use xlink:href="#icon-content-paste"></use></svg>
-					Информация:
-				</div>
-				<div class="page-footer__title">
-					<svg class="page-footer__title-icon icon icon-all-out"><use xlink:href="#icon-all-out"></use></svg>
-					Начинки осетинских пирогов:
-				</div>
+			<div class="page-footer__links">
+				<a href="#" class="page-footer__link">С мясом</a>
+				<a href="#" class="page-footer__link">С капустой</a>
+				<a href="#" class="page-footer__link">С курицей</a>
+				<a href="#" class="page-footer__link">С рыбой</a>
+				<a href="#" class="page-footer__link">С сыром</a>
 			</div>
-			<div class="page-footer__content">
-				<div class="page-footer__links">
-					<a href="#" class="page-footer__link">Доставка</a>
-					<a href="#" class="page-footer__link">Оплата</a>
-					<a href="#" class="page-footer__link">Гарантии</a>
-					<a href="#" class="page-footer__link">Акции и скидки</a>
-					<a href="#" class="page-footer__link">О нас</a>
-					<a href="#" class="page-footer__link">Пироги оптом</a>
-					<a href="#" class="page-footer__link">Контакты</a>
-				</div>
-				<div class="page-footer__links">
-					<a href="#" class="page-footer__link">Пироги с рыбой</a>
-					<a href="#" class="page-footer__link">Пироги с курицей</a>
-					<a href="#" class="page-footer__link">Сладкие пироги</a>
-					<a href="#" class="page-footer__link">Пироги с мясом</a>
-					<a href="#" class="page-footer__link">Пироги с капустой</a>
-					<a href="#" class="page-footer__link">Пироги с картошкой</a>
-					<a href="#" class="page-footer__link">Пироги с сыром</a>
-				</div>
-				<div class="page-footer__links">
-					<a href="#" class="page-footer__link">Пироги с рыбой</a>
-					<a href="#" class="page-footer__link">Пироги с курицей</a>
-					<a href="#" class="page-footer__link">Сладкие пироги</a>
-					<a href="#" class="page-footer__link">Пироги с мясом</a>
-					<a href="#" class="page-footer__link">Пироги с капустой</a>
-					<a href="#" class="page-footer__link">Пироги с картошкой</a>
-					<a href="#" class="page-footer__link">Пироги с сыром</a>
-				</div>
-				<div class="page-footer__links">
-					<a href="#" class="page-footer__link">Пироги с рыбой</a>
-					<a href="#" class="page-footer__link">Пироги с курицей</a>
-					<a href="#" class="page-footer__link">Сладкие пироги</a>
-					<a href="#" class="page-footer__link">Пироги с мясом</a>
-					<a href="#" class="page-footer__link">Пироги с капустой</a>
-					<a href="#" class="page-footer__link">Пироги с картошкой</a>
-					<a href="#" class="page-footer__link">Пироги с сыром</a>
-				</div>
+		</div>
+		<div class="page-footer__pay">
+			<div class="page-footer__title">Мы принимаем:</div>
+			<div class="page-footer__text">Наличные курьеру</div>
+			<div class="page-footer__text page-footer__text--card">
+				Расчет по карте
+				<img width="100" src="img/visa-mastercard.png" alt="">
 			</div>
-			<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
-		</div><!--page-footer__right-->
+		</div>
+		<div class="page-footer__bottom">
+			<div class="page-footer__copy">© 2018 Пироги осетинские</div>
+			<div class="page-footer__metr"><img width="88" src="img/metr.png" alt=""></div>
+		</div>
 	</footer>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
