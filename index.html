@@ -11,60 +11,663 @@
 </head>
 
 <body>
-	<section class="vert-slider owl-carousel">
-		<div class="vert-slider__nav-arrows"></div>
-		<div class="vert-slider__nav">
-			<div class="vert-slider__nav-item">
-				Новинка! Материал<br />
-				Хамелеон
-			</div>
-			<div class="vert-slider__nav-item">
-				Специальное предложение
-				<br />на новую коллекцию!
-			</div>
-			<div class="vert-slider__nav-item">
-				Премиум-блокнот А5
-			</div>
-			<div class="vert-slider__nav-item">
-				Натуральная кожа
-			</div>
-			<div class="vert-slider__nav-item">
-				Новинка! Материал<br />
-				Хамелеон
-			</div>
-			<div class="vert-slider__nav-item">
-				Специальное предложение
-				<br />на новую коллекцию!
-			</div>
-			<div class="vert-slider__nav-item vertMid">
-				Премиум-блокнот А5
-			</div>
-			<div class="vert-slider__nav-item">
-				Натуральная кожа
-			</div>
-			<div class="vert-slider__nav-item">
-				Натуральная кожа
-			</div>
-			<div class="vert-slider__nav-item vertLast">
-				Новинка! Материал<br />
-				Хамелеон
+	<div id="global-svg">
+		<global-svg></global-svg>
+	</div>
+	<header class="page-header">
+		<div class="hamburger__wrap">
+			<div class="hamburger">
+				<div class="hamburger__line animated hamburger__line1"></div>
+				<div class="hamburger__line animated hamburger__line2"></div>
+				<div class="hamburger__line animated hamburger__line3"></div>
 			</div>
 		</div>
-		<div class="vert-slider__wrap owl-carousel">
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
-			<div class="vert-slider__slide"><img src="img/vert-slider.png" alt=""></div>
+		<div class="page-header__logo"><img width="227" src="img/logo.png" alt=""></div>
+		<nav class="nav">
+			<a href="#" class="nav__link">оплата</a>
+			<a href="#" class="nav__link">доставка</a>
+			<a href="#" class="nav__link active">акции</a>
+			<a href="#" class="nav__link">контакты</a>
+		</nav>
+		<div class="page-header__desc">Работаем более 10 лет.</div>
+		<div class="page-header__metro">
+			м. Трубная <br />
+			Большой Каретный, 2
 		</div>
-		<div class="vert-slider__dots"></div>
-	</section>
+		<a href="tel:+74951001510" class="page-header__phone">+7 (495) 100-15-10</a>
+	</header>
+	<main class="main overflow">
+		<section class="slider">
+			<div class="slider__wrap owl-carousel">
+				<div class="slider__slide">
+					<img src="img/slide1.jpg" alt="">
+				</div>
+				<div class="slider__slide">
+					<img src="img/slide2.jpg" alt="">
+				</div>
+				<div class="slider__slide">
+					<img src="img/slide1.jpg" alt="">
+				</div>
+				<div class="slider__slide">
+					<img src="img/slide2.jpg" alt="">
+				</div>
+			</div>
+			<div class="slider__content">
+				<div class="slider__nav">
+					<div class="slider__nav-item active">Физическам лицам</div>
+					<div class="slider__nav-item">Организациям</div>
+				</div>
+				<div class="slider__header">РЕМОНТ  НОУТБУКОВ  В  МОСКВЕ</div>
+				<div class="slider__title">Производим ремонт любой сложности.</div>
+				<a href="#" class="slider__submit"><span>Заявка на бесплатную диагностику ноутбука</span></a>
+				<section class="select-form">
+					<h2 class="h2 h2--white">Что нужно отремонтировать?</h2>
+					<div class="select-form__wrap">
+						<select class="select-form__select">
+							<option value="">Тип оборудования</option>
+						</select>
+						<select class="select-form__select">
+							<option value="">Марка</option>
+						</select>
+						<select class="select-form__select">
+							<option value="">Модель</option>
+						</select>
+						<button type="button" class="select-form__submit">найти</button>
+					</div>
+				</section>
+			</div>
+			<div class="slider__arrows"></div>
+		</section>
+		<section class="text-box">
+			<h2 class="h2 h2--red">Ремонт ноутбуков в Москве</h2>
+			<p class="text">Ремонт ноутбуков - дело важное и ответственное, именно поэтому мы предлагаем доверить подобную задачу настоящим профессионалам. Наш сервисный центр проводит обслуживание ноутбуков любой сложности. Для нас нет невыполнимых заданий! Профессиональные мастера проведут комплексную диагностику состояния ноутбука, расскажут о проблеме и перспективах ремонта. Мы проводим срочный ремонт ноутбуков в Москве круглосуточно. В случае необходимости опытный мастер выедет к вам на дом и уже на месте диагностирует поломку.</p>
+		</section>
+		<section class="brand">
+			<h2 class="h2">Выберите производителя</h2>
+			<div class="brand__wrap">
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="60" src="img/apple.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Apple
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="149" src="img/acer.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Acer
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="174" src="img/msi.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						MSI
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="200"  src="img/alienware.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Alienware
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="162"  src="img/asus.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						ASUS
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="143"  src="img/dell.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Dell
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="146"  src="img/fujitsu.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Fujitsu
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="71"  src="img/hp.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						HP
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="171"  src="img/lenovo.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Lenovo
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="190"  src="img/panasonic.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Panasonic
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="160"  src="img/sumsung.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Samsung
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="167"  src="img/sony.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						SONY
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="182"  src="img/toshiba.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						Toshiba
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+				<a href="#" class="brand__item">
+					<div class="brand__img"><img width="158"  src="img/vaio.png" alt=""></div>
+					<div class="brand__desc">
+						Ремонт ноутбуков <br />
+						VAIO
+					</div>
+					<span class="brand__hover animated"></span>
+				</a>
+			</div>
+			<a href="#" class="brand__lost">
+				<span class="brand__text">Не нашли свой бренд?</span>
+				<span class="brand__hover animated"></span>
+			</a>
+		</section>
+		<h2 class="h2">Среди наших клиентов</h2>
+		<section class="partners">
+			<div class="partners__slider owl-carousel">
+				<div class="partners__slide"><img class="partners__tin" width="179" src="img/tin.png" alt=""></div>
+				<div class="partners__slide"><img class="partners__kraft" width="439" src="img/kraft.png" alt=""></div>
+				<div class="partners__slide"><img class="partners__bosco" width="399" src="img/bosco.png" alt=""></div>
+				<div class="partners__slide"><img class="partners__alpha" width="176" src="img/alpha.jpg" alt=""></div>
+				<div class="partners__slide"><img class="partners__tin" width="179" src="img/tin.png" alt=""></div>
+				<div class="partners__slide"><img class="partners__kraft" width="439" src="img/kraft.png" alt=""></div>
+				<div class="partners__slide"><img class="partners__bosco" width="399" src="img/bosco.png" alt=""></div>
+				<div class="partners__slide"><img class="partners__alpha" width="176" src="img/alpha.jpg" alt=""></div>
+			</div>
+		</section>
+		<section class="services">
+			<h2 class="h2 h2--green">Основные услуги по ремонту ноутбуков</h2>
+			<h2 class="h2">Чистка ноутбуков от пыли</h2>
+			<table class="table">
+				<tr class="table__tr table__tr--head">
+					<td class="table__td table__td--head">
+						<span>
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							Наименование услуги / вида ремонта
+						</span>
+					</td>
+					<td class="table__td table__td--head">
+						<span>
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							Время ремонта
+						</span>
+					</td>
+					<td class="table__td table__td--head">
+						<span>
+							<svg class="icon icon-card-membership"><use xlink:href="#icon-card-membership"></use></svg>
+							Гарантия
+						</span>
+					</td>
+					<td class="table__td table__td--head" colspan="2">
+						<span>
+							<svg class="icon icon-local-offer"><use xlink:href="#icon-local-offer"></use></svg>
+							Стоимость ремонта
+						</span>
+					</td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+			</table>
+		</section>
+		<section class="compare">
+			<div class="cd-image-container">
+				 <img src="img/slide1.jpg" alt="Original Image">
+				 <span class="cd-image-label compare__text compare__text--b4" data-type="original">после</span>
+				 <div class="cd-resize-img">
+						<img src="img/slide2.jpg" alt="Modified Image">
+						<span class="cd-image-label compare__text compare__text--after" data-type="modified">до</span>
+				 </div>
+				 <span class="cd-handle"></span>
+			</div>
+			<div class="compare__slider-wrap">
+				<div class="compare__slider owl-carousel">
+					<div class="compare__slide"><img src="img/compare1.jpg" alt=""></div>
+					<div class="compare__slide"><img src="img/compare1.jpg" alt=""></div>
+					<div class="compare__slide"><img src="img/compare1.jpg" alt=""></div>
+					<div class="compare__slide"><img src="img/compare1.jpg" alt=""></div>
+				</div>
+				<div class="compare__dots"></div>
+			</div>
+		</section>
+		<section class="services">
+			<h2 class="h2 h2--green">Основные услуги по ремонту ноутбуков</h2>
+			<h2 class="h2">Чистка ноутбуков от пыли</h2>
+			<table class="table">
+				<tr class="table__tr table__tr--head">
+					<td class="table__td table__td--head">
+						<span>
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							Наименование услуги / вида ремонта
+						</span>
+					</td>
+					<td class="table__td table__td--head">
+						<span>
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							Время ремонта
+						</span>
+					</td>
+					<td class="table__td table__td--head">
+						<span>
+							<svg class="icon icon-card-membership"><use xlink:href="#icon-card-membership"></use></svg>
+							Гарантия
+						</span>
+					</td>
+					<td class="table__td table__td--head" colspan="2">
+						<span>
+							<svg class="icon icon-local-offer"><use xlink:href="#icon-local-offer"></use></svg>
+							Стоимость ремонта
+						</span>
+					</td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+				<tr class="table__tr">
+					<td class="table__td"><a href="#" class="table__link">Чистка ноутбука от пыли, замена термопасты</a></td>
+					<td class="table__td">от 30 мин.</td>
+					<td class="table__td">3 месяца</td>
+					<td class="table__td"><span class="table__price">от 1 500 - 2 500</span> <span class="table__value"> руб.</span></td>
+					<td class="table__td"><svg class="table__icon icon icon-local-see"><use xlink:href="#icon-local-see"></use></svg></td>
+				</tr>
+			</table>
+		</section>
+		<section class="compare">
+			<div class="compare__slider-wrap">
+				<div class="compare__slider compare__slider--reverse owl-carousel">
+					<div class="compare__slide"><img src="img/compare1.jpg" alt=""></div>
+					<div class="compare__slide"><img src="img/compare1.jpg" alt=""></div>
+					<div class="compare__slide"><img src="img/compare1.jpg" alt=""></div>
+					<div class="compare__slide"><img src="img/compare1.jpg" alt=""></div>
+				</div>
+				<div class="compare__dots"></div>
+			</div>
+			<div class="cd-image-container">
+				 <img src="img/slide1.jpg" alt="Original Image">
+				 <span class="cd-image-label compare__text compare__text--b4" data-type="original">после</span>
+				 <div class="cd-resize-img">
+						<img src="img/slide2.jpg" alt="Modified Image">
+						<span class="cd-image-label compare__text compare__text--after" data-type="modified">до</span>
+				 </div>
+				 <span class="cd-handle"></span>
+			</div>
+		</section>
+		<section class="about">
+			<div class="about__header">О нашей работе в цифрах:</div>
+			<div class="about__item">
+				<div class="about__number">10</div> лет
+				<div class="about__desc">Ремонтируем ноутбуки любых <br /> производителей</div>
+			</div>
+			<div class="about__wrapper">
+				<div class="about__item">
+					<div class="about__number">8</div> мастеров
+					<div class="about__desc">Все мастера с опытом работы <br />более 10 лет</div>
+				</div>
+				<div class="about__item">
+					<div class="about__number">4</div> сервиса
+					<div class="about__desc">Удобное расположение сервисов <br /> в Москве, рядом с метро</div>
+				</div>
+				<a href="#" class="about__submit">Заявка на бесплатную диагностику ноутбука</a>
+			</div>
+		</section>
+		<section class="question">
+			<h2 class="h2">Вопросы и ответы</h2>
+			<div class="question__item">
+				<div class="question__header">Кто у вас работает?</div>
+				<div class="question__content">
+					<div class="question__title">Сколько у вас человек в штате?</div>
+					<div class="question__desc">- Наш сервисный центр был организован в 2003 году командой специалистов из различных областей прикладной микроэлектроники. За это время мы сформировали действительно надежную команду инженеров, которые быстро.</div>
+				</div>
+			</div>
+			<div class="question__item">
+				<div class="question__header">Кто у вас работает?</div>
+				<div class="question__content">
+					<div class="question__title">Сколько у вас человек в штате?</div>
+					<div class="question__desc">- Наш сервисный центр был организован в 2003 году командой специалистов из различных областей прикладной микроэлектроники. За это время мы сформировали действительно надежную команду инженеров, которые быстро.</div>
+				</div>
+			</div>
+			<div class="question__item">
+				<div class="question__header">Кто у вас работает?</div>
+				<div class="question__content">
+					<div class="question__title">Сколько у вас человек в штате?</div>
+					<div class="question__desc">- Наш сервисный центр был организован в 2003 году командой специалистов из различных областей прикладной микроэлектроники. За это время мы сформировали действительно надежную команду инженеров, которые быстро.</div>
+				</div>
+			</div>
+		</section>
+		<section class="problem">
+			<h2 class="h2">Что случилось с вашим ноутбуком?</h2>
+			<div class="problem__item">
+				<div class="problem__title">Проблема с ноутбуком</div>
+				<div class="problem__line">
+					<a href="#" class="problem__link">Ноутбук сильно греется и выключается</a>
+				</div>
+				<div class="problem__line">
+					<a href="#" class="problem__link">Ноутбук сильно греется и выключается</a>
+				</div>
+				<div class="problem__line">
+					<a href="#" class="problem__link">Ноутбук сильно греется и выключается</a>
+				</div>
+				<div class="problem__line">
+					<a href="#" class="problem__link">Ноутбук сильно греется и выключается</a>
+				</div>
+			</div>
+			<div class="problem__item problem__item--gren">
+				<div class="problem__title">Решение проблемы:</div>
+				<div class="problem__line">
+					- Наш сервисный центр был организован в 2003 году командой специалистов из различных областей прикладной микроэлектроники. За это время мы сформировали действительно надежную команду инженеров, которые быстро.
+				</div>
+				<div class="problem__line">
+					<a href="#" class="problen__link">Заявка на бесплатную диагностику ноутбука</a>
+				</div><div class="problem__line">
+					- Наш сервисный центр был организован в 2003 году командой специалистов из различных областей прикладной микроэлектроники. За это время мы сформировали действительно надежную команду инженеров, которые быстро.
+				</div>
+				<div class="problem__line">
+					- Наш сервисный центр был организован в 2003 году командой специалистов из различных областей прикладной микроэлектроники. За это время мы сформировали действительно надежную команду инженеров, которые быстро.
+				</div>
+			</div>
+		</section>
+		<section class="faq">
+			<h2 class="h2">Основные несиправности ноутбуков:</h2>
+			<div class="faq__item">
+				<a href="#" class="faq__link">Зависает и греется</a>
+				<a href="#" class="faq__link">Быстро разряжается</a>
+				<a href="#" class="faq__link">Не включается</a>
+			</div>
+			<div class="faq__item">
+				<a href="#" class="faq__link">Не загружается BIOS</a>
+				<a href="#" class="faq__link">Проблемы с питанием</a>
+				<a href="#" class="faq__link">Шумит вентилятор/кулер</a>
+			</div>
+			<div class="faq__item">
+				<a href="#" class="faq__link">Зависает и греется</a>
+				<a href="#" class="faq__link">Быстро разряжается</a>
+				<a href="#" class="faq__link">Не включается</a>
+			</div>
+			<div class="faq__item">
+				<a href="#" class="faq__link">Не загружается BIOS</a>
+				<a href="#" class="faq__link">Проблемы с питанием</a>
+				<a href="#" class="faq__link">Шумит вентилятор/кулер</a>
+			</div>
+			<div class="faq__item">
+				<a href="#" class="faq__link">Зависает и греется</a>
+				<a href="#" class="faq__link">Быстро разряжается</a>
+				<a href="#" class="faq__link">Не включается</a>
+			</div>
+			<div class="faq__item">
+				<a href="#" class="faq__link">Не загружается BIOS</a>
+				<a href="#" class="faq__link">Проблемы с питанием</a>
+				<a href="#" class="faq__link">Шумит вентилятор/кулер</a>
+			</div>
+			<div class="faq__item">
+				<a href="#" class="faq__link">Зависает и греется</a>
+				<a href="#" class="faq__link">Быстро разряжается</a>
+				<a href="#" class="faq__link">Не включается</a>
+			</div>
+			<div class="faq__item">
+				<a href="#" class="faq__link">Не загружается BIOS</a>
+				<a href="#" class="faq__link">Проблемы с питанием</a>
+				<a href="#" class="faq__link">Шумит вентилятор/кулер</a>
+			</div>
+		</section>
+		<section class="photo">
+			<h2 class="h2">Фотографии наших работ</h2>
+			<div class="photo__slider">
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+				<div class="photo__slide"><img src="img/photo.jpg" alt=""></div>
+			</div>
+		</section>
+		<section class="review">
+			<h2 class="h2">Отзывы</h2>
+			<div class="review__wrap">
+				<div class="review__slide">
+					<div class="review__date">02.12.2018</div>
+					<div class="rating">
 
+					</div>
+					<div class="review__person">
+						<div class="review__img"><img src="img/client1.png" alt=""></div>
+						<a href="#" class="review__link">ремонт macbook air, Apple</a>
+						<div class="review__desc">- Наш сервисный центр был организован в 2003 году командой специалистов из различных областей прикладной микроэлектроники. За это время мы сформировали действительно надежную команду инженеров, которые быстро.</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="review__link">Оставить отзыв</a>
+		</section>
+		<section class="sale">
+			<div class="sale__box">
+				<div class="sale__number"><span>10</span> %</div>
+				<div class="sale__title">
+					<span>Скидка на все виды работ</span><br />
+					при онлайн заявке с сайта
+				</div>
+			</div>
+			<div class="form">
+				<div class="form__title">Онлайн заявка</div>
+				<select name="" id="" class="form__select">
+					<option value="">Выберите производителя</option>
+					<option value="">Apple</option>
+					<option value="">Asus</option>
+				</select>
+				<input placeholder="Имя" type="text" class="form__input">
+				<input placeholder="" type="tel" class="form__input">
+				<button class="form__btn">Отправить заявку</button>
+			</div>
+		</section>
+		<section class="map">
+			<h2 class="h2">Расположение на карте</h2>
+			<div class="map__wrap">
+				<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaf4536da89452889b7ac1867719497a3a26c49b500f05c0bb2876cfb07745c34&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+				<div class="map__popup">
+					<div class="map__title">Схема проезда:</div>
+					<div class="map__metro">От метро Трубная</div>
+					<div class="map__metro">От метро Цветной бульвар</div>
+					<div class="map__address">Москва, Большой Каретный, 2</div>
+					<a href="tel:+74951001510" class="map__phone">+7 (495) 100-15-10</a>
+					<a href="#" class="map__submit">Обратный звонок</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="page-footer__contact">
+			<div class="page-footer__title">Сервисные центр</div>
+			<a href="tel:+74951001510" class="page-footer__item">
+				+7 (495) 100-15-10
+				<span class="page-footer__text">звоните с 10:00 до 20:00</span>
+			</a>
+			<div class="page-footer__item">
+				<div class="page-footer__text">Москва, Большой Каретный, 2</div>
+			</div>
+			<div class="page-footer__item">
+				<div class="page-footer__text">Способы оплаты:</div>
+				<img src="img/card.png" alt="">
+			</div>
+			<a href="#" class="page-footer__submit">Заявка на ремонт</a>
+		</div>
+		<div class="page-footer__content">
+			<div class="page-footer__content-header">
+				<div class="page-footer__title page-footer__title--content">
+
+					Информация:
+				</div>
+				<div class="page-footer__title page-footer__title--content">
+
+					Ремонт ноутбуков:
+				</div>
+				<div class="page-footer__title page-footer__title--content">
+
+					Ремонт моноблоков:
+				</div>
+				<div class="page-footer__title page-footer__title--content">
+
+					Ремонт термпопринтеров:
+				</div>
+				<div class="page-footer__title page-footer__title--content">
+
+					Ремонт кассовых аппаратов:
+				</div>
+			</div>
+			<div class="page-footer__content-links">
+				<div class="page-footer__links">
+					<a href="#" class="page-footer__link">Доставка</a>
+					<a href="#" class="page-footer__link">Оплата</a>
+					<a href="#" class="page-footer__link">Гарантии</a>
+					<a href="#" class="page-footer__link">Акции и скидки</a>
+					<a href="#" class="page-footer__link">О нас</a>
+					<a href="#" class="page-footer__link">Контакты</a>
+				</div>
+				<div class="page-footer__links">
+					<a href="#" class="page-footer__link">ASUS</a>
+					<a href="#" class="page-footer__link">SONY</a>
+					<a href="#" class="page-footer__link">TOSHIBA</a>
+					<a href="#" class="page-footer__link">ACER</a>
+					<a href="#" class="page-footer__link">HP</a>
+					<a href="#" class="page-footer__link">DELL</a>
+					<a href="#" class="page-footer__link">MSI</a>
+					<a href="#" class="page-footer__link">ASUS</a>
+					<a href="#" class="page-footer__link">SONY</a>
+					<a href="#" class="page-footer__link">TOSHIBA</a>
+					<a href="#" class="page-footer__link">ACER</a>
+				</div>
+				<div class="page-footer__links">
+					<a href="#" class="page-footer__link">ASUS</a>
+					<a href="#" class="page-footer__link">SONY</a>
+					<a href="#" class="page-footer__link">TOSHIBA</a>
+					<a href="#" class="page-footer__link">ACER</a>
+					<a href="#" class="page-footer__link">HP</a>
+					<a href="#" class="page-footer__link">DELL</a>
+					<a href="#" class="page-footer__link">MSI</a>
+					<a href="#" class="page-footer__link">ASUS</a>
+					<a href="#" class="page-footer__link">SONY</a>
+					<a href="#" class="page-footer__link">TOSHIBA</a>
+					<a href="#" class="page-footer__link">ACER</a>
+				</div>
+				<div class="page-footer__links">
+					<a href="#" class="page-footer__link">ASUS</a>
+					<a href="#" class="page-footer__link">SONY</a>
+					<a href="#" class="page-footer__link">TOSHIBA</a>
+					<a href="#" class="page-footer__link">ACER</a>
+					<a href="#" class="page-footer__link">HP</a>
+				</div>
+				<div class="page-footer__links">
+					<a href="#" class="page-footer__link">ASUS</a>
+					<a href="#" class="page-footer__link">SONY</a>
+					<a href="#" class="page-footer__link">TOSHIBA</a>
+					<a href="#" class="page-footer__link">ACER</a>
+					<a href="#" class="page-footer__link">HP</a>
+				</div>
+			</div>
+		</div>
+		<div class="page-footer__bottom">
+			<div class="page-foooter__copy">© 2018 Ремонт ноутбуков</div>
+			<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
+		</div>
+	</footer>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
