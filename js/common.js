@@ -347,6 +347,10 @@ function accordion() {
 function sliderFix() {
 	var elem = $('.slider');
 	if(elem){
+		var windowSize =  $(window).width();
+		if(windowSize <= 1440) {
+			elem.css('height', '495')
+		}
 		setTimeout(function(){
 			$(elem).css('height', 'auto');
 		}, 500);
