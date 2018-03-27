@@ -6496,6 +6496,8 @@ img {
 
 .question__item:last-child {
   border-width: 1px 0;
+  border-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .question__header {
@@ -6581,7 +6583,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.51042vw;
-  color: #fff;
+  color: #fff !important;
 }
 
 .problem__link {
@@ -6679,6 +6681,10 @@ img {
   background: #fff6f6;
 }
 
+.problem__item--problem .problem__title {
+  background: #DC1115;
+}
+
 .problem__item--problem .problem__link {
   background: url(../img/problem.svg) no-repeat left center;
   padding-left: 2.60417vw;
@@ -6710,6 +6716,10 @@ img {
   font-weight: 300;
 }
 
+.problem__item--solution .problem__title {
+  background: #55BB01;
+}
+
 @media (max-width: 1024px) {
   .problem {
     display: block;
@@ -6732,6 +6742,7 @@ img {
   }
   .problem__line {
     font-size: 16px !important;
+    min-height: 80px;
     height: auto;
     padding: 20px 0;
   }
