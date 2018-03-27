@@ -8184,11 +8184,11 @@ img {
 }
 
 .model .owl-nav .owl-prev:hover {
-  background-image: url(../img/arr-prevRed--hover.png);
+  background-image: url(../img/arr-prevred--hover.png);
 }
 
 .model .owl-nav .owl-next {
-  background-image: url(../img/arr-nextRed.png);
+  background-image: url(../img/arr-nextred.png);
 }
 
 .model .owl-nav .owl-next:hover {
