@@ -4468,7 +4468,6 @@ button {
 }
 
 .page-header {
-  height: 70px;
   padding: 0 1.04167vw;
   position: relative;
   z-index: 999;
@@ -4489,6 +4488,7 @@ button {
           align-items: center;
   position: relative;
   z-index: 10;
+  height: 70px;
 }
 
 .page-header__logo {
@@ -4558,6 +4558,9 @@ button {
 @media (max-width: 1024px) {
   .page-header {
     height: auto;
+  }
+  .page-header__wrap {
+    height: 50px;
   }
   .page-header__logo {
     width: 20%;
