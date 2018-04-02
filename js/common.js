@@ -2,7 +2,7 @@
 //templates
 new Vue({
 		el: '#global-svg',
-		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-keyboard-arrow-left" viewBox="0 0 20 20"><title>keyboard-arrow-left</title><path d="M12.842 13.408l-3.817-3.825 3.817-3.825-1.175-1.175-5 5 5 5z"></path></symbol><symbol id="icon-account-balance-wallet" viewBox="0 0 20 20"><title>account-balance-wallet</title><path d="M17.5 15v0.833c0 0.917-0.75 1.667-1.667 1.667h-11.667c-0.925 0-1.667-0.75-1.667-1.667v-11.667c0-0.917 0.742-1.667 1.667-1.667h11.667c0.917 0 1.667 0.75 1.667 1.667v0.833h-7.5c-0.925 0-1.667 0.75-1.667 1.667v6.667c0 0.917 0.742 1.667 1.667 1.667h7.5zM10 13.333h8.333v-6.667h-8.333v6.667zM13.333 11.25c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25z"></path></symbol><symbol id="icon-access-time" viewBox="0 0 20 20"><title>access-time</title><path d="M9.992 1.667c-4.6 0-8.325 3.733-8.325 8.333s3.725 8.333 8.325 8.333c4.608 0 8.342-3.733 8.342-8.333s-3.733-8.333-8.342-8.333zM10 16.667c-3.683 0-6.667-2.983-6.667-6.667s2.983-6.667 6.667-6.667 6.667 2.983 6.667 6.667-2.983 6.667-6.667 6.667z"></path><path d="M10.417 5.833h-1.25v5l4.375 2.625 0.625-1.025-3.75-2.225z"></path></symbol><symbol id="icon-account-balance" viewBox="0 0 20 20"><title>account-balance</title><path d="M3.333 8.333v5.833h2.5v-5.833h-2.5zM8.333 8.333v5.833h2.5v-5.833h-2.5zM1.667 18.333h15.833v-2.5h-15.833v2.5zM13.333 8.333v5.833h2.5v-5.833h-2.5zM9.583 0.833l-7.917 4.167v1.667h15.833v-1.667l-7.917-4.167z"></path></symbol><symbol id="icon-adb" viewBox="0 0 20 20"><title>adb</title><path d="M4.167 13.333c0 3.225 2.608 5.833 5.833 5.833s5.833-2.608 5.833-5.833v-3.333h-11.667v3.333zM13.433 3.642l1.75-1.75-0.683-0.692-1.917 1.925c-0.783-0.392-1.65-0.625-2.583-0.625s-1.8 0.233-2.575 0.625l-1.925-1.925-0.683 0.692 1.75 1.75c-1.45 1.058-2.4 2.758-2.4 4.692v0.833h11.667v-0.833c0-1.933-0.95-3.633-2.4-4.692zM7.5 7.5c-0.458 0-0.833-0.375-0.833-0.833s0.375-0.833 0.833-0.833 0.833 0.375 0.833 0.833-0.375 0.833-0.833 0.833zM12.5 7.5c-0.458 0-0.833-0.375-0.833-0.833s0.375-0.833 0.833-0.833 0.833 0.375 0.833 0.833-0.375 0.833-0.833 0.833z"></path></symbol><symbol id="icon-keyboard" viewBox="0 0 20 20"><title>keyboard</title><path d="M16.667 4.167h-13.333c-0.917 0-1.658 0.75-1.658 1.667l-0.008 8.333c0 0.917 0.75 1.667 1.667 1.667h13.333c0.917 0 1.667-0.75 1.667-1.667v-8.333c0-0.917-0.75-1.667-1.667-1.667zM9.167 6.667h1.667v1.667h-1.667v-1.667zM9.167 9.167h1.667v1.667h-1.667v-1.667zM6.667 6.667h1.667v1.667h-1.667v-1.667zM6.667 9.167h1.667v1.667h-1.667v-1.667zM5.833 10.833h-1.667v-1.667h1.667v1.667zM5.833 8.333h-1.667v-1.667h1.667v1.667zM13.333 14.167h-6.667v-1.667h6.667v1.667zM13.333 10.833h-1.667v-1.667h1.667v1.667zM13.333 8.333h-1.667v-1.667h1.667v1.667zM15.833 10.833h-1.667v-1.667h1.667v1.667zM15.833 8.333h-1.667v-1.667h1.667v1.667z"></path></symbol><symbol id="icon-laptop" viewBox="0 0 20 20"><title>laptop</title><path d="M16.667 15c0.917 0 1.667-0.75 1.667-1.667v-8.333c0-0.917-0.75-1.667-1.667-1.667h-13.333c-0.917 0-1.667 0.75-1.667 1.667v8.333c0 0.917 0.75 1.667 1.667 1.667h-3.333v1.667h20v-1.667h-3.333zM3.333 5h13.333v8.333h-13.333v-8.333z"></path></symbol><symbol id="icon-power-settings-new" viewBox="0 0 20 20"><title>power-settings-new</title><path d="M10.833 2.5h-1.667v8.333h1.667v-8.333zM14.858 4.308l-1.183 1.183c1.317 1.058 2.158 2.683 2.158 4.508 0 3.225-2.608 5.833-5.833 5.833s-5.833-2.608-5.833-5.833c0-1.825 0.842-3.45 2.15-4.517l-1.175-1.175c-1.617 1.375-2.642 3.408-2.642 5.692 0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5c0-2.283-1.025-4.317-2.642-5.692z"></path></symbol><symbol id="icon-settings-input-svideo" viewBox="0 0 20 20"><title>settings-input-svideo</title><path d="M6.667 9.583c0-0.692-0.558-1.25-1.25-1.25s-1.25 0.558-1.25 1.25 0.558 1.25 1.25 1.25 1.25-0.558 1.25-1.25zM12.5 5.417c0-0.692-0.558-1.25-1.25-1.25h-2.5c-0.692 0-1.25 0.558-1.25 1.25s0.558 1.25 1.25 1.25h2.5c0.692 0 1.25-0.558 1.25-1.25zM7.083 12.5c-0.692 0-1.25 0.558-1.25 1.25s0.558 1.25 1.25 1.25 1.25-0.558 1.25-1.25-0.558-1.25-1.25-1.25zM10 0.833c-5.058 0-9.167 4.108-9.167 9.167s4.108 9.167 9.167 9.167 9.167-4.108 9.167-9.167-4.108-9.167-9.167-9.167zM10 17.5c-4.133 0-7.5-3.367-7.5-7.5s3.367-7.5 7.5-7.5 7.5 3.367 7.5 7.5-3.367 7.5-7.5 7.5zM14.583 8.333c-0.692 0-1.25 0.558-1.25 1.25s0.558 1.25 1.25 1.25 1.25-0.558 1.25-1.25-0.558-1.25-1.25-1.25zM12.917 12.5c-0.692 0-1.25 0.558-1.25 1.25s0.558 1.25 1.25 1.25 1.25-0.558 1.25-1.25-0.558-1.25-1.25-1.25z"></path></symbol><symbol id="icon-keyboard-arrow-right" viewBox="0 0 20 20"><title>keyboard-arrow-right</title><path d="M7.158 13.617l3.817-3.825-3.817-3.825 1.175-1.175 5 5-5 5z"></path></symbol><symbol id="icon-down" viewBox="0 0 20 20"><title>down</title><path d="M6.175 6.533l3.825 3.817 3.825-3.817 1.175 1.175-5 5-5-5z"></path></symbol><symbol id="icon-up" viewBox="0 0 20 20"><title>up</title><path d="M6.175 12.842l3.825-3.817 3.825 3.817 1.175-1.175-5-5-5 5z"></path></symbol><symbol id="icon-check-box-outline-blank" viewBox="0 0 20 20"><title>check-box-outline-blank</title><path d="M15.833 4.167v11.667h-11.667v-11.667h11.667zM15.833 2.5h-11.667c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h11.667c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667z"></path></symbol><symbol id="icon-check-box" viewBox="0 0 20 20"><title>check-box</title><path d="M15.833 2.5h-11.667c-0.925 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.742 1.667 1.667 1.667h11.667c0.925 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.742-1.667-1.667-1.667zM8.333 14.167l-4.167-4.167 1.175-1.175 2.992 2.983 6.325-6.325 1.175 1.183-7.5 7.5z"></path></symbol><symbol id="icon-check-circle" viewBox="0 0 20 20"><title>check-circle</title><path d="M10 1.667c-4.6 0-8.333 3.733-8.333 8.333s3.733 8.333 8.333 8.333 8.333-3.733 8.333-8.333-3.733-8.333-8.333-8.333zM8.333 14.167l-4.167-4.167 1.175-1.175 2.992 2.983 6.325-6.325 1.175 1.183-7.5 7.5z"></path></symbol><symbol id="icon-contact-mail" viewBox="0 0 20 20"><title>contact-mail</title><path d="M17.5 6.667v-0.833l-2.5 1.667-2.5-1.667v0.833l2.5 1.667 2.5-1.667zM18.333 2.5h-16.667c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h16.667c0.917 0 1.658-0.75 1.658-1.667l0.008-11.667c0-0.917-0.75-1.667-1.667-1.667zM6.667 5c1.383 0 2.5 1.117 2.5 2.5s-1.117 2.5-2.5 2.5-2.5-1.117-2.5-2.5 1.117-2.5 2.5-2.5zM11.667 15h-10v-0.833c0-1.667 3.333-2.583 5-2.583s5 0.917 5 2.583v0.833zM18.333 10h-6.667v-5h6.667v5z"></path></symbol><symbol id="icon-desktop-mac" viewBox="0 0 20 20"><title>desktop-mac</title><path d="M17.5 1.667h-15c-0.917 0-1.667 0.75-1.667 1.667v10c0 0.917 0.75 1.667 1.667 1.667h5.833l-1.667 2.5v0.833h6.667v-0.833l-1.667-2.5h5.833c0.917 0 1.667-0.75 1.667-1.667v-10c0-0.917-0.75-1.667-1.667-1.667zM17.5 11.667h-15v-8.333h15v8.333z"></path></symbol><symbol id="icon-developer-board" viewBox="0 0 20 20"><title>developer-board</title><path d="M18.333 7.5v-1.667h-1.667v-1.667c0-0.917-0.75-1.667-1.667-1.667h-11.667c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h11.667c0.917 0 1.667-0.75 1.667-1.667v-1.667h1.667v-1.667h-1.667v-1.667h1.667v-1.667h-1.667v-1.667h1.667zM15 15.833h-11.667v-11.667h11.667v11.667zM5 10.833h4.167v3.333h-4.167zM10 5.833h3.333v2.5h-3.333zM5 5.833h4.167v4.167h-4.167zM10 9.167h3.333v5h-3.333z"></path></symbol><symbol id="icon-expand-more" viewBox="0 0 20 20"><title>expand-more</title><path d="M13.825 7.158l-3.825 3.817-3.825-3.817-1.175 1.175 5 5 5-5z"></path></symbol><symbol id="icon-filter-frames" viewBox="0 0 20 20"><title>filter-frames</title><path d="M16.667 3.333h-3.333l-3.333-3.333-3.333 3.333h-3.333c-0.917 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.75 1.667 1.667 1.667h13.333c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM16.667 16.667h-13.333v-11.667h3.767l2.933-2.917 2.9 2.917h3.733v11.667zM15 6.667h-10v8.333h10z"></path></symbol><symbol id="icon-laptop-chromebook" viewBox="0 0 20 20"><title>laptop-chromebook</title><path d="M18.333 15v-12.5h-16.667v12.5h-1.667v1.667h20v-1.667h-1.667zM11.667 15h-3.333v-0.833h3.333v0.833zM16.667 12.5h-13.333v-8.333h13.333v8.333z"></path></symbol><symbol id="icon-laptop-windows" viewBox="0 0 20 20"><title>laptop-windows</title><path d="M16.667 15v-0.833c0.917 0 1.658-0.75 1.658-1.667l0.008-8.333c0-0.917-0.75-1.667-1.667-1.667h-13.333c-0.917 0-1.667 0.75-1.667 1.667v8.333c0 0.917 0.75 1.667 1.667 1.667v0.833h-3.333v1.667h20v-1.667h-3.333zM3.333 4.167h13.333v8.333h-13.333v-8.333z"></path></symbol><symbol id="icon-laptop2" viewBox="0 0 20 20"><title>laptop2</title><path d="M16.667 15c0.917 0 1.667-0.75 1.667-1.667v-8.333c0-0.917-0.75-1.667-1.667-1.667h-13.333c-0.917 0-1.667 0.75-1.667 1.667v8.333c0 0.917 0.75 1.667 1.667 1.667h-3.333v1.667h20v-1.667h-3.333zM3.333 5h13.333v8.333h-13.333v-8.333z"></path></symbol><symbol id="icon-live-help" viewBox="0 0 20 20"><title>live-help</title><path d="M15.833 1.667h-11.667c-0.925 0-1.667 0.75-1.667 1.667v11.667c0 0.917 0.742 1.667 1.667 1.667h3.333l2.5 2.5 2.5-2.5h3.333c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM10.833 15h-1.667v-1.667h1.667v1.667zM12.558 8.542l-0.75 0.767c-0.6 0.608-0.975 1.108-0.975 2.358h-1.667v-0.417c0-0.917 0.375-1.75 0.975-2.358l1.033-1.050c0.308-0.3 0.492-0.717 0.492-1.175 0-0.917-0.75-1.667-1.667-1.667s-1.667 0.75-1.667 1.667h-1.667c0-1.842 1.492-3.333 3.333-3.333s3.333 1.492 3.333 3.333c0 0.733-0.3 1.4-0.775 1.875z"></path></symbol><symbol id="icon-location-on" viewBox="0 0 20 20"><title>location-on</title><path d="M10 1.667c-3.225 0-5.833 2.608-5.833 5.833 0 4.375 5.833 10.833 5.833 10.833s5.833-6.458 5.833-10.833c0-3.225-2.608-5.833-5.833-5.833zM10 9.583c-1.15 0-2.083-0.933-2.083-2.083s0.933-2.083 2.083-2.083 2.083 0.933 2.083 2.083-0.933 2.083-2.083 2.083z"></path></symbol><symbol id="icon-mail-outline" viewBox="0 0 20 20"><title>mail-outline</title><path d="M16.667 3.333h-13.333c-0.917 0-1.658 0.75-1.658 1.667l-0.008 10c0 0.917 0.75 1.667 1.667 1.667h13.333c0.917 0 1.667-0.75 1.667-1.667v-10c0-0.917-0.75-1.667-1.667-1.667zM16.667 15h-13.333v-8.333l6.667 4.167 6.667-4.167v8.333zM10 9.167l-6.667-4.167h13.333l-6.667 4.167z"></path></symbol><symbol id="icon-memory" viewBox="0 0 20 20"><title>memory</title><path d="M12.5 7.5h-5v5h5v-5zM10.833 10.833h-1.667v-1.667h1.667v1.667zM17.5 9.167v-1.667h-1.667v-1.667c0-0.917-0.75-1.667-1.667-1.667h-1.667v-1.667h-1.667v1.667h-1.667v-1.667h-1.667v1.667h-1.667c-0.917 0-1.667 0.75-1.667 1.667v1.667h-1.667v1.667h1.667v1.667h-1.667v1.667h1.667v1.667c0 0.917 0.75 1.667 1.667 1.667h1.667v1.667h1.667v-1.667h1.667v1.667h1.667v-1.667h1.667c0.917 0 1.667-0.75 1.667-1.667v-1.667h1.667v-1.667h-1.667v-1.667h1.667zM14.167 14.167h-8.333v-8.333h8.333v8.333z"></path></symbol><symbol id="icon-move-in-box" viewBox="0 0 20 20"><title>move-in-box</title><path d="M15.833 2.5h-11.675c-0.925 0-1.65 0.75-1.65 1.667l-0.008 11.667c0 0.917 0.733 1.667 1.658 1.667h11.675c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM15.833 12.5h-3.333c0 1.383-1.125 2.5-2.5 2.5s-2.5-1.117-2.5-2.5h-3.342v-8.333h11.675v8.333zM13.333 8.333h-1.667v-2.5h-3.333v2.5h-1.667l3.333 3.333 3.333-3.333z"></path></symbol><symbol id="icon-power" viewBox="0 0 20 20"><title>power</title><path d="M13.342 5.833l-0.008-3.333h-1.667v3.333h-3.333v-3.333h-1.667v3.333h-0.008c-0.825-0.008-1.658 0.825-1.658 1.658v4.575l2.917 2.933v2.5h4.167v-2.5l2.917-2.925v-4.583c0-0.833-0.833-1.667-1.658-1.658z"></path></symbol><symbol id="icon-toys" viewBox="0 0 20 20"><title>toys</title><path d="M10 10c0-2.5 2.083-4.583 4.583-4.583s4.583 2.083 4.583 4.583h-9.167zM10 10c0 2.5-2.083 4.583-4.583 4.583s-4.583-2.083-4.583-4.583h9.167zM10 10c-2.5 0-4.583-2.083-4.583-4.583s2.083-4.583 4.583-4.583v9.167zM10 10c2.5 0 4.583 2.083 4.583 4.583s-2.083 4.583-4.583 4.583v-9.167z"></path></symbol></defs></svg>'
+		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-map-marker" viewBox="0 0 24 32"><title>map-marker</title><path d="M10.767 31.354c-9.081-13.165-10.767-14.516-10.767-19.354 0-6.627 5.373-12 12-12s12 5.373 12 12c0 4.838-1.686 6.189-10.767 19.354-0.596 0.861-1.871 0.861-2.466 0z"></path></symbol><symbol id="icon-arrow-drop-down" viewBox="0 0 32 32"><title>arrow-drop-down</title><path d="M9.333 13.333l6.667 6.667 6.667-6.667z"></path></symbol><symbol id="icon-arrow-drop-up" viewBox="0 0 32 32"><title>arrow-drop-up</title><path d="M9.333 18.667l6.667-6.667 6.667 6.667z"></path></symbol><symbol id="icon-block" viewBox="0 0 32 32"><title>block</title><path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM5.333 16c0-5.893 4.773-10.667 10.667-10.667 2.467 0 4.733 0.84 6.533 2.253l-14.947 14.947c-1.413-1.8-2.253-4.067-2.253-6.533zM16 26.667c-2.467 0-4.733-0.84-6.533-2.253l14.947-14.947c1.413 1.8 2.253 4.067 2.253 6.533 0 5.893-4.773 10.667-10.667 10.667z"></path></symbol><symbol id="icon-chat" viewBox="0 0 32 32"><title>chat</title><path d="M26.667 2.667h-21.333c-1.467 0-2.653 1.2-2.653 2.667l-0.013 24 5.333-5.333h18.667c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667zM8 12h16v2.667h-16v-2.667zM18.667 18.667h-10.667v-2.667h10.667v2.667zM24 10.667h-16v-2.667h16v2.667z"></path></symbol><symbol id="icon-content-paste" viewBox="0 0 32 32"><title>content-paste</title><path d="M25.333 2.667h-5.573c-0.56-1.547-2.027-2.667-3.76-2.667s-3.2 1.12-3.76 2.667h-5.573c-1.467 0-2.667 1.2-2.667 2.667v21.333c0 1.467 1.2 2.667 2.667 2.667h18.667c1.467 0 2.667-1.2 2.667-2.667v-21.333c0-1.467-1.2-2.667-2.667-2.667zM16 2.667c0.733 0 1.333 0.6 1.333 1.333s-0.6 1.333-1.333 1.333-1.333-0.6-1.333-1.333 0.6-1.333 1.333-1.333zM25.333 26.667h-18.667v-21.333h2.667v4h13.333v-4h2.667v21.333z"></path></symbol><symbol id="icon-done" viewBox="0 0 32 32"><title>done</title><path d="M12 21.6l-5.6-5.6-1.867 1.867 7.467 7.467 16-16-1.867-1.867-14.133 14.133z"></path></symbol><symbol id="icon-payment" viewBox="0 0 32 32"><title>payment</title><path d="M26.667 5.333h-21.333c-1.48 0-2.653 1.187-2.653 2.667l-0.013 16c0 1.48 1.187 2.667 2.667 2.667h21.333c1.48 0 2.667-1.187 2.667-2.667v-16c0-1.48-1.187-2.667-2.667-2.667zM26.667 24h-21.333v-8h21.333v8zM26.667 10.667h-21.333v-2.667h21.333v2.667z"></path></symbol><symbol id="icon-phone-in-talk" viewBox="0 0 32 32"><title>phone-in-talk</title><path d="M26.667 20.667c-1.667 0-3.267-0.267-4.76-0.76-0.467-0.147-0.987-0.040-1.36 0.32l-2.933 2.933c-3.773-1.92-6.867-5-8.787-8.787l2.933-2.947c0.373-0.347 0.48-0.867 0.333-1.333-0.493-1.493-0.76-3.093-0.76-4.76 0-0.733-0.6-1.333-1.333-1.333h-4.667c-0.733 0-1.333 0.6-1.333 1.333 0 12.52 10.147 22.667 22.667 22.667 0.733 0 1.333-0.6 1.333-1.333v-4.667c0-0.733-0.6-1.333-1.333-1.333zM25.333 16h2.667c0-6.627-5.373-12-12-12v2.667c5.16 0 9.333 4.173 9.333 9.333zM20 16h2.667c0-3.68-2.987-6.667-6.667-6.667v2.667c2.213 0 4 1.787 4 4z"></path></symbol><symbol id="icon-place" viewBox="0 0 32 32"><title>place</title><path d="M16 2.667c-5.16 0-9.333 4.173-9.333 9.333 0 7 9.333 17.333 9.333 17.333s9.333-10.333 9.333-17.333c0-5.16-4.173-9.333-9.333-9.333zM16 15.333c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333-1.493 3.333-3.333 3.333z"></path></symbol><symbol id="icon-radio-button-checked" viewBox="0 0 32 32"><title>radio-button-checked</title><path d="M16 9.333c-3.68 0-6.667 2.987-6.667 6.667s2.987 6.667 6.667 6.667 6.667-2.987 6.667-6.667-2.987-6.667-6.667-6.667zM16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM16 26.667c-5.893 0-10.667-4.773-10.667-10.667s4.773-10.667 10.667-10.667 10.667 4.773 10.667 10.667-4.773 10.667-10.667 10.667z"></path></symbol><symbol id="icon-radio-button-unchecked" viewBox="0 0 32 32"><title>radio-button-unchecked</title><path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM16 26.667c-5.893 0-10.667-4.773-10.667-10.667s4.773-10.667 10.667-10.667 10.667 4.773 10.667 10.667-4.773 10.667-10.667 10.667z"></path></symbol><symbol id="icon-shopping-basket" viewBox="0 0 32 32"><title>shopping-basket</title><path d="M22.947 12l-5.84-8.747c-0.253-0.373-0.68-0.56-1.107-0.56s-0.853 0.187-1.107 0.573l-5.84 8.733h-6.387c-0.733 0-1.333 0.6-1.333 1.333 0 0.12 0.013 0.24 0.053 0.36l3.387 12.36c0.307 1.12 1.333 1.947 2.56 1.947h17.333c1.227 0 2.253-0.827 2.573-1.947l3.387-12.36 0.040-0.36c0-0.733-0.6-1.333-1.333-1.333h-6.387zM12 12l4-5.867 4 5.867h-8zM16 22.667c-1.467 0-2.667-1.2-2.667-2.667s1.2-2.667 2.667-2.667 2.667 1.2 2.667 2.667-1.2 2.667-2.667 2.667z"></path></symbol><symbol id="icon-star-border" viewBox="0 0 32 32"><title>star-border</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533l-5.013 3.027 1.333-5.707-4.427-3.84 5.84-0.507 2.267-5.373 2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol><symbol id="icon-star-half" viewBox="0 0 32 32"><title>star-half</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533v-12.4l2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol><symbol id="icon-star" viewBox="0 0 32 32"><title>star</title><path d="M16 23.027l8.24 4.973-2.187-9.373 7.28-6.307-9.587-0.813-3.747-8.84-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373z"></path></symbol></defs></svg>'
 	})
 
 function scrollEffects() {
@@ -332,11 +332,97 @@ function sliderFix() {
 }
 
 function inputFix() {
-	var elem = $('.calc__label');
+	var elem = $('.product__input');
 
 	elem.on('click', function(){
-		$(this).closest('.calc__line').siblings().find('.calc__input').prop('checked', false);
+		$(this).closest('.product__line').siblings().find(elem).prop('checked', false);
 	});
+}
+
+function pageHover() {
+	$('.page-header__menu').on('mouseenter', function(){
+		$('.nav__link-arr').css('opacity', '1');
+	});
+	$('.page-header__menu').on('mouseleave', function(){
+		$('.nav__link-arr').css('opacity', '0');
+	});
+	$('.nav__link.active').on('mouseenter', function(){
+		$('.nav__link-arr').css('opacity', '1');
+	});
+}
+
+//productCalc
+function productCalc(){
+	var btn = $('.calcBtn');
+	var dec = $('.calcDec');
+	var inc = $('.calcInc');
+	var output = $('.calcNumber');
+	var outputText = '.calcNumber';
+	var valueBox = $('.calcOutput');
+	var valueBoxText = '.calcOutput';
+	var btnWeight = $('.calcCheckbox');
+	var submit = $('.calcSubmit');
+	var singleItem = $('.calcSingleItem');
+
+	if(btn){
+		$(btn).on('click', function(){
+		var output = $(this).closest('.calcItem').find(outputText);
+		var value = $(this).closest('.calcItem').find(valueBoxText);
+		var valueHtml = $(value).html();
+
+		if($(this).hasClass('calcDec')){
+			--valueHtml
+		}else if($(this).hasClass('calcInc')){
+			++valueHtml
+		}
+		if(valueHtml <= 1){
+			valueHtml = 1;
+		}
+		var summ = valueHtml * parseInt(output.attr('data-price'));
+
+		$(value).html(valueHtml);
+		$(output).html(summ);
+	});
+	}
+	if(btnWeight){
+		$(btnWeight).on('click', function(){
+			var number = parseInt($(this).closest('.calcWeightItem').find('.calcWeightNumber').html());
+			var price = $(this).closest('.calcItem').find('.calcNumber');
+			var output = $(this).closest('.calcItem').find('.calcOutput');
+
+			price.html(number);
+			output.html(1);
+		});
+	}
+
+	if(submit){
+		$(submit).on('click', function(){
+			var output = $(this).closest('.calcItem').find(outputText);
+			var value = $(this).closest('.calcItem').find(valueBoxText);
+			var cartNumber = $('.cartNumber');
+			var cartCount = $('.calcCartCount');
+
+			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
+			var valueSumm = parseInt(value.html()) + parseInt(cartCount.html());
+
+			cartCount.html(valueSumm);
+			cartNumber.html(summ);
+		});
+	}
+
+	if(singleItem){
+		$(singleItem).on('click', function(){
+			var output = $(this).closest('.popular__item').find(outputText);
+			var cart = $('.calcCart');
+			var cartCount = $('.calcCartCount');
+
+			var summ = parseInt(cart.html()) + parseInt(output.html());
+			var valueSumm = 1 + parseInt(cartCount.html());
+
+			cartCount.html(valueSumm);
+			cart.html(summ);
+		});
+	}
 }
 
 window.onload = function() {
@@ -348,8 +434,10 @@ window.onload = function() {
 	bodyOverflow('.hamburger');
 	phoneMask();
 	inputFix();
+	pageHover();
 
 	//calc
+	productCalc();
 
 	//tabs
 	tabs();
@@ -368,6 +456,7 @@ window.onload = function() {
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	//Animation+hide
 	animate('.hamburger__wrap', '.nav', 'slideInDown', 'slideOutUp');
+
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
 	slider();
