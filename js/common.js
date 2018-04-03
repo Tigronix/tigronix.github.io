@@ -191,47 +191,11 @@ function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 	}
 }
 
-function partnerSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+function ratingSlider(animationIn, animationOut, elem, items, navContainer, navText) {
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.partners__slider';
-	items = items || 6;
-	navContainer = navContainer || '';
-	navText = navText || ['', ''];
-	if(elem){
-		$(elem).owlCarousel({
-			nav: true,
-			navContainer: navContainer,
-			navText: navText,
-			items: items,
-			animateIn: animationIn,
-			animateOut: animationOut,
-			loop: true,
-			URLhashListener: true,
-      startPosition: 'URLHash',
-			dots: false,
-			dotsEach: true,
-			dotsContainer: '',
-			navText: ['', ''],
-			responsive: {
-				0: {
-					items: 1
-				},
-				768: {
-					items: 3
-				},
-				1025: {
-					items: 6
-				}
-			}
-		});
-	}
-}
-function photoSlider(animationIn, animationOut, elem, items, navContainer, navText) {
-	animationIn = animationIn || 'zoomIn';
-	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.photo__slider';
-	items = items || 5;
+	elem = elem || '.rating__slider';
+	items = items || 4;
 	navContainer = navContainer || '';
 	navText = navText || ['', ''];
 	if(elem){
@@ -247,19 +211,45 @@ function photoSlider(animationIn, animationOut, elem, items, navContainer, navTe
       startPosition: 'URLHash',
 			dots: true,
 			dotsEach: true,
-			dotsContainer: '',
+			dotsContainer: '.rating__dots',
 			navText: ['', ''],
 			responsive: {
 				0: {
 					items: 1
 				},
 				768: {
-					items: 3
+					items: 2
 				},
 				1025: {
-					items: 5
+					items: 4
 				}
 			}
+		});
+	}
+}
+
+function reviewSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+	animationIn = animationIn || 'slideInDown';
+	animationOut = animationOut || 'slideOutDown';
+	elem = elem || '.review__slider';
+	items = items || 1;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '.review__dots',
+			navText: ['', ''],
 		});
 	}
 }
@@ -363,6 +353,7 @@ function productCalc(){
 	var btnWeight = $('.calcCheckbox');
 	var submit = $('.calcSubmit');
 	var singleItem = $('.calcSingleItem');
+	var singleSubmit = $('.calcSingleSubmit');
 
 	if(btn){
 		$(btn).on('click', function(){
@@ -389,6 +380,7 @@ function productCalc(){
 			var number = parseInt($(this).closest('.calcWeightItem').find('.calcWeightNumber').html());
 			var price = $(this).closest('.calcItem').find('.calcNumber');
 			var output = $(this).closest('.calcItem').find('.calcOutput');
+			console.log(btnWeight);
 
 			price.html(number);
 			output.html(1);
@@ -399,7 +391,7 @@ function productCalc(){
 		$(submit).on('click', function(){
 			var output = $(this).closest('.calcItem').find(outputText);
 			var value = $(this).closest('.calcItem').find(valueBoxText);
-			var cartNumber = $('.cartNumber');
+			var cartNumber = $('.calcCart');
 			var cartCount = $('.calcCartCount');
 
 			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
@@ -410,17 +402,17 @@ function productCalc(){
 		});
 	}
 
-	if(singleItem){
-		$(singleItem).on('click', function(){
-			var output = $(this).closest('.popular__item').find(outputText);
-			var cart = $('.calcCart');
+	if(singleSubmit){
+		$(singleSubmit).on('click', function(){
+			var output = $(this).closest('.calcSingleItem').find(outputText);
+			var cartNumber = $('.cartNumber');
 			var cartCount = $('.calcCartCount');
 
-			var summ = parseInt(cart.html()) + parseInt(output.html());
+			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
 			var valueSumm = 1 + parseInt(cartCount.html());
 
 			cartCount.html(valueSumm);
-			cart.html(summ);
+			cartNumber.html(summ);
 		});
 	}
 }
@@ -440,7 +432,7 @@ window.onload = function() {
 	productCalc();
 
 	//tabs
-	tabs();
+	tabs('.nav');
 
 	//active toggle
 	active('.hamburger');
@@ -460,6 +452,6 @@ window.onload = function() {
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
 	slider();
-	partnerSlider();
-	photoSlider();
+	ratingSlider();
+	reviewSlider();
 };
