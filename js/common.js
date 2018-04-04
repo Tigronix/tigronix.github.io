@@ -417,6 +417,132 @@ function productCalc(){
 	}
 }
 
+//cartCalc
+function cartCalc() {
+	var inc = $('.cartCalcInc');
+	var dec = $('.cartCalcDec');
+	var countNumber_t = '.cartCalcNumber';
+	var close = $('.cartCalcDelete');
+	var summ_t = '.cartCalcTotalSumm';
+	var item_t = '.cartCalcItem';
+	var singleItemPrice_t = '.cartCalcSinglePrice';
+	var singleSumm_t = '.cartSummNumber';
+	var total = document.querySelector('.cartCalcTotalSumm');
+	var total_t = '.cartCalcTotalSumm';
+	var sum = 0;
+	var sumArray = [];
+
+
+	function calcOnWindowLoad(){
+			var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+			sumArray.length = 0;
+			itemsSumm.forEach(function(item, index, value){
+				var number = parseInt(item.textContent);
+				sumArray.push(number);
+			});
+			sum = 0;
+			if(total){
+				for(var key in sumArray) {
+					sum = sum + parseInt(sumArray[key]);
+				}
+				if(!sum){
+					sum = 0;
+				}
+				total.textContent = sum;
+			}
+		}
+
+	function countInc(){
+		var count = $(this).closest(item_t).find(countNumber_t);
+		var countNumber = parseInt(count.html());
+
+		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
+		var singleItemPriceNumber = parseInt(singleItemPrice.html());
+		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
+
+		var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+		countNumber++
+		count.html(countNumber);
+
+		var summ = countNumber * singleItemPriceNumber;
+		singleSumm.html(summ);
+
+		sumArray.length = 0;
+
+		itemsSumm.forEach(function(item, index, value){
+			var number = parseInt(item.textContent);
+			sumArray.push(number);
+		});
+
+		sum = 0;
+		if(total){
+			for(var key in sumArray) {
+				sum = sum + parseInt(sumArray[key]);
+			}
+			if(!sum){
+				sum = 0;
+			}
+			total.textContent = sum;
+		}
+	}
+
+	function countDec(){
+		var count = $(this).closest(item_t).find(countNumber_t);
+		var countNumber = parseInt(count.html());
+		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
+		var singleItemPriceNumber = parseInt(singleItemPrice.html());
+		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
+
+		var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+		countNumber--
+		if(countNumber <= 1){
+			countNumber = 1
+		}
+		count.html(countNumber);
+
+		var summ = countNumber * singleItemPriceNumber;
+		singleSumm.html(summ);
+
+
+		sumArray.length = 0;
+		itemsSumm.forEach(function(item, index, value){
+			var number = parseInt(item.textContent);
+			sumArray.push(number);
+		});
+		sum = 0;
+		if(total){
+			for(var key in sumArray) {
+				sum = sum + parseInt(sumArray[key]);
+			}
+			if(!sum){
+				sum = 0;
+			}
+			total.textContent = sum;
+		}
+	}
+
+	function onCloseItem(){
+		var singleSumm = $(this).closest(item_t).find(singleSumm_t);
+		var singleSummNumber = parseInt(singleSumm.html());
+		var total = $(total_t);
+		var totalPrice = parseInt(total.html()) - singleSummNumber;
+		
+		$(this).closest(item_t).hide(400);
+		total.html(totalPrice);
+	}
+
+	calcOnWindowLoad();
+
+	inc.on('click', countInc);
+
+	dec.on('click', countDec);
+
+	close.on('click', onCloseItem);
+}
+
 window.onload = function() {
 	//scrollEvents
 	scrollEffects();
@@ -430,6 +556,7 @@ window.onload = function() {
 
 	//calc
 	productCalc();
+	cartCalc();
 
 	//tabs
 	tabs('.nav');
