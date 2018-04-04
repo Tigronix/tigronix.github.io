@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="global-svg">
+		<global-svg></global-svg>
+	</div>
+	<main class="main overflow">
+    <section class="backet">
+      <div class="backet__title">Ваша корзина:</div>
+      <div class="backet__table-wrap">
+        <table class="backet__table">
+        <thead>
+          <tr class="backet__table-tr">
+            <td class="backet__table-td backet__table-td--head">ID</td>
+            <td class="backet__table-td backet__table-td--head">Наименование</td>
+            <td class="backet__table-td backet__table-td--head">Цена, руб.</td>
+            <td class="backet__table-td backet__table-td--head">Количество, шт.</td>
+            <td class="backet__table-td backet__table-td--head">Сумма</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="backet__table-tr cartCalcItem">
+            <td class="backet__table-td">
+              11002
+            </td>
+            <td class="backet__table-td">
+              Цахараджын (со свекольными листьями, сыром<br /> и зеленью) 1000 г
+            </td>
+            <td class="backet__table-td backet__table-td--price">
+              <span class="cartCalcSinglePrice">400</span>
+            </td>
+            <td class="backet__table-td">
+              <div class="backet__output">
+                <button class="backet__btn backet__btn--dec cartCalcDec">-</button>
+                <span class="backet__output-number cartCalcNumber">1</span>
+                <button class="backet__btn backet__btn--inc cartCalcInc">+</button>
+              </div>
+            </td>
+            <td class="backet__table-td backet__table-td--price-total">
+              <span class="cartSummNumber">400</span> руб.
+              <button type="button" class="cartCalcDelete backet__close"><svg class="icon icon-close"><use xlink:href="#icon-close"></use></svg></button>
+            </td>
+          </tr>
+          <tr class="backet__table-tr cartCalcItem">
+            <td class="backet__table-td">
+              11002
+            </td>
+            <td class="backet__table-td">
+              Цахараджын (со свекольными листьями, сыром<br /> и зеленью) 1000 г
+            </td>
+            <td class="backet__table-td backet__table-td--price">
+              <span class="cartCalcSinglePrice">400</span>
+            </td>
+            <td class="backet__table-td">
+              <div class="backet__output">
+                <button class="backet__btn backet__btn--dec cartCalcDec">-</button>
+                <span class="backet__output-number cartCalcNumber">1</span>
+                <button class="backet__btn backet__btn--inc cartCalcInc">+</button>
+              </div>
+            </td>
+            <td class="backet__table-td backet__table-td--price-total">
+              <span class="cartSummNumber">400</span> руб.
+              <button type="button" class="cartCalcDelete backet__close"><svg class="icon icon-close"><use xlink:href="#icon-close"></use></svg></button>
+            </td>
+          </tr>
+          <tr class="backet__table-tr cartCalcItem">
+            <td class="backet__table-td">
+              11002
+            </td>
+            <td class="backet__table-td">
+              Цахараджын (со свекольными листьями, сыром<br /> и зеленью) 1000 г
+            </td>
+            <td class="backet__table-td backet__table-td--price">
+              <span class="cartCalcSinglePrice">400</span>
+            </td>
+            <td class="backet__table-td">
+              <div class="backet__output">
+                <button class="backet__btn backet__btn--dec cartCalcDec">-</button>
+                <span class="backet__output-number cartCalcNumber">1</span>
+                <button class="backet__btn backet__btn--inc cartCalcInc">+</button>
+              </div>
+            </td>
+            <td class="backet__table-td backet__table-td--price-total">
+              <span class="cartSummNumber">400</span> руб.
+              <button type="button" class="cartCalcDelete backet__close"><svg class="icon icon-close"><use xlink:href="#icon-close"></use></svg></button>
+            </td>
+          </tr>
+          <tr class="backet__table-tr cartCalcItem">
+            <td class="backet__table-td">
+              11002
+            </td>
+            <td class="backet__table-td">
+              Цахараджын (со свекольными листьями, сыром<br /> и зеленью) 1000 г
+            </td>
+            <td class="backet__table-td backet__table-td--price">
+              <span class="cartCalcSinglePrice">400</span>
+            </td>
+            <td class="backet__table-td">
+              <div class="backet__output">
+                <button class="backet__btn backet__btn--dec cartCalcDec">-</button>
+                <span class="backet__output-number cartCalcNumber">1</span>
+                <button class="backet__btn backet__btn--inc cartCalcInc">+</button>
+              </div>
+            </td>
+            <td class="backet__table-td backet__table-td--price-total">
+              <span class="cartSummNumber">400</span> руб.
+              <button type="button" class="cartCalcDelete backet__close"><svg class="icon icon-close"><use xlink:href="#icon-close"></use></svg></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="backet__total">
+        Общая сумма заказа:
+        <span class="backet__total-number">
+          <span class="cartCalcTotalSumm">0</span>
+          руб.
+        </span>
+      </div>
+    </section>
+    <section class="forms">
+      <div class="forms__title">Заполните контактные данные и адрес доставки:</div>
+      <div class="forms__left">
+        <input placeholder="Ваше имя" type="text" class="forms__input">
+        <input placeholder="+7(___)___-__-__" type="tel" class="forms__input formTel">
+        <textarea placeholder="Адрес доставки:" class="forms__textarea"></textarea>
+      </div>
+      <div class="forms__right">
+        <textarea placeholder="Комментарий к заказу..." class="forms__textarea forms__textarea--2nd"></textarea>
+        <button type="submit" class="forms__submit">Отправить заказ</button>
+      </div>
+    </section>
+  </main>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

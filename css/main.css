@@ -6413,3 +6413,321 @@ button {
     margin-top: 0;
   }
 }
+
+.backet {
+  max-width: 1408px;
+  margin: 0 auto;
+  padding: 0 2vw;
+}
+
+.backet__title {
+  text-align: center;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.backet__table {
+  border: 1px solid #dcdcdc;
+}
+
+.backet__table-tr:nth-child(odd) .backet__table-td {
+  background: #fff;
+}
+
+.backet__table-tr:hover .backet__table-td {
+  background: #fffbdb;
+}
+
+.backet__table-td {
+  height: 70px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-width: 0 0 1px 0;
+  background: #fff3f0;
+  -webkit-transition: background .4s;
+  -o-transition: background .4s;
+  transition: background .4s;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16px;
+  color: #0C121C;
+  font-weight: 300;
+  font-family: 'Open Sans';
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  position: relative;
+}
+
+.backet__table-td:first-child {
+  text-align: left;
+  padding-left: 2.86458vw;
+}
+
+.backet__table-td:nth-child(2) {
+  text-align: left;
+}
+
+.backet__table-td:hover {
+  background: #fff3f0;
+}
+
+.backet__table-td--head {
+  background: #f9cc9d !important;
+  -webkit-box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  height: 60px;
+  border: none;
+}
+
+.backet__table-td--head:last-child {
+  padding-right: 5vw;
+}
+
+.backet__table-td--head:nth-child(2) {
+  text-align: center;
+}
+
+.backet__table-td--price-total {
+  font-size: 24px;
+  color: #FF0000;
+  font-weight: 600;
+  padding-right: 5vw;
+}
+
+.backet__output {
+  width: 124px;
+  height: 35px;
+  border: 1px solid #ffcc00;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 auto;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.backet__btn {
+  width: 40px;
+  height: 100%;
+  background: #ffcc00;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.backet__btn--dec {
+  -webkit-border-radius: 8px 0 0 8px;
+          border-radius: 8px 0 0 8px;
+}
+
+.backet__btn--inc {
+  -webkit-border-radius: 0 8px 8px 0;
+          border-radius: 0 8px 8px 0;
+}
+
+.backet__output-number {
+  height: 100%;
+  width: 42px;
+  font-size: 19px;
+  color: #0C121C;
+  font-family: 'Roboto';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+.backet__close {
+  font-size: 28px;
+  color: #ff0000;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1.71875vw;
+}
+
+.backet__total {
+  padding-right: 8.072916666666667vw;
+  font-size: 19px;
+  color: #0C121C;
+  font-weight: 600;
+  text-align: right;
+  margin: 24px 0;
+}
+
+.backet__total-number {
+  font-size: 24px;
+  color: #ff0000;
+  font-weight: 600;
+  margin-left: 2.60417vw;
+}
+
+@media (max-width: 1024px) {
+  .backet__table-wrap {
+    overflow: auto;
+  }
+  .backet__table {
+    width: 983px;
+  }
+  .backet__total {
+    font-size: 16px;
+    padding-right: 0;
+    text-align: center;
+  }
+  .backet__total-number {
+    font-size: 21px;
+    margin-left: 0;
+  }
+}
+
+.forms {
+  background: #63c36b;
+  padding: 24px 2.08333vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1408px;
+  margin: 0 auto;
+}
+
+.forms__title {
+  font-size: 0.98958vw;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.forms__input {
+  font-size: 0.83333vw;
+  color: #0C121C;
+  font-weight: 300;
+  font-family: 'Open Sans';
+  padding-left: 1.25vw;
+  width: 15.625vw;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.forms__textarea {
+  font-size: 0.83333vw;
+  font-weight: 300;
+  font-family: 'Open Sans';
+  color: #0C121C;
+  padding: 10px;
+  padding-left: 1.25vw;
+  height: 87px;
+  min-height: 87px;
+  resize: vertical;
+  width: 100%;
+  border: none;
+}
+
+.forms__textarea--2nd {
+  height: 76px;
+  min-height: 76px;
+}
+
+.forms__left {
+  width: 32.55208333333333vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+.forms__right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 1.04167vw;
+}
+
+.forms__submit {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  height: 57px;
+  background: #FFDB4D;
+  -webkit-transition: background .4s;
+  -o-transition: background .4s;
+  transition: background .4s;
+  margin-top: 15px;
+  font-size: 1.09375vw;
+  color: #000;
+  font-weight: 600;
+  width: 100%;
+}
+
+.forms__submit:hover {
+  background: #ffd83b;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .forms {
+    display: block;
+  }
+  .forms__title {
+    font-size: 21px;
+  }
+  .forms__left {
+    width: 100%;
+    display: block;
+  }
+  .forms__right {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .forms__input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .forms__textarea {
+    font-size: 16px;
+  }
+  .forms__submit {
+    font-size: 18px;
+  }
+}
