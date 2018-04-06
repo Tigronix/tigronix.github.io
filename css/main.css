@@ -3833,6 +3833,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 1.25vw;
+  -webkit-transition: background .4s;
+  -o-transition: background .4s;
+  transition: background .4s;
+}
+
+.page-header__cart:hover {
+  background: #1ABC9C;
 }
 
 .page-header__cart-number {
@@ -4125,6 +4132,10 @@ button {
   text-align: center;
 }
 
+.page-footer .list {
+  margin-bottom: 30px;
+}
+
 .page-footer__left {
   text-align: right;
   margin-right: 3.02083vw;
@@ -4193,7 +4204,6 @@ button {
   font-size: 0.83333vw;
   color: #696969;
   font-family: 'PF Square Sans Pro';
-  margin-top: 7px;
 }
 
 .page-footer__by {
@@ -4235,7 +4245,10 @@ button {
 }
 
 .page-footer__metr {
-  margin-left: 20px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding-top: 7px;
 }
 
 @media (max-width: 1440px) {
@@ -4439,16 +4452,6 @@ button {
   }
   .hamburger__wrap {
     height: 55px;
-  }
-  .hamburger__wrap:after {
-    display: block;
-    content: '';
-    position: fixed;
-    left: 0;
-    top: 55px;
-    right: 0;
-    height: 1px;
-    background: #1ABC9C;
   }
   .hamburger__line {
     width: 25px;
@@ -4756,12 +4759,12 @@ button {
   padding-right: 170px;
   background: #1ABC9C;
   border-width: 1px 1px 1px 0;
-  height: 60px !important;
+  height: 3.125vw !important;
   overflow: visible;
 }
 
 .menu__item {
-  height: 60px;
+  height: 3.125vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4823,7 +4826,7 @@ button {
 .menu__hide .menu__link {
   opacity: 0;
   padding-left: 0;
-  height: 60px;
+  height: 3.125vw;
   overflow: hidden;
   border-width: 1px 1px 1px 0;
   background: #1ABC9C;
@@ -4872,6 +4875,16 @@ button {
     height: auto;
     padding-top: 0;
     width: 55px;
+  }
+  .menu:after {
+    display: block;
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 55px;
+    right: 0;
+    height: 1px;
+    background: #1ABC9C;
   }
   .menu__title {
     display: none;
