@@ -4204,6 +4204,7 @@ button {
   font-size: 0.83333vw;
   color: #696969;
   font-family: 'PF Square Sans Pro';
+  margin-top: 49px;
 }
 
 .page-footer__by {
@@ -4254,6 +4255,7 @@ button {
 @media (max-width: 1440px) {
   .page-footer__copy {
     font-size: 16px;
+    margin-top: 44px;
   }
   .page-footer__by-link {
     font-size: 16px;
@@ -4639,6 +4641,21 @@ button {
   -o-transition: color .4s;
   transition: color .4s;
   margin-left: 2.60417vw;
+  position: relative;
+}
+
+.nav__link:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 2px;
+  background: red;
+  -webkit-transition: width .4s;
+  -o-transition: width .4s;
+  transition: width .4s;
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .nav__link:first-child {
@@ -4647,6 +4664,10 @@ button {
 
 .nav__link.active, .nav__link:hover {
   color: #FF0000;
+}
+
+.nav__link:hover:after {
+  width: 100%;
 }
 
 .menu {
