@@ -5045,7 +5045,7 @@ button {
 }
 
 .product__price {
-  font-size: 1.66667vw;
+  font-size: 1.25vw;
   color: #000;
   font-family: 'Segoe UI';
   font-weight: 600;
@@ -5060,10 +5060,11 @@ button {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
 }
 
 .product__price-icon {
-  font-size: 1.5625vw;
+  font-size: 1.5vw;
   color: #000;
   margin-left: 0.52083vw;
 }
