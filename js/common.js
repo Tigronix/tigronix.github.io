@@ -315,13 +315,18 @@ function productCalc() {
 	var btnCart = $('.product__cart');
 	var cartTotal = $('.cartNumber');
 	var itemPop = $('.popular__item');
+	var calcCartCount = $('.calcCartCount')
 
 	$(itemPop).on('click', function(){
 		var number = parseInt($(this).find('.popPrice').html());
 		var cartNumber = parseInt($(cartTotal).html());
 		var cartCalc = number + cartNumber;
 
+		var cartCount = parseInt(calcCartCount.html());
+		var summCartCount = 1 + cartCount;
+
 		cartTotal.html(cartCalc);
+		calcCartCount.html(summCartCount);
 	});
 
 	$(btnCart).on('click', function(){
@@ -329,7 +334,12 @@ function productCalc() {
 		var cartNumber = parseInt($(cartTotal).html());
 		var cartCalc = number + cartNumber;
 
+		var count = parseInt($(this).closest('.product').find('.product__number').html());
+		var cartCount = parseInt(calcCartCount.html());
+		var summCartCount = count + cartCount;
+
 		cartTotal.html(cartCalc);
+		calcCartCount.html(summCartCount);
 	});
 
 	$(btnWeight).on('click', function(){
