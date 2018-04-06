@@ -364,6 +364,14 @@ function productCalc() {
 	});
 }
 
+function inputFix() {
+	var elem = $('.product__checkbox');
+
+	elem.on('click', function(){
+		$(this).closest('.product__inp-box').siblings().find(elem).prop('checked', false);
+	});
+}
+
 window.onload = function() {
 	//scrollEvents
 	scrollEffects();
@@ -374,6 +382,7 @@ window.onload = function() {
 	phoneMask();
 	menuHover();
 	productCalc();
+	inputFix();
 
 	//tabs
 	tabs();

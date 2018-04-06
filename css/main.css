@@ -290,7 +290,7 @@ body {
 
 @media (max-width: 768px) {
   .main {
-    padding-top: 50px;
+    padding-top: 70px;
   }
 }
 
@@ -3818,7 +3818,8 @@ button {
   cursor: pointer;
   margin-left: auto;
   background: #E74B94;
-  width: 10.83333333333333vw;
+  width: auto;
+  padding-right: 1.04167vw;
   height: 63px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4159,6 +4160,7 @@ button {
   font-size: 0.83333vw;
   color: #696969;
   font-family: 'PF Square Sans Pro';
+  margin-top: 7px;
 }
 
 .page-footer__by {
@@ -4201,6 +4203,26 @@ button {
 
 .page-footer__metr {
   margin-left: 20px;
+}
+
+@media (max-width: 1440px) {
+  .page-footer__copy {
+    font-size: 16px;
+  }
+  .page-footer__by-link {
+    font-size: 16px;
+  }
+  .page-footer__logo {
+    width: 100px;
+    height: auto;
+  }
+  .page-footer__payvar {
+    text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -4526,7 +4548,7 @@ button {
   -webkit-transition: color .4s;
   -o-transition: color .4s;
   transition: color .4s;
-  margin-left: 3.64583vw;
+  margin-left: 2.60417vw;
 }
 
 .nav__link:first-child {
@@ -4844,6 +4866,7 @@ button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin: -1.19792vw;
   margin-bottom: 30px;
 }
 
@@ -4856,9 +4879,21 @@ button {
   }
 }
 
+@media (max-width: 1100px) {
+  .products {
+    margin: 0;
+    padding: 0 1vw;
+  }
+}
+
 .product {
   width: 20.83333333333333vw;
-  margin-left: 2.39583vw;
+  margin: 0 1.19792vw;
+  margin-bottom: 20px;
+}
+
+.product:nth-child(4n+5) {
+  margin-left: 0;
 }
 
 .product:hover .product__img img {
@@ -5162,6 +5197,9 @@ button {
     margin-left: 0;
     margin-bottom: 20px;
   }
+  .product:nth-child(3n+4) {
+    margin-left: 0;
+  }
   .product__weight-items {
     width: 15vw;
   }
@@ -5194,6 +5232,11 @@ button {
 @media (max-width: 1100px) {
   .product {
     width: 48%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .product:nth-child(2n+3) {
+    margin-left: 0;
   }
   .product__weight-items {
     width: 200px;
