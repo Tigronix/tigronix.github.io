@@ -2,7 +2,7 @@
 //templates
 new Vue({
 		el: '#global-svg',
-		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-ruble-sign" viewBox="0 0 24 32"><title>ruble-sign</title><path d="M14.96 20c5.32 0 9.040-3.716 9.040-9.058s-3.72-8.942-9.040-8.942h-10.21c-0.414 0-0.75 0.336-0.75 0.75v12.915h-3.25c-0.414 0-0.75 0.336-0.75 0.75v2.835c0 0.414 0.336 0.75 0.75 0.75h3.25v2h-3.25c-0.414 0-0.75 0.336-0.75 0.75v2.5c0 0.414 0.336 0.75 0.75 0.75h3.25v3.25c0 0.414 0.336 0.75 0.75 0.75h3.66c0.414 0 0.75-0.336 0.75-0.75v-3.25h10.090c0.414 0 0.75-0.336 0.75-0.75v-2.5c0-0.414-0.336-0.75-0.75-0.75h-10.090v-2h5.8zM9.16 6.297h4.92c2.92 0 4.68 1.819 4.68 4.645 0 2.864-1.76 4.723-4.76 4.723h-4.84v-9.368z"></path></symbol><symbol id="icon-android" viewBox="0 0 32 32"><title>android</title><path d="M8 24c0 0.733 0.6 1.333 1.333 1.333h1.333v4.667c0 1.107 0.893 2 2 2s2-0.893 2-2v-4.667h2.667v4.667c0 1.107 0.893 2 2 2s2-0.893 2-2v-4.667h1.333c0.733 0 1.333-0.6 1.333-1.333v-13.333h-16v13.333zM4.667 10.667c-1.107 0-2 0.893-2 2v9.333c0 1.107 0.893 2 2 2s2-0.893 2-2v-9.333c0-1.107-0.893-2-2-2zM27.333 10.667c-1.107 0-2 0.893-2 2v9.333c0 1.107 0.893 2 2 2s2-0.893 2-2v-9.333c0-1.107-0.893-2-2-2zM20.707 2.88l1.733-1.733c0.267-0.267 0.267-0.68 0-0.947s-0.68-0.267-0.947 0l-1.973 1.973c-1.053-0.533-2.253-0.84-3.52-0.84-1.28 0-2.48 0.307-3.547 0.84l-1.987-1.973c-0.267-0.267-0.68-0.267-0.947 0s-0.267 0.68 0 0.947l1.747 1.747c-1.973 1.453-3.267 3.787-3.267 6.44h16c0-2.653-1.293-5-3.293-6.453zM13.333 6.667h-1.333v-1.333h1.333v1.333zM20 6.667h-1.333v-1.333h1.333v1.333z"></path></symbol><symbol id="icon-dehaze" viewBox="0 0 32 32"><title>dehaze</title><path d="M2.667 20.667v2.667h26.667v-2.667h-26.667zM2.667 14v2.667h26.667v-2.667h-26.667zM2.667 7.333v2.667h26.667v-2.667h-26.667z"></path></symbol><symbol id="icon-favorite-border" viewBox="0 0 32 32"><title>favorite-border</title><path d="M22 4c-2.32 0-4.547 1.080-6 2.787-1.453-1.707-3.68-2.787-6-2.787-4.107 0-7.333 3.227-7.333 7.333 0 5.040 4.533 9.147 11.4 15.387l1.933 1.747 1.933-1.76c6.867-6.227 11.4-10.333 11.4-15.373 0-4.107-3.227-7.333-7.333-7.333zM16.133 24.733l-0.133 0.133-0.133-0.133c-6.347-5.747-10.533-9.547-10.533-13.4 0-2.667 2-4.667 4.667-4.667 2.053 0 4.053 1.32 4.76 3.147h2.493c0.693-1.827 2.693-3.147 4.747-3.147 2.667 0 4.667 2 4.667 4.667 0 3.853-4.187 7.653-10.533 13.4z"></path></symbol><symbol id="icon-ic_radio_button_unchecked_black_24px" viewBox="0 0 32 32"><title>ic_radio_button_unchecked_black_24px</title><path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM16 26.667c-5.893 0-10.667-4.773-10.667-10.667s4.773-10.667 10.667-10.667 10.667 4.773 10.667 10.667-4.773 10.667-10.667 10.667z"></path></symbol><symbol id="icon-radio-button-checked" viewBox="0 0 32 32"><title>radio-button-checked</title><path d="M16 9.333c-3.68 0-6.667 2.987-6.667 6.667s2.987 6.667 6.667 6.667 6.667-2.987 6.667-6.667-2.987-6.667-6.667-6.667zM16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM16 26.667c-5.893 0-10.667-4.773-10.667-10.667s4.773-10.667 10.667-10.667 10.667 4.773 10.667 10.667-4.773 10.667-10.667 10.667z"></path></symbol></defs></svg>'
+		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-date-range" viewBox="0 0 20 20"><title>date-range</title><path d="M7.5 9.167h-1.667v1.667h1.667v-1.667zM10.833 9.167h-1.667v1.667h1.667v-1.667zM14.167 9.167h-1.667v1.667h1.667v-1.667zM15.833 3.333h-0.833v-1.667h-1.667v1.667h-6.667v-1.667h-1.667v1.667h-0.833c-0.925 0-1.658 0.75-1.658 1.667l-0.008 11.667c0 0.917 0.742 1.667 1.667 1.667h11.667c0.917 0 1.667-0.75 1.667-1.667v-11.667c0-0.917-0.75-1.667-1.667-1.667zM15.833 16.667h-11.667v-9.167h11.667v9.167z"></path></symbol><symbol id="icon-directions-bus" viewBox="0 0 20 20"><title>directions-bus</title><path d="M3.333 13.333c0 0.733 0.325 1.392 0.833 1.85v1.483c0 0.458 0.375 0.833 0.833 0.833h0.833c0.458 0 0.833-0.375 0.833-0.833v-0.833h6.667v0.833c0 0.458 0.375 0.833 0.833 0.833h0.833c0.458 0 0.833-0.375 0.833-0.833v-1.483c0.508-0.458 0.833-1.117 0.833-1.85v-8.333c0-2.917-2.983-3.333-6.667-3.333s-6.667 0.417-6.667 3.333v8.333zM6.25 14.167c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM13.75 14.167c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM15 9.167h-10v-4.167h10v4.167z"></path></symbol><symbol id="icon-directions-car" viewBox="0 0 20 20"><title>directions-car</title><path d="M15.767 5.008c-0.167-0.492-0.633-0.842-1.183-0.842h-9.167c-0.55 0-1.008 0.35-1.183 0.842l-1.733 4.992v6.667c0 0.458 0.375 0.833 0.833 0.833h0.833c0.458 0 0.833-0.375 0.833-0.833v-0.833h10v0.833c0 0.458 0.375 0.833 0.833 0.833h0.833c0.458 0 0.833-0.375 0.833-0.833v-6.667l-1.733-4.992zM5.417 13.333c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM14.583 13.333c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM4.167 9.167l1.25-3.75h9.167l1.25 3.75h-11.667z"></path></symbol><symbol id="icon-directions-subway" viewBox="0 0 20 20"><title>directions-subway</title><path d="M10 1.667c-3.683 0-6.667 0.417-6.667 3.333v7.917c0 1.608 1.308 2.917 2.917 2.917l-1.25 1.25v0.417h10v-0.417l-1.25-1.25c1.608 0 2.917-1.308 2.917-2.917v-7.917c0-2.917-2.983-3.333-6.667-3.333zM6.25 14.167c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM9.167 9.167h-4.167v-4.167h4.167v4.167zM13.75 14.167c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM15 9.167h-4.167v-4.167h4.167v4.167z"></path></symbol><symbol id="icon-domain" viewBox="0 0 20 20"><title>domain</title><path d="M10 5.833v-3.333h-8.333v15h16.667v-11.667h-8.333zM5 15.833h-1.667v-1.667h1.667v1.667zM5 12.5h-1.667v-1.667h1.667v1.667zM5 9.167h-1.667v-1.667h1.667v1.667zM5 5.833h-1.667v-1.667h1.667v1.667zM8.333 15.833h-1.667v-1.667h1.667v1.667zM8.333 12.5h-1.667v-1.667h1.667v1.667zM8.333 9.167h-1.667v-1.667h1.667v1.667zM8.333 5.833h-1.667v-1.667h1.667v1.667zM16.667 15.833h-6.667v-1.667h1.667v-1.667h-1.667v-1.667h1.667v-1.667h-1.667v-1.667h6.667v8.333zM15 9.167h-1.667v1.667h1.667v-1.667zM15 12.5h-1.667v1.667h1.667v-1.667z"></path></symbol><symbol id="icon-fullscreen" viewBox="0 0 20 20"><title>fullscreen</title><path d="M5.833 11.667h-1.667v4.167h4.167v-1.667h-2.5v-2.5zM4.167 8.333h1.667v-2.5h2.5v-1.667h-4.167v4.167zM14.167 14.167h-2.5v1.667h4.167v-4.167h-1.667v2.5zM11.667 4.167v1.667h2.5v2.5h1.667v-4.167h-4.167z"></path></symbol><symbol id="icon-room" viewBox="0 0 20 20"><title>room</title><path d="M10 1.667c-3.225 0-5.833 2.608-5.833 5.833 0 4.375 5.833 10.833 5.833 10.833s5.833-6.458 5.833-10.833c0-3.225-2.608-5.833-5.833-5.833zM10 9.583c-1.15 0-2.083-0.933-2.083-2.083s0.933-2.083 2.083-2.083 2.083 0.933 2.083 2.083-0.933 2.083-2.083 2.083z"></path></symbol><symbol id="icon-swap-calls" viewBox="0 0 20 20"><title>swap-calls</title><path d="M15 3.333l-3.333 3.333h2.5v5.833c0 0.917-0.75 1.667-1.667 1.667s-1.667-0.75-1.667-1.667v-5.833c0-1.842-1.492-3.333-3.333-3.333s-3.333 1.492-3.333 3.333v5.833h-2.5l3.333 3.333 3.333-3.333h-2.5v-5.833c0-0.917 0.75-1.667 1.667-1.667s1.667 0.75 1.667 1.667v5.833c0 1.842 1.492 3.333 3.333 3.333s3.333-1.492 3.333-3.333v-5.833h2.5l-3.333-3.333z"></path></symbol><symbol id="icon-tram" viewBox="0 0 20 20"><title>tram</title><path d="M15.833 14.117v-7.033c0-2.325-2.175-2.833-5.008-2.908l0.633-1.258h2.708v-1.25h-8.333v1.25h3.958l-0.633 1.267c-2.608 0.075-4.992 0.592-4.992 2.9v7.033c0 1.208 0.992 2.217 2.158 2.475l-1.325 1.325v0.417h1.858l1.667-1.667h3.142l1.667 1.667h1.667v-0.417l-1.25-1.25h-0.067c1.408 0 2.15-1.142 2.15-2.55zM10 15.417c-0.692 0-1.25-0.558-1.25-1.25s0.558-1.25 1.25-1.25 1.25 0.558 1.25 1.25-0.558 1.25-1.25 1.25zM14.167 11.667h-8.333v-4.167h8.333v4.167z"></path></symbol></defs></svg>'
 	})
 
 function scrollEffects() {
@@ -19,8 +19,6 @@ var getSiblings = function(elem) {
 	}
 	return siblings;
 }
-
-
 
 //active
 function active(elem) {
@@ -59,26 +57,28 @@ function bodyOverflow(elem) {
 //toggleClass on window scroll
 function changeClassOnScroll(){
 	$(window).scroll(function() {
-    var elem = $('.parallax__container');
+    var elem = $('.page-header');
     var height = elem.innerHeight();
     var top = $(this).scrollTop();
-    if (top > 828) {
-      elem.addClass('parallax__container--off');
+		var pageTop = $('.page-header__top');
+		var pageBot = $('.page-header__bottom');
+		var windowWidth = $(window).width();
+
+    if (top > 50) {
+			$(elem).addClass('scroll');
+      $(pageTop).hide();
+			$(pageBot).addClass('scroll');
     } else {
-      elem.removeClass('parallax__container--off');
+			$(elem).removeClass('scroll');
+      $(pageTop).show();
+			$(pageBot).removeClass('scroll');
     }
-		if (screen.width <= 1440) {
-			if (top > 626) {
-	      elem.addClass('parallax__container--off');
-	    } else {
-	      elem.removeClass('parallax__container--off');
-	    }
-		}
-		if (screen.width <= 1280) {
-			if (top > 556) {
-	      elem.addClass('parallax__container--off');
-	    } else {
-	      elem.removeClass('parallax__container--off');
+
+		if(windowWidth <= 1024){
+			if (top > 50) {
+				$(elem).removeClass('scroll');
+	      $(pageTop).show();
+				$(pageBot).removeClass('scroll');
 	    }
 		}
   });
@@ -122,7 +122,7 @@ function animateHide(button, content, animationIn, animationOut, hideTiming) {
 		var animateContent = content;
 		if ($(content).hasClass(animationIn)) {
 			$(content).removeClass(animationIn).addClass(animationOut + ' animated');
-			setTimeout(function(){
+			setTimeout(function(){e
 				$(content).hide();
 			}, hideTiming);
 		} else {
@@ -133,14 +133,14 @@ function animateHide(button, content, animationIn, animationOut, hideTiming) {
 
 //owl-slider
 function slider(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.slider__content';
+	elem = elem || '.slider__wrap';
 	items = items || 1;
 	navContainer = navContainer || '';
-	navText = navText || ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard_arrow_right"><use xlink:href="#icon-keyboard_arrow_right"></use></svg>'];
-
-
+	navText = navText || ['', ''];
 	if(elem){
 		$(elem).owlCarousel({
 			nav: true,
@@ -152,32 +152,68 @@ function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 			loop: true,
 			URLhashListener: true,
       startPosition: 'URLHash',
-			dots: false
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '.slider__dots',
+			navText: navText,
+			onInitialized: function(){
+				console.log(123);
+				$('.box').each(function() {
+				    //set size
+				    var th = $(this).height(),//box height
+				        tw = $(this).width(),//box width
+				        im = $(this).children('img'),//image
+				        ih = im.height(),//inital image height
+				        iw = im.width();//initial image width
+				    if (ih>iw) {//if portrait
+				        im.addClass('ww').removeClass('wh');//set width 100%
+				    } else {//if landscape
+				        im.addClass('wh').removeClass('ww');//set height 100%
+				    }
+				    //set offset
+				    var nh = im.height(),//new image height
+				        nw = im.width(),//new image width
+				        hd = (nh-th)/2,//half dif img/box height
+				        wd = (nw-tw)/2;//half dif img/box width
+				    if (nh<nw) {//if portrait
+				        im.css({marginLeft: '-'+wd+'px', marginTop: 0});//offset left
+				    } else {//if landscape
+				        im.css({marginTop: '-'+hd+'px', marginLeft: 0});//offset top
+				    }
+				});
+			},
+			onChanged: function(){
+
+			}
 		});
 	}
 }
 
-//spincrement
-function spincrement() {
-	var elem = $('.spincrement');
+//productSlider
+function productSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.product__slider';
+	items = items || 1;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
 	if(elem){
-		$(".spincrement").spincrement();
-		var show = true;
-		var countbox = ".stats";
-		$(window).on("scroll load resize", function () {
-			if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-			var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-			var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-			var w_height = $(window).height(); // Высота окна браузера
-			var d_height = $(document).height(); // Высота всего документа
-			var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-			if (w_top + 400 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-				$(".spincrement").spincrement({
-					thousandSeparator: ""
-					, duration: 3000
-				});
-				show = false;
-			}
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '',
+			navText: navText,
 		});
 	}
 }
@@ -191,226 +227,343 @@ function phoneMask() {
 	}
 }
 
-//tabsNav
-function tabsNav() {
-	var containers = document.querySelectorAll('.choose__roomNav-wrap');
-	containers.forEach(function(item, index, array){
-		var prev = item.querySelector('.choose__roomNav-btn--prev');
-		var next = item.querySelector('.choose__roomNav-btn--next');
-		var navItems = item.querySelector('.choose__roomNav').childNodes;
-		var navitemFirst = navItems[1];
-		var navitemLast = navItems[7];
-
-		function tabsPrev() {
-			var navItemActive = item.querySelector('.choose__roomNav-item.active');
-			var navItemPrev = navItemActive.previousElementSibling;
-
-			navItemActive.classList.remove('active');
-			if(navItemPrev){
-				var itemDataClass = navItemPrev.getAttribute('data-tabclass');
-				var itemDataNumber = navItemPrev.getAttribute('data-tabnumber');
-				var tabContent = item.nextElementSibling.querySelectorAll('.choose__room-item');
-
-				tabContent.forEach(function(item, index, array) {
-					var itemContentNumber = item.getAttribute('data-tabnumber');
-					item.style.display = 'none';
-
-					if(itemContentNumber == itemDataNumber){
-						item.style.display = 'block';
-						item.classList.add('animated');
-					}
-				});
-
-				navItemPrev.classList.add('active');
-			}else{
-				navitemFirst.classList.add('active');
-			}
-		}
-		function tabsNext() {
-			var navItemActive = item.querySelector('.choose__roomNav-item.active');
-			var navItemNext = navItemActive.nextElementSibling;
-
-			navItemActive.classList.remove('active');
-			if(navItemNext){
-				var itemDataClass = navItemNext.getAttribute('data-tabclass');
-				var itemDataNumber = navItemNext.getAttribute('data-tabnumber');
-
-				var tabContent = item.nextElementSibling.querySelectorAll('.choose__room-item');
-				tabContent.forEach(function(item, index, array) {
-					var itemContentNumber = item.getAttribute('data-tabnumber');
-					item.style.display = 'none';
-
-					if(itemContentNumber == itemDataNumber){
-						item.style.display = 'block';
-						item.classList.add('animated');
-					}
-				});
-
-				navItemNext.classList.add('active');
-			}else{
-				navitemLast.classList.add('active');
-			}
-		}
-
-		prev.addEventListener('click', tabsPrev);
-		next.addEventListener('click', tabsNext);
-	});
-}
-
 //resizeFix
 function resizeFix(elem) {
 	$(window).on('resize', function(){
 		var windowWidth = $(window).width();
 		if(windowWidth > 1024){
-			$(elem).show().removeClass('animated');
+			$(elem).show().removeClass('animated').css('display', 'flex');
 		}else {
-			$(elem).addClass('animated');
+			$(elem).addClass('animated').css('display', 'none');
+			$('.hamburger').removeClass('active');
+			$('.hamburger__wrap').removeClass('active');
+			$('.hamburger__line1').removeClass('rotate_in_45');
+			$('.hamburger__line3').removeClass('rotate_in_-45');
+			$('.menu').removeClass('animated, slideInLeft');
+			$('body').removeClass('overflow');
 		}
 	});
 }
 
-//productToggle
-function productToggle(elem) {
-	$(elem).on('click', function(){
-		var target = $(this).closest('.product__buy').find('.product__calc');
-
-		$(this).addClass('animated fadeOut');
-		$(target).show().addClass('animated slideInUp');
+function brandHover() {
+	var item = $('.brand__item');
+	$('.brand__item').on('mouseenter', function(){
+		var itemHover = $(this).find('.brand__hover');
+		itemHover.removeClass('circleHover--out').addClass('circleHover');
+	});
+	$('.brand__item').on('mouseleave', function(){
+		var itemHover = $(this).find('.brand__hover');
+		itemHover.removeClass('circleHover').addClass('circleHover--out');
 	});
 }
 
-//menuHover
-function menuHover() {
-	var menuDrop = $('.menu__drop');
-	var menuItem = $('.menu__item');
-	var menuLink = $('.menu__link');
+function accordion() {
+	  var allPanels = $('.accordion .question__content').hide();
+		var btn = $('.accBtn');
+		var btnActive = $('.accBtn.active');
 
-	$('[data-item]').mouseenter(function(){
-		var itemData = $(this).data('item');
-		menuLink.each(function(){
-			var linkData = $(this).data('item');
+	  btn.click(function() {
+	    $(this).parent().siblings().find('.accContent').slideUp();
+	    $(this).parent().siblings().find('.accBtn').removeClass('active');
+	    $(this).next().slideToggle();
+			$(this).toggleClass('active');
+	  });
+}
 
-			if(linkData == itemData){
-				$(this).addClass('active');
-			}
-		});
-	});
+function sliderFix() {
+	var elem = $('.slider');
+	if(elem){
+		var windowSize =  $(window).width();
+		if(windowSize <= 1440) {
+			elem.css('height', '495')
+		}
+		setTimeout(function(){
+			$(elem).css('height', 'auto');
+		}, 500);
+	}
 
-	$('[data-item]').mouseleave(function(){
-		var itemData = $(this).data('item');
-		menuLink.each(function(){
-			var linkData = $(this).data('item');
+}
 
-			if(linkData == itemData){
-				$(this).removeClass('active');
-			}
-		});
+function checkFix(elem) {
+	$(elem).on('click', function(){
+		$(this).closest('.checkFixBox').siblings().find(elem).prop('checked', false);
 	});
 }
 
 //productCalc
-function productCalc() {
-	var btn = $('.product__btn');
-	var btnWeight = $('.product__checkbox');
-	var btnCart = $('.product__cart');
-	var cartTotal = $('.cartNumber');
-	var itemPop = $('.popular__item');
-	var calcCartCount = $('.calcCartCount')
+function productCalc(){
+	var btn = $('.calcBtn');
+	var dec = $('.calcDec');
+	var inc = $('.calcInc');
+	var output = $('.calcNumber');
+	var outputText = '.calcNumber';
+	var valueBox = $('.calcOutput');
+	var valueBoxText = '.calcOutput';
+	var btnWeight = $('.calcCheckbox');
+	var submit = $('.calcSubmit');
+	var singleItem = $('.calcSingleItem');
+	var singleSubmit = $('.calcSingleSubmit');
 
-	$(itemPop).on('click', function(){
-		var number = parseInt($(this).find('.popPrice').html());
-		var cartNumber = parseInt($(cartTotal).html());
-		var cartCalc = number + cartNumber;
+	if(btn){
+		$(btn).on('click', function(){
+		var output = $(this).closest('.calcItem').find(outputText);
+		var value = $(this).closest('.calcItem').find(valueBoxText);
+		var valueHtml = $(value).html();
 
-		var cartCount = parseInt(calcCartCount.html());
-		var summCartCount = 1 + cartCount;
-
-		cartTotal.html(cartCalc);
-		calcCartCount.html(summCartCount);
-	});
-
-	$(btnCart).on('click', function(){
-		var number = parseInt($(this).closest('.product').find('.productNumber').html());
-		var cartNumber = parseInt($(cartTotal).html());
-		var cartCalc = number + cartNumber;
-
-		var count = parseInt($(this).closest('.product').find('.product__number').html());
-		var cartCount = parseInt(calcCartCount.html());
-		var summCartCount = count + cartCount;
-
-		cartTotal.html(cartCalc);
-		calcCartCount.html(summCartCount);
-	});
-
-	$(btnWeight).on('click', function(){
-		var number = $(this).data('number');
-		var price = $(this).closest('.product__weight').find('.productNumber');
-		var output = $(this).closest('.product__content').find('.product__number');
-
-		price.html(number);
-		output.html(1);
-	});
-
-	$(btn).on('click', function(){
-		var output = $(this).closest('div').find('.product__number');
-		var number = parseInt($(this).closest('div').find('.product__number').html());
-		var price = $(this).closest('.product').find('.productNumber');
-		var priceNumber = parseInt($(this).closest('.product').find('.product__checkbox:checked').data('number'));
-
-		if($(this).hasClass('btnDec')){
-			--number
-		}else if($(this).hasClass('btnInc')){
-			++number
+		if($(this).hasClass('calcDec')){
+			--valueHtml
+		}else if($(this).hasClass('calcInc')){
+			++valueHtml
 		}
-
-		if(number <= 1){
-			number = 1;
+		if(valueHtml <= 1){
+			valueHtml = 1;
 		}
+		var summ = valueHtml * parseInt(output.attr('data-price'));
 
-		var summPrice = priceNumber * number;
-
-		price.html(summPrice);
-		output.html(number);
+		$(value).html(valueHtml);
+		$(output).html(summ);
 	});
+	}
+	if(btnWeight){
+		$(btnWeight).on('click', function(){
+			var number = parseInt($(this).closest('.calcWeightItem').find('.calcWeightNumber').html());
+			var price = $(this).closest('.calcItem').find('.calcNumber');
+			var output = $(this).closest('.calcItem').find('.calcOutput');
+			console.log(btnWeight);
+
+			price.html(number);
+			output.html(1);
+		});
+	}
+
+	if(submit){
+		$(submit).on('click', function(){
+			var output = $(this).closest('.calcItem').find(outputText);
+			var value = $(this).closest('.calcItem').find(valueBoxText);
+			var cartNumber = $('.calcCart');
+			var cartCount = $('.calcCartCount');
+
+			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
+			var valueSumm = parseInt(value.html()) + parseInt(cartCount.html());
+
+			cartCount.html(valueSumm);
+			cartNumber.html(summ);
+		});
+	}
+
+	if(singleSubmit){
+		$(singleSubmit).on('click', function(){
+			var output = $(this).closest('.calcSingleItem').find(outputText);
+			var cartNumber = $('.cartNumber');
+			var cartCount = $('.calcCartCount');
+
+			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
+			var valueSumm = 1 + parseInt(cartCount.html());
+
+			cartCount.html(valueSumm);
+			cartNumber.html(summ);
+		});
+	}
 }
 
-function inputFix() {
-	var elem = $('.product__checkbox');
+//cartCalc
+function cartCalc() {
+	var inc = $('.cartCalcInc');
+	var dec = $('.cartCalcDec');
+	var countNumber_t = '.cartCalcNumber';
+	var close = $('.cartCalcDelete');
+	var summ_t = '.cartCalcTotalSumm';
+	var item_t = '.cartCalcItem';
+	var singleItemPrice_t = '.cartCalcSinglePrice';
+	var singleSumm_t = '.cartSummNumber';
+	var total = document.querySelector('.cartCalcTotalSumm');
+	var total_t = '.cartCalcTotalSumm';
+	var sum = 0;
+	var sumArray = [];
 
-	elem.on('click', function(){
-		$(this).closest('.product__inp-box').siblings().find(elem).prop('checked', false);
+	function calcOnWindowLoad(){
+			var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+			sumArray.length = 0;
+			itemsSumm.forEach(function(item, index, value){
+				var number = parseInt(item.textContent);
+				sumArray.push(number);
+			});
+			sum = 0;
+			if(total){
+				for(var key in sumArray) {
+					sum = sum + parseInt(sumArray[key]);
+				}
+				if(!sum){
+					sum = 0;
+				}
+				total.textContent = sum;
+			}
+		}
+
+	function countInc(){
+		var count = $(this).closest(item_t).find(countNumber_t);
+		var countNumber = parseInt(count.html());
+		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
+		var singleItemPriceNumber = parseInt(singleItemPrice.html());
+		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
+
+		var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+		countNumber++
+		count.html(countNumber);
+
+		var summ = countNumber * singleItemPriceNumber;
+		singleSumm.html(summ);
+
+		sumArray.length = 0;
+
+		itemsSumm.forEach(function(item, index, value){
+			var number = parseInt(item.textContent);
+			sumArray.push(number);
+		});
+
+		sum = 0;
+		if(total){
+			for(var key in sumArray) {
+				sum = sum + parseInt(sumArray[key]);
+			}
+			if(!sum){
+				sum = 0;
+			}
+			total.textContent = sum;
+		}
+	}
+
+	function countDec(){
+		var count = $(this).closest(item_t).find(countNumber_t);
+		var countNumber = parseInt(count.html());
+		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
+		var singleItemPriceNumber = parseInt(singleItemPrice.html());
+		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
+
+		var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+		countNumber--
+		if(countNumber <= 1){
+			countNumber = 1
+		}
+		count.html(countNumber);
+
+		var summ = countNumber * singleItemPriceNumber;
+		singleSumm.html(summ);
+
+
+		sumArray.length = 0;
+		itemsSumm.forEach(function(item, index, value){
+			var number = parseInt(item.textContent);
+			sumArray.push(number);
+		});
+		sum = 0;
+		if(total){
+			for(var key in sumArray) {
+				sum = sum + parseInt(sumArray[key]);
+			}
+			if(!sum){
+				sum = 0;
+			}
+			total.textContent = sum;
+		}
+	}
+
+	function onCloseItem(){
+		var singleSumm = $(this).closest(item_t).find(singleSumm_t);
+		var singleSummNumber = parseInt(singleSumm.html());
+		var total = $(total_t);
+		var totalPrice = parseInt(total.html()) - singleSummNumber;
+
+		$(this).closest(item_t).hide(400);
+		total.html(totalPrice);
+	}
+
+	calcOnWindowLoad();
+
+	inc.on('click', countInc);
+
+	dec.on('click', countDec);
+
+	close.on('click', onCloseItem);
+}
+
+//mainMargin
+function mainMargin() {
+	var heightHeader = $('.page-header').innerHeight();
+
+	$('.main').css('margin-top', heightHeader);
+}
+
+//sliderLine
+function sliderLine() {
+	var elem = '.sliderLine';
+	var item = '.sliderLineItem';
+
+	$(window).on('resize || load', function() {
+		var elem = '.sliderLine';
+		var item = '.sliderLineItem';
+		var itemActive = $('.sliderLineItem.active')
+		var positionItem = $(itemActive).position();
+		var marginItem = parseInt($(itemActive).css('margin-left'));
+		var widthItem = $(itemActive).width();
+		var positionLeftLine = positionItem.left + marginItem;
+
+		$(elem).css({
+			'left': positionLeftLine,
+			'width': widthItem
+		});
+	});
+
+	$(item).on('mouseenter', function(){
+		var positionItem = $(this).position();
+		var marginItem = parseInt($(this).css('margin-left'));
+		var widthItem = $(this).width();
+		var positionLeftLine = positionItem.left + marginItem;
+
+		$(this).addClass('active').siblings().removeClass('active');
+		$(elem).css({
+			'left': positionLeftLine,
+			'width': widthItem
+		});
 	});
 }
 
 window.onload = function() {
 	//scrollEvents
 	scrollEffects();
-	changeClassOnScroll();
 
 	//other
 	bodyOverflow('.hamburger');
 	phoneMask();
-	menuHover();
-	productCalc();
-	inputFix();
+	resizeFix('.nav');
+	mainMargin();
 
 	//tabs
 	tabs();
 
 	//active toggle
 	active('.hamburger');
+	active('.hamburger__wrap');
 
 	//activeSiblings
 
 	//activeOther
-	activerOther('.hamburger__wrap', '.menu__drop');
+
 
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	//Animation+hide
-	animate('.hamburger__wrap', '.menu__drop', 'lightSpeedIn--menu', 'lightSpeedOut--menu');
+	animate('.hamburger__wrap', '.nav', 'slideInDown', 'slideOutUp');
+
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
-
+	slider();
+	productSlider();
 };
+
+//other
+sliderLine();
