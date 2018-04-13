@@ -9,6 +9,10 @@ function scrollEffects() {
 	new WOW().init();
 }
 
+function loading() {
+	$('.loading').fadeOut(1500);
+}
+
 //функция помощник: siblings
 var getSiblings = function(elem) {
 	var siblings = [];
@@ -277,6 +281,46 @@ function photoSlider(animationIn, animationOut, elem, items, navContainer, navTe
 	}
 }
 
+//detailsSlider
+function detailsSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.details__slider';
+	items = items || 6;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: false,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: 1,
+			dotsContainer: '',
+			navText: navText,
+			responsive: {
+				320: {
+					items: 1,
+				},
+				768: {
+					items: 3
+				},
+				1024: {
+					items: 6
+				}
+			}
+		});
+	}
+}
+
 //Маска для телефона
 function phoneMask() {
 	if($('*').is('.formTel')){
@@ -413,7 +457,7 @@ function productCalc(){
 	if(singleSubmit){
 		$(singleSubmit).on('click', function(){
 			var output = $(this).closest('.calcSingleItem').find(outputText);
-			var cartNumber = $('.cartNumber');
+			var cartNumber = $('.calcCartNumber');
 			var cartCount = $('.calcCartCount');
 
 			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
@@ -646,11 +690,17 @@ window.onload = function() {
 	//Animation+hide
 	animate('.hamburger__wrap', '.menu', 'slideInDown', 'slideOutUp');
 
+	//calc
+	productCalc();
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
 	slider();
 	tabSlider();
 	photoSlider();
+	detailsSlider();
+
+	//loading
+	loading();
 };
 
 //other
