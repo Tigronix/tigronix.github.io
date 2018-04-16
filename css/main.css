@@ -4550,28 +4550,35 @@ button {
   z-index: 5;
 }
 
-.tab .owl-carousel.tab__slider {
+.tab .tab__slider {
   display: none;
-  border-bottom: 1px solid #dcdcdc;
   padding: 0 4.16667vw;
   padding-top: 30px;
 }
 
-.tab .owl-carousel.tab__slider:first-child {
+.tab .tab__slider:first-child {
   display: block;
 }
 
-.tab .owl-carousel.tab__slider .tab__slide {
-  opacity: .6s;
+.tab .tab__slide {
+  opacity: .4;
   font-size: 0.98958vw;
   color: #808080;
   text-align: center;
   text-transform: uppercase;
   font-family: 'SF UI Display';
   padding-bottom: 20px;
+  -webkit-transition: opacity 1s, -webkit-box-shadow .4s;
+  transition: opacity 1s, -webkit-box-shadow .4s;
+  -o-transition: opacity 1s, box-shadow .4s;
+  transition: opacity 1s, box-shadow .4s;
+  transition: opacity 1s, box-shadow .4s, -webkit-box-shadow .4s;
+  border-bottom: 1px solid #dcdcdc;
+  -webkit-box-shadow: inset 0 0 0 0 #000;
+          box-shadow: inset 0 0 0 0 #000;
 }
 
-.tab .owl-carousel.tab__slider .tab__img {
+.tab .tab__img {
   height: 72px;
   margin-bottom: 15px;
   display: -webkit-box;
@@ -4591,7 +4598,7 @@ button {
           align-items: center;
 }
 
-.tab .owl-carousel.tab__slider .tab__img img {
+.tab .tab__img img {
   width: 100%;
   max-width: 80%;
   height: auto;
@@ -4606,29 +4613,7 @@ button {
   max-width: 71px !important;
 }
 
-.tab .owl-nav {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 1.04167vw;
-  right: 1.04167vw;
-  height: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.tab .owl-nav .owl-prev, .tab .owl-nav .owl-next {
+.tab .slick-prev, .tab .slick-next {
   width: 25px;
   height: 41px;
   background: url(../img/owl-prev.png) no-repeat center;
@@ -4637,18 +4622,43 @@ button {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-size: 0;
+  position: absolute;
+  left: 1.04167vw;
+  top: 50%;
 }
 
-.tab .owl-nav .owl-prev:hover {
+.tab .slick-prev:hover {
   background-image: url(../img/owl-prev--hover.png);
 }
 
-.tab .owl-nav .owl-next {
+.tab .slick-next {
+  left: auto;
+  right: 1.04167vw;
   background-image: url(../img/owl-next.png);
 }
 
-.tab .owl-nav .owl-next:hover {
+.tab .slick-next:hover {
   background-image: url(../img/owl-next--hover.png);
+}
+
+.tab .slick-current {
+  color: #EC1C23;
+  position: relative;
+  opacity: 1;
+  -webkit-box-shadow: inset 0px -7px 0 -3px #EC1C23;
+          box-shadow: inset 0px -7px 0 -3px #EC1C23;
+}
+
+.tab .slick-current:after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 2px;
+  background: #EC1C23;
 }
 
 @media (max-width: 1024px) {

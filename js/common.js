@@ -199,48 +199,35 @@ function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 }
 
 //tabSlider
-function tabSlider(animationIn, animationOut, elem, items, navContainer, navText) {
-	var arrayPosition = [];
-	var arrayOffset = [];
-	animationIn = animationIn || 'zoomIn';
-	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.tab__slider';
-	items = items || 9;
-	navContainer = navContainer || '';
-	navText = navText || ['', ''];
-	if(elem){
-		$(elem).owlCarousel({
-			nav: true,
-			navContainer: navContainer,
-			navText: navText,
-			items: items,
-			animateIn: animationIn,
-			animateOut: animationOut,
-			loop: true,
-			URLhashListener: true,
-      startPosition: 'URLHash',
-			dots: false,
-			dotsEach: true,
-			dotsContainer: '',
-			navText: navText,
-			responsive: {
-				0: {
-					items: 1,
-				},
-				320: {
-					items: 3
-				},
-				768: {
-					items: 6
-				},
-				1024: {
-					items: 9
+function tabSlider() {
+	$('.tab__slider').slick({
+	  infinite: true,
+	  slidesToShow: 9,
+	  slidesToScroll: 1,
+		centerMode: true,
+		centerPadding: 0,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 5
 				}
-			}
-		});
-	}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 430,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
+	});
 }
-
 //photoSlider
 function photoSlider(animationIn, animationOut, elem, items, navContainer, navText) {
 	var arrayPosition = [];
