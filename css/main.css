@@ -4517,6 +4517,7 @@ button {
   -webkit-transition: color .4s, background .4s;
   -o-transition: color .4s, background .4s;
   transition: color .4s, background .4s;
+  text-decoration: none;
 }
 
 .tab__btn.active {
