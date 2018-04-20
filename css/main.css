@@ -3797,11 +3797,14 @@ button {
 @media (max-width: 1024px) {
   .hamburger__wrap {
     position: fixed;
-    left: 20px;
-    top: 25px;
+    left: 10px;
+    top: 20px;
     -webkit-transition: left 1s, top 1s;
     -o-transition: left 1s, top 1s;
     transition: left 1s, top 1s;
+    background: #005f9a;
+    width: 50px;
+    height: 50px;
   }
   .hamburger__wrap.active {
     z-index: 15;
@@ -4123,9 +4126,11 @@ button {
     width: auto;
     padding-right: 1.04167vw;
     padding-left: 50px;
+    background: none;
   }
   .page-header__logo {
     font-size: 18px;
+    display: none;
   }
   .page-header__logo-icon {
     font-size: 21px;
@@ -4949,6 +4954,7 @@ button {
   .product {
     display: block;
     padding: 20px;
+    position: relative;
   }
   .product__title {
     font-size: 16px;
@@ -4971,7 +4977,7 @@ button {
     margin-bottom: 20px;
   }
   .product__slider {
-    width: 100%;
+    width: 290px;
     margin: 0 auto;
     padding-bottom: 20px;
   }
@@ -5016,6 +5022,9 @@ button {
   .product .owl-dots .owl-dot.active:before {
     width: 8px;
     height: 8px;
+  }
+  .product__content__title {
+    width: 100%;
   }
 }
 
@@ -5217,7 +5226,8 @@ button {
     font-size: 18px;
   }
   .price__tab-item {
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 }
 
