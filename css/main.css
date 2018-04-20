@@ -3951,7 +3951,6 @@ button {
   height: 100vh;
   z-index: 999;
   background: #fff;
-  display: none;
 }
 
 .loading__msg {
