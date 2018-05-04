@@ -129,11 +129,12 @@ function animate(button, content, animationIn, animationOut, hideTiming) {
 }
 
 //animate + hide
-function animateHide(button, content, animationIn, animationOut, hideTiming) {
+function animateHide(button, content, animationIn, animationOut, display, hideTiming) {
 	hideTiming = hideTiming || 1000;
+	display = display || 'block';
 	var elem = document.querySelector(content);
 	$(button).on('click', function() {
-		$(content).show();
+		$(content).show().css('display', display);
 		var animateContent = content;
 		if ($(content).hasClass(animationIn)) {
 			$(content).removeClass(animationIn).addClass(animationOut + ' animated');
@@ -251,13 +252,45 @@ function map() {
   });
 }
 
+function menuHover() {
+	var link = $('.menuHover');
+	var item = $('.menu-hover');
+
+	link.on('mouseenter', function(){
+		item.addClass('active animated slideInDown');
+	});
+	item.on('mouseleave', function(){
+		item.removeClass('slideInDown').addClass('slideOutUp');
+		setTimeout(function(){
+			item.removeClass('active slideOutUp');
+		}, 1000);
+	});
+}
+
+function popup() {
+	var btn = $('.popupBtn');
+	var item = $('.popup');
+	var closeBtn = $('.form__cancel');
+
+	btn.on('click', function(){
+		item.fadeIn(400).css('display', 'flex');
+		$('body').addClass('overflow');
+	});
+
+	closeBtn.on('click', function(){
+		item.fadeOut(400);
+		$('body').removeClass('overflow');
+	});
+}
+
 window.onload = function() {
 	//scrollEvents
 	scrollEffects();
 
 	//other
 	phoneMask();
-	accordion();
+	menuHover();
+	popup();
 
 	//tabs
 	tabs();
@@ -275,7 +308,7 @@ window.onload = function() {
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	//Animation+hide
-	animateHide('.hamburger__wrap', '.menu', 'slideInLeft', 'slideOutLeft');
+	animateHide('.hamburger__wrap', '.menu', 'slideInDown', 'slideOutUp', 'flex');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
 	productSlider();
