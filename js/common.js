@@ -364,6 +364,202 @@ function productCalc(){
 	}
 }
 
+//cartCalc
+function cartCalc() {
+	var inc = $('.cartCalcInc');
+	var dec = $('.cartCalcDec');
+	var countNumber_t = '.cartCalcNumber';
+	var close = $('.cartCalcDelete');
+	var summ_t = '.cartCalcTotalSumm';
+	var item_t = '.cartCalcItem';
+	var singleItemPrice_t = '.cartCalcSinglePrice';
+	var singleSumm_t = '.cartSummNumber';
+	var total = document.querySelector('.cartCalcTotalSumm');
+	var total_t = '.cartCalcTotalSumm';
+	var headerCalcCount = document.querySelector('.calcCartCount');
+	var headerCalcCount_t = '.calcCartCount';
+	var headerCalcSumm = document.querySelector('.calcCart');
+	var headerCalcSumm_t = '.calcCart';
+	var stepTotal = document.querySelector('.cartCalcStepTotalSumm');
+	var stepTotal_t = ('.cartCalcStepTotalSumm');
+	var sum = 0;
+	var sumArray = [];
+	var countArray = [];
+
+	function calcOnWindowLoad(){
+			var itemsSumm = document.querySelectorAll(singleSumm_t);
+			var itemsCount = document.querySelectorAll(countNumber_t);
+			var items = document.querySelectorAll(item_t);
+
+			//Итоговая общая сумма
+			sumArray.length = 0;
+			itemsSumm.forEach(function(item, index, value){
+				var number = parseInt(item.textContent);
+				sumArray.push(number);
+			});
+			sum = 0;
+			if(total || headerCalcSumm){
+				for(var key in sumArray) {
+					sum = sum + parseInt(sumArray[key]);
+				}
+				if(!sum){
+					sum = 0;
+				}
+
+				total.textContent = sum;
+				headerCalcSumm.textContent = sum;
+				stepTotal.textContent = sum;
+			}
+
+			//Итоговое количество
+			countArray.length = 0;
+			itemsCount.forEach(function(item, index, value){
+				var number = parseInt(item.textContent);
+				countArray.push(number);
+			});
+			sum = 0;
+			if(headerCalcCount){
+				for(var key in countArray) {
+					sum = sum + parseInt(countArray[key]);
+				}
+				if(!sum){
+					sum = 0;
+				}
+				headerCalcCount.textContent = sum;
+			}
+		}
+
+	function countInc(){
+		var count = $(this).closest(item_t).find(countNumber_t);
+		var countNumber = parseInt(count.html());
+		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
+		var singleItemPriceNumber = parseInt(singleItemPrice.html());
+		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
+		var headerCount = parseInt($(headerCalcCount_t).html());
+		var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+		countNumber++
+		count.html(countNumber);
+
+		headerCount++
+		$(headerCalcCount_t).html(headerCount);
+
+		var summ = countNumber * singleItemPriceNumber;
+		singleSumm.html(summ);
+
+		sumArray.length = 0;
+
+		itemsSumm.forEach(function(item, index, value){
+			var number = parseInt(item.textContent);
+			sumArray.push(number);
+		});
+
+		sum = 0;
+		if(total || headerCalcSumm){
+			for(var key in sumArray) {
+				sum = sum + parseInt(sumArray[key]);
+			}
+			if(!sum){
+				sum = 0;
+			}
+			total.textContent = sum;
+			headerCalcSumm.textContent = sum;
+			stepTotal.textContent = sum;
+		}
+	}
+
+	function countDec(){
+		var count = $(this).closest(item_t).find(countNumber_t);
+		var countNumber = parseInt(count.html());
+		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
+		var singleItemPriceNumber = parseInt(singleItemPrice.html());
+		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
+		var headerCount = parseInt($(headerCalcCount_t).html());
+
+		var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+		countNumber--
+		if(countNumber <= 1){
+			countNumber = 1
+		}
+		count.html(countNumber);
+
+		headerCount--
+		if(countNumber <= 1){
+			--headerCount
+			++headerCount
+		}
+		itemsSumm.forEach(function(item, index, value){
+			if(headerCount <= ++index) {
+				headerCount = index;
+			}
+		});
+		$(headerCalcCount_t).html(headerCount);
+
+		var summ = countNumber * singleItemPriceNumber;
+		singleSumm.html(summ);
+
+
+		sumArray.length = 0;
+		itemsSumm.forEach(function(item, index, value){
+			var number = parseInt(item.textContent);
+			sumArray.push(number);
+		});
+		sum = 0;
+		if(total || headerCalcSumm){
+			for(var key in sumArray) {
+				sum = sum + parseInt(sumArray[key]);
+			}
+			if(!sum){
+				sum = 0;
+			}
+			total.textContent = sum;
+			headerCalcSumm.textContent = sum;
+			stepTotal.textContent = sum;
+		}
+	}
+
+	function onCloseItem(){
+		var singleSumm = $(this).closest(item_t).find(singleSumm_t);
+		var singleSummNumber = parseInt(singleSumm.html());
+		var headerCalcSumm = $(headerCalcSumm_t);
+		var headerCalcCount = $(headerCalcCount_t);
+		var count = parseInt($(this).closest(item_t).find(countNumber_t).html());
+		var headerCount = parseInt($(headerCalcCount_t).html());
+		var stepTotal = $(stepTotal_t);
+
+		var totalCount = headerCount - count;
+
+		var total = $(total_t);
+		var totalPrice = parseInt(total.html()) - singleSummNumber;
+
+		$(this).closest(item_t).addClass('animated slideOutLeft').hide(1000);
+		total.html(totalPrice);
+		stepTotal.html(totalPrice);
+		headerCalcSumm.html(totalPrice);
+		headerCalcCount.html(totalCount);
+	}
+
+	calcOnWindowLoad();
+
+	inc.on('click', countInc);
+
+	dec.on('click', countDec);
+
+	close.on('click', onCloseItem);
+}
+
+function stepSelect() {
+	var elem = $('.step__select');
+
+	elem.on('focus || mouseenter', function(){
+		$(this).closest('.step__select-box').find('.step__select-icon').addClass('active');
+	});
+	elem.on('mouseleave', function(){
+		$(this).closest('.step__select-box').find('.step__select-icon').removeClass('active');
+	});
+}
+
 window.onload = function() {
 	//scrollEvents
 	scrollEffects();
@@ -371,11 +567,14 @@ window.onload = function() {
 	//other
 	phoneMask();
 	checkbox('.product__checkbox');
+	checkbox('.backet-order__checkbox');
 	checkFix('.product__checkbox');
+	checkFix('.step__checkbox');
 	activeSiblings('.productToggle');
 	productToggle();
 	changeClassOnScroll();
 	menuHover();
+	stepSelect();
 
 	//tabs
 	tabs();
@@ -406,7 +605,7 @@ window.onload = function() {
 
 	//calc
 	productCalc();
-
+	cartCalc();
 
 };
 
