@@ -4852,6 +4852,13 @@ button {
   .page-footer {
     padding: 20px 0 0;
   }
+  .page-footer__card-item {
+    width: 100px;
+  }
+  .page-footer__card-item img {
+    width: 80%;
+    height: auto;
+  }
   .page-footer__metr {
     position: static;
     text-align: right;
