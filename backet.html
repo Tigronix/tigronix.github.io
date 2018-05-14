@@ -150,7 +150,7 @@
 			</div>
 		</section>
 		<form class="step">
-			<div class="step__box">
+			<div class="step__box stepBoxFirst">
 				<div class="step__number">1</div>
 				<div class="step__title">Контактная информация</div>
 				<div class="step__desc">Заполните все поля для перехода к следующему этапу</div>
@@ -158,18 +158,18 @@
 					<div class="step__item step__item--2">
 						<label  for="form__name" class="form__label step__label">
 							Имя
-							<input placeholder="Ваше имя" id="form__name" type="text" class="form__input step__input form__input--name">
+							<input required placeholder="Ваше имя" id="form__name" type="text" class="form__input step__input form__input--name stepFirst">
 						</label>
 					</div>
 					<div class="step__item step__item--2">
 						<label  for="form__tel" class="form__label step__label">
 							Телефон
-							<input placeholder="Введите телефон" id="form__tel" type="tel" class="form__input step__input form__input--tel formTel">
+							<input required placeholder="Введите телефон" id="form__tel" type="tel" class="form__input step__input form__input--tel formTel stepFirst">
 						</label>
 					</div>
 				</div>
 			</div>
-			<div class="step__box inactive">
+			<div class="step__box stepBoxSecond inactive">
 				<div class="step__number">2</div>
 				<div class="step__title">Куда доставить пиццу?</div>
 				<div class="step__content">
@@ -179,7 +179,7 @@
 							<div class="step__select-icon">
 								<svg class="icon icon-subway"><use xlink:href="#icon-subway"></use></svg>
 							</div>
-							<select disabled name="" id="form__metro" class="step__select form__input">
+							<select required disabled name="" id="form__metro" class="step__select form__input stepSecond">
 								<option value="">Цветной бульвар</option>
 								<option value="">Какое то метро</option>
 								<option value="">Какое то метро</option>
@@ -189,49 +189,50 @@
 					<div class="step__item step__item--address step__item--2">
 						<label for="form__address" class="form__label step__label">
 							Адрес доставки:
-							<input disabled placeholder="" id="form__address" type="text" class="form__input step__input step__input--address">
+							<input disabled placeholder="" id="form__address" type="text" class="form__input stepSecond step__input step__input--address">
 						</label>
 					</div>
 					<div class="step__item">
-						<textarea disabled placeholder="Комментарий к заказу" class="step__textarea form__textarea form__input step__input"></textarea>
+						<textarea disabled placeholder="Комментарий к заказу" class="step__textarea form__textarea form__input step__input stepSecond"></textarea>
 					</div>
 				</div>
 			</div>
-			<div class="step__box inactive">
+			<div class="step__box stepBoxThird inactive">
 				<div class="step__number">3</div>
 				<div class="step__title">Как оплатить?</div>
 				<div class="step__content">
 					<div class="step__item">
 						<label for="form__pay-cash" class="step__label step__label--checkbox checkFixBox">
-							<input disabled type="checkbox" class="step__checkbox" id="form__pay-cash">
+							<input disabled type="radio" class="step__checkbox stepThird" id="form__pay-cash">
 							<i class="step__checkbox-icon"></i>
 							Наличными курьеру
 						</label>
 						<label for="form__pay-card" class="step__label step__label--checkbox checkFixBox">
-							<input disabled type="checkbox" class="step__checkbox" id="form__pay-card">
+							<input disabled type="radio" class="step__checkbox stepThird" id="form__pay-card">
 							<i class="step__checkbox-icon"></i>
 							Банковская карта
 						</label>
 						<label for="form__pay-sberbank" class="step__label step__label--checkbox checkFixBox">
-							<input disabled type="checkbox" class="step__checkbox" id="form__pay-sberbank">
+							<input disabled type="radio" class="step__checkbox stepThird" id="form__pay-sberbank">
 							<i class="step__checkbox-icon"></i>
 							Сбербанк онлайн
 						</label>
 					</div>
 				</div>
 			</div>
-			<div class="step__box inactive step__box--total">
+			<div class="step__box inactive stepBoxFourth step__box--total">
 				<div class="step__number"><svg class="icon icon-verified-user"><use xlink:href="#icon-verified-user"></use></svg></div>
 				<div class="step__title step__title--total">
 					Итого к оплате:
 					<span class="step__price"><span class="cartCalcStepTotalSumm"></span> руб.</span>
 					<button disabled class="btn step__submit" type="submit">Оформить заказ</button>
-					<div class="step__terms">
-					<label class="backet-order__label step__label--terms active">
-						<input disabled checked type="checkbox" class="backet-order__checkbox">
-						Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики обработки  <a href="#" class="step__link-info">персональных данных</a>
-					</label>
-					</div>
+				</div>
+
+				<div class="step__terms">
+				<label class="backet-order__label step__label--terms active">
+					<input disabled checked type="checkbox" class="stepFourth backet-order__checkbox">
+					<span>Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики обработки</span>  <a href="#" class="step__link-info">персональных данных</a>
+				</label>
 				</div>
 			</div>
 		</form>

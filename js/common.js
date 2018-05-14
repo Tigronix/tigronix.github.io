@@ -560,6 +560,41 @@ function stepSelect() {
 	});
 }
 
+	function stepValidation() {
+		var form = $('.step');
+
+		function stepForward(currentBox, formElem, inactiveBox, formElemNext){
+			$(formElem).change(function(){
+				$(formElem).each(function(index, item, array){
+					var elem = $(item);
+					if(elem.val() != ''){
+						$(this).addClass('success');
+						var stepSuccess = $(formElem + '.success');
+						for(var i = 0; i < stepSuccess.length; i++){
+							if(i >= 1){
+								$(inactiveBox).removeClass('inactive');
+								$(formElemNext).prop('disabled', false);
+								$(currentBox).addClass('active');
+							}else {
+								$(inactiveBox).addClass('inactive');
+								$(formElemNext).prop('disabled', 'disabled');
+								$(currentBox).removeClass('active');
+							}
+
+						}
+					}else {
+						$(this).removeClass('success');
+					}
+				});
+			});
+		}
+
+		stepForward('.stepBoxFirst', '.stepFirst', '.stepBoxSecond', '.stepSecond');
+		stepForward('.stepBoxSecond', '.stepSecond', '.stepBoxThird', '.stepThird');
+		stepForward('.stepBoxThird', '.stepThird', '.stepBoxFourth', '.stepFourth');
+
+	}
+
 window.onload = function() {
 	//scrollEvents
 	scrollEffects();
@@ -607,6 +642,8 @@ window.onload = function() {
 	productCalc();
 	cartCalc();
 
+	//stepValidation
+	stepValidation();
 };
 
 //other
