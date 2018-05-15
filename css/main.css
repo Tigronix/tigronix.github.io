@@ -5515,6 +5515,10 @@ button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  top: 31%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -5887,6 +5891,15 @@ button {
   .popular__popup {
     width: 100%;
   }
+  .popular .owl-nav {
+    top: 14vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .popular .owl-nav {
+    top: 18%;
+  }
 }
 
 .list__li {
@@ -6256,5 +6269,189 @@ button {
 @media (max-width: 1024px) {
   .rating__item .icon {
     font-size: 18px;
+  }
+}
+
+.video {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.video__item {
+  width: 17.1875vw;
+  border: 10px solid transparent;
+  -webkit-transition: border-color .4s, -webkit-box-shadow .4s;
+  transition: border-color .4s, -webkit-box-shadow .4s;
+  -o-transition: border-color .4s, box-shadow .4s;
+  transition: border-color .4s, box-shadow .4s;
+  transition: border-color .4s, box-shadow .4s, -webkit-box-shadow .4s;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.video__item:hover {
+  border-color: #FFD700;
+}
+
+.video__img {
+  position: relative;
+}
+
+.video__img img {
+  width: 100%;
+  height: auto;
+}
+
+.video__play {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__play .icon {
+  font-size: 4.27083vw;
+  color: #fff;
+  -webkit-transition: color .4s;
+  -o-transition: color .4s;
+  transition: color .4s;
+}
+
+.video__play .icon:hover {
+  color: #FFD700;
+}
+
+.video__popup {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.video__popup > iframe {
+  width: 100% !important;
+  height: 600px !important;
+}
+
+.video__popup img {
+  width: 100%;
+  height: auto;
+}
+
+.video__close {
+  position: fixed;
+  z-index: 1001;
+  right: 20%;
+  top: 40px;
+  cursor: pointer;
+}
+
+.video__close .icon {
+  color: #fff;
+  font-size: 50px;
+}
+
+.video .owl-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video .owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  background: #D3D3D3;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-left: 10px;
+  -webkit-box-shadow: inset 0 0 0 0px #ED1847;
+          box-shadow: inset 0 0 0 0px #ED1847;
+  -webkit-transition: -webkit-box-shadow .8s;
+  transition: -webkit-box-shadow .8s;
+  -o-transition: box-shadow .8s;
+  transition: box-shadow .8s;
+  transition: box-shadow .8s, -webkit-box-shadow .8s;
+}
+
+.video .owl-dots .owl-dot.active, .video .owl-dots .owl-dot:hover {
+  -webkit-box-shadow: inset 0 0 0 15px #ED1847;
+          box-shadow: inset 0 0 0 15px #ED1847;
+}
+
+.video .owl-dots .owl-dot:first-child {
+  margin-left: 0;
+}
+
+@media (max-width: 1024px) {
+  .video__item {
+    width: 95%;
+  }
+  .video__play .icon {
+    font-size: 70px;
+  }
+  .video__popup > iframe {
+    height: 400px !important;
+  }
+  .video__close {
+    right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .video__popup > iframe {
+    height: 250px !important;
+  }
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 100px 20% 0;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .popup {
+    padding: 100px 10%;
   }
 }

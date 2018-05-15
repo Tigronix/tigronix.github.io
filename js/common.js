@@ -8,7 +8,7 @@ new Vue({
 //templates
 new Vue({
 		el: '#more-svg',
-		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-balance-scale" viewBox="0 0 40 32"><title>balance-scale</title><path d="M16 21h-0.001c0-1.011 0.084-0.546-5.316-11.344-1.103-2.206-4.262-2.21-5.367 0-5.445 10.891-5.315 10.365-5.315 11.344h-0.001c0 2.761 3.582 5 8 5s8-2.239 8-5zM8 11l4.5 9h-9l4.5-9zM39.999 21c0-1.011 0.084-0.546-5.316-11.344-1.103-2.206-4.262-2.21-5.367 0-5.445 10.891-5.315 10.365-5.315 11.344h-0.001c0 2.761 3.582 5 8 5s8-2.239 8-5h-0.001zM27.5 20l4.5-9 4.5 9h-9zM33 28h-11v-18.422c1.469-0.643 2.572-1.968 2.899-3.578h8.101c0.553 0 1-0.447 1-1v-2c0-0.553-0.447-1-1-1h-9.023c-0.913-1.208-2.347-2-3.977-2s-3.065 0.792-3.977 2h-9.023c-0.553 0-1 0.447-1 1v2c0 0.553 0.447 1 1 1h8.101c0.327 1.61 1.429 2.935 2.899 3.578v18.422h-11c-0.553 0-1 0.448-1 1v2c0 0.552 0.447 1 1 1h26c0.553 0 1-0.448 1-1v-2c0-0.552-0.447-1-1-1z"></path></symbol><symbol id="icon-star" viewBox="0 0 32 32"><title>star</title><path d="M16 23.027l8.24 4.973-2.187-9.373 7.28-6.307-9.587-0.813-3.747-8.84-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373z"></path></symbol><symbol id="icon-star-empty" viewBox="0 0 32 32"><title>star-empty</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533l-5.013 3.027 1.333-5.707-4.427-3.84 5.84-0.507 2.267-5.373 2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol><symbol id="icon-star-half" viewBox="0 0 32 32"><title>star-half</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533v-12.4l2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol></defs></svg>'
+		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-balance-scale" viewBox="0 0 40 32"><title>balance-scale</title><path d="M16 21h-0.001c0-1.011 0.084-0.546-5.316-11.344-1.103-2.206-4.262-2.21-5.367 0-5.445 10.891-5.315 10.365-5.315 11.344h-0.001c0 2.761 3.582 5 8 5s8-2.239 8-5zM8 11l4.5 9h-9l4.5-9zM39.999 21c0-1.011 0.084-0.546-5.316-11.344-1.103-2.206-4.262-2.21-5.367 0-5.445 10.891-5.315 10.365-5.315 11.344h-0.001c0 2.761 3.582 5 8 5s8-2.239 8-5h-0.001zM27.5 20l4.5-9 4.5 9h-9zM33 28h-11v-18.422c1.469-0.643 2.572-1.968 2.899-3.578h8.101c0.553 0 1-0.447 1-1v-2c0-0.553-0.447-1-1-1h-9.023c-0.913-1.208-2.347-2-3.977-2s-3.065 0.792-3.977 2h-9.023c-0.553 0-1 0.447-1 1v2c0 0.553 0.447 1 1 1h8.101c0.327 1.61 1.429 2.935 2.899 3.578v18.422h-11c-0.553 0-1 0.448-1 1v2c0 0.552 0.447 1 1 1h26c0.553 0 1-0.448 1-1v-2c0-0.552-0.447-1-1-1z"></path></symbol><symbol id="icon-close" viewBox="0 0 32 32"><title>close</title><path d="M25.333 8.547l-1.88-1.88-7.453 7.453-7.453-7.453-1.88 1.88 7.453 7.453-7.453 7.453 1.88 1.88 7.453-7.453 7.453 7.453 1.88-1.88-7.453-7.453z"></path></symbol><symbol id="icon-play" viewBox="0 0 32 32"><title>play</title><path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM13.333 22v-12l8 6-8 6z"></path></symbol><symbol id="icon-star" viewBox="0 0 32 32"><title>star</title><path d="M16 23.027l8.24 4.973-2.187-9.373 7.28-6.307-9.587-0.813-3.747-8.84-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373z"></path></symbol><symbol id="icon-star-empty" viewBox="0 0 32 32"><title>star-empty</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533l-5.013 3.027 1.333-5.707-4.427-3.84 5.84-0.507 2.267-5.373 2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol><symbol id="icon-star-half" viewBox="0 0 32 32"><title>star-half</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533v-12.4l2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol></defs></svg>'
 	})
 
 function scrollEffects() {
@@ -141,24 +141,36 @@ function animateHide(button, content, animationIn, animationOut, hideTiming) {
 function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.slider__content';
-	items = items || 1;
+	elem = elem || '.video';
+	items = items || 5;
 	navContainer = navContainer || '';
 	navText = navText || ['<svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg>', '<svg class="icon icon-keyboard_arrow_right"><use xlink:href="#icon-keyboard_arrow_right"></use></svg>'];
 
 
 	if(elem){
 		$(elem).owlCarousel({
-			nav: true,
+			nav: false,
 			navContainer: navContainer,
 			navText: navText,
 			items: items,
 			animateIn: animationIn,
 			animateOut: animationOut,
-			loop: true,
+			loop: false,
 			URLhashListener: true,
       startPosition: 'URLHash',
-			dots: false
+			dots: true,
+			dotsEach: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 3
+				},
+				1025: {
+					items: 5
+				}
+			}
 		});
 	}
 }
@@ -456,11 +468,37 @@ function inputFix() {
 
 function okZoom() {
 	$('.okzoom').okzoom({
-        width:  100,
-        height: 100,
+        width:  200,
+        height: 200,
         border: "1px solid black",
         shadow: "0 0 5px #000"
     });
+}
+
+function popup() {
+	var btn = $('.popupBtn');
+	var close = $('.popupClose');
+	var popup = $('.popup');
+
+	btn.on('click', function(){
+		var target = $(this).closest('.popupItem').find('.popupTarget');
+		var targetClone = target.clone();
+
+		popup.fadeIn(400).html(targetClone);
+		popup.find('.popupTarget').fadeIn(400);
+		close.fadeIn(400);
+	});
+
+		jQuery(function($){
+			$(document).mouseup(function (e){
+				var div = $(".popup .video__popup");
+				if (!div.is(e.target)
+				    && div.has(e.target).length === 0) {
+					popup.fadeOut(400);
+					close.fadeOut(400);
+				}
+			});
+		});
 }
 
 window.onload = function() {
@@ -475,6 +513,7 @@ window.onload = function() {
 	productCalc();
 	inputFix();
 	okZoom();
+	popup();
 
 	//tabs
 	tabs();
@@ -494,6 +533,7 @@ window.onload = function() {
 	animate('.hamburger__wrap', '.menu__drop', 'lightSpeedIn--menu', 'lightSpeedOut--menu');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
+	slider();
 	itemSlider();
 	productsSlider();
 };
