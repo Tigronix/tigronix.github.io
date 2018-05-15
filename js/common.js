@@ -455,8 +455,8 @@ function inputFix() {
 
 function okZoom() {
 	$('.okzoom').okzoom({
-        width: 200,
-        height: 200,
+        width:  100,
+        height: 100,
         border: "1px solid black",
         shadow: "0 0 5px #000"
     });

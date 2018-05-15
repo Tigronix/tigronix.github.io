@@ -5875,6 +5875,7 @@ button {
 
 .item__slider {
   width: 57.29166666666667vw;
+  margin: 0 50px;
 }
 
 .item__content {
@@ -6001,8 +6002,8 @@ button {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 25px;
-  right: 25px;
+  left: -50px;
+  right: -50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6023,7 +6024,7 @@ button {
 .item .owl-prev, .item .owl-next {
   width: 24px;
   height: 50px;
-  background: url(../img/arr-prev.png) no-repeat center;
+  background: url(../img/arr-prev-grey.png) no-repeat center;
   -webkit-background-size: 100% auto;
           background-size: 100% auto;
   -webkit-transition: background-image .4s;
@@ -6036,7 +6037,7 @@ button {
 }
 
 .item .owl-next {
-  background-image: url(../img/arr-next.png);
+  background-image: url(../img/arr-next-grey.png);
 }
 
 .item .owl-next:hover {
