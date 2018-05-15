@@ -7,6 +7,20 @@
 }
 
 @font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url("../fonts/MyriadPro-BoldCond.woff2") format("woff2"), url("../fonts/MyriadPro-BoldCond.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Cleopatra';
   src: url("../fonts/Cleopatra.woff2") format("woff2"), url("../fonts/Cleopatra.woff") format("woff");
   font-weight: normal;
@@ -14,106 +28,22 @@
 }
 
 @font-face {
-  font-family: 'Cera Round Pro';
-  src: url("../fonts/CeraRoundPro-Bold.woff2") format("woff2"), url("../fonts/CeraRoundPro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff");
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-ExtraboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-ExtraboldItalic.woff") format("woff");
-  font-weight: 800;
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUI-Semibold.woff2") format("woff2"), url("../fonts/SegoeUI-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUIBlack-Italic.woff2") format("woff2"), url("../fonts/SegoeUIBlack-Italic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSansLight-Italic.woff2") format("woff2"), url("../fonts/OpenSansLight-Italic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF DinDisplay Pro';
-  src: url("../fonts/PFDinDisplayPro-Medium.woff2") format("woff2"), url("../fonts/PFDinDisplayPro-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUI-Italic.woff2") format("woff2"), url("../fonts/SegoeUI-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Segoe UI Semilight';
-  src: url("../fonts/SegoeUI-SemilightItalic.woff2") format("woff2"), url("../fonts/SegoeUI-SemilightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-SemiboldItalic.woff") format("woff");
+  src: url("../fonts/SegoeUI-SemiboldItalic.woff2") format("woff2"), url("../fonts/SegoeUI-SemiboldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Extrabold.woff2") format("woff2"), url("../fonts/OpenSans-Extrabold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF Square Sans Pro';
-  src: url("../fonts/PFSquareSansPro-Regular.woff2") format("woff2"), url("../fonts/PFSquareSansPro-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"), url("../fonts/SegoeUI-Bold.woff") format("woff");
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -126,10 +56,87 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-BoldItalic.woff") format("woff");
+  font-family: 'Circe Extra';
+  src: url("../fonts/Circe-ExtraBold.woff2") format("woff2"), url("../fonts/Circe-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-Italic.woff2") format("woff2"), url("../fonts/SegoeUI-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url("../fonts/MyriadPro-CondIt.woff2") format("woff2"), url("../fonts/MyriadPro-CondIt.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Set Pro';
+  src: url("../fonts/MyriadSetPro-Thin.woff2") format("woff2"), url("../fonts/MyriadSetPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url("../fonts/PFDinDisplayPro-Medium.woff2") format("woff2"), url("../fonts/PFDinDisplayPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Semibold.woff2") format("woff2"), url("../fonts/MyriadPro-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Square Sans Pro';
+  src: url("../fonts/PFSquareSansPro-Regular.woff2") format("woff2"), url("../fonts/PFSquareSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-Semibold.woff2") format("woff2"), url("../fonts/SegoeUI-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"), url("../fonts/SegoeUI-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-BoldIt.woff2") format("woff2"), url("../fonts/MyriadPro-BoldIt.woff") format("woff");
   font-weight: bold;
   font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
@@ -140,9 +147,9 @@
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUI-LightItalic.woff2") format("woff2"), url("../fonts/SegoeUI-LightItalic.woff") format("woff");
-  font-weight: 300;
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-ExtraboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-ExtraboldItalic.woff") format("woff");
+  font-weight: 800;
   font-style: italic;
 }
 
@@ -161,24 +168,66 @@
 }
 
 @font-face {
-  font-family: 'Segoe UI Semilight';
-  src: url("../fonts/SegoeUI-Semilight.woff2") format("woff2"), url("../fonts/SegoeUI-Semilight.woff") format("woff");
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUIBlack-Italic.woff2") format("woff2"), url("../fonts/SegoeUIBlack-Italic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Light.woff2") format("woff2"), url("../fonts/Circe-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUI-BoldItalic.woff2") format("woff2"), url("../fonts/SegoeUI-BoldItalic.woff") format("woff");
-  font-weight: bold;
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Extrabold.woff2") format("woff2"), url("../fonts/OpenSans-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUI-SemiboldItalic.woff2") format("woff2"), url("../fonts/SegoeUI-SemiboldItalic.woff") format("woff");
-  font-weight: 600;
+  src: url("../fonts/SegoeUIBlack.woff2") format("woff2"), url("../fonts/SegoeUIBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url("../fonts/MyriadPro-BoldCondIt.woff2") format("woff2"), url("../fonts/MyriadPro-BoldCondIt.woff") format("woff");
+  font-weight: bold;
   font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI Semilight';
+  src: url("../fonts/SegoeUI-SemilightItalic.woff2") format("woff2"), url("../fonts/SegoeUI-SemilightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturisXC';
+  src: url("../fonts/FuturisXC.woff2") format("woff2"), url("../fonts/FuturisXC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -190,7 +239,294 @@
 
 @font-face {
   font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-LightItalic.woff2") format("woff2"), url("../fonts/SegoeUI-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url("../fonts/MyriadPro-Cond.woff2") format("woff2"), url("../fonts/MyriadPro-Cond.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/HelveticaNeueCyr-Italic.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Light.woff2") format("woff2"), url("../fonts/MyriadPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe Extra';
+  src: url("../fonts/Circe-ExtraLight.woff2") format("woff2"), url("../fonts/Circe-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-SemiboldIt.woff2") format("woff2"), url("../fonts/MyriadPro-SemiboldIt.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Round Pro';
+  src: url("../fonts/CeraRoundPro-Bold.woff2") format("woff2"), url("../fonts/CeraRoundPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-It.woff2") format("woff2"), url("../fonts/MyriadPro-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSansLight-Italic.woff2") format("woff2"), url("../fonts/OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-BoldItalic.woff2") format("woff2"), url("../fonts/SegoeUI-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI Semilight';
+  src: url("../fonts/SegoeUI-Semilight.woff2") format("woff2"), url("../fonts/SegoeUI-Semilight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturisXC';
+  src: url("../fonts/FuturisXC-Bold.woff2") format("woff2"), url("../fonts/FuturisXC-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../fonts/FuturaDemiC.woff2") format("woff2"), url("../fonts/FuturaDemiC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url("../fonts/MyriadPro-CondIt.woff2") format("woff2"), url("../fonts/MyriadPro-CondIt.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url("../fonts/MyriadPro-BoldCond.woff2") format("woff2"), url("../fonts/MyriadPro-BoldCond.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url("../fonts/MyriadPro-Cond.woff2") format("woff2"), url("../fonts/MyriadPro-Cond.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Square Sans Pro';
+  src: url("../fonts/PFSquareSansPro-Light.woff2") format("woff2"), url("../fonts/PFSquareSansPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-It.woff2") format("woff2"), url("../fonts/MyriadPro-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cera Round Pro';
+  src: url("../fonts/CeraRoundPro-Bold.woff2") format("woff2"), url("../fonts/CeraRoundPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUIBlack.woff2") format("woff2"), url("../fonts/SegoeUIBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/HelveticaNeueCyr-Italic.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../fonts/FuturaDemiC.woff2") format("woff2"), url("../fonts/FuturaDemiC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Semilight';
+  src: url("../fonts/SegoeUI-SemilightItalic.woff2") format("woff2"), url("../fonts/SegoeUI-SemilightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-LightItalic.woff2") format("woff2"), url("../fonts/SegoeUI-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cleopatra';
+  src: url("../fonts/Cleopatra.woff2") format("woff2"), url("../fonts/Cleopatra.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-Semibold.woff2") format("woff2"), url("../fonts/SegoeUI-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Semibold.woff2") format("woff2"), url("../fonts/MyriadPro-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Extrabold.woff2") format("woff2"), url("../fonts/OpenSans-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
   src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"), url("../fonts/SegoeUI-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-Light.woff2") format("woff2"), url("../fonts/SegoeUI-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Light.woff2") format("woff2"), url("../fonts/MyriadPro-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -203,10 +539,10 @@
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url("../fonts/SegoeUIBlack.woff2") format("woff2"), url("../fonts/SegoeUIBlack.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
@@ -217,22 +553,85 @@
 }
 
 @font-face {
-  font-family: 'FuturisXC';
-  src: url("../fonts/FuturisXC.woff2") format("woff2"), url("../fonts/FuturisXC.woff") format("woff");
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSansLight-Italic.woff2") format("woff2"), url("../fonts/OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-SemiboldItalic.woff2") format("woff2"), url("../fonts/SegoeUI-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Circe';
-  src: url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff");
-  font-weight: bold;
+  font-family: 'PF DinDisplay Pro';
+  src: url("../fonts/PFDinDisplayPro-Regular.woff2") format("woff2"), url("../fonts/PFDinDisplayPro-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Circe';
-  src: url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff");
+  font-family: 'PF Square Sans Pro';
+  src: url("../fonts/PFSquareSansPro-Medium.woff2") format("woff2"), url("../fonts/PFSquareSansPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-BoldItalic.woff2") format("woff2"), url("../fonts/SegoeUI-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-Italic.woff2") format("woff2"), url("../fonts/SegoeUI-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Semilight';
+  src: url("../fonts/SegoeUI-Semilight.woff2") format("woff2"), url("../fonts/SegoeUI-Semilight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF Square Sans Pro';
+  src: url("../fonts/PFSquareSansPro-Regular.woff2") format("woff2"), url("../fonts/PFSquareSansPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -245,6 +644,97 @@
 }
 
 @font-face {
+  font-family: 'Circe Extra';
+  src: url("../fonts/Circe-ExtraLight.woff2") format("woff2"), url("../fonts/Circe-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-ExtraboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-ExtraboldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUIBlack-Italic.woff2") format("woff2"), url("../fonts/SegoeUIBlack-Italic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-SemiboldIt.woff2") format("woff2"), url("../fonts/MyriadPro-SemiboldIt.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url("../fonts/MyriadPro-BoldCondIt.woff2") format("woff2"), url("../fonts/MyriadPro-BoldCondIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturisXC';
+  src: url("../fonts/FuturisXC.woff2") format("woff2"), url("../fonts/FuturisXC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url("../fonts/PFDinDisplayPro-Medium.woff2") format("woff2"), url("../fonts/PFDinDisplayPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-BoldIt.woff2") format("woff2"), url("../fonts/MyriadPro-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'FuturisXC';
   src: url("../fonts/FuturisXC-Bold.woff2") format("woff2"), url("../fonts/FuturisXC-Bold.woff") format("woff");
   font-weight: bold;
@@ -252,9 +742,9 @@
 }
 
 @font-face {
-  font-family: 'Circe Extra';
-  src: url("../fonts/Circe-ExtraLight.woff2") format("woff2"), url("../fonts/Circe-ExtraLight.woff") format("woff");
-  font-weight: 200;
+  font-family: 'Myriad Set Pro';
+  src: url("../fonts/MyriadSetPro-Thin.woff2") format("woff2"), url("../fonts/MyriadSetPro-Thin.woff") format("woff");
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -4047,11 +4537,8 @@ button {
 }
 
 .page-footer {
-  padding-left: 136px;
-  padding-right: 1.04167vw;
-  margin-top: 70px;
-  border-top: 2px solid #e2e2e2;
-  border-bottom: 2px solid #e2e2e2;
+  background: #E74B94;
+  padding: 60px 2% 0 6%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4059,132 +4546,153 @@ button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  padding-top: 18px;
-  padding-bottom: 18px;
 }
 
-.page-footer__menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+.page-footer__bottom {
+  width: 100%;
+}
+
+.page-footer__contact {
+  width: 20vw;
+}
+
+.page-footer__content {
+  margin-left: 4.16667vw;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.page-footer__metr {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.page-footer__logo {
+  display: block;
+  text-decoration: none;
   margin-bottom: 30px;
 }
 
-.page-footer__menu-link {
+.page-footer__logo-t1 {
+  font-size: 1.82292vw;
+  color: #ffeeaa;
+  font-family: 'Cleopatra';
+}
+
+.page-footer__logo-t2 {
+  font-size: 0.98958vw;
+  color: #ffeeaa;
+  font-family: 'Cera Round Pro';
+  padding-left: 15%;
+}
+
+.page-footer__item {
+  padding-left: 2.08333vw;
+  position: relative;
+  margin-bottom: 15px;
+  font-family: 'HelveticaNeueCyr';
+}
+
+.page-footer__schedule {
+  font-size: 0.88542vw;
+  color: #fff;
+}
+
+.page-footer__icon {
   font-size: 1.09375vw;
-  font-family: 'PF DinDisplay Pro';
-  color: #000;
-  -webkit-transition: color .4s;
-  -o-transition: color .4s;
-  transition: color .4s;
+  color: #fff;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+.page-footer__phone {
+  font-size: 1.51042vw;
+  color: #fff;
+  font-weight: 500;
   text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 3.85417vw;
-}
-
-.page-footer__menu-link:hover {
-  color: #DB3729;
-}
-
-.page-footer__menu-link:hover:after {
-  -webkit-transform: translateY(2px);
-      -ms-transform: translateY(2px);
-          transform: translateY(2px);
-  background: #DB3729;
-}
-
-.page-footer__menu-link:after {
+  margin-bottom: 10px;
   display: block;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: transparent;
-  -webkit-transform: translateY(-4px);
-      -ms-transform: translateY(-4px);
-          transform: translateY(-4px);
-  -webkit-transition: background .4s, -webkit-transform .4s;
-  transition: background .4s, -webkit-transform .4s;
-  -o-transition: background .4s, transform .4s;
-  transition: background .4s, transform .4s;
-  transition: background .4s, transform .4s, -webkit-transform .4s;
 }
 
-.page-footer__menu-link:first-child {
-  margin-left: 0;
+.page-footer__social {
+  font-size: 0.78125vw;
+  color: #fff;
+  font-family: 'Myriad Pro';
 }
 
-.page-footer__menu-link--active {
-  color: #DB3729;
+.page-footer__social img {
+  display: block;
+  width: 11.45833333333333vw;
+  margin-top: 30px;
 }
 
-.page-footer__left, .page-footer__right {
+.page-footer__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.page-footer__content-item {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.page-footer__contact {
-  width: 18.59375vw;
-  padding: 0 2.60417vw;
-  border: 1px solid #e2e2e2;
-  border-width: 0 1px;
-  text-align: center;
+.page-footer__content-item:hover .page-footer__title:after {
+  width: 90%;
 }
 
-.page-footer .list {
-  margin-bottom: 30px;
+.page-footer__title {
+  font-family: 'Myriad Pro';
+  font-size: 1.25vw;
+  color: #ffeeaa;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 15px;
 }
 
-.page-footer__left {
-  text-align: right;
-  margin-right: 3.02083vw;
+.page-footer__title:after {
+  display: block;
+  content: '';
+  width: 2.60417vw;
+  height: 5px;
+  background: #ffeeaa;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: width .4s;
+  -o-transition: width .4s;
+  transition: width .4s;
 }
 
-.page-footer__left .page-footer__menu {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.page-footer__left .list {
-  display: inline-block;
-}
-
-.page-footer__right {
-  margin-left: 3.02083vw;
-}
-
-.page-footer__address {
+.page-footer__link {
   font-size: 0.98958vw;
-  color: #696969;
-  font-family: 'PF Square Sans Pro';
-  margin-bottom: 30px;
-}
-
-.page-footer__phone {
-  font-size: 1.66667vw;
-  color: #DB3729;
-  font-family: 'Circe';
-  font-weight: bold;
+  color: #57067F;
   display: block;
   text-decoration: none;
+  margin-bottom: 10px;
+  font-family: 'HelveticaNeueCyr';
+  -webkit-transition: color .4s;
+  -o-transition: color .4s;
+  transition: color .4s;
 }
 
-.page-footer__call {
-  font-size: 1.04167vw;
-  color: #DB3729;
-  font-family: 'PF DinDisplay Pro';
-  border-bottom: 1px dashed #DB3729;
-  text-decoration: none;
+.page-footer__link:hover {
+  color: #ffeeaa;
 }
 
-.page-footer__payvar {
+.page-footer__bottom {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4192,27 +4700,21 @@ button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
-}
-
-.page-footer__payvar img {
-  margin-left: 0.46875vw;
-}
-
-.page-footer__copy {
-  text-align: left;
-  font-size: 0.83333vw;
-  color: #696969;
-  font-family: 'PF Square Sans Pro';
-  margin-top: 49px;
+  height: 76px;
 }
 
 .page-footer__by {
-  text-align: right;
+  font-size: 0.83333vw;
+  color: #57067F;
+  font-family: 'HelveticaNeueCyr';
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4220,157 +4722,111 @@ button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.page-footer__by-link {
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.page-footer__by-link img {
-  margin-left: 1.04167vw;
+.page-footer__by img {
+  margin-left: 10px;
+  width: 7.395833333333333vw;
 }
 
-.page-footer__metr {
-  display: block;
-  margin-left: auto;
-  margin-bottom: 10px;
-  padding-top: 7px;
-}
-
-@media (max-width: 1440px) {
-  .page-footer__copy {
-    font-size: 16px;
-    margin-top: 44px;
-  }
-  .page-footer__by-link {
-    font-size: 16px;
-  }
-  .page-footer__logo {
-    width: 100px;
-    height: auto;
-  }
-  .page-footer__payvar {
-    text-align: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 1280px) {
-  .page-footer {
-    padding-left: 110px;
-    display: block;
-  }
-  .page-footer__menu-link {
-    font-size: 16px;
-  }
-  .page-footer__address {
-    font-size: 16px;
-  }
-  .page-footer__copy {
-    font-size: 16px;
-  }
-  .page-footer__left, .page-footer__right {
-    width: 100%;
-  }
-  .page-footer__contact {
-    width: 100%;
-    border: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  .page-footer__left {
-    text-align: center;
-  }
-  .page-footer__left .page-footer__menu {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .page-footer__payvar {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .page-footer__by {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .page-footer__menu {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .page-footer .list {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  .page-footer__right {
-    text-align: center;
-    margin-left: 0;
-  }
-  .page-footer__copy {
-    text-align: center;
-  }
-  .page-footer__call {
-    font-size: 16px;
-  }
-  .page-footer__phone {
-    font-size: 24px;
-  }
+.page-footer__copy {
+  font-size: 0.78125vw;
+  color: #fff;
+  font-family: 'HelveticaNeueCyr';
 }
 
 @media (max-width: 1024px) {
   .page-footer {
+    padding: 0 2%;
+    padding-top: 20px;
+    display: block;
+  }
+  .page-footer__contact {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .page-footer__logo-t1 {
+    font-size: 24px;
+  }
+  .page-footer__logo-t2 {
+    font-size: 16px;
     padding-left: 0;
   }
+  .page-footer__item {
+    padding-left: 40px;
+  }
+  .page-footer__icon {
+    font-size: 24px;
+  }
+  .page-footer__schedule {
+    font-size: 16px;
+  }
+  .page-footer__phone {
+    font-size: 21px;
+  }
+  .page-footer__social {
+    font-size: 16px;
+  }
+  .page-footer__social img {
+    margin-top: 10px;
+    width: 80%;
+    max-width: 200px;
+  }
+  .page-footer__title {
+    font-size: 18px;
+  }
+  .page-footer__link {
+    font-size: 16px;
+  }
+  .page-footer__content {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.page-footer__copy {
+  font-size: 16px;
+}
+
+.page-footer__by {
+  font-size: 16px;
+}
+
+.page-footer__by img {
+  width: 120px;
 }
 
 @media (max-width: 768px) {
-  .page-footer__by-link {
+  .page-footer__content {
+    display: block;
+  }
+  .page-footer__content-item {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    display: block;
+  }
+  .page-footer__title:after {
+    width: 50px;
+  }
+  .page-footer__bottom {
+    height: auto;
+    padding: 10px 2%;
+    display: block;
+  }
+  .page-footer__copy {
     margin-bottom: 10px;
-    font-size: 13px;
-    color: #000;
-  }
-  .page-footer__metr {
-    margin-left: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .page-footer__menu {
-    display: block;
-  }
-  .page-footer__menu-link {
-    display: block;
-    text-align: center;
-    margin-left: 0;
   }
 }
 
@@ -4958,6 +5414,7 @@ button {
   padding-left: 76px;
   position: relative;
   background: #ffeeaa;
+  margin-right: 2.44792vw;
 }
 
 .text-box__icon {
@@ -4992,6 +5449,8 @@ button {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin: -1.19792vw;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-bottom: 30px;
 }
 
@@ -5017,18 +5476,10 @@ button {
   margin-bottom: 20px;
 }
 
-.product:nth-child(4n+5) {
-  margin-left: 0;
-}
-
 .product:hover .product__img img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.product:first-child {
-  margin-left: 0;
 }
 
 .product__img {
@@ -6314,7 +6765,7 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6366,6 +6817,7 @@ button {
   right: 20%;
   top: 40px;
   cursor: pointer;
+  display: none;
 }
 
 .video__close .icon {
