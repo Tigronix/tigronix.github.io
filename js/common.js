@@ -475,8 +475,8 @@ function okZoom() {
 	$('.okzoom').okzoom({
         width:  200,
         height: 200,
-        border: "1px solid black",
-        shadow: "0 0 5px #000"
+        border: "1px solid #fff",
+        //shadow: "0 0 5px #000"
     });
 }
 
