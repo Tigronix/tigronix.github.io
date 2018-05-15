@@ -8,7 +8,7 @@ new Vue({
 //templates
 new Vue({
 		el: '#more-svg',
-		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-star" viewBox="0 0 32 32"><title>star</title><path d="M16 23.027l8.24 4.973-2.187-9.373 7.28-6.307-9.587-0.813-3.747-8.84-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373z"></path></symbol><symbol id="icon-star-empty" viewBox="0 0 32 32"><title>star-empty</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533l-5.013 3.027 1.333-5.707-4.427-3.84 5.84-0.507 2.267-5.373 2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol><symbol id="icon-star-half" viewBox="0 0 32 32"><title>star-half</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533v-12.4l2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol></defs></svg>'
+		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-balance-scale" viewBox="0 0 40 32"><title>balance-scale</title><path d="M16 21h-0.001c0-1.011 0.084-0.546-5.316-11.344-1.103-2.206-4.262-2.21-5.367 0-5.445 10.891-5.315 10.365-5.315 11.344h-0.001c0 2.761 3.582 5 8 5s8-2.239 8-5zM8 11l4.5 9h-9l4.5-9zM39.999 21c0-1.011 0.084-0.546-5.316-11.344-1.103-2.206-4.262-2.21-5.367 0-5.445 10.891-5.315 10.365-5.315 11.344h-0.001c0 2.761 3.582 5 8 5s8-2.239 8-5h-0.001zM27.5 20l4.5-9 4.5 9h-9zM33 28h-11v-18.422c1.469-0.643 2.572-1.968 2.899-3.578h8.101c0.553 0 1-0.447 1-1v-2c0-0.553-0.447-1-1-1h-9.023c-0.913-1.208-2.347-2-3.977-2s-3.065 0.792-3.977 2h-9.023c-0.553 0-1 0.447-1 1v2c0 0.553 0.447 1 1 1h8.101c0.327 1.61 1.429 2.935 2.899 3.578v18.422h-11c-0.553 0-1 0.448-1 1v2c0 0.552 0.447 1 1 1h26c0.553 0 1-0.448 1-1v-2c0-0.552-0.447-1-1-1z"></path></symbol><symbol id="icon-star" viewBox="0 0 32 32"><title>star</title><path d="M16 23.027l8.24 4.973-2.187-9.373 7.28-6.307-9.587-0.813-3.747-8.84-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373z"></path></symbol><symbol id="icon-star-empty" viewBox="0 0 32 32"><title>star-empty</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533l-5.013 3.027 1.333-5.707-4.427-3.84 5.84-0.507 2.267-5.373 2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol><symbol id="icon-star-half" viewBox="0 0 32 32"><title>star-half</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533v-12.4l2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol></defs></svg>'
 	})
 
 function scrollEffects() {
@@ -208,7 +208,8 @@ function productsSlider(animationIn, animationOut, elem, items, navContainer, na
 			loop: true,
 			URLhashListener: true,
       startPosition: 'URLHash',
-			dots: false,
+			dots: true,
+			dotsEach: true,
 			responsive: {
 				0: {
 					items: 1
