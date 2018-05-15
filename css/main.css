@@ -886,6 +886,15 @@ button {
   margin: 0 1.19792vw 0 0.9375vw;
 }
 
+.h1--center, .h2--center {
+  text-align: center;
+  font-size: 1.40625vw;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .test {
   border: 5px solid red;
 }
@@ -4250,7 +4259,7 @@ button {
 
 .page-header__logo {
   font-size: 1.82292vw;
-  color: #1ABC9C;
+  color: #D40356;
   text-decoration: none;
   font-family: 'Cleopatra';
 }
@@ -4259,7 +4268,7 @@ button {
   font-family: 'Cera Round Pro';
   font-size: 0.98958vw;
   color: #fff;
-  background: #1ABC9C;
+  background: #E74B94;
   height: 25px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4678,7 +4687,7 @@ button {
 
 .page-footer__link {
   font-size: 0.98958vw;
-  color: #57067F;
+  color: #E7BCD0;
   display: block;
   text-decoration: none;
   margin-bottom: 10px;
@@ -4686,6 +4695,29 @@ button {
   -webkit-transition: color .4s;
   -o-transition: color .4s;
   transition: color .4s;
+}
+
+.page-footer__link:hover span:after {
+  width: 100%;
+}
+
+.page-footer__link span {
+  position: relative;
+  display: inline-block;
+}
+
+.page-footer__link span:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  content: '';
+  width: 0;
+  height: 1px;
+  background: #ffeeaa;
+  -webkit-transition: width .4s;
+  -o-transition: width .4s;
+  transition: width .4s;
 }
 
 .page-footer__link:hover {
@@ -6731,7 +6763,9 @@ button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin: -0.78125vw;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .video__item {
