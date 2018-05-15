@@ -4745,7 +4745,7 @@ button {
 
 .page-footer__by {
   font-size: 0.83333vw;
-  color: #57067F;
+  color: #E7BCD0;
   font-family: 'HelveticaNeueCyr';
   display: -webkit-box;
   display: -webkit-flex;
@@ -4759,6 +4759,36 @@ button {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  -webkit-transition: color .4s;
+  -o-transition: color .4s;
+  transition: color .4s;
+}
+
+.page-footer__by:hover {
+  color: #ffeeaa;
+}
+
+.page-footer__by:hover span:after {
+  width: 100%;
+}
+
+.page-footer__by span {
+  position: relative;
+  display: inline-block;
+}
+
+.page-footer__by span:after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1px;
+  width: 0px;
+  background: #ffeeaa;
+  -webkit-transition: width .4s;
+  -o-transition: width .4s;
+  transition: width .4s;
 }
 
 .page-footer__by img {
