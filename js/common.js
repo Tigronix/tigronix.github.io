@@ -119,6 +119,11 @@ function animate(button, content, animationIn, animationOut, hideTiming) {
 	});
 }
 
+//loading
+function loading() {
+	$('.loading').fadeOut(1500);
+}
+
 //animate + hide
 function animateHide(button, content, animationIn, animationOut, hideTiming) {
 	hideTiming = hideTiming || 1000;
@@ -536,4 +541,6 @@ window.onload = function() {
 	slider();
 	itemSlider();
 	productsSlider();
+
+	loading();
 };
