@@ -15,6 +15,13 @@
 		<global-svg></global-svg>
 	</div>
 	<header class="page-header">
+		<div class="hamburger__wrap">
+			<div class="hamburger">
+				<div class="hamburger__line animated hamburger__line1"></div>
+				<div class="hamburger__line animated hamburger__line2"></div>
+				<div class="hamburger__line animated hamburger__line3"></div>
+			</div>
+		</div>
 		<a href="#" class="page-header__logo">
 			<img src="img/logo.png" alt="">
 		</a>
@@ -59,7 +66,7 @@
 		<div class="page-header__contact">
 			<div class="page-header__schedule">Звоните с 9:00 до 20:00</div>
 			<a href="tel:+74951001510" class="page-header__phone">
-
+				<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
 				+7 (495) 100-15-10
 			</a>
 			<a href="tel:+7 (916) 123-45-60" class="page-header__phone">
@@ -70,8 +77,29 @@
 	</header>
 	<main class="main overflow">
 		<section class="slider">
-			<div class="slider__wrap">
-				<div class="slider__slide">
+			<div class="slider__wrap owl-carousel">
+				<div style="background-image: url(img/slider.jpg);" class="slider__slide">
+					<div class="slider__text">
+						Сделаю вам безупречный макияж<br />
+						и прическу с выездом по Москве и МО<br />
+						от 2500 руб.
+					</div>
+				</div>
+				<div style="background-image: url(img/slider.jpg);" class="slider__slide">
+					<div class="slider__text">
+						Сделаю вам безупречный макияж<br />
+						и прическу с выездом по Москве и МО<br />
+						от 2500 руб.
+					</div>
+				</div>
+				<div style="background-image: url(img/slider.jpg);" class="slider__slide">
+					<div class="slider__text">
+						Сделаю вам безупречный макияж<br />
+						и прическу с выездом по Москве и МО<br />
+						от 2500 руб.
+					</div>
+				</div>
+				<div style="background-image: url(img/slider.jpg);" class="slider__slide">
 					<div class="slider__text">
 						Сделаю вам безупречный макияж<br />
 						и прическу с выездом по Москве и МО<br />
@@ -79,31 +107,63 @@
 					</div>
 				</div>
 			</div>
-			<input placeholder="Забронировать дату" type="date" class="book">
+			<input placeholder="Забронировать дату" type="text" class="book slider__book datepicker-here">
 		</section>
 		<section class="work">
 			<h2 class="h2">Мои работы</h2>
 			<div class="work__nav">
-				<button class="work__nav-item" type="button" data-tabclass="work__content" data-tabnumber="1">Свадебные образы</button>
+				<button class="work__nav-item active" type="button" data-tabclass="work__content" data-tabnumber="1">Свадебные образы</button>
 				<button class="work__nav-item" type="button" data-tabclass="work__content" data-tabnumber="2">Вечерние образы</button>
 				<button class="work__nav-item" type="button" data-tabclass="work__content" data-tabnumber="3">Фотосессия</button>
 				<button class="work__nav-item" type="button" data-tabclass="work__content" data-tabnumber="4">До и после</button>
 			</div>
 			<div class="work__content">
-				<div class="work__item" data-tabnumber="1">
+				<div class="work__item animated fadeIn" data-tabnumber="1">
 					<div class="work__slider owl-carousel">
-						<div class="work__slide"><img src="img/work_1.png" alt=""></div>
-						<div class="work__slide"><img src="img/work_2.png" alt=""></div>
-						<div class="work__slide"><img src="img/work_3.png" alt=""></div>
-						<div class="work__slide"><img src="img/work_4.png" alt=""></div>
+						<div class="work__slide"><img src="img/work_1.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_2.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_3.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_4.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_1.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_2.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_3.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_4.jpg" alt=""></div>
 					</div>
 				</div>
-				<div class="work__item" data-tabnumber="2">
+				<div class="work__item animated fadeIn" data-tabnumber="2">
 					<div class="work__slider owl-carousel">
-						<div class="work__slide"><img src="img/work_1.png" alt=""></div>
-						<div class="work__slide"><img src="img/work_2.png" alt=""></div>
-						<div class="work__slide"><img src="img/work_3.png" alt=""></div>
-						<div class="work__slide"><img src="img/work_4.png" alt=""></div>
+						<div class="work__slide"><img src="img/work_1.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_2.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_3.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_4.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_1.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_2.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_3.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_4.jpg" alt=""></div>
+					</div>
+				</div>
+				<div class="work__item animated fadeIn" data-tabnumber="3">
+					<div class="work__slider owl-carousel">
+						<div class="work__slide"><img src="img/work_1.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_2.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_3.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_4.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_1.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_2.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_3.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_4.jpg" alt=""></div>
+					</div>
+				</div>
+				<div class="work__item animated fadeIn" data-tabnumber="4">
+					<div class="work__slider owl-carousel">
+						<div class="work__slide"><img src="img/work_1.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_2.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_3.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_4.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_1.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_2.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_3.jpg" alt=""></div>
+						<div class="work__slide"><img src="img/work_4.jpg" alt=""></div>
 					</div>
 				</div>
 			</div>
@@ -119,9 +179,93 @@
 							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
 							2-4 часа
 						</div>
-						<div class="product__price">от 3 000 руб.</div>
-						<input type="date" class="book" placeholder="Забронивароть дату">
+						<div class="product__price">от <span>3 000</span> руб.</div>
 					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_2.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_3.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_4.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_1.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_2.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_3.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_4.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
 				</div>
 			</div>
 		</section>
@@ -130,14 +274,99 @@
 			<div class="product__slider owl-carousel">
 				<div class="product__item">
 					<div class="product__img"><img src="img/prod_5.jpg" alt=""></div>
-					<div class="product__name">Оюьемные локоны</div>
+					<div class="product__name">Свадебный</div>
 					<div class="product__buy">
 						<div class="product__time">
 							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
 							2-4 часа
 						</div>
-						<div class="product__price">от 3 000 руб.</div>
-						<input type="date" class="book" placeholder="Забронивароть дату">
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_6.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_7.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_8.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_5.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_6.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_7.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
+				</div>
+				<div class="product__item">
+					<div class="product__img"><img src="img/prod_8.jpg" alt=""></div>
+					<div class="product__name">Свадебный</div>
+					<div class="product__buy">
+						<div class="product__time">
+							<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+							2-4 часа
+						</div>
+						<div class="product__price">от <span>3 000</span> руб.</div>
+					</div>
+					<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
 				</div>
 			</div>
 		</section>
@@ -147,28 +376,33 @@
 				<div class="about__img">
 					<img src="img/boss.png" alt="">
 					<div class="about__social">
-						<div class="about__social-text"><img src="img/instagram.png" alt=""> @stepanova_makeup</div>
-						<div class="about__social-text"><img src="img/instagram.png" alt=""> @kosy.pirogovskiy</div>
+						<a href="#" class="about__social-text"><img src="img/instagram.png" alt=""> <span>@stepanova_makeup</span></a>
+						<a href="#" class="about__social-text"><img src="img/instagram.png" alt=""> <span>@kosy.pirogovskiy</span></a>
 					</div>
 				</div>
 				<div class="about__content">
 					<div class="about__header">Анастасия Степанова</div>
 					<div class="about__desc">Приветствую, друзья! Меня зовут Анастасия Степанова, я визажист и стилист с большим опытом:</div>
-					<ul class="about__list">
-						<li class="about__li">Владею дипломом школы визажистов ICONFACE и студии свадебных стилистов «ЭЛЬ СТИЛЬ»;</li>
-						<li class="about__li">Прошла курс «свадебные прически Кристины Федоровой» и школу Натальи Шик;</li>
-						<li class="about__li">Владею дипломом школы визажистов ICONFACE и студии свадебных стилистов «ЭЛЬ СТИЛЬ»;</li>
-						<li class="about__li">Прошла курс «свадебные прически Кристины Федоровой» и школу Натальи Шик;</li>
+					<ul class="list">
+						<li class="list__li">Владею дипломом школы визажистов ICONFACE и студии свадебных стилистов «ЭЛЬ СТИЛЬ»;</li>
+						<li class="list__li">Прошла курс «свадебные прически Кристины Федоровой» и школу Натальи Шик;</li>
+						<li class="list__li">Владею дипломом школы визажистов ICONFACE и студии свадебных стилистов «ЭЛЬ СТИЛЬ»;</li>
+						<li class="list__li">Прошла курс «свадебные прически Кристины Федоровой» и школу Натальи Шик;</li>
 					</ul>
 					<div class="about__desc">Я очень люблю свою работу и не стою на месте, поэтому постоянно повышаю свой профессиональный уровень, посещая мастер-классы лучших визажистов России.</div>
-					<a href="#" class="btn">Задать вопрос</a>
-					<div class="about__logo"><img src="img/logo.png" alt=""></div>
+					<a href="#" class="btn about__btn">Задать вопрос</a>
+					<div class="about__logo"><img src="img/logo--red.png" alt=""></div>
 				</div>
 			</div>
 		</section>
 		<section class="diploma">
 			<h2 class="h2">Дипломы</h2>
-			<div class="diploma__slider">
+			<div class="diploma__slider owl-carousel">
+				<div class="diploma__slide"><img src="img/diplom.jpg" alt=""></div>
+				<div class="diploma__slide"><img src="img/diplom.jpg" alt=""></div>
+				<div class="diploma__slide"><img src="img/diplom.jpg" alt=""></div>
+				<div class="diploma__slide"><img src="img/diplom.jpg" alt=""></div>
+				<div class="diploma__slide"><img src="img/diplom.jpg" alt=""></div>
 				<div class="diploma__slide"><img src="img/diplom.jpg" alt=""></div>
 				<div class="diploma__slide"><img src="img/diplom.jpg" alt=""></div>
 				<div class="diploma__slide"><img src="img/diplom.jpg" alt=""></div>
@@ -258,7 +492,7 @@
 						<div class="table__item table__item--buy">
 							<svg class="icon icon-airport-shuttle"><use xlink:href="#icon-airport-shuttle"></use></svg>
 							Выезд на дом
-							<input placeholder="Забронировать дату" type="date" class="book">
+							<input placeholder="Забронировать дату" type="text" class="book datepicker-here">
 						</div>
 					</div>
 				</div>
