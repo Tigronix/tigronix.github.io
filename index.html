@@ -44,10 +44,10 @@
 					</div>
 				</div>
 				<nav class="nav">
-					<a href="#" class="nav__link"></a>
-					<a href="#" class="nav__link"></a>
-					<a href="#" class="nav__link nav__link--sale"></a>
-					<a href="#" class="nav__link"></a>
+					<a href="#" class="nav__link"><span>Доставка</span></a>
+					<a href="#" class="nav__link"><span>Оплата</span></a>
+					<a href="#" class="nav__link nav__link--sale"><span>Акции и спецпредложения</span></a>
+					<a href="#" class="nav__link"><span>Контакты</span></a>
 				</nav>
 			</div>
 			<div class="page-header__contact">
@@ -61,42 +61,42 @@
 				<svg class="page-header__backet-icon icon icon-shopping-basket"><use xlink:href="#icon-shopping-basket"></use></svg>
 				<div class="page-header__backet-info">
 					<div class="page-header__backet-price">
-						<span class="">2 520</span> руб.
+						<span class="calcCart">0</span> <span class="page-header__backet-value">руб.</span>
 					</div>
 					<div class="page-header__backet-count">
-						<span class="">4</span> товаров
+						<span class="calcCartCount">0</span> <span class="page-header__backet-items">товаров</span>
 					</div>
 				</div>
-				<button class="page-header__backet-submit" type="button">Корзина</button>
+				<button class="btn page-header__backet-submit" type="button">Корзина</button>
 			</div>
 		</div>
 		<section class="menu">
-			<a href="#" class="menu__link">С мясом</a>
-			<a href="#" class="menu__link">С курицей</a>
-			<a href="#" class="menu__link">С сыром</a>
-			<a href="#" class="menu__link">С рыбой</a>
-			<a href="#" class="menu__link">С капустой</a>
-			<a href="#" class="menu__link">С картошкой</a>
-			<a href="#" class="menu__link">С грибами</a>
-			<a href="#" class="menu__link">С зеленью</a>
-			<a href="#" class="menu__link">С луком</a>
-			<a href="#" class="menu__link">С перцем</a>
-			<a href="#" class="menu__link">С кабачком</a>
-			<a href="#" class="menu__link">Сладкие</a>
+			<a href="#" class="menu__link"><span>С мясом</span></a>
+			<a href="#" class="menu__link"><span>С курицей</span></a>
+			<a href="#" class="menu__link"><span>С сыром</span></a>
+			<a href="#" class="menu__link"><span>С рыбой</span></a>
+			<a href="#" class="menu__link"><span>С капустой</span></a>
+			<a href="#" class="menu__link"><span>С картошкой</span></a>
+			<a href="#" class="menu__link"><span>С грибами</span></a>
+			<a href="#" class="menu__link"><span>С зеленью</span></a>
+			<a href="#" class="menu__link"><span>С луком</span></a>
+			<a href="#" class="menu__link"><span>С перцем</span></a>
+			<a href="#" class="menu__link"><span>С кабачком</span></a>
+			<a href="#" class="menu__link"><span>Сладкие</span></a>
 		</section>
 	</header>
 	<main class="main overflow">
 		<section class="product">
 			<h2 class="h2">Осетинские пироги с бесплатной доставкой по Москве</h2>
 			<div class="product__wrap">
-				<div class="product__item">
+				<div class="product__item calcItem">
 					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
 					<div class="product__name">«Фыдджин» - с мясом</div>
-					<div class="product__weight-title">Выберите вес:</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
 					<div class="product__weight-wrap">
-						<div class="product__weight-item">
-							<label class="product__label">
-								<input type="text" class="product__input">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
 								<i class="product__icon"></i>
 								<img src="img/weight.png" alt="">
 								0,8 кг
@@ -106,20 +106,455 @@
 								30 см
 							</div>
 							<div class="product__price">
-								<span>450</span> руб.
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
 							</div>
 						</div>
 					</div>
 					<div class="product__buy">
 						<div class="product__counter">
-							<button type="button" class="product__count-btn"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
-							<div class="product__count-number"></div>
-							<button type="button" class="product__count-btn"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
 						</div>
 						<div class="product__total-price">
-							<span></span> руб
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
 						</div>
-						<button type="button" class="btn product__btn">В корзину</button>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
+					</div>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+					<div class="product__name">«Фыдджин» - с мясом</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
+					<div class="product__weight-wrap">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__buy">
+						<div class="product__counter">
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+						</div>
+						<div class="product__total-price">
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
+						</div>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
+					</div>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+					<div class="product__name">«Фыдджин» - с мясом</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
+					<div class="product__weight-wrap">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__buy">
+						<div class="product__counter">
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+						</div>
+						<div class="product__total-price">
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
+						</div>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
+					</div>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+					<div class="product__name">«Фыдджин» - с мясом</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
+					<div class="product__weight-wrap">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__buy">
+						<div class="product__counter">
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+						</div>
+						<div class="product__total-price">
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
+						</div>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
+					</div>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+					<div class="product__name">«Фыдджин» - с мясом</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
+					<div class="product__weight-wrap">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__buy">
+						<div class="product__counter">
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+						</div>
+						<div class="product__total-price">
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
+						</div>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
+					</div>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+					<div class="product__name">«Фыдджин» - с мясом</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
+					<div class="product__weight-wrap">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__buy">
+						<div class="product__counter">
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+						</div>
+						<div class="product__total-price">
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
+						</div>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
 					</div>
 				</div>
 			</div>
@@ -149,9 +584,247 @@
 				</div>
 			</div>
 		</section>
+		<section class="product">
+			<div class="product__wrap">
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+					<div class="product__name">«Фыдджин» - с мясом</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
+					<div class="product__weight-wrap">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__buy">
+						<div class="product__counter">
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+						</div>
+						<div class="product__total-price">
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
+						</div>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
+					</div>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+					<div class="product__name">«Фыдджин» - с мясом</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
+					<div class="product__weight-wrap">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__buy">
+						<div class="product__counter">
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+						</div>
+						<div class="product__total-price">
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
+						</div>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
+					</div>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.jpg" alt=""></div>
+					<div class="product__name">«Фыдджин» - с мясом</div>
+					<div class="product__weight-title"><span>Выберите вес:</span></div>
+					<div class="product__weight-wrap">
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">450</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">550</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">650</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+						<div class="product__weight-item checkFixBox calcWeightItem">
+							<label  class="product__label calcCheckbox ">
+								<input type="checkbox" class="product__input">
+								<i class="product__icon"></i>
+								<img src="img/weight.png" alt="">
+								0,8 кг
+							</label>
+							<div class="product__radius">
+								<img src="img/pizza-slice.png" alt="">
+								30 см
+							</div>
+							<div class="product__price">
+								<span class="calcWeightNumber">750</span> <span class="product__value">руб.</span>
+							</div>
+						</div>
+					</div>
+					<div class="product__buy">
+						<div class="product__counter">
+							<button type="button" class="product__count-btn calcBtn calcDec"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></button>
+							<div class="product__count-number calcOutput">1</div>
+							<button type="button" class="product__count-btn calcBtn calcInc"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></button>
+						</div>
+						<div class="product__total-price">
+							<span data-price="450" class="calcNumber">450</span> <span class="product__total-value">руб</span>
+						</div>
+						<button type="button" class="btn calcSubmit product__btn">В корзину</button>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="fill">
 			<h2 class="h2">Большое количество разнообразных начинок</h2>
-			<div class="fill__title">Выберите начинку:</div>
+			<div class="fill__title"><span>Выберите начинку:</span></div>
 			<div class="fill__wrap">
 				<a href="#" class="fill__item">
 					<img src="img/meat.png" alt="" class="fill__img">
@@ -214,10 +887,10 @@
 		<section class="popular">
 			<h2 class="h2">Топ рейтинг осетинских пирогов</h2>
 			<div class="popular__slider owl-carousel">
-				<div class="popular__slide">
+				<div class="popular__slide calcSingleItem">
 					<div class="popular__img">
 						<img src="img/product_1.jpg" alt="">
-						<section class="rating">
+						<section class="rating popular__rating">
 							<div class="rating__item">
 								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
 							</div>
@@ -235,7 +908,7 @@
 							</div>
 						</section>
 					</div>
-					<div class="popular__name"></div>
+					<div class="popular__name">«Фыдджин» - с мясом</div>
 					<div class="popular__buy">
 						<div class="popular__weight">
 							<img src="img/weight.png" alt="">
@@ -246,9 +919,157 @@
 							36 см
 						</div>
 						<div class="popular__price">
-							<span>520</span> руб.
+							<span class="calcNumber">520</span> <span class="popular__value">руб.</span>
 						</div>
-						<button type="button" class="btn popular__btn">В корзину</button>
+						<button type="button" class="btn popular__btn calcSingleSubmit">В корзину</button>
+					</div>
+				</div>
+				<div class="popular__slide calcSingleItem">
+					<div class="popular__img">
+						<img src="img/product_1.jpg" alt="">
+						<section class="rating popular__rating">
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+						</section>
+					</div>
+					<div class="popular__name">«Фыдджин» - с мясом</div>
+					<div class="popular__buy">
+						<div class="popular__weight">
+							<img src="img/weight.png" alt="">
+							1,2 кг
+						</div>
+						<div class="popular__radius">
+							<img src="img/pizza-slice.png" alt="">
+							36 см
+						</div>
+						<div class="popular__price">
+							<span class="calcNumber">520</span> <span class="popular__value">руб.</span>
+						</div>
+						<button type="button" class="btn popular__btn calcSingleSubmit">В корзину</button>
+					</div>
+				</div>
+				<div class="popular__slide calcSingleItem">
+					<div class="popular__img">
+						<img src="img/product_1.jpg" alt="">
+						<section class="rating popular__rating">
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+						</section>
+					</div>
+					<div class="popular__name">«Фыдджин» - с мясом</div>
+					<div class="popular__buy">
+						<div class="popular__weight">
+							<img src="img/weight.png" alt="">
+							1,2 кг
+						</div>
+						<div class="popular__radius">
+							<img src="img/pizza-slice.png" alt="">
+							36 см
+						</div>
+						<div class="popular__price">
+							<span class="calcNumber">520</span> <span class="popular__value">руб.</span>
+						</div>
+						<button type="button" class="btn popular__btn calcSingleSubmit">В корзину</button>
+					</div>
+				</div>
+				<div class="popular__slide calcSingleItem">
+					<div class="popular__img">
+						<img src="img/product_1.jpg" alt="">
+						<section class="rating popular__rating">
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+						</section>
+					</div>
+					<div class="popular__name">«Фыдджин» - с мясом</div>
+					<div class="popular__buy">
+						<div class="popular__weight">
+							<img src="img/weight.png" alt="">
+							1,2 кг
+						</div>
+						<div class="popular__radius">
+							<img src="img/pizza-slice.png" alt="">
+							36 см
+						</div>
+						<div class="popular__price">
+							<span class="calcNumber">520</span> <span class="popular__value">руб.</span>
+						</div>
+						<button type="button" class="btn popular__btn calcSingleSubmit">В корзину</button>
+					</div>
+				</div>
+				<div class="popular__slide calcSingleItem">
+					<div class="popular__img">
+						<img src="img/product_1.jpg" alt="">
+						<section class="rating popular__rating">
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+							<div class="rating__item">
+								<svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+							</div>
+						</section>
+					</div>
+					<div class="popular__name">«Фыдджин» - с мясом</div>
+					<div class="popular__buy">
+						<div class="popular__weight">
+							<img src="img/weight.png" alt="">
+							1,2 кг
+						</div>
+						<div class="popular__radius">
+							<img src="img/pizza-slice.png" alt="">
+							36 см
+						</div>
+						<div class="popular__price">
+							<span class="calcNumber">520</span> <span class="popular__value">руб.</span>
+						</div>
+						<button type="button" class="btn popular__btn calcSingleSubmit">В корзину</button>
 					</div>
 				</div>
 			</div>
@@ -258,15 +1079,15 @@
 			<p class="text">Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа! Вы получите их еще горячими, только с печи! Условия доставки: при заказе от 1000 рублей доставка бесплатно. А еще у нас выгодная акция - в день рождения осетинские пироги предлагаются со скидкой и бесплатной доставкой по Москве.</p>
 		</section>
 		<section class="call">
+			<div class="call__header">ОТПРАВЬТЕ ЗАЯВКУ <span>И МЫ ПОДБЕРЕМ ВАМ ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ!</span></div>
 			<div class="call__left">
-				<div class="call__header"><span></span></div>
 				<form action="" class="form">
 					<div class="form__left">
-						<input placeholder="Введите имя" type="text" class="form__elem form__input form__input--name">
-						<input placeholder="Введите телефон" type="tel" class="form__elem form__input form__input--tel formTel">
+						<input required placeholder="Введите имя" type="text" class="form__elem form__input  form__elem--2 form__input--name">
+						<input required placeholder="Введите телефон" type="tel" class="form__elem form__input form__elem--2  form__input--tel formTel">
 						<textarea placeholder="Комментарий" class="form__elem form__textarea"></textarea>
 						<label class="form__label">
-							<input type="text" class="form__checkbox">
+							<input required checked type="checkbox" class="form__checkbox">
 							<i class="form__checkbox-icon"></i>
 							<span class="form__checkbox-desc">
 								Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики обработки <a href="#" class="form__link">персональных данных</a>
@@ -288,33 +1109,57 @@
 		</section>
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__contact">
-			<a href="#" class="page-footer__logo logo">
-				<img src="img/logo.png" alt="">
-				<div class="logo__t1">Осетинские</div>
-				<div class="logo__t2">пироги</div>
-			</a>
-			<div class="page-footer__delivery"></div>
-			<div class="page-footer__schedule"></div>
-			<a href="tel:+74951001510" class="page-footer__phone"></a>
-			<div class="page-footer__phone-desc"></div>
-		</div>
-		<div class="page-footer__content">
-			<div class="page-footer__item">
-				<div class="page-footer__title"></div>
-				<a href="#" class="page-footer__link"></a>
-				<a href="#" class="page-footer__link"></a>
-				<a href="#" class="page-footer__link"></a>
-				<a href="#" class="page-footer__link"></a>
+		<div class="page-footer__wrap">
+			<div class="page-footer__contact">
+				<a href="#" class="page-footer__logo logo">
+					<img src="img/logo.png" alt="">
+					<div class="logo__content">
+						<div class="logo__t1"><span>Осетинские</span></div>
+						<div class="logo__t2"><span>пироги</span></div>
+					</div>
+				</a>
+				<div class="page-footer__delivery">
+					<svg class="icon icon-motorcycle"><use xlink:href="#icon-motorcycle"></use></svg>
+					Бесплатная доставка за 45 минут
+				</div>
+				<div class="page-footer__schedule">
+					<svg class="icon icon-access-time"><use xlink:href="#icon-access-time"></use></svg>
+					ежедневно с 9:00 до 21:00
+				</div>
+				<a href="tel:+74951001510" class="page-footer__phone">+7 (495) 100-15-10</a>
+				<div class="page-footer__phone-desc">ТЕЛЕФОН ЕДИНОЙ СЛУЖБЫ ДОСТАВКИ</div>
 			</div>
-			<div class="page-footer__item">
-				<div class="page-footer__title">С </div>
-				<a href="#" class="page-footer__link"></a>
-				<a href="#" class="page-footer__link"></a>
-				<a href="#" class="page-footer__link"></a>
-				<a href="#" class="page-footer__link"></a>
+			<div class="page-footer__content">
+				<div class="page-footer__item">
+					<a href="#" class="page-footer__title"><span>Для клиентов</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+				</div>
+				<div class="page-footer__item">
+					<a href="#" class="page-footer__title"><span>Для клиентов</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+				</div>
+				<div class="page-footer__item">
+					<a href="#" class="page-footer__title"><span>Для клиентов</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+				</div>
+				<div class="page-footer__item">
+					<a href="#" class="page-footer__title"><span>Для клиентов</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+					<a href="#" class="page-footer__link"><span>Доставка</span></a>
+				</div>
+				<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
 			</div>
-			<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
 		</div>
 		<div class="page-footer__bottom">
 			<div class="page-footer__copy">© 2018 Осетинские пироги</div>

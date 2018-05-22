@@ -150,13 +150,13 @@ function animateHide(button, content, animationIn, animationOut, display, hideTi
 }
 
 //owl-slider
-function mainSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+function popularSlider(animationIn, animationOut, elem, items, navContainer, navText) {
 	var arrayPosition = [];
 	var arrayOffset = [];
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.slider__wrap';
-	items = items || 1;
+	elem = elem || '.popular__slider';
+	items = items || 3;
 	navContainer = navContainer || '';
 	navText = navText || ['', ''];
 	if(elem){
@@ -174,165 +174,6 @@ function mainSlider(animationIn, animationOut, elem, items, navContainer, navTex
 			dotsEach: true,
 			dotsContainer: '',
 			navText: navText,
-		});
-	}
-}
-
-function workSlider(animationIn, animationOut, elem, items, navContainer, navText) {
-	var arrayPosition = [];
-	var arrayOffset = [];
-	animationIn = animationIn || 'zoomIn';
-	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.work__slider';
-	items = items || 4;
-	navContainer = navContainer || '';
-	navText = navText || ['', ''];
-	if(elem){
-		$(elem).owlCarousel({
-			nav: true,
-			navContainer: navContainer,
-			navText: navText,
-			items: items,
-			animateIn: animationIn,
-			animateOut: animationOut,
-			loop: true,
-			URLhashListener: true,
-      startPosition: 'URLHash',
-			dots: true,
-			dotsEach: true,
-			dotsContainer: '',
-			navText: navText,
-			responsive: {
-				0: {
-					items: 1
-				},
-				768: {
-					items: 3
-				},
-				1024: {
-					items: 4
-				}
-			}
-		});
-	}
-}
-
-function productSlider(animationIn, animationOut, elem, items, navContainer, navText) {
-	var arrayPosition = [];
-	var arrayOffset = [];
-	animationIn = animationIn || 'zoomIn';
-	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.product__slider';
-	items = items || 4;
-	navContainer = navContainer || '';
-	navText = navText || ['', ''];
-	if(elem){
-		$(elem).owlCarousel({
-			nav: true,
-			navContainer: navContainer,
-			navText: navText,
-			items: items,
-			animateIn: animationIn,
-			animateOut: animationOut,
-			loop: false,
-			URLhashListener: true,
-      startPosition: 'URLHash',
-			dots: true,
-			dotsEach: true,
-			dotsContainer: '',
-			navText: navText,
-			responsive: {
-				0: {
-					items: 1
-				},
-				768: {
-					items: 3
-				},
-				1024: {
-					items: 4
-				}
-			}
-		});
-	}
-}
-
-function diplomaSlider(animationIn, animationOut, elem, items, navContainer, navText) {
-	var arrayPosition = [];
-	var arrayOffset = [];
-	animationIn = animationIn || 'zoomIn';
-	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.diploma__slider';
-	items = items || 5;
-	navContainer = navContainer || '';
-	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
-	if(elem){
-		$(elem).owlCarousel({
-			nav: true,
-			navContainer: navContainer,
-			navText: navText,
-			items: items,
-			animateIn: animationIn,
-			animateOut: animationOut,
-			loop: true,
-			URLhashListener: true,
-      startPosition: 'URLHash',
-			dots: true,
-			dotsEach: true,
-			dotsContainer: '',
-			navText: navText,
-			responsive: {
-				0: {
-					items: 1
-				},
-				768: {
-					items: 3
-				},
-				1024: {
-					items: 5
-				}
-			}
-		});
-	}
-}
-
-function diplomaSlider(animationIn, animationOut, elem, items, navContainer, navText) {
-	var arrayPosition = [];
-	var arrayOffset = [];
-	animationIn = animationIn || 'zoomIn';
-	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.brand__wrap';
-	items = items || 6;
-	navContainer = navContainer || '';
-	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
-	if(elem){
-		$(elem).owlCarousel({
-			nav: true,
-			navContainer: navContainer,
-			navText: navText,
-			items: items,
-			animateIn: animationIn,
-			animateOut: animationOut,
-			loop: true,
-			URLhashListener: true,
-      startPosition: 'URLHash',
-			dots: true,
-			dotsEach: true,
-			dotsContainer: '',
-			navText: navText,
-			autoWidth: true,
-			responsive: {
-				0: {
-					items: 1,
-					autoWidth: false
-				},
-				768: {
-					items: 4,
-					autoWidth: false
-				},
-				1024: {
-					items: 6
-				}
-			}
 		});
 	}
 }
@@ -441,6 +282,268 @@ function mobileTabScroll() {
 	});
 }
 
+//productCalc
+function productCalc(){
+	var btn = $('.calcBtn');
+	var dec = $('.calcDec');
+	var inc = $('.calcInc');
+	var output = $('.calcNumber');
+	var outputText = '.calcNumber';
+	var valueBox = $('.calcOutput');
+	var valueBoxText = '.calcOutput';
+	var btnWeight = $('.calcCheckbox');
+	var submit = $('.calcSubmit');
+	var singleItem = $('.calcSingleItem');
+	var singleSubmit = $('.calcSingleSubmit');
+
+	if(btn){
+		$(btn).on('click', function(){
+		var output = $(this).closest('.calcItem').find(outputText);
+		var value = $(this).closest('.calcItem').find(valueBoxText);
+		var valueHtml = $(value).html();
+		console.log(output, value);
+
+		if($(this).hasClass('calcDec')){
+			--valueHtml
+		}else if($(this).hasClass('calcInc')){
+			++valueHtml
+		}
+		if(valueHtml <= 1){
+			valueHtml = 1;
+		}
+		var summ = valueHtml * parseInt(output.attr('data-price'));
+
+		$(value).html(valueHtml);
+		$(output).html(summ);
+	});
+	}
+	if(btnWeight){
+		$(btnWeight).on('click', function(){
+			var number = parseInt($(this).closest('.calcWeightItem').find('.calcWeightNumber').html());
+			var price = $(this).closest('.calcItem').find('.calcNumber');
+			var output = $(this).closest('.calcItem').find('.calcOutput');
+
+			price.html(number).attr('data-price', number);
+			output.html(1);
+		});
+	}
+
+	if(submit){
+		$(submit).on('click', function(){
+			var output = $(this).closest('.calcItem').find(outputText);
+			var value = $(this).closest('.calcItem').find(valueBoxText);
+			var cartNumber = $('.calcCart');
+			var cartCount = $('.calcCartCount');
+
+			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
+			var valueSumm = parseInt(value.html()) + parseInt(cartCount.html());
+
+			cartCount.html(valueSumm);
+			cartNumber.html(summ);
+		});
+	}
+
+	if(singleSubmit){
+		$(singleSubmit).on('click', function(){
+			var output = $(this).closest('.calcSingleItem').find(outputText);
+			console.log(output);
+			var cartNumber = $('.calcCart');
+			var cartCount = $('.calcCartCount');
+
+			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
+			var valueSumm = 1 + parseInt(cartCount.html());
+
+			cartCount.html(valueSumm);
+			cartNumber.html(summ);
+		});
+	}
+}
+
+//cartCalc
+function cartCalc() {
+	var inc = $('.cartCalcInc');
+	var dec = $('.cartCalcDec');
+	var countNumber_t = '.cartCalcNumber';
+	var close = $('.cartCalcDelete');
+	var summ_t = '.cartCalcTotalSumm';
+	var item_t = '.cartCalcItem';
+	var singleItemPrice_t = '.cartCalcSinglePrice';
+	var singleSumm_t = '.cartSummNumber';
+	var total = document.querySelector('.cartCalcTotalSumm');
+	var total_t = '.cartCalcTotalSumm';
+	var headerCalcCount = document.querySelector('.calcCartCount');
+	var headerCalcCount_t = '.calcCartCount';
+	var headerCalcSumm = document.querySelector('.calcCart');
+	var headerCalcSumm_t = '.calcCart';
+	var stepTotal = document.querySelector('.cartCalcStepTotalSumm');
+	var stepTotal_t = ('.cartCalcStepTotalSumm');
+	var sum = 0;
+	var sumArray = [];
+	var countArray = [];
+
+	function calcOnWindowLoad(){
+			var itemsSumm = document.querySelectorAll(singleSumm_t);
+			var itemsCount = document.querySelectorAll(countNumber_t);
+			var items = document.querySelectorAll(item_t);
+
+			//Итоговая общая сумма
+			sumArray.length = 0;
+			itemsSumm.forEach(function(item, index, value){
+				var number = parseInt(item.textContent);
+				sumArray.push(number);
+			});
+			sum = 0;
+			if(total || headerCalcSumm){
+				for(var key in sumArray) {
+					sum = sum + parseInt(sumArray[key]);
+				}
+				if(!sum){
+					sum = 0;
+				}
+
+				total.textContent = sum;
+				headerCalcSumm.textContent = sum;
+				stepTotal.textContent = sum;
+			}
+
+			//Итоговое количество
+			countArray.length = 0;
+			itemsCount.forEach(function(item, index, value){
+				var number = parseInt(item.textContent);
+				countArray.push(number);
+			});
+			sum = 0;
+			if(headerCalcCount){
+				for(var key in countArray) {
+					sum = sum + parseInt(countArray[key]);
+				}
+				if(!sum){
+					sum = 0;
+				}
+				headerCalcCount.textContent = sum;
+			}
+		}
+
+	function countInc(){
+		var count = $(this).closest(item_t).find(countNumber_t);
+		var countNumber = parseInt(count.html());
+		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
+		var singleItemPriceNumber = parseInt(singleItemPrice.html());
+		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
+		var headerCount = parseInt($(headerCalcCount_t).html());
+		var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+		countNumber++
+		count.html(countNumber);
+
+		headerCount++
+		$(headerCalcCount_t).html(headerCount);
+
+		var summ = countNumber * singleItemPriceNumber;
+		singleSumm.html(summ);
+
+		sumArray.length = 0;
+
+		itemsSumm.forEach(function(item, index, value){
+			var number = parseInt(item.textContent);
+			sumArray.push(number);
+		});
+
+		sum = 0;
+		if(total || headerCalcSumm){
+			for(var key in sumArray) {
+				sum = sum + parseInt(sumArray[key]);
+			}
+			if(!sum){
+				sum = 0;
+			}
+			total.textContent = sum;
+			headerCalcSumm.textContent = sum;
+			stepTotal.textContent = sum;
+		}
+	}
+
+	function countDec(){
+		var count = $(this).closest(item_t).find(countNumber_t);
+		var countNumber = parseInt(count.html());
+		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
+		var singleItemPriceNumber = parseInt(singleItemPrice.html());
+		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
+		var headerCount = parseInt($(headerCalcCount_t).html());
+
+		var itemsSumm = document.querySelectorAll(singleSumm_t);
+
+		countNumber--
+		if(countNumber <= 1){
+			countNumber = 1
+		}
+		count.html(countNumber);
+
+		headerCount--
+		if(countNumber <= 1){
+			--headerCount
+			++headerCount
+		}
+		itemsSumm.forEach(function(item, index, value){
+			if(headerCount <= ++index) {
+				headerCount = index;
+			}
+		});
+		$(headerCalcCount_t).html(headerCount);
+
+		var summ = countNumber * singleItemPriceNumber;
+		singleSumm.html(summ);
+
+
+		sumArray.length = 0;
+		itemsSumm.forEach(function(item, index, value){
+			var number = parseInt(item.textContent);
+			sumArray.push(number);
+		});
+		sum = 0;
+		if(total || headerCalcSumm){
+			for(var key in sumArray) {
+				sum = sum + parseInt(sumArray[key]);
+			}
+			if(!sum){
+				sum = 0;
+			}
+			total.textContent = sum;
+			headerCalcSumm.textContent = sum;
+			stepTotal.textContent = sum;
+		}
+	}
+
+	function onCloseItem(){
+		var singleSumm = $(this).closest(item_t).find(singleSumm_t);
+		var singleSummNumber = parseInt(singleSumm.html());
+		var headerCalcSumm = $(headerCalcSumm_t);
+		var headerCalcCount = $(headerCalcCount_t);
+		var count = parseInt($(this).closest(item_t).find(countNumber_t).html());
+		var headerCount = parseInt($(headerCalcCount_t).html());
+		var stepTotal = $(stepTotal_t);
+
+		var totalCount = headerCount - count;
+
+		var total = $(total_t);
+		var totalPrice = parseInt(total.html()) - singleSummNumber;
+
+		$(this).closest(item_t).addClass('animated slideOutLeft').hide(1000);
+		total.html(totalPrice);
+		stepTotal.html(totalPrice);
+		headerCalcSumm.html(totalPrice);
+		headerCalcCount.html(totalCount);
+	}
+
+	calcOnWindowLoad();
+
+	inc.on('click', countInc);
+
+	dec.on('click', countDec);
+
+	close.on('click', onCloseItem);
+}
+
 
 window.onload = function() {
 	//scrollEvents
@@ -448,31 +551,23 @@ window.onload = function() {
 
 	//other
 	phoneMask();
-	accordion();
-
-	//tabs
-	tabs();
+	checkFix('.product__input');
 
 	//active toggle
 	active('.hamburger');
 	active('.hamburger__wrap');
 
-	//activeSiblings
-
-	//activeOther
-
-
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	//Animation+hide
-	animateHide('.hamburger__wrap', '.nav', 'slideInLeft', 'slideOutLeft', 'block');
+	//animateHide('.hamburger__wrap', '.nav', 'slideInLeft', 'slideOutLeft', 'block');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
-	mainSlider();
-	workSlider();
-	productSlider();
-	diplomaSlider();
+	popularSlider();
+
+	//calc
+	productCalc();
 
 	//loading
 	loading();
