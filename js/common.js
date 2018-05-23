@@ -140,7 +140,7 @@ function animateHide(button, content, animationIn, animationOut, display, hideTi
 		var animateContent = content;
 		if ($(content).hasClass(animationIn)) {
 			$(content).removeClass(animationIn).addClass(animationOut + ' animated');
-			setTimeout(function(){e
+			setTimeout(function(){
 				$(content).hide();
 			}, hideTiming);
 		} else {
@@ -174,6 +174,17 @@ function popularSlider(animationIn, animationOut, elem, items, navContainer, nav
 			dotsEach: true,
 			dotsContainer: '',
 			navText: navText,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 2
+				},
+				1025: {
+					items: 3
+				}
+			}
 		});
 	}
 }
@@ -280,6 +291,16 @@ function mobileTabScroll() {
 				$('.work__nav-item').removeAttr('href');
 			}
 	});
+}
+
+//zoom
+function okZoom() {
+	$('.okzoom').okzoom({
+        width:  200,
+        height: 200,
+        border: "1px solid #fff",
+        //shadow: "0 0 5px #000"
+    });
 }
 
 //productCalc
@@ -552,6 +573,7 @@ window.onload = function() {
 	//other
 	phoneMask();
 	checkFix('.product__input');
+	okZoom();
 
 	//active toggle
 	active('.hamburger');
@@ -561,7 +583,7 @@ window.onload = function() {
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	//Animation+hide
-	//animateHide('.hamburger__wrap', '.nav', 'slideInLeft', 'slideOutLeft', 'block');
+	animateHide('.hamburger__wrap', '.menu', 'slideInDown', 'slideOutUp', 'flex');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
 	popularSlider();
