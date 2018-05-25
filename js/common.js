@@ -2,7 +2,7 @@
 //templates
 new Vue({
 		el: '#global-svg',
-		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-subway" viewBox="0 0 32 32"><title>subway</title><path fill="#dcdcdc" style="fill: var(--color1, #dcdcdc)" d="M22 21.333c0 0.736-0.597 1.333-1.333 1.333s-1.333-0.597-1.333-1.333c0-0.736 0.597-1.333 1.333-1.333s1.333 0.597 1.333 1.333z"></path><path fill="#dcdcdc" style="fill: var(--color1, #dcdcdc)" d="M12.667 21.333c0 0.736-0.597 1.333-1.333 1.333s-1.333-0.597-1.333-1.333c0-0.736 0.597-1.333 1.333-1.333s1.333 0.597 1.333 1.333z"></path><path fill="#dcdcdc" style="fill: var(--color1, #dcdcdc)" d="M9.347 12h13.333v6.667h-13.333z"></path><path fill="#dcdcdc" style="fill: var(--color1, #dcdcdc)" d="M23.733 3.733c-2.4-0.947-5.253-1.067-7.733-1.067s-5.333 0.12-7.733 1.067c-3.56 1.387-5.6 4.333-5.6 8.080v17.52h26.667v-17.52c0-3.747-2.040-6.693-5.6-8.080zM24 21.173c0 1.933-1.573 3.493-3.507 3.493l1.507 1.493v0.507h-2l-2-2h-3.773l-2 2h-2.227v-0.507l1.493-1.493c-1.92 0-3.493-1.573-3.493-3.493v-9.173c0-3.507 4-4 8-4 4.427 0 8 0.507 8 4v9.173z"></path></symbol><symbol id="icon-check" viewBox="0 0 32 32"><title>check</title><path d="M10.869 27.463l-10.4-10.4c-0.625-0.625-0.625-1.638 0-2.263l2.263-2.263c0.625-0.625 1.638-0.625 2.263 0l7.006 7.006 15.006-15.006c0.625-0.625 1.638-0.625 2.263 0l2.263 2.263c0.625 0.625 0.625 1.638 0 2.263l-18.4 18.4c-0.625 0.625-1.638 0.625-2.263-0z"></path></symbol><symbol id="icon-star" viewBox="0 0 36 32"><title>star</title><path d="M16.206 1.113l-4.081 8.275-9.131 1.331c-1.637 0.238-2.294 2.256-1.106 3.412l6.606 6.438-1.563 9.094c-0.281 1.644 1.45 2.875 2.9 2.106l8.169-4.294 8.169 4.294c1.45 0.762 3.181-0.462 2.9-2.106l-1.563-9.094 6.606-6.438c1.188-1.156 0.531-3.175-1.106-3.412l-9.131-1.331-4.081-8.275c-0.731-1.475-2.85-1.494-3.587 0z"></path></symbol><symbol id="icon-star-half" viewBox="0 0 36 32"><title>star-half</title><path d="M18 0c-0.712 0-1.425 0.369-1.794 1.113l-4.081 8.275-9.131 1.325c-1.637 0.238-2.294 2.256-1.106 3.412l6.606 6.438-1.563 9.094c-0.281 1.631 1.438 2.875 2.9 2.106l8.169-4.287v-27.475z"></path></symbol><symbol id="icon-minus" viewBox="0 0 28 32"><title>minus</title><path d="M26 13h-24c-1.104 0-2 0.896-2 2v2c0 1.104 0.896 2 2 2h24c1.104 0 2-0.896 2-2v-2c0-1.104-0.896-2-2-2z"></path></symbol><symbol id="icon-plus" viewBox="0 0 28 32"><title>plus</title><path d="M26 13h-9v-9c0-1.104-0.896-2-2-2h-2c-1.104 0-2 0.896-2 2v9h-9c-1.104 0-2 0.896-2 2v2c0 1.104 0.896 2 2 2h9v9c0 1.104 0.896 2 2 2h2c1.104 0 2-0.896 2-2v-9h9c1.104 0 2-0.896 2-2v-2c0-1.104-0.896-2-2-2z"></path></symbol><symbol id="icon-shopping-basket" viewBox="0 0 36 32"><title>shopping-basket</title><path d="M36 13.5v1c0 0.828-0.672 1.5-1.5 1.5h-0.5l-1.632 11.424c-0.211 1.478-1.477 2.576-2.97 2.576h-22.796c-1.493 0-2.759-1.098-2.97-2.576l-1.632-11.424h-0.5c-0.828 0-1.5-0.672-1.5-1.5v-1c0-0.828 0.672-1.5 1.5-1.5h4.209l6.674-9.176c0.65-0.893 1.9-1.091 2.794-0.441s1.091 1.9 0.441 2.794l-4.963 6.824h14.69l-4.963-6.824c-0.65-0.893-0.452-2.144 0.441-2.794s2.144-0.452 2.794 0.441l6.674 9.176h4.209c0.828 0 1.5 0.672 1.5 1.5zM19.5 24.5v-7c0-0.828-0.672-1.5-1.5-1.5s-1.5 0.672-1.5 1.5v7c0 0.828 0.672 1.5 1.5 1.5s1.5-0.672 1.5-1.5zM26.5 24.5v-7c0-0.828-0.672-1.5-1.5-1.5s-1.5 0.672-1.5 1.5v7c0 0.828 0.672 1.5 1.5 1.5s1.5-0.672 1.5-1.5zM12.5 24.5v-7c0-0.828-0.672-1.5-1.5-1.5s-1.5 0.672-1.5 1.5v7c0 0.828 0.672 1.5 1.5 1.5s1.5-0.672 1.5-1.5z"></path></symbol><symbol id="icon-delete" viewBox="0 0 32 32"><title>delete</title><path d="M8 25.333c0 1.467 1.2 2.667 2.667 2.667h10.667c1.467 0 2.667-1.2 2.667-2.667v-16h-16v16zM25.333 5.333h-4.667l-1.333-1.333h-6.667l-1.333 1.333h-4.667v2.667h18.667v-2.667z"></path></symbol><symbol id="icon-perm-identity" viewBox="0 0 32 32"><title>perm-identity</title><path d="M16 7.867c1.547 0 2.8 1.253 2.8 2.8s-1.253 2.8-2.8 2.8-2.8-1.253-2.8-2.8 1.253-2.8 2.8-2.8zM16 19.867c3.96 0 8.133 1.947 8.133 2.8v1.467h-16.267v-1.467c0-0.853 4.173-2.8 8.133-2.8zM16 5.333c-2.947 0-5.333 2.387-5.333 5.333s2.387 5.333 5.333 5.333 5.333-2.387 5.333-5.333-2.387-5.333-5.333-5.333zM16 17.333c-3.56 0-10.667 1.787-10.667 5.333v4h21.333v-4c0-3.547-7.107-5.333-10.667-5.333z"></path></symbol><symbol id="icon-phone-in-talk" viewBox="0 0 32 32"><title>phone-in-talk</title><path d="M26.667 20.667c-1.667 0-3.267-0.267-4.76-0.76-0.467-0.147-0.987-0.040-1.36 0.32l-2.933 2.933c-3.773-1.92-6.867-5-8.787-8.787l2.933-2.947c0.373-0.347 0.48-0.867 0.333-1.333-0.493-1.493-0.76-3.093-0.76-4.76 0-0.733-0.6-1.333-1.333-1.333h-4.667c-0.733 0-1.333 0.6-1.333 1.333 0 12.52 10.147 22.667 22.667 22.667 0.733 0 1.333-0.6 1.333-1.333v-4.667c0-0.733-0.6-1.333-1.333-1.333zM25.333 16h2.667c0-6.627-5.373-12-12-12v2.667c5.16 0 9.333 4.173 9.333 9.333zM20 16h2.667c0-3.68-2.987-6.667-6.667-6.667v2.667c2.213 0 4 1.787 4 4z"></path></symbol><symbol id="icon-access-time" viewBox="0 0 32 32"><title>access-time</title><path d="M15.987 2.667c-7.36 0-13.32 5.973-13.32 13.333s5.96 13.333 13.32 13.333c7.373 0 13.347-5.973 13.347-13.333s-5.973-13.333-13.347-13.333zM16 26.667c-5.893 0-10.667-4.773-10.667-10.667s4.773-10.667 10.667-10.667 10.667 4.773 10.667 10.667-4.773 10.667-10.667 10.667z"></path><path d="M16.667 9.333h-2v8l7 4.2 1-1.64-6-3.56z"></path></symbol><symbol id="icon-check-box" viewBox="0 0 32 32"><title>check-box</title><path d="M25.333 4h-18.667c-1.48 0-2.667 1.2-2.667 2.667v18.667c0 1.467 1.187 2.667 2.667 2.667h18.667c1.48 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.187-2.667-2.667-2.667zM13.333 22.667l-6.667-6.667 1.88-1.88 4.787 4.773 10.12-10.12 1.88 1.893-12 12z"></path></symbol><symbol id="icon-motorcycle" viewBox="0 0 32 32"><title>motorcycle</title><path d="M23.333 13.333c-0.040 0-0.067 0.013-0.107 0.013l-5.347-5.347h-5.88v2.667h4.787l2.667 2.667h-10.8c-3.307 0-5.987 2.693-5.987 6 0 3.32 2.68 6 6 6 2.96 0 5.413-2.16 5.893-4.973v0l2.827-1.693c-0.027 0.227-0.053 0.44-0.053 0.667 0 3.32 2.68 6 6 6s6-2.68 6-6-2.68-6-6-6zM11.787 20.347c-0.427 1.347-1.68 2.32-3.16 2.32-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333c1.493 0 2.733 0.987 3.16 2.333h-3.787v2l3.787 0.013zM23.293 22.667c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333c0 1.84-1.493 3.333-3.333 3.333z"></path></symbol><symbol id="icon-phone" viewBox="0 0 32 32"><title>phone</title><path d="M8.827 14.387c1.92 3.773 5.013 6.853 8.787 8.787l2.933-2.933c0.36-0.36 0.893-0.48 1.36-0.32 1.493 0.493 3.107 0.76 4.76 0.76 0.733 0 1.333 0.6 1.333 1.333v4.653c0 0.733-0.6 1.333-1.333 1.333-12.52 0-22.667-10.147-22.667-22.667 0-0.733 0.6-1.333 1.333-1.333h4.667c0.733 0 1.333 0.6 1.333 1.333 0 1.667 0.267 3.267 0.76 4.76 0.147 0.467 0.040 0.987-0.333 1.36l-2.933 2.933z"></path></symbol><symbol id="icon-shopping-basket2" viewBox="0 0 32 32"><title>shopping-basket2</title><path d="M22.947 12l-5.84-8.747c-0.253-0.373-0.68-0.56-1.107-0.56s-0.853 0.187-1.107 0.573l-5.84 8.733h-6.387c-0.733 0-1.333 0.6-1.333 1.333 0 0.12 0.013 0.24 0.053 0.36l3.387 12.36c0.307 1.12 1.333 1.947 2.56 1.947h17.333c1.227 0 2.253-0.827 2.573-1.947l3.387-12.36 0.040-0.36c0-0.733-0.6-1.333-1.333-1.333h-6.387zM12 12l4-5.867 4 5.867h-8zM16 22.667c-1.467 0-2.667-1.2-2.667-2.667s1.2-2.667 2.667-2.667 2.667 1.2 2.667 2.667-1.2 2.667-2.667 2.667z"></path></symbol></defs></svg>'
+		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-next" viewBox="0 0 32 32"><title>next</title><path d="M11.453 22.12l6.107-6.12-6.107-6.12 1.88-1.88 8 8-8 8-1.88-1.88z"></path></symbol><symbol id="icon-prev" viewBox="0 0 32 32"><title>prev</title><path d="M20.547 22.12l-6.107-6.12 6.107-6.12-1.88-1.88-8 8 8 8 1.88-1.88z"></path></symbol><symbol id="icon-wallet" viewBox="0 0 32 32"><title>wallet</title><path d="M28 24v1.333c0 1.467-1.2 2.667-2.667 2.667h-18.667c-1.48 0-2.667-1.2-2.667-2.667v-18.667c0-1.467 1.187-2.667 2.667-2.667h18.667c1.467 0 2.667 1.2 2.667 2.667v1.333h-12c-1.48 0-2.667 1.2-2.667 2.667v10.667c0 1.467 1.187 2.667 2.667 2.667h12zM16 21.333h13.333v-10.667h-13.333v10.667zM21.333 18c-1.107 0-2-0.893-2-2s0.893-2 2-2 2 0.893 2 2-0.893 2-2 2z"></path></symbol><symbol id="icon-access-time" viewBox="0 0 32 32"><title>access-time</title><path d="M15.987 2.667c-7.36 0-13.32 5.973-13.32 13.333s5.96 13.333 13.32 13.333c7.373 0 13.347-5.973 13.347-13.333s-5.973-13.333-13.347-13.333zM16 26.667c-5.893 0-10.667-4.773-10.667-10.667s4.773-10.667 10.667-10.667 10.667 4.773 10.667 10.667-4.773 10.667-10.667 10.667z"></path><path d="M16.667 9.333h-2v8l7 4.2 1-1.64-6-3.56z"></path></symbol><symbol id="icon-account-balance" viewBox="0 0 32 32"><title>account-balance</title><path d="M5.333 13.333v9.333h4v-9.333h-4zM13.333 13.333v9.333h4v-9.333h-4zM2.667 29.333h25.333v-4h-25.333v4zM21.333 13.333v9.333h4v-9.333h-4zM15.333 1.333l-12.667 6.667v2.667h25.333v-2.667l-12.667-6.667z"></path></symbol><symbol id="icon-account-circle" viewBox="0 0 32 32"><title>account-circle</title><path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM16 6.667c2.213 0 4 1.787 4 4s-1.787 4-4 4-4-1.787-4-4 1.787-4 4-4zM16 25.6c-3.333 0-6.28-1.707-8-4.293 0.040-2.653 5.333-4.107 8-4.107 2.653 0 7.96 1.453 8 4.107-1.72 2.587-4.667 4.293-8 4.293z"></path></symbol><symbol id="icon-airport-shuttle" viewBox="0 0 32 32"><title>airport-shuttle</title><path d="M22.667 6.667h-18.667c-1.467 0-2.667 1.187-2.667 2.667v12h2.667c0 2.2 1.787 4 4 4s4-1.8 4-4h7.333c0 2.2 1.787 4 4 4s4-1.8 4-4h3.333v-6.667l-8-8zM4 14.667v-5.333h5.333v5.333h-5.333zM8 23.333c-1.107 0-2-0.893-2-2s0.893-2 2-2 2 0.893 2 2-0.893 2-2 2zM17.333 14.667h-5.333v-5.333h5.333v5.333zM23.333 23.333c-1.107 0-2-0.893-2-2s0.893-2 2-2 2 0.893 2 2-0.893 2-2 2zM20 14.667v-5.333h1.333l5.333 5.333h-6.667z"></path></symbol><symbol id="icon-calendar" viewBox="0 0 32 32"><title>calendar</title><path d="M26.667 4h-1.333v-2.667h-2.667v2.667h-13.333v-2.667h-2.667v2.667h-1.333c-1.467 0-2.667 1.2-2.667 2.667v21.333c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-21.333c0-1.467-1.2-2.667-2.667-2.667zM26.667 28h-21.333v-17.333h21.333v17.333z"></path></symbol><symbol id="icon-check-box" viewBox="0 0 32 32"><title>check-box</title><path d="M25.333 4h-18.667c-1.48 0-2.667 1.2-2.667 2.667v18.667c0 1.467 1.187 2.667 2.667 2.667h18.667c1.48 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.187-2.667-2.667-2.667zM13.333 22.667l-6.667-6.667 1.88-1.88 4.787 4.773 10.12-10.12 1.88 1.893-12 12z"></path></symbol><symbol id="icon-color-lens" viewBox="0 0 32 32"><title>color-lens</title><path d="M16 4c-6.627 0-12 5.373-12 12s5.373 12 12 12c1.107 0 2-0.893 2-2 0-0.52-0.2-0.987-0.52-1.347-0.307-0.347-0.507-0.813-0.507-1.32 0-1.107 0.893-2 2-2h2.36c3.68 0 6.667-2.987 6.667-6.667 0-5.893-5.373-10.667-12-10.667zM8.667 16c-1.107 0-2-0.893-2-2s0.893-2 2-2 2 0.893 2 2-0.893 2-2 2zM12.667 10.667c-1.107 0-2-0.893-2-2s0.893-2 2-2 2 0.893 2 2-0.893 2-2 2zM19.333 10.667c-1.107 0-2-0.893-2-2s0.893-2 2-2 2 0.893 2 2-0.893 2-2 2zM23.333 16c-1.107 0-2-0.893-2-2s0.893-2 2-2 2 0.893 2 2-0.893 2-2 2z"></path></symbol><symbol id="icon-phone" viewBox="0 0 32 32"><title>phone</title><path d="M8.827 14.387c1.92 3.773 5.013 6.853 8.787 8.787l2.933-2.933c0.36-0.36 0.893-0.48 1.36-0.32 1.493 0.493 3.107 0.76 4.76 0.76 0.733 0 1.333 0.6 1.333 1.333v4.653c0 0.733-0.6 1.333-1.333 1.333-12.52 0-22.667-10.147-22.667-22.667 0-0.733 0.6-1.333 1.333-1.333h4.667c0.733 0 1.333 0.6 1.333 1.333 0 1.667 0.267 3.267 0.76 4.76 0.147 0.467 0.040 0.987-0.333 1.36l-2.933 2.933z"></path></symbol><symbol id="icon-photo-camera" viewBox="0 0 32 32"><title>photo-camera</title><path d="M20.267 16c0 2.356-1.91 4.267-4.267 4.267s-4.267-1.91-4.267-4.267c0-2.356 1.91-4.267 4.267-4.267s4.267 1.91 4.267 4.267z"></path><path d="M12 2.667l-2.44 2.667h-4.227c-1.467 0-2.667 1.2-2.667 2.667v16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667h-4.227l-2.44-2.667h-8zM16 22.667c-3.68 0-6.667-2.987-6.667-6.667s2.987-6.667 6.667-6.667 6.667 2.987 6.667 6.667-2.987 6.667-6.667 6.667z"></path></symbol><symbol id="icon-spa" viewBox="0 0 32 32"><title>spa</title><path d="M11.4 16c-1.427-0.947-3-1.693-4.707-2.147 1.707 0.453 3.28 1.2 4.707 2.147zM25.307 13.853c-1.72 0.453-3.32 1.213-4.76 2.187 1.44-0.973 3.040-1.733 4.76-2.187z"></path><path d="M20.653 12.84c-0.24-3.72-1.747-7.347-4.573-10.173-2.853 2.853-4.427 6.48-4.733 10.173 1.707 0.907 3.28 2.080 4.653 3.507 1.373-1.413 2.947-2.587 4.653-3.507zM11.987 16.373c-0.187-0.133-0.4-0.253-0.6-0.387 0.2 0.147 0.413 0.253 0.6 0.387zM20.547 16.040c-0.173 0.12-0.36 0.213-0.533 0.347 0.173-0.133 0.36-0.227 0.533-0.347zM16 20.6c-2.867-4.373-7.76-7.267-13.333-7.267 0 7.093 4.48 13.093 10.707 15.32 0.84 0.307 1.72 0.533 2.627 0.68 0.907-0.16 1.773-0.387 2.627-0.68 6.227-2.227 10.707-8.227 10.707-15.32-5.573 0-10.467 2.893-13.333 7.267z"></path></symbol><symbol id="icon-subway" viewBox="0 0 32 32"><title>subway</title><path d="M22 21.333c0 0.736-0.597 1.333-1.333 1.333s-1.333-0.597-1.333-1.333c0-0.736 0.597-1.333 1.333-1.333s1.333 0.597 1.333 1.333z"></path><path d="M12.667 21.333c0 0.736-0.597 1.333-1.333 1.333s-1.333-0.597-1.333-1.333c0-0.736 0.597-1.333 1.333-1.333s1.333 0.597 1.333 1.333z"></path><path d="M9.347 12h13.333v6.667h-13.333zM23.733 3.733c-2.4-0.947-5.253-1.067-7.733-1.067s-5.333 0.12-7.733 1.067c-3.56 1.387-5.6 4.333-5.6 8.080v17.52h26.667v-17.52c0-3.747-2.040-6.693-5.6-8.080zM24 21.173c0 1.933-1.573 3.493-3.507 3.493l1.507 1.493v0.507h-2l-2-2h-3.773l-2 2h-2.227v-0.507l1.493-1.493c-1.92 0-3.493-1.573-3.493-3.493v-9.173c0-3.507 4-4 8-4 4.427 0 8 0.507 8 4v9.173z"></path></symbol><symbol id="icon-timer" viewBox="0 0 32 32"><title>timer</title><path d="M20 1.333h-8v2.667h8v-2.667zM14.667 18.667h2.667v-8h-2.667v8zM25.373 9.853l1.893-1.893c-0.573-0.68-1.2-1.32-1.88-1.88l-1.893 1.893c-2.067-1.653-4.667-2.64-7.493-2.64-6.627 0-12 5.373-12 12s5.36 12 12 12 12-5.373 12-12c0-2.827-0.987-5.427-2.627-7.48zM16 26.667c-5.16 0-9.333-4.173-9.333-9.333s4.173-9.333 9.333-9.333 9.333 4.173 9.333 9.333-4.173 9.333-9.333 9.333z"></path></symbol><symbol id="icon-uncheck-box" viewBox="0 0 32 32"><title>uncheck-box</title><path d="M25.333 6.667v18.667h-18.667v-18.667h18.667zM25.333 4h-18.667c-1.467 0-2.667 1.2-2.667 2.667v18.667c0 1.467 1.2 2.667 2.667 2.667h18.667c1.467 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.2-2.667-2.667-2.667z"></path></symbol></defs></svg>'
 	})
 
 function scrollEffects() {
@@ -140,7 +140,7 @@ function animateHide(button, content, animationIn, animationOut, display, hideTi
 		var animateContent = content;
 		if ($(content).hasClass(animationIn)) {
 			$(content).removeClass(animationIn).addClass(animationOut + ' animated');
-			setTimeout(function(){
+			setTimeout(function(){e
 				$(content).hide();
 			}, hideTiming);
 		} else {
@@ -150,13 +150,41 @@ function animateHide(button, content, animationIn, animationOut, display, hideTi
 }
 
 //owl-slider
-function popularSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+function mainSlider(animationIn, animationOut, elem, items, navContainer, navText) {
 	var arrayPosition = [];
 	var arrayOffset = [];
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.popular__slider';
-	items = items || 3;
+	elem = elem || '.slider__wrap';
+	items = items || 1;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '',
+			navText: navText,
+		});
+	}
+}
+
+function workSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.work__slider';
+	items = items || 4;
 	navContainer = navContainer || '';
 	navText = navText || ['', ''];
 	if(elem){
@@ -179,10 +207,172 @@ function popularSlider(animationIn, animationOut, elem, items, navContainer, nav
 					items: 1
 				},
 				768: {
-					items: 2
-				},
-				1025: {
 					items: 3
+				},
+				1024: {
+					items: 4
+				}
+			}
+		});
+	}
+}
+
+function productSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.product__slider';
+	items = items || 4;
+	navContainer = navContainer || '';
+	navText = navText || ['', ''];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: false,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '',
+			navText: navText,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 3
+				},
+				1024: {
+					items: 4
+				}
+			}
+		});
+	}
+}
+
+function diplomaSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.diploma__slider';
+	items = items || 5;
+	navContainer = navContainer || '';
+	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '',
+			navText: navText,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 3
+				},
+				1024: {
+					items: 5
+				}
+			}
+		});
+	}
+}
+
+function brandSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.brand__wrap';
+	items = items || 6;
+	navContainer = navContainer || '';
+	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '',
+			navText: navText,
+			autoWidth: true,
+			responsive: {
+				0: {
+					items: 1,
+					autoWidth: false
+				},
+				768: {
+					items: 4,
+					autoWidth: false
+				},
+				1024: {
+					items: 6
+				}
+			}
+		});
+	}
+}
+
+function productImage(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.product__img-slider';
+	items = items || 6;
+	navContainer = navContainer || '';
+	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '',
+			navText: navText,
+			autoWidth: true,
+			responsive: {
+				0: {
+					items: 1,
+					autoWidth: false
+				},
+				768: {
+					items: 4,
+					autoWidth: false
+				},
+				1024: {
+					items: 6
 				}
 			}
 		});
@@ -293,315 +483,20 @@ function mobileTabScroll() {
 	});
 }
 
-//zoom
-function okZoom() {
-	$('.okzoom').okzoom({
-        width:  200,
-        height: 200,
-        border: "1px solid #fff",
-        //shadow: "0 0 5px #000"
-    });
-}
+function productHover() {
+	var navItem = '.productNav';
 
-//productCalc
-function productCalc(){
-	var btn = $('.calcBtn');
-	var dec = $('.calcDec');
-	var inc = $('.calcInc');
-	var output = $('.calcNumber');
-	var outputText = '.calcNumber';
-	var valueBox = $('.calcOutput');
-	var valueBoxText = '.calcOutput';
-	var btnWeight = $('.calcCheckbox');
-	var submit = $('.calcSubmit');
-	var singleItem = $('.calcSingleItem');
-	var singleSubmit = $('.calcSingleSubmit');
+	$(navItem).mouseenter(function(){
+		var navItemNumber = $(this).index();
+		var item = $(this).closest('.productWrap').find('.productItem');
 
-	if(btn){
-		$(btn).on('click', function(){
-		var output = $(this).closest('.calcItem').find(outputText);
-		var value = $(this).closest('.calcItem').find(valueBoxText);
-		var valueHtml = $(value).html();
-
-		if($(this).hasClass('calcDec')){
-			--valueHtml
-		}else if($(this).hasClass('calcInc')){
-			++valueHtml
-		}
-		if(valueHtml <= 1){
-			valueHtml = 1;
-		}
-		var summ = valueHtml * parseInt(output.attr('data-price'));
-
-		$(value).html(valueHtml);
-		$(output).html(summ);
+		$(this).addClass('active').siblings().removeClass('active');
+		$(item).each(function(index, element){
+			if(index === navItemNumber){
+				$(this).addClass('active').siblings().removeClass('active');
+			}
+		});
 	});
-	}
-	if(btnWeight){
-		$(btnWeight).on('click', function(){
-			var number = parseInt($(this).closest('.calcWeightItem').find('.calcWeightNumber').html());
-			var price = $(this).closest('.calcItem').find('.calcNumber');
-			var output = $(this).closest('.calcItem').find('.calcOutput');
-
-			price.html(number).attr('data-price', number);
-			output.html(1);
-		});
-	}
-
-	if(submit){
-		$(submit).on('click', function(){
-			var output = $(this).closest('.calcItem').find(outputText);
-			var value = $(this).closest('.calcItem').find(valueBoxText);
-			var cartNumber = $('.calcCart');
-			var cartCount = $('.calcCartCount');
-
-			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
-			var valueSumm = parseInt(value.html()) + parseInt(cartCount.html());
-
-			cartCount.html(valueSumm);
-			cartNumber.html(summ);
-		});
-	}
-
-	if(singleSubmit){
-		$(singleSubmit).on('click', function(){
-			var output = $(this).closest('.calcSingleItem').find(outputText);
-			var cartNumber = $('.calcCart');
-			var cartCount = $('.calcCartCount');
-
-			var summ = parseInt(cartNumber.html()) + parseInt(output.html());
-			var valueSumm = 1 + parseInt(cartCount.html());
-
-			cartCount.html(valueSumm);
-			cartNumber.html(summ);
-		});
-	}
-}
-
-//cartCalc
-function cartCalc() {
-	var inc = $('.cartCalcInc');
-	var dec = $('.cartCalcDec');
-	var countNumber_t = '.cartCalcNumber';
-	var close = $('.cartCalcDelete');
-	var summ_t = '.cartCalcTotalSumm';
-	var item_t = '.cartCalcItem';
-	var singleItemPrice_t = '.cartCalcSinglePrice';
-	var singleSumm_t = '.cartSummNumber';
-	var total = document.querySelector('.cartCalcTotalSumm');
-	var total_t = '.cartCalcTotalSumm';
-	var headerCalcCount = document.querySelector('.calcCartCount');
-	var headerCalcCount_t = '.calcCartCount';
-	var headerCalcSumm = document.querySelector('.calcCart');
-	var headerCalcSumm_t = '.calcCart';
-	var stepTotal = document.querySelector('.cartCalcStepTotalSumm');
-	var stepTotal_t = ('.cartCalcStepTotalSumm');
-	var sum = 0;
-	var sumArray = [];
-	var countArray = [];
-
-	function calcOnWindowLoad(){
-			var itemsSumm = document.querySelectorAll(singleSumm_t);
-			var itemsCount = document.querySelectorAll(countNumber_t);
-			var items = document.querySelectorAll(item_t);
-
-			//Итоговая общая сумма
-			sumArray.length = 0;
-			itemsSumm.forEach(function(item, index, value){
-				var number = parseInt(item.textContent);
-				sumArray.push(number);
-			});
-			sum = 0;
-			if(total || headerCalcSumm || stepTotal){
-				for(var key in sumArray) {
-					sum = sum + parseInt(sumArray[key]);
-				}
-				if(!sum){
-					sum = 0;
-				}
-
-				total.textContent = sum;
-				headerCalcSumm.textContent = sum;
-				stepTotal.textContent = sum;
-			}
-
-			//Итоговое количество
-			countArray.length = 0;
-			itemsCount.forEach(function(item, index, value){
-				var number = parseInt(item.textContent);
-				countArray.push(number);
-			});
-			sum = 0;
-			if(headerCalcCount){
-				for(var key in countArray) {
-					sum = sum + parseInt(countArray[key]);
-				}
-				if(!sum){
-					sum = 0;
-				}
-				headerCalcCount.textContent = sum;
-			}
-		}
-
-	function countInc(){
-		var count = $(this).closest(item_t).find(countNumber_t);
-		var countNumber = parseInt(count.html());
-		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
-		var singleItemPriceNumber = parseInt(singleItemPrice.html());
-		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
-		var headerCount = parseInt($(headerCalcCount_t).html());
-		var itemsSumm = document.querySelectorAll(singleSumm_t);
-
-		countNumber++
-		count.html(countNumber);
-
-		headerCount++
-		$(headerCalcCount_t).html(headerCount);
-
-		var summ = countNumber * singleItemPriceNumber;
-		singleSumm.html(summ);
-
-		sumArray.length = 0;
-
-		itemsSumm.forEach(function(item, index, value){
-			var number = parseInt(item.textContent);
-			sumArray.push(number);
-		});
-
-		sum = 0;
-		if(total || headerCalcSumm){
-			for(var key in sumArray) {
-				sum = sum + parseInt(sumArray[key]);
-			}
-			if(!sum){
-				sum = 0;
-			}
-			total.textContent = sum;
-			headerCalcSumm.textContent = sum;
-			stepTotal.textContent = sum;
-		}
-	}
-
-	function countDec(){
-		var count = $(this).closest(item_t).find(countNumber_t);
-		var countNumber = parseInt(count.html());
-		var singleItemPrice = $(this).closest(item_t).find(singleItemPrice_t);
-		var singleItemPriceNumber = parseInt(singleItemPrice.html());
-		var singleSumm = $(this).closest(item_t).find($(singleSumm_t));
-		var headerCount = parseInt($(headerCalcCount_t).html());
-		var itemsCount = document.querySelectorAll(countNumber_t);
-
-		var itemsSumm = document.querySelectorAll(singleSumm_t);
-
-		countNumber--
-		if(countNumber <= 1){
-			countNumber = 1
-		}
-		count.html(countNumber);
-
-		//Итоговое количество
-		countArray.length = 0;
-		itemsCount.forEach(function(item, index, value){
-			var number = parseInt(item.textContent);
-			countArray.push(number);
-		});
-		sum = 0;
-		if(headerCalcCount){
-			for(var key in countArray) {
-				sum = sum + parseInt(countArray[key]);
-			}
-			if(!sum){
-				sum = 0;
-			}
-			headerCalcCount.textContent = sum;
-		}
-
-
-		var summ = countNumber * singleItemPriceNumber;
-		singleSumm.html(summ);
-
-
-		sumArray.length = 0;
-		itemsSumm.forEach(function(item, index, value){
-			var number = parseInt(item.textContent);
-			sumArray.push(number);
-		});
-		sum = 0;
-		if(total || headerCalcSumm){
-			for(var key in sumArray) {
-				sum = sum + parseInt(sumArray[key]);
-			}
-			if(!sum){
-				sum = 0;
-			}
-			total.textContent = sum;
-			headerCalcSumm.textContent = sum;
-			stepTotal.textContent = sum;
-		}
-	}
-
-	function onCloseItem(){
-		var singleSumm = $(this).closest(item_t).find(singleSumm_t);
-		var singleSummNumber = parseInt(singleSumm.html());
-		var headerCalcSumm = $(headerCalcSumm_t);
-		var headerCalcCount = $(headerCalcCount_t);
-		var count = parseInt($(this).closest(item_t).find(countNumber_t).html());
-		var headerCount = parseInt($(headerCalcCount_t).html());
-		var stepTotal = $(stepTotal_t);
-
-		var totalCount = headerCount - count;
-
-		var total = $(total_t);
-		var totalPrice = parseInt(total.html()) - singleSummNumber;
-
-		$(this).closest(item_t).addClass('animated slideOutLeft').hide(1000);
-		total.html(totalPrice);
-		stepTotal.html(totalPrice);
-		headerCalcSumm.html(totalPrice);
-		headerCalcCount.html(totalCount);
-	}
-
-	calcOnWindowLoad();
-
-	inc.on('click', countInc);
-
-	dec.on('click', countDec);
-
-	close.on('click', onCloseItem);
-}
-
-function stepValidation() {
-	var form = $('.step');
-
-	function stepForward(currentBox, formElem, inactiveBox, formElemNext){
-		$(formElem).change(function(){
-			$(formElem).each(function(index, item, array){
-				var elem = $(item);
-				if(elem.val() != ''){
-					$(this).addClass('success');
-					var stepSuccess = $(formElem + '.success');
-					for(var i = 0; i < stepSuccess.length; i++){
-						if(i >= 1){
-							$(inactiveBox).removeClass('inactive');
-							$(formElemNext).prop('disabled', false);
-							$(currentBox).addClass('active');
-						}else {
-							$(inactiveBox).addClass('inactive');
-							$(formElemNext).prop('disabled', 'disabled');
-							$(currentBox).removeClass('active');
-						}
-					}
-				}else {
-					$(this).removeClass('success');
-				}
-			});
-		});
-	}
-
-	stepForward('.stepBoxFirst', '.stepFirst', '.stepBoxSecond', '.stepSecond');
-	stepForward('.stepBoxSecond', '.stepSecond', '.stepBoxThird', '.stepThird');
-	stepForward('.stepBoxThird', '.stepThird', '.stepBoxFourth', '.stepFourth');
-
 }
 
 
@@ -611,28 +506,33 @@ window.onload = function() {
 
 	//other
 	phoneMask();
-	checkFix('.product__input');
-	okZoom();
+	accordion();
+	productHover();
+
+	//tabs
+	tabs();
 
 	//active toggle
 	active('.hamburger');
 	active('.hamburger__wrap');
 
+	//activeSiblings
+
+	//activeOther
+
+
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	//Animation+hide
-	animateHide('.hamburger__wrap', '.menu', 'slideInDown', 'slideOutUp', 'flex');
+	animateHide('.hamburger__wrap', '.nav', 'slideInLeft', 'slideOutLeft', 'block');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
-	popularSlider();
-
-	//calc
-	productCalc();
-	cartCalc();
-
-	//stepValidation
-	stepValidation();
+	mainSlider();
+	workSlider();
+	productSlider();
+	diplomaSlider();
+	brandSlider();
 
 	//loading
 	loading();
