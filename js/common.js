@@ -198,36 +198,58 @@ function popularSlider(animationIn, animationOut, elem, items, navContainer, nav
 	}
 }
 
+function brandSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+	var arrayPosition = [];
+	var arrayOffset = [];
+	animationIn = animationIn || 'zoomIn';
+	animationOut = animationOut || 'fadeOut';
+	elem = elem || '.brand__slider';
+	items = items || 5;
+	navContainer = navContainer || '';
+	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
+	if(elem){
+		$(elem).owlCarousel({
+			nav: true,
+			navContainer: navContainer,
+			navText: navText,
+			items: items,
+			animateIn: animationIn,
+			animateOut: animationOut,
+			loop: true,
+			URLhashListener: true,
+      startPosition: 'URLHash',
+			dots: true,
+			dotsEach: true,
+			dotsContainer: '',
+			navText: navText,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 2
+				},
+				1025: {
+					items: 5
+				}
+			}
+		});
+	}
+}
+
+
 //slick slider
 function sliderBrand() {
 	$('.brand__wrap').slick({
 		centerMode: true,
 		centerPadding: '0',
-		slidesToShow: 15,
+		slidesToShow: 4,
 		infinite: true,
 		focusOnSelect: true,
+		variableWidth: true,
 		prevArrow: '<button type="button" class="slick__arrow slick__prev slick-prev"><svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg></button>',
 		nextArrow: '<button type="button" class="slick__arrow slick__next slick-next"><svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg></button>',
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 7
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 3
-				}
-			},
-			{
-				breakpoint: 500,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
+		autoWidth: true
 	});
 }
 
@@ -599,6 +621,7 @@ window.onload = function() {
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
 	popularSlider();
+	brandSlider();
 
 	//calc
 	productCalc();

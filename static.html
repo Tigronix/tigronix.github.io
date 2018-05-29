@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title></title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+  <symbol id="icon-thumb-down" viewBox="0 0 32 32">
+  <title>thumb-down</title>
+  <path d="M20 4h-12c-1.107 0-2.053 0.667-2.453 1.627l-4.027 9.4c-0.12 0.307-0.187 0.627-0.187 0.973v2.667c0 1.467 1.2 2.667 2.667 2.667h8.413l-1.267 6.093-0.040 0.427c0 0.547 0.227 1.053 0.587 1.413l1.413 1.4 8.787-8.787c0.48-0.48 0.773-1.147 0.773-1.88v-13.333c0-1.467-1.2-2.667-2.667-2.667zM25.333 4v16h5.333v-16h-5.333z"></path>
+  </symbol>
+  <symbol id="icon-thumb-up" viewBox="0 0 32 32">
+  <title>thumb-up</title>
+  <path d="M1.333 28h5.333v-16h-5.333v16zM30.667 13.333c0-1.467-1.2-2.667-2.667-2.667h-8.413l1.267-6.093 0.040-0.427c0-0.547-0.227-1.053-0.587-1.413l-1.413-1.4-8.773 8.787c-0.493 0.48-0.787 1.147-0.787 1.88v13.333c0 1.467 1.2 2.667 2.667 2.667h12c1.107 0 2.053-0.667 2.453-1.627l4.027-9.4c0.12-0.307 0.187-0.627 0.187-0.973v-2.667z"></path>
+  </symbol>
+  <symbol id="icon-next" viewBox="0 0 32 32">
+  <title>next</title>
+  <path d="M11.453 22.12l6.107-6.12-6.107-6.12 1.88-1.88 8 8-8 8-1.88-1.88z"></path>
+  </symbol>
+  <symbol id="icon-prev" viewBox="0 0 32 32">
+  <title>prev</title>
+  <path d="M20.547 22.12l-6.107-6.12 6.107-6.12-1.88-1.88-8 8 8 8 1.88-1.88z"></path>
+  </symbol>
+  <symbol id="icon-star-border" viewBox="0 0 32 32">
+  <title>star-border</title>
+  <path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533l-5.013 3.027 1.333-5.707-4.427-3.84 5.84-0.507 2.267-5.373 2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 32 32">
+  <title>star</title>
+  <path d="M16 20.089l6.596 4.8-2.524-7.751 6.596-4.693h-8.089l-2.578-8-2.578 8h-8.089l6.596 4.693-2.524 7.751z"></path>
+  </symbol>
+  </defs>
+  </svg>
+
+  <section class="review">
+    <h1 class="h1">Отзывы</h1>
+    <p class="text">Оставьте, пожалуйста, свой отзыв, если Вы уже заказывали в пекарне «Традиции Осетии» осетинские пироги. Напишите несколько слов о том, что Вам понравилось? Возможно что-то не понравилось или у вас есть рекомендации, как нам стать лучше.</p>
+    <p class="text">Помогите другим посетителям данного сайта сделать правильный выбор, или нам стать лучше. Заранее благодарим за Вашу активность!</p>
+    <form action="" class="form-review">
+      <div class="form-review__header">Оставить отзыв</div>
+      <textarea placeholder="Ваш отзыв..." class="form-review__elem form-review__textarea"></textarea>
+      <input required placeholder="Ваше имя" type="text" class="form-review__elem form-review__input form-review__input--name">
+      <input required placeholder="Дата / номер заказа" type="text" class="form-review__elem form-review__input form-review__input--date">
+      <button type="submit" class="form-review__submit">Отправить</button>
+    </form>
+    <div class="review__content">
+      <div class="review__item">
+        <div class="review__img">О</div>
+        <div class="review__name">Оксана</div>
+        <div class="review__info">
+          <section class="rating">
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+          </section>
+          <div class="review__date">28 марта 2018</div>
+        </div>
+        <div class="review__title">Отзыв:</div>
+        <div class="review__desc">Заказала Пироги на День Рождения, в Москве живу давно, знаю наверное все пекарни, вынуждена признать, это были самые вкусные пироги за очень долгое время! Спасибо! Буду всем советовать только вас!</div>
+        <div class="review__rating">
+          <div class="review__rating-item">
+            <svg class="review__rating-icon review__rating-icon--like icon icon-thumb-up"><use xlink:href="#icon-thumb-up"></use></svg>
+            <span class="review__rating-count">0</span>
+          </div>
+          <div class="review__rating-item">
+
+            <svg class="review__rating-icon review__rating-icon--dislike icon icon-thumb-down"><use xlink:href="#icon-thumb-down"></use></svg>
+            <span class="review__rating-count">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="review__item review__item--answer">
+        <div class="review__img review__img--answer"><img src="img/review_1.png" alt=""></div>
+        <div class="review__name review__name--answer">Пекарня «Традиции Осетии»</div>
+        <div class="review__title">Ответ владельца:</div>
+        <div class="review__desc review__desc--answer">Заказала Пироги на День Рождения, в Москве живу давно, знаю наверное все пекарни, вынуждена признать, это были самые вкусные пироги за очень долгое время! Спасибо! Буду всем советовать только вас!</div>
+      </div>
+      <div class="review__item">
+        <div class="review__img review__img--blue">О</div>
+        <div class="review__name">Оксана</div>
+        <div class="review__info">
+          <section class="rating">
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+          </section>
+          <div class="review__date">28 марта 2018</div>
+        </div>
+        <div class="review__title">Отзыв:</div>
+        <div class="review__desc">Заказала Пироги на День Рождения, в Москве живу давно, знаю наверное все пекарни, вынуждена признать, это были самые вкусные пироги за очень долгое время! Спасибо! Буду всем советовать только вас!</div>
+        <div class="review__rating">
+          <div class="review__rating-item">
+            <svg class="review__rating-icon review__rating-icon--like icon icon-thumb-up"><use xlink:href="#icon-thumb-up"></use></svg>
+            <span class="review__rating-count">0</span>
+          </div>
+          <div class="review__rating-item">
+
+            <svg class="review__rating-icon review__rating-icon--dislike icon icon-thumb-down"><use xlink:href="#icon-thumb-down"></use></svg>
+            <span class="review__rating-count">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="review__item">
+        <div class="review__img review__img--red">О</div>
+        <div class="review__name">Оксана</div>
+        <div class="review__info">
+          <section class="rating">
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+            <div class="rating__item"><svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg></div>
+          </section>
+          <div class="review__date">28 марта 2018</div>
+        </div>
+        <div class="review__title">Отзыв:</div>
+        <div class="review__desc">Заказала Пироги на День Рождения, в Москве живу давно, знаю наверное все пекарни, вынуждена признать, это были самые вкусные пироги за очень долгое время! Спасибо! Буду всем советовать только вас!</div>
+        <div class="review__rating">
+          <div class="review__rating-item">
+            <svg class="review__rating-icon review__rating-icon--like icon icon-thumb-up"><use xlink:href="#icon-thumb-up"></use></svg>
+            <span class="review__rating-count">0</span>
+          </div>
+          <div class="review__rating-item">
+
+            <svg class="review__rating-icon review__rating-icon--dislike icon icon-thumb-down"><use xlink:href="#icon-thumb-down"></use></svg>
+            <span class="review__rating-count">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="brand">
+    <h2 class="h2">СРЕДИ НАШИХ КЛИЕНТОВ</h2>
+    <div class="brand__slider owl-carousel">
+      <div class="brand__slide"><div class="brand__img"><img src="img/brand_1.png" alt=""></div></div>
+      <div class="brand__slide"><div class="brand__img"><img src="img/brand_2.png" alt=""></div></div>
+      <div class="brand__slide"><div class="brand__img"><img src="img/brand_3.png" alt=""></div></div>
+      <div class="brand__slide"><div class="brand__img"><img src="img/brand_4.png" alt=""></div></div>
+      <div class="brand__slide"><div class="brand__img"><img src="img/brand_1.png" alt=""></div></div>
+      <div class="brand__slide"><div class="brand__img"><img src="img/brand_2.png" alt=""></div></div>
+      <div class="brand__slide"><div class="brand__img"><img src="img/brand_3.png" alt=""></div></div>
+      <div class="brand__slide"><div class="brand__img"><img src="img/brand_4.png" alt=""></div></div>
+    </div>
+  </section>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>
