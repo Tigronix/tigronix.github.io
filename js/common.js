@@ -2,7 +2,7 @@
 //templates
 new Vue({
 		el: '#global-svg',
-		template: '<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-next" viewBox="0 0 32 32"><title>next</title><path d="M11.453 22.12l6.107-6.12-6.107-6.12 1.88-1.88 8 8-8 8-1.88-1.88z"></path></symbol><symbol id="icon-prev" viewBox="0 0 32 32"><title>prev</title><path d="M20.547 22.12l-6.107-6.12 6.107-6.12-1.88-1.88-8 8 8 8 1.88-1.88z"></path></symbol><symbol id="icon-down" viewBox="0 0 32 32"><title>down</title><path d="M9.88 11.453l6.12 6.107 6.12-6.107 1.88 1.88-8 8-8-8 1.88-1.88z"></path></symbol><symbol id="icon-access-time" viewBox="0 0 32 32"><title>access-time</title><path d="M15.987 2.667c-7.36 0-13.32 5.973-13.32 13.333s5.96 13.333 13.32 13.333c7.373 0 13.347-5.973 13.347-13.333s-5.973-13.333-13.347-13.333zM16 26.667c-5.893 0-10.667-4.773-10.667-10.667s4.773-10.667 10.667-10.667 10.667 4.773 10.667 10.667-4.773 10.667-10.667 10.667z"></path><path d="M16.667 9.333h-2v8l7 4.2 1-1.64-6-3.56z"></path></symbol><symbol id="icon-check-box" viewBox="0 0 32 32"><title>check-box</title><path d="M25.333 4h-18.667c-1.48 0-2.667 1.2-2.667 2.667v18.667c0 1.467 1.187 2.667 2.667 2.667h18.667c1.48 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.187-2.667-2.667-2.667zM13.333 22.667l-6.667-6.667 1.88-1.88 4.787 4.773 10.12-10.12 1.88 1.893-12 12z"></path></symbol><symbol id="icon-checkbox-outline" viewBox="0 0 32 32"><title>checkbox-outline</title><path d="M25.333 6.667v18.667h-18.667v-18.667h18.667zM25.333 4h-18.667c-1.467 0-2.667 1.2-2.667 2.667v18.667c0 1.467 1.2 2.667 2.667 2.667h18.667c1.467 0 2.667-1.2 2.667-2.667v-18.667c0-1.467-1.2-2.667-2.667-2.667z"></path></symbol><symbol id="icon-filter-list" viewBox="0 0 32 32"><title>filter-list</title><path d="M13.333 24h5.333v-2.667h-5.333v2.667zM4 8v2.667h24v-2.667h-24zM8 17.333h16v-2.667h-16v2.667z"></path></symbol><symbol id="icon-nature-people" viewBox="0 0 32 32"><title>nature-people</title><path d="M29.56 12.227c0-5.16-4.173-9.333-9.333-9.333s-9.333 4.173-9.333 9.333c0 4.627 3.36 8.453 7.773 9.187v5.253h-10.667v-4h1.333v-5.333c0-0.733-0.6-1.333-1.333-1.333h-4c-0.733 0-1.333 0.6-1.333 1.333v5.333h1.333v6.667h21.333v-2.667h-4v-5.173c4.627-0.547 8.227-4.48 8.227-9.267zM6 14.667c1.107 0 2-0.893 2-2s-0.893-2-2-2-2 0.893-2 2 0.893 2 2 2z"></path></symbol><symbol id="icon-location" viewBox="0 0 32 32"><title>location</title><path d="M16 2.667c-5.16 0-9.333 4.173-9.333 9.333 0 7 9.333 17.333 9.333 17.333s9.333-10.333 9.333-17.333c0-5.16-4.173-9.333-9.333-9.333zM16 15.333c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333-1.493 3.333-3.333 3.333z"></path></symbol><symbol id="icon-shopping-basket" viewBox="0 0 32 32"><title>shopping-basket</title><path d="M22.947 12l-5.84-8.747c-0.253-0.373-0.68-0.56-1.107-0.56s-0.853 0.187-1.107 0.573l-5.84 8.733h-6.387c-0.733 0-1.333 0.6-1.333 1.333 0 0.12 0.013 0.24 0.053 0.36l3.387 12.36c0.307 1.12 1.333 1.947 2.56 1.947h17.333c1.227 0 2.253-0.827 2.573-1.947l3.387-12.36 0.040-0.36c0-0.733-0.6-1.333-1.333-1.333h-6.387zM12 12l4-5.867 4 5.867h-8zM16 22.667c-1.467 0-2.667-1.2-2.667-2.667s1.2-2.667 2.667-2.667 2.667 1.2 2.667 2.667-1.2 2.667-2.667 2.667z"></path></symbol><symbol id="icon-star-border" viewBox="0 0 32 32"><title>star-border</title><path d="M29.333 12.32l-9.587-0.827-3.747-8.827-3.747 8.84-9.587 0.813 7.28 6.307-2.187 9.373 8.24-4.973 8.24 4.973-2.173-9.373 7.267-6.307zM16 20.533l-5.013 3.027 1.333-5.707-4.427-3.84 5.84-0.507 2.267-5.373 2.28 5.387 5.84 0.507-4.427 3.84 1.333 5.707-5.027-3.040z"></path></symbol><symbol id="icon-star" viewBox="0 0 32 32"><title>star</title><path d="M16 20.089l6.596 4.8-2.524-7.751 6.596-4.693h-8.089l-2.578-8-2.578 8h-8.089l6.596 4.693-2.524 7.751z"></path></symbol></defs></svg>'
+		template: ''
 	})
 
 function scrollEffects() {
@@ -12,21 +12,6 @@ function scrollEffects() {
 	  }
 	);
 	wow.init();
-}
-
-function loading() {
-	$('.loading').fadeOut(1500);
-}
-
-//функция помощник: siblings
-var getSiblings = function(elem) {
-	var siblings = [];
-	var sibling = elem.parentNode.firstChild;
-	for(; sibling; sibling = sibling.nextSibling) {
-		if(sibling.nodeType !== 1 || sibling === elem) continue;
-		siblings.push(sibling);
-	}
-	return siblings;
 }
 
 //active
@@ -46,74 +31,6 @@ function activeSiblings(elem) {
 		$(this).addClass('active').siblings().removeClass('active');
 	});
 }
-
-//active other
-function activerOther(elem, target) {
-	$(elem).on('click', function(){
-		$(target).removeClass('menu__hide').toggleClass('active');
-	});
-}
-
-//bodyOverflow
-function bodyOverflow(elem) {
-	$(window).on('resize || load', function(){
-		var btn = $(elem);
-		var body = $('body');
-		var windowWidth = $(this).width();
-
-		btn.on('click', function(){
-			if(windowWidth <= 1024){
-				body.toggleClass('overflow');
-			}
-		});
-	});
-}
-
-//toggleClass on window scroll
-function changeClassOnScroll(){
-	$(window).scroll(function() {
-    var elem = $('.menu');
-    var height = elem.innerHeight();
-    var top = $(this).scrollTop();
-		var windowWidth = $(window).width();
-
-    if (top > 50) {
-			$(elem).addClass('scroll');
-			$('.page-header').addClass('fixed');
-			$('.scroll').on('mouseleave', function(){
-				$('.scroll').removeClass('slideInDown').addClass('slideOutUp');
-				setTimeout(function(){
-					$('.scroll').removeClass('slideOutUp');
-				}, 1000);
-			});
-    } else {
-			$(elem).removeClass('scroll');
-			$('.page-header').removeClass('fixed');
-    }
-
-		if(windowWidth <= 1024){
-			if (top > 50) {
-				$(elem).removeClass('scroll');
-	      $(pageTop).show();
-				$(pageBot).removeClass('scroll');
-	    }
-		}
-  });
-}
-
-//Universal Tabs
-function tabs() {
-	$(document).on('click', '[data-tabclass]', function() {
-		var content = $(this).attr('data-tabclass');
-		var number = $(this).attr('data-tabnumber');
-		$('[data-tabclass="' + content + '"]').each(function() {
-			if ($(this).attr('data-tabnumber') == number) {
-				$(this).addClass('active').siblings().removeClass('active');
-			}
-		});
-		$('.' + content + ' > [data-tabnumber="' + number + '"]').show().addClass('active animated').removeClass('hide').siblings().hide().removeClass('active animated');
-	});
-};
 
 //animate
 function animate(button, content, animationIn, animationOut, hideTiming) {
@@ -146,6 +63,21 @@ function animateHide(button, content, animationIn, animationOut, display, hideTi
 		} else {
 			$(content).removeClass(animationOut).addClass(animationIn + ' animated');
 		}
+	});
+}
+
+//bodyOverflow
+function bodyOverflow(elem) {
+	$(window).on('resize || load', function(){
+		var btn = $(elem);
+		var body = $('body');
+		var windowWidth = $(this).width();
+
+		btn.on('click', function(){
+			if(windowWidth <= 1024){
+				body.toggleClass('overflow');
+			}
+		});
 	});
 }
 
@@ -198,63 +130,6 @@ function popularSlider(animationIn, animationOut, elem, items, navContainer, nav
 	}
 }
 
-function brandSlider(animationIn, animationOut, elem, items, navContainer, navText) {
-	var arrayPosition = [];
-	var arrayOffset = [];
-	animationIn = animationIn || 'zoomIn';
-	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.brand__slider';
-	items = items || 5;
-	navContainer = navContainer || '';
-	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
-	if(elem){
-		$(elem).owlCarousel({
-			nav: true,
-			navContainer: navContainer,
-			navText: navText,
-			items: items,
-			animateIn: animationIn,
-			animateOut: animationOut,
-			loop: true,
-			URLhashListener: true,
-      startPosition: 'URLHash',
-			dots: true,
-			dotsEach: true,
-			dotsContainer: '',
-			navText: navText,
-			responsive: {
-				0: {
-					items: 1
-				},
-				768: {
-					items: 2
-				},
-				1025: {
-					items: 5
-				}
-			}
-		});
-	}
-}
-
-
-//slick slider
-function sliderBrand() {
-	$('.brand__wrap').slick({
-		centerMode: true,
-		centerPadding: '0',
-		slidesToShow: 4,
-		infinite: true,
-		focusOnSelect: true,
-		variableWidth: true,
-		prevArrow: '<button type="button" class="slick__arrow slick__prev slick-prev"><svg class="icon icon-keyboard-arrow-left"><use xlink:href="#icon-keyboard-arrow-left"></use></svg></button>',
-		nextArrow: '<button type="button" class="slick__arrow slick__next slick-next"><svg class="icon icon-keyboard-arrow-right"><use xlink:href="#icon-keyboard-arrow-right"></use></svg></button>',
-		autoWidth: true
-	});
-}
-
-
-//Маска для телефона
 function phoneMask() {
 	if($('*').is('.formTel')){
 		$(".formTel").mask("+7(999)999-99-99", {
@@ -263,32 +138,10 @@ function phoneMask() {
 	}
 }
 
-function accordion() {
-  var allPanels = $('.accordion .accContent').hide();
-	var btn = $('.accBtn');
-	var btnActive = $('.accBtn.active');
-	$('.accordion .accContent.active').show();
-
-  btn.click(function() {
-    $(this).parent().siblings().find('.accContent').slideUp();
-    $(this).parent().siblings().find('.accBtn').removeClass('active');
-    $(this).next().slideToggle();
-		$(this).toggleClass('active');
-	  });
-}
-
 function checkFix() {
 	$('.checkFixElem').on('click', function(){
 		$(this).closest('.checkFixBox').siblings().find('.checkFixElem').prop('checked', false);
 	});
-}
-
-function map() {
-	$('.img-map').mapster({
-    fillColor: 'fc5900',
-    fillOpacity: 0.6,
-		fadeDuration: 400
-  });
 }
 
 function menuHover() {
@@ -296,31 +149,6 @@ function menuHover() {
 
 	link.on('mouseenter', function(){
 		$('.scroll').addClass('active animated slideInDown');
-	});
-
-}
-
-function checkbox(item) {
-	var elem = $(item);
-	var label = $(item).closest('label');
-
-	elem.on('click', function(){
-		$(this).closest('label').toggleClass('active');
-		$(this).closest('label').find('img').prop('src', 'img/radius--white.png');
-		$(this).closest('.checkFixBox').siblings().find('label').removeClass('active');
-		$(this).closest('.checkFixBox').siblings().find('img').prop('src', 'img/radius.png');
-	});
-}
-
-function mobileTabScroll() {
-	$(window).on('resize || load', function(){
-		var windowWidth = $(this).width();
-
-			if(windowWidth <= 1024){
-				$('.work__nav-item').attr('href', '#work__content');
-			}else {
-				$('.work__nav-item').removeAttr('href');
-			}
 	});
 }
 
@@ -601,17 +429,10 @@ window.onload = function() {
 
 	//other
 	phoneMask();
-	checkFix('.product__input');
-	okZoom();
-	checkFix();
 
 	//active toggle
 	active('.hamburger');
 	active('.hamburger__wrap');
-
-	//active siblings
-	activeSiblings('.calcCheckbox');
-
 
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
@@ -620,8 +441,7 @@ window.onload = function() {
 	animateHide('.hamburger__wrap', '.menu', 'slideInDown', 'slideOutUp', 'block');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
-	popularSlider();
-	brandSlider();
+
 
 	//calc
 	productCalc();
@@ -632,4 +452,3 @@ window.onload = function() {
 
 //other
 bodyOverflow('.hamburger');
-mobileTabScroll();
