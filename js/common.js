@@ -82,12 +82,12 @@ function bodyOverflow(elem) {
 }
 
 //owl-slider
-function popularSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+function productSlider(animationIn, animationOut, elem, items, navContainer, navText) {
 	var arrayPosition = [];
 	var arrayOffset = [];
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.popular__slider';
+	elem = elem || '.product__slider';
 	items = items || 5;
 	navContainer = navContainer || '';
 	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
@@ -106,15 +106,6 @@ function popularSlider(animationIn, animationOut, elem, items, navContainer, nav
 			dotsEach: true,
 			dotsContainer: '',
 			navText: navText,
-			onInitialized: function(){
-				var elem = $('.popular__slider .popular__img');
-				var target = $('.popular__slider .owl-nav');
-
-				var elemHeight = elem.innerHeight() / 2;
-				var elemPosition = elem.position();
-
-				target.css('top', elemPosition.top + elemHeight);
-			},
 			responsive: {
 				0: {
 					items: 1
@@ -122,7 +113,10 @@ function popularSlider(animationIn, animationOut, elem, items, navContainer, nav
 				768: {
 					items: 2
 				},
-				1025: {
+				1024: {
+					items: 3
+				},
+				1280: {
 					items: 5
 				}
 			}
@@ -434,6 +428,9 @@ window.onload = function() {
 	active('.hamburger');
 	active('.hamburger__wrap');
 
+	//active siblings
+	activeSiblings('.product__weight-item');
+
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
@@ -441,13 +438,10 @@ window.onload = function() {
 	animateHide('.hamburger__wrap', '.menu', 'slideInDown', 'slideOutUp', 'block');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
-
+	productSlider();
 
 	//calc
 	productCalc();
-
-	//loading
-	loading();
 };
 
 //other

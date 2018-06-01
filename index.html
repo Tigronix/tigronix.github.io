@@ -15,40 +15,48 @@
 		<global-svg></global-svg>
 	</div>
 	<header class="page-header">
-		<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-		<div class="page-header__buy">
-			<div class="page-header__buy-item">
-				<img src="img/cash.png" alt="">
-				<div class="page-header__buy-desc">Наличными<br /> курьеру</div>
-			</div>
-			<div class="page-header__buy-item">
-				<img src="img/card.png" alt="">
-				<div class="page-header__buy-desc">Перевод <br /> на карту</div>
-			</div>
-			<div class="page-header__buy-item">
-				<img src="img/nout.png" alt="">
-				<div class="page-header__buy-desc">Онлайн <br /> оплата</div>
+		<div class="hamburger__wrap">
+			<div class="hamburger">
+				<div class="hamburger__line animated hamburger__line1"></div>
+				<div class="hamburger__line animated hamburger__line2"></div>
+				<div class="hamburger__line animated hamburger__line3"></div>
 			</div>
 		</div>
-		<div class="page-header__delivery">
-			<img src="img/delivery.png" alt="">
-			Доставка горячих пирогов<br />
-			ежедневно с 9:00 до 21:00
-		</div>
-		<div class="page-header__cart">
-			<img src="img/cart.png" alt="">
-			<div class="page-header__cart-count">
-				<span class="calcCartCount">12</span> товаров
+		<div class="page-header__wrap">
+			<a href="#" class="logo"><img src="img/logo.jpg" alt=""></a>
+			<div class="page-header__buy">
+				<div class="page-header__buy-title">Варианты оплаты:</div>
+				<div class="page-header__buy-item">
+					<img src="img/cash.png" alt="">
+					<div class="page-header__buy-desc">Наличными<br /> курьеру</div>
+				</div>
+				<div class="page-header__buy-item">
+					<img src="img/card.png" alt="">
+					<div class="page-header__buy-desc">Перевод <br /> на карту</div>
+				</div>
+				<div class="page-header__buy-item">
+					<img src="img/nout.png" alt="">
+					<div class="page-header__buy-desc">Онлайн <br /> оплата</div>
+				</div>
 			</div>
-			<div class="page-header__cart-price">
-				<span class="calcCart">5250</span> руб.
+			<div class="page-header__delivery">
+				<img src="img/delivery.png" alt="">
+				Доставка горячих пирогов<br />
+				ежедневно с 9:00 до 21:00
 			</div>
+			<div class="page-header__cart">
+				<img src="img/cart.png" alt="">
+				<div class="page-header__cart-count">
+					<span class="calcCartCount">0</span> товаров
+				</div>
+				<div class="page-header__cart-price">
+					<span class="calcCart">0</span> руб.
+				</div>
+			</div>
+			<a href="tel:+74952004520" class="page-header__phone"><span>+7(495)</span>200-45-20</a>
 		</div>
-		<a href="tel:+74952004520" class="page-header__phone">+74952004520</a>
-	</header>
-	<main class="main overflow">
 		<section class="menu">
-			<a href="#" class="menu__link">Осетинские пироги</a>
+			<a href="#" class="menu__link menu__link--title">Осетинские пироги</a>
 			<a href="#" class="menu__link">с мясом</a>
 			<a href="#" class="menu__link">с капустой</a>
 			<a href="#" class="menu__link">с картошкой</a>
@@ -58,30 +66,40 @@
 			<a href="#" class="menu__link">с луком</a>
 			<a href="#" class="menu__link">сладкие</a>
 		</section>
+	</header>
+	<main class="main overflow">
 		<section class="pie">
 			<h1 class="h1">
 				ОСЕТИНСКИЕ ПИРОГИ С БЕСПЛАТНОЙ<br />
 				ДОСТАВКОЙ В МОСКВЕ
 			</h1>
 		</section>
-		<section class="product">
+		<section class="product product--no-pd">
 			<div class="product__wrap">
 				<div class="product__item calcItem">
 					<div class="product__img"><img src="img/product_1.png" alt=""></div>
 					<div class="product__name">Осетинский пирог<br /> с мясом</div>
 					<div class="product__weight">
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">410</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">660</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">710</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">780</span> руб.
-						</div>
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
 					</div>
 					<div class="product__buy">
 						<div class="product__count">
@@ -89,9 +107,149 @@
 							<div class="product__count-number calcOutput">1</div>
 							<button class="product__btn calcBtn calcInc" type="button">+</button>
 						</div>
-						<div class="product__price"><span class="calcNumber">3710</span> руб.</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
 					</div>
-					<button type="button" class="product__submit calcSubmit">В корзину</button>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
 				</div>
 			</div>
 		</section>
@@ -100,24 +258,32 @@
 			<p class="text">Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-45 минут, а доставка от 30 минут до часа! Вы получите их еще горячими, только с печи! Условия доставки: при заказе от 1000 рублей доставка бесплатно. А еще у нас выгодная акция - в день рождения осетинские пироги предлагаются со скидкой и бесплатной доставкой по Москве. Скажите при оформлении заказа на осетинские пироги с доставкой в Москве что у вас день рождения!</p>
 		</section>
 		<section class="product">
-			<h2 class="h2">Осетинские пироги с мясом</h2>
+			<h2 class="h2 h2--product">Осетинские пироги с мясом</h2>
 			<div class="product__wrap">
 				<div class="product__item calcItem">
 					<div class="product__img"><img src="img/product_1.png" alt=""></div>
 					<div class="product__name">Осетинский пирог<br /> с мясом</div>
 					<div class="product__weight">
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">410</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">660</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">710</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">780</span> руб.
-						</div>
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
 					</div>
 					<div class="product__buy">
 						<div class="product__count">
@@ -125,31 +291,179 @@
 							<div class="product__count-number calcOutput">1</div>
 							<button class="product__btn calcBtn calcInc" type="button">+</button>
 						</div>
-						<div class="product__price"><span class="calcNumber">3710</span> руб.</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
 					</div>
-					<button type="button" class="product__submit calcSubmit">В корзину</button>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
 				</div>
 			</div>
 		</section>
 		<section class="product">
-			<h2 class="h2">Осетинские пироги с сыром</h2>
+			<h2 class="h2 h2--product">Осетинские пироги с мясом</h2>
 			<div class="product__wrap">
 				<div class="product__item calcItem">
 					<div class="product__img"><img src="img/product_1.png" alt=""></div>
 					<div class="product__name">Осетинский пирог<br /> с мясом</div>
 					<div class="product__weight">
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">410</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">660</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">710</span> руб.
-						</div>
-						<div class="product__weight-item">
-							0,6 кг <span class="calcWeightNumber">780</span> руб.
-						</div>
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
 					</div>
 					<div class="product__buy">
 						<div class="product__count">
@@ -157,32 +471,173 @@
 							<div class="product__count-number calcOutput">1</div>
 							<button class="product__btn calcBtn calcInc" type="button">+</button>
 						</div>
-						<div class="product__price"><span class="calcNumber">3710</span> руб.</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
 					</div>
-					<button type="button" class="product__submit calcSubmit">В корзину</button>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__weight">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">410</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">660</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">710</span>
+							 <span class="product__value">руб.</span>
+						</button>
+						<button type="button" class="product__weight-item calcCheckbox">
+							0,6 <span class="product__value">кг</span>
+							<span class="calcWeightNumber">780</span>
+							 <span class="product__value">руб.</span>
+						</button>
+					</div>
+					<div class="product__buy">
+						<div class="product__count">
+							<button class="product__btn calcBtn calcDec" type="button">-</button>
+							<div class="product__count-number calcOutput">1</div>
+							<button class="product__btn calcBtn calcInc" type="button">+</button>
+						</div>
+						<div class="product__price"><span data-price="410" class="calcNumber">410</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSubmit">В корзину</button>
 				</div>
 			</div>
 		</section>
 		<section class="fill">
 			<h2 class="h2">Выбирайте начинки для пирогов на любой вкус:</h2>
 			<div class="fill__wrap">
-				<a href="#" class="fill__item">С мясом</a>
-				<a href="#" class="fill__item">С курицей</a>
-				<a href="#" class="fill__item">С грибами</a>
-				<a href="#" class="fill__item">С зеленью</a>
-				<a href="#" class="fill__item">С перцем</a>
-				<a href="#" class="fill__item">С капустой</a>
-				<a href="#" class="fill__item">С рыбой</a>
-				<a href="#" class="fill__item">С картошкой</a>
-				<a href="#" class="fill__item">С луком</a>
-				<a href="#" class="fill__item">Сладкие</a>
+				<a href="#" class="fill__item"><span>С мясом</span></a>
+				<a href="#" class="fill__item"><span>С курицей</span></a>
+				<a href="#" class="fill__item"><span>С грибами</span></a>
+				<a href="#" class="fill__item"><span>С зеленью</span></a>
+				<a href="#" class="fill__item"><span>С перцем</span></a>
+				<a href="#" class="fill__item"><span>С капустой</span></a>
+				<a href="#" class="fill__item"><span>С рыбой</span></a>
+				<a href="#" class="fill__item"><span>С картошкой</span></a>
+				<a href="#" class="fill__item"><span>С луком</span></a>
+				<a href="#" class="fill__item"><span>Сладкие</span></a>
 			</div>
 		</section>
 		<section class="sale">
 			<div class="sale__header">У ВАС ДЕНЬ РОЖДЕНИЯ? <br /> АКЦИЯ ДНЯ!</div>
 			<div class="sale__wrap">
 				<div class="sale__phone">
-					<img src="img/logo.png" alt="">
+					<div class="sale__phone-bg"></div>
+					<img width="69" src="img/logo.jpg" alt="">
 					<div class="sale__phone-desc sale__phone-desc--t1">ОСЕТИНСКИЕ <br /> ПИРОГИ</div>
 					<div class="sale__phone-desc sale__phone-desc--t2">
 						АКЦИЯ!<br />
@@ -192,10 +647,10 @@
 					<div class="sale__phone-desc sale__phone-desc--t3">10%</div>
 				</div>
 				<form action="" class="form">
-					<input type="text" class="form__elem form__input" placeholder="Ваше имя">
-					<input type="tel" class="form__elem form__input formTel" placeholder="Введите телефон">
+					<input type="text" class="form__elem form__input form__input--name" placeholder="Ваше имя">
+					<input type="tel" class="form__elem form__input form__input--phone formTel" placeholder="Введите телефон">
 					<label class="form__terms checkbox__label">
-						<input type="checkbox" class="checkbox" checked>
+						<input class="checkbox" type="checkbox" class="checkbox" checked>
 						<i class="checkbox__icon"></i>
 						Скидка в день рождения -10%
 					</label>
@@ -203,17 +658,104 @@
 				</form>
 			</div>
 		</section>
-		<section class="popular">
-			<h2 class="h2 h2--red">Здесь мы собрали для вас самые популярные пироги</h2>
-			<div class="popular__slider">
-				<div class="popular__slide calcSingleItem">
-					<div class="popular__img"><img src="img/prod_1.png" alt=""></div>
-					<div class="popular__name"></div>
-					<div class="popular__buy">
-						<div class="popular__weight"></div>
-						<div class="popular__price"><span class="calcNumber"></span></div>
+		<section class="product product--slider">
+			<h2 class="h2 h2--product">Здесь мы собрали для вас самые популярные пироги</h2>
+			<div class="product__wrap product__slider product__wrap--slider owl-carousel">
+				<div class="product__item calcSingleItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__single-buy">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span>410</span><span class="product__value">руб.</span>
+						</button>
+						<div class="product__price"><span class="calcNumber">820</span> руб.</div>
 					</div>
-					<button type="submit" class="popular__submit calcSingleSubmit">В корзину</button>
+					<button type="button" class="btn product__submit calcSingleSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcSingleItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__single-buy">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span>410</span><span class="product__value">руб.</span>
+						</button>
+						<div class="product__price"><span class="calcNumber">820</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSingleSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcSingleItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__single-buy">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span>410</span><span class="product__value">руб.</span>
+						</button>
+						<div class="product__price"><span class="calcNumber">820</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSingleSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcSingleItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__single-buy">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span>410</span><span class="product__value">руб.</span>
+						</button>
+						<div class="product__price"><span class="calcNumber">820</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSingleSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcSingleItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__single-buy">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span>410</span><span class="product__value">руб.</span>
+						</button>
+						<div class="product__price"><span class="calcNumber">820</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSingleSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcSingleItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__single-buy">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span>410</span><span class="product__value">руб.</span>
+						</button>
+						<div class="product__price"><span class="calcNumber">820</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSingleSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcSingleItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__single-buy">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span>410</span><span class="product__value">руб.</span>
+						</button>
+						<div class="product__price"><span class="calcNumber">820</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSingleSubmit">В корзину</button>
+				</div>
+				<div class="product__item calcSingleItem">
+					<div class="product__img"><img src="img/product_1.png" alt=""></div>
+					<div class="product__name">Осетинский пирог<br /> с мясом</div>
+					<div class="product__single-buy">
+						<button type="button" class="product__weight-item calcCheckbox active">
+							0,6 <span class="product__value">кг</span>
+							<span>410</span><span class="product__value">руб.</span>
+						</button>
+						<div class="product__price"><span class="calcNumber">820</span> руб.</div>
+					</div>
+					<button type="button" class="btn product__submit calcSingleSubmit">В корзину</button>
 				</div>
 			</div>
 		</section>
@@ -221,7 +763,7 @@
 	<footer class="page-footer">
 		<div class="page-footer__content">
 			<div class="page-footer__item">
-				<a href="#" class="page-footer__title">Пироги на день рождения</a>
+				<a href="#" class="page-footer__title"><span>Пироги на день рождения</span></a>
 				<a href="#" class="page-footer__link">Пироги с мясом</a>
 				<a href="#" class="page-footer__link">Пироги с картошкой</a>
 				<a href="#" class="page-footer__link">Пироги с капустой</a>
@@ -230,7 +772,7 @@
 				<a href="#" class="page-footer__link">Пироги с кабачком</a>
 			</div>
 			<div class="page-footer__item">
-				<a href="#" class="page-footer__title">Пироги на свадьбу</a>
+				<a href="#" class="page-footer__title"><span>Пироги на свадьбу</span></a>
 				<a href="#" class="page-footer__link">Пироги с мясом</a>
 				<a href="#" class="page-footer__link">Пироги с картошкой</a>
 				<a href="#" class="page-footer__link">Пироги с капустой</a>
@@ -239,7 +781,7 @@
 				<a href="#" class="page-footer__link">Пироги с кабачком</a>
 			</div>
 			<div class="page-footer__item">
-				<a href="#" class="page-footer__title">Пироги на новый год</a>
+				<a href="#" class="page-footer__title"><span>Пироги на новый год</span></a>
 				<a href="#" class="page-footer__link">Пироги с мясом</a>
 				<a href="#" class="page-footer__link">Пироги с картошкой</a>
 				<a href="#" class="page-footer__link">Пироги с капустой</a>
@@ -249,7 +791,7 @@
 			</div>
 		</div>
 		<div class="page-footer__contact">
-			<a href="tel:+74952004520" class="page-footer__phone">+7 (495) 200-45-20</a>
+			<a href="tel:+74952004520" class="page-footer__phone"><span>+7 (495)</span> 200-45-20</a>
 			<div class="page-footer__delivery">
 				Доставка горячих пирогов <br />
 				ежедневно с 9:00 до 21:00
@@ -259,10 +801,12 @@
 		</div>
 		<div class="page-footer__bottom">
 			<div class="page-footer__copy">© 2018 Доставка осетинских пирогов</div>
-			<div class="page-footer__by">
-				<div>Создание и продвижения сайтов</div>
+			<a href="#" class="page-footer__by">
+				<span>Создание и продвижение сайтов</span>
 				<img src="img/es-studio.png" alt="">
-			</div>
+			</a>
 		</div>
 	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
 </html>
