@@ -4826,6 +4826,13 @@ section {
     margin-bottom: 20px;
     padding: 15px 10px;
   }
+  .product__item--popular .product__price {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .product__item--popular .product__weight-item {
+    margin: 0 auto;
+  }
   .product__weight-item {
     display: block;
     text-align: center;
