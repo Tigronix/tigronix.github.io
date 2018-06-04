@@ -4841,6 +4841,16 @@ section {
   .product__weight-item span {
     margin: 0 !important;
   }
+  .product__submit {
+    text-align: center;
+    display: block;
+    line-height: 50px;
+  }
+  .product__btn {
+    text-align: center;
+    line-height: 45px;
+    display: block;
+  }
 }
 
 .text-box {
