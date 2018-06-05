@@ -1,9 +1,4 @@
 "use strict"
-//templates
-new Vue({
-		el: '#global-svg',
-		template: ''
-	})
 
 function scrollEffects() {
 	var wow = new WOW(
@@ -82,13 +77,13 @@ function bodyOverflow(elem) {
 }
 
 //owl-slider
-function productSlider(animationIn, animationOut, elem, items, navContainer, navText) {
+function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 	var arrayPosition = [];
 	var arrayOffset = [];
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.product__slider';
-	items = items || 5;
+	elem = elem || '.slider';
+	items = items || 1;
 	navContainer = navContainer || '';
 	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
 	if(elem){
@@ -105,21 +100,7 @@ function productSlider(animationIn, animationOut, elem, items, navContainer, nav
 			dots: true,
 			dotsEach: true,
 			dotsContainer: '',
-			navText: navText,
-			responsive: {
-				0: {
-					items: 1
-				},
-				768: {
-					items: 2
-				},
-				1024: {
-					items: 3
-				},
-				1280: {
-					items: 5
-				}
-			}
+			navText: navText
 		});
 	}
 }
@@ -435,10 +416,10 @@ window.onload = function() {
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	//Animation+hide
-	animateHide('.hamburger__wrap', '.menu', 'slideInDown', 'slideOutUp', 'block');
+	animateHide('.hamburger__wrap', '.nav', 'slideInDown', 'slideOutUp', 'block');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
-	productSlider();
+	slider();
 
 	//calc
 	productCalc();
