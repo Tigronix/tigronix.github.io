@@ -397,6 +397,37 @@ function cartCalc() {
 	close.on('click', onCloseItem);
 }
 
+//toggleClass on window scroll
+function changeClassOnScroll(){
+	$(window).scroll(function() {
+    var elem = $('.menu');
+    var height = elem.innerHeight();
+    var top = $(this).scrollTop();
+		var windowWidth = $(window).width();
+
+    if (top > 50) {
+			$(elem).addClass('scroll');
+			$('.page-header').addClass('fixed');
+			$('.scroll').on('mouseleave', function(){
+				$('.scroll').removeClass('slideInDown').addClass('slideOutUp');
+				setTimeout(function(){
+					$('.scroll').removeClass('slideOutUp');
+				}, 1000);
+			});
+    } else {
+			$(elem).removeClass('scroll');
+			$('.page-header').removeClass('fixed');
+    }
+
+		if(windowWidth <= 1024){
+			if (top > 50) {
+				$(elem).removeClass('scroll');
+	      $(pageTop).show();
+				$(pageBot).removeClass('scroll');
+	    }
+		}
+  });
+}
 
 window.onload = function() {
 	//scrollEvents
@@ -410,7 +441,7 @@ window.onload = function() {
 	active('.hamburger__wrap');
 
 	//active siblings
-	activeSiblings('.product__weight-item');
+	activeSiblings('.product__weight-btn');
 
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
