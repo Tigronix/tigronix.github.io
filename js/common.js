@@ -1,4 +1,9 @@
 "use strict"
+//templates
+new Vue({
+		el: '#global-svg',
+		template: ''
+	})
 
 function scrollEffects() {
 	var wow = new WOW(
@@ -77,13 +82,13 @@ function bodyOverflow(elem) {
 }
 
 //owl-slider
-function slider(animationIn, animationOut, elem, items, navContainer, navText) {
+function productSlider(animationIn, animationOut, elem, items, navContainer, navText) {
 	var arrayPosition = [];
 	var arrayOffset = [];
 	animationIn = animationIn || 'zoomIn';
 	animationOut = animationOut || 'fadeOut';
-	elem = elem || '.slider';
-	items = items || 1;
+	elem = elem || '.product__slider';
+	items = items || 5;
 	navContainer = navContainer || '';
 	navText = navText || ['<svg class="icon icon-prev"><use xlink:href="#icon-prev"></use></svg>', '<svg class="icon icon-next"><use xlink:href="#icon-next"></use></svg>'];
 	if(elem){
@@ -100,7 +105,21 @@ function slider(animationIn, animationOut, elem, items, navContainer, navText) {
 			dots: true,
 			dotsEach: true,
 			dotsContainer: '',
-			navText: navText
+			navText: navText,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 2
+				},
+				1024: {
+					items: 3
+				},
+				1280: {
+					items: 5
+				}
+			}
 		});
 	}
 }
@@ -256,7 +275,7 @@ function cartCalc() {
 
 				total.textContent = sum;
 				headerCalcSumm.textContent = sum;
-				stepTotal.textContent = sum;
+				//stepTotal.textContent = sum;
 			}
 
 			//Итоговое количество
@@ -312,7 +331,7 @@ function cartCalc() {
 			}
 			total.textContent = sum;
 			headerCalcSumm.textContent = sum;
-			stepTotal.textContent = sum;
+			//stepTotal.textContent = sum;
 		}
 	}
 
@@ -363,7 +382,7 @@ function cartCalc() {
 			}
 			total.textContent = sum;
 			headerCalcSumm.textContent = sum;
-			stepTotal.textContent = sum;
+			//stepTotal.textContent = sum;
 		}
 	}
 
@@ -397,37 +416,6 @@ function cartCalc() {
 	close.on('click', onCloseItem);
 }
 
-//toggleClass on window scroll
-function changeClassOnScroll(){
-	$(window).scroll(function() {
-    var elem = $('.menu');
-    var height = elem.innerHeight();
-    var top = $(this).scrollTop();
-		var windowWidth = $(window).width();
-
-    if (top > 50) {
-			$(elem).addClass('scroll');
-			$('.page-header').addClass('fixed');
-			$('.scroll').on('mouseleave', function(){
-				$('.scroll').removeClass('slideInDown').addClass('slideOutUp');
-				setTimeout(function(){
-					$('.scroll').removeClass('slideOutUp');
-				}, 1000);
-			});
-    } else {
-			$(elem).removeClass('scroll');
-			$('.page-header').removeClass('fixed');
-    }
-
-		if(windowWidth <= 1024){
-			if (top > 50) {
-				$(elem).removeClass('scroll');
-	      $(pageTop).show();
-				$(pageBot).removeClass('scroll');
-	    }
-		}
-  });
-}
 
 window.onload = function() {
 	//scrollEvents
@@ -441,19 +429,20 @@ window.onload = function() {
 	active('.hamburger__wrap');
 
 	//active siblings
-	activeSiblings('.product__weight-btn');
+	activeSiblings('.product__weight-item');
 
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
 	animate('.hamburger', '.hamburger__line3', 'rotate_in_-45', 'rotate_in_-45_out');
 	//Animation+hide
-	animateHide('.hamburger__wrap', '.nav', 'slideInDown', 'slideOutUp', 'block');
+	animateHide('.hamburger__wrap', '.menu', 'slideInDown', 'slideOutUp', 'block');
 
 	//slider(animationIn, animationOut, elem, items, navContainer, navText)
-	slider();
+	productSlider();
 
 	//calc
 	productCalc();
+	cartCalc();
 };
 
 //other

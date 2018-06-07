@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="global-svg">
+		<global-svg></global-svg>
+	</div>
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-down" viewBox="0 0 32 32">
+<title>down</title>
+<path d="M9.88 11.453l6.12 6.107 6.12-6.107 1.88 1.88-8 8-8-8 1.88-1.88z"></path>
+</symbol>
+<symbol id="icon-subway" viewBox="0 0 32 32">
+<title>subway</title>
+<path d="M22 21.333c0 0.736-0.597 1.333-1.333 1.333s-1.333-0.597-1.333-1.333c0-0.736 0.597-1.333 1.333-1.333s1.333 0.597 1.333 1.333z"></path>
+<path d="M12.667 21.333c0 0.736-0.597 1.333-1.333 1.333s-1.333-0.597-1.333-1.333c0-0.736 0.597-1.333 1.333-1.333s1.333 0.597 1.333 1.333z"></path>
+<path d="M9.347 12h13.333v6.667h-13.333zM23.733 3.733c-2.4-0.947-5.253-1.067-7.733-1.067s-5.333 0.12-7.733 1.067c-3.56 1.387-5.6 4.333-5.6 8.080v17.52h26.667v-17.52c0-3.747-2.040-6.693-5.6-8.080zM24 21.173c0 1.933-1.573 3.493-3.507 3.493l1.507 1.493v0.507h-2l-2-2h-3.773l-2 2h-2.227v-0.507l1.493-1.493c-1.92 0-3.493-1.573-3.493-3.493v-9.173c0-3.507 4-4 8-4 4.427 0 8 0.507 8 4v9.173z"></path>
+</symbol>
+<symbol id="icon-person" viewBox="0 0 32 32">
+<title>person</title>
+<path d="M16 2.667c-6.627 0-12 5.373-12 12 0 5.56 3.787 10.227 8.92 11.587l3.080 3.080 3.080-3.080c5.133-1.36 8.92-6.027 8.92-11.587 0-6.627-5.373-12-12-12zM16 5.333c2.213 0 4 1.787 4 4s-1.787 4-4 4-4-1.787-4-4 1.787-4 4-4zM16 24.4c-3.333 0-6.28-1.707-8-4.293 0.040-2.653 5.333-4.107 8-4.107 2.653 0 7.96 1.453 8 4.107-1.72 2.587-4.667 4.293-8 4.293z"></path>
+</symbol>
+<symbol id="icon-phone" viewBox="0 0 32 32">
+<title>phone</title>
+<path d="M8.827 14.387c1.92 3.773 5.013 6.853 8.787 8.787l2.933-2.933c0.36-0.36 0.893-0.48 1.36-0.32 1.493 0.493 3.107 0.76 4.76 0.76 0.733 0 1.333 0.6 1.333 1.333v4.653c0 0.733-0.6 1.333-1.333 1.333-12.52 0-22.667-10.147-22.667-22.667 0-0.733 0.6-1.333 1.333-1.333h4.667c0.733 0 1.333 0.6 1.333 1.333 0 1.667 0.267 3.267 0.76 4.76 0.147 0.467 0.040 0.987-0.333 1.36l-2.933 2.933z"></path>
+</symbol>
+<symbol id="icon-delete" viewBox="0 0 32 32">
+<title>delete</title>
+<path d="M8 25.333c0 1.467 1.2 2.667 2.667 2.667h10.667c1.467 0 2.667-1.2 2.667-2.667v-16h-16v16zM11.28 15.84l1.88-1.88 2.84 2.827 2.827-2.827 1.88 1.88-2.827 2.827 2.827 2.827-1.88 1.88-2.827-2.827-2.827 2.827-1.88-1.88 2.827-2.827-2.84-2.827zM20.667 5.333l-1.333-1.333h-6.667l-1.333 1.333h-4.667v2.667h18.667v-2.667z"></path>
+</symbol>
+</defs>
+</svg>
+
+
+
+	<header class="page-header">
+		<div class="hamburger__wrap">
+			<div class="hamburger">
+				<div class="hamburger__line animated hamburger__line1"></div>
+				<div class="hamburger__line animated hamburger__line2"></div>
+				<div class="hamburger__line animated hamburger__line3"></div>
+			</div>
+		</div>
+		<div class="page-header__wrap">
+			<a href="#" class="logo"><img src="img/logo.jpg" alt=""></a>
+			<div class="page-header__buy">
+				<div class="page-header__buy-title">Варианты оплаты:</div>
+				<div class="page-header__buy-item">
+					<img src="img/cash.png" alt="">
+					<div class="page-header__buy-desc">Наличными<br /> курьеру</div>
+				</div>
+				<div class="page-header__buy-item">
+					<img src="img/card.png" alt="">
+					<div class="page-header__buy-desc">Перевод <br /> на карту</div>
+				</div>
+				<div class="page-header__buy-item">
+					<img src="img/nout.png" alt="">
+					<div class="page-header__buy-desc">Онлайн <br /> оплата</div>
+				</div>
+			</div>
+			<div class="page-header__delivery">
+				<img src="img/delivery.png" alt="">
+				Доставка горячих пирогов<br />
+				ежедневно с 9:00 до 21:00
+			</div>
+			<div class="page-header__cart">
+				<img src="img/cart.png" alt="">
+				<div class="page-header__cart-count">
+					<span class="calcCartCount">0</span> товаров
+				</div>
+				<div class="page-header__cart-price">
+					<span class="calcCart">0</span> руб.
+				</div>
+			</div>
+			<a href="tel:+74952004520" class="page-header__phone"><span>+7(495)</span>200-45-20</a>
+		</div>
+		<section class="menu">
+			<a href="#" class="menu__link menu__link--title">Осетинские пироги</a>
+			<a href="#" class="menu__link">с мясом</a>
+			<a href="#" class="menu__link">с капустой</a>
+			<a href="#" class="menu__link">с картошкой</a>
+			<a href="#" class="menu__link">с сыром</a>
+			<a href="#" class="menu__link">с рыбой</a>
+			<a href="#" class="menu__link">с грибами</a>
+			<a href="#" class="menu__link">с луком</a>
+			<a href="#" class="menu__link">сладкие</a>
+		</section>
+	</header>
+	<main class="main main--static overflow">
+    <section class="cart">
+      <h2 class="h2">Ваша корзина</h2>
+      <div class="cart__table-wrap">
+        <div class="cart__table">
+          <div class="cart__tr cart__tr--header">
+            <div class="cart__td cart__td--header">Наименование</div>
+            <div class="cart__td cart__td--header">Цена</div>
+            <div class="cart__td cart__td--header">Количество</div>
+            <div class="cart__td cart__td--header">Сумма</div>
+            <div class="cart__td cart__td--header"></div>
+          </div>
+          <div class="cart__tr cartCalcItem">
+            <div class="cart__td">
+              <div class="cart__img"><img src="img/product_1.png" alt=""></div>
+              1. Осетинский пирог с сыром
+            </div>
+            <div class="cart__td cart__td--price"><span class="cartCalcSinglePrice">650</span> руб.</div>
+            <div class="cart__td">
+              <div class="cart__counter">
+                <button type="button" class="cart__counter-btn cartCalcDec">-</button>
+                <div class="cart__counter-number cartCalcNumber">1</div>
+                <button type="button" class="cart__counter-btn cartCalcInc">+</button>
+              </div>
+            </div>
+            <div class="cart__td cart__td--price"><span class="cartSummNumber">650</span> руб.</div>
+            <div class="cart__td">
+              <button type="button" class="cart__delete cartCalcDelete"><svg class="icon icon-delete"><use xlink:href="#icon-delete"></use></svg></button>
+            </div>
+          </div>
+          <div class="cart__tr cartCalcItem">
+            <div class="cart__td">
+              <div class="cart__img"><img src="img/product_1.png" alt=""></div>
+              1. Осетинский пирог с сыром
+            </div>
+            <div class="cart__td cart__td--price"><span class="cartCalcSinglePrice">650</span> руб.</div>
+            <div class="cart__td">
+              <div class="cart__counter">
+                <button type="button" class="cart__counter-btn cartCalcDec">-</button>
+                <div class="cart__counter-number cartCalcNumber">1</div>
+                <button type="button" class="cart__counter-btn cartCalcInc">+</button>
+              </div>
+            </div>
+            <div class="cart__td cart__td--price"><span class="cartSummNumber">650</span> руб.</div>
+            <div class="cart__td">
+              <button type="button" class="cart__delete cartCalcDelete"><svg class="icon icon-delete"><use xlink:href="#icon-delete"></use></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="cart__info">
+          <label class="cart__label checkbox__label">
+            <input type="checkbox" checked class="checkbox">
+            <i class="checkbox__icon"></i>
+            Скидка в день рождения -10%
+          </label>
+          <div class="cart__price">
+            Итого к оплате:
+            <div class="cart__price-number"><span class="cartCalcTotalSumm">0</span> руб.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <form class="cart-form">
+      <div class="cart-form__left">
+        <div class="cart-form__header">Контактная информация:</div>
+        <div class="cart-form__inp-wrap">
+          <label class="cart-form__label cart-form__label--50">
+            <input type="text" class="cart-form__elem cart-form__input cart-form__input--name" placeholder="Ваше имя">
+            <svg class="cart-form__input-icon icon icon-person"><use xlink:href="#icon-person"></use></svg>
+            <span class="cart-form__label-text">Имя:</span>
+          </label>
+          <label class="cart-form__label cart-form__label--50">
+            <input type="text" class="cart-form__elem cart-form__input cart-form__input--tel formTel" placeholder="Телефон">
+            <svg class="cart-form__input-icon icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
+            <span class="cart-form__label-text">Телефон:</span>
+          </label>
+        </div>
+        <div class="cart-form__header cart-form__header--mt30">Способы оплаты:</div>
+        <div class="cart-form__checkbox-wrap">
+          <label class="cart-form__checkbox checkbox__label">
+            <input type="radio" name="cart-form__checkbox" class="checkbox">
+            <i class="checkbox__icon"></i>
+            Наличными курьеру
+          </label>
+          <label class="cart-form__checkbox checkbox__label">
+            <input type="radio" name="cart-form__checkbox" class="checkbox">
+            <i class="checkbox__icon"></i>
+            Банковская карта
+          </label>
+          <label class="cart-form__checkbox checkbox__label">
+            <input type="radio" name="cart-form__checkbox" class="checkbox">
+            <i class="checkbox__icon"></i>
+            Сбербанк онлайн
+          </label>
+        </div>
+      </div>
+      <div class="cart-form__right">
+        <div class="cart-form__header">Куда доставить?</div>
+        <div class="cart-form__wrap">
+          <div class="cart-form__item cart-form__item--50">
+            <label class="cart-form__label">
+              <div class="cart-form__select-wrap">
+                <select class="cart-form__elem cart-form__select">
+                  <option value="">Цветной бульвар</option>
+                  <option value="">Белый бульвар</option>
+                </select>
+                <svg class="cart-form__select-icon cart-form__select-icon--down icon icon-down"><use xlink:href="#icon-down"></use></svg>
+                <svg class="cart-form__select-icon cart-form__select-icon--metro icon icon-subway"><use xlink:href="#icon-subway"></use></svg>
+              </div>
+              <span class="cart-form__label-text">Ближайшая станция метро:</span>
+            </label>
+            <textarea class="cart-form__elem cart-form__textarea" placeholder="Комментарий к заказу"></textarea>
+          </div>
+          <div class="cart-form__item cart-form__item--50">
+            <label class="cart-form__label cart-form__label--height">
+              <textarea class="cart-form__elem cart-form__textarea cart-form__textarea--height"></textarea>
+              <span class="cart-form__label-text">Адрес доставки</span>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="cart-form__submit btn">Подтвердить заказ</button>
+      </div>
+    </form>
+  </main>
+	<footer class="page-footer">
+		<div class="page-footer__content">
+			<div class="page-footer__item">
+				<a href="#" class="page-footer__title"><span>Пироги на день рождения</span></a>
+				<a href="#" class="page-footer__link">Пироги с мясом</a>
+				<a href="#" class="page-footer__link">Пироги с картошкой</a>
+				<a href="#" class="page-footer__link">Пироги с капустой</a>
+				<a href="#" class="page-footer__link">Пироги с сыром</a>
+				<a href="#" class="page-footer__link">Пироги с курицей</a>
+				<a href="#" class="page-footer__link">Пироги с кабачком</a>
+			</div>
+			<div class="page-footer__item">
+				<a href="#" class="page-footer__title"><span>Пироги на свадьбу</span></a>
+				<a href="#" class="page-footer__link">Пироги с мясом</a>
+				<a href="#" class="page-footer__link">Пироги с картошкой</a>
+				<a href="#" class="page-footer__link">Пироги с капустой</a>
+				<a href="#" class="page-footer__link">Пироги с сыром</a>
+				<a href="#" class="page-footer__link">Пироги с курицей</a>
+				<a href="#" class="page-footer__link">Пироги с кабачком</a>
+			</div>
+			<div class="page-footer__item">
+				<a href="#" class="page-footer__title"><span>Пироги на новый год</span></a>
+				<a href="#" class="page-footer__link">Пироги с мясом</a>
+				<a href="#" class="page-footer__link">Пироги с картошкой</a>
+				<a href="#" class="page-footer__link">Пироги с капустой</a>
+				<a href="#" class="page-footer__link">Пироги с сыром</a>
+				<a href="#" class="page-footer__link">Пироги с курицей</a>
+				<a href="#" class="page-footer__link">Пироги с кабачком</a>
+			</div>
+		</div>
+		<div class="page-footer__contact">
+			<a href="tel:+74952004520" class="page-footer__phone"><span>+7 (495)</span> 200-45-20</a>
+			<div class="page-footer__delivery">
+				Доставка горячих пирогов <br />
+				ежедневно с 9:00 до 21:00
+			</div>
+			<div class="page-footer__social"><img src="img/social.png" alt=""></div>
+			<div class="page-footer__metr"><img src="img/metr.png" alt=""></div>
+		</div>
+		<div class="page-footer__bottom">
+			<div class="page-footer__copy">© 2018 Доставка осетинских пирогов</div>
+			<a href="#" class="page-footer__by">
+				<span>Создание и продвижение сайтов</span>
+				<img src="img/es-studio.png" alt="">
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</html>
