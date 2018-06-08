@@ -14,10 +14,9 @@
 	<div id="global-svg">
 		<global-svg></global-svg>
 	</div>
-	<div id="more-svg">
+  <div id="more-svg">
 		<more-svg></more-svg>
 	</div>
-
 	<header class="page-header overflow">
 		<div class="hamburger__wrap">
 			<div class="hamburger">
@@ -304,133 +303,116 @@
 				</div>
 			</section>
 		</aside>
-		<section class="section main-content main-content--static">
-      <h1 class="h1 h1--center">В корзине:</h1>
-      <section class="table__wrap">
-        <div class="table">
-          <div class="table__tr table__tr--head">
-            <div class="table__td table__td--head">Наименование</div>
-            <div class="table__td table__td--head">Цена</div>
-            <div class="table__td table__td--head">Количество</div>
-            <div class="table__td table__td--head">Сумма</div>
-          </div>
-          <div class="table__tr cartCalcItem">
-            <div class="table__td">
-              <div class="table__img"><img src="img/product_1.jpg" alt=""></div>
-              Со свекольными листьями,<br />
-              с нежным сыром<br />
-              и зеленью с грибами
-            </div>
-            <div class="table__td table__td--price"><span class="cartCalcSinglePrice">750</span> руб.</div>
-            <div class="table__td">
-              <svg class="table__close icon icon-times cartCalcDelete"><use xlink:href="#icon-times"></use></svg>
-              <div class="table__counter">
-                <button class="table__btn table__btn--dec cartCalcDec" type="button">-</button>
-                <div class="table__counter-number cartCalcNumber">0</div>
-                <button class="table__btn table__btn--inc cartCalcInc" type="button">+</button>
-              </div>
-            </div>
-            <div class="table__td table__td--price"><span class="cartSummNumber">650</span> руб.</div>
-          </div>
-          <div class="table__tr cartCalcItem">
-            <div class="table__td">
-              <div class="table__img"><img src="img/product_1.jpg" alt=""></div>
-              Со свекольными листьями,<br />
-              с нежным сыром<br />
-              и зеленью с грибами
-            </div>
-            <div class="table__td table__td--price"><span class="cartCalcSinglePrice">750</span> руб.</div>
-            <div class="table__td">
-              <svg class="table__close icon icon-times cartCalcDelete"><use xlink:href="#icon-times"></use></svg>
-              <div class="table__counter">
-                <button class="table__btn table__btn--dec cartCalcDec" type="button">-</button>
-                <div class="table__counter-number cartCalcNumber">0</div>
-                <button class="table__btn table__btn--inc cartCalcInc" type="button">+</button>
-              </div>
-            </div>
-            <div class="table__td table__td--price"><span class="cartSummNumber">650</span> руб.</div>
-          </div>
-          <div class="table__tr cartCalcItem">
-            <div class="table__td">
-              <div class="table__img"><img src="img/product_1.jpg" alt=""></div>
-              Со свекольными листьями,<br />
-              с нежным сыром<br />
-              и зеленью с грибами
-            </div>
-            <div class="table__td table__td--price"><span class="cartCalcSinglePrice">750</span> руб.</div>
-            <div class="table__td">
-              <svg class="table__close icon icon-times cartCalcDelete"><use xlink:href="#icon-times"></use></svg>
-              <div class="table__counter">
-                <button class="table__btn table__btn--dec cartCalcDec" type="button">-</button>
-                <div class="table__counter-number cartCalcNumber">0</div>
-                <button class="table__btn table__btn--inc cartCalcInc" type="button">+</button>
-              </div>
-            </div>
-            <div class="table__td table__td--price"><span class="cartSummNumber">650</span> руб.</div>
-          </div>
+		<section class="section main-content">
+      <form class="form form--review">
+        <div class="form__wrap">
+          <label class="form__label form__label--review form__label--no-name">
+            <input type="text" class="form__elem form__input" placeholder="Ваше имя">
+            <svg class="form__icon icon icon-person"><use xlink:href="#icon-person"></use></svg>
+          </label>
+          <label class="form__label form__label--review form__label--no-name">
+            <input type="tel" class="form__elem form__input formTel" placeholder="Ваш телефон">
+            <svg class="form__icon icon icon-phone-msg"><use xlink:href="#icon-phone-msg"></use></svg>
+          </label>
+          <textarea class="form__elem form__textarea" placeholder="Напишите ваш отзыв"></textarea>
+          <button type="submit" class="form__submit btn">Добавить отзыв</button>
         </div>
-        <div class="table__total">
-          Итого к оплате:
-          <div class="table__price">
-            <div class="table__price-number"><span class="cartCalcTotalSumm">3750</span> руб.</div>
+      </form>
+      <section class="reviews">
+        <h2 class="h2 h2--center">Отзывы клиентов</h2>
+        <div class="reviews__wrap">
+          <div class="reviews__item">
+            <div class="reviews__ava">А</div>
+            <div class="reviews__name">Андрей</div>
+            <div class="reviews__info">
+              <div class="rating">
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="reviews__date">20 апреля</div>
+              <div class="reviews__rating ratingItem">
+                <button class="reviews__rating-btn ratingBtn reviews__rating-btn--dislike" type="button">
+                  <svg class="icon icon-thumb-down"><use xlink:href="#icon-thumb-down"></use></svg>
+                </button>
+                <button class="reviews__rating-btn ratingBtn reviews__rating-btn--like" type="button">
+                  <svg class="icon icon-thumb-up"><use xlink:href="#icon-thumb-up"></use></svg>
+                </button>
+              </div>
+            </div>
+            <div class="reviews__desc">Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!</div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__ava reviews__ava--red">А</div>
+            <div class="reviews__name">Андрей</div>
+            <div class="reviews__info">
+              <div class="rating">
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="reviews__date">20 апреля</div>
+              <div class="reviews__rating ratingItem">
+                <button class="reviews__rating-btn ratingBtn reviews__rating-btn--dislike" type="button">
+                  <svg class="icon icon-thumb-down"><use xlink:href="#icon-thumb-down"></use></svg>
+                </button>
+                <button class="reviews__rating-btn ratingBtn reviews__rating-btn--like" type="button">
+                  <svg class="icon icon-thumb-up"><use xlink:href="#icon-thumb-up"></use></svg>
+                </button>
+              </div>
+            </div>
+            <div class="reviews__desc">Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!</div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__ava reviews__ava--blue">А</div>
+            <div class="reviews__name">Андрей</div>
+            <div class="reviews__info">
+              <div class="rating">
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="rating__item">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="reviews__date">20 апреля</div>
+              <div class="reviews__rating ratingItem">
+                <button class="reviews__rating-btn ratingBtn reviews__rating-btn--dislike" type="button">
+                  <svg class="icon icon-thumb-down"><use xlink:href="#icon-thumb-down"></use></svg>
+                </button>
+                <button class="reviews__rating-btn ratingBtn reviews__rating-btn--like" type="button">
+                  <svg class="icon icon-thumb-up"><use xlink:href="#icon-thumb-up"></use></svg>
+                </button>
+              </div>
+            </div>
+            <div class="reviews__desc">Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!</div>
           </div>
         </div>
       </section>
-      <form action="" class="form">
-        <div class="form__title">Заполните контактные данные:</div>
-        <div class="form__wrap">
-          <label class="form__label form__label--no-name">
-            <input type="text" class="form__elem form__elem--50 form__input" placeholder="Ваше имя">
-            <svg class="form__icon icon icon-person"><use xlink:href="#icon-person"></use></svg>
-          </label>
-          <label class="form__label form__label--no-name">
-            <input type="tel" class="form__elem form__elem--50 form__input formTel" placeholder="Введите телефон">
-            <svg class="form__icon icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
-          </label>
-          <div class="form__label">
-            <div class="form__select-wrap selectItem">
-              <svg class="selectIcon form__icon form__icon--pos icon icon-subway"><use xlink:href="#icon-subway"></use></svg>
-              <svg class="selectIcon icon form__icon form__icon--pos form__icon--select icon-down"><use xlink:href="#icon-down"></use></svg>
-              <select class="form__select selectHover form__elem form__elem--50">
-                <option value="">Цветной бульвар</option>
-                <option value="">Серый бульвар</option>
-              </select>
-            </div>
-            <div class="form__label-text">Ближайшая станция метро:</div>
-          </div>
-          <label class="form__label">
-            <input type="text" class="form__elem form__elem--50 form__input">
-            <span class="form__label-text">Адрес доставки:</span>
-          </label>
-        </div>
-        <textarea placeholder="Комментарий к заказу" class="form__textarea form__elem"></textarea>
-        <div class="form__pay">
-          <div class="form__pay-title">Способы оплаты:</div>
-          <label class="form__pay-item checkbox__label">
-            <input checked type="radio" name="form__pay" class="form__checkbox checkbox">
-            <i class="checkbox__icon"></i>
-            Наличными курьеру
-          </label>
-          <label class="form__pay-item checkbox__label">
-            <input type="radio" name="form__pay" class="form__checkbox checkbox">
-            <i class="checkbox__icon"></i>
-            Банковская карта
-          </label>
-          <label class="form__pay-item checkbox__label">
-            <input type="radio" name="form__pay" class="form__checkbox checkbox">
-            <i class="checkbox__icon"></i>
-            Сбербанк онлайн
-          </label>
-        </div>
-        <div class="form__total">
-          <label class="form__sale checkbox__label">
-            <input type="checkbox" class="form__sale-checkbox checkbox" checked>
-            <i class="checkbox__icon"></i>
-            Скидка в день рождения - 10%
-          </label>
-          <button type="submit" class="form__submit btn">Подтвердить заказ</button>
-        </div>
-      </form>
     </section>
 		<section class="section info">
 			<div class="info__cart">
