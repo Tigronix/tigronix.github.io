@@ -4292,8 +4292,6 @@ button {
   background: -o-linear-gradient(top, #fa663e 0%, #f2443d 100%);
   background: linear-gradient(to bottom, #fa663e 0%, #f2443d 100%);
   padding: 0 1.40625vw;
-  position: relative;
-  z-index: 5;
 }
 
 .page-header__cart {
@@ -4600,8 +4598,8 @@ button {
     z-index: 999;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
     overflow: auto;
     background: #fff;
     padding: 20px;
@@ -4852,6 +4850,8 @@ button {
 
 .filter__checkbox-header .icon {
   margin-right: 1.14583vw;
+  font-size: 1.5625vw;
+  color: #FFA07A;
 }
 
 .filter__checkbox-header span {
@@ -4991,7 +4991,6 @@ button {
   padding: 0 1.04167vw;
   height: 60px;
   margin-bottom: 0;
-  display: none;
 }
 
 .info__cart {
@@ -5321,6 +5320,8 @@ button {
 
 .filter__checkbox-header .icon {
   margin-right: 1.14583vw;
+  font-size: 1.5625vw;
+  color: #FFA07A;
 }
 
 .filter__checkbox-header span {
@@ -5602,10 +5603,21 @@ button {
 .review__rating {
   font-size: 1.30208vw;
   color: #d3d3d3;
+  -webkit-transition: color .4s;
+  -o-transition: color .4s;
+  transition: color .4s;
 }
 
 .review__rating--dislike {
   margin-right: 0.78125vw;
+}
+
+.review__rating--dislike.active {
+  color: #FF0000;
+}
+
+.review__rating--like.active {
+  color: #00CC00;
 }
 
 .review__text {

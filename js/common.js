@@ -458,6 +458,7 @@ window.onload = function() {
 	//active siblings
 	activeSiblings('.product__weight-btn');
 	activeSiblings('.ratingBtn');
+	activeSiblings('.review__rating');
 
 	//Animation
 	animate('.hamburger', '.hamburger__line1', 'rotate_in_45', 'rotate_in_45_out');
