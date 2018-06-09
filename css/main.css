@@ -6264,7 +6264,10 @@ button {
   }
   .product__btn {
     width: 40px;
-    font-size: 16px;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
   }
   .product__counter-number {
     width: 40px;
@@ -6280,6 +6283,9 @@ button {
     width: 100%;
     font-size: 18px;
     margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
   }
   .product__submit {
     font-size: 18px;
@@ -6295,6 +6301,9 @@ button {
 }
 
 @media (max-width: 1024px) {
+  .map {
+    padding: 0 20px;
+  }
   .map > ymaps {
     height: 250px !important;
   }
